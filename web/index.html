@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description" content="中英翻譯單字練習 — 支援手機與電腦瀏覽器" />
+  <title>英文單字練習</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div id="loading" class="loading-overlay">載入題庫中…</div>
+
+  <div class="app">
+    <!-- 設定畫面 -->
+    <section id="screen-setup" class="hidden">
+      <header class="header">
+        <h1>中英翻譯練習</h1>
+      </header>
+      <p style="color:#64748b;margin:0 0 20px;font-size:0.95rem">請選擇測驗模式、方向、難度與題數</p>
+
+      <div class="card">
+        <label class="field-label">測驗模式</label>
+        <div class="toggle-row">
+          <label>
+            <input type="radio" name="mode" value="typing" checked />
+            <span class="toggle-card">✏️ 輸入作答</span>
+          </label>
+          <label>
+            <input type="radio" name="mode" value="choice" />
+            <span class="toggle-card">🔘 選擇題</span>
+          </label>
+        </div>
+
+        <label class="field-label">翻譯方向</label>
+        <div class="toggle-row">
+          <label>
+            <input type="radio" name="direction" value="ctoE" checked />
+            <span class="toggle-card">中 → 英</span>
+          </label>
+          <label>
+            <input type="radio" name="direction" value="EtoC" />
+            <span class="toggle-card">英 → 中</span>
+          </label>
+        </div>
+
+        <label class="field-label" for="level-select">難度（CEFR）</label>
+        <select id="level-select"></select>
+        <p id="level-pool-text" class="pool-text"></p>
+
+        <label class="field-label" style="margin-top:16px">挑戰單字數量（最多 30 題）</label>
+        <div class="slider-row">
+          <input type="range" id="question-slider" min="1" max="30" value="10" step="1" />
+          <span id="question-count-text">10 題</span>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn-secondary" disabled style="opacity:0.5">—</button>
+        <button type="button" id="start-btn" class="btn-primary">開始挑戰</button>
+      </div>
+
+      <p class="install-hint">
+        iPhone：Safari 分享 →「加入主畫面」<br />
+        Android：Chrome 選單 →「安裝應用程式」或「加到主畫面」
+      </p>
+    </section>
+
+    <!-- 測驗畫面 -->
+    <section id="screen-quiz" class="hidden">
+      <header class="header">
+        <h1 id="quiz-title">中英翻譯練習</h1>
+        <span id="score-text" class="score">得分：0 / 0</span>
+      </header>
+
+      <div class="session-row">
+        <span id="session-info"></span>
+        <button type="button" id="restart-btn" class="btn-ghost">重新選擇</button>
+      </div>
+
+      <div class="card">
+        <div class="question-box">
+          <div id="question-text" class="word">載入中…</div>
+        </div>
+
+        <div class="phonetic-area">
+          <div id="phonetic-placeholder" class="phonetic-placeholder">
+            （點擊「播放發音」查看音標；有詞源資料時顯示字根）
+          </div>
+          <div id="phonetic-text" class="phonetic-text hidden"></div>
+        </div>
+
+        <div id="roots-section" class="roots-section hidden">
+          <div id="roots-wrap" class="roots-wrap"></div>
+          <p id="root-hint" class="root-hint"></p>
+        </div>
+
+        <p id="prompt-label" class="prompt">請輸入翻譯：</p>
+
+        <div id="typing-panel">
+          <input id="answer-input" class="answer-input" type="text" autocomplete="off" autocapitalize="off" enterkeyhint="done" placeholder="輸入答案…" />
+          <div class="action-row">
+            <button type="button" id="play-btn" class="btn-secondary">播放發音</button>
+            <button type="button" id="dict-btn" class="btn-secondary" disabled>劍橋字典</button>
+            <button type="button" id="submit-btn" class="btn-primary">送出答案</button>
+          </div>
+        </div>
+
+        <div id="choice-panel" class="hidden">
+          <div class="option-grid">
+            <button type="button" class="option-btn" data-index="0">A</button>
+            <button type="button" class="option-btn" data-index="1">B</button>
+            <button type="button" class="option-btn" data-index="2">C</button>
+            <button type="button" class="option-btn" data-index="3">D</button>
+          </div>
+        </div>
+
+        <div id="feedback-panel" class="feedback hidden">
+          <span id="feedback-text"></span>
+        </div>
+
+        <button type="button" id="next-btn" class="btn-primary" style="width:100%" disabled>下一題</button>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

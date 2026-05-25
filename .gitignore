@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Backup / copies
+bin/Release_backup/
+**/words - Copy.json
+**/words2.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Keep web words.json tracked (sync from root when updating vocabulary)
+# web/words.json is intentionally included

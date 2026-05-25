@@ -1,0 +1,125 @@
+<Window x:Class="Englishtest.SetupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="開始練習" Height="580" Width="440"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F4F6F8">
+
+    <Window.Resources>
+        <!-- Card-style RadioButton that looks like a toggle button -->
+        <Style x:Key="ToggleCardStyle" TargetType="RadioButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="CardBorder" Background="#FFFFFF" BorderBrush="#CBD5E1" BorderThickness="1.5"
+                                CornerRadius="8" Padding="12,10" Cursor="Hand" SnapsToDevicePixels="True">
+                            <TextBlock Text="{TemplateBinding Content}" FontSize="14" FontWeight="SemiBold"
+                                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                                       Foreground="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="CardBorder" Property="Background" Value="#EFF6FF"/>
+                                <Setter TargetName="CardBorder" Property="BorderBrush" Value="#2563EB"/>
+                                <Setter Property="Foreground" Value="#1D4ED8"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter Property="Foreground" Value="#64748B"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="CardBorder" Property="BorderBrush" Value="#93C5FD"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="36">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="中英翻譯練習" FontSize="24" FontWeight="Bold" Foreground="#1A1A2E"/>
+        <TextBlock Grid.Row="1" Text="請選擇測驗模式、方向、難度與題數" FontSize="14" Foreground="#64748B" Margin="0,8,0,24"/>
+
+        <!-- 測驗模式 -->
+        <StackPanel Grid.Row="2" Margin="0,0,0,16">
+            <TextBlock Text="測驗模式" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="ModeTypingRadio" Grid.Column="0" GroupName="Mode" IsChecked="True"
+                             Style="{StaticResource ToggleCardStyle}" Content="✏️  輸入作答" Tag="Typing"/>
+                <RadioButton x:Name="ModeChoiceRadio" Grid.Column="2" GroupName="Mode"
+                             Style="{StaticResource ToggleCardStyle}" Content="🔘  選擇題" Tag="Choice"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- 翻譯方向 -->
+        <StackPanel Grid.Row="3" Margin="0,0,0,16">
+            <TextBlock Text="翻譯方向" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="DirCtoERadio" Grid.Column="0" GroupName="Direction" IsChecked="True"
+                             Style="{StaticResource ToggleCardStyle}" Content="中 → 英" Tag="CtoE"/>
+                <RadioButton x:Name="DirEtoCRadio" Grid.Column="2" GroupName="Direction"
+                             Style="{StaticResource ToggleCardStyle}" Content="英 → 中" Tag="EtoC"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- 難度 -->
+        <StackPanel Grid.Row="4" Margin="0,0,0,16">
+            <TextBlock Text="難度（CEFR）" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
+            <ComboBox x:Name="LevelComboBox" Height="36" FontSize="14" VerticalContentAlignment="Center"
+                      SelectionChanged="LevelComboBox_SelectionChanged"/>
+            <TextBlock x:Name="LevelPoolText" Text="" FontSize="13" Foreground="#64748B" Margin="0,8,0,0"/>
+        </StackPanel>
+
+        <!-- 題數 -->
+        <StackPanel Grid.Row="5">
+            <TextBlock Text="挑戰單字數量（最多 30 題）" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Slider x:Name="QuestionCountSlider" Grid.Column="0" Minimum="1" Maximum="30" Value="10"
+                        TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center"
+                        ValueChanged="QuestionCountSlider_ValueChanged"/>
+                <TextBlock x:Name="QuestionCountText" Grid.Column="1" Text="10 題" FontSize="16" FontWeight="Bold"
+                           Foreground="#2563EB" VerticalAlignment="Center" Margin="16,0,0,0" MinWidth="48"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- 按鈕 -->
+        <Grid Grid.Row="7" Margin="0,24,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="12"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="取消" Height="44" IsCancel="True"
+                    Background="#F1F5F9" Foreground="#475569" BorderBrush="#CBD5E1" BorderThickness="1"/>
+            <Button Grid.Column="2" x:Name="StartButton" Content="開始挑戰" Height="44" IsDefault="True"
+                    Click="StartButton_Click"
+                    Background="#2563EB" Foreground="White" FontSize="16" FontWeight="Bold" BorderThickness="0"/>
+        </Grid>
+    </Grid>
+</Window>
