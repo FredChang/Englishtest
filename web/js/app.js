@@ -1,12 +1,17 @@
 import { VocabularyService, primaryEnglish, lookupWord } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
+import { initGuideReading } from './guide-reading.js';
 
 const vocabulary = new VocabularyService();
 
 const screens = {
   setup: document.getElementById('screen-setup'),
-  quiz: document.getElementById('screen-quiz')
+  quiz: document.getElementById('screen-quiz'),
+  guideLoad: document.getElementById('screen-guide-load'),
+  guidePlay: document.getElementById('screen-guide-play')
 };
+
+let guideReading = null;
 
 const els = {
   levelSelect: document.getElementById('level-select'),
@@ -374,6 +379,7 @@ async function init() {
   });
 
   updateLevelInfo();
+  guideReading = initGuideReading({ screens, showScreen });
   showScreen('setup');
 }
 
@@ -386,6 +392,7 @@ els.questionSlider?.addEventListener('input', () => {
 els.startBtn?.addEventListener('click', startQuiz);
 els.restartBtn?.addEventListener('click', () => {
   vocabulary.clearSession();
+  guideReading?.stopReading?.();
   showScreen('setup');
   updateLevelInfo();
 });

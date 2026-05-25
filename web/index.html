@@ -60,6 +60,10 @@
         </div>
       </div>
 
+      <button type="button" id="guide-open-btn" class="btn-guide" style="width:100%;margin-bottom:12px">
+        開啟導讀練習
+      </button>
+
       <div class="btn-row">
         <button type="button" class="btn-secondary" disabled style="opacity:0.5">—</button>
         <button type="button" id="start-btn" class="btn-primary">開始挑戰</button>
@@ -69,6 +73,67 @@
         iPhone：Safari 分享 →「加入主畫面」<br />
         Android：Chrome 選單 →「安裝應用程式」或「加到主畫面」
       </p>
+    </section>
+
+    <!-- 導讀：載入文稿 -->
+    <section id="screen-guide-load" class="hidden">
+      <header class="header">
+        <h1>導讀練習</h1>
+      </header>
+      <p class="guide-intro">可貼上文字、選擇本機 .txt / .srt，或使用上次儲存的文稿（僅存於此裝置瀏覽器）。</p>
+
+      <div class="card">
+        <button type="button" id="guide-use-last-btn" class="btn-primary" style="width:100%;margin-bottom:8px" disabled>
+          使用上次文稿
+        </button>
+        <p id="guide-last-hint" class="pool-text" style="margin:0 0 16px"></p>
+
+        <input type="file" id="guide-file-input" class="hidden" accept=".txt,.srt,text/plain,application/x-subrip" />
+        <button type="button" id="guide-pick-file-btn" class="btn-secondary" style="width:100%;margin-bottom:16px">
+          選擇 .txt 或 .srt 檔案
+        </button>
+
+        <label class="field-label" for="guide-paste-area">貼上導讀內容</label>
+        <textarea id="guide-paste-area" class="guide-paste" rows="6" placeholder="貼上英文文稿或 SRT 字幕…"></textarea>
+        <button type="button" id="guide-paste-apply-btn" class="btn-primary" style="width:100%;margin-top:12px">
+          使用貼上的內容
+        </button>
+      </div>
+
+      <div class="guide-load-actions">
+        <button type="button" id="guide-clear-saved-btn" class="btn-ghost">清除本機文稿</button>
+        <button type="button" id="guide-load-back-btn" class="btn-secondary">返回</button>
+      </div>
+    </section>
+
+    <!-- 導讀：播放 -->
+    <section id="screen-guide-play" class="hidden">
+      <header class="header">
+        <h1>導讀練習</h1>
+        <button type="button" id="guide-change-source-btn" class="btn-ghost">更換文稿</button>
+      </header>
+
+      <p id="guide-source-text" class="pool-text" style="margin:0 0 12px"></p>
+
+      <div class="card guide-controls-card">
+        <div class="slider-row">
+          <span class="field-label" style="margin:0;min-width:4.5em">朗讀速度</span>
+          <input type="range" id="guide-speed-slider" min="-8" max="8" value="0" step="1" />
+          <span id="guide-speed-label">正常</span>
+        </div>
+        <p id="guide-progress-text" class="pool-text" style="margin:12px 0 0"></p>
+      </div>
+
+      <div class="card guide-list-card">
+        <ul id="guide-segment-list" class="guide-segment-list"></ul>
+      </div>
+
+      <div class="guide-play-actions">
+        <button type="button" id="guide-play-btn" class="btn-primary">開始朗讀</button>
+        <button type="button" id="guide-pause-btn" class="btn-secondary" disabled>暫停</button>
+        <button type="button" id="guide-stop-btn" class="btn-secondary" disabled>停止</button>
+        <button type="button" id="guide-play-back-btn" class="btn-secondary">返回</button>
+      </div>
     </section>
 
     <!-- 測驗畫面 -->

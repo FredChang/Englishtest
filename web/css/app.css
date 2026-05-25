@@ -339,3 +339,95 @@ button {
   margin-top: 16px;
   line-height: 1.5;
 }
+
+.btn-guide {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+.guide-intro {
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.guide-paste {
+  width: 100%;
+  padding: 12px;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+  line-height: 1.45;
+}
+
+.guide-load-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.guide-controls-card {
+  margin-bottom: 12px;
+}
+
+.guide-list-card {
+  max-height: min(50vh, 420px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.guide-segment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.guide-segment-list.locked .guide-segment {
+  pointer-events: none;
+}
+
+.guide-segment {
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  cursor: pointer;
+  color: #334155;
+}
+
+.guide-segment.active {
+  background: #eff6ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.guide-play-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.guide-play-actions .btn-primary {
+  grid-column: 1 / -1;
+}
+
+#screen-guide-play .header {
+  gap: 8px;
+}
+
+#screen-guide-play .header h1 {
+  flex: 1;
+}
