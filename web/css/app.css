@@ -332,6 +332,11 @@ button {
   color: var(--muted);
 }
 
+.loading-overlay.hidden {
+  display: none !important;
+  pointer-events: none;
+}
+
 .install-hint {
   font-size: 0.8rem;
   color: var(--muted);
@@ -346,6 +351,9 @@ button {
   border: 1px solid #bfdbfe;
   padding: 12px 16px;
   font-weight: 600;
+  position: relative;
+  z-index: 1;
+  touch-action: manipulation;
 }
 
 .guide-intro {

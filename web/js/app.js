@@ -360,13 +360,27 @@ function showSessionComplete() {
 }
 
 async function init() {
+  // 導讀不依賴題庫，先初始化避免按鈕無反應
+  try {
+    guideReading = initGuideReading({ screens, showScreen });
+  } catch (err) {
+    console.error('導讀初始化失敗', err);
+  }
+
   els.loading.classList.remove('hidden');
-  await vocabulary.load('words.json');
-  els.loading.classList.add('hidden');
+  try {
+    await vocabulary.load('words.json');
+  } catch {
+    alert('載入題庫失敗，請確認 words.json 是否存在。導讀練習仍可使用。');
+  } finally {
+    els.loading.classList.add('hidden');
+  }
 
   const total = Object.values(vocabulary.countByLevel).reduce((a, b) => a + b, 0);
   if (total === 0) {
-    alert('找不到題庫（words.json），請確認檔案已上傳。');
+    els.startBtn.disabled = true;
+    els.levelPoolText.textContent = '找不到題庫，單字練習無法使用；導讀練習仍可使用。';
+    showScreen('setup');
     return;
   }
 
@@ -379,7 +393,6 @@ async function init() {
   });
 
   updateLevelInfo();
-  guideReading = initGuideReading({ screens, showScreen });
   showScreen('setup');
 }
 
@@ -415,5 +428,15 @@ els.optionButtons.forEach((btn) => btn.addEventListener('click', onOptionClick))
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
+
+document.getElementById('guide-open-btn')?.addEventListener('click', () => {
+  if (guideReading?.showLoadScreen) {
+    guideReading.showLoadScreen();
+  } else if (screens.guideLoad) {
+    showScreen('guideLoad');
+  } else {
+    alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
+  }
+});
 
 init();

@@ -258,8 +258,6 @@ export function initGuideReading({ screens, showScreen }) {
     speakCurrent();
   }
 
-  els.openBtn?.addEventListener('click', showLoadScreen);
-
   els.lastBtn?.addEventListener('click', () => {
     const saved = loadSavedGuideContent();
     if (!saved?.segments?.length) {

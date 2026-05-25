@@ -1,5 +1,27 @@
 const STORAGE_KEY = 'englishtest-guide-reading-v1';
-const SENTENCE_SPLIT = /(?<=[.!?])\s+/;
+
+/** 不依賴 lookbehind，相容舊版 Safari / WebView */
+function splitIntoSentences(normalized) {
+  const segments = [];
+  const parts = normalized.split(/([.!?])\s+/);
+  let buf = '';
+
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i];
+    if (/^[.!?]$/.test(part)) {
+      buf += part;
+      const sentence = buf.trim();
+      if (sentence) segments.push(sentence);
+      buf = '';
+    } else if (part) {
+      buf = buf ? `${buf} ${part}` : part;
+    }
+  }
+
+  const last = buf.trim();
+  if (last) segments.push(last);
+  return segments;
+}
 
 export function parsePlainTextToSegments(text) {
   const segments = [];
@@ -8,11 +30,7 @@ export function parsePlainTextToSegments(text) {
   for (const paragraph of paragraphs) {
     const normalized = paragraph.trim().replace(/\r\n/g, ' ').replace(/\n/g, ' ');
     if (!normalized) continue;
-
-    for (const part of normalized.split(SENTENCE_SPLIT)) {
-      const sentence = part.trim();
-      if (sentence.length > 0) segments.push(sentence);
-    }
+    segments.push(...splitIntoSentences(normalized));
   }
 
   return segments;

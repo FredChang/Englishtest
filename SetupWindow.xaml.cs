@@ -114,7 +114,14 @@ namespace Englishtest
         {
             var guide = new GuideReadingWindow();
             if (!guide.IsReady)
+            {
+                MessageBox.Show(this,
+                    "找不到導讀內容（read.txt）。請確認檔案在程式目錄後重新建置。",
+                    "無法開啟導讀",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
                 return;
+            }
 
             guide.ShowDialog();
         }
