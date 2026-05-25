@@ -64,13 +64,14 @@ namespace Englishtest
                 ? "請選出正確的英文翻譯："
                 : "請選出正確的中文翻譯：";
 
+            ScoreText.Text = $"得分：0 / {_vocabulary.SessionTotal}";
             UpdateSessionInfo();
             Loaded += (_, __) => ShowNextQuestion();
         }
 
         private void UpdateSessionInfo()
         {
-            var current = Math.Min(_vocabulary.SessionAnswered + 1, _vocabulary.SessionTotal);
+            var current = Math.Min(_vocabulary.SessionAnswered, _vocabulary.SessionTotal);
             SessionInfoText.Text =
                 $"{_vocabulary.CurrentLevel}　挑戰 {_vocabulary.SessionTotal} 題　第 {current} / {_vocabulary.SessionTotal} 題";
         }
@@ -160,7 +161,7 @@ namespace Englishtest
             if (isCorrect)
                 _correctCount++;
 
-            ScoreText.Text = $"得分：{_correctCount} / {_answeredCount}";
+            ScoreText.Text = $"得分：{_correctCount} / {_vocabulary.SessionTotal}";
 
             // Disable all buttons
             foreach (var btn in _optionButtons)

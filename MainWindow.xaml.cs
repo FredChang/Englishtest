@@ -58,13 +58,14 @@ namespace Englishtest
             }
 
             IsReady = true;
+            ResetScore();
             UpdateSessionInfo();
             Loaded += (_, __) => ShowNextQuestion();
         }
 
         private void UpdateSessionInfo()
         {
-            var current = Math.Min(_vocabulary.SessionAnswered + 1, _vocabulary.SessionTotal);
+            var current = Math.Min(_vocabulary.SessionAnswered, _vocabulary.SessionTotal);
             SessionInfoText.Text =
                 $"{_vocabulary.CurrentLevel}　挑戰 {_vocabulary.SessionTotal} 題　第 {current} / {_vocabulary.SessionTotal} 題";
         }
@@ -74,7 +75,7 @@ namespace Englishtest
             _correctCount = 0;
             _answeredCount = 0;
             _answered = false;
-            ScoreText.Text = "得分：0 / 0";
+            ScoreText.Text = $"得分：0 / {_vocabulary.SessionTotal}";
         }
 
         private void RestartButton_Click(object sender, RoutedEventArgs e)
@@ -365,7 +366,7 @@ namespace Englishtest
             if (isCorrect)
                 _correctCount++;
 
-            ScoreText.Text = $"得分：{_correctCount} / {_answeredCount}";
+            ScoreText.Text = $"得分：{_correctCount} / {_vocabulary.SessionTotal}";
 
             var phoneticHint = "";
             if (_pronunciationRevealed)

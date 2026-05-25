@@ -107,7 +107,7 @@ function startQuiz() {
   correctCount = 0;
   answeredCount = 0;
   answered = false;
-  els.scoreText.textContent = '得分：0 / 0';
+  updateScoreDisplay();
 
   const isEtoC = settings.direction === 'EtoC';
   const isChoice = settings.mode === 'choice';
@@ -138,8 +138,14 @@ function startQuiz() {
 }
 
 function updateSessionInfo() {
-  const currentNum = Math.min(vocabulary.sessionAnswered + 1, vocabulary.sessionTotal);
+  // sessionAnswered 在 getNextQuestion() 後已代表「目前第幾題」（1-based）
+  const currentNum = Math.min(vocabulary.sessionAnswered, vocabulary.sessionTotal);
   els.sessionInfo.textContent = `${vocabulary.currentLevel}　挑戰 ${vocabulary.sessionTotal} 題　第 ${currentNum} / ${vocabulary.sessionTotal} 題`;
+}
+
+function updateScoreDisplay() {
+  const total = vocabulary.sessionTotal || 0;
+  els.scoreText.textContent = `得分：${correctCount} / ${total}`;
 }
 
 function resetPronunciationDisplay() {
@@ -278,7 +284,7 @@ function showFeedback(isCorrect, correctDisplay) {
   answered = true;
   answeredCount++;
   if (isCorrect) correctCount++;
-  els.scoreText.textContent = `得分：${correctCount} / ${answeredCount}`;
+  updateScoreDisplay();
 
   els.feedbackPanel.classList.remove('hidden', 'ok', 'err');
   els.feedbackPanel.classList.add(isCorrect ? 'ok' : 'err');
@@ -316,12 +322,7 @@ function onOptionClick(e) {
   const index = Number(btn.dataset.index);
   if (Number.isNaN(index)) return;
 
-  answered = true;
-  answeredCount++;
   const isCorrect = index === correctChoiceIndex;
-  if (isCorrect) correctCount++;
-
-  els.scoreText.textContent = `得分：${correctCount} / ${answeredCount}`;
   els.optionButtons.forEach((b) => (b.disabled = true));
   els.optionButtons[correctChoiceIndex]?.classList.add('correct');
   if (!isCorrect) btn.classList.add('wrong');
