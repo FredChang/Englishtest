@@ -109,5 +109,14 @@ namespace Englishtest
 
             DialogResult = true;
         }
+
+        private void GuideReadingButton_Click(object sender, RoutedEventArgs e)
+        {
+            var guide = new GuideReadingWindow();
+            if (!guide.IsReady)
+                return;
+
+            guide.ShowDialog();
+        }
     }
 }
