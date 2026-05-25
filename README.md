@@ -1,5 +1,8 @@
 # 英文單字練習 (Englishtest)
 
+> **手機／瀏覽器請直接開啟：** https://fredchang.github.io/Englishtest/web/  
+> （推送最新版後，首頁 https://fredchang.github.io/Englishtest/ 也會自動導向練習頁）
+
 中英翻譯單字練習應用，支援 CEFR 難度、輸入作答與選擇題模式。
 
 | 平台 | 使用方式 |
@@ -51,11 +54,13 @@ git push -u origin main
    - **Build and deployment** → Source 選 **GitHub Actions**
    - 推送 `main` 分支後，`.github/workflows/deploy-pages.yml` 會自動部署
 
-4. **手機開啟網址**
+4. **手機開啟網址**（請用含 `web` 的路徑，或等首頁自動導向生效）
 
 ```
-https://YOUR_USERNAME.github.io/Englishtest/
+https://YOUR_USERNAME.github.io/Englishtest/web/
 ```
+
+若只看到 README 文字，代表 Pages 尚未導向；請改開上方 `.../web/` 網址。
 
 5. **加到主畫面（像 App）**
    - **iPhone（Safari）**：分享 → **加入主畫面**
