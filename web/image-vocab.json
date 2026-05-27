@@ -1,0 +1,14 @@
+[
+  { "Level": "A1", "English": ["apple"], "ImageUrl": "images/apple.svg" },
+  { "Level": "A1", "English": ["book"], "ImageUrl": "images/book.svg" },
+  { "Level": "A1", "English": ["water"], "ImageUrl": "images/water.svg" },
+  { "Level": "A1", "English": ["cat"], "ImageUrl": "images/cat.svg" },
+  { "Level": "A1", "English": ["dog"], "ImageUrl": "images/dog.svg" },
+  { "Level": "A1", "English": ["house"], "ImageUrl": "images/house.svg" },
+  { "Level": "A1", "English": ["bird"], "ImageUrl": "images/bird.svg" },
+  { "Level": "A1", "English": ["milk"], "ImageUrl": "images/milk.svg" },
+  { "Level": "A1", "English": ["egg"], "ImageUrl": "images/egg.svg" },
+  { "Level": "A1", "English": ["fish"], "ImageUrl": "images/fish.svg" },
+  { "Level": "A1", "English": ["car"], "ImageUrl": "images/car.svg" },
+  { "Level": "A1", "English": ["tree"], "ImageUrl": "images/tree.svg" }
+]

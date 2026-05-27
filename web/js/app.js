@@ -1,4 +1,4 @@
-import { VocabularyService, primaryEnglish, lookupWord } from './vocabulary.js';
+import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
 import { initGuideReading } from './guide-reading.js';
 
@@ -30,6 +30,10 @@ const els = {
   rootHint: document.getElementById('root-hint'),
   typingPanel: document.getElementById('typing-panel'),
   choicePanel: document.getElementById('choice-panel'),
+  imageChoicePanel: document.getElementById('image-choice-panel'),
+  imageOptionButtons: Array.from(document.querySelectorAll('.image-option-btn')),
+  directionRow: document.getElementById('direction-row'),
+  directionLabel: document.getElementById('direction-label'),
   answerInput: document.getElementById('answer-input'),
   submitBtn: document.getElementById('submit-btn'),
   nextBtn: document.getElementById('next-btn'),
@@ -65,16 +69,38 @@ function showScreen(name) {
   screens[name]?.classList.remove('hidden');
 }
 
+function isImageMode() {
+  return getMode() === 'image';
+}
+
+function updateSetupForMode() {
+  const imageMode = isImageMode();
+  els.directionRow?.classList.toggle('hidden', imageMode);
+  els.directionLabel?.classList.toggle('hidden', imageMode);
+}
+
 function updateLevelInfo() {
   const level = els.levelSelect.value;
   vocabulary.setLevel(level);
-  const available = vocabulary.countForCurrentLevel;
+  updateSetupForMode();
+
+  const imageMode = isImageMode();
+  const available = imageMode
+    ? vocabulary.countWithImagesForCurrentLevel
+    : vocabulary.countForCurrentLevel;
   const max = Math.min(30, available);
 
-  els.levelPoolText.textContent =
-    available > 0
-      ? `此難度題庫共有 ${available} 個單字`
-      : '此難度尚無單字，請換其他等級';
+  if (imageMode) {
+    els.levelPoolText.textContent =
+      available > 0
+        ? `圖像記憶：此難度共有 ${available} 個配有圖片的單字（目前示範為 A1 名詞）`
+        : '此難度尚無圖像單字，請選 A1 或換模式';
+  } else {
+    els.levelPoolText.textContent =
+      available > 0
+        ? `此難度題庫共有 ${available} 個單字`
+        : '此難度尚無單字，請換其他等級';
+  }
 
   els.questionSlider.max = String(Math.max(1, max));
   if (Number(els.questionSlider.value) > max) els.questionSlider.value = String(max);
@@ -93,18 +119,32 @@ function readSettings() {
 
 function startQuiz() {
   settings = readSettings();
+  const isImage = settings.mode === 'image';
+  const sessionMode = isImage ? 'image' : 'default';
 
-  if (!vocabulary.canStartSession(settings.level, settings.questionCount)) {
-    alert('無法建立挑戰，請確認該難度有足夠單字。');
+  if (!vocabulary.canStartSession(settings.level, settings.questionCount, sessionMode)) {
+    alert(
+      isImage
+        ? '無法建立挑戰，請確認該難度有配圖單字（目前請選 A1）。'
+        : '無法建立挑戰，請確認該難度有足夠單字。'
+    );
     return;
   }
 
-  if (settings.mode === 'choice' && vocabulary.countForCurrentLevel < 4) {
-    alert('選擇題模式至少需要 4 個單字，請換難度或改用輸入模式。');
+  const poolSize = isImage
+    ? vocabulary.countWithImagesForCurrentLevel
+    : vocabulary.countForCurrentLevel;
+
+  if ((settings.mode === 'choice' || isImage) && poolSize < 4) {
+    alert(
+      isImage
+        ? '圖像記憶至少需要 4 個配圖單字，請選 A1。'
+        : '選擇題模式至少需要 4 個單字，請換難度或改用輸入模式。'
+    );
     return;
   }
 
-  if (!vocabulary.startSession(settings.level, settings.questionCount)) {
+  if (!vocabulary.startSession(settings.level, settings.questionCount, sessionMode)) {
     alert('無法開始挑戰，請重新選擇。');
     return;
   }
@@ -117,26 +157,33 @@ function startQuiz() {
   const isEtoC = settings.direction === 'EtoC';
   const isChoice = settings.mode === 'choice';
 
-  els.quizTitle.textContent = isChoice
-    ? isEtoC
-      ? '英翻中 選擇題'
-      : '中翻英 選擇題'
-    : isEtoC
-      ? '英翻中'
-      : '中翻英';
+  if (isImage) {
+    els.quizTitle.textContent = '圖像記憶測試';
+    els.promptLabel.textContent = '請選出與英文單字相符的圖片：';
+  } else {
+    els.quizTitle.textContent = isChoice
+      ? isEtoC
+        ? '英翻中 選擇題'
+        : '中翻英 選擇題'
+      : isEtoC
+        ? '英翻中'
+        : '中翻英';
 
-  els.promptLabel.textContent = isChoice
-    ? isEtoC
-      ? '請選出正確的中文翻譯：'
-      : '請選出正確的英文翻譯：'
-    : isEtoC
-      ? '請輸入中文翻譯：'
-      : '請輸入英文翻譯：';
+    els.promptLabel.textContent = isChoice
+      ? isEtoC
+        ? '請選出正確的中文翻譯：'
+        : '請選出正確的英文翻譯：'
+      : isEtoC
+        ? '請輸入中文翻譯：'
+        : '請輸入英文翻譯：';
+  }
 
-  els.typingPanel.classList.toggle('hidden', isChoice);
+  els.typingPanel.classList.toggle('hidden', isChoice || isImage);
   els.choicePanel.classList.toggle('hidden', !isChoice);
+  els.imageChoicePanel.classList.toggle('hidden', !isImage);
   els.playBtn.classList.toggle('hidden', isChoice);
-  els.dictBtn.classList.toggle('hidden', isChoice);
+  els.dictBtn.classList.toggle('hidden', isChoice || isImage);
+  els.phoneticPlaceholder.parentElement?.classList.toggle('hidden', isImage);
 
   showScreen('quiz');
   showNextQuestion();
@@ -249,21 +296,68 @@ function showNextQuestion() {
   els.nextBtn.disabled = true;
   resetPronunciationDisplay();
 
+  const isImage = settings.mode === 'image';
   const isEtoC = settings.direction === 'EtoC';
-  els.questionText.textContent = isEtoC
+
+  els.questionText.textContent = isImage
     ? primaryEnglish(current)
-    : current.Chinese || '';
+    : isEtoC
+      ? primaryEnglish(current)
+      : current.Chinese || '';
 
   els.playBtn.disabled = !lookupWord(current);
+  els.rootsSection.classList.toggle('hidden', isImage);
 
   if (settings.mode === 'typing') {
     els.answerInput.value = '';
     els.answerInput.disabled = false;
     els.submitBtn.disabled = false;
     els.answerInput.focus();
+  } else if (isImage) {
+    showImageChoiceOptions();
   } else {
     showChoiceOptions();
   }
+}
+
+function showImageChoiceOptions() {
+  const distractors = vocabulary.getImageDistractors(current, 3);
+  const allItems = [current, ...distractors];
+  const shuffled = [...allItems].sort(() => Math.random() - 0.5);
+  correctChoiceIndex = shuffled.indexOf(current);
+
+  els.imageOptionButtons.forEach((btn, i) => {
+    const item = shuffled[i];
+    const img = btn.querySelector('img');
+    if (!item || !img) {
+      btn.classList.add('hidden');
+      return;
+    }
+    const url = imageUrl(item);
+    btn.classList.remove('hidden', 'correct', 'wrong');
+    btn.disabled = false;
+    img.src = url;
+    img.alt = '';
+  });
+}
+
+function onImageOptionClick(e) {
+  if (answered || !current) return;
+  const btn = e.currentTarget;
+  const index = Number(btn.dataset.index);
+  if (Number.isNaN(index)) return;
+
+  const isCorrect = index === correctChoiceIndex;
+  els.imageOptionButtons.forEach((b) => (b.disabled = true));
+  els.imageOptionButtons[correctChoiceIndex]?.classList.add('correct');
+  if (!isCorrect) btn.classList.add('wrong');
+
+  showFeedback(isCorrect, '', { imageMode: true });
+
+  const word = lookupWord(current);
+  if (word) speak(word);
+
+  els.nextBtn.disabled = false;
 }
 
 function showChoiceOptions() {
@@ -285,7 +379,7 @@ function showChoiceOptions() {
   });
 }
 
-function showFeedback(isCorrect, correctDisplay) {
+function showFeedback(isCorrect, correctDisplay, options = {}) {
   answered = true;
   answeredCount++;
   if (isCorrect) correctCount++;
@@ -293,6 +387,13 @@ function showFeedback(isCorrect, correctDisplay) {
 
   els.feedbackPanel.classList.remove('hidden', 'ok', 'err');
   els.feedbackPanel.classList.add(isCorrect ? 'ok' : 'err');
+
+  if (options.imageMode) {
+    els.feedbackText.textContent = isCorrect
+      ? '✓ 正確！'
+      : '✗ 不正確，綠框為正確圖片。';
+    return;
+  }
 
   const phoneticHint =
     pronunciationRevealed && els.phoneticText.textContent !== '（暫無音標）'
@@ -354,6 +455,15 @@ function showSessionComplete() {
     b.disabled = true;
     b.textContent = '';
   });
+  els.imageOptionButtons.forEach((b) => {
+    b.disabled = true;
+    b.classList.remove('correct', 'wrong');
+    const img = b.querySelector('img');
+    if (img) {
+      img.src = '';
+      img.alt = '';
+    }
+  });
 
   const total = vocabulary.sessionTotal;
   alert(`本次共 ${total} 題，答對 ${correctCount} 題。\n得分：${correctCount} / ${total}`);
@@ -393,12 +503,16 @@ async function init() {
   });
 
   updateLevelInfo();
+  updateSetupForMode();
   showScreen('setup');
 }
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 els.levelSelect?.addEventListener('change', updateLevelInfo);
+document.querySelectorAll('input[name="mode"]').forEach((input) => {
+  input.addEventListener('change', updateLevelInfo);
+});
 els.questionSlider?.addEventListener('input', () => {
   els.questionCountText.textContent = `${els.questionSlider.value} 題`;
 });
@@ -424,6 +538,7 @@ els.answerInput?.addEventListener('keydown', (e) => {
   }
 });
 els.optionButtons.forEach((btn) => btn.addEventListener('click', onOptionClick));
+els.imageOptionButtons.forEach((btn) => btn.addEventListener('click', onImageOptionClick));
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});

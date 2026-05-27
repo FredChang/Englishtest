@@ -14,10 +14,12 @@ function normalizeText(value) {
 export class VocabularyService {
   constructor() {
     this._items = [];
+    this._imagePoolIndices = [];
     this._sessionQueue = [];
     this._currentLevel = 'B1';
     this._sessionPosition = 0;
     this.sessionTotal = 0;
+    this._sessionMode = 'default';
   }
 
   get currentLevel() {
@@ -26,6 +28,10 @@ export class VocabularyService {
 
   get countForCurrentLevel() {
     return this._getPoolIndices().length;
+  }
+
+  get countWithImagesForCurrentLevel() {
+    return this._getImagePoolIndices().length;
   }
 
   get sessionAnswered() {
@@ -48,8 +54,9 @@ export class VocabularyService {
     return counts;
   }
 
-  async load(wordsUrl = 'words.json') {
+  async load(wordsUrl = 'words.json', imageVocabUrl = 'image-vocab.json') {
     this._items = [];
+    this._imagePoolIndices = [];
     this.clearSession();
 
     try {
@@ -68,34 +75,99 @@ export class VocabularyService {
           item.Level = normalizeLevel(item.Level);
           this._items.push(item);
         }
-        if (this._items.length > 0) return;
       }
     } catch {
       // fall through to defaults
     }
 
-    this._items = [
-      { Level: 'A1', Chinese: '蘋果', English: ['apple'] },
-      { Level: 'A1', Chinese: '書', English: ['book'] },
-      { Level: 'A1', Chinese: '水', English: ['water'] },
-      { Level: 'A2', Chinese: '電腦', English: ['computer'] },
-      { Level: 'B1', Chinese: '重要', English: ['important'] },
-      { Level: 'B2', Chinese: '股票', English: ['stock'] }
-    ];
+    if (this._items.length === 0) {
+      this._items = [
+        { Level: 'A1', Chinese: '蘋果', English: ['apple'] },
+        { Level: 'A1', Chinese: '書', English: ['book'] },
+        { Level: 'A1', Chinese: '水', English: ['water'] },
+        { Level: 'A2', Chinese: '電腦', English: ['computer'] },
+        { Level: 'B1', Chinese: '重要', English: ['important'] },
+        { Level: 'B2', Chinese: '股票', English: ['stock'] }
+      ];
+    }
+
+    await this._loadImageVocab(imageVocabUrl);
+  }
+
+  async _loadImageVocab(imageVocabUrl) {
+    this._imagePoolIndices = [];
+    let imageList = [];
+    try {
+      const res = await fetch(imageVocabUrl);
+      if (res.ok) imageList = await res.json();
+    } catch {
+      return;
+    }
+    if (!Array.isArray(imageList)) return;
+
+    const byEnglish = new Map();
+    for (let i = 0; i < this._items.length; i++) {
+      const key = normalizeText(primaryEnglish(this._items[i]));
+      if (key) byEnglish.set(key, i);
+    }
+
+    for (const entry of imageList) {
+      const url = entry?.ImageUrl?.trim();
+      if (!url || !Array.isArray(entry.English)) continue;
+
+      const key = normalizeText(primaryEnglish(entry));
+      if (!key) continue;
+
+      const level = normalizeLevel(entry.Level);
+      const idx = byEnglish.get(key);
+      if (idx !== undefined) {
+        this._items[idx].ImageUrl = url;
+      } else {
+        const item = {
+          Level: level,
+          Chinese: entry.Chinese?.trim() || '',
+          English: entry.English.filter((e) => e && String(e).trim()),
+          ImageUrl: url,
+          Phonetic: entry.Phonetic || ''
+        };
+        if (!item.English.length) continue;
+        const newIdx = this._items.push(item) - 1;
+        byEnglish.set(key, newIdx);
+      }
+    }
+
+    this._rebuildImagePool();
   }
 
   setLevel(level) {
     this._currentLevel = normalizeLevel(level);
+    this._rebuildImagePool();
   }
 
-  canStartSession(level, questionCount) {
-    this.setLevel(level);
-    return this._getPoolIndices().length > 0 && questionCount >= 1;
+  _rebuildImagePool() {
+    this._imagePoolIndices = [];
+    for (let i = 0; i < this._items.length; i++) {
+      const item = this._items[i];
+      if (
+        normalizeLevel(item.Level) === this._currentLevel &&
+        item.ImageUrl?.trim()
+      ) {
+        this._imagePoolIndices.push(i);
+      }
+    }
   }
 
-  startSession(level, questionCount) {
+  canStartSession(level, questionCount, mode = 'default') {
     this.setLevel(level);
-    const pool = this._getPoolIndices();
+    const poolSize =
+      mode === 'image' ? this._getImagePoolIndices().length : this._getPoolIndices().length;
+    return poolSize > 0 && questionCount >= 1;
+  }
+
+  startSession(level, questionCount, mode = 'default') {
+    this.setLevel(level);
+    this._sessionMode = mode;
+    const pool = mode === 'image' ? this._getImagePoolIndices() : this._getPoolIndices();
     if (pool.length === 0) {
       this.clearSession();
       return false;
@@ -143,6 +215,10 @@ export class VocabularyService {
   }
 
   getDistractors(correct, count = 3) {
+    if (this._sessionMode === 'image') {
+      return this.getImageDistractors(correct, count);
+    }
+
     const result = [];
     const usedChinese = new Set([normalizeText(correct.Chinese)]);
     const usedEnglish = new Set();
@@ -172,10 +248,32 @@ export class VocabularyService {
     return result;
   }
 
+  getImageDistractors(correct, count = 3) {
+    const result = [];
+    const usedEnglish = new Set();
+    for (const e of correct.English || []) usedEnglish.add(normalizeText(e));
+
+    const candidates = this._shuffle(
+      this._imagePoolIndices
+        .map((idx) => this._items[idx])
+        .filter((item) => item !== correct && item?.ImageUrl?.trim())
+    );
+
+    for (const item of candidates) {
+      if (result.length >= count) break;
+      const eng = normalizeText(primaryEnglish(item));
+      if (!eng || usedEnglish.has(eng)) continue;
+      usedEnglish.add(eng);
+      result.push(item);
+    }
+    return result;
+  }
+
   clearSession() {
     this._sessionQueue = [];
     this._sessionPosition = 0;
     this.sessionTotal = 0;
+    this._sessionMode = 'default';
   }
 
   _getPoolIndices() {
@@ -184,6 +282,10 @@ export class VocabularyService {
       if (normalizeLevel(this._items[i].Level) === this._currentLevel) pool.push(i);
     }
     return pool;
+  }
+
+  _getImagePoolIndices() {
+    return [...this._imagePoolIndices];
   }
 
   _shuffle(arr) {
@@ -202,4 +304,8 @@ export function lookupWord(item) {
   word = word.trim();
   const space = word.indexOf(' ');
   return space > 0 ? word.substring(0, space) : word;
+}
+
+export function imageUrl(item) {
+  return item?.ImageUrl?.trim() || '';
 }

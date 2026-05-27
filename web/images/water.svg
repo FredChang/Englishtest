@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="water">
+  <rect width="120" height="120" fill="#ecfeff" rx="12"/>
+  <path d="M60 24c-12 20-28 36-28 52a28 28 0 1 0 56 0c0-16-16-32-28-52z" fill="#0ea5e9"/>
+  <path d="M60 52c-6 10-14 18-14 24a14 14 0 1 0 28 0c0-6-8-14-14-24z" fill="#7dd3fc" opacity=".8"/>
+</svg>

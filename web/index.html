@@ -26,7 +26,7 @@
 
       <div class="card">
         <label class="field-label">測驗模式</label>
-        <div class="toggle-row">
+        <div class="toggle-row toggle-row-3">
           <label>
             <input type="radio" name="mode" value="typing" checked />
             <span class="toggle-card">✏️ 輸入作答</span>
@@ -35,10 +35,14 @@
             <input type="radio" name="mode" value="choice" />
             <span class="toggle-card">🔘 選擇題</span>
           </label>
+          <label>
+            <input type="radio" name="mode" value="image" />
+            <span class="toggle-card">🖼️ 圖像記憶</span>
+          </label>
         </div>
 
-        <label class="field-label">翻譯方向</label>
-        <div class="toggle-row">
+        <label class="field-label" id="direction-label">翻譯方向</label>
+        <div class="toggle-row" id="direction-row">
           <label>
             <input type="radio" name="direction" value="ctoE" checked />
             <span class="toggle-card">中 → 英</span>
@@ -208,6 +212,23 @@
             <button type="button" class="option-btn" data-index="1">B</button>
             <button type="button" class="option-btn" data-index="2">C</button>
             <button type="button" class="option-btn" data-index="3">D</button>
+          </div>
+        </div>
+
+        <div id="image-choice-panel" class="hidden">
+          <div class="image-option-grid">
+            <button type="button" class="image-option-btn" data-index="0" aria-label="選項 A">
+              <img src="" alt="" width="120" height="120" />
+            </button>
+            <button type="button" class="image-option-btn" data-index="1" aria-label="選項 B">
+              <img src="" alt="" width="120" height="120" />
+            </button>
+            <button type="button" class="image-option-btn" data-index="2" aria-label="選項 C">
+              <img src="" alt="" width="120" height="120" />
+            </button>
+            <button type="button" class="image-option-btn" data-index="3" aria-label="選項 D">
+              <img src="" alt="" width="120" height="120" />
+            </button>
           </div>
         </div>
 
