@@ -7,17 +7,78 @@ import {
   clearSavedGuideContent
 } from './guide-content.js';
 
-function rateFromSlider(value) {
-  return Math.max(0.5, Math.min(2, 1 + Number(value) * 0.125));
+function speedLabelFromRate(value) {
+  const v = Number(value);
+  return `${v.toFixed(1)}x`;
 }
 
-function speedLabelFromSlider(value) {
-  const v = Number(value);
-  if (v <= -5) return '很慢';
-  if (v <= -2) return '較慢';
-  if (v >= 5) return '很快';
-  if (v >= 2) return '較快';
-  return '正常';
+function classifyVoiceGender(voice) {
+  const name = (voice?.name || '').toLowerCase();
+  if (!name) return 'unknown';
+
+  const femaleTokens = [
+    'female',
+    'woman',
+    'girl',
+    'jenny',
+    'mary',
+    'susan',
+    'amy',
+    'emily',
+    'aria',
+    'sara',
+    'ava',
+    'victoria',
+    'karen',
+    'michelle',
+    'zoe'
+  ];
+  const maleTokens = [
+    'male',
+    'man',
+    'boy',
+    'david',
+    'jeff',
+    'tom',
+    'john',
+    'mark',
+    'paul',
+    'daniel',
+    'robert',
+    'james',
+    'george',
+    'sam',
+    'kenneth',
+    'roger',
+    'thomas'
+  ];
+
+  if (femaleTokens.some((t) => name.includes(t))) return 'female';
+  if (maleTokens.some((t) => name.includes(t))) return 'male';
+  return 'unknown';
+}
+
+function getEnglishVoices() {
+  const voices = window.speechSynthesis?.getVoices?.() || [];
+  // 盡量找英文語音（有些瀏覽器的 lang 資訊不完整，所以做寬鬆判斷）
+  return voices.filter((v) => {
+    const lang = (v.lang || '').toLowerCase();
+    const name = (v.name || '').toLowerCase();
+    return lang.startsWith('en') || name.includes('english') || name.includes('en-');
+  });
+}
+
+function getEnglishVoiceByGender(gender) {
+  const want = gender === 'male' ? 'male' : 'female';
+  const voices = getEnglishVoices();
+  if (!voices.length) return null;
+
+  const matched = voices.filter((v) => classifyVoiceGender(v) === want);
+  if (matched.length) return matched[0];
+
+  // 找不到符合性別就退回到已分類的其他性別，最後才用第一個
+  const anyGender = voices.filter((v) => classifyVoiceGender(v) !== 'unknown');
+  return anyGender[0] || voices[0] || null;
 }
 
 export function initGuideReading({ screens, showScreen }) {
@@ -33,6 +94,7 @@ export function initGuideReading({ screens, showScreen }) {
     clearSavedBtn: document.getElementById('guide-clear-saved-btn'),
     sourceText: document.getElementById('guide-source-text'),
     progressText: document.getElementById('guide-progress-text'),
+    voiceGenderSelect: document.getElementById('guide-voice-gender'),
     speedSlider: document.getElementById('guide-speed-slider'),
     speedLabel: document.getElementById('guide-speed-label'),
     segmentList: document.getElementById('guide-segment-list'),
@@ -144,7 +206,7 @@ export function initGuideReading({ screens, showScreen }) {
   }
 
   function updateSpeedLabel() {
-    els.speedLabel.textContent = speedLabelFromSlider(els.speedSlider.value);
+    els.speedLabel.textContent = speedLabelFromRate(els.speedSlider.value);
   }
 
   function updatePlayControls() {
@@ -169,15 +231,6 @@ export function initGuideReading({ screens, showScreen }) {
     }
   }
 
-  function getEnglishVoice() {
-    const voices = window.speechSynthesis?.getVoices() || [];
-    return (
-      voices.find((v) => v.lang.startsWith('en-US')) ||
-      voices.find((v) => v.lang.startsWith('en')) ||
-      null
-    );
-  }
-
   function speakCurrent() {
     if (!('speechSynthesis' in window)) {
       alert('此瀏覽器不支援語音朗讀。');
@@ -195,8 +248,9 @@ export function initGuideReading({ screens, showScreen }) {
 
     const utterance = new SpeechSynthesisUtterance(segments[currentIndex]);
     utterance.lang = 'en-US';
-    utterance.rate = rateFromSlider(els.speedSlider.value);
-    const voice = getEnglishVoice();
+    utterance.rate = Number(els.speedSlider.value);
+    const gender = els.voiceGenderSelect?.value || 'female';
+    const voice = getEnglishVoiceByGender(gender);
     if (voice) utterance.voice = voice;
 
     utterance.onend = () => {
@@ -331,7 +385,7 @@ export function initGuideReading({ screens, showScreen }) {
 
   if ('speechSynthesis' in window) {
     window.speechSynthesis.onvoiceschanged = () => {};
-    getEnglishVoice();
+    getEnglishVoiceByGender(els.voiceGenderSelect?.value || 'female');
   }
 
   updateSpeedLabel();
