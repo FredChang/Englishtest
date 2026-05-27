@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v5';
+const CACHE = 'englishtest-v6';
 const ASSETS = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const ASSETS = [
   './js/dictionary.js',
   './js/guide-content.js',
   './js/guide-reading.js',
+  './js/guide-generate.js',
   './words.json',
   './manifest.webmanifest',
   './icon.svg'

@@ -6,6 +6,7 @@ import {
   applyLoadedContent,
   clearSavedGuideContent
 } from './guide-content.js';
+import { generateGuideArticle } from './guide-generate.js';
 
 function speedLabelFromRate(value) {
   const v = Number(value);
@@ -86,6 +87,9 @@ export function initGuideReading({ screens, showScreen }) {
     openBtn: document.getElementById('guide-open-btn'),
     lastBtn: document.getElementById('guide-use-last-btn'),
     lastHint: document.getElementById('guide-last-hint'),
+    genLevel: document.getElementById('guide-gen-level'),
+    genCount: document.getElementById('guide-gen-count'),
+    genBtn: document.getElementById('guide-gen-btn'),
     fileInput: document.getElementById('guide-file-input'),
     pickFileBtn: document.getElementById('guide-pick-file-btn'),
     pasteArea: document.getElementById('guide-paste-area'),
@@ -328,6 +332,31 @@ export function initGuideReading({ screens, showScreen }) {
   });
 
   els.pickFileBtn?.addEventListener('click', () => els.fileInput?.click());
+
+  els.genBtn?.addEventListener('click', async () => {
+    const level = els.genLevel?.value || 'B1';
+    const count = Number(els.genCount?.value || 20);
+
+    els.genBtn.disabled = true;
+    const oldText = els.genBtn.textContent;
+    els.genBtn.textContent = '產生中…';
+    try {
+      const article = await generateGuideArticle({
+        level,
+        sentenceCount: count,
+        wordsUrl: 'words.json'
+      });
+
+      loadFromText(article.fullText, {
+        sourceLabel: `隨機文章 ${article.level} · ${article.sentenceCount} 句`
+      });
+    } catch {
+      alert('產生文章失敗，請再試一次。');
+    } finally {
+      els.genBtn.textContent = oldText;
+      els.genBtn.disabled = false;
+    }
+  });
 
   els.fileInput?.addEventListener('change', async () => {
     const file = els.fileInput.files?.[0];

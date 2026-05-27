@@ -382,6 +382,24 @@ button {
   margin-top: 16px;
 }
 
+.guide-gen-row {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 6px;
+}
+
+#guide-gen-count {
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 0 12px;
+  background: #fff;
+  width: 100%;
+}
+
 .guide-controls-card {
   margin-bottom: 12px;
 }
