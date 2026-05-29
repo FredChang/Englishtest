@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="coastline">
+  <rect width="120" height="120" fill="#fff" rx="8"/>
+  <rect x="0" y="0" width="120" height="52" fill="#7dd3fc"/>
+  <circle cx="92" cy="22" r="12" fill="#fde047" stroke="#111" stroke-width="2"/>
+  <path d="M0 52 Q30 68 60 52 T120 52 V120 H0Z" fill="#fbbf24" stroke="#111" stroke-width="2.5"/>
+  <path d="M0 68h120" stroke="#38bdf8" stroke-width="8" opacity=".9"/>
+  <path d="M8 76c8 4 16 2 24-2M88 80c6 3 12 2 18-2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v8';
+const CACHE = 'englishtest-v10';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -14,20 +14,25 @@ const PRECACHE_ASSETS = [
   './words.json',
   './image-vocab.json',
   './manifest.webmanifest',
-  './icon.svg',
-  './images/apple.svg',
-  './images/book.svg',
-  './images/water.svg',
-  './images/cat.svg',
-  './images/dog.svg',
-  './images/house.svg',
-  './images/bird.svg',
-  './images/milk.svg',
-  './images/egg.svg',
-  './images/fish.svg',
-  './images/car.svg',
-  './images/tree.svg'
+  './icon.svg'
 ];
+
+/** 從 image-vocab.json 讀取所有圖片路徑，支援 png/jpg/webp/svg 等格式 */
+async function loadImageAssets() {
+  try {
+    const res = await fetch('./image-vocab.json', { cache: 'no-store' });
+    if (!res.ok) return [];
+    const list = await res.json();
+    if (!Array.isArray(list)) return [];
+
+    return list
+      .map((item) => item?.ImageUrl)
+      .filter((url) => typeof url === 'string' && url.trim())
+      .map((url) => `./${url.replace(/^\.?\//, '')}`);
+  } catch {
+    return [];
+  }
+}
 
 function isWordsJsonRequest(request) {
   try {
@@ -83,10 +88,12 @@ async function cacheFirst(request) {
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches
-      .open(CACHE)
-      .then((cache) => cache.addAll(PRECACHE_ASSETS))
-      .then(() => self.skipWaiting())
+    (async () => {
+      const cache = await caches.open(CACHE);
+      const imageAssets = await loadImageAssets();
+      await cache.addAll([...PRECACHE_ASSETS, ...imageAssets]);
+      await self.skipWaiting();
+    })()
   );
 });
 

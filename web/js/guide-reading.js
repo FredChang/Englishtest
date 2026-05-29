@@ -13,14 +13,22 @@ function speedLabelFromRate(value) {
   return `${v.toFixed(1)}x`;
 }
 
+/** 以單字邊界比對，避免 "david" 誤判含 "ava"、"female" 誤判含 "male" */
+function voiceNameHasWord(name, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?:^|[^a-z])${escaped}(?:[^a-z]|$)`, 'i').test(name);
+}
+
 function classifyVoiceGender(voice) {
   const name = (voice?.name || '').toLowerCase();
   if (!name) return 'unknown';
 
-  const femaleTokens = [
+  const femaleWords = [
     'female',
     'woman',
     'girl',
+    'zira',
+    'hazel',
     'jenny',
     'mary',
     'susan',
@@ -32,9 +40,15 @@ function classifyVoiceGender(voice) {
     'victoria',
     'karen',
     'michelle',
-    'zoe'
+    'zoe',
+    'samantha',
+    'linda',
+    'helen',
+    'catherine',
+    'moira',
+    'fiona'
   ];
-  const maleTokens = [
+  const maleWords = [
     'male',
     'man',
     'boy',
@@ -48,14 +62,20 @@ function classifyVoiceGender(voice) {
     'robert',
     'james',
     'george',
-    'sam',
     'kenneth',
     'roger',
-    'thomas'
+    'thomas',
+    'guy',
+    'ryan',
+    'richard',
+    'christopher',
+    'martin',
+    'liam',
+    'aaron'
   ];
 
-  if (femaleTokens.some((t) => name.includes(t))) return 'female';
-  if (maleTokens.some((t) => name.includes(t))) return 'male';
+  if (femaleWords.some((w) => voiceNameHasWord(name, w))) return 'female';
+  if (maleWords.some((w) => voiceNameHasWord(name, w))) return 'male';
   return 'unknown';
 }
 
@@ -69,17 +89,46 @@ function getEnglishVoices() {
   });
 }
 
-function getEnglishVoiceByGender(gender) {
-  const want = gender === 'male' ? 'male' : 'female';
-  const voices = getEnglishVoices();
-  if (!voices.length) return null;
+const voiceCacheByGender = { male: null, female: null };
 
+function pickVoiceForGender(voices, want) {
   const matched = voices.filter((v) => classifyVoiceGender(v) === want);
   if (matched.length) return matched[0];
 
-  // 找不到符合性別就退回到已分類的其他性別，最後才用第一個
-  const anyGender = voices.filter((v) => classifyVoiceGender(v) !== 'unknown');
-  return anyGender[0] || voices[0] || null;
+  // 語音名稱含 Female/Male 但未被 token 規則辨識時
+  const labelMatch = voices.filter((v) => {
+    const n = (v.name || '').toLowerCase();
+    return want === 'female' ? voiceNameHasWord(n, 'female') : voiceNameHasWord(n, 'male');
+  });
+  if (labelMatch.length) return labelMatch[0];
+
+  return null;
+}
+
+function getEnglishVoiceByGender(gender) {
+  const want = gender === 'male' ? 'male' : 'female';
+  if (voiceCacheByGender[want]) return voiceCacheByGender[want];
+
+  const voices = getEnglishVoices();
+  if (!voices.length) return null;
+
+  let voice = pickVoiceForGender(voices, want);
+
+  // 仍找不到時：用「未分類」語音，但絕不回退到相反性別
+  if (!voice) {
+    const unknown = voices.filter((v) => classifyVoiceGender(v) === 'unknown');
+    voice = unknown[0] || null;
+  }
+
+  if (voice) voiceCacheByGender[want] = voice;
+  return voice;
+}
+
+function refreshVoiceCache() {
+  voiceCacheByGender.male = null;
+  voiceCacheByGender.female = null;
+  getEnglishVoiceByGender('female');
+  getEnglishVoiceByGender('male');
 }
 
 export function initGuideReading({ screens, showScreen }) {
@@ -413,8 +462,8 @@ export function initGuideReading({ screens, showScreen }) {
   els.stopBtn?.addEventListener('click', () => stopReading(true));
 
   if ('speechSynthesis' in window) {
-    window.speechSynthesis.onvoiceschanged = () => {};
-    getEnglishVoiceByGender(els.voiceGenderSelect?.value || 'female');
+    window.speechSynthesis.onvoiceschanged = refreshVoiceCache;
+    refreshVoiceCache();
   }
 
   updateSpeedLabel();

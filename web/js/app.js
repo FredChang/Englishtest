@@ -93,8 +93,8 @@ function updateLevelInfo() {
   if (imageMode) {
     els.levelPoolText.textContent =
       available > 0
-        ? `圖像記憶：此難度共有 ${available} 個配有圖片的單字（目前示範為 A1 名詞）`
-        : '此難度尚無圖像單字，請選 A1 或換模式';
+        ? `圖像記憶：此難度共有 ${available} 個配有圖片的單字`
+        : '此難度尚無圖像單字，請選 A1／B1 或換模式';
   } else {
     els.levelPoolText.textContent =
       available > 0
@@ -125,7 +125,7 @@ function startQuiz() {
   if (!vocabulary.canStartSession(settings.level, settings.questionCount, sessionMode)) {
     alert(
       isImage
-        ? '無法建立挑戰，請確認該難度有配圖單字（目前請選 A1）。'
+        ? '無法建立挑戰，請確認該難度有配圖單字（請選 A1 或 B1）。'
         : '無法建立挑戰，請確認該難度有足夠單字。'
     );
     return;
@@ -138,7 +138,7 @@ function startQuiz() {
   if ((settings.mode === 'choice' || isImage) && poolSize < 4) {
     alert(
       isImage
-        ? '圖像記憶至少需要 4 個配圖單字，請選 A1。'
+        ? '圖像記憶至少需要 4 個配圖單字，請選 A1 或 B1。'
         : '選擇題模式至少需要 4 個單字，請換難度或改用輸入模式。'
     );
     return;

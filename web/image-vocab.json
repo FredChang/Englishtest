@@ -10,5 +10,15 @@
   { "Level": "A1", "English": ["egg"], "ImageUrl": "images/egg.svg" },
   { "Level": "A1", "English": ["fish"], "ImageUrl": "images/fish.svg" },
   { "Level": "A1", "English": ["car"], "ImageUrl": "images/car.svg" },
-  { "Level": "A1", "English": ["tree"], "ImageUrl": "images/tree.svg" }
+  { "Level": "A1", "English": ["tree"], "ImageUrl": "images/tree.svg" },
+  { "Level": "B1", "English": ["atlas"], "ImageUrl": "images/b1-atlas.svg" },
+  { "Level": "B1", "English": ["campsite"], "ImageUrl": "images/b1-campsite.svg" },
+  { "Level": "B1", "English": ["desert"], "ImageUrl": "images/b1-desert.svg" },
+  { "Level": "B1", "English": ["coastline"], "ImageUrl": "images/b1-coastline.svg" },
+  { "Level": "B1", "English": ["countryside"], "ImageUrl": "images/b1-countryside.svg" },
+  { "Level": "B1", "English": ["canal"], "ImageUrl": "images/b1-canal.svg" },
+  { "Level": "B1", "English": ["carriage"], "ImageUrl": "images/b1-carriage.svg" },
+  { "Level": "B1", "English": ["cliff"], "ImageUrl": "images/b1-cliff.svg" },
+  { "Level": "B1", "English": ["cave"], "ImageUrl": "images/b1-cave.svg" },
+  { "Level": "B1", "English": ["destination"], "ImageUrl": "images/b1-destination.svg" }
 ]
