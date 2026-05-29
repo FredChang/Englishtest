@@ -1,24 +1,534 @@
 [
-  { "Level": "A1", "English": ["apple"], "ImageUrl": "images/apple.svg" },
-  { "Level": "A1", "English": ["book"], "ImageUrl": "images/book.svg" },
-  { "Level": "A1", "English": ["water"], "ImageUrl": "images/water.svg" },
-  { "Level": "A1", "English": ["cat"], "ImageUrl": "images/cat.svg" },
-  { "Level": "A1", "English": ["dog"], "ImageUrl": "images/dog.svg" },
-  { "Level": "A1", "English": ["house"], "ImageUrl": "images/house.svg" },
-  { "Level": "A1", "English": ["bird"], "ImageUrl": "images/bird.svg" },
-  { "Level": "A1", "English": ["milk"], "ImageUrl": "images/milk.svg" },
-  { "Level": "A1", "English": ["egg"], "ImageUrl": "images/egg.svg" },
-  { "Level": "A1", "English": ["fish"], "ImageUrl": "images/fish.svg" },
-  { "Level": "A1", "English": ["car"], "ImageUrl": "images/car.svg" },
-  { "Level": "A1", "English": ["tree"], "ImageUrl": "images/tree.svg" },
-  { "Level": "B1", "English": ["atlas"], "ImageUrl": "images/b1-atlas.svg" },
-  { "Level": "B1", "English": ["campsite"], "ImageUrl": "images/b1-campsite.svg" },
-  { "Level": "B1", "English": ["desert"], "ImageUrl": "images/b1-desert.svg" },
-  { "Level": "B1", "English": ["coastline"], "ImageUrl": "images/b1-coastline.svg" },
-  { "Level": "B1", "English": ["countryside"], "ImageUrl": "images/b1-countryside.svg" },
-  { "Level": "B1", "English": ["canal"], "ImageUrl": "images/b1-canal.svg" },
-  { "Level": "B1", "English": ["carriage"], "ImageUrl": "images/b1-carriage.svg" },
-  { "Level": "B1", "English": ["cliff"], "ImageUrl": "images/b1-cliff.svg" },
-  { "Level": "B1", "English": ["cave"], "ImageUrl": "images/b1-cave.svg" },
-  { "Level": "B1", "English": ["destination"], "ImageUrl": "images/b1-destination.svg" }
+  {
+    "Level": "A1",
+    "English": [
+      "apple"
+    ],
+    "ImageUrl": "images/apple.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "book"
+    ],
+    "ImageUrl": "images/book.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "water"
+    ],
+    "ImageUrl": "images/water.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "cat"
+    ],
+    "ImageUrl": "images/cat.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "dog"
+    ],
+    "ImageUrl": "images/dog.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "house"
+    ],
+    "ImageUrl": "images/house.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "bird"
+    ],
+    "ImageUrl": "images/bird.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "milk"
+    ],
+    "ImageUrl": "images/milk.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "egg"
+    ],
+    "ImageUrl": "images/egg.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "fish"
+    ],
+    "ImageUrl": "images/fish.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "car"
+    ],
+    "ImageUrl": "images/car.svg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "tree"
+    ],
+    "ImageUrl": "images/tree.svg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "atlas"
+    ],
+    "ImageUrl": "images/b1-atlas.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "campsite"
+    ],
+    "ImageUrl": "images/b1-campsite.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "desert"
+    ],
+    "ImageUrl": "images/b1-desert.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "coastline"
+    ],
+    "ImageUrl": "images/b1-coastline.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "countryside"
+    ],
+    "ImageUrl": "images/b1-countryside.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "canal"
+    ],
+    "ImageUrl": "images/b1-canal.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "carriage"
+    ],
+    "ImageUrl": "images/b1-carriage.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cliff"
+    ],
+    "ImageUrl": "images/b1-cliff.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cave"
+    ],
+    "ImageUrl": "images/b1-cave.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "destination"
+    ],
+    "ImageUrl": "images/b1-destination.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "abandon"
+    ],
+    "ImageUrl": "images/b1-abandon.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "achievement"
+    ],
+    "ImageUrl": "images/b1-achievement.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "acknowledge"
+    ],
+    "ImageUrl": "images/b1-acknowledge.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "adjust"
+    ],
+    "ImageUrl": "images/b1-adjust.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "administer"
+    ],
+    "ImageUrl": "images/b1-administer.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "affluence"
+    ],
+    "ImageUrl": "images/b1-affluence.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "ambition"
+    ],
+    "ImageUrl": "images/b1-ambition.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anxiety"
+    ],
+    "ImageUrl": "images/b1-anxiety.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "apologize"
+    ],
+    "ImageUrl": "images/b1-apologize.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assault"
+    ],
+    "ImageUrl": "images/b1-assault.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assume"
+    ],
+    "ImageUrl": "images/b1-assume.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "attend"
+    ],
+    "ImageUrl": "images/b1-attend.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "avoid"
+    ],
+    "ImageUrl": "images/b1-avoid.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "catastrophe"
+    ],
+    "ImageUrl": "images/b1-catastrophe.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "collaborate"
+    ],
+    "ImageUrl": "images/b1-collaborate.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "commit"
+    ],
+    "ImageUrl": "images/b1-commit.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "concentrate"
+    ],
+    "ImageUrl": "images/b1-concentrate.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "confidence"
+    ],
+    "ImageUrl": "images/b1-confidence.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "contaminate"
+    ],
+    "ImageUrl": "images/b1-contaminate.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "contribute"
+    ],
+    "ImageUrl": "images/b1-contribute.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "control"
+    ],
+    "ImageUrl": "images/b1-control.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "creativity"
+    ],
+    "ImageUrl": "images/b1-creativity.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "curiosity"
+    ],
+    "ImageUrl": "images/b1-curiosity.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "demographics"
+    ],
+    "ImageUrl": "images/b1-demographics.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "demonstrate"
+    ],
+    "ImageUrl": "images/b1-demonstrate.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "destitution"
+    ],
+    "ImageUrl": "images/b1-destitution.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "divert"
+    ],
+    "ImageUrl": "images/b1-divert.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "enhance"
+    ],
+    "ImageUrl": "images/b1-enhance.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "enlarge"
+    ],
+    "ImageUrl": "images/b1-enlarge.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "envision"
+    ],
+    "ImageUrl": "images/b1-envision.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "guard"
+    ],
+    "ImageUrl": "images/b1-guard.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "guide"
+    ],
+    "ImageUrl": "images/b1-guide.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "hazard"
+    ],
+    "ImageUrl": "images/b1-hazard.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "honor"
+    ],
+    "ImageUrl": "images/b1-honor.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "intimate"
+    ],
+    "ImageUrl": "images/b1-intimate.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "levy"
+    ],
+    "ImageUrl": "images/b1-levy.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "liability"
+    ],
+    "ImageUrl": "images/b1-liability.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "migrant"
+    ],
+    "ImageUrl": "images/b1-migrant.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "neglect"
+    ],
+    "ImageUrl": "images/b1-neglect.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "organize"
+    ],
+    "ImageUrl": "images/b1-organize.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "pardon"
+    ],
+    "ImageUrl": "images/b1-pardon.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "persevere"
+    ],
+    "ImageUrl": "images/b1-persevere.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "persuade"
+    ],
+    "ImageUrl": "images/b1-persuade.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "preserve"
+    ],
+    "ImageUrl": "images/b1-preserve.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "reduce"
+    ],
+    "ImageUrl": "images/b1-reduce.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "refresh"
+    ],
+    "ImageUrl": "images/b1-refresh.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "reject"
+    ],
+    "ImageUrl": "images/b1-reject.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "reuse"
+    ],
+    "ImageUrl": "images/b1-reuse.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "rival"
+    ],
+    "ImageUrl": "images/b1-rival.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "safety"
+    ],
+    "ImageUrl": "images/b1-safety.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "schedule"
+    ],
+    "ImageUrl": "images/b1-schedule.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "substitute"
+    ],
+    "ImageUrl": "images/b1-substitute.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "suspect"
+    ],
+    "ImageUrl": "images/b1-suspect.jpg"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "undermine"
+    ],
+    "ImageUrl": "images/b1-undermine.jpg"
+  }
 ]

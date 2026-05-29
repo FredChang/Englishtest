@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="cave">
-  <rect width="120" height="120" fill="#fff" rx="8"/>
-  <path d="M0 52 Q60 8 120 52 V120 H0Z" fill="#78716c" stroke="#111" stroke-width="2.5"/>
-  <path d="M32 52 Q60 28 88 52 V120 H32Z" fill="#44403c" stroke="#111" stroke-width="2"/>
-  <ellipse cx="60" cy="72" rx="18" ry="24" fill="#1c1917"/>
-  <circle cx="52" cy="64" r="3" fill="#fde047"/>
-  <circle cx="68" cy="70" r="2" fill="#fde047" opacity=".7"/>
-</svg>
