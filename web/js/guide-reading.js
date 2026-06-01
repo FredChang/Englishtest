@@ -7,48 +7,102 @@ import {
   clearSavedGuideContent
 } from './guide-content.js';
 import { generateGuideArticle } from './guide-generate.js';
-import {
-  shouldUseCloudTts,
-  cloudVoiceLabel,
-  speakCloudText,
-  stopCloudSpeech,
-  pauseCloudSpeech,
-  resumeCloudSpeech
-} from './cloud-tts.js';
 
 function speedLabelFromRate(value) {
   const v = Number(value);
   return `${v.toFixed(1)}x`;
 }
 
-function applySpeechVoice(utterance, gender) {
-  const voices = window.speechSynthesis?.getVoices?.() || [];
+function voiceNameHasWord(name, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?:^|[^a-z])${escaped}(?:[^a-z]|$)`, 'i').test(name);
+}
+
+function classifyVoiceGender(voice) {
+  const text = `${voice?.name || ''} ${voice?.voiceURI || ''}`.toLowerCase();
+  if (!text.trim()) return 'unknown';
+  if (/female|woman|girl|女|samantha|zira|hazel|jenny|amy|emma|aria|karen|victoria/i.test(text)) {
+    return 'female';
+  }
+  if (/male|man|boy|男|daniel|brian|david|mark|james|guy|alex|fred|tom|john/i.test(text)) {
+    if (!voiceNameHasWord(text, 'female')) return 'male';
+  }
+  return 'unknown';
+}
+
+function getVoices() {
+  return window.speechSynthesis?.getVoices?.() || [];
+}
+
+function pickVoiceForGender(gender) {
   const want = gender === 'male' ? 'male' : 'female';
-  const nameMatch = want === 'male' ? /\bmale\b|daniel|brian|david|mark|james|guy|alex|fred/i : /\bfemale\b|samantha|zira|hazel|karen|aria|jenny|amy|emma/i;
+  const voices = getVoices();
+  if (!voices.length) return null;
 
-  const picked =
-    voices.find((v) => nameMatch.test(v.name || '')) ||
-    voices.find((v) => (v.lang || '').toLowerCase().startsWith('en'));
+  const english = voices.filter((v) => {
+    const lang = (v.lang || '').toLowerCase().replace(/_/g, '-');
+    const name = (v.name || '').toLowerCase();
+    return lang.startsWith('en') || name.includes('english') || name.includes('英文');
+  });
+  const pool = english.length ? english : voices;
 
-  if (picked) {
-    utterance.voice = picked;
-    utterance.lang = (picked.lang || 'en-US').replace(/_/g, '-');
+  const matched = pool.filter((v) => classifyVoiceGender(v) === want);
+  if (matched.length) return matched[0];
+
+  if (want === 'male') {
+    const labelMale = pool.filter((v) => {
+      const n = (v.name || '').toLowerCase();
+      return voiceNameHasWord(n, 'male') && !voiceNameHasWord(n, 'female');
+    });
+    if (labelMale.length) return labelMale[0];
+
+    const notFemale = pool.filter((v) => classifyVoiceGender(v) !== 'female');
+    if (notFemale.length > 1) return notFemale[1];
+    if (notFemale.length) return notFemale[0];
   } else {
-    utterance.lang = want === 'male' ? 'en-GB' : 'en-US';
+    const labelFemale = pool.filter((v) => voiceNameHasWord((v.name || '').toLowerCase(), 'female'));
+    if (labelFemale.length) return labelFemale[0];
+  }
+
+  return pool[0];
+}
+
+function applyVoiceToUtterance(utterance, gender) {
+  const voice = pickVoiceForGender(gender);
+  if (voice) {
+    const fresh = getVoices().find((v) => v.voiceURI === voice.voiceURI) || voice;
+    utterance.voice = fresh;
+    utterance.lang = (fresh.lang || 'en-US').replace(/_/g, '-');
+  } else {
+    utterance.lang = gender === 'male' ? 'en-US' : 'en-US';
   }
 }
 
-function speakWithSynthesis(text, gender, rate) {
+function waitForVoices(timeoutMs = 1500) {
+  if (getVoices().length) return Promise.resolve(getVoices());
+  return new Promise((resolve) => {
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      resolve(getVoices());
+    };
+    window.speechSynthesis.onvoiceschanged = finish;
+    window.speechSynthesis.getVoices();
+    setTimeout(finish, timeoutMs);
+  });
+}
+
+function speakText(text, gender, rate) {
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('此瀏覽器不支援語音朗讀。'));
       return;
     }
 
-    window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = rate;
-    applySpeechVoice(utterance, gender);
+    applyVoiceToUtterance(utterance, gender);
 
     utterance.onend = () => resolve();
     utterance.onerror = () => reject(new Error('語音播放失敗。'));
@@ -74,7 +128,6 @@ export function initGuideReading({ screens, showScreen }) {
     sourceText: document.getElementById('guide-source-text'),
     progressText: document.getElementById('guide-progress-text'),
     voiceGenderSelect: document.getElementById('guide-voice-gender'),
-    voiceHint: document.getElementById('guide-voice-hint'),
     speedSlider: document.getElementById('guide-speed-slider'),
     speedLabel: document.getElementById('guide-speed-label'),
     segmentList: document.getElementById('guide-segment-list'),
@@ -90,17 +143,7 @@ export function initGuideReading({ screens, showScreen }) {
   let currentIndex = 0;
   let isPlaying = false;
   let isPaused = false;
-  let useCloud = shouldUseCloudTts();
-
-  function updateVoiceHint() {
-    if (!els.voiceHint) return;
-    const gender = els.voiceGenderSelect?.value || 'female';
-    if (useCloud) {
-      els.voiceHint.textContent = `手機版使用雲端 ${cloudVoiceLabel(gender)}，需網路。`;
-      return;
-    }
-    els.voiceHint.textContent = '電腦版使用瀏覽器內建語音。';
-  }
+  let cancelBeforeSpeak = true;
 
   function updateLastButton() {
     const has = hasSavedGuideContent();
@@ -127,13 +170,11 @@ export function initGuideReading({ screens, showScreen }) {
     sourceLabel = result.sourceLabel;
     currentIndex = 0;
     isPaused = false;
-    useCloud = shouldUseCloudTts();
 
     els.sourceText.textContent = `來源：${sourceLabel} · 共 ${segments.length} 句`;
     renderSegmentList(-1);
     updateProgressText();
     updatePlayControls();
-    updateVoiceHint();
     showScreen('guidePlay');
   }
 
@@ -224,19 +265,13 @@ export function initGuideReading({ screens, showScreen }) {
     }
   }
 
-  async function speakSegment(text) {
-    const gender = els.voiceGenderSelect?.value || 'female';
-    const rate = Number(els.speedSlider.value);
-
-    if (useCloud) {
-      await speakCloudText(text, gender, { rate });
+  async function speakCurrent() {
+    if (!('speechSynthesis' in window)) {
+      alert('此瀏覽器不支援語音朗讀。');
+      stopReading(true);
       return;
     }
 
-    await speakWithSynthesis(text, gender, rate);
-  }
-
-  async function speakCurrent() {
     if (currentIndex >= segments.length) {
       finishReading();
       return;
@@ -245,8 +280,16 @@ export function initGuideReading({ screens, showScreen }) {
     renderSegmentList(currentIndex);
     updateProgressText();
 
+    const gender = els.voiceGenderSelect?.value || 'female';
+    const rate = Number(els.speedSlider.value);
+
+    if (cancelBeforeSpeak) {
+      window.speechSynthesis.cancel();
+      cancelBeforeSpeak = false;
+    }
+
     try {
-      await speakSegment(segments[currentIndex]);
+      await speakText(segments[currentIndex], gender, rate);
     } catch (err) {
       if (isPlaying) {
         alert(err?.message || '語音播放失敗。');
@@ -266,9 +309,12 @@ export function initGuideReading({ screens, showScreen }) {
     speakCurrent();
   }
 
-  function startReading() {
+  async function startReading() {
     if (!segments.length) return;
     if (currentIndex >= segments.length) currentIndex = 0;
+
+    await waitForVoices();
+    cancelBeforeSpeak = true;
 
     isPlaying = true;
     isPaused = false;
@@ -278,21 +324,18 @@ export function initGuideReading({ screens, showScreen }) {
 
   function pauseReading() {
     if (!isPlaying || isPaused) return;
-
-    if (useCloud) pauseCloudSpeech();
-    else window.speechSynthesis.cancel();
-
+    window.speechSynthesis.cancel();
     isPlaying = false;
     isPaused = true;
+    cancelBeforeSpeak = true;
     updatePlayControls();
   }
 
   function stopReading(resetIndex) {
-    if (useCloud) stopCloudSpeech();
-    else window.speechSynthesis?.cancel();
-
+    window.speechSynthesis?.cancel();
     isPlaying = false;
     isPaused = false;
+    cancelBeforeSpeak = true;
 
     if (resetIndex) {
       currentIndex = 0;
@@ -311,13 +354,8 @@ export function initGuideReading({ screens, showScreen }) {
   function resumeReading() {
     isPaused = false;
     isPlaying = true;
+    cancelBeforeSpeak = true;
     updatePlayControls();
-
-    if (useCloud) {
-      resumeCloudSpeech().catch(() => speakCurrent());
-      return;
-    }
-
     speakCurrent();
   }
 
@@ -409,8 +447,6 @@ export function initGuideReading({ screens, showScreen }) {
 
   els.speedSlider?.addEventListener('input', updateSpeedLabel);
 
-  els.voiceGenderSelect?.addEventListener('change', updateVoiceHint);
-
   els.playBtn?.addEventListener('click', () => {
     if (isPaused) resumeReading();
     else if (!isPlaying) startReading();
@@ -419,9 +455,14 @@ export function initGuideReading({ screens, showScreen }) {
   els.pauseBtn?.addEventListener('click', pauseReading);
   els.stopBtn?.addEventListener('click', () => stopReading(true));
 
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => {
+      window.speechSynthesis.getVoices();
+    };
+  }
+
   updateSpeedLabel();
   updateLastButton();
-  updateVoiceHint();
 
   return { showLoadScreen, stopReading: () => stopReading(true) };
 }
