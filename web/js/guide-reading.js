@@ -71,10 +71,15 @@ function applyVoiceToUtterance(utterance, gender) {
   const voice = pickVoiceForGender(gender);
   if (voice) {
     const fresh = getVoices().find((v) => v.voiceURI === voice.voiceURI) || voice;
-    utterance.voice = fresh;
-    utterance.lang = (fresh.lang || 'en-US').replace(/_/g, '-');
+    try {
+      utterance.voice = fresh;
+      utterance.lang = (fresh.lang || 'en-US').replace(/_/g, '-');
+    } catch (e) {
+      console.warn('Failed to set voice, using default:', e);
+      utterance.lang = 'en-US';
+    }
   } else {
-    utterance.lang = gender === 'male' ? 'en-US' : 'en-US';
+    utterance.lang = 'en-US';
   }
 }
 
@@ -93,7 +98,9 @@ function waitForVoices(timeoutMs = 1500) {
   });
 }
 
-function speakText(text, gender, rate) {
+async function speakText(text, gender, rate) {
+  await waitForVoices();
+
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('此瀏覽器不支援語音朗讀。'));
@@ -105,7 +112,11 @@ function speakText(text, gender, rate) {
     applyVoiceToUtterance(utterance, gender);
 
     utterance.onend = () => resolve();
-    utterance.onerror = () => reject(new Error('語音播放失敗。'));
+    utterance.onerror = (event) => {
+      console.error('TTS error:', event);
+      const errorDetails = event.error || event.message || JSON.stringify(event);
+      reject(new Error(`語音播放失敗：${errorDetails}`));
+    };
 
     window.speechSynthesis.speak(utterance);
   });

@@ -40,6 +40,9 @@ export function speak(text, lang = 'en-US') {
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.trim());
   u.lang = lang;
+  u.onerror = (event) => {
+    console.error('TTS error in dictionary:', event);
+  };
   window.speechSynthesis.speak(u);
 }
 
