@@ -593,12 +593,25 @@ if ('serviceWorker' in navigator) {
 
 init();
 
-document.getElementById('guide-open-btn')?.addEventListener('click', () => {
-  if (guideReading?.showLoadScreen) {
-    guideReading.showLoadScreen();
-  } else if (screens.guideLoad) {
-    showScreen('guideLoad');
-  } else {
-    alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
-  }
-});
+const guideOpenBtn = document.getElementById('guide-open-btn');
+console.log('Guide open button found:', !!guideOpenBtn);
+console.log('Guide reading initialized:', !!guideReading);
+
+if (guideOpenBtn) {
+  guideOpenBtn.addEventListener('click', () => {
+    console.log('Guide open button clicked');
+    console.log('guideReading:', guideReading);
+    console.log('screens:', screens);
+    if (guideReading?.showLoadScreen) {
+      console.log('Calling guideReading.showLoadScreen()');
+      guideReading.showLoadScreen();
+    } else if (screens.guideLoad) {
+      console.log('Calling showScreen(guideLoad)');
+      showScreen('guideLoad');
+    } else {
+      alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
+    }
+  });
+} else {
+  console.error('guide-open-btn not found in DOM');
+}

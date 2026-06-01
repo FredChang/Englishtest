@@ -16,10 +16,6 @@ namespace Englishtest.Services
         public PronunciationService()
         {
             _dispatcher = Dispatcher.CurrentDispatcher;
-            catch
-            {
-                // 使用系統預設英文語音
-            }
         }
 
         public void SetVoice(string voiceName)
