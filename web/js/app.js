@@ -352,6 +352,11 @@ function onImageOptionClick(e) {
   els.imageOptionButtons[correctChoiceIndex]?.classList.add('correct');
   if (!isCorrect) btn.classList.add('wrong');
 
+  const chinese = current.Chinese?.trim() || '';
+  if (chinese) {
+    els.questionText.textContent = `${primaryEnglish(current)} — ${chinese}`;
+  }
+
   showFeedback(isCorrect, '', { imageMode: true });
 
   const word = lookupWord(current);
@@ -389,9 +394,11 @@ function showFeedback(isCorrect, correctDisplay, options = {}) {
   els.feedbackPanel.classList.add(isCorrect ? 'ok' : 'err');
 
   if (options.imageMode) {
+    const chinese = current?.Chinese?.trim() || '';
+    const chineseHint = chinese ? `　中文：${chinese}` : '';
     els.feedbackText.textContent = isCorrect
-      ? '✓ 正確！'
-      : '✗ 不正確，綠框為正確圖片。';
+      ? `✓ 正確！${chineseHint}`
+      : `✗ 不正確，綠框為正確圖片。${chineseHint}`;
     return;
   }
 
