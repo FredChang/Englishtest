@@ -371,7 +371,6 @@ export function initGuideReading({ screens, showScreen }) {
     window.speechSynthesis.cancel();
     isPlaying = false;
     isPaused = true;
-    cancelBeforeSpeak = true;
     updatePlayControls();
   }
 
@@ -379,7 +378,6 @@ export function initGuideReading({ screens, showScreen }) {
     window.speechSynthesis?.cancel();
     isPlaying = false;
     isPaused = false;
-    cancelBeforeSpeak = true;
 
     if (resetIndex) {
       currentIndex = 0;

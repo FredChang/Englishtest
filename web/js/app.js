@@ -596,12 +596,17 @@ init();
 const guideOpenBtn = document.getElementById('guide-open-btn');
 console.log('Guide open button found:', !!guideOpenBtn);
 console.log('Guide reading initialized:', !!guideReading);
+console.log('User agent:', navigator.userAgent);
 
 if (guideOpenBtn) {
-  guideOpenBtn.addEventListener('click', () => {
-    console.log('Guide open button clicked');
+  // Handle both click and touch events for mobile compatibility
+  const handleGuideOpen = (e) => {
+    e.preventDefault();
+    console.log('Guide open button triggered');
+    console.log('Event type:', e.type);
     console.log('guideReading:', guideReading);
     console.log('screens:', screens);
+
     if (guideReading?.showLoadScreen) {
       console.log('Calling guideReading.showLoadScreen()');
       guideReading.showLoadScreen();
@@ -609,9 +614,13 @@ if (guideOpenBtn) {
       console.log('Calling showScreen(guideLoad)');
       showScreen('guideLoad');
     } else {
+      console.error('Guide reading not available');
       alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
     }
-  });
+  };
+
+  guideOpenBtn.addEventListener('click', handleGuideOpen);
+  guideOpenBtn.addEventListener('touchend', handleGuideOpen);
 } else {
   console.error('guide-open-btn not found in DOM');
 }

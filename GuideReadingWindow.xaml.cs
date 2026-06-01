@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Speech.Synthesis;
@@ -24,11 +25,6 @@ namespace Englishtest
 
             if (!_content.LoadFromDefaultPath())
             {
-                MessageBox.Show(
-                    "找不到導讀內容（read.txt）。請確認檔案存在於程式目錄。",
-                    "無法開啟導讀",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Warning);
                 IsReady = false;
                 return;
             }

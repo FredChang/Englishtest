@@ -8,6 +8,7 @@
   "theme_color": "#2563eb",
   "orientation": "portrait",
   "lang": "zh-Hant",
+  "version": "1.4.3",
   "icons": [
     {
       "src": "icon.svg",
