@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.2.0';
+const CACHE = 'englishtest-v1.3.0';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -10,7 +10,7 @@ const PRECACHE_ASSETS = [
   './js/dictionary.js',
   './js/guide-content.js',
   './js/guide-reading.js',
-  './js/speech-voice.js',
+  './js/cloud-tts.js',
   './js/guide-generate.js',
   './js/version.js',
   './words.json',
@@ -110,6 +110,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  // 跨域請求（雲端 TTS、字典 API 等）不經 SW，避免攔截失敗
+  if (!isSameOrigin(event.request)) return;
 
   if (isWordsJsonRequest(event.request)) {
     event.respondWith(networkFirstWords(event.request));
