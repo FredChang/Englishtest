@@ -591,6 +591,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+init();
+
 document.getElementById('guide-open-btn')?.addEventListener('click', () => {
   if (guideReading?.showLoadScreen) {
     guideReading.showLoadScreen();
@@ -600,5 +602,3 @@ document.getElementById('guide-open-btn')?.addEventListener('click', () => {
     alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
   }
 });
-
-init();
