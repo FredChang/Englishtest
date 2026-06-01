@@ -40,6 +40,29 @@ export function speak(text, lang = 'en-US') {
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.trim());
   u.lang = lang;
+  u.volume = 1;
+
+  // Try to find a matching English voice explicitly to help browsers link to the correct TTS engine
+  try {
+    const voices = window.speechSynthesis.getVoices() || [];
+    const englishVoice = voices.find(v => {
+      const vlang = (v.lang || '').toLowerCase().replace(/_/g, '-');
+      return vlang === 'en-us' || vlang.startsWith('en-');
+    }) || voices.find(v => {
+      const vlang = (v.lang || '').toLowerCase();
+      return vlang.startsWith('en');
+    });
+
+    if (englishVoice) {
+      u.voice = englishVoice;
+      if (englishVoice.lang) {
+        u.lang = englishVoice.lang;
+      }
+    }
+  } catch (err) {
+    console.warn('Failed to set explicit voice in dictionary', err);
+  }
+
   u.onerror = (event) => {
     console.error('TTS error in dictionary:', event);
   };

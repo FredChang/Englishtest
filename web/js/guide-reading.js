@@ -68,9 +68,19 @@ function pickVoiceForGender(gender) {
 }
 
 function applyVoiceToUtterance(utterance, gender) {
-  // Don't set utterance.voice explicitly as it can cause "synthesis - failed" errors
-  // Instead, rely on language selection which is more reliable
   utterance.lang = 'en-US';
+  try {
+    const voice = pickVoiceForGender(gender);
+    if (voice) {
+      utterance.voice = voice;
+      if (voice.lang) {
+        utterance.lang = voice.lang;
+      }
+      console.log('Set voice explicitly:', voice.name, voice.lang, 'for gender:', gender);
+    }
+  } catch (err) {
+    console.warn('Failed to set explicit voice, using default en-US', err);
+  }
 }
 
 function waitForVoices(timeoutMs = 1500) {
@@ -126,6 +136,8 @@ function speakText(text, gender, rate) {
 
     console.log('Utterance config:', { lang: utterance.lang, rate: utterance.rate, voice: utterance.voice?.name });
 
+    utterance.volume = 1;
+
     utterance.onend = () => {
       console.log('Utterance completed successfully');
       resolve();
@@ -138,6 +150,33 @@ function speakText(text, gender, rate) {
         elapsedTime: event.elapsedTime,
         name: event.name
       });
+
+      // Robust fallback for synthesis-failed or network errors when using explicit voice
+      if (utterance.voice && (event.error === 'synthesis-failed' || event.error === 'network')) {
+        console.warn('Voice failed to synthesize, retrying with default voice...');
+        try {
+          const fallbackUtterance = new SpeechSynthesisUtterance(text);
+          fallbackUtterance.rate = utterance.rate;
+          fallbackUtterance.lang = 'en-US';
+          fallbackUtterance.volume = 1;
+          fallbackUtterance.onend = () => {
+            console.log('Fallback utterance completed successfully');
+            resolve();
+          };
+          fallbackUtterance.onerror = (errEvent) => {
+            console.error('Fallback TTS error:', errEvent);
+            const errorDetails = errEvent.error || errEvent.message || '未知錯誤';
+            reject(new Error(`語音播放失敗：${errorDetails}`));
+          };
+          window.speechSynthesis.speak(fallbackUtterance);
+          return;
+        } catch (e) {
+          console.error('Exception during fallback speak:', e);
+          reject(e);
+          return;
+        }
+      }
+
       const errorDetails = event.error || event.message || JSON.stringify(event);
       reject(new Error(`語音播放失敗：${errorDetails}`));
     };
