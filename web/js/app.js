@@ -604,6 +604,17 @@ if (guideOpenBtn) {
     e.preventDefault();
     console.log('Guide open button triggered');
     console.log('Event type:', e.type);
+
+    // Warm up speech synthesis on user gesture to unlock mobile audio
+    try {
+      const warmup = new SpeechSynthesisUtterance('');
+      warmup.volume = 0;
+      window.speechSynthesis.speak(warmup);
+      console.log('Speech synthesis warmed up successfully');
+    } catch (err) {
+      console.warn('Speech synthesis warmup failed', err);
+    }
+
     console.log('guideReading:', guideReading);
     console.log('screens:', screens);
 

@@ -102,15 +102,9 @@ function warmUpSynthesis() {
   }
 }
 
-async function speakText(text, gender, rate) {
-  await waitForVoices();
-
+function speakText(text, gender, rate) {
   const voices = getVoices();
   console.log('Available voices:', voices.length, voices.map(v => ({ name: v.name, lang: v.lang })));
-
-  if (!voices || voices.length === 0) {
-    throw new Error('沒有可用的語音，請確認瀏覽器已安裝語音套件');
-  }
 
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
@@ -350,11 +344,10 @@ export function initGuideReading({ screens, showScreen }) {
     speakCurrent();
   }
 
-  async function startReading() {
+  function startReading() {
     if (!segments.length) return;
     if (currentIndex >= segments.length) currentIndex = 0;
 
-    await waitForVoices();
     // Only cancel if there's active speech
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
