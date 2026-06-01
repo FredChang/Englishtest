@@ -68,19 +68,9 @@ function pickVoiceForGender(gender) {
 }
 
 function applyVoiceToUtterance(utterance, gender) {
-  const voice = pickVoiceForGender(gender);
-  if (voice) {
-    const fresh = getVoices().find((v) => v.voiceURI === voice.voiceURI) || voice;
-    try {
-      utterance.voice = fresh;
-      utterance.lang = (fresh.lang || 'en-US').replace(/_/g, '-');
-    } catch (e) {
-      console.warn('Failed to set voice, using default:', e);
-      utterance.lang = 'en-US';
-    }
-  } else {
-    utterance.lang = 'en-US';
-  }
+  // Don't set utterance.voice explicitly as it can cause "synthesis - failed" errors
+  // Instead, rely on language selection which is more reliable
+  utterance.lang = 'en-US';
 }
 
 function waitForVoices(timeoutMs = 1500) {
@@ -98,8 +88,29 @@ function waitForVoices(timeoutMs = 1500) {
   });
 }
 
+// Warm up speech synthesis by speaking a silent utterance
+let synthesisWarmedUp = false;
+function warmUpSynthesis() {
+  if (synthesisWarmedUp) return;
+  try {
+    const warmup = new SpeechSynthesisUtterance('');
+    warmup.volume = 0;
+    window.speechSynthesis.speak(warmup);
+    synthesisWarmedUp = true;
+  } catch (e) {
+    console.warn('Failed to warm up synthesis:', e);
+  }
+}
+
 async function speakText(text, gender, rate) {
   await waitForVoices();
+
+  const voices = getVoices();
+  console.log('Available voices:', voices.length, voices.map(v => ({ name: v.name, lang: v.lang })));
+
+  if (!voices || voices.length === 0) {
+    throw new Error('沒有可用的語音，請確認瀏覽器已安裝語音套件');
+  }
 
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
@@ -107,18 +118,43 @@ async function speakText(text, gender, rate) {
       return;
     }
 
+    if (!text || !text.trim()) {
+      reject(new Error('文字內容為空'));
+      return;
+    }
+
+    console.log('Speaking:', text, 'rate:', rate, 'gender:', gender);
+
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.rate = rate;
+    // Clamp rate to safe bounds (0.5 to 2.0)
+    utterance.rate = Math.max(0.5, Math.min(2.0, rate || 1));
     applyVoiceToUtterance(utterance, gender);
 
-    utterance.onend = () => resolve();
+    console.log('Utterance config:', { lang: utterance.lang, rate: utterance.rate, voice: utterance.voice?.name });
+
+    utterance.onend = () => {
+      console.log('Utterance completed successfully');
+      resolve();
+    };
     utterance.onerror = (event) => {
       console.error('TTS error:', event);
+      console.error('Error details:', {
+        error: event.error,
+        message: event.message,
+        elapsedTime: event.elapsedTime,
+        name: event.name
+      });
       const errorDetails = event.error || event.message || JSON.stringify(event);
       reject(new Error(`語音播放失敗：${errorDetails}`));
     };
 
-    window.speechSynthesis.speak(utterance);
+    try {
+      window.speechSynthesis.speak(utterance);
+      console.log('Speak called successfully');
+    } catch (e) {
+      console.error('Exception during speak:', e);
+      reject(e);
+    }
   });
 }
 
@@ -154,7 +190,6 @@ export function initGuideReading({ screens, showScreen }) {
   let currentIndex = 0;
   let isPlaying = false;
   let isPaused = false;
-  let cancelBeforeSpeak = true;
 
   function updateLastButton() {
     const has = hasSavedGuideContent();
@@ -294,11 +329,6 @@ export function initGuideReading({ screens, showScreen }) {
     const gender = els.voiceGenderSelect?.value || 'female';
     const rate = Number(els.speedSlider.value);
 
-    if (cancelBeforeSpeak) {
-      window.speechSynthesis.cancel();
-      cancelBeforeSpeak = false;
-    }
-
     try {
       await speakText(segments[currentIndex], gender, rate);
     } catch (err) {
@@ -325,7 +355,10 @@ export function initGuideReading({ screens, showScreen }) {
     if (currentIndex >= segments.length) currentIndex = 0;
 
     await waitForVoices();
-    cancelBeforeSpeak = true;
+    // Only cancel if there's active speech
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+    }
 
     isPlaying = true;
     isPaused = false;
@@ -365,7 +398,10 @@ export function initGuideReading({ screens, showScreen }) {
   function resumeReading() {
     isPaused = false;
     isPlaying = true;
-    cancelBeforeSpeak = true;
+    // Only cancel if there's active speech
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+    }
     updatePlayControls();
     speakCurrent();
   }
