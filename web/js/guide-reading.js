@@ -7,231 +7,23 @@ import {
   clearSavedGuideContent
 } from './guide-content.js';
 import { generateGuideArticle } from './guide-generate.js';
+import {
+  isAndroidBrowser,
+  getEnglishVoices,
+  resolveVoiceForGender,
+  findVoiceByUri,
+  loadSavedVoiceUri,
+  saveVoiceUri,
+  applyVoiceToUtterance,
+  formatVoiceLabel,
+  classifyVoiceGender,
+  waitForVoices,
+  speakWithVoice
+} from './speech-voice.js';
 
 function speedLabelFromRate(value) {
   const v = Number(value);
   return `${v.toFixed(1)}x`;
-}
-
-/** 以單字邊界比對，避免 "david" 誤判含 "ava"、"female" 誤判含 "male" */
-function voiceNameHasWord(name, word) {
-  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return new RegExp(`(?:^|[^a-z])${escaped}(?:[^a-z]|$)`, 'i').test(name);
-}
-
-function classifyVoiceGender(voice) {
-  const name = (voice?.name || '').toLowerCase();
-  if (!name) return 'unknown';
-
-  const femaleWords = [
-    'female',
-    'woman',
-    'girl',
-    'zira',
-    'hazel',
-    'jenny',
-    'mary',
-    'susan',
-    'amy',
-    'emily',
-    'aria',
-    'sara',
-    'ava',
-    'victoria',
-    'karen',
-    'michelle',
-    'zoe',
-    'samantha',
-    'linda',
-    'helen',
-    'catherine',
-    'moira',
-    'fiona',
-    'nicky',
-    'kate',
-    'serena',
-    'tessa'
-  ];
-  const maleWords = [
-    'male',
-    'man',
-    'boy',
-    'david',
-    'jeff',
-    'tom',
-    'john',
-    'mark',
-    'paul',
-    'daniel',
-    'robert',
-    'james',
-    'george',
-    'kenneth',
-    'roger',
-    'thomas',
-    'guy',
-    'ryan',
-    'richard',
-    'christopher',
-    'martin',
-    'liam',
-    'aaron',
-    'alex',
-    'fred',
-    'nathan',
-    'oliver',
-    'brian',
-    'eddy',
-    'reed',
-    'gordon',
-    'arthur'
-  ];
-
-  if (femaleWords.some((w) => voiceNameHasWord(name, w))) return 'female';
-  if (maleWords.some((w) => voiceNameHasWord(name, w))) return 'male';
-  return 'unknown';
-}
-
-function getEnglishVoices() {
-  const all = window.speechSynthesis?.getVoices?.() || [];
-  const english = all.filter((v) => {
-    const lang = (v.lang || '').toLowerCase();
-    const name = (v.name || '').toLowerCase();
-    return lang.startsWith('en') || name.includes('english') || name.includes('en-');
-  });
-  if (english.length >= 2) return english;
-
-  // 手機常只回傳 1 個英文語音或 lang 不完整，改排除明顯非英文
-  const relaxed = all.filter((v) => {
-    const lang = (v.lang || '').toLowerCase();
-    return !lang || (!lang.startsWith('zh') && !lang.startsWith('ja') && !lang.startsWith('ko'));
-  });
-  return relaxed.length ? relaxed : all;
-}
-
-const PRIORITY_MALE_KEYS = [
-  'daniel',
-  'alex',
-  'fred',
-  'david',
-  'microsoft david',
-  'google uk english male',
-  'google us english male',
-  'english male',
-  'en-gb male',
-  'en-us male',
-  'mark',
-  'james',
-  'tom',
-  'aaron',
-  'gordon',
-  'eddy',
-  'reed',
-  'nathan',
-  'oliver',
-  'brian',
-  'arthur',
-  'grandpa'
-];
-
-const PRIORITY_FEMALE_KEYS = [
-  'samantha',
-  'zira',
-  'hazel',
-  'google uk english female',
-  'google us english female',
-  'english female',
-  'en-gb female',
-  'en-us female',
-  'karen',
-  'victoria',
-  'aria',
-  'jenny',
-  'susan',
-  'nicky',
-  'kate',
-  'serena',
-  'tessa'
-];
-
-function pickPriorityVoice(voices, keys, excludeFemaleForMale = false) {
-  for (const key of keys) {
-    const found = voices.find((v) => {
-      const name = (v.name || '').toLowerCase();
-      const uri = (v.voiceURI || '').toLowerCase();
-      if (!name.includes(key) && !uri.includes(key)) return false;
-      if (excludeFemaleForMale && classifyVoiceGender(v) === 'female') return false;
-      return true;
-    });
-    if (found) return found;
-  }
-  return null;
-}
-
-/** 每次朗讀前重新解析，避免手機快取過期語音物件 */
-function resolveVoiceForSpeak(gender) {
-  const want = gender === 'male' ? 'male' : 'female';
-  const voices = getEnglishVoices();
-  if (!voices.length) return { voice: null, pitch: want === 'male' ? 0.75 : 1.0 };
-
-  if (want === 'male') {
-    const priority = pickPriorityVoice(voices, PRIORITY_MALE_KEYS, true);
-    if (priority) return { voice: priority, pitch: 1.0 };
-
-    const males = voices.filter((v) => classifyVoiceGender(v) === 'male');
-    if (males.length) return { voice: males[0], pitch: 1.0 };
-
-    const labelMale = voices.filter((v) => voiceNameHasWord((v.name || '').toLowerCase(), 'male'));
-    const labelNotFemale = labelMale.filter((v) => !voiceNameHasWord((v.name || '').toLowerCase(), 'female'));
-    if (labelNotFemale.length) return { voice: labelNotFemale[0], pitch: 1.0 };
-
-    const notFemale = voices.filter((v) => classifyVoiceGender(v) !== 'female');
-    if (notFemale.length > 1) return { voice: notFemale[1], pitch: 0.9 };
-    if (notFemale.length === 1) return { voice: notFemale[0], pitch: 0.8 };
-
-    return { voice: voices[0], pitch: 0.75 };
-  }
-
-  const priority = pickPriorityVoice(voices, PRIORITY_FEMALE_KEYS);
-  if (priority) return { voice: priority, pitch: 1.0 };
-
-  const females = voices.filter((v) => classifyVoiceGender(v) === 'female');
-  if (females.length) return { voice: females[0], pitch: 1.0 };
-
-  const labelFemale = voices.filter((v) => voiceNameHasWord((v.name || '').toLowerCase(), 'female'));
-  if (labelFemale.length) return { voice: labelFemale[0], pitch: 1.0 };
-
-  return { voice: voices[0], pitch: 1.0 };
-}
-
-function bindVoiceToUtterance(utterance, gender) {
-  const { voice, pitch } = resolveVoiceForSpeak(gender);
-  if (voice) {
-    // 以 voiceURI 重新查找，確保是當前 getVoices() 回傳的有效物件（iOS 必要）
-    const fresh =
-      window.speechSynthesis
-        .getVoices()
-        .find((v) => v.voiceURI === voice.voiceURI && v.name === voice.name) || voice;
-    utterance.voice = fresh;
-  }
-  utterance.pitch = pitch;
-  return voice;
-}
-
-function speakUtterance(utterance) {
-  window.speechSynthesis.cancel();
-  const start = () => window.speechSynthesis.speak(utterance);
-  // iOS / Android WebView 需在 cancel 後稍候再 speak，且 voice 才會生效
-  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    setTimeout(start, 80);
-  } else {
-    start();
-  }
-}
-
-function refreshVoiceCache() {
-  // 語音列表載入後預熱（實際朗讀仍每次重新解析）
-  window.speechSynthesis?.getVoices?.();
 }
 
 export function initGuideReading({ screens, showScreen }) {
@@ -251,6 +43,8 @@ export function initGuideReading({ screens, showScreen }) {
     sourceText: document.getElementById('guide-source-text'),
     progressText: document.getElementById('guide-progress-text'),
     voiceGenderSelect: document.getElementById('guide-voice-gender'),
+    voiceSelect: document.getElementById('guide-voice-select'),
+    voiceHint: document.getElementById('guide-voice-hint'),
     speedSlider: document.getElementById('guide-speed-slider'),
     speedLabel: document.getElementById('guide-speed-label'),
     segmentList: document.getElementById('guide-segment-list'),
@@ -266,6 +60,77 @@ export function initGuideReading({ screens, showScreen }) {
   let currentIndex = 0;
   let isPlaying = false;
   let isPaused = false;
+  let cancelBeforeNextSpeak = true;
+
+  function updateVoiceHint(selectedVoice) {
+    if (!els.voiceHint) return;
+    if (isAndroidBrowser()) {
+      els.voiceHint.textContent = selectedVoice
+        ? `目前：${selectedVoice.name}（${selectedVoice.lang}）`
+        : 'Android：若男/女音無效，請在上方列表選含 Male/男 的項目；或至系統「文字轉語音」安裝英文男聲。';
+      return;
+    }
+    els.voiceHint.textContent = selectedVoice
+      ? `目前語音：${selectedVoice.name}`
+      : '';
+  }
+
+  function populateVoiceSelect(preferredUri = '') {
+    if (!els.voiceSelect) return;
+
+    const voices = getEnglishVoices();
+    els.voiceSelect.innerHTML = '';
+
+    if (!voices.length) {
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = '找不到英文語音（請在系統設定安裝 TTS）';
+      els.voiceSelect.appendChild(opt);
+      updateVoiceHint(null);
+      return;
+    }
+
+    voices.forEach((voice) => {
+      const opt = document.createElement('option');
+      opt.value = voice.voiceURI;
+      opt.textContent = formatVoiceLabel(voice);
+      els.voiceSelect.appendChild(opt);
+    });
+
+    const savedUri = preferredUri || loadSavedVoiceUri();
+    let selected =
+      (savedUri && findVoiceByUri(savedUri)) ||
+      findVoiceByUri(els.voiceSelect.value) ||
+      voices[0];
+
+    const gender = els.voiceGenderSelect?.value || 'female';
+    const genderPick = resolveVoiceForGender(gender, voices).voice;
+    if (!savedUri && genderPick) selected = genderPick;
+
+    els.voiceSelect.value = selected?.voiceURI || voices[0].voiceURI;
+    if (selected?.voiceURI) saveVoiceUri(selected.voiceURI);
+    updateVoiceHint(findVoiceByUri(els.voiceSelect.value));
+  }
+
+  async function ensureVoicesReady() {
+    await waitForVoices();
+    populateVoiceSelect();
+  }
+
+  function syncGenderToVoiceSelect() {
+    const gender = els.voiceGenderSelect?.value || 'female';
+    const { voice } = resolveVoiceForGender(gender);
+    if (voice && els.voiceSelect) {
+      els.voiceSelect.value = voice.voiceURI;
+      saveVoiceUri(voice.voiceURI);
+      updateVoiceHint(voice);
+    }
+  }
+
+  function getSelectedVoice() {
+    const uri = els.voiceSelect?.value || loadSavedVoiceUri();
+    return findVoiceByUri(uri) || resolveVoiceForGender(els.voiceGenderSelect?.value || 'female').voice;
+  }
 
   function updateLastButton() {
     const has = hasSavedGuideContent();
@@ -297,6 +162,7 @@ export function initGuideReading({ screens, showScreen }) {
     renderSegmentList(-1);
     updateProgressText();
     updatePlayControls();
+    ensureVoicesReady();
     showScreen('guidePlay');
   }
 
@@ -402,15 +268,22 @@ export function initGuideReading({ screens, showScreen }) {
     renderSegmentList(currentIndex);
     updateProgressText();
 
-    const utterance = new SpeechSynthesisUtterance(segments[currentIndex]);
-    utterance.lang = 'en-US';
-    utterance.rate = Number(els.speedSlider.value);
     const gender = els.voiceGenderSelect?.value || 'female';
-    bindVoiceToUtterance(utterance, gender);
+    const voice = getSelectedVoice();
+    const genderResolved = resolveVoiceForGender(gender);
+    const pitch =
+      gender === 'male' && voice && classifyVoiceGender(voice) !== 'male'
+        ? genderResolved.pitch
+        : 1.0;
+
+    const utterance = new SpeechSynthesisUtterance(segments[currentIndex]);
+    utterance.rate = Number(els.speedSlider.value);
+    applyVoiceToUtterance(utterance, voice, { gender, pitch });
 
     utterance.onend = () => {
       if (!isPlaying) return;
       currentIndex++;
+      cancelBeforeNextSpeak = false;
       if (currentIndex >= segments.length) {
         finishReading();
         return;
@@ -422,15 +295,16 @@ export function initGuideReading({ screens, showScreen }) {
       if (isPlaying) stopReading(false);
     };
 
-    speakUtterance(utterance);
+    speakWithVoice(utterance, { cancelFirst: cancelBeforeNextSpeak });
+    cancelBeforeNextSpeak = false;
   }
 
-  function startReading() {
+  async function startReading() {
     if (!segments.length) return;
     if (currentIndex >= segments.length) currentIndex = 0;
 
-    // 手機需在使用者手勢當下先觸發 getVoices，列表才會完整
-    window.speechSynthesis?.getVoices?.();
+    await ensureVoicesReady();
+    cancelBeforeNextSpeak = true;
 
     isPlaying = true;
     isPaused = false;
@@ -443,6 +317,7 @@ export function initGuideReading({ screens, showScreen }) {
     window.speechSynthesis.cancel();
     isPlaying = false;
     isPaused = true;
+    cancelBeforeNextSpeak = true;
     updatePlayControls();
   }
 
@@ -450,6 +325,7 @@ export function initGuideReading({ screens, showScreen }) {
     window.speechSynthesis?.cancel();
     isPlaying = false;
     isPaused = false;
+    cancelBeforeNextSpeak = true;
     if (resetIndex) {
       currentIndex = 0;
       renderSegmentList(-1);
@@ -466,6 +342,7 @@ export function initGuideReading({ screens, showScreen }) {
   function resumeReading() {
     isPaused = false;
     isPlaying = true;
+    cancelBeforeNextSpeak = true;
     updatePlayControls();
     speakCurrent();
   }
@@ -558,7 +435,15 @@ export function initGuideReading({ screens, showScreen }) {
 
   els.speedSlider?.addEventListener('input', updateSpeedLabel);
 
-  els.voiceGenderSelect?.addEventListener('change', refreshVoiceCache);
+  els.voiceGenderSelect?.addEventListener('change', () => {
+    syncGenderToVoiceSelect();
+  });
+
+  els.voiceSelect?.addEventListener('change', () => {
+    const voice = findVoiceByUri(els.voiceSelect.value);
+    if (voice?.voiceURI) saveVoiceUri(voice.voiceURI);
+    updateVoiceHint(voice);
+  });
 
   els.playBtn?.addEventListener('click', () => {
     if (isPaused) resumeReading();
@@ -569,8 +454,10 @@ export function initGuideReading({ screens, showScreen }) {
   els.stopBtn?.addEventListener('click', () => stopReading(true));
 
   if ('speechSynthesis' in window) {
-    window.speechSynthesis.onvoiceschanged = refreshVoiceCache;
-    refreshVoiceCache();
+    window.speechSynthesis.onvoiceschanged = () => {
+      if (document.getElementById('screen-guide-play')?.classList.contains('hidden')) return;
+      populateVoiceSelect(els.voiceSelect?.value || loadSavedVoiceUri());
+    };
   }
 
   updateSpeedLabel();
