@@ -1,6 +1,7 @@
 import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
 import { initGuideReading } from './guide-reading.js';
+import { APP_VERSION } from './version.js';
 
 const vocabulary = new VocabularyService();
 
@@ -477,6 +478,8 @@ function showSessionComplete() {
 }
 
 async function init() {
+  document.getElementById('app-version').textContent = `版本 ${APP_VERSION}`;
+
   // 導讀不依賴題庫，先初始化避免按鈕無反應
   try {
     guideReading = initGuideReading({ screens, showScreen });

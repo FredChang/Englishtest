@@ -396,6 +396,13 @@ button {
   line-height: 1.5;
 }
 
+.app-version {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-align: center;
+  margin: 12px 0 0;
+}
+
 .btn-guide {
   background: #eff6ff;
   color: #1d4ed8;
