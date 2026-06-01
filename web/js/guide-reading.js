@@ -67,16 +67,27 @@ function pickVoiceForGender(gender) {
   return pool[0];
 }
 
-function applyVoiceToUtterance(utterance, gender) {
+function applyVoiceToUtterance(utterance, genderOrVoiceName) {
   utterance.lang = 'en-US';
   try {
-    const voice = pickVoiceForGender(gender);
+    const voices = getVoices();
+    const explicitVoice = voices.find(v => v.name === genderOrVoiceName);
+    if (explicitVoice) {
+      utterance.voice = explicitVoice;
+      if (explicitVoice.lang) {
+        utterance.lang = explicitVoice.lang;
+      }
+      console.log('Set explicit voice to:', explicitVoice.name, explicitVoice.lang);
+      return;
+    }
+
+    const voice = pickVoiceForGender(genderOrVoiceName);
     if (voice) {
       utterance.voice = voice;
       if (voice.lang) {
         utterance.lang = voice.lang;
       }
-      console.log('Set voice explicitly:', voice.name, voice.lang, 'for gender:', gender);
+      console.log('Set voice explicitly:', voice.name, voice.lang, 'for gender:', genderOrVoiceName);
     }
   } catch (err) {
     console.warn('Failed to set explicit voice, using default en-US', err);
@@ -223,6 +234,46 @@ export function initGuideReading({ screens, showScreen }) {
   let currentIndex = 0;
   let isPlaying = false;
   let isPaused = false;
+
+  function populateVoicesDropdown() {
+    const select = els.voiceGenderSelect;
+    if (!select) return;
+
+    const voices = getVoices();
+    const english = voices.filter((v) => {
+      const lang = (v.lang || '').toLowerCase().replace(/_/g, '-');
+      const name = (v.name || '').toLowerCase();
+      return lang.startsWith('en') || name.includes('english') || name.includes('英文');
+    });
+
+    const prevSelected = select.value;
+    select.innerHTML = '';
+
+    // Add default options first
+    const optFemale = document.createElement('option');
+    optFemale.value = 'female';
+    optFemale.textContent = '預設女音 (系統)';
+    select.appendChild(optFemale);
+
+    const optMale = document.createElement('option');
+    optMale.value = 'male';
+    optMale.textContent = '預設男音 (系統)';
+    select.appendChild(optMale);
+
+    // Add explicit voices
+    english.forEach((v) => {
+      const opt = document.createElement('option');
+      opt.value = v.name;
+      opt.textContent = `${v.name} (${v.lang})`;
+      select.appendChild(opt);
+    });
+
+    if (prevSelected && Array.from(select.options).some((o) => o.value === prevSelected)) {
+      select.value = prevSelected;
+    } else {
+      select.value = 'female';
+    }
+  }
 
   function updateLastButton() {
     const has = hasSavedGuideContent();
@@ -535,9 +586,11 @@ export function initGuideReading({ screens, showScreen }) {
   if ('speechSynthesis' in window) {
     window.speechSynthesis.onvoiceschanged = () => {
       window.speechSynthesis.getVoices();
+      populateVoicesDropdown();
     };
   }
 
+  populateVoicesDropdown();
   updateSpeedLabel();
   updateLastButton();
 
