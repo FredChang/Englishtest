@@ -477,8 +477,42 @@ function showSessionComplete() {
   alert(`本次共 ${total} 題，答對 ${correctCount} 題。\n得分：${correctCount} / ${total}`);
 }
 
+async function displayAppVersion() {
+  const el = document.getElementById('app-version');
+  if (!el) return;
+  try {
+    const res = await fetch(`js/version.js?ts=${Date.now()}`, { cache: 'no-store' });
+    if (res.ok) {
+      const text = await res.text();
+      const match = text.match(/APP_VERSION\s*=\s*['"]([^'"]+)['"]/);
+      if (match?.[1]) {
+        el.textContent = `版本 ${match[1]}`;
+        return;
+      }
+    }
+  } catch {
+    // offline fallback
+  }
+  el.textContent = `版本 ${APP_VERSION}`;
+}
+
+async function checkForServiceWorkerUpdate() {
+  if (!('serviceWorker' in navigator)) return;
+  try {
+    const reg = await navigator.serviceWorker.getRegistration();
+    if (!reg) return;
+    await reg.update();
+    if (reg.waiting) {
+      reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+    }
+  } catch {
+    // ignore
+  }
+}
+
 async function init() {
-  document.getElementById('app-version').textContent = `版本 ${APP_VERSION}`;
+  await displayAppVersion();
+  checkForServiceWorkerUpdate();
 
   // 導讀不依賴題庫，先初始化避免按鈕無反應
   try {
@@ -552,6 +586,9 @@ els.imageOptionButtons.forEach((btn) => btn.addEventListener('click', onImageOpt
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    window.location.reload();
+  });
 }
 
 document.getElementById('guide-open-btn')?.addEventListener('click', () => {

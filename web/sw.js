@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.4.0';
+const CACHE = 'englishtest-v1.4.1';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -52,6 +52,40 @@ function isSameOrigin(request) {
   }
 }
 
+/** 程式碼與版本檔：永遠先向網路要最新版，避免 PWA 卡在舊版 */
+function isAppCodeRequest(request) {
+  try {
+    const { pathname } = new URL(request.url);
+    return (
+      pathname.endsWith('/sw.js') ||
+      pathname.endsWith('sw.js') ||
+      pathname.endsWith('/index.html') ||
+      pathname.endsWith('index.html') ||
+      pathname.includes('/js/') ||
+      pathname.includes('/css/')
+    );
+  } catch {
+    return false;
+  }
+}
+
+async function networkFirstAppCode(request) {
+  const cache = await caches.open(CACHE);
+  try {
+    const response = await fetch(request);
+    if (response && response.status === 200) {
+      await cache.put(request, response.clone());
+      return response;
+    }
+    const cached = await cache.match(request);
+    return cached || response;
+  } catch {
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    return Response.error();
+  }
+}
+
 /** words.json：先向網路要最新版，成功則更新快取；離線才用舊快取 */
 async function networkFirstWords(request) {
   const cache = await caches.open(CACHE);
@@ -98,6 +132,12 @@ self.addEventListener('install', (event) => {
   );
 });
 
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
@@ -114,6 +154,11 @@ self.addEventListener('fetch', (event) => {
 
   if (isWordsJsonRequest(event.request)) {
     event.respondWith(networkFirstWords(event.request));
+    return;
+  }
+
+  if (isAppCodeRequest(event.request)) {
+    event.respondWith(networkFirstAppCode(event.request));
     return;
   }
 
