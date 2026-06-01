@@ -20,5 +20,6 @@ namespace Englishtest.Models
         public int QuestionCount { get; set; }
         public QuizMode Mode { get; set; }
         public QuizDirection Direction { get; set; }
+        public string SelectedVoiceName { get; set; }
     }
 }

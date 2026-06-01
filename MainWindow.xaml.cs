@@ -37,6 +37,10 @@ namespace Englishtest
 
             InitializeComponent();
             _pronunciation = new PronunciationService();
+            if (!string.IsNullOrEmpty(_sessionSettings.SelectedVoiceName))
+            {
+                _pronunciation.SetVoice(_sessionSettings.SelectedVoiceName);
+            }
 
             if (!_vocabulary.StartSession(_sessionSettings.Level, _sessionSettings.QuestionCount))
             {

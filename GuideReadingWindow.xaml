@@ -36,6 +36,15 @@
                     <TextBlock Grid.Column="2" x:Name="SpeedLabel" Text="正常" FontSize="14" FontWeight="SemiBold"
                                Foreground="#2563EB" VerticalAlignment="Center" MinWidth="72" TextAlignment="Right"/>
                 </Grid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="選擇語音" FontSize="14" Foreground="#475569" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Column="1" x:Name="VoiceComboBox" Height="34" Margin="16,0,0,0" FontSize="13" 
+                              VerticalContentAlignment="Center" SelectionChanged="VoiceComboBox_SelectionChanged"/>
+                </Grid>
                 <TextBlock x:Name="ProgressText" Text="" FontSize="13" Foreground="#64748B" Margin="0,10,0,0"/>
             </StackPanel>
         </Border>

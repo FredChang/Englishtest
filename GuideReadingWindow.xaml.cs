@@ -1,4 +1,5 @@
-using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Speech.Synthesis;
 using System.Windows;
 using System.Windows.Controls;
@@ -42,18 +43,43 @@ namespace Englishtest
         {
             try
             {
-                _synthesizer.SelectVoiceByHints(
-                    VoiceGender.NotSet,
-                    VoiceAge.Adult,
-                    0,
-                    System.Globalization.CultureInfo.GetCultureInfo("en-US"));
+                var voices = _synthesizer.GetInstalledVoices()
+                    .Where(v => v.Enabled && v.VoiceInfo.Culture.Name.StartsWith("en"))
+                    .ToList();
+
+                if (voices.Any())
+                {
+                    VoiceComboBox.ItemsSource = voices.Select(v => new
+                    {
+                        DisplayName = $"{v.VoiceInfo.Name} ({v.VoiceInfo.Culture.Name})",
+                        Name = v.VoiceInfo.Name
+                    }).ToList();
+                    VoiceComboBox.DisplayMemberPath = "DisplayName";
+                    VoiceComboBox.SelectedValuePath = "Name";
+
+                    // Default selection: find Zira or first en-US
+                    var defaultIndex = voices.FindIndex(v => v.VoiceInfo.Name.Contains("Zira"));
+                    if (defaultIndex < 0) defaultIndex = voices.FindIndex(v => v.VoiceInfo.Culture.Name == "en-US");
+                    if (defaultIndex < 0) defaultIndex = 0;
+
+                    VoiceComboBox.SelectedIndex = defaultIndex;
+                }
             }
-            catch
-            {
-                // 使用系統預設語音
-            }
+            catch { }
 
             _synthesizer.SpeakCompleted += Synthesizer_SpeakCompleted;
+        }
+
+        private void VoiceComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (VoiceComboBox.SelectedValue is string voiceName)
+            {
+                try
+                {
+                    _synthesizer.SelectVoice(voiceName);
+                }
+                catch { }
+            }
         }
 
         private void SpeedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)

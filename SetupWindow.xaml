@@ -94,7 +94,7 @@
         </StackPanel>
 
         <!-- 題數 -->
-        <StackPanel Grid.Row="5">
+        <StackPanel Grid.Row="5" Margin="0,0,0,16">
             <TextBlock Text="挑戰單字數量（最多 30 題）" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -107,6 +107,12 @@
                 <TextBlock x:Name="QuestionCountText" Grid.Column="1" Text="10 題" FontSize="16" FontWeight="Bold"
                            Foreground="#2563EB" VerticalAlignment="Center" Margin="16,0,0,0" MinWidth="48"/>
             </Grid>
+        </StackPanel>
+
+        <!-- 語音引擎 -->
+        <StackPanel Grid.Row="6" Margin="0,0,0,16">
+            <TextBlock Text="語音引擎 (TTS)" FontSize="14" Foreground="#475569" Margin="0,0,0,8"/>
+            <ComboBox x:Name="VoiceComboBox" Height="36" FontSize="14" VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <Button Grid.Row="7" x:Name="GuideReadingButton" Content="開啟導讀練習" Height="40" Margin="0,8,0,0"

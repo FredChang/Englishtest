@@ -1,6 +1,8 @@
 using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Speech.Synthesis;
 using Englishtest.Models;
 using Englishtest.Services;
 
@@ -18,7 +20,38 @@ namespace Englishtest
             InitializeComponent();
             LevelComboBox.ItemsSource = CefrLevel.All;
             LevelComboBox.SelectedIndex = 2;
+            PopulateVoices();
             UpdateLevelInfo();
+        }
+
+        private void PopulateVoices()
+        {
+            try
+            {
+                using (var synth = new SpeechSynthesizer())
+                {
+                    var voices = synth.GetInstalledVoices()
+                        .Where(v => v.Enabled && v.VoiceInfo.Culture.Name.StartsWith("en"))
+                        .ToList();
+
+                    if (voices.Any())
+                    {
+                        VoiceComboBox.ItemsSource = voices.Select(v => new
+                        {
+                            DisplayName = $"{v.VoiceInfo.Name} ({v.VoiceInfo.Culture.Name})",
+                            Name = v.VoiceInfo.Name
+                        }).ToList();
+                        VoiceComboBox.DisplayMemberPath = "DisplayName";
+                        VoiceComboBox.SelectedValuePath = "Name";
+
+                        var defaultIndex = voices.FindIndex(v => v.VoiceInfo.Name.Contains("Zira"));
+                        if (defaultIndex < 0) defaultIndex = voices.FindIndex(v => v.VoiceInfo.Culture.Name == "en-US");
+                        if (defaultIndex < 0) defaultIndex = 0;
+                        VoiceComboBox.SelectedIndex = defaultIndex;
+                    }
+                }
+            }
+            catch { }
         }
 
         private void LevelComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -104,7 +137,8 @@ namespace Englishtest
                 Level = level,
                 QuestionCount = count,
                 Mode = mode,
-                Direction = direction
+                Direction = direction,
+                SelectedVoiceName = VoiceComboBox.SelectedValue as string
             };
 
             DialogResult = true;
