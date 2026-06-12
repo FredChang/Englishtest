@@ -1886,5 +1886,773 @@
     ],
     "ImageUrl": "images/a2-build.jpg",
     "Chinese": "建造"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "horse"
+    ],
+    "ImageUrl": "images/a1-horse.jpg",
+    "Chinese": "馬"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "cow"
+    ],
+    "ImageUrl": "images/a1-cow.jpg",
+    "Chinese": "牛"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "pig"
+    ],
+    "ImageUrl": "images/a1-pig.jpg",
+    "Chinese": "豬"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "chicken"
+    ],
+    "ImageUrl": "images/a1-chicken.jpg",
+    "Chinese": "雞"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "mouse"
+    ],
+    "ImageUrl": "images/a1-mouse.jpg",
+    "Chinese": "老鼠"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "rabbit"
+    ],
+    "ImageUrl": "images/a1-rabbit.jpg",
+    "Chinese": "兔子"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "baby"
+    ],
+    "ImageUrl": "images/a1-baby.jpg",
+    "Chinese": "嬰兒"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "boy"
+    ],
+    "ImageUrl": "images/a1-boy.jpg",
+    "Chinese": "男孩"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "girl"
+    ],
+    "ImageUrl": "images/a1-girl.jpg",
+    "Chinese": "女孩"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "head"
+    ],
+    "ImageUrl": "images/a1-head.jpg",
+    "Chinese": "頭"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hand"
+    ],
+    "ImageUrl": "images/a1-hand.jpg",
+    "Chinese": "手"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "foot"
+    ],
+    "ImageUrl": "images/a1-foot.jpg",
+    "Chinese": "腳"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "eye"
+    ],
+    "ImageUrl": "images/a1-eye.jpg",
+    "Chinese": "眼睛"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "ear"
+    ],
+    "ImageUrl": "images/a1-ear.jpg",
+    "Chinese": "耳朵"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "nose"
+    ],
+    "ImageUrl": "images/a1-nose.jpg",
+    "Chinese": "鼻子"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "mouth"
+    ],
+    "ImageUrl": "images/a1-mouth.jpg",
+    "Chinese": "嘴巴"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "tooth"
+    ],
+    "ImageUrl": "images/a1-tooth.jpg",
+    "Chinese": "牙齒"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hair"
+    ],
+    "ImageUrl": "images/a1-hair.jpg",
+    "Chinese": "頭髮"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "arm"
+    ],
+    "ImageUrl": "images/a1-arm.jpg",
+    "Chinese": "手臂"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "leg"
+    ],
+    "ImageUrl": "images/a1-leg.jpg",
+    "Chinese": "腿"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "heart"
+    ],
+    "ImageUrl": "images/a1-heart.jpg",
+    "Chinese": "心"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "bus"
+    ],
+    "ImageUrl": "images/a1-bus.jpg",
+    "Chinese": "公車"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "taxi"
+    ],
+    "ImageUrl": "images/a1-taxi.jpg",
+    "Chinese": "計程車"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "bicycle"
+    ],
+    "ImageUrl": "images/a1-bicycle.jpg",
+    "Chinese": "腳踏車"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "boat"
+    ],
+    "ImageUrl": "images/a1-boat.jpg",
+    "Chinese": "船"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "airplane"
+    ],
+    "ImageUrl": "images/a1-airplane.jpg",
+    "Chinese": "飛機"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "table"
+    ],
+    "ImageUrl": "images/a1-table.jpg",
+    "Chinese": "桌子"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "chair"
+    ],
+    "ImageUrl": "images/a1-chair.jpg",
+    "Chinese": "椅子"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "window"
+    ],
+    "ImageUrl": "images/a1-window.jpg",
+    "Chinese": "窗戶"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "bed"
+    ],
+    "ImageUrl": "images/a1-bed.jpg",
+    "Chinese": "床"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "pen"
+    ],
+    "ImageUrl": "images/a1-pen.jpg",
+    "Chinese": "筆"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "paper"
+    ],
+    "ImageUrl": "images/a1-paper.jpg",
+    "Chinese": "紙"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "although"
+    ],
+    "ImageUrl": "images/a2-although.jpg",
+    "Chinese": "雖然"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "unless"
+    ],
+    "ImageUrl": "images/a2-unless.jpg",
+    "Chinese": "除非"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "until"
+    ],
+    "ImageUrl": "images/a2-until.jpg",
+    "Chinese": "直到"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "while"
+    ],
+    "ImageUrl": "images/a2-while.jpg",
+    "Chinese": "當…時"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "if"
+    ],
+    "ImageUrl": "images/a2-if.jpg",
+    "Chinese": "如果"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "maybe"
+    ],
+    "ImageUrl": "images/a2-maybe.jpg",
+    "Chinese": "可能"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "almost"
+    ],
+    "ImageUrl": "images/a2-almost.jpg",
+    "Chinese": "幾乎"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "just"
+    ],
+    "ImageUrl": "images/a2-just.jpg",
+    "Chinese": "剛剛"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "still"
+    ],
+    "ImageUrl": "images/a2-still.jpg",
+    "Chinese": "仍然"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "again"
+    ],
+    "ImageUrl": "images/a2-again.jpg",
+    "Chinese": "再次"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "together"
+    ],
+    "ImageUrl": "images/a2-together.jpg",
+    "Chinese": "一起"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "alone"
+    ],
+    "ImageUrl": "images/a2-alone.jpg",
+    "Chinese": "單獨"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "other"
+    ],
+    "ImageUrl": "images/a2-other.jpg",
+    "Chinese": "其他"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "same"
+    ],
+    "ImageUrl": "images/a2-same.jpg",
+    "Chinese": "相同"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "different"
+    ],
+    "ImageUrl": "images/a2-different.jpg",
+    "Chinese": "不同"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "another"
+    ],
+    "ImageUrl": "images/a2-another.jpg",
+    "Chinese": "另一個"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "enough"
+    ],
+    "ImageUrl": "images/a2-enough.jpg",
+    "Chinese": "足夠"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "too much"
+    ],
+    "ImageUrl": "images/a2-too_much.jpg",
+    "Chinese": "太多"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "a little"
+    ],
+    "ImageUrl": "images/a2-a_little.jpg",
+    "Chinese": "很少"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "several"
+    ],
+    "ImageUrl": "images/a2-several.jpg",
+    "Chinese": "幾個"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "each"
+    ],
+    "ImageUrl": "images/a2-each.jpg",
+    "Chinese": "每個"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "both"
+    ],
+    "ImageUrl": "images/a2-both.jpg",
+    "Chinese": "兩者"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "borrow"
+    ],
+    "ImageUrl": "images/a2-borrow.jpg",
+    "Chinese": "借"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "return"
+    ],
+    "ImageUrl": "images/a2-return.jpg",
+    "Chinese": "返回"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "lend"
+    ],
+    "ImageUrl": "images/a2-lend.jpg",
+    "Chinese": "借出"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "spend"
+    ],
+    "ImageUrl": "images/a2-spend.jpg",
+    "Chinese": "花費"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "save"
+    ],
+    "ImageUrl": "images/a2-save.jpg",
+    "Chinese": "節省"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "pay"
+    ],
+    "ImageUrl": "images/a2-pay.jpg",
+    "Chinese": "支付"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "arrive"
+    ],
+    "ImageUrl": "images/a2-arrive.jpg",
+    "Chinese": "到達"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "leave"
+    ],
+    "ImageUrl": "images/a2-leave.jpg",
+    "Chinese": "離開"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "stay"
+    ],
+    "ImageUrl": "images/a2-stay.jpg",
+    "Chinese": "停留"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "visit"
+    ],
+    "ImageUrl": "images/a2-visit.jpg",
+    "Chinese": "參觀"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "analyst"
+    ],
+    "ImageUrl": "images/b2-analyst.jpg",
+    "Chinese": "分析師"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "appraiser"
+    ],
+    "ImageUrl": "images/b2-appraiser.jpg",
+    "Chinese": "評估師"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "forecaster"
+    ],
+    "ImageUrl": "images/b2-forecaster.jpg",
+    "Chinese": "預測師"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "hypothesis test"
+    ],
+    "ImageUrl": "images/b2-hypothesis_test.jpg",
+    "Chinese": "假設檢驗"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "inference"
+    ],
+    "ImageUrl": "images/b2-inference.jpg",
+    "Chinese": "推論"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "validate"
+    ],
+    "ImageUrl": "images/b2-validate.jpg",
+    "Chinese": "驗證"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "rebut"
+    ],
+    "ImageUrl": "images/b2-rebut.jpg",
+    "Chinese": "反駁"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "interrogate"
+    ],
+    "ImageUrl": "images/b2-interrogate.jpg",
+    "Chinese": "質詢"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "defend"
+    ],
+    "ImageUrl": "images/b2-defend.jpg",
+    "Chinese": "辯護"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "arbitrate"
+    ],
+    "ImageUrl": "images/b2-arbitrate.jpg",
+    "Chinese": "調停"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "yield"
+    ],
+    "ImageUrl": "images/b2-yield.jpg",
+    "Chinese": "讓步"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "insist"
+    ],
+    "ImageUrl": "images/b2-insist.jpg",
+    "Chinese": "堅持己見"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "maintain"
+    ],
+    "ImageUrl": "images/b2-maintain.jpg",
+    "Chinese": "維持"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "allege"
+    ],
+    "ImageUrl": "images/b2-allege.jpg",
+    "Chinese": "聲稱"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "state clearly"
+    ],
+    "ImageUrl": "images/b2-state_clearly.jpg",
+    "Chinese": "明示"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "summarize broadly"
+    ],
+    "ImageUrl": "images/b2-summarize_broadly.jpg",
+    "Chinese": "概括"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "elaborate"
+    ],
+    "ImageUrl": "images/b2-elaborate.jpg",
+    "Chinese": "詳細說明"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "clear up"
+    ],
+    "ImageUrl": "images/b2-clear_up.jpg",
+    "Chinese": "澄清"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "streamline"
+    ],
+    "ImageUrl": "images/b2-streamline.jpg",
+    "Chinese": "簡化"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "complicate"
+    ],
+    "ImageUrl": "images/b2-complicate.jpg",
+    "Chinese": "複雜化"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "stress"
+    ],
+    "ImageUrl": "images/b2-stress.jpg",
+    "Chinese": "強調"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "minimize"
+    ],
+    "ImageUrl": "images/b2-minimize.jpg",
+    "Chinese": "最小化"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "accentuate"
+    ],
+    "ImageUrl": "images/b2-accentuate.jpg",
+    "Chinese": "突出"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "stand for"
+    ],
+    "ImageUrl": "images/b2-stand_for.jpg",
+    "Chinese": "象徵"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "mirror"
+    ],
+    "ImageUrl": "images/b2-mirror.jpg",
+    "Chinese": "鏡子"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "uncover"
+    ],
+    "ImageUrl": "images/b2-uncover.jpg",
+    "Chinese": "暴露"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "hide"
+    ],
+    "ImageUrl": "images/b2-hide.jpg",
+    "Chinese": "隱藏"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "infiltrate"
+    ],
+    "ImageUrl": "images/b2-infiltrate.jpg",
+    "Chinese": "滲透"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "disseminate"
+    ],
+    "ImageUrl": "images/b2-disseminate.jpg",
+    "Chinese": "散布"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "restrain"
+    ],
+    "ImageUrl": "images/b2-restrain.jpg",
+    "Chinese": "抑制"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "provoke"
+    ],
+    "ImageUrl": "images/b2-provoke.jpg",
+    "Chinese": "刺激"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "spark"
+    ],
+    "ImageUrl": "images/b2-spark.jpg",
+    "Chinese": "引發"
   }
 ]

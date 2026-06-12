@@ -67,6 +67,66 @@ GRIDS = {
         ("A2", "computer"), ("A2", "agree"), ("A2", "remember"), ("A2", "probably"),
         ("A2", "invite"), ("A2", "prepare"), ("A2", "complete"), ("A2", "continue"),
         ("A2", "succeed"), ("A2", "fail"), ("A2", "repair"), ("A2", "build")
+    ],
+    11: [
+        ("A1", "horse"), ("A1", "cow"), ("A1", "pig"), ("A1", "chicken"),
+        ("A1", "mouse"), ("A1", "rabbit"), ("A1", "baby"), ("A1", "boy"),
+        ("A1", "girl"), ("A1", "head"), ("A1", "hand"), ("A1", "foot"),
+        ("A1", "eye"), ("A1", "ear"), ("A1", "nose"), ("A1", "mouth")
+    ],
+    12: [
+        ("A1", "tooth"), ("A1", "hair"), ("A1", "arm"), ("A1", "leg"),
+        ("A1", "heart"), ("A1", "bus"), ("A1", "taxi"), ("A1", "bicycle"),
+        ("A1", "boat"), ("A1", "airplane"), ("A1", "table"), ("A1", "chair"),
+        ("A1", "window"), ("A1", "bed"), ("A1", "pen"), ("A1", "paper")
+    ],
+    13: [
+        ("A2", "although"), ("A2", "unless"), ("A2", "until"), ("A2", "while"),
+        ("A2", "if"), ("A2", "maybe"), ("A2", "almost"), ("A2", "just"),
+        ("A2", "still"), ("A2", "again"), ("A2", "together"), ("A2", "alone"),
+        ("A2", "other"), ("A2", "same"), ("A2", "different"), ("A2", "another")
+    ],
+    14: [
+        ("A2", "enough"), ("A2", "too much"), ("A2", "a little"), ("A2", "several"),
+        ("A2", "each"), ("A2", "both"), ("A2", "borrow"), ("A2", "return"),
+        ("A2", "lend"), ("A2", "spend"), ("A2", "save"), ("A2", "pay"),
+        ("A2", "arrive"), ("A2", "leave"), ("A2", "stay"), ("A2", "visit")
+    ],
+    15: [
+        ("B2", "analyst"), ("B2", "appraiser"), ("B2", "forecaster"), ("B2", "hypothesis test"),
+        ("B2", "inference"), ("B2", "validate"), ("B2", "rebut"), ("B2", "interrogate"),
+        ("B2", "defend"), ("B2", "arbitrate"), ("B2", "yield"), ("B2", "insist"),
+        ("B2", "maintain"), ("B2", "allege"), ("B2", "state clearly"), ("B2", "summarize broadly")
+    ],
+    16: [
+        ("B2", "elaborate"), ("B2", "clear up"), ("B2", "streamline"), ("B2", "complicate"),
+        ("B2", "stress"), ("B2", "minimize"), ("B2", "accentuate"), ("B2", "stand for"),
+        ("B2", "mirror"), ("B2", "uncover"), ("B2", "hide"), ("B2", "infiltrate"),
+        ("B2", "disseminate"), ("B2", "restrain"), ("B2", "provoke"), ("B2", "spark")
+    ],
+    17: [
+        ("C1", "ambivalence"), ("C1", "paradox"), ("C1", "irony"), ("C1", "figurative"),
+        ("C1", "abstraction"), ("C1", "subjectivity"), ("C1", "objectivity"), ("C1", "relativity"),
+        ("C1", "absoluteness"), ("C1", "universality"), ("C1", "specificity"), ("C1", "essentially"),
+        ("C1", "ostensibly"), ("C1", "in depth"), ("C1", "superficially"), ("C1", "subtly")
+    ],
+    18: [
+        ("C1", "manifestly"), ("C1", "tacitly"), ("C1", "explicitly"), ("C1", "ambiguously"),
+        ("C1", "lucidly"), ("C1", "systematically"), ("C1", "comprehensively"), ("C1", "partially"),
+        ("C1", "evenly"), ("C1", "extremely"), ("C1", "moderately"), ("C1", "radically"),
+        ("C1", "conservatively"), ("C1", "progressively"), ("C1", "traditionally"), ("C1", "contemporarily")
+    ],
+    19: [
+        ("C2", "ubiquitously"), ("C2", "seldom"), ("C2", "uniquely"), ("C2", "ordinarily"),
+        ("C2", "remarkably"), ("C2", "excellently"), ("C2", "mediocrely"), ("C2", "eminently"),
+        ("C2", "abysmally"), ("C2", "exquisitely"), ("C2", "vulgarly"), ("C2", "elegantly"),
+        ("C2", "sloppily"), ("C2", "circumspectly"), ("C2", "recklessly"), ("C2", "cunningly")
+    ],
+    20: [
+        ("C2", "naively"), ("C2", "sophisticatedly"), ("C2", "ingenuously"), ("C2", "hypocritically"),
+        ("C2", "sincerely"), ("C2", "affectedly"), ("C2", "unassumingly"), ("C2", "arrogantly"),
+        ("C2", "obstinately"), ("C2", "affably"), ("C2", "reclusively"), ("C2", "extrovertedly"),
+        ("C2", "introvertedly"), ("C2", "loquaciously"), ("C2", "taciturnly"), ("C2", "verbosely")
     ]
 }
 
