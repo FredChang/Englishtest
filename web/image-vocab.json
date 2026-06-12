@@ -4,1651 +4,1887 @@
     "English": [
       "apple"
     ],
-    "ImageUrl": "images/apple.svg"
+    "ImageUrl": "images/apple.svg",
+    "Chinese": "蘋果"
   },
   {
     "Level": "A1",
     "English": [
       "book"
     ],
-    "ImageUrl": "images/book.svg"
+    "ImageUrl": "images/book.svg",
+    "Chinese": "書"
   },
   {
     "Level": "A1",
     "English": [
       "water"
     ],
-    "ImageUrl": "images/water.svg"
+    "ImageUrl": "images/water.svg",
+    "Chinese": "水"
   },
   {
     "Level": "A1",
     "English": [
       "cat"
     ],
-    "ImageUrl": "images/cat.svg"
+    "ImageUrl": "images/cat.svg",
+    "Chinese": "貓"
   },
   {
     "Level": "A1",
     "English": [
       "dog"
     ],
-    "ImageUrl": "images/dog.svg"
+    "ImageUrl": "images/dog.svg",
+    "Chinese": "狗"
   },
   {
     "Level": "A1",
     "English": [
       "house"
     ],
-    "ImageUrl": "images/house.svg"
+    "ImageUrl": "images/house.svg",
+    "Chinese": "房子"
   },
   {
     "Level": "A1",
     "English": [
       "bird"
     ],
-    "ImageUrl": "images/bird.svg"
+    "ImageUrl": "images/bird.svg",
+    "Chinese": "鳥"
   },
   {
     "Level": "A1",
     "English": [
       "milk"
     ],
-    "ImageUrl": "images/milk.svg"
+    "ImageUrl": "images/milk.svg",
+    "Chinese": "牛奶"
   },
   {
     "Level": "A1",
     "English": [
       "egg"
     ],
-    "ImageUrl": "images/egg.svg"
+    "ImageUrl": "images/egg.svg",
+    "Chinese": "蛋"
   },
   {
     "Level": "A1",
     "English": [
       "fish"
     ],
-    "ImageUrl": "images/fish.svg"
+    "ImageUrl": "images/fish.svg",
+    "Chinese": "魚"
   },
   {
     "Level": "A1",
     "English": [
       "car"
     ],
-    "ImageUrl": "images/car.svg"
+    "ImageUrl": "images/car.svg",
+    "Chinese": "汽車"
   },
   {
     "Level": "A1",
     "English": [
       "tree"
     ],
-    "ImageUrl": "images/tree.svg"
+    "ImageUrl": "images/tree.svg",
+    "Chinese": "樹"
   },
   {
     "Level": "B1",
     "English": [
       "atlas"
     ],
-    "ImageUrl": "images/b1-atlas.jpg"
+    "ImageUrl": "images/b1-atlas.jpg",
+    "Chinese": "地圖集"
   },
   {
     "Level": "B1",
     "English": [
       "campsite"
     ],
-    "ImageUrl": "images/b1-campsite.jpg"
+    "ImageUrl": "images/b1-campsite.jpg",
+    "Chinese": "營地"
   },
   {
     "Level": "B1",
     "English": [
       "desert"
     ],
-    "ImageUrl": "images/b1-desert.jpg"
+    "ImageUrl": "images/b1-desert.jpg",
+    "Chinese": "沙漠"
   },
   {
     "Level": "B1",
     "English": [
       "coastline"
     ],
-    "ImageUrl": "images/b1-coastline.jpg"
+    "ImageUrl": "images/b1-coastline.jpg",
+    "Chinese": "海岸線"
   },
   {
     "Level": "B1",
     "English": [
       "countryside"
     ],
-    "ImageUrl": "images/b1-countryside.jpg"
+    "ImageUrl": "images/b1-countryside.jpg",
+    "Chinese": "鄉村"
   },
   {
     "Level": "B1",
     "English": [
       "canal"
     ],
-    "ImageUrl": "images/b1-canal.jpg"
+    "ImageUrl": "images/b1-canal.jpg",
+    "Chinese": "運河"
   },
   {
     "Level": "B1",
     "English": [
       "carriage"
     ],
-    "ImageUrl": "images/b1-carriage.jpg"
+    "ImageUrl": "images/b1-carriage.jpg",
+    "Chinese": "馬車"
   },
   {
     "Level": "B1",
     "English": [
       "cliff"
     ],
-    "ImageUrl": "images/b1-cliff.jpg"
+    "ImageUrl": "images/b1-cliff.jpg",
+    "Chinese": "懸崖"
   },
   {
     "Level": "B1",
     "English": [
       "cave"
     ],
-    "ImageUrl": "images/b1-cave.jpg"
+    "ImageUrl": "images/b1-cave.jpg",
+    "Chinese": "洞穴"
   },
   {
     "Level": "B1",
     "English": [
       "destination"
     ],
-    "ImageUrl": "images/b1-destination.jpg"
+    "ImageUrl": "images/b1-destination.jpg",
+    "Chinese": "目的地"
   },
   {
     "Level": "B1",
     "English": [
       "abandon"
     ],
-    "ImageUrl": "images/b1-abandon.jpg"
+    "ImageUrl": "images/b1-abandon.jpg",
+    "Chinese": "放棄"
   },
   {
     "Level": "B1",
     "English": [
       "achievement"
     ],
-    "ImageUrl": "images/b1-achievement.jpg"
+    "ImageUrl": "images/b1-achievement.jpg",
+    "Chinese": "成就"
   },
   {
     "Level": "B1",
     "English": [
       "acknowledge"
     ],
-    "ImageUrl": "images/b1-acknowledge.jpg"
+    "ImageUrl": "images/b1-acknowledge.jpg",
+    "Chinese": "承認"
   },
   {
     "Level": "B1",
     "English": [
       "adjust"
     ],
-    "ImageUrl": "images/b1-adjust.jpg"
+    "ImageUrl": "images/b1-adjust.jpg",
+    "Chinese": "適應"
   },
   {
     "Level": "B1",
     "English": [
       "administer"
     ],
-    "ImageUrl": "images/b1-administer.jpg"
+    "ImageUrl": "images/b1-administer.jpg",
+    "Chinese": "管理"
   },
   {
     "Level": "B1",
     "English": [
       "affluence"
     ],
-    "ImageUrl": "images/b1-affluence.jpg"
+    "ImageUrl": "images/b1-affluence.jpg",
+    "Chinese": "財富"
   },
   {
     "Level": "B1",
     "English": [
       "ambition"
     ],
-    "ImageUrl": "images/b1-ambition.jpg"
+    "ImageUrl": "images/b1-ambition.jpg",
+    "Chinese": "野心"
   },
   {
     "Level": "B1",
     "English": [
       "anxiety"
     ],
-    "ImageUrl": "images/b1-anxiety.jpg"
+    "ImageUrl": "images/b1-anxiety.jpg",
+    "Chinese": "焦慮"
   },
   {
     "Level": "B1",
     "English": [
       "apologize"
     ],
-    "ImageUrl": "images/b1-apologize.jpg"
+    "ImageUrl": "images/b1-apologize.jpg",
+    "Chinese": "道歉"
   },
   {
     "Level": "B1",
     "English": [
       "assault"
     ],
-    "ImageUrl": "images/b1-assault.jpg"
+    "ImageUrl": "images/b1-assault.jpg",
+    "Chinese": "攻擊"
   },
   {
     "Level": "B1",
     "English": [
       "assume"
     ],
-    "ImageUrl": "images/b1-assume.jpg"
+    "ImageUrl": "images/b1-assume.jpg",
+    "Chinese": "假設"
   },
   {
     "Level": "B1",
     "English": [
       "attend"
     ],
-    "ImageUrl": "images/b1-attend.jpg"
+    "ImageUrl": "images/b1-attend.jpg",
+    "Chinese": "注意"
   },
   {
     "Level": "B1",
     "English": [
       "avoid"
     ],
-    "ImageUrl": "images/b1-avoid.jpg"
+    "ImageUrl": "images/b1-avoid.jpg",
+    "Chinese": "避免"
   },
   {
     "Level": "B1",
     "English": [
       "catastrophe"
     ],
-    "ImageUrl": "images/b1-catastrophe.jpg"
+    "ImageUrl": "images/b1-catastrophe.jpg",
+    "Chinese": "災難"
   },
   {
     "Level": "B1",
     "English": [
       "collaborate"
     ],
-    "ImageUrl": "images/b1-collaborate.jpg"
+    "ImageUrl": "images/b1-collaborate.jpg",
+    "Chinese": "合作"
   },
   {
     "Level": "B1",
     "English": [
       "commit"
     ],
-    "ImageUrl": "images/b1-commit.jpg"
+    "ImageUrl": "images/b1-commit.jpg",
+    "Chinese": "承諾"
   },
   {
     "Level": "B1",
     "English": [
       "concentrate"
     ],
-    "ImageUrl": "images/b1-concentrate.jpg"
+    "ImageUrl": "images/b1-concentrate.jpg",
+    "Chinese": "專注"
   },
   {
     "Level": "B1",
     "English": [
       "confidence"
     ],
-    "ImageUrl": "images/b1-confidence.jpg"
+    "ImageUrl": "images/b1-confidence.jpg",
+    "Chinese": "自信"
   },
   {
     "Level": "B1",
     "English": [
       "contaminate"
     ],
-    "ImageUrl": "images/b1-contaminate.jpg"
+    "ImageUrl": "images/b1-contaminate.jpg",
+    "Chinese": "污染"
   },
   {
     "Level": "B1",
     "English": [
       "contribute"
     ],
-    "ImageUrl": "images/b1-contribute.jpg"
+    "ImageUrl": "images/b1-contribute.jpg",
+    "Chinese": "貢獻"
   },
   {
     "Level": "B1",
     "English": [
       "control"
     ],
-    "ImageUrl": "images/b1-control.jpg"
+    "ImageUrl": "images/b1-control.jpg",
+    "Chinese": "控制權"
   },
   {
     "Level": "B1",
     "English": [
       "creativity"
     ],
-    "ImageUrl": "images/b1-creativity.jpg"
+    "ImageUrl": "images/b1-creativity.jpg",
+    "Chinese": "創造力"
   },
   {
     "Level": "B1",
     "English": [
       "curiosity"
     ],
-    "ImageUrl": "images/b1-curiosity.jpg"
+    "ImageUrl": "images/b1-curiosity.jpg",
+    "Chinese": "好奇心"
   },
   {
     "Level": "B1",
     "English": [
       "demographics"
     ],
-    "ImageUrl": "images/b1-demographics.jpg"
+    "ImageUrl": "images/b1-demographics.jpg",
+    "Chinese": "人口統計"
   },
   {
     "Level": "B1",
     "English": [
       "demonstrate"
     ],
-    "ImageUrl": "images/b1-demonstrate.jpg"
+    "ImageUrl": "images/b1-demonstrate.jpg",
+    "Chinese": "展示"
   },
   {
     "Level": "B1",
     "English": [
       "destitution"
     ],
-    "ImageUrl": "images/b1-destitution.jpg"
+    "ImageUrl": "images/b1-destitution.jpg",
+    "Chinese": "貧窮"
   },
   {
     "Level": "B1",
     "English": [
       "divert"
     ],
-    "ImageUrl": "images/b1-divert.jpg"
+    "ImageUrl": "images/b1-divert.jpg",
+    "Chinese": "分心"
   },
   {
     "Level": "B1",
     "English": [
       "enhance"
     ],
-    "ImageUrl": "images/b1-enhance.jpg"
+    "ImageUrl": "images/b1-enhance.jpg",
+    "Chinese": "提升"
   },
   {
     "Level": "B1",
     "English": [
       "enlarge"
     ],
-    "ImageUrl": "images/b1-enlarge.jpg"
+    "ImageUrl": "images/b1-enlarge.jpg",
+    "Chinese": "擴大"
   },
   {
     "Level": "B1",
     "English": [
       "envision"
     ],
-    "ImageUrl": "images/b1-envision.jpg"
+    "ImageUrl": "images/b1-envision.jpg",
+    "Chinese": "想像"
   },
   {
     "Level": "B1",
     "English": [
       "guard"
     ],
-    "ImageUrl": "images/b1-guard.jpg"
+    "ImageUrl": "images/b1-guard.jpg",
+    "Chinese": "保護"
   },
   {
     "Level": "B1",
     "English": [
       "guide"
     ],
-    "ImageUrl": "images/b1-guide.jpg"
+    "ImageUrl": "images/b1-guide.jpg",
+    "Chinese": "領導"
   },
   {
     "Level": "B1",
     "English": [
       "hazard"
     ],
-    "ImageUrl": "images/b1-hazard.jpg"
+    "ImageUrl": "images/b1-hazard.jpg",
+    "Chinese": "危害"
   },
   {
     "Level": "B1",
     "English": [
       "honor"
     ],
-    "ImageUrl": "images/b1-honor.jpg"
+    "ImageUrl": "images/b1-honor.jpg",
+    "Chinese": "尊重"
   },
   {
     "Level": "B1",
     "English": [
       "intimate"
     ],
-    "ImageUrl": "images/b1-intimate.jpg"
+    "ImageUrl": "images/b1-intimate.jpg",
+    "Chinese": "親密的"
   },
   {
     "Level": "B1",
     "English": [
       "levy"
     ],
-    "ImageUrl": "images/b1-levy.jpg"
+    "ImageUrl": "images/b1-levy.jpg",
+    "Chinese": "稅"
   },
   {
     "Level": "B1",
     "English": [
       "liability"
     ],
-    "ImageUrl": "images/b1-liability.jpg"
+    "ImageUrl": "images/b1-liability.jpg",
+    "Chinese": "法律責任"
   },
   {
     "Level": "B1",
     "English": [
       "migrant"
     ],
-    "ImageUrl": "images/b1-migrant.jpg"
+    "ImageUrl": "images/b1-migrant.jpg",
+    "Chinese": "移民"
   },
   {
     "Level": "B1",
     "English": [
       "neglect"
     ],
-    "ImageUrl": "images/b1-neglect.jpg"
+    "ImageUrl": "images/b1-neglect.jpg",
+    "Chinese": "忽視"
   },
   {
     "Level": "B1",
     "English": [
       "organize"
     ],
-    "ImageUrl": "images/b1-organize.jpg"
+    "ImageUrl": "images/b1-organize.jpg",
+    "Chinese": "組織"
   },
   {
     "Level": "B1",
     "English": [
       "pardon"
     ],
-    "ImageUrl": "images/b1-pardon.jpg"
+    "ImageUrl": "images/b1-pardon.jpg",
+    "Chinese": "原諒"
   },
   {
     "Level": "B1",
     "English": [
       "persevere"
     ],
-    "ImageUrl": "images/b1-persevere.jpg"
+    "ImageUrl": "images/b1-persevere.jpg",
+    "Chinese": "堅持"
   },
   {
     "Level": "B1",
     "English": [
       "persuade"
     ],
-    "ImageUrl": "images/b1-persuade.jpg"
+    "ImageUrl": "images/b1-persuade.jpg",
+    "Chinese": "說服"
   },
   {
     "Level": "B1",
     "English": [
       "preserve"
     ],
-    "ImageUrl": "images/b1-preserve.jpg"
+    "ImageUrl": "images/b1-preserve.jpg",
+    "Chinese": "維持"
   },
   {
     "Level": "B1",
     "English": [
       "reduce"
     ],
-    "ImageUrl": "images/b1-reduce.jpg"
+    "ImageUrl": "images/b1-reduce.jpg",
+    "Chinese": "減少"
   },
   {
     "Level": "B1",
     "English": [
       "refresh"
     ],
-    "ImageUrl": "images/b1-refresh.jpg"
+    "ImageUrl": "images/b1-refresh.jpg",
+    "Chinese": "更新"
   },
   {
     "Level": "B1",
     "English": [
       "reject"
     ],
-    "ImageUrl": "images/b1-reject.jpg"
+    "ImageUrl": "images/b1-reject.jpg",
+    "Chinese": "否認"
   },
   {
     "Level": "B1",
     "English": [
       "reuse"
     ],
-    "ImageUrl": "images/b1-reuse.jpg"
+    "ImageUrl": "images/b1-reuse.jpg",
+    "Chinese": "回收"
   },
   {
     "Level": "B1",
     "English": [
       "rival"
     ],
-    "ImageUrl": "images/b1-rival.jpg"
+    "ImageUrl": "images/b1-rival.jpg",
+    "Chinese": "競爭"
   },
   {
     "Level": "B1",
     "English": [
       "safety"
     ],
-    "ImageUrl": "images/b1-safety.jpg"
+    "ImageUrl": "images/b1-safety.jpg",
+    "Chinese": "安全"
   },
   {
     "Level": "B1",
     "English": [
       "schedule"
     ],
-    "ImageUrl": "images/b1-schedule.jpg"
+    "ImageUrl": "images/b1-schedule.jpg",
+    "Chinese": "時間表"
   },
   {
     "Level": "B1",
     "English": [
       "substitute"
     ],
-    "ImageUrl": "images/b1-substitute.jpg"
+    "ImageUrl": "images/b1-substitute.jpg",
+    "Chinese": "替換"
   },
   {
     "Level": "B1",
     "English": [
       "suspect"
     ],
-    "ImageUrl": "images/b1-suspect.jpg"
+    "ImageUrl": "images/b1-suspect.jpg",
+    "Chinese": "懷疑"
   },
   {
     "Level": "B1",
     "English": [
       "undermine"
     ],
-    "ImageUrl": "images/b1-undermine.jpg"
+    "ImageUrl": "images/b1-undermine.jpg",
+    "Chinese": "削弱"
   },
   {
     "Level": "B1",
     "English": [
       "patience"
     ],
-    "ImageUrl": "images/b1-patience.jpg"
+    "ImageUrl": "images/b1-patience.jpg",
+    "Chinese": "耐心"
   },
   {
     "Level": "B1",
     "English": [
       "honesty"
     ],
-    "ImageUrl": "images/b1-honesty.jpg"
+    "ImageUrl": "images/b1-honesty.jpg",
+    "Chinese": "誠實"
   },
   {
     "Level": "B1",
     "English": [
       "modesty"
     ],
-    "ImageUrl": "images/b1-modesty.jpg"
+    "ImageUrl": "images/b1-modesty.jpg",
+    "Chinese": "謙虛"
   },
   {
     "Level": "B1",
     "English": [
       "loyalty"
     ],
-    "ImageUrl": "images/b1-loyalty.jpg"
+    "ImageUrl": "images/b1-loyalty.jpg",
+    "Chinese": "忠誠"
   },
   {
     "Level": "B1",
     "English": [
       "compassion"
     ],
-    "ImageUrl": "images/b1-compassion.jpg"
+    "ImageUrl": "images/b1-compassion.jpg",
+    "Chinese": "同情"
   },
   {
     "Level": "B1",
     "English": [
       "envy"
     ],
-    "ImageUrl": "images/b1-envy.jpg"
+    "ImageUrl": "images/b1-envy.jpg",
+    "Chinese": "嫉妒"
   },
   {
     "Level": "B1",
     "English": [
       "rage"
     ],
-    "ImageUrl": "images/b1-rage.jpg"
+    "ImageUrl": "images/b1-rage.jpg",
+    "Chinese": "憤怒"
   },
   {
     "Level": "B1",
     "English": [
       "terror"
     ],
-    "ImageUrl": "images/b1-terror.jpg"
+    "ImageUrl": "images/b1-terror.jpg",
+    "Chinese": "恐懼"
   },
   {
     "Level": "B1",
     "English": [
       "astonishment"
     ],
-    "ImageUrl": "images/b1-astonishment.jpg"
+    "ImageUrl": "images/b1-astonishment.jpg",
+    "Chinese": "驚訝"
   },
   {
     "Level": "B1",
     "English": [
       "remorse"
     ],
-    "ImageUrl": "images/b1-remorse.jpg"
+    "ImageUrl": "images/b1-remorse.jpg",
+    "Chinese": "後悔"
   },
   {
     "Level": "B1",
     "English": [
       "hopelessness"
     ],
-    "ImageUrl": "images/b1-hopelessness.jpg"
+    "ImageUrl": "images/b1-hopelessness.jpg",
+    "Chinese": "絕望"
   },
   {
     "Level": "B1",
     "English": [
       "contentment"
     ],
-    "ImageUrl": "images/b1-contentment.jpg"
+    "ImageUrl": "images/b1-contentment.jpg",
+    "Chinese": "滿意"
   },
   {
     "Level": "B1",
     "English": [
       "frustration"
     ],
-    "ImageUrl": "images/b1-frustration.jpg"
+    "ImageUrl": "images/b1-frustration.jpg",
+    "Chinese": "失望"
   },
   {
     "Level": "B1",
     "English": [
       "grateful"
     ],
-    "ImageUrl": "images/b1-grateful.jpg"
+    "ImageUrl": "images/b1-grateful.jpg",
+    "Chinese": "感謝"
   },
   {
     "Level": "B1",
     "English": [
       "watch"
     ],
-    "ImageUrl": "images/b1-watch.jpg"
+    "ImageUrl": "images/b1-watch.jpg",
+    "Chinese": "手錶"
   },
   {
     "Level": "B1",
     "English": [
       "join"
     ],
-    "ImageUrl": "images/b1-join.jpg"
+    "ImageUrl": "images/b1-join.jpg",
+    "Chinese": "參加"
   },
   {
     "Level": "B1",
     "English": [
       "change"
     ],
-    "ImageUrl": "images/b1-change.jpg"
+    "ImageUrl": "images/b1-change.jpg",
+    "Chinese": "改變"
   },
   {
     "Level": "B1",
     "English": [
       "destroy"
     ],
-    "ImageUrl": "images/b1-destroy.jpg"
+    "ImageUrl": "images/b1-destroy.jpg",
+    "Chinese": "破壞"
   },
   {
     "Level": "B1",
     "English": [
       "fix"
     ],
-    "ImageUrl": "images/b1-fix.jpg"
+    "ImageUrl": "images/b1-fix.jpg",
+    "Chinese": "修復"
   },
   {
     "Level": "B1",
     "English": [
       "intimidate"
     ],
-    "ImageUrl": "images/b1-intimidate.jpg"
+    "ImageUrl": "images/b1-intimidate.jpg",
+    "Chinese": "威脅"
   },
   {
     "Level": "B1",
     "English": [
       "save energy"
     ],
-    "ImageUrl": "images/b1-save_energy.jpg"
+    "ImageUrl": "images/b1-save_energy.jpg",
+    "Chinese": "節能"
   },
   {
     "Level": "B1",
     "English": [
       "weather pattern"
     ],
-    "ImageUrl": "images/b1-weather_pattern.jpg"
+    "ImageUrl": "images/b1-weather_pattern.jpg",
+    "Chinese": "氣候"
   },
   {
     "Level": "B1",
     "English": [
       "displaced person"
     ],
-    "ImageUrl": "images/b1-displaced_person.jpg"
+    "ImageUrl": "images/b1-displaced_person.jpg",
+    "Chinese": "難民"
   },
   {
     "Level": "B1",
     "English": [
       "financial plan"
     ],
-    "ImageUrl": "images/b1-financial_plan.jpg"
+    "ImageUrl": "images/b1-financial_plan.jpg",
+    "Chinese": "預算"
   },
   {
     "Level": "B1",
     "English": [
       "benefit"
     ],
-    "ImageUrl": "images/b1-benefit.jpg"
+    "ImageUrl": "images/b1-benefit.jpg",
+    "Chinese": "福利"
   },
   {
     "Level": "B1",
     "English": [
       "right"
     ],
-    "ImageUrl": "images/b1-right.jpg"
+    "ImageUrl": "images/b1-right.jpg",
+    "Chinese": "右"
   },
   {
     "Level": "B1",
     "English": [
       "duty"
     ],
-    "ImageUrl": "images/b1-duty.jpg"
+    "ImageUrl": "images/b1-duty.jpg",
+    "Chinese": "義務"
   },
   {
     "Level": "B1",
     "English": [
       "law"
     ],
-    "ImageUrl": "images/b1-law.jpg"
+    "ImageUrl": "images/b1-law.jpg",
+    "Chinese": "法律"
   },
   {
     "Level": "B1",
     "English": [
       "rule"
     ],
-    "ImageUrl": "images/b1-rule.jpg"
+    "ImageUrl": "images/b1-rule.jpg",
+    "Chinese": "規則"
   },
   {
     "Level": "B1",
     "English": [
       "liberty"
     ],
-    "ImageUrl": "images/b1-liberty.jpg"
+    "ImageUrl": "images/b1-liberty.jpg",
+    "Chinese": "自由"
   },
   {
     "Level": "B1",
     "English": [
       "equality"
     ],
-    "ImageUrl": "images/b1-equality.jpg"
+    "ImageUrl": "images/b1-equality.jpg",
+    "Chinese": "平等"
   },
   {
     "Level": "B1",
     "English": [
       "fairness"
     ],
-    "ImageUrl": "images/b1-fairness.jpg"
+    "ImageUrl": "images/b1-fairness.jpg",
+    "Chinese": "正義"
   },
   {
     "Level": "B1",
     "English": [
       "ballot"
     ],
-    "ImageUrl": "images/b1-ballot.jpg"
+    "ImageUrl": "images/b1-ballot.jpg",
+    "Chinese": "選舉"
   },
   {
     "Level": "B1",
     "English": [
       "administration"
     ],
-    "ImageUrl": "images/b1-administration.jpg"
+    "ImageUrl": "images/b1-administration.jpg",
+    "Chinese": "政府"
   },
   {
     "Level": "B1",
     "English": [
       "policy"
     ],
-    "ImageUrl": "images/b1-policy.jpg"
+    "ImageUrl": "images/b1-policy.jpg",
+    "Chinese": "政策"
   },
   {
     "Level": "B1",
     "English": [
       "uprising"
     ],
-    "ImageUrl": "images/b1-uprising.jpg"
+    "ImageUrl": "images/b1-uprising.jpg",
+    "Chinese": "革命"
   },
   {
     "Level": "B1",
     "English": [
       "harmony"
     ],
-    "ImageUrl": "images/b1-harmony.jpg"
+    "ImageUrl": "images/b1-harmony.jpg",
+    "Chinese": "和平"
   },
   {
     "Level": "B1",
     "English": [
       "warfare"
     ],
-    "ImageUrl": "images/b1-warfare.jpg"
+    "ImageUrl": "images/b1-warfare.jpg",
+    "Chinese": "戰爭"
   },
   {
     "Level": "B1",
     "English": [
       "media"
     ],
-    "ImageUrl": "images/b1-media.jpg"
+    "ImageUrl": "images/b1-media.jpg",
+    "Chinese": "媒體"
   },
   {
     "Level": "B1",
     "English": [
       "advertisement"
     ],
-    "ImageUrl": "images/b1-advertisement.jpg"
+    "ImageUrl": "images/b1-advertisement.jpg",
+    "Chinese": "廣告"
   },
   {
     "Level": "B1",
     "English": [
       "brand"
     ],
-    "ImageUrl": "images/b1-brand.jpg"
+    "ImageUrl": "images/b1-brand.jpg",
+    "Chinese": "品牌"
   },
   {
     "Level": "B1",
     "English": [
       "consumer"
     ],
-    "ImageUrl": "images/b1-consumer.jpg"
+    "ImageUrl": "images/b1-consumer.jpg",
+    "Chinese": "消費者"
   },
   {
     "Level": "B1",
     "English": [
       "produce"
     ],
-    "ImageUrl": "images/b1-produce.jpg"
+    "ImageUrl": "images/b1-produce.jpg",
+    "Chinese": "生產"
   },
   {
     "Level": "B1",
     "English": [
       "service"
     ],
-    "ImageUrl": "images/b1-service.jpg"
+    "ImageUrl": "images/b1-service.jpg",
+    "Chinese": "服務"
   },
   {
     "Level": "B1",
     "English": [
       "quality"
     ],
-    "ImageUrl": "images/b1-quality.jpg"
+    "ImageUrl": "images/b1-quality.jpg",
+    "Chinese": "品質"
   },
   {
     "Level": "B1",
     "English": [
       "quantity"
     ],
-    "ImageUrl": "images/b1-quantity.jpg"
+    "ImageUrl": "images/b1-quantity.jpg",
+    "Chinese": "數量"
   },
   {
     "Level": "B1",
     "English": [
       "price"
     ],
-    "ImageUrl": "images/b1-price.jpg"
+    "ImageUrl": "images/b1-price.jpg",
+    "Chinese": "價格"
   },
   {
     "Level": "B1",
     "English": [
       "profit"
     ],
-    "ImageUrl": "images/b1-profit.jpg"
+    "ImageUrl": "images/b1-profit.jpg",
+    "Chinese": "利潤"
   },
   {
     "Level": "B1",
     "English": [
       "cost"
     ],
-    "ImageUrl": "images/b1-cost.jpg"
+    "ImageUrl": "images/b1-cost.jpg",
+    "Chinese": "成本"
   },
   {
     "Level": "B1",
     "English": [
       "demand"
     ],
-    "ImageUrl": "images/b1-demand.jpg"
+    "ImageUrl": "images/b1-demand.jpg",
+    "Chinese": "需求"
   },
   {
     "Level": "B1",
     "English": [
       "supply"
     ],
-    "ImageUrl": "images/b1-supply.jpg"
+    "ImageUrl": "images/b1-supply.jpg",
+    "Chinese": "供應"
   },
   {
     "Level": "B1",
     "English": [
       "competitiveness"
     ],
-    "ImageUrl": "images/b1-competitiveness.jpg"
+    "ImageUrl": "images/b1-competitiveness.jpg",
+    "Chinese": "競爭力"
   },
   {
     "Level": "B1",
     "English": [
       "innovation"
     ],
-    "ImageUrl": "images/b1-innovation.jpg"
+    "ImageUrl": "images/b1-innovation.jpg",
+    "Chinese": "創新"
   },
   {
     "Level": "B1",
     "English": [
       "technology"
     ],
-    "ImageUrl": "images/b1-technology.jpg"
+    "ImageUrl": "images/b1-technology.jpg",
+    "Chinese": "科技"
   },
   {
     "Level": "B1",
     "English": [
       "science"
     ],
-    "ImageUrl": "images/b1-science.jpg"
+    "ImageUrl": "images/b1-science.jpg",
+    "Chinese": "科學"
   },
   {
     "Level": "B1",
     "English": [
       "research"
     ],
-    "ImageUrl": "images/b1-research.jpg"
+    "ImageUrl": "images/b1-research.jpg",
+    "Chinese": "研究"
   },
   {
     "Level": "B1",
     "English": [
       "experiment"
     ],
-    "ImageUrl": "images/b1-experiment.jpg"
+    "ImageUrl": "images/b1-experiment.jpg",
+    "Chinese": "實驗"
   },
   {
     "Level": "B1",
     "English": [
       "theory"
     ],
-    "ImageUrl": "images/b1-theory.jpg"
+    "ImageUrl": "images/b1-theory.jpg",
+    "Chinese": "理論"
   },
   {
     "Level": "B1",
     "English": [
       "practice"
     ],
-    "ImageUrl": "images/b1-practice.jpg"
+    "ImageUrl": "images/b1-practice.jpg",
+    "Chinese": "練習"
   },
   {
     "Level": "B1",
     "English": [
       "proof"
     ],
-    "ImageUrl": "images/b1-proof.jpg"
+    "ImageUrl": "images/b1-proof.jpg",
+    "Chinese": "證據"
   },
   {
     "Level": "B1",
     "English": [
       "conclusion"
     ],
-    "ImageUrl": "images/b1-conclusion.jpg"
+    "ImageUrl": "images/b1-conclusion.jpg",
+    "Chinese": "結論"
   },
   {
     "Level": "B1",
     "English": [
       "cause"
     ],
-    "ImageUrl": "images/b1-cause.jpg"
+    "ImageUrl": "images/b1-cause.jpg",
+    "Chinese": "原因"
   },
   {
     "Level": "B1",
     "English": [
       "outcome"
     ],
-    "ImageUrl": "images/b1-outcome.jpg"
+    "ImageUrl": "images/b1-outcome.jpg",
+    "Chinese": "成果"
   },
   {
     "Level": "B1",
     "English": [
       "effect"
     ],
-    "ImageUrl": "images/b1-effect.jpg"
+    "ImageUrl": "images/b1-effect.jpg",
+    "Chinese": "效果"
   },
   {
     "Level": "B1",
     "English": [
       "relation"
     ],
-    "ImageUrl": "images/b1-relation.jpg"
+    "ImageUrl": "images/b1-relation.jpg",
+    "Chinese": "關係"
   },
   {
     "Level": "B1",
     "English": [
       "communication"
     ],
-    "ImageUrl": "images/b1-communication.jpg"
+    "ImageUrl": "images/b1-communication.jpg",
+    "Chinese": "溝通"
   },
   {
     "Level": "B1",
     "English": [
       "discussion"
     ],
-    "ImageUrl": "images/b1-discussion.jpg"
+    "ImageUrl": "images/b1-discussion.jpg",
+    "Chinese": "討論"
   },
   {
     "Level": "B1",
     "English": [
       "argument"
     ],
-    "ImageUrl": "images/b1-argument.jpg"
+    "ImageUrl": "images/b1-argument.jpg",
+    "Chinese": "辯論"
   },
   {
     "Level": "B1",
     "English": [
       "speech"
     ],
-    "ImageUrl": "images/b1-speech.jpg"
+    "ImageUrl": "images/b1-speech.jpg",
+    "Chinese": "演講"
   },
   {
     "Level": "B1",
     "English": [
       "report"
     ],
-    "ImageUrl": "images/b1-report.jpg"
+    "ImageUrl": "images/b1-report.jpg",
+    "Chinese": "報告"
   },
   {
     "Level": "B1",
     "English": [
       "article"
     ],
-    "ImageUrl": "images/b1-article.jpg"
+    "ImageUrl": "images/b1-article.jpg",
+    "Chinese": "文章"
   },
   {
     "Level": "B1",
     "English": [
       "paragraph"
     ],
-    "ImageUrl": "images/b1-paragraph.jpg"
+    "ImageUrl": "images/b1-paragraph.jpg",
+    "Chinese": "段落"
   },
   {
     "Level": "B1",
     "English": [
       "sentence"
     ],
-    "ImageUrl": "images/b1-sentence.jpg"
+    "ImageUrl": "images/b1-sentence.jpg",
+    "Chinese": "句子"
   },
   {
     "Level": "B1",
     "English": [
       "vocabulary"
     ],
-    "ImageUrl": "images/b1-vocabulary.jpg"
+    "ImageUrl": "images/b1-vocabulary.jpg",
+    "Chinese": "單字"
   },
   {
     "Level": "B1",
     "English": [
       "grammar"
     ],
-    "ImageUrl": "images/b1-grammar.jpg"
+    "ImageUrl": "images/b1-grammar.jpg",
+    "Chinese": "文法"
   },
   {
     "Level": "B1",
     "English": [
       "pronunciation"
     ],
-    "ImageUrl": "images/b1-pronunciation.jpg"
+    "ImageUrl": "images/b1-pronunciation.jpg",
+    "Chinese": "發音"
   },
   {
     "Level": "B1",
     "English": [
       "accent"
     ],
-    "ImageUrl": "images/b1-accent.jpg"
+    "ImageUrl": "images/b1-accent.jpg",
+    "Chinese": "口音"
   },
   {
     "Level": "B1",
     "English": [
       "fluent"
     ],
-    "ImageUrl": "images/b1-fluent.jpg"
+    "ImageUrl": "images/b1-fluent.jpg",
+    "Chinese": "流利"
   },
   {
     "Level": "B1",
     "English": [
       "translate"
     ],
-    "ImageUrl": "images/b1-translate.jpg"
+    "ImageUrl": "images/b1-translate.jpg",
+    "Chinese": "翻譯"
   },
   {
     "Level": "B1",
     "English": [
       "interpret"
     ],
-    "ImageUrl": "images/b1-interpret.jpg"
+    "ImageUrl": "images/b1-interpret.jpg",
+    "Chinese": "解釋"
   },
   {
     "Level": "B1",
     "English": [
       "describe"
     ],
-    "ImageUrl": "images/b1-describe.jpg"
+    "ImageUrl": "images/b1-describe.jpg",
+    "Chinese": "描述"
   },
   {
     "Level": "B1",
     "English": [
       "compare"
     ],
-    "ImageUrl": "images/b1-compare.jpg"
+    "ImageUrl": "images/b1-compare.jpg",
+    "Chinese": "比較"
   },
   {
     "Level": "B1",
     "English": [
       "contrast"
     ],
-    "ImageUrl": "images/b1-contrast.jpg"
+    "ImageUrl": "images/b1-contrast.jpg",
+    "Chinese": "對比"
   },
   {
     "Level": "B1",
     "English": [
       "summarize"
     ],
-    "ImageUrl": "images/b1-summarize.jpg"
+    "ImageUrl": "images/b1-summarize.jpg",
+    "Chinese": "總結"
   },
   {
     "Level": "B1",
     "English": [
       "examine"
     ],
-    "ImageUrl": "images/b1-examine.jpg"
+    "ImageUrl": "images/b1-examine.jpg",
+    "Chinese": "分析"
   },
   {
     "Level": "B1",
     "English": [
       "evaluate"
     ],
-    "ImageUrl": "images/b1-evaluate.jpg"
+    "ImageUrl": "images/b1-evaluate.jpg",
+    "Chinese": "評估"
   },
   {
     "Level": "B1",
     "English": [
       "suggest"
     ],
-    "ImageUrl": "images/b1-suggest.jpg"
+    "ImageUrl": "images/b1-suggest.jpg",
+    "Chinese": "暗示"
   },
   {
     "Level": "B1",
     "English": [
       "recommend"
     ],
-    "ImageUrl": "images/b1-recommend.jpg"
+    "ImageUrl": "images/b1-recommend.jpg",
+    "Chinese": "推薦"
   },
   {
     "Level": "B1",
     "English": [
       "criticize"
     ],
-    "ImageUrl": "images/b1-criticize.jpg"
+    "ImageUrl": "images/b1-criticize.jpg",
+    "Chinese": "批評"
   },
   {
     "Level": "B1",
     "English": [
       "encourage"
     ],
-    "ImageUrl": "images/b1-encourage.jpg"
+    "ImageUrl": "images/b1-encourage.jpg",
+    "Chinese": "鼓勵"
   },
   {
     "Level": "B1",
     "English": [
       "motivate"
     ],
-    "ImageUrl": "images/b1-motivate.jpg"
+    "ImageUrl": "images/b1-motivate.jpg",
+    "Chinese": "激勵"
   },
   {
     "Level": "B1",
     "English": [
       "inspire"
     ],
-    "ImageUrl": "images/b1-inspire.jpg"
+    "ImageUrl": "images/b1-inspire.jpg",
+    "Chinese": "啟發"
   },
   {
     "Level": "B1",
     "English": [
       "bored"
     ],
-    "ImageUrl": "images/b1-bored.jpg"
+    "ImageUrl": "images/b1-bored.jpg",
+    "Chinese": "無聊"
   },
   {
     "Level": "B1",
     "English": [
       "interesting"
     ],
-    "ImageUrl": "images/b1-interesting.jpg"
+    "ImageUrl": "images/b1-interesting.jpg",
+    "Chinese": "有趣"
   },
   {
     "Level": "B1",
     "English": [
       "excited"
     ],
-    "ImageUrl": "images/b1-excited.jpg"
+    "ImageUrl": "images/b1-excited.jpg",
+    "Chinese": "興奮"
   },
   {
     "Level": "B1",
     "English": [
       "nervous"
     ],
-    "ImageUrl": "images/b1-nervous.jpg"
+    "ImageUrl": "images/b1-nervous.jpg",
+    "Chinese": "緊張"
   },
   {
     "Level": "B1",
     "English": [
       "relaxed"
     ],
-    "ImageUrl": "images/b1-relaxed.jpg"
+    "ImageUrl": "images/b1-relaxed.jpg",
+    "Chinese": "放鬆"
   },
   {
     "Level": "B1",
     "English": [
       "pressure"
     ],
-    "ImageUrl": "images/b1-pressure.jpg"
+    "ImageUrl": "images/b1-pressure.jpg",
+    "Chinese": "壓力"
   },
   {
     "Level": "B1",
     "English": [
       "equilibrium"
     ],
-    "ImageUrl": "images/b1-equilibrium.jpg"
+    "ImageUrl": "images/b1-equilibrium.jpg",
+    "Chinese": "平衡"
   },
   {
     "Level": "B1",
     "English": [
       "routine"
     ],
-    "ImageUrl": "images/b1-routine.jpg"
+    "ImageUrl": "images/b1-routine.jpg",
+    "Chinese": "日常慣例"
   },
   {
     "Level": "B1",
     "English": [
       "objective"
     ],
-    "ImageUrl": "images/b1-objective.jpg"
+    "ImageUrl": "images/b1-objective.jpg",
+    "Chinese": "目標"
   },
   {
     "Level": "B1",
     "English": [
       "plan"
     ],
-    "ImageUrl": "images/b1-plan.jpg"
+    "ImageUrl": "images/b1-plan.jpg",
+    "Chinese": "計畫"
   },
   {
     "Level": "B1",
     "English": [
       "step"
     ],
-    "ImageUrl": "images/b1-step.jpg"
+    "ImageUrl": "images/b1-step.jpg",
+    "Chinese": "步驟"
   },
   {
     "Level": "B1",
     "English": [
       "process"
     ],
-    "ImageUrl": "images/b1-process.jpg"
+    "ImageUrl": "images/b1-process.jpg",
+    "Chinese": "過程"
   },
   {
     "Level": "B1",
     "English": [
       "method"
     ],
-    "ImageUrl": "images/b1-method.jpg"
+    "ImageUrl": "images/b1-method.jpg",
+    "Chinese": "方法"
   },
   {
     "Level": "B1",
     "English": [
       "system"
     ],
-    "ImageUrl": "images/b1-system.jpg"
+    "ImageUrl": "images/b1-system.jpg",
+    "Chinese": "系統"
   },
   {
     "Level": "B1",
     "English": [
       "structure"
     ],
-    "ImageUrl": "images/b1-structure.jpg"
+    "ImageUrl": "images/b1-structure.jpg",
+    "Chinese": "結構"
   },
   {
     "Level": "B1",
     "English": [
       "function"
     ],
-    "ImageUrl": "images/b1-function.jpg"
+    "ImageUrl": "images/b1-function.jpg",
+    "Chinese": "功能"
   },
   {
     "Level": "B1",
     "English": [
       "purpose"
     ],
-    "ImageUrl": "images/b1-purpose.jpg"
+    "ImageUrl": "images/b1-purpose.jpg",
+    "Chinese": "目的"
   },
   {
     "Level": "B1",
     "English": [
       "meaning"
     ],
-    "ImageUrl": "images/b1-meaning.jpg"
+    "ImageUrl": "images/b1-meaning.jpg",
+    "Chinese": "意義"
   },
   {
     "Level": "B1",
     "English": [
       "value"
     ],
-    "ImageUrl": "images/b1-value.jpg"
+    "ImageUrl": "images/b1-value.jpg",
+    "Chinese": "價值"
   },
   {
     "Level": "B1",
     "English": [
       "tradition"
     ],
-    "ImageUrl": "images/b1-tradition.jpg"
+    "ImageUrl": "images/b1-tradition.jpg",
+    "Chinese": "傳統"
   },
   {
     "Level": "B1",
     "English": [
       "culture"
     ],
-    "ImageUrl": "images/b1-culture.jpg"
+    "ImageUrl": "images/b1-culture.jpg",
+    "Chinese": "文化"
   },
   {
     "Level": "B1",
     "English": [
       "community"
     ],
-    "ImageUrl": "images/b1-community.jpg"
+    "ImageUrl": "images/b1-community.jpg",
+    "Chinese": "社會"
   },
   {
     "Level": "B1",
     "English": [
       "neighborhood"
     ],
-    "ImageUrl": "images/b1-neighborhood.jpg"
+    "ImageUrl": "images/b1-neighborhood.jpg",
+    "Chinese": "社區"
   },
   {
     "Level": "B1",
     "English": [
       "citizen"
     ],
-    "ImageUrl": "images/b1-citizen.jpg"
+    "ImageUrl": "images/b1-citizen.jpg",
+    "Chinese": "公民"
   },
   {
     "Level": "B1",
     "English": [
       "surroundings"
     ],
-    "ImageUrl": "images/b1-surroundings.jpg"
+    "ImageUrl": "images/b1-surroundings.jpg",
+    "Chinese": "環境"
   },
   {
     "Level": "B1",
     "English": [
       "nature"
     ],
-    "ImageUrl": "images/b1-nature.jpg"
+    "ImageUrl": "images/b1-nature.jpg",
+    "Chinese": "自然"
   },
   {
     "Level": "B1",
     "English": [
       "resource"
     ],
-    "ImageUrl": "images/b1-resource.jpg"
+    "ImageUrl": "images/b1-resource.jpg",
+    "Chinese": "資源"
   },
   {
     "Level": "B1",
     "English": [
       "power source"
     ],
-    "ImageUrl": "images/b1-power_source.jpg"
+    "ImageUrl": "images/b1-power_source.jpg",
+    "Chinese": "能源"
   },
   {
     "Level": "B1",
     "English": [
       "waste"
     ],
-    "ImageUrl": "images/b1-waste.jpg"
+    "ImageUrl": "images/b1-waste.jpg",
+    "Chinese": "浪費"
   },
   {
     "Level": "B1",
     "English": [
       "economize"
     ],
-    "ImageUrl": "images/b1-economize.jpg"
+    "ImageUrl": "images/b1-economize.jpg",
+    "Chinese": "節約"
   },
   {
     "Level": "B1",
     "English": [
       "charity"
     ],
-    "ImageUrl": "images/b1-charity.jpg"
+    "ImageUrl": "images/b1-charity.jpg",
+    "Chinese": "慈善"
   },
   {
     "Level": "B1",
     "English": [
       "volunteer"
     ],
-    "ImageUrl": "images/b1-volunteer.jpg"
+    "ImageUrl": "images/b1-volunteer.jpg",
+    "Chinese": "志工"
   },
   {
     "Level": "B1",
     "English": [
       "donate"
     ],
-    "ImageUrl": "images/b1-donate.jpg"
+    "ImageUrl": "images/b1-donate.jpg",
+    "Chinese": "捐贈"
   },
   {
     "Level": "B1",
     "English": [
       "foundation"
     ],
-    "ImageUrl": "images/b1-foundation.jpg"
+    "ImageUrl": "images/b1-foundation.jpg",
+    "Chinese": "基礎"
   },
   {
     "Level": "B1",
     "English": [
       "education"
     ],
-    "ImageUrl": "images/b1-education.jpg"
+    "ImageUrl": "images/b1-education.jpg",
+    "Chinese": "教育"
   },
   {
     "Level": "B1",
     "English": [
       "train"
     ],
-    "ImageUrl": "images/b1-train.jpg"
+    "ImageUrl": "images/b1-train.jpg",
+    "Chinese": "火車"
   },
   {
     "Level": "B1",
     "English": [
       "skill"
     ],
-    "ImageUrl": "images/b1-skill.jpg"
+    "ImageUrl": "images/b1-skill.jpg",
+    "Chinese": "技能"
   },
   {
     "Level": "B1",
     "English": [
       "background"
     ],
-    "ImageUrl": "images/b1-background.jpg"
+    "ImageUrl": "images/b1-background.jpg",
+    "Chinese": "經驗"
   },
   {
     "Level": "B1",
     "English": [
       "capability"
     ],
-    "ImageUrl": "images/b1-capability.jpg"
+    "ImageUrl": "images/b1-capability.jpg",
+    "Chinese": "能力"
   },
   {
     "Level": "B1",
     "English": [
       "talent"
     ],
-    "ImageUrl": "images/b1-talent.jpg"
+    "ImageUrl": "images/b1-talent.jpg",
+    "Chinese": "天賦"
   },
   {
     "Level": "B1",
     "English": [
       "effort"
     ],
-    "ImageUrl": "images/b1-effort.jpg"
+    "ImageUrl": "images/b1-effort.jpg",
+    "Chinese": "努力"
   },
   {
     "Level": "B1",
     "English": [
       "luck"
     ],
-    "ImageUrl": "images/b1-luck.jpg"
+    "ImageUrl": "images/b1-luck.jpg",
+    "Chinese": "運氣"
   },
   {
     "Level": "B1",
     "English": [
       "opportunity"
     ],
-    "ImageUrl": "images/b1-opportunity.jpg"
+    "ImageUrl": "images/b1-opportunity.jpg",
+    "Chinese": "機會"
   },
   {
     "Level": "B1",
     "English": [
       "challenge"
     ],
-    "ImageUrl": "images/b1-challenge.jpg"
+    "ImageUrl": "images/b1-challenge.jpg",
+    "Chinese": "挑戰"
   },
   {
     "Level": "B1",
     "English": [
       "difficulty"
     ],
-    "ImageUrl": "images/b1-difficulty.jpg"
+    "ImageUrl": "images/b1-difficulty.jpg",
+    "Chinese": "困難"
   },
   {
     "Level": "B1",
     "English": [
       "resolve"
     ],
-    "ImageUrl": "images/b1-resolve.jpg"
+    "ImageUrl": "images/b1-resolve.jpg",
+    "Chinese": "解析"
   },
   {
     "Level": "B1",
     "English": [
       "issue"
     ],
-    "ImageUrl": "images/b1-issue.jpg"
+    "ImageUrl": "images/b1-issue.jpg",
+    "Chinese": "問題焦點"
   },
   {
     "Level": "B1",
     "English": [
       "crisis"
     ],
-    "ImageUrl": "images/b1-crisis.jpg"
+    "ImageUrl": "images/b1-crisis.jpg",
+    "Chinese": "危機"
   },
   {
     "Level": "B1",
     "English": [
       "stable"
     ],
-    "ImageUrl": "images/b1-stable.jpg"
+    "ImageUrl": "images/b1-stable.jpg",
+    "Chinese": "穩定的"
   },
   {
     "Level": "B1",
     "English": [
       "variation"
     ],
-    "ImageUrl": "images/b1-variation.jpg"
+    "ImageUrl": "images/b1-variation.jpg",
+    "Chinese": "變化、變體"
   },
   {
     "Level": "B1",
     "English": [
       "tendency"
     ],
-    "ImageUrl": "images/b1-tendency.jpg"
+    "ImageUrl": "images/b1-tendency.jpg",
+    "Chinese": "趨勢"
   },
   {
     "Level": "B1",
     "English": [
       "development"
     ],
-    "ImageUrl": "images/b1-development.jpg"
+    "ImageUrl": "images/b1-development.jpg",
+    "Chinese": "開發"
   },
   {
     "Level": "B1",
     "English": [
       "advance"
     ],
-    "ImageUrl": "images/b1-advance.jpg"
+    "ImageUrl": "images/b1-advance.jpg",
+    "Chinese": "進步"
   },
   {
     "Level": "B1",
     "English": [
       "backward"
     ],
-    "ImageUrl": "images/b1-backward.jpg"
+    "ImageUrl": "images/b1-backward.jpg",
+    "Chinese": "落後"
   },
   {
     "Level": "B1",
     "English": [
       "modernize"
     ],
-    "ImageUrl": "images/b1-modernize.jpg"
+    "ImageUrl": "images/b1-modernize.jpg",
+    "Chinese": "使現代化"
   },
   {
     "Level": "B1",
     "English": [
       "globalize"
     ],
-    "ImageUrl": "images/b1-globalize.jpg"
+    "ImageUrl": "images/b1-globalize.jpg",
+    "Chinese": "全球化"
   },
   {
     "Level": "A2",
     "English": [
       "computer"
     ],
-    "ImageUrl": "images/a2-computer.jpg"
+    "ImageUrl": "images/a2-computer.jpg",
+    "Chinese": "電腦"
   },
   {
     "Level": "A2",
     "English": [
       "agree"
     ],
-    "ImageUrl": "images/a2-agree.jpg"
+    "ImageUrl": "images/a2-agree.jpg",
+    "Chinese": "同意"
   },
   {
     "Level": "A2",
     "English": [
       "remember"
     ],
-    "ImageUrl": "images/a2-remember.jpg"
+    "ImageUrl": "images/a2-remember.jpg",
+    "Chinese": "記得"
   },
   {
     "Level": "A2",
     "English": [
       "probably"
     ],
-    "ImageUrl": "images/a2-probably.jpg"
+    "ImageUrl": "images/a2-probably.jpg",
+    "Chinese": "大概"
   },
   {
     "Level": "A2",
     "English": [
       "invite"
     ],
-    "ImageUrl": "images/a2-invite.jpg"
+    "ImageUrl": "images/a2-invite.jpg",
+    "Chinese": "邀請"
   },
   {
     "Level": "A2",
     "English": [
       "prepare"
     ],
-    "ImageUrl": "images/a2-prepare.jpg"
+    "ImageUrl": "images/a2-prepare.jpg",
+    "Chinese": "準備"
   },
   {
     "Level": "A2",
     "English": [
       "complete"
     ],
-    "ImageUrl": "images/a2-complete.jpg"
+    "ImageUrl": "images/a2-complete.jpg",
+    "Chinese": "完成"
   },
   {
     "Level": "A2",
     "English": [
       "continue"
     ],
-    "ImageUrl": "images/a2-continue.jpg"
+    "ImageUrl": "images/a2-continue.jpg",
+    "Chinese": "繼續"
   },
   {
     "Level": "A2",
     "English": [
       "succeed"
     ],
-    "ImageUrl": "images/a2-succeed.jpg"
+    "ImageUrl": "images/a2-succeed.jpg",
+    "Chinese": "成功"
   },
   {
     "Level": "A2",
     "English": [
       "fail"
     ],
-    "ImageUrl": "images/a2-fail.jpg"
+    "ImageUrl": "images/a2-fail.jpg",
+    "Chinese": "失敗"
   },
   {
     "Level": "A2",
     "English": [
       "repair"
     ],
-    "ImageUrl": "images/a2-repair.jpg"
+    "ImageUrl": "images/a2-repair.jpg",
+    "Chinese": "修理"
   },
   {
     "Level": "A2",
     "English": [
       "build"
     ],
-    "ImageUrl": "images/a2-build.jpg"
+    "ImageUrl": "images/a2-build.jpg",
+    "Chinese": "建造"
   }
 ]

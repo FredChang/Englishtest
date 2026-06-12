@@ -124,6 +124,39 @@ def split_grid(grid_num, image_path, target_size=(128, 128)):
     update_image_vocab(cropped_files)
 
 def update_image_vocab(new_entries):
+    # Load Chinese translations database
+    words_db = {}
+    words_path = os.path.join(ROOT, "web", "words.json")
+    if os.path.exists(words_path):
+        with open(words_path, "r", encoding="utf-8") as f:
+            for w in json.load(f):
+                eng = w["English"][0].lower().strip()
+                words_db[eng] = w.get("Chinese", "")
+                
+    new_words_db = {}
+    try:
+        from generate_words import NEW_WORDS
+        for entry in NEW_WORDS:
+            level, chi, eng = entry
+            new_words_db[eng.lower().strip()] = chi
+    except Exception:
+        pass
+
+    def get_chinese(eng):
+        eng_lower = eng.lower().strip()
+        chi = words_db.get(eng_lower, "")
+        if not chi:
+            chi = new_words_db.get(eng_lower, "")
+        if not chi:
+            manual = {
+                "atlas": "地圖集", "campsite": "露營地", "desert": "沙漠", "coastline": "海岸線",
+                "countryside": "鄉村", "canal": "運河", "carriage": "馬車", "cliff": "懸崖",
+                "cave": "洞穴", "destination": "目的地", "weather pattern": "氣候模式",
+                "displaced person": "難民", "financial plan": "財務計劃", "save energy": "節能"
+            }
+            chi = manual.get(eng_lower, "")
+        return chi
+
     if not os.path.exists(VOCAB_PATH):
         vocab = []
     else:
@@ -136,16 +169,18 @@ def update_image_vocab(new_entries):
     # Create index map of existing entries
     existing_map = {}
     for idx, entry in enumerate(vocab):
-        # We index by lowercase English
         if entry.get("English") and len(entry["English"]) > 0:
             existing_map[entry["English"][0].lower()] = idx
             
     for level, word, img_url in new_entries:
+        chinese = get_chinese(word)
         entry = {
             "Level": level,
             "English": [word],
             "ImageUrl": img_url
         }
+        if chinese:
+            entry["Chinese"] = chinese
         
         word_key = word.lower()
         if word_key in existing_map:
