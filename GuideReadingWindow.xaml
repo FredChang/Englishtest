@@ -110,6 +110,8 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="12"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="12"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="1" x:Name="PlayButton" Content="開始朗讀" Width="100" Height="40"
                     Click="PlayButton_Click"
@@ -120,7 +122,10 @@
             <Button Grid.Column="5" x:Name="StopButton" Content="停止" Width="80" Height="40"
                     Click="StopButton_Click" IsEnabled="False"
                     Background="#F1F5F9" Foreground="#475569" BorderBrush="#CBD5E1" BorderThickness="1"/>
-            <Button Grid.Column="7" Content="關閉" Width="80" Height="40" IsCancel="True"
+            <Button Grid.Column="7" x:Name="ShowChineseButton" Content="顯示中文" Width="88" Height="40"
+                    Click="ShowChineseButton_Click" Visibility="Collapsed"
+                    Background="#EFF6FF" Foreground="#1D4ED8" BorderBrush="#BFDBFE" BorderThickness="1"/>
+            <Button Grid.Column="9" Content="關閉" Width="80" Height="40" IsCancel="True"
                     Background="#E2E8F0" Foreground="#334155" BorderThickness="0"/>
         </Grid>
     </Grid>

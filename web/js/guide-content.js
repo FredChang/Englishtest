@@ -90,6 +90,26 @@ function parseFriendsLine(line) {
   return { english: trimmed, chinese: '' };
 }
 
+export function enrichFriendsDisplayItems(displayItems, zhMap) {
+  if (!displayItems?.length) return displayItems || null;
+  if (!zhMap || typeof zhMap.get !== 'function') return displayItems;
+
+  return displayItems.map((item) => {
+    if (item.chinese) return item;
+    const zh = zhMap.get(item.english);
+    return zh ? { english: item.english, chinese: zh } : item;
+  });
+}
+
+export function buildFriendsZhMap(entries) {
+  const map = new Map();
+  if (!Array.isArray(entries)) return map;
+  for (const item of entries) {
+    if (item?.en && item?.zh) map.set(item.en, item.zh);
+  }
+  return map;
+}
+
 /** 判斷是否為六人行導讀（含舊版 localStorage 未標記 sourceType 的情況） */
 export function inferFriendsSourceType({ sourceType, sourceLabel, fullText } = {}) {
   if (sourceType === 'friends') return 'friends';

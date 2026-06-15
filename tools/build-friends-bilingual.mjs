@@ -7,6 +7,12 @@ const root = path.join(__dirname, '..');
 const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'friends_zh.json'), 'utf8'));
 const zhByEn = new Map(translations.map((item) => [item.en, item.zh]));
 
+function englishKey(line) {
+  const trimmed = (line || '').trim();
+  const pipeIdx = trimmed.indexOf(' | ');
+  return pipeIdx >= 0 ? trimmed.slice(0, pipeIdx).trim() : trimmed;
+}
+
 function buildBilingual(content) {
   const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/);
   return scenes
@@ -15,11 +21,12 @@ function buildBilingual(content) {
       if (!trimmed) return '';
 
       const lines = trimmed.split(/\n\s*\n/).map((block) => block.trim()).filter(Boolean);
-      const bilingualLines = lines.map((en) => {
+      const bilingualLines = lines.map((line) => {
+        const en = englishKey(line);
         const zh = zhByEn.get(en);
         if (!zh) {
-          console.warn('Missing translation:', en);
-          return en;
+          if (!line.includes(' | ')) console.warn('Missing translation:', en);
+          return line.includes(' | ') ? line : en;
         }
         return `${en} | ${zh}`;
       });
@@ -30,7 +37,7 @@ function buildBilingual(content) {
     .join('\n\n===\n\n');
 }
 
-for (const target of ['web/friends.txt']) {
+for (const target of ['web/friends.txt', 'friends.txt']) {
   const filePath = path.join(root, target);
   const original = fs.readFileSync(filePath, 'utf8');
   const output = buildBilingual(original);

@@ -15,6 +15,7 @@ namespace Englishtest
         private int _currentIndex;
         private bool _isPlaying;
         private bool _isPaused;
+        private bool _showChinese = true;
 
         public bool IsReady { get; private set; }
 
@@ -29,10 +30,57 @@ namespace Englishtest
                 return;
             }
 
-            SegmentList.ItemsSource = _content.Segments;
+            SegmentList.ItemsSource = BuildDisplaySegments();
             IsReady = true;
+            UpdateChineseToggle();
             UpdateSpeedLabel();
             UpdateProgressText();
+        }
+
+        private IEnumerable<string> BuildDisplaySegments()
+        {
+            for (var i = 0; i < _content.Segments.Count; i++)
+            {
+                var english = _content.Segments[i];
+                if (_content.IsFriendsContent && _showChinese &&
+                    i < _content.ChineseLines.Count &&
+                    !string.IsNullOrWhiteSpace(_content.ChineseLines[i]))
+                {
+                    yield return english + "\n" + _content.ChineseLines[i];
+                }
+                else
+                {
+                    yield return english;
+                }
+            }
+        }
+
+        private void RefreshSegmentDisplay()
+        {
+            var selected = SegmentList.SelectedIndex;
+            SegmentList.ItemsSource = null;
+            SegmentList.ItemsSource = BuildDisplaySegments().ToList();
+            if (selected >= 0 && selected < SegmentList.Items.Count)
+                SegmentList.SelectedIndex = selected;
+        }
+
+        private void UpdateChineseToggle()
+        {
+            if (!_content.IsFriendsContent)
+            {
+                ShowChineseButton.Visibility = Visibility.Collapsed;
+                return;
+            }
+
+            ShowChineseButton.Visibility = Visibility.Visible;
+            ShowChineseButton.Content = _showChinese ? "隱藏中文" : "顯示中文";
+        }
+
+        private void ShowChineseButton_Click(object sender, RoutedEventArgs e)
+        {
+            _showChinese = !_showChinese;
+            UpdateChineseToggle();
+            RefreshSegmentDisplay();
         }
 
         private void ConfigureVoice()
@@ -286,9 +334,10 @@ namespace Englishtest
             StopReading(resetIndex: true);
             if (_content.LoadFromDefaultPath())
             {
-                SegmentList.ItemsSource = null;
-                SegmentList.ItemsSource = _content.Segments;
+                _showChinese = false;
+                RefreshSegmentDisplay();
                 SubtitleText.Text = "內容來自 read.txt，可調整朗讀速度與跟讀";
+                UpdateChineseToggle();
                 UpdateProgressText();
             }
             else
@@ -303,9 +352,10 @@ namespace Englishtest
             string sceneName;
             if (_content.LoadFriendsDialogue(out sceneName))
             {
-                SegmentList.ItemsSource = null;
-                SegmentList.ItemsSource = _content.Segments;
-                SubtitleText.Text = $"內容來自：{sceneName}，可調整朗讀速度與跟讀";
+                _showChinese = true;
+                RefreshSegmentDisplay();
+                SubtitleText.Text = $"內容來自：{sceneName}，可切換中英對照；朗讀仍只播放英文";
+                UpdateChineseToggle();
                 UpdateProgressText();
             }
             else

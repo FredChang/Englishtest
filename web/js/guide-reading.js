@@ -2,12 +2,27 @@ import {
   parseContent,
   parseFriendsScene,
   inferFriendsSourceType,
+  enrichFriendsDisplayItems,
+  buildFriendsZhMap,
   loadSavedGuideContent,
   hasSavedGuideContent,
   formatSavedSummary,
   applyLoadedContent,
   clearSavedGuideContent
 } from './guide-content.js';
+import { APP_VERSION } from './version.js';
+
+let friendsZhMapPromise = null;
+
+function loadFriendsZhMap() {
+  if (!friendsZhMapPromise) {
+    friendsZhMapPromise = fetch(`friends_zh.json?v=${APP_VERSION}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data) => buildFriendsZhMap(data))
+      .catch(() => buildFriendsZhMap([]));
+  }
+  return friendsZhMapPromise;
+}
 
 function speedLabelFromRate(value) {
   const v = Number(value);
@@ -225,7 +240,7 @@ export function initGuideReading({ screens, showScreen }) {
     pauseBtn: document.getElementById('guide-pause-btn'),
     stopBtn: document.getElementById('guide-stop-btn'),
     changeSourceBtn: document.getElementById('guide-change-source-btn'),
-    friendsBar: document.getElementById('guide-friends-bar'),
+    friendsHint: document.getElementById('guide-friends-hint'),
     showChineseBtn: document.getElementById('guide-show-chinese-btn'),
     playBackBtn: document.getElementById('guide-play-back-btn')
   };
@@ -305,15 +320,17 @@ export function initGuideReading({ screens, showScreen }) {
 
   function updateChineseToggle() {
     const btn = els.showChineseBtn;
-    const bar = els.friendsBar;
-    if (!btn || !bar) return;
+    const hint = els.friendsHint;
+    if (!btn) return;
 
     if (!isFriendsContent) {
-      bar.classList.add('hidden');
+      btn.classList.add('hidden');
+      hint?.classList.add('hidden');
       return;
     }
 
-    bar.classList.remove('hidden');
+    btn.classList.remove('hidden');
+    hint?.classList.remove('hidden');
     btn.textContent = showChinese ? '隱藏中文' : '顯示中文';
     btn.setAttribute('aria-pressed', showChinese ? 'true' : 'false');
     btn.classList.toggle('active', showChinese);
@@ -322,12 +339,14 @@ export function initGuideReading({ screens, showScreen }) {
   function showPlayScreen(result) {
     segments = result.segments;
     friendsDisplayItems = result.displayItems || null;
-    isFriendsContent =
-      inferFriendsSourceType({
-        sourceType: result.sourceType,
-        sourceLabel: result.sourceLabel,
-        fullText: result.fullText
-      }) === 'friends';
+    isFriendsContent = result.forceFriends || inferFriendsSourceType({
+      sourceType: result.sourceType,
+      sourceLabel: result.sourceLabel,
+      fullText: result.fullText
+    }) === 'friends';
+    if (isFriendsContent && result.defaultShowChinese !== false) {
+      showChinese = true;
+    }
     sourceLabel = result.sourceLabel;
     currentIndex = 0;
     isPaused = false;
@@ -340,7 +359,7 @@ export function initGuideReading({ screens, showScreen }) {
     showScreen('guidePlay');
   }
 
-  function loadFromText(text, { sourceLabel: label, fileName = '', sourceType = '' } = {}) {
+  async function loadFromText(text, { sourceLabel: label, fileName = '', sourceType = '' } = {}) {
     const resolvedSourceType = inferFriendsSourceType({
       sourceType,
       sourceLabel: label,
@@ -351,6 +370,12 @@ export function initGuideReading({ screens, showScreen }) {
       resolvedSourceType === 'friends'
         ? parseFriendsScene(text)
         : parseContent(text, { fileName });
+
+    let displayItems = parsed.displayItems || null;
+    if (resolvedSourceType === 'friends') {
+      const zhMap = await loadFriendsZhMap();
+      displayItems = enrichFriendsDisplayItems(displayItems, zhMap);
+    }
 
     const result = applyLoadedContent({
       segments: parsed.segments,
@@ -370,10 +395,12 @@ export function initGuideReading({ screens, showScreen }) {
 
     showPlayScreen({
       segments: result.segments,
-      displayItems: parsed.displayItems || null,
+      displayItems,
       sourceType: resolvedSourceType,
       sourceLabel: result.sourceLabel,
-      fullText: result.fullText
+      fullText: result.fullText,
+      forceFriends: resolvedSourceType === 'friends',
+      defaultShowChinese: resolvedSourceType === 'friends'
     });
     return true;
   }
@@ -545,7 +572,7 @@ export function initGuideReading({ screens, showScreen }) {
     speakCurrent();
   }
 
-  els.lastBtn?.addEventListener('click', () => {
+  els.lastBtn?.addEventListener('click', async () => {
     const saved = loadSavedGuideContent();
     if (!saved?.segments?.length) {
       alert('找不到上次儲存的文稿。');
@@ -553,13 +580,26 @@ export function initGuideReading({ screens, showScreen }) {
       return;
     }
 
-    segments = saved.segments;
+    const isFriends = inferFriendsSourceType({
+      sourceType: saved.sourceType,
+      sourceLabel: saved.sourceLabel,
+      fullText: saved.fullText
+    }) === 'friends';
+
+    let displayItems = saved.displayItems || null;
+    if (isFriends) {
+      const zhMap = await loadFriendsZhMap();
+      displayItems = enrichFriendsDisplayItems(displayItems, zhMap);
+    }
+
     showPlayScreen({
       segments: saved.segments,
-      displayItems: saved.displayItems || null,
+      displayItems,
       sourceType: saved.sourceType,
       sourceLabel: formatSavedSummary(saved) || saved.sourceLabel,
-      fullText: saved.fullText
+      fullText: saved.fullText,
+      forceFriends: isFriends,
+      defaultShowChinese: isFriends
     });
   });
 
@@ -570,7 +610,10 @@ export function initGuideReading({ screens, showScreen }) {
     const oldText = els.friendsBtn.textContent;
     els.friendsBtn.textContent = '載入中…';
     try {
-      const response = await fetch('friends.txt', { cache: 'no-store' });
+      const [response, zhMap] = await Promise.all([
+        fetch(`friends.txt?v=${APP_VERSION}`, { cache: 'no-store' }),
+        loadFriendsZhMap()
+      ]);
       if (!response.ok) throw new Error('無法載入六人行對話檔');
       const content = await response.text();
       const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/).map(s => s.trim()).filter(Boolean);
@@ -579,10 +622,29 @@ export function initGuideReading({ screens, showScreen }) {
       const randIndex = Math.floor(Math.random() * scenes.length);
       const selectedScene = scenes[randIndex];
       const sceneLabel = `六人行對話 - 隨機第 ${randIndex + 1} 組`;
+      const parsed = parseFriendsScene(selectedScene);
+      const displayItems = enrichFriendsDisplayItems(parsed.displayItems, zhMap);
 
-      loadFromText(selectedScene, {
+      const result = applyLoadedContent({
+        segments: parsed.segments,
+        fullText: parsed.fullText || selectedScene.trim(),
         sourceLabel: sceneLabel,
         sourceType: 'friends'
+      });
+
+      if (!result.ok) {
+        alert(result.message);
+        return;
+      }
+
+      showPlayScreen({
+        segments: result.segments,
+        displayItems,
+        sourceType: 'friends',
+        sourceLabel: result.sourceLabel,
+        fullText: result.fullText,
+        forceFriends: true,
+        defaultShowChinese: true
       });
     } catch (err) {
       alert(err?.message || '讀取對話失敗，請再試一次。');

@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.6.1';
+const CACHE = 'englishtest-v1.6.2';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -13,6 +13,7 @@ const PRECACHE_ASSETS = [
   './js/version.js',
   './words.json',
   './friends.txt',
+  './friends_zh.json',
   './image-vocab.json',
   './manifest.webmanifest',
   './icon.svg'
@@ -36,13 +37,22 @@ function isSameOrigin(request) {
   }
 }
 
-function isFriendsTxtRequest(request) {
+function isFriendsDataRequest(request) {
   try {
     const { pathname } = new URL(request.url);
-    return pathname.endsWith('/friends.txt') || pathname.endsWith('friends.txt');
+    return (
+      pathname.endsWith('/friends.txt') ||
+      pathname.endsWith('friends.txt') ||
+      pathname.endsWith('/friends_zh.json') ||
+      pathname.endsWith('friends_zh.json')
+    );
   } catch {
     return false;
   }
+}
+
+function isFriendsTxtRequest(request) {
+  return isFriendsDataRequest(request);
 }
 
 /** 程式碼與版本檔：永遠先向網路要最新版，避免 PWA 卡在舊版 */
