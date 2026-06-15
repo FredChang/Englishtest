@@ -20,6 +20,28 @@ namespace Englishtest.Services
             return Load(path);
         }
 
+        public bool LoadFriendsDialogue(out string sceneName)
+        {
+            sceneName = "";
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "friends.txt");
+            if (!File.Exists(path))
+                return false;
+
+            var content = File.ReadAllText(path);
+            var scenes = content.Split(new[] { "===" }, StringSplitOptions.RemoveEmptyEntries);
+            if (scenes.Length == 0)
+                return false;
+
+            var rand = new Random();
+            var index = rand.Next(scenes.Length);
+            var selectedScene = scenes[index].Trim();
+            sceneName = $"六人行對話 - 第 {index + 1} 組";
+
+            FullText = selectedScene;
+            Segments = SplitIntoSegments(FullText);
+            return Segments.Count > 0;
+        }
+
         public bool Load(string path)
         {
             if (!File.Exists(path))

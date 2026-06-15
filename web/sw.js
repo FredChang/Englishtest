@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.5.0';
+const CACHE = 'englishtest-v1.5.1';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -13,6 +13,7 @@ const PRECACHE_ASSETS = [
   './js/guide-generate.js',
   './js/version.js',
   './words.json',
+  './friends.txt',
   './image-vocab.json',
   './manifest.webmanifest',
   './icon.svg'

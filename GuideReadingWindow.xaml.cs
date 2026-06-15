@@ -281,6 +281,39 @@ namespace Englishtest
             }
         }
 
+        private void LoadDefaultButton_Click(object sender, RoutedEventArgs e)
+        {
+            StopReading(resetIndex: true);
+            if (_content.LoadFromDefaultPath())
+            {
+                SegmentList.ItemsSource = null;
+                SegmentList.ItemsSource = _content.Segments;
+                SubtitleText.Text = "內容來自 read.txt，可調整朗讀速度與跟讀";
+                UpdateProgressText();
+            }
+            else
+            {
+                MessageBox.Show(this, "找不到預設文章（read.txt）。", "錯誤", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void LoadFriendsButton_Click(object sender, RoutedEventArgs e)
+        {
+            StopReading(resetIndex: true);
+            string sceneName;
+            if (_content.LoadFriendsDialogue(out sceneName))
+            {
+                SegmentList.ItemsSource = null;
+                SegmentList.ItemsSource = _content.Segments;
+                SubtitleText.Text = $"內容來自：{sceneName}，可調整朗讀速度與跟讀";
+                UpdateProgressText();
+            }
+            else
+            {
+                MessageBox.Show(this, "找不到六人行對話檔（friends.txt）或檔案為空。", "錯誤", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
         private void Window_Closed(object sender, EventArgs e)
         {
             _synthesizer.SpeakAsyncCancelAll();

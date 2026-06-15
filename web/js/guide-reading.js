@@ -210,6 +210,7 @@ export function initGuideReading({ screens, showScreen }) {
     genLevel: document.getElementById('guide-gen-level'),
     genCount: document.getElementById('guide-gen-count'),
     genBtn: document.getElementById('guide-gen-btn'),
+    friendsBtn: document.getElementById('guide-friends-btn'),
     fileInput: document.getElementById('guide-file-input'),
     pickFileBtn: document.getElementById('guide-pick-file-btn'),
     pasteArea: document.getElementById('guide-paste-area'),
@@ -526,6 +527,32 @@ export function initGuideReading({ screens, showScreen }) {
     } finally {
       els.genBtn.textContent = oldText;
       els.genBtn.disabled = false;
+    }
+  });
+
+  els.friendsBtn?.addEventListener('click', async () => {
+    els.friendsBtn.disabled = true;
+    const oldText = els.friendsBtn.textContent;
+    els.friendsBtn.textContent = '載入中…';
+    try {
+      const response = await fetch('friends.txt');
+      if (!response.ok) throw new Error('無法載入六人行對話檔');
+      const content = await response.text();
+      const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/).map(s => s.trim()).filter(Boolean);
+      if (scenes.length === 0) throw new Error('對話檔內容為空');
+
+      const randIndex = Math.floor(Math.random() * scenes.length);
+      const selectedScene = scenes[randIndex];
+      const sceneLabel = `六人行對話 - 隨機第 ${randIndex + 1} 組`;
+
+      loadFromText(selectedScene, {
+        sourceLabel: sceneLabel
+      });
+    } catch (err) {
+      alert(err?.message || '讀取對話失敗，請再試一次。');
+    } finally {
+      els.friendsBtn.textContent = oldText;
+      els.friendsBtn.disabled = false;
     }
   });
 
