@@ -504,7 +504,6 @@ async function onOptionClick(e) {
 
   showFeedback(isCorrect, correctDisplay);
 
-  const word = lookupWord(current);
   if (word) speak(word);
 
   els.nextBtn.disabled = false;
