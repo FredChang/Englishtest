@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.5.6';
+const CACHE = 'englishtest-v1.5.7';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -19,22 +19,6 @@ const PRECACHE_ASSETS = [
   './icon.svg'
 ];
 
-/** 從 image-vocab.json 讀取所有圖片路徑，支援 png/jpg/webp/svg 等格式 */
-async function loadImageAssets() {
-  try {
-    const res = await fetch('./image-vocab.json', { cache: 'no-store' });
-    if (!res.ok) return [];
-    const list = await res.json();
-    if (!Array.isArray(list)) return [];
-
-    return list
-      .map((item) => item?.ImageUrl)
-      .filter((url) => typeof url === 'string' && url.trim())
-      .map((url) => `./${url.replace(/^\.?\//, '')}`);
-  } catch {
-    return [];
-  }
-}
 
 function isWordsJsonRequest(request) {
   try {
@@ -126,8 +110,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE);
-      const imageAssets = await loadImageAssets();
-      await cache.addAll([...PRECACHE_ASSETS, ...imageAssets]);
+      await cache.addAll(PRECACHE_ASSETS);
       await self.skipWaiting();
     })()
   );
