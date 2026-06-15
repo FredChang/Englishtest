@@ -18,8 +18,14 @@ namespace Englishtest
         {
             _vocabulary = vocabulary ?? throw new ArgumentNullException(nameof(vocabulary));
             InitializeComponent();
-            LevelComboBox.ItemsSource = CefrLevel.All;
-            LevelComboBox.SelectedIndex = 2;
+            var activeLevels = CefrLevel.All
+                .Where(lvl => _vocabulary.CountByLevel.TryGetValue(lvl, out var count) && count > 0)
+                .ToList();
+            LevelComboBox.ItemsSource = activeLevels;
+            
+            var defaultIndex = activeLevels.IndexOf("B1");
+            LevelComboBox.SelectedIndex = defaultIndex >= 0 ? defaultIndex : 0;
+            
             PopulateVoices();
             UpdateLevelInfo();
         }

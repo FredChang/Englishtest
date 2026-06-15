@@ -300,11 +300,20 @@ function showNextQuestion() {
   const isImage = settings.mode === 'image';
   const isEtoC = settings.direction === 'EtoC';
 
-  els.questionText.textContent = isImage
-    ? primaryEnglish(current)
-    : isEtoC
-      ? primaryEnglish(current)
-      : current.Chinese || '';
+  let question = '';
+  if (isImage || isEtoC) {
+    question = primaryEnglish(current);
+  } else {
+    question = current.Chinese || '';
+    if (settings.mode === 'typing') {
+      const target = primaryEnglish(current);
+      if (target) {
+        question += ` (${target[0]}${'_'.repeat(target.length - 1)})`;
+      }
+    }
+  }
+
+  els.questionText.textContent = question;
 
   els.playBtn.disabled = !lookupWord(current);
   els.rootsSection.classList.toggle('hidden', isImage);
@@ -538,13 +547,27 @@ async function init() {
     return;
   }
 
-  CEFR_LEVELS.forEach((level) => {
+  const activeLevels = CEFR_LEVELS.filter(level => (vocabulary.countByLevel[level] || 0) > 0);
+
+  activeLevels.forEach((level) => {
     const opt = document.createElement('option');
     opt.value = level;
     opt.textContent = level;
     if (level === 'B1') opt.selected = true;
     els.levelSelect.appendChild(opt);
   });
+
+  const guideGenLevelSelect = document.getElementById('guide-gen-level');
+  if (guideGenLevelSelect) {
+    guideGenLevelSelect.innerHTML = '';
+    activeLevels.forEach((level) => {
+      const opt = document.createElement('option');
+      opt.value = level;
+      opt.textContent = level;
+      if (level === 'B1') opt.selected = true;
+      guideGenLevelSelect.appendChild(opt);
+    });
+  }
 
   updateLevelInfo();
   updateSetupForMode();

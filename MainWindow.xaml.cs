@@ -135,7 +135,18 @@ namespace Englishtest
             if (_direction == QuizDirection.EnglishToChinese)
                 ChineseText.Text = _current.PrimaryEnglish ?? "";
             else
-                ChineseText.Text = _current.Chinese ?? "";
+            {
+                var question = _current.Chinese ?? "";
+                if (_sessionSettings.Mode == QuizMode.Typing)
+                {
+                    var targetWord = _current.PrimaryEnglish;
+                    if (!string.IsNullOrEmpty(targetWord))
+                    {
+                        question += $" ({targetWord[0]}{new string('_', targetWord.Length - 1)})";
+                    }
+                }
+                ChineseText.Text = question;
+            }
             ResetPronunciationDisplay();
 
             AnswerBox.Clear();
