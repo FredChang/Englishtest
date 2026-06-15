@@ -42875,6 +42875,15 @@
   },
   {
     "Level": "B2",
+    "Chinese": "局",
+    "English": [
+      "bureau"
+    ],
+    "Phonetic": "/ˈbjʊr.oʊ/",
+    "Roots": []
+  },
+  {
+    "Level": "B2",
     "Chinese": "運動",
     "English": [
       "campaign"
@@ -43300,6 +43309,15 @@
       "digital"
     ],
     "Phonetic": "/ˈdɪʤɪtəl/",
+    "Roots": []
+  },
+  {
+    "Level": "B2",
+    "Chinese": "晚餐",
+    "English": [
+      "dinner"
+    ],
+    "Phonetic": "/ˈdɪnər/",
     "Roots": []
   },
   {
@@ -45251,6 +45269,15 @@
   },
   {
     "Level": "B2",
+    "Chinese": "代表",
+    "English": [
+      "represent"
+    ],
+    "Phonetic": "/ˌrɛprɪˈzɛnt/",
+    "Roots": []
+  },
+  {
+    "Level": "B2",
     "Chinese": "共和國",
     "English": [
       "republic"
@@ -45639,6 +45666,20 @@
       {
         "Part": "strat",
         "Hint": "層次、策略：strategy (策略), stratify (分層)"
+      }
+    ]
+  },
+  {
+    "Level": "B2",
+    "Chinese": "強調",
+    "English": [
+      "stress"
+    ],
+    "Phonetic": "/strɛs/",
+    "Roots": [
+      {
+        "Part": "-ess",
+        "Hint": "女性名詞字尾：actress (女演員), princess (公主)"
       }
     ]
   },
@@ -48007,85 +48048,5 @@
     ],
     "Phonetic": "/ˈwərkərz/",
     "Roots": []
-  },
-  {
-    "Level": "C2",
-    "Chinese": "自由意志",
-    "English": [
-      "agency"
-    ],
-    "Phonetic": "/ˈeɪʤənsi/",
-    "Roots": [
-      {
-        "Part": "gen",
-        "Hint": "產生、出生：generate (產生), genius (天才)"
-      }
-    ]
-  },
-  {
-    "Level": "C2",
-    "Chinese": "汽車",
-    "English": [
-      "automotive"
-    ],
-    "Phonetic": "/ˌɔtəˈmoʊtɪv/",
-    "Roots": [
-      {
-        "Part": "auto-",
-        "Hint": "自動、自己：autograph (親筆簽名), autobiography (自傳)"
-      },
-      {
-        "Part": "mot",
-        "Hint": "移動：motion (移動), motivate (激勵)"
-      },
-      {
-        "Part": "-ive",
-        "Hint": "形容詞字尾，表示「傾向、性質」：active (主動的), creative (有創造力的)"
-      }
-    ]
-  },
-  {
-    "Level": "C2",
-    "Chinese": "免責聲明",
-    "English": [
-      "disclaimer"
-    ],
-    "Phonetic": "/dɪˈskleɪmər/",
-    "Roots": [
-      {
-        "Part": "dis-",
-        "Hint": "否定、分開：disagree (不同意), disconnect (斷開)"
-      },
-      {
-        "Part": "claim",
-        "Hint": "呼喊、主張：claim (主張), proclaim (宣布)"
-      },
-      {
-        "Part": "-er",
-        "Hint": "人或物的字尾：teacher (老師), printer (印表機)"
-      }
-    ]
-  },
-  {
-    "Level": "C2",
-    "Chinese": "修訂",
-    "English": [
-      "revision"
-    ],
-    "Phonetic": "/riˈvɪʒən/",
-    "Roots": [
-      {
-        "Part": "re-",
-        "Hint": "再、重新：rewrite (重寫), rebuild (重建)"
-      },
-      {
-        "Part": "vis",
-        "Hint": "看：visible (看得見的), vision (視覺)"
-      },
-      {
-        "Part": "-sion",
-        "Hint": "名詞字尾，表示「狀態、行為」：decision (決定), expansion (擴張)"
-      }
-    ]
   }
 ]

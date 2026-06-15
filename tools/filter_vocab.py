@@ -7,6 +7,10 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORDS_PATH = os.path.join(ROOT, "words.json")
 WEB_WORDS_PATH = os.path.join(ROOT, "web", "words.json")
+WORDS_SOURCE_PATH = os.path.join(ROOT, "backup data", "words_9279.json")
+if not os.path.exists(WORDS_SOURCE_PATH):
+    WORDS_SOURCE_PATH = WORDS_PATH
+
 GOOGLE_FREQ_URL = "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt"
 
 def fetch_google_freq_list(url):
@@ -42,7 +46,7 @@ def main():
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
 
-    vocab = load_vocab(WORDS_PATH)
+    vocab = load_vocab(WORDS_SOURCE_PATH)
     print(f"Loaded {len(vocab)} total vocabulary words.")
 
     freq_map = fetch_google_freq_list(GOOGLE_FREQ_URL)
@@ -57,7 +61,7 @@ def main():
         level = item.get("Level", "A1").upper().strip()
         if level in base_levels:
             base_words.append(item)
-        else:
+        elif level != "C2":
             advanced_words.append(item)
 
     print(f"Base words (A1/A2/B1): {len(base_words)}")
