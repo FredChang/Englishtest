@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -15,12 +16,14 @@ namespace Englishtest
         private readonly QuizSessionSettings _sessionSettings;
         private readonly QuizDirection _direction;
         private PronunciationService _pronunciation;
+        private readonly DictionaryLookupService _dictionary = new DictionaryLookupService();
 
         private VocabularyItem _current;
         private int _correctIndex;
         private int _correctCount;
         private int _answeredCount;
         private bool _answered;
+        private WordPronunciation _currentPronunciation;
 
         private Button[] _optionButtons;
 
@@ -93,6 +96,20 @@ namespace Englishtest
                 return;
             }
 
+            _currentPronunciation = null;
+            var lookupWord = GetLookupWord(_current);
+            if (lookupWord != null)
+            {
+                var ignored = Task.Run(async () =>
+                {
+                    try
+                    {
+                        _currentPronunciation = await _dictionary.LookupAsync(lookupWord).ConfigureAwait(false);
+                    }
+                    catch { }
+                });
+            }
+
             _answered = false;
             FeedbackPanel.Visibility = Visibility.Collapsed;
             NextButton.IsEnabled = false;
@@ -141,10 +158,24 @@ namespace Englishtest
             }
         }
 
-        private void Option_Click(object sender, RoutedEventArgs e)
+        private async void Option_Click(object sender, RoutedEventArgs e)
         {
             if (_answered || _current == null)
                 return;
+
+            // Wait for dictionary lookup to finish if not finished yet
+            if (_currentPronunciation == null)
+            {
+                var lookupWord = GetLookupWord(_current);
+                if (lookupWord != null)
+                {
+                    try
+                    {
+                        _currentPronunciation = await _dictionary.LookupAsync(lookupWord).ConfigureAwait(true);
+                    }
+                    catch { }
+                }
+            }
 
             var button = sender as Button;
             if (button == null)
@@ -180,13 +211,28 @@ namespace Englishtest
                 button.Foreground = WrongFg;
             }
 
+            var phoneticHint = "";
+            var phonetic = _currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Phonetic)
+                ? _currentPronunciation.Phonetic
+                : _current?.Phonetic;
+            if (!string.IsNullOrWhiteSpace(phonetic))
+            {
+                phoneticHint = $"　音標：{phonetic}";
+            }
+
+            var exampleText = "";
+            if (_currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Example))
+            {
+                exampleText = $"\n例句：{_currentPronunciation.Example}";
+            }
+
             // Feedback
             FeedbackPanel.Visibility = Visibility.Visible;
             if (isCorrect)
             {
                 FeedbackPanel.Background = CorrectBg;
                 FeedbackText.Foreground = CorrectFg;
-                FeedbackText.Text = "✓ 正確！做得很好。";
+                FeedbackText.Text = $"✓ 正確！做得很好。{phoneticHint}{exampleText}";
             }
             else
             {
@@ -195,7 +241,7 @@ namespace Englishtest
                     : _current.Chinese;
                 FeedbackPanel.Background = WrongBg;
                 FeedbackText.Foreground = WrongFg;
-                FeedbackText.Text = $"✗ 不正確。正確答案：{correctDisplay}";
+                FeedbackText.Text = $"✗ 不正確。正確答案：{correctDisplay}{phoneticHint}{exampleText}";
             }
 
             // Play pronunciation for the correct word
@@ -262,6 +308,17 @@ namespace Englishtest
                 "挑戰結束",
                 MessageBoxButton.OK,
                 MessageBoxImage.Information);
+        }
+
+        private static string GetLookupWord(VocabularyItem item)
+        {
+            var word = item?.PrimaryEnglish;
+            if (string.IsNullOrWhiteSpace(word))
+                return null;
+
+            word = word.Trim();
+            var spaceIndex = word.IndexOf(' ');
+            return spaceIndex > 0 ? word.Substring(0, spaceIndex) : word;
         }
 
         private void Window_Closed(object sender, EventArgs e)

@@ -131,6 +131,20 @@ namespace Englishtest
                 return;
             }
 
+            // Preload pronunciation and example sentence in the background
+            var lookupWord = GetLookupWord(_current);
+            if (lookupWord != null)
+            {
+                var ignored = Task.Run(async () =>
+                {
+                    try
+                    {
+                        await LoadPronunciationAsync(_current, lookupWord).ConfigureAwait(false);
+                    }
+                    catch { }
+                });
+            }
+
             // Show question based on direction
             if (_direction == QuizDirection.EnglishToChinese)
                 ChineseText.Text = _current.PrimaryEnglish ?? "";
@@ -354,10 +368,24 @@ namespace Englishtest
             _pronunciation.OpenDictionary(url);
         }
 
-        private void SubmitAnswer()
+        private async void SubmitAnswer()
         {
             if (_answered || _current == null)
                 return;
+
+            // Wait for pronunciation to load if it's not loaded yet
+            if (_currentPronunciation == null)
+            {
+                var lookupWord = GetLookupWord(_current);
+                if (lookupWord != null)
+                {
+                    try
+                    {
+                        await LoadPronunciationAsync(_current, lookupWord).ConfigureAwait(true);
+                    }
+                    catch { }
+                }
+            }
 
             bool isCorrect;
             string correctDisplay;
@@ -384,11 +412,18 @@ namespace Englishtest
             ScoreText.Text = $"得分：{_correctCount} / {_vocabulary.SessionTotal}";
 
             var phoneticHint = "";
-            if (_pronunciationRevealed)
+            var phonetic = _currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Phonetic)
+                ? _currentPronunciation.Phonetic
+                : _current?.Phonetic;
+            if (!string.IsNullOrWhiteSpace(phonetic))
             {
-                var phonetic = PhoneticText.Text;
-                if (!string.IsNullOrWhiteSpace(phonetic) && phonetic != "（暫無音標）")
-                    phoneticHint = $"　音標：{phonetic}";
+                phoneticHint = $"　音標：{phonetic}";
+            }
+
+            var exampleText = "";
+            if (_currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Example))
+            {
+                exampleText = $"\n例句：{_currentPronunciation.Example}";
             }
 
             FeedbackPanel.Visibility = Visibility.Visible;
@@ -396,13 +431,13 @@ namespace Englishtest
             {
                 FeedbackPanel.Background = new SolidColorBrush(Color.FromRgb(220, 252, 231));
                 FeedbackText.Foreground = new SolidColorBrush(Color.FromRgb(21, 128, 61));
-                FeedbackText.Text = $"✓ 正確！做得很好。{phoneticHint}";
+                FeedbackText.Text = $"✓ 正確！做得很好。{phoneticHint}{exampleText}";
             }
             else
             {
                 FeedbackPanel.Background = new SolidColorBrush(Color.FromRgb(254, 226, 226));
                 FeedbackText.Foreground = new SolidColorBrush(Color.FromRgb(185, 28, 28));
-                FeedbackText.Text = $"✗ 不正確。參考答案：{correctDisplay}{phoneticHint}";
+                FeedbackText.Text = $"✗ 不正確。參考答案：{correctDisplay}{phoneticHint}{exampleText}";
             }
 
             AnswerBox.IsEnabled = false;

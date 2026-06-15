@@ -6,5 +6,6 @@ namespace Englishtest.Models
         public string Phonetic { get; set; }
         public string AudioUrl { get; set; }
         public string DictionaryUrl { get; set; }
+        public string Example { get; set; }
     }
 }

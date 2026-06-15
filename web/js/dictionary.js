@@ -1,7 +1,7 @@
 const cache = new Map();
 
 export async function lookupPronunciation(word) {
-  if (!word?.trim()) return { word: '', phonetic: '', audioUrl: '', dictionaryUrl: '' };
+  if (!word?.trim()) return { word: '', phonetic: '', audioUrl: '', dictionaryUrl: '', example: '' };
 
   const key = word.trim().toLowerCase();
   if (cache.has(key)) return cache.get(key);
@@ -10,7 +10,8 @@ export async function lookupPronunciation(word) {
     word: word.trim(),
     phonetic: '',
     audioUrl: '',
-    dictionaryUrl: `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(key)}`
+    dictionaryUrl: `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(key)}`,
+    example: ''
   };
 
   try {
@@ -24,6 +25,18 @@ export async function lookupPronunciation(word) {
           if (!result.phonetic && p.text) result.phonetic = p.text;
           if (!result.audioUrl && p.audio) result.audioUrl = p.audio;
           if (result.phonetic && result.audioUrl) break;
+        }
+      }
+      if (entry?.meanings) {
+        for (const m of entry.meanings) {
+          if (!m.definitions) continue;
+          for (const d of m.definitions) {
+            if (d.example) {
+              result.example = d.example;
+              break;
+            }
+          }
+          if (result.example) break;
         }
       }
     }

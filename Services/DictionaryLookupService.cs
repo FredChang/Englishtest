@@ -51,6 +51,24 @@ namespace Englishtest.Services
                                 result.AudioUrl = p.audio.Trim();
                         }
                     }
+
+                    if (entry?.meanings != null)
+                    {
+                        foreach (var m in entry.meanings)
+                        {
+                            if (m?.definitions == null) continue;
+                            foreach (var d in m.definitions)
+                            {
+                                if (d != null && !string.IsNullOrWhiteSpace(d.example))
+                                {
+                                    result.Example = d.example.Trim();
+                                    break;
+                                }
+                            }
+                            if (!string.IsNullOrWhiteSpace(result.Example))
+                                break;
+                        }
+                    }
                 }
             }
             catch
@@ -65,12 +83,24 @@ namespace Englishtest.Services
         private class DictionaryApiEntry
         {
             public List<DictionaryApiPhonetic> phonetics { get; set; }
+            public List<DictionaryApiMeaning> meanings { get; set; }
         }
 
         private class DictionaryApiPhonetic
         {
             public string text { get; set; }
             public string audio { get; set; }
+        }
+
+        private class DictionaryApiMeaning
+        {
+            public List<DictionaryApiDefinition> definitions { get; set; }
+        }
+
+        private class DictionaryApiDefinition
+        {
+            public string definition { get; set; }
+            public string example { get; set; }
         }
     }
 }

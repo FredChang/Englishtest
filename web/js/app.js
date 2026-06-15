@@ -297,6 +297,18 @@ function showNextQuestion() {
   els.nextBtn.disabled = true;
   resetPronunciationDisplay();
 
+  currentPronunciation = null;
+  const word = lookupWord(current);
+  if (word) {
+    lookupPronunciation(word).then((info) => {
+      if (current && lookupWord(current) === word) {
+        currentPronunciation = info;
+        if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
+        if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
+      }
+    }).catch(() => {});
+  }
+
   const isImage = settings.mode === 'image';
   const isEtoC = settings.direction === 'EtoC';
 
@@ -351,11 +363,20 @@ function showImageChoiceOptions() {
   });
 }
 
-function onImageOptionClick(e) {
+async function onImageOptionClick(e) {
   if (answered || !current) return;
   const btn = e.currentTarget;
   const index = Number(btn.dataset.index);
   if (Number.isNaN(index)) return;
+
+  const word = lookupWord(current);
+  if (word && !currentPronunciation) {
+    try {
+      currentPronunciation = await lookupPronunciation(word);
+      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
+      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
+    } catch {}
+  }
 
   const isCorrect = index === correctChoiceIndex;
   els.imageOptionButtons.forEach((b) => (b.disabled = true));
@@ -369,7 +390,6 @@ function onImageOptionClick(e) {
 
   showFeedback(isCorrect, '', { imageMode: true });
 
-  const word = lookupWord(current);
   if (word) speak(word);
 
   els.nextBtn.disabled = false;
@@ -406,24 +426,44 @@ function showFeedback(isCorrect, correctDisplay, options = {}) {
   if (options.imageMode) {
     const chinese = current?.Chinese?.trim() || '';
     const chineseHint = chinese ? `　中文：${chinese}` : '';
-    els.feedbackText.textContent = isCorrect
-      ? `✓ 正確！${chineseHint}`
-      : `✗ 不正確，綠框為正確圖片。${chineseHint}`;
+    let feedbackHtml = isCorrect
+      ? `<span style="font-weight:bold;">✓ 正確！</span>${chineseHint}`
+      : `<span style="font-weight:bold;">✗ 不正確，綠框為正確圖片。</span>${chineseHint}`;
+
+    if (currentPronunciation && currentPronunciation.example) {
+      feedbackHtml += `<div style="margin-top:6px;font-size:0.92rem;opacity:0.85;font-style:italic;">例句：${currentPronunciation.example}</div>`;
+    }
+    els.feedbackText.innerHTML = feedbackHtml;
     return;
   }
 
   const phoneticHint =
-    pronunciationRevealed && els.phoneticText.textContent !== '（暫無音標）'
-      ? `　音標：${els.phoneticText.textContent}`
+    (currentPronunciation?.phonetic || els.phoneticText.textContent) && (currentPronunciation?.phonetic || els.phoneticText.textContent) !== '（暫無音標）'
+      ? `　音標：${currentPronunciation?.phonetic || els.phoneticText.textContent}`
       : '';
 
-  els.feedbackText.textContent = isCorrect
-    ? `✓ 正確！做得很好。${phoneticHint}`
-    : `✗ 不正確。參考答案：${correctDisplay}${phoneticHint}`;
+  let feedbackHtml = isCorrect
+    ? `<span style="font-weight:bold;">✓ 正確！做得很好。</span>${phoneticHint ? `<span style="margin-left:10px;">${phoneticHint}</span>` : ''}`
+    : `<span style="font-weight:bold;">✗ 不正確。</span>參考答案：<span style="font-weight:bold;text-decoration:underline;">${correctDisplay}</span>${phoneticHint ? `<span style="margin-left:10px;">${phoneticHint}</span>` : ''}`;
+
+  if (currentPronunciation && currentPronunciation.example) {
+    feedbackHtml += `<div style="margin-top:6px;font-size:0.92rem;opacity:0.85;font-style:italic;">例句：${currentPronunciation.example}</div>`;
+  }
+
+  els.feedbackText.innerHTML = feedbackHtml;
 }
 
-function submitTypingAnswer() {
+async function submitTypingAnswer() {
   if (answered || !current) return;
+
+  const word = lookupWord(current);
+  if (word && !currentPronunciation) {
+    try {
+      currentPronunciation = await lookupPronunciation(word);
+      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
+      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
+    } catch {}
+  }
 
   let result;
   if (settings.direction === 'EtoC') {
@@ -439,11 +479,20 @@ function submitTypingAnswer() {
   els.nextBtn.focus();
 }
 
-function onOptionClick(e) {
+async function onOptionClick(e) {
   if (answered || !current) return;
   const btn = e.currentTarget;
   const index = Number(btn.dataset.index);
   if (Number.isNaN(index)) return;
+
+  const word = lookupWord(current);
+  if (word && !currentPronunciation) {
+    try {
+      currentPronunciation = await lookupPronunciation(word);
+      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
+      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
+    } catch {}
+  }
 
   const isCorrect = index === correctChoiceIndex;
   els.optionButtons.forEach((b) => (b.disabled = true));
