@@ -512,3 +512,22 @@ button {
 #screen-guide-play .header h1 {
   flex: 1;
 }
+
+.guide-friends-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  flex-wrap: wrap;
+}
+
+.guide-friends-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.guide-friends-bar .btn-secondary.active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}

@@ -1,6 +1,7 @@
 import {
   parseContent,
   parseFriendsScene,
+  inferFriendsSourceType,
   loadSavedGuideContent,
   hasSavedGuideContent,
   formatSavedSummary,
@@ -224,6 +225,7 @@ export function initGuideReading({ screens, showScreen }) {
     pauseBtn: document.getElementById('guide-pause-btn'),
     stopBtn: document.getElementById('guide-stop-btn'),
     changeSourceBtn: document.getElementById('guide-change-source-btn'),
+    friendsBar: document.getElementById('guide-friends-bar'),
     showChineseBtn: document.getElementById('guide-show-chinese-btn'),
     playBackBtn: document.getElementById('guide-play-back-btn')
   };
@@ -303,22 +305,29 @@ export function initGuideReading({ screens, showScreen }) {
 
   function updateChineseToggle() {
     const btn = els.showChineseBtn;
-    if (!btn) return;
+    const bar = els.friendsBar;
+    if (!btn || !bar) return;
 
     if (!isFriendsContent) {
-      btn.classList.add('hidden');
+      bar.classList.add('hidden');
       return;
     }
 
-    btn.classList.remove('hidden');
+    bar.classList.remove('hidden');
     btn.textContent = showChinese ? '隱藏中文' : '顯示中文';
     btn.setAttribute('aria-pressed', showChinese ? 'true' : 'false');
+    btn.classList.toggle('active', showChinese);
   }
 
   function showPlayScreen(result) {
     segments = result.segments;
     friendsDisplayItems = result.displayItems || null;
-    isFriendsContent = result.sourceType === 'friends';
+    isFriendsContent =
+      inferFriendsSourceType({
+        sourceType: result.sourceType,
+        sourceLabel: result.sourceLabel,
+        fullText: result.fullText
+      }) === 'friends';
     sourceLabel = result.sourceLabel;
     currentIndex = 0;
     isPaused = false;
@@ -332,15 +341,16 @@ export function initGuideReading({ screens, showScreen }) {
   }
 
   function loadFromText(text, { sourceLabel: label, fileName = '', sourceType = '' } = {}) {
+    const resolvedSourceType = inferFriendsSourceType({
+      sourceType,
+      sourceLabel: label,
+      fullText: text
+    });
+
     const parsed =
-      sourceType === 'friends'
+      resolvedSourceType === 'friends'
         ? parseFriendsScene(text)
         : parseContent(text, { fileName });
-
-    const resolvedSourceType =
-      sourceType ||
-      parsed.sourceType ||
-      (fileName && /\.srt$/i.test(fileName) ? 'srt' : fileName ? 'txt' : 'paste');
 
     const result = applyLoadedContent({
       segments: parsed.segments,
@@ -361,8 +371,9 @@ export function initGuideReading({ screens, showScreen }) {
     showPlayScreen({
       segments: result.segments,
       displayItems: parsed.displayItems || null,
-      sourceType: parsed.sourceType || sourceType,
-      sourceLabel: result.sourceLabel
+      sourceType: resolvedSourceType,
+      sourceLabel: result.sourceLabel,
+      fullText: result.fullText
     });
     return true;
   }
@@ -547,7 +558,8 @@ export function initGuideReading({ screens, showScreen }) {
       segments: saved.segments,
       displayItems: saved.displayItems || null,
       sourceType: saved.sourceType,
-      sourceLabel: formatSavedSummary(saved) || saved.sourceLabel
+      sourceLabel: formatSavedSummary(saved) || saved.sourceLabel,
+      fullText: saved.fullText
     });
   });
 
@@ -558,7 +570,7 @@ export function initGuideReading({ screens, showScreen }) {
     const oldText = els.friendsBtn.textContent;
     els.friendsBtn.textContent = '載入中…';
     try {
-      const response = await fetch('friends.txt');
+      const response = await fetch('friends.txt', { cache: 'no-store' });
       if (!response.ok) throw new Error('無法載入六人行對話檔');
       const content = await response.text();
       const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/).map(s => s.trim()).filter(Boolean);

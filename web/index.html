@@ -112,7 +112,12 @@
         <button type="button" id="guide-change-source-btn" class="btn-ghost">更換文稿</button>
       </header>
 
-      <p id="guide-source-text" class="pool-text" style="margin:0 0 12px"></p>
+      <p id="guide-source-text" class="pool-text" style="margin:0 0 8px"></p>
+
+      <div id="guide-friends-bar" class="guide-friends-bar hidden">
+        <button type="button" id="guide-show-chinese-btn" class="btn-secondary">顯示中文</button>
+        <span class="guide-friends-hint">點擊切換中英對照；朗讀仍只播放英文</span>
+      </div>
 
       <div class="card guide-controls-card">
         <label class="field-label" style="margin-top:0">聲音</label>
@@ -136,7 +141,6 @@
         <button type="button" id="guide-play-btn" class="btn-primary">開始朗讀</button>
         <button type="button" id="guide-pause-btn" class="btn-secondary" disabled>暫停</button>
         <button type="button" id="guide-stop-btn" class="btn-secondary" disabled>停止</button>
-        <button type="button" id="guide-show-chinese-btn" class="btn-secondary hidden">顯示中文</button>
         <button type="button" id="guide-play-back-btn" class="btn-secondary">返回</button>
       </div>
     </section>

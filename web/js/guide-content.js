@@ -90,6 +90,14 @@ function parseFriendsLine(line) {
   return { english: trimmed, chinese: '' };
 }
 
+/** 判斷是否為六人行導讀（含舊版 localStorage 未標記 sourceType 的情況） */
+export function inferFriendsSourceType({ sourceType, sourceLabel, fullText } = {}) {
+  if (sourceType === 'friends') return 'friends';
+  if (sourceLabel && /六人行/.test(sourceLabel)) return 'friends';
+  if (fullText && / \| [\u3400-\u9fff]/.test(fullText)) return 'friends';
+  return sourceType || 'txt';
+}
+
 /** 六人行對話：每段一行英文，可選同一行以「 | 」分隔中文，或下一行為中文 */
 export function parseFriendsScene(sceneText) {
   const blocks = (sceneText || '').trim().split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
@@ -168,8 +176,14 @@ export function loadSavedGuideContent() {
     const data = JSON.parse(raw);
     if (!data?.fullText?.trim()) return null;
 
+    const resolvedType = inferFriendsSourceType({
+      sourceType: data.sourceType,
+      sourceLabel: data.sourceLabel,
+      fullText: data.fullText
+    });
+
     const parsed =
-      data.sourceType === 'friends'
+      resolvedType === 'friends'
         ? parseFriendsScene(data.fullText)
         : parseContent(data.fullText, {
             fileName: data.sourceType === 'srt' ? 'saved.srt' : 'saved.txt'
@@ -180,7 +194,7 @@ export function loadSavedGuideContent() {
       displayItems: parsed.displayItems || null,
       fullText: data.fullText,
       sourceLabel: data.sourceLabel,
-      sourceType: data.sourceType,
+      sourceType: resolvedType,
       savedAt: data.savedAt
     };
   } catch {

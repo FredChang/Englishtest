@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.6.0';
+const CACHE = 'englishtest-v1.6.1';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -31,6 +31,15 @@ function isWordsJsonRequest(request) {
 function isSameOrigin(request) {
   try {
     return new URL(request.url).origin === self.location.origin;
+  } catch {
+    return false;
+  }
+}
+
+function isFriendsTxtRequest(request) {
+  try {
+    const { pathname } = new URL(request.url);
+    return pathname.endsWith('/friends.txt') || pathname.endsWith('friends.txt');
   } catch {
     return false;
   }
@@ -137,6 +146,11 @@ self.addEventListener('fetch', (event) => {
 
   if (isWordsJsonRequest(event.request)) {
     event.respondWith(networkFirstWords(event.request));
+    return;
+  }
+
+  if (isFriendsTxtRequest(event.request)) {
+    event.respondWith(networkFirstAppCode(event.request));
     return;
   }
 
