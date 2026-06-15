@@ -109,10 +109,6 @@ def remove_cross_duplicates(items):
                     matching_entries.append(item)
             
             # Sort matching entries to find which one is best to keep the word in
-            # We prefer:
-            # 1. An entry that is dedicated to this word (fewer words in its list)
-            # 2. An entry with more roots
-            # 3. An entry with real phonetic
             def score_for_dup(item):
                 eng_count = len(item.get("English", []))
                 roots_len = len(item.get("Roots", []))
@@ -144,7 +140,12 @@ def main():
     existing_words = load_existing_vocab(WORDS_PATH)
     print(f"Loaded {len(existing_words)} existing words.")
     
-    # Deduplicate existing words first
+    # Filter out any existing words that contain a space (multi-word phrases)
+    original_len = len(existing_words)
+    existing_words = [w for w in existing_words if w.get("English") and ' ' not in w["English"][0]]
+    print(f"Removed {original_len - len(existing_words)} multi-word phrases from existing vocabulary.")
+    
+    # Deduplicate existing words
     existing_words = deduplicate_vocab(existing_words)
 
     # Create a lookup map for existing words to prevent adding duplicate spellings globally
@@ -169,6 +170,10 @@ def main():
         
         word_clean = word.strip()
         word_key = word_clean.lower()
+
+        # Filter out multi-word phrases from external data
+        if ' ' in word_clean:
+            continue
 
         # If word is already in our existing dictionary, skip it to preserve existing custom content
         if word_key in existing_map:
@@ -240,7 +245,7 @@ def main():
     with open(WEB_WORDS_PATH, "w", encoding="utf-8") as f:
         json.dump(existing_words, f, ensure_ascii=False, indent=2)
 
-    print("Successfully completed vocabulary expansion!")
+    print("Successfully completed vocabulary expansion (filtered single words only)!")
 
     # Verify counts by level
     from collections import Counter
