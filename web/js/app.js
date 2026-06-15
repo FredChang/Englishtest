@@ -604,18 +604,6 @@ async function init() {
     els.levelSelect.appendChild(opt);
   });
 
-  const guideGenLevelSelect = document.getElementById('guide-gen-level');
-  if (guideGenLevelSelect) {
-    guideGenLevelSelect.innerHTML = '';
-    activeLevels.forEach((level) => {
-      const opt = document.createElement('option');
-      opt.value = level;
-      opt.textContent = level;
-      if (level === 'B1') opt.selected = true;
-      guideGenLevelSelect.appendChild(opt);
-    });
-  }
-
   updateLevelInfo();
   updateSetupForMode();
   showScreen('setup');

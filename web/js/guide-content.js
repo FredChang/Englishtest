@@ -71,6 +71,55 @@ export function isLikelySrt(text) {
   return /-->\s*\d{1,2}:\d{2}/.test(text);
 }
 
+function hasCjk(text) {
+  return /[\u3400-\u9fff]/.test(text || '');
+}
+
+function parseFriendsLine(line) {
+  const trimmed = (line || '').trim();
+  if (!trimmed) return null;
+
+  const pipeIdx = trimmed.indexOf(' | ');
+  if (pipeIdx !== -1) {
+    return {
+      english: trimmed.slice(0, pipeIdx).trim(),
+      chinese: trimmed.slice(pipeIdx + 3).trim()
+    };
+  }
+
+  return { english: trimmed, chinese: '' };
+}
+
+/** 六人行對話：每段一行英文，可選同一行以「 | 」分隔中文，或下一行為中文 */
+export function parseFriendsScene(sceneText) {
+  const blocks = (sceneText || '').trim().split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
+  const items = [];
+
+  for (const block of blocks) {
+    const lines = block.split(/\n/).map((l) => l.trim()).filter(Boolean);
+    if (!lines.length) continue;
+
+    const first = parseFriendsLine(lines[0]);
+    if (!first?.english) continue;
+
+    let chinese = first.chinese;
+    if (!chinese && lines.length >= 2 && hasCjk(lines[1])) {
+      chinese = lines[1];
+    }
+
+    items.push({ english: first.english, chinese });
+  }
+
+  return {
+    segments: items.map((item) => item.english),
+    displayItems: items,
+    fullText: items
+      .map((item) => (item.chinese ? `${item.english} | ${item.chinese}` : item.english))
+      .join('\n\n'),
+    sourceType: 'friends'
+  };
+}
+
 export function parseContent(text, { fileName = '' } = {}) {
   const trimmed = (text || '').trim();
   if (!trimmed) return { segments: [], sourceType: 'txt', fullText: '' };
@@ -119,12 +168,16 @@ export function loadSavedGuideContent() {
     const data = JSON.parse(raw);
     if (!data?.fullText?.trim()) return null;
 
-    const parsed = parseContent(data.fullText, {
-      fileName: data.sourceType === 'srt' ? 'saved.srt' : 'saved.txt'
-    });
+    const parsed =
+      data.sourceType === 'friends'
+        ? parseFriendsScene(data.fullText)
+        : parseContent(data.fullText, {
+            fileName: data.sourceType === 'srt' ? 'saved.srt' : 'saved.txt'
+          });
 
     return {
       segments: parsed.segments,
+      displayItems: parsed.displayItems || null,
       fullText: data.fullText,
       sourceLabel: data.sourceLabel,
       sourceType: data.sourceType,
@@ -154,11 +207,13 @@ export function formatSavedSummary(saved) {
       })
     : '';
   const typeLabel =
-    saved.sourceType === 'srt'
-      ? '字幕'
-      : saved.sourceType === 'paste'
-        ? '貼上'
-        : '文字';
+    saved.sourceType === 'friends'
+      ? '六人行'
+      : saved.sourceType === 'srt'
+        ? '字幕'
+        : saved.sourceType === 'paste'
+          ? '貼上'
+          : '文字';
   return `${saved.sourceLabel}（${typeLabel}${date ? ` · ${date}` : ''}）`;
 }
 

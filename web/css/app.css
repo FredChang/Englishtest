@@ -440,24 +440,6 @@ button {
   margin-top: 16px;
 }
 
-.guide-gen-row {
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  gap: 12px;
-  align-items: end;
-  margin-bottom: 6px;
-}
-
-#guide-gen-count {
-  height: 40px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  padding: 0 12px;
-  background: #fff;
-  width: 100%;
-}
-
 .guide-controls-card {
   margin-bottom: 12px;
 }
@@ -490,6 +472,21 @@ button {
   line-height: 1.45;
   cursor: pointer;
   color: #334155;
+}
+
+.guide-segment-en {
+  line-height: 1.45;
+}
+
+.guide-segment-zh {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #64748b;
+}
+
+.guide-segment.active .guide-segment-zh {
+  color: #3b82f6;
 }
 
 .guide-segment.active {

@@ -1,12 +1,12 @@
 import {
   parseContent,
+  parseFriendsScene,
   loadSavedGuideContent,
   hasSavedGuideContent,
   formatSavedSummary,
   applyLoadedContent,
   clearSavedGuideContent
 } from './guide-content.js';
-import { generateGuideArticle } from './guide-generate.js';
 
 function speedLabelFromRate(value) {
   const v = Number(value);
@@ -207,9 +207,6 @@ export function initGuideReading({ screens, showScreen }) {
     openBtn: document.getElementById('guide-open-btn'),
     lastBtn: document.getElementById('guide-use-last-btn'),
     lastHint: document.getElementById('guide-last-hint'),
-    genLevel: document.getElementById('guide-gen-level'),
-    genCount: document.getElementById('guide-gen-count'),
-    genBtn: document.getElementById('guide-gen-btn'),
     friendsBtn: document.getElementById('guide-friends-btn'),
     fileInput: document.getElementById('guide-file-input'),
     pickFileBtn: document.getElementById('guide-pick-file-btn'),
@@ -227,10 +224,14 @@ export function initGuideReading({ screens, showScreen }) {
     pauseBtn: document.getElementById('guide-pause-btn'),
     stopBtn: document.getElementById('guide-stop-btn'),
     changeSourceBtn: document.getElementById('guide-change-source-btn'),
+    showChineseBtn: document.getElementById('guide-show-chinese-btn'),
     playBackBtn: document.getElementById('guide-play-back-btn')
   };
 
   let segments = [];
+  let friendsDisplayItems = null;
+  let isFriendsContent = false;
+  let showChinese = false;
   let sourceLabel = '';
   let currentIndex = 0;
   let isPlaying = false;
@@ -292,30 +293,60 @@ export function initGuideReading({ screens, showScreen }) {
   function showLoadScreen() {
     stopReading(true);
     segments = [];
+    friendsDisplayItems = null;
+    isFriendsContent = false;
+    showChinese = false;
+    updateChineseToggle();
     updateLastButton();
     showScreen('guideLoad');
   }
 
+  function updateChineseToggle() {
+    const btn = els.showChineseBtn;
+    if (!btn) return;
+
+    if (!isFriendsContent) {
+      btn.classList.add('hidden');
+      return;
+    }
+
+    btn.classList.remove('hidden');
+    btn.textContent = showChinese ? '隱藏中文' : '顯示中文';
+    btn.setAttribute('aria-pressed', showChinese ? 'true' : 'false');
+  }
+
   function showPlayScreen(result) {
     segments = result.segments;
+    friendsDisplayItems = result.displayItems || null;
+    isFriendsContent = result.sourceType === 'friends';
     sourceLabel = result.sourceLabel;
     currentIndex = 0;
     isPaused = false;
 
     els.sourceText.textContent = `來源：${sourceLabel} · 共 ${segments.length} 句`;
+    updateChineseToggle();
     renderSegmentList(-1);
     updateProgressText();
     updatePlayControls();
     showScreen('guidePlay');
   }
 
-  function loadFromText(text, { sourceLabel: label, fileName = '' }) {
-    const parsed = parseContent(text, { fileName });
+  function loadFromText(text, { sourceLabel: label, fileName = '', sourceType = '' } = {}) {
+    const parsed =
+      sourceType === 'friends'
+        ? parseFriendsScene(text)
+        : parseContent(text, { fileName });
+
+    const resolvedSourceType =
+      sourceType ||
+      parsed.sourceType ||
+      (fileName && /\.srt$/i.test(fileName) ? 'srt' : fileName ? 'txt' : 'paste');
+
     const result = applyLoadedContent({
       segments: parsed.segments,
       fullText: parsed.fullText || text.trim(),
       sourceLabel: label,
-      sourceType: parsed.sourceType === 'srt' ? 'srt' : fileName ? 'txt' : 'paste'
+      sourceType: resolvedSourceType
     });
 
     if (!result.ok) {
@@ -329,6 +360,8 @@ export function initGuideReading({ screens, showScreen }) {
 
     showPlayScreen({
       segments: result.segments,
+      displayItems: parsed.displayItems || null,
+      sourceType: parsed.sourceType || sourceType,
       sourceLabel: result.sourceLabel
     });
     return true;
@@ -339,7 +372,20 @@ export function initGuideReading({ screens, showScreen }) {
     segments.forEach((text, index) => {
       const li = document.createElement('li');
       li.className = 'guide-segment' + (index === activeIndex ? ' active' : '');
-      li.textContent = text;
+
+      const en = document.createElement('div');
+      en.className = 'guide-segment-en';
+      en.textContent = text;
+      li.appendChild(en);
+
+      const chinese = friendsDisplayItems?.[index]?.chinese;
+      if (isFriendsContent && showChinese && chinese) {
+        const zh = document.createElement('div');
+        zh.className = 'guide-segment-zh';
+        zh.textContent = chinese;
+        li.appendChild(zh);
+      }
+
       li.addEventListener('click', () => {
         if (isPlaying) return;
         currentIndex = index;
@@ -499,36 +545,13 @@ export function initGuideReading({ screens, showScreen }) {
     segments = saved.segments;
     showPlayScreen({
       segments: saved.segments,
+      displayItems: saved.displayItems || null,
+      sourceType: saved.sourceType,
       sourceLabel: formatSavedSummary(saved) || saved.sourceLabel
     });
   });
 
   els.pickFileBtn?.addEventListener('click', () => els.fileInput?.click());
-
-  els.genBtn?.addEventListener('click', async () => {
-    const level = els.genLevel?.value || 'B1';
-    const count = Number(els.genCount?.value || 20);
-
-    els.genBtn.disabled = true;
-    const oldText = els.genBtn.textContent;
-    els.genBtn.textContent = '產生中…';
-    try {
-      const article = await generateGuideArticle({
-        level,
-        sentenceCount: count,
-        wordsUrl: 'words.json'
-      });
-
-      loadFromText(article.fullText, {
-        sourceLabel: `隨機文章 ${article.level} · ${article.sentenceCount} 句`
-      });
-    } catch {
-      alert('產生文章失敗，請再試一次。');
-    } finally {
-      els.genBtn.textContent = oldText;
-      els.genBtn.disabled = false;
-    }
-  });
 
   els.friendsBtn?.addEventListener('click', async () => {
     els.friendsBtn.disabled = true;
@@ -546,7 +569,8 @@ export function initGuideReading({ screens, showScreen }) {
       const sceneLabel = `六人行對話 - 隨機第 ${randIndex + 1} 組`;
 
       loadFromText(selectedScene, {
-        sourceLabel: sceneLabel
+        sourceLabel: sceneLabel,
+        sourceType: 'friends'
       });
     } catch (err) {
       alert(err?.message || '讀取對話失敗，請再試一次。');
@@ -599,6 +623,13 @@ export function initGuideReading({ screens, showScreen }) {
   });
 
   els.changeSourceBtn?.addEventListener('click', showLoadScreen);
+
+  els.showChineseBtn?.addEventListener('click', () => {
+    if (!isFriendsContent) return;
+    showChinese = !showChinese;
+    updateChineseToggle();
+    renderSegmentList(isPlaying || isPaused ? currentIndex : -1);
+  });
 
   els.speedSlider?.addEventListener('input', updateSpeedLabel);
 

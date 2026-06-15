@@ -83,26 +83,6 @@
         </button>
         <p id="guide-last-hint" class="pool-text" style="margin:0 0 16px"></p>
 
-        <div class="guide-gen-row">
-          <div>
-            <label class="field-label" for="guide-gen-level">隨機文章難度</label>
-            <select id="guide-gen-level">
-              <option value="A1">A1</option>
-              <option value="A2">A2</option>
-              <option value="B1" selected>B1</option>
-              <option value="B2">B2</option>
-              <option value="C1">C1</option>
-              <option value="C2">C2</option>
-            </select>
-          </div>
-          <div>
-            <label class="field-label" for="guide-gen-count">句數</label>
-            <input type="number" id="guide-gen-count" min="5" max="120" step="1" value="20" />
-          </div>
-        </div>
-        <button type="button" id="guide-gen-btn" class="btn-guide" style="width:100%;margin:10px 0 12px">
-          隨機產生文章並開始導讀
-        </button>
         <button type="button" id="guide-friends-btn" class="btn-primary" style="width:100%;margin-bottom:16px;background-color:#059669;border:none;">
           🎬 隨機精選六人行對話
         </button>
@@ -156,6 +136,7 @@
         <button type="button" id="guide-play-btn" class="btn-primary">開始朗讀</button>
         <button type="button" id="guide-pause-btn" class="btn-secondary" disabled>暫停</button>
         <button type="button" id="guide-stop-btn" class="btn-secondary" disabled>停止</button>
+        <button type="button" id="guide-show-chinese-btn" class="btn-secondary hidden">顯示中文</button>
         <button type="button" id="guide-play-back-btn" class="btn-secondary">返回</button>
       </div>
     </section>
