@@ -156,7 +156,7 @@ namespace Englishtest
                     var targetWord = _current.PrimaryEnglish;
                     if (!string.IsNullOrEmpty(targetWord))
                     {
-                        question += $" ({targetWord[0]}{new string('_', targetWord.Length - 1)})";
+                        question += $" ({new string('_', targetWord.Length)})";
                     }
                 }
                 ChineseText.Text = question;

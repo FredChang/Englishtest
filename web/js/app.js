@@ -310,17 +310,16 @@ function showNextQuestion() {
   }
 
   const isImage = settings.mode === 'image';
-  const isEtoC = settings.direction === 'EtoC';
 
   let question = '';
-  if (isImage || isEtoC) {
+  if (isImage) {
     question = primaryEnglish(current);
   } else {
     question = current.Chinese || '';
     if (settings.mode === 'typing') {
       const target = primaryEnglish(current);
       if (target) {
-        question += ` (${target[0]}${'_'.repeat(target.length - 1)})`;
+        question += ` (${'_'.repeat(target.length)})`;
       }
     }
   }
