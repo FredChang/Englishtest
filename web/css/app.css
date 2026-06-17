@@ -534,12 +534,47 @@ button {
   flex-shrink: 0;
 }
 
-.guide-play-header-actions .btn-secondary.active {
-  background: #dbeafe;
-  border-color: #93c5fd;
-  color: #1d4ed8;
+.guide-play-header-actions button {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  min-width: 90px;
+  height: 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
+.guide-play-header-actions button.friends-mode,
 #guide-show-chinese-btn {
-  white-space: nowrap;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.guide-play-header-actions button.friends-mode:hover,
+#guide-show-chinese-btn:hover {
+  background: #dbeafe;
+}
+
+#guide-show-chinese-btn.active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1c3d5a;
+}
+
+.guide-play-actions #guide-play-back-btn {
+  grid-column: 1 / -1;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+  border: none;
+  padding: 12px 16px;
+}
+
+.guide-play-actions #guide-play-back-btn:hover {
+  background: #cbd5e1;
 }

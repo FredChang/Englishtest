@@ -265,7 +265,8 @@ export function initGuideReading({ screens, showScreen }) {
       return lang.startsWith('en') || name.includes('english') || name.includes('英文');
     });
 
-    const prevSelected = select.value;
+    const savedVoice = localStorage.getItem('englishtest-guide-voice');
+    const prevSelected = savedVoice || select.value;
     select.innerHTML = '';
 
     // Add default options first
@@ -307,6 +308,61 @@ export function initGuideReading({ screens, showScreen }) {
     }
   }
 
+  async function loadRandomFriendsDialogue() {
+    stopReading(true);
+    let btnToDisable = isFriendsContent ? els.changeSourceBtn : els.friendsBtn;
+    const oldText = btnToDisable ? btnToDisable.textContent : '';
+    if (btnToDisable) {
+      btnToDisable.disabled = true;
+      btnToDisable.textContent = '載入中…';
+    }
+    try {
+      const [response, zhMap] = await Promise.all([
+        fetch(`friends.txt?v=${APP_VERSION}`, { cache: 'no-store' }),
+        loadFriendsZhMap()
+      ]);
+      if (!response.ok) throw new Error('無法載入六人行對話檔');
+      const content = await response.text();
+      const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/).map(s => s.trim()).filter(Boolean);
+      if (scenes.length === 0) throw new Error('對話檔內容為空');
+
+      const randIndex = Math.floor(Math.random() * scenes.length);
+      const selectedScene = scenes[randIndex];
+      const sceneLabel = `六人行對話 - 隨機第 ${randIndex + 1} 組`;
+      const parsed = parseFriendsScene(selectedScene);
+      const displayItems = enrichFriendsDisplayItems(parsed.displayItems, zhMap);
+
+      const result = applyLoadedContent({
+        segments: parsed.segments,
+        fullText: parsed.fullText || selectedScene.trim(),
+        sourceLabel: sceneLabel,
+        sourceType: 'friends'
+      });
+
+      if (!result.ok) {
+        alert(result.message);
+        return;
+      }
+
+      showPlayScreen({
+        segments: result.segments,
+        displayItems,
+        sourceType: 'friends',
+        sourceLabel: result.sourceLabel,
+        fullText: result.fullText,
+        forceFriends: true,
+        defaultShowChinese: false
+      });
+    } catch (err) {
+      alert(err?.message || '讀取對話失敗，請再試一次。');
+    } finally {
+      if (btnToDisable) {
+        btnToDisable.textContent = oldText;
+        btnToDisable.disabled = false;
+      }
+    }
+  }
+
   function showLoadScreen() {
     stopReading(true);
     segments = [];
@@ -344,15 +400,26 @@ export function initGuideReading({ screens, showScreen }) {
       sourceLabel: result.sourceLabel,
       fullText: result.fullText
     }) === 'friends';
-    if (isFriendsContent && result.defaultShowChinese !== false) {
-      showChinese = true;
-    }
+    
+    showChinese = isFriendsContent ? (result.defaultShowChinese || false) : false;
+
     sourceLabel = result.sourceLabel;
     currentIndex = 0;
     isPaused = false;
 
     els.sourceText.textContent = `來源：${sourceLabel} · 共 ${segments.length} 句`;
     updateChineseToggle();
+
+    if (isFriendsContent) {
+      els.changeSourceBtn.textContent = '下一段';
+      els.changeSourceBtn.classList.remove('btn-ghost');
+      els.changeSourceBtn.classList.add('friends-mode');
+    } else {
+      els.changeSourceBtn.textContent = '更換文稿';
+      els.changeSourceBtn.classList.add('btn-ghost');
+      els.changeSourceBtn.classList.remove('friends-mode');
+    }
+
     renderSegmentList(-1);
     updateProgressText();
     updatePlayControls();
@@ -400,7 +467,7 @@ export function initGuideReading({ screens, showScreen }) {
       sourceLabel: result.sourceLabel,
       fullText: result.fullText,
       forceFriends: resolvedSourceType === 'friends',
-      defaultShowChinese: resolvedSourceType === 'friends'
+      defaultShowChinese: false
     });
     return true;
   }
@@ -498,8 +565,11 @@ export function initGuideReading({ screens, showScreen }) {
     const gender = els.voiceGenderSelect?.value || 'female';
     const rate = Number(els.speedSlider.value);
 
+    // Strip speaker name prefix (e.g. Joey: ) from TTS
+    const textToSpeak = segments[currentIndex].replace(/^[A-Za-z]{3,10}:\s*/, '');
+
     try {
-      await speakText(segments[currentIndex], gender, rate);
+      await speakText(textToSpeak, gender, rate);
     } catch (err) {
       if (isPlaying) {
         alert(err?.message || '語音播放失敗。');
@@ -599,60 +669,13 @@ export function initGuideReading({ screens, showScreen }) {
       sourceLabel: formatSavedSummary(saved) || saved.sourceLabel,
       fullText: saved.fullText,
       forceFriends: isFriends,
-      defaultShowChinese: isFriends
+      defaultShowChinese: false
     });
   });
 
   els.pickFileBtn?.addEventListener('click', () => els.fileInput?.click());
 
-  els.friendsBtn?.addEventListener('click', async () => {
-    els.friendsBtn.disabled = true;
-    const oldText = els.friendsBtn.textContent;
-    els.friendsBtn.textContent = '載入中…';
-    try {
-      const [response, zhMap] = await Promise.all([
-        fetch(`friends.txt?v=${APP_VERSION}`, { cache: 'no-store' }),
-        loadFriendsZhMap()
-      ]);
-      if (!response.ok) throw new Error('無法載入六人行對話檔');
-      const content = await response.text();
-      const scenes = content.split(/(?:^|\n)===(?:\r?\n|$)/).map(s => s.trim()).filter(Boolean);
-      if (scenes.length === 0) throw new Error('對話檔內容為空');
-
-      const randIndex = Math.floor(Math.random() * scenes.length);
-      const selectedScene = scenes[randIndex];
-      const sceneLabel = `六人行對話 - 隨機第 ${randIndex + 1} 組`;
-      const parsed = parseFriendsScene(selectedScene);
-      const displayItems = enrichFriendsDisplayItems(parsed.displayItems, zhMap);
-
-      const result = applyLoadedContent({
-        segments: parsed.segments,
-        fullText: parsed.fullText || selectedScene.trim(),
-        sourceLabel: sceneLabel,
-        sourceType: 'friends'
-      });
-
-      if (!result.ok) {
-        alert(result.message);
-        return;
-      }
-
-      showPlayScreen({
-        segments: result.segments,
-        displayItems,
-        sourceType: 'friends',
-        sourceLabel: result.sourceLabel,
-        fullText: result.fullText,
-        forceFriends: true,
-        defaultShowChinese: true
-      });
-    } catch (err) {
-      alert(err?.message || '讀取對話失敗，請再試一次。');
-    } finally {
-      els.friendsBtn.textContent = oldText;
-      els.friendsBtn.disabled = false;
-    }
-  });
+  els.friendsBtn?.addEventListener('click', loadRandomFriendsDialogue);
 
   els.fileInput?.addEventListener('change', async () => {
     const file = els.fileInput.files?.[0];
@@ -696,7 +719,13 @@ export function initGuideReading({ screens, showScreen }) {
     showScreen('setup');
   });
 
-  els.changeSourceBtn?.addEventListener('click', showLoadScreen);
+  els.changeSourceBtn?.addEventListener('click', () => {
+    if (isFriendsContent) {
+      loadRandomFriendsDialogue();
+    } else {
+      showLoadScreen();
+    }
+  });
 
   els.showChineseBtn?.addEventListener('click', () => {
     if (!isFriendsContent) return;
@@ -706,6 +735,10 @@ export function initGuideReading({ screens, showScreen }) {
   });
 
   els.speedSlider?.addEventListener('input', updateSpeedLabel);
+
+  els.voiceGenderSelect?.addEventListener('change', () => {
+    localStorage.setItem('englishtest-guide-voice', els.voiceGenderSelect.value);
+  });
 
   els.playBtn?.addEventListener('click', () => {
     if (isPaused) resumeReading();
