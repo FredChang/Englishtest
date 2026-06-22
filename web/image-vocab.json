@@ -1980,96 +1980,77 @@
     "English": [
       "ambivalence"
     ],
-    "ImageUrl": "images/c1-ambivalence.jpg",
-    "Chinese": "矛盾情感",
-    "Phonetic": "/æmˈbɪvələns/"
+    "ImageUrl": "images/c1-ambivalence.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "paradox"
     ],
-    "ImageUrl": "images/c1-paradox.jpg",
-    "Chinese": "悖論",
-    "Phonetic": "/ˈpær.ə.dɒks/"
+    "ImageUrl": "images/c1-paradox.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "irony"
     ],
-    "ImageUrl": "images/c1-irony.jpg",
-    "Chinese": "諷刺",
-    "Phonetic": "/ˈaɪrəni/"
+    "ImageUrl": "images/c1-irony.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "figurative"
     ],
-    "ImageUrl": "images/c1-figurative.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-figurative.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "abstraction"
     ],
-    "ImageUrl": "images/c1-abstraction.jpg",
-    "Chinese": "抽象概念",
-    "Phonetic": "/æbˈstrækʃən/"
+    "ImageUrl": "images/c1-abstraction.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "relativity"
     ],
-    "ImageUrl": "images/c1-relativity.jpg",
-    "Chinese": "相對性",
-    "Phonetic": "/ˌrɛləˈtɪvəti/"
+    "ImageUrl": "images/c1-relativity.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "universality"
     ],
-    "ImageUrl": "images/c1-universality.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-universality.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "specificity"
     ],
-    "ImageUrl": "images/c1-specificity.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-specificity.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "ostensibly"
     ],
-    "ImageUrl": "images/c1-ostensibly.jpg",
-    "Chinese": "表面上",
-    "Phonetic": "/ɑˈstɛnsəbli/"
+    "ImageUrl": "images/c1-ostensibly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "subtly"
     ],
-    "ImageUrl": "images/c1-subtly.jpg",
-    "Chinese": "微妙地",
-    "Phonetic": "/ˈsətəli/"
+    "ImageUrl": "images/c1-subtly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "tacitly"
     ],
-    "ImageUrl": "images/c1-tacitly.jpg",
-    "Chinese": "隱含地",
-    "Phonetic": "/ˈtæsɪtli/"
+    "ImageUrl": "images/c1-tacitly.jpg"
   },
   {
     "Level": "B1",
@@ -2412,270 +2393,217 @@
     "English": [
       "subjectivity"
     ],
-    "ImageUrl": "images/c1-subjectivity.jpg",
-    "Chinese": "主觀性",
-    "Phonetic": "/səbʤɛkˈtɪvɪti/"
+    "ImageUrl": "images/c1-subjectivity.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "objectivity"
     ],
-    "ImageUrl": "images/c1-objectivity.jpg",
-    "Chinese": "客觀性",
-    "Phonetic": "/ˌɑbʤɛkˈtɪvɪti/"
+    "ImageUrl": "images/c1-objectivity.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "absoluteness"
     ],
-    "ImageUrl": "images/c1-absoluteness.jpg",
-    "Chinese": "絕對性",
-    "Phonetic": "/ˈæbsəˌlutnəs/"
+    "ImageUrl": "images/c1-absoluteness.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "essentially"
     ],
-    "ImageUrl": "images/c1-essentially.jpg",
-    "Chinese": "本質上的",
-    "Phonetic": "/ɛˈsɛnʃəli/"
+    "ImageUrl": "images/c1-essentially.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "in depth"
     ],
-    "ImageUrl": "images/c1-in_depth.jpg",
-    "Chinese": "深層次",
-    "Phonetic": "/ɪn/"
+    "ImageUrl": "images/c1-in_depth.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "superficially"
     ],
-    "ImageUrl": "images/c1-superficially.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-superficially.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "manifestly"
     ],
-    "ImageUrl": "images/c1-manifestly.jpg",
-    "Chinese": "明顯地",
-    "Phonetic": "/ˈmænəfɛstli/"
+    "ImageUrl": "images/c1-manifestly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "explicitly"
     ],
-    "ImageUrl": "images/c1-explicitly.jpg",
-    "Chinese": "明確地",
-    "Phonetic": "/ɪkˈsplɪsətli/"
+    "ImageUrl": "images/c1-explicitly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "ambiguously"
     ],
-    "ImageUrl": "images/c1-ambiguously.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-ambiguously.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "lucidly"
     ],
-    "ImageUrl": "images/c1-lucidly.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-lucidly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "systematically"
     ],
-    "ImageUrl": "images/c1-systematically.jpg",
-    "Chinese": "系統地",
-    "Phonetic": "/ˌsɪstəˈmætɪkli/"
+    "ImageUrl": "images/c1-systematically.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "comprehensively"
     ],
-    "ImageUrl": "images/c1-comprehensively.jpg",
-    "Chinese": "全面地",
-    "Phonetic": "/ˌkɑmprɪˈhɛnsɪvli/"
+    "ImageUrl": "images/c1-comprehensively.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "partially"
     ],
-    "ImageUrl": "images/c1-partially.jpg",
-    "Chinese": "部分地",
-    "Phonetic": "/ˈpɑːʃəli/"
+    "ImageUrl": "images/c1-partially.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "evenly"
     ],
-    "ImageUrl": "images/c1-evenly.jpg",
-    "Chinese": "均衡地",
-    "Phonetic": "/ˈivənli/"
+    "ImageUrl": "images/c1-evenly.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "extremely"
     ],
-    "ImageUrl": "images/c1-extremely.jpg",
-    "Chinese": "極為",
-    "Phonetic": "/ɪkˈstrimli/"
+    "ImageUrl": "images/c1-extremely.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "moderately"
     ],
-    "ImageUrl": "images/c1-moderately.jpg",
-    "Chinese": "溫和地",
-    "Phonetic": "/ˈmɑdərətli/"
+    "ImageUrl": "images/c1-moderately.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "radically"
     ],
-    "ImageUrl": "images/c1-radically.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-radically.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "conservatively"
     ],
-    "ImageUrl": "images/c1-conservatively.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-conservatively.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "progressively"
     ],
-    "ImageUrl": "images/c1-progressively.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-progressively.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "traditionally"
     ],
-    "ImageUrl": "images/c1-traditionally.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c1-traditionally.jpg"
   },
   {
     "Level": "C1",
     "English": [
       "contemporarily"
     ],
-    "ImageUrl": "images/c1-contemporarily.jpg",
-    "Chinese": "現代地",
-    "Phonetic": "/contemporarily/"
+    "ImageUrl": "images/c1-contemporarily.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "ubiquitously"
     ],
-    "ImageUrl": "images/c2-ubiquitously.jpg",
-    "Chinese": "無所不在地",
-    "Phonetic": "/ubiquitously/"
+    "ImageUrl": "images/c2-ubiquitously.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "uniquely"
     ],
-    "ImageUrl": "images/c2-uniquely.jpg",
-    "Chinese": "獨特地",
-    "Phonetic": "/juˈnikli/"
+    "ImageUrl": "images/c2-uniquely.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "ordinarily"
     ],
-    "ImageUrl": "images/c2-ordinarily.jpg",
-    "Chinese": "平凡地",
-    "Phonetic": "/ˌɔrdəˈnɛrəli/"
+    "ImageUrl": "images/c2-ordinarily.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "remarkably"
     ],
-    "ImageUrl": "images/c2-remarkably.jpg",
-    "Chinese": "非常地",
-    "Phonetic": "/rɪˈmɑːkəbli/"
+    "ImageUrl": "images/c2-remarkably.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "excellently"
     ],
-    "ImageUrl": "images/c2-excellently.jpg",
-    "Chinese": "卓越地",
-    "Phonetic": "/ˈɛksələntli/"
+    "ImageUrl": "images/c2-excellently.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "mediocrely"
     ],
-    "ImageUrl": "images/c2-mediocrely.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c2-mediocrely.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "eminently"
     ],
-    "ImageUrl": "images/c2-eminently.jpg",
-    "Chinese": "傑出地",
-    "Phonetic": "/ˈɛmənəntli/"
+    "ImageUrl": "images/c2-eminently.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "abysmally"
     ],
-    "ImageUrl": "images/c2-abysmally.jpg",
-    "Chinese": "拙劣地",
-    "Phonetic": "/əˈbɪzməli/"
+    "ImageUrl": "images/c2-abysmally.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "exquisitely"
     ],
-    "ImageUrl": "images/c2-exquisitely.jpg",
-    "Chinese": "精湛地",
-    "Phonetic": "/ˌɛkskˈwɪzɪtli/"
+    "ImageUrl": "images/c2-exquisitely.jpg"
   },
   {
     "Level": "C2",
     "English": [
       "vulgarly"
     ],
-    "ImageUrl": "images/c2-vulgarly.jpg",
-    "Chinese": ""
+    "ImageUrl": "images/c2-vulgarly.jpg"
   },
   {
     "Level": "A1",
@@ -3071,7 +2999,7 @@
       "book"
     ],
     "ImageUrl": "images/a1-book.jpg",
-    "Chinese": "書",
+    "Chinese": "訂票",
     "Phonetic": "/bʊk/"
   },
   {
@@ -4315,5 +4243,188 @@
     "ImageUrl": "images/a1-hammer.jpg",
     "Chinese": "錘子",
     "Phonetic": "/ˈhæm.ər/"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "elegantly"
+    ],
+    "ImageUrl": "images/c2-elegantly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "sloppily"
+    ],
+    "ImageUrl": "images/c2-sloppily.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "circumspectly"
+    ],
+    "ImageUrl": "images/c2-circumspectly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "recklessly"
+    ],
+    "ImageUrl": "images/c2-recklessly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "cunningly"
+    ],
+    "ImageUrl": "images/c2-cunningly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "naively"
+    ],
+    "ImageUrl": "images/c2-naively.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "sophisticatedly"
+    ],
+    "ImageUrl": "images/c2-sophisticatedly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "ingenuously"
+    ],
+    "ImageUrl": "images/c2-ingenuously.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "hypocritically"
+    ],
+    "ImageUrl": "images/c2-hypocritically.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "sincerely"
+    ],
+    "ImageUrl": "images/c2-sincerely.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "affectedly"
+    ],
+    "ImageUrl": "images/c2-affectedly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "unassumingly"
+    ],
+    "ImageUrl": "images/c2-unassumingly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "arrogantly"
+    ],
+    "ImageUrl": "images/c2-arrogantly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "obstinately"
+    ],
+    "ImageUrl": "images/c2-obstinately.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "affably"
+    ],
+    "ImageUrl": "images/c2-affably.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "reclusively"
+    ],
+    "ImageUrl": "images/c2-reclusively.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "extrovertedly"
+    ],
+    "ImageUrl": "images/c2-extrovertedly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "introvertedly"
+    ],
+    "ImageUrl": "images/c2-introvertedly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "loquaciously"
+    ],
+    "ImageUrl": "images/c2-loquaciously.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "taciturnly"
+    ],
+    "ImageUrl": "images/c2-taciturnly.jpg"
+  },
+  {
+    "Level": "C2",
+    "English": [
+      "verbosely"
+    ],
+    "ImageUrl": "images/c2-verbosely.jpg"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "house"
+    ],
+    "ImageUrl": "images/a1-house.jpg",
+    "Chinese": "房子",
+    "Phonetic": "/haʊs/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "milk"
+    ],
+    "ImageUrl": "images/a1-milk.jpg",
+    "Chinese": "牛奶",
+    "Phonetic": "/mɪlk/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "tree"
+    ],
+    "ImageUrl": "images/a1-tree.jpg",
+    "Chinese": "樹",
+    "Phonetic": "/tri/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "water"
+    ],
+    "ImageUrl": "images/a1-water.jpg",
+    "Chinese": "水",
+    "Phonetic": "/ˈwɔtər/"
   }
 ]

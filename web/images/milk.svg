@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="milk">
-  <rect width="120" height="120" fill="#f8fafc" rx="12"/>
-  <path d="M40 36h40l-6 56H46L40 36z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
-  <path d="M44 36h32v8H44z" fill="#cbd5e1"/>
-  <rect x="48" y="52" width="24" height="32" rx="4" fill="#f8fafc"/>
-  <path d="M52 56h16v24H52z" fill="#fff"/>
-</svg>
