@@ -1,164 +1,1370 @@
 [
-  {"en": "Monica: There's nothing to tell! He's just some guy I work with!", "zh": "莫妮卡：沒什麼好說的！他只是跟我一起工作的某個男人而已！"},
-  {"en": "Joey: C'mon, you're going out with the guy! There's gotta be something wrong with him!", "zh": "喬伊：拜託，妳都要跟那男人約會了！他一定有什麼問題！"},
-  {"en": "Chandler: All right Joey, be nice. So does he have a hump? A hump and a hairpiece?", "zh": "錢德勒：好啦喬伊，客氣點。那他駝背嗎？駝背又戴假髮？"},
-  {"en": "Phoebe: Wait, does he eat chalk? Just, 'cause, I don't want her to go through what I went through with Carl.", "zh": "菲比：等等，他會吃粉筆嗎？因為，我不想讓她經歷我跟卡爾那時候一樣的事。"},
-  {"en": "Monica: Okay, everybody relax. This is not even a date. It's just two people going out to dinner and not having sex.", "zh": "莫妮卡：好了，大家別緊張。這根本不算約會。只是兩個人一起出去吃晚餐，又不會上床。"},
-  {"en": "Chandler: Sounds like a date to me.", "zh": "錢德勒：聽起來就像約會啊。"},
-  {"en": "Monica: Rachel?!", "zh": "莫妮卡：瑞秋？！"},
-  {"en": "Rachel: Oh God Monica hi! Thank God! I went to your building and you weren't there, then this guy with a big hammer said you might be here and you are!", "zh": "瑞秋：天啊莫妮卡妳好！謝天謝地！我去了妳那棟大樓，妳不在，然後有個拿大錘子的傢伙說妳可能在這裡，果然在！"},
-  {"en": "Monica: Can I get you some coffee?", "zh": "莫妮卡：要來點咖啡嗎？"},
-  {"en": "Rachel: Decaf. Okay, everybody, this is Rachel, another Lincoln High survivor. This is everybody. Chandler, Phoebe, Joey, and you remember my brother Ross?", "zh": "瑞秋：無咖啡因的。好了各位，這是瑞秋，另一位林肯高中生還者。這是大家一起。錢德勒、菲比、喬伊，還有你還記得我哥羅斯吧？"},
-  {"en": "Ross: Hi.", "zh": "羅斯：嗨。"},
-  {"en": "Rachel: Oh, hi.", "zh": "瑞秋：喔，嗨。"},
-  {"en": "Monica: So, you wanna tell us now, or are we waiting for four wet bridesmaids?", "zh": "莫妮卡：所以，你現在要跟我們說了嗎，還是得等四位全身濕透的伴娘？"},
-  {"en": "Rachel: Oh, God... well, it started about a half-hour before the wedding. I was in the room, and I was looking at this gravy boat. This really gorgeous Limoges gravy boat. And then I realized that I was more turned on by this gravy boat than by Barry! And then I got really freaked out, and that's when it hit me: how much Barry looks like Mr. Potato Head.", "zh": "瑞秋：喔，天啊……其實是婚禮大概半小時前開始的。我在房間裡，看著這個醬汁壺。一個超漂亮的利摩日瓷醬汁壺。然後我發現，我對這個醬汁壺的感覺比對巴里還強烈！然後我真的嚇壞了，那時我才明白：巴里長得有多像馬鈴薯先生。"},
-  {"en": "Joey: You guys, I need some help. I have an audition for a play tomorrow, and the character is supposed to be really angry, but I just can't get it right.", "zh": "喬伊：各位，我需要幫忙。我明天有個戲劇試鏡，角色應該要非常生氣，但我就是演不對。"},
-  {"en": "Monica: Well, what is he angry about?", "zh": "莫妮卡：那他為什麼生氣？"},
-  {"en": "Joey: He found out his wife is having an affair with his best friend.", "zh": "喬伊：他發現他老婆跟他最好的朋友搞外遇。"},
-  {"en": "Chandler: Wow, that's heavy. Have you tried thinking about something that makes you really mad?", "zh": "錢德勒：哇，這太沉重了。你有試過想一些讓你真的很生氣的事嗎？"},
-  {"en": "Joey: Yeah, I tried thinking about someone eating the last slice of pizza. But it just made me sad, not angry.", "zh": "喬伊：有啊，我試過想有人吃掉最後一片披薩。但那只讓我難過，沒有生氣。"},
-  {"en": "Phoebe: Oh, Joey. Try thinking about a world where there is no pizza at all!", "zh": "菲比：喔，喬伊。試著想像一個完全沒有披薩的世界！"},
-  {"en": "Joey: Whoa! Phoebe! That's too dark! I want to get the part, not have a nervous breakdown!", "zh": "喬伊：哇！菲比！那太黑暗了！我是想拿到角色，不是要精神崩潰！"},
-  {"en": "Ross: Okay, just a little more. Chandler, turn it. Rachel, lift it.", "zh": "羅斯：好，再一點就好。錢德勒，轉一下。瑞秋，抬一下。"},
-  {"en": "Chandler: Ross, there is no room to turn!", "zh": "錢德勒：羅斯，根本沒空間轉！"},
-  {"en": "Ross: Yes there is! You just have to pivot!", "zh": "羅斯：有啦！你只要 pivot 就好！"},
-  {"en": "Chandler: What?", "zh": "錢德勒：什麼？"},
-  {"en": "Ross: Pivot! Pivot! Pivot!", "zh": "羅斯：Pivot！Pivot！Pivot！"},
-  {"en": "Chandler: Shut up! Shut up! Shut up!", "zh": "錢德勒：閉嘴！閉嘴！閉嘴！"},
-  {"en": "Ross: Okay, I don't think it's gonna go any further.", "zh": "羅斯：好了，我覺得搬不進去了。"},
-  {"en": "Chandler: You think? What are you gonna do now?", "zh": "錢德勒：你還用說？你現在要怎麼辦？"},
-  {"en": "Ross: I'm gonna go to the store and tell them I want a couch that is not broken.", "zh": "羅斯：我要回去店家，跟他們說我要一張沒壞的沙發。"},
-  {"en": "Chandler: You mean a couch that is not cut in half?", "zh": "錢德勒：你是說沒被切成一半的那種？"},
-  {"en": "Ross: I will take what they give me!", "zh": "羅斯：他們給什麼我就拿什麼！"},
-  {"en": "Phoebe: Okay Joey, let's try again. Repeat after me: Je.", "zh": "菲比：好喬伊，我們再試一次。跟著我念：Je。"},
-  {"en": "Joey: Je.", "zh": "喬伊：Je。"},
-  {"en": "Phoebe: M'appelle.", "zh": "菲比：M'appelle。"},
-  {"en": "Joey: M'appelle.", "zh": "喬伊：M'appelle。"},
-  {"en": "Phoebe: Claude.", "zh": "菲比：Claude。"},
-  {"en": "Joey: Claude.", "zh": "喬伊：Claude。"},
-  {"en": "Phoebe: Je m'appelle Claude.", "zh": "菲比：Je m'appelle Claude。"},
-  {"en": "Joey: Jet-blue bla-blo-bla!", "zh": "喬伊：Jet-blue bla-blo-bla！"},
-  {"en": "Phoebe: No, Joey! Not even close!", "zh": "菲比：不行，喬伊！差十萬八千里！"},
-  {"en": "Joey: What? I said exactly what you said!", "zh": "喬伊：什麼？我念的跟你一模一樣啊！"},
-  {"en": "Phoebe: No you didn't! Let's try it faster. Je m'appelle.", "zh": "菲比：才沒有！我們念快一點。Je m'appelle。"},
-  {"en": "Joey: Me-poo-poo!", "zh": "喬伊：Me-poo-poo！"},
-  {"en": "Phoebe: Oh, we are never going to get this audition.", "zh": "菲比：喔，這試鏡我們永遠別想了。"},
-  {"en": "Phoebe: Hey guys, do you want to hear my new song?", "zh": "菲比：嘿各位，你們想聽我的新歌嗎？"},
-  {"en": "Monica: Sure, Phoebe. What's it about?", "zh": "莫妮卡：好啊，菲比。是關於什麼的？"},
-  {"en": "Phoebe: It's about a cat. But not just any cat. A very smelly cat.", "zh": "菲比：是關於一隻貓。但不是隨便一隻貓。是一隻非常臭的貓。"},
-  {"en": "Phoebe: Smelly Cat, Smelly Cat, what are they feeding you? Smelly Cat, Smelly Cat, it's not your fault!", "zh": "菲比：Smelly Cat，Smelly Cat，他們餵你吃什麼？Smelly Cat，Smelly Cat，這不是你的錯！"},
-  {"en": "Joey: That's actually really catchy, Pheebs.", "zh": "喬伊：其實還挺好記的，菲比。"},
-  {"en": "Phoebe: Thank you, Joey. It's about how society rejects those who are different, even if they just smell bad.", "zh": "菲比：謝謝你，喬伊。這是在講社會如何排斥與眾不同的人，就算他們只是聞起來很臭。"},
-  {"en": "Chandler: I think it's just about a cat that needs a bath.", "zh": "錢德勒：我覺得只是關於一隻需要洗澡的貓。"},
-  {"en": "Phoebe: You don't understand art, Chandler.", "zh": "菲比：你不懂藝術，錢德勒。"},
-  {"en": "Joey: What is this?", "zh": "喬伊：這是什麼？"},
-  {"en": "Rachel: It's my salad. I was just offering you some.", "zh": "瑞秋：這是我的沙拉。我只是想分你一些。"},
-  {"en": "Joey: No! No, no, no! Joey doesn't share food!", "zh": "喬伊：不行！不行不行不行！喬伊不分享食物！"},
-  {"en": "Rachel: Joey, it's just a grape tomato.", "zh": "瑞秋：喬伊，只是一顆小番茄而已。"},
-  {"en": "Joey: I don't care if it's a grape tomato or a whole turkey! Once it's on my plate, or if it's mine, it's mine!", "zh": "喬伊：我才不管是一顆小番茄還是一整隻火雞！只要在我盤子上，或是我的，就是我的！"},
-  {"en": "Phoebe: He's serious, Rachel. Once he ordered a seafood platter and he almost bit my hand off when I reached for a clam.", "zh": "菲比：他是認真的，瑞秋。有一次他點海鮮拼盤，我伸手去拿蛤蜊，他差點咬掉我的手。"},
-  {"en": "Joey: You wanted my clam! You don't take a man's clam!", "zh": "喬伊：你想搶我的蛤蜊！不准動男人的蛤蜊！"},
-  {"en": "Ross: You guys, you need to understand the concept of Unagi.", "zh": "羅斯：各位，你們需要了解 Unagi 的概念。"},
-  {"en": "Rachel: Isn't that a kind of sushi?", "zh": "瑞秋：那不是一種壽司嗎？"},
-  {"en": "Ross: Yes, it is. But it is also a state of total awareness.", "zh": "羅斯：是的。但它也是全知全覺的狀態。"},
-  {"en": "Phoebe: Total awareness? Like when you know there's only one cookie left in the jar?", "zh": "菲比：全知全覺？就像你知道罐子裡只剩一塊餅乾那樣？"},
-  {"en": "Ross: No! It's a martial arts term. Only by achieving true Unagi can you prepare yourself for any danger that may come.", "zh": "羅斯：不是！這是武術用語。只有達到真正的 Unagi，才能為任何可能的危險做好準備。"},
-  {"en": "Rachel: Ross, we took self-defense classes. We know how to defend ourselves.", "zh": "瑞秋：羅斯，我們上過防身課。我們知道怎麼自保。"},
-  {"en": "Ross: Oh, really? What if I were to attack you right now?", "zh": "羅斯：喔，真的嗎？要是我現在攻擊你們呢？"},
-  {"en": "Phoebe: Then we would kick you in the shins until you cry.", "zh": "菲比：那我們就踢你小腿踢到你哭為止。"},
-  {"en": "Ross: That is not Unagi!", "zh": "羅斯：那才不是 Unagi！"},
-  {"en": "Ross: Welcome to the ultimate trivia game. The stakes are high. If the guys win, they get the girls' apartment. If the girls win, the guys have to get rid of the rooster.", "zh": "羅斯：歡迎來到終極問答遊戲。賭注很高。男生贏了，就能拿到女生的公寓。女生贏了，男生就得把公雞弄走。"},
-  {"en": "Monica: We are going to destroy you.", "zh": "莫妮卡：我們要把你們打爆。"},
-  {"en": "Ross: Question number one. What is Monica's biggest pet peeve?", "zh": "羅斯：第一題。莫妮卡最討厭什麼？"},
-  {"en": "Rachel: Easy! Animals dressed as humans!", "zh": "瑞秋：簡單！動物打扮成人！"},
-  {"en": "Ross: Correct. Question number two. What is Chandler Bing's actual job?", "zh": "羅斯：答對了。第二題。錢德勒·賓的實際工作是什麼？"},
-  {"en": "Rachel: Oh, it has something to do with numbers... and he carries a briefcase.", "zh": "瑞秋：喔，跟數字有關……而且他還提公事包。"},
-  {"en": "Monica: He's a transponster!", "zh": "莫妮卡：他是 transponster！"},
-  {"en": "Rachel: That's not even a word!", "zh": "瑞秋：那根本不算字！"},
-  {"en": "Ross: Ten seconds...", "zh": "羅斯：十秒……"},
-  {"en": "Monica: Oh my God, we are going to lose our apartment!", "zh": "莫妮卡：天啊，我們要失去公寓了！"},
-  {"en": "Ross: Oh my God, it's so hot in here. My pants are sticking to my legs.", "zh": "羅斯：天啊，這裡好熱。我的褲子黏在腿上了。"},
-  {"en": "Joey: Why did you wear leather pants on a date anyway?", "zh": "喬伊：你約會幹嘛穿皮褲？"},
-  {"en": "Ross: Because I wanted to look cool! But now I'm in the bathroom, and I can't get them back up!", "zh": "羅斯：因為我想看起來很酷！但現在我在浴室，褲子拉不上去！"},
-  {"en": "Joey: Did you try using lotion? Or baby powder?", "zh": "喬伊：你有試過用乳液嗎？或嬰兒爽身粉？"},
-  {"en": "Ross: I tried both! Now I have a paste! A paste has formed on my legs, Joey!", "zh": "羅斯：兩個都試了！現在我腿上有一坨糊狀物！喬伊，我腿上形成一坨糊狀物了！"},
-  {"en": "Joey: Okay, don't panic. Just try to walk out slowly.", "zh": "喬伊：好，別慌。慢慢試著走出去。"},
-  {"en": "Ross: Joey, I can't walk! I look like a wet seal!", "zh": "羅斯：喬伊，我走不了！我看起來像隻濕海豹！"},
-  {"en": "Monica: Chandler, we have to be careful. No one can find out about us.", "zh": "莫妮卡：錢德勒，我們得小心。不能讓任何人發現我們的事。"},
-  {"en": "Chandler: I know. But it's hard when I just want to kiss you all the time.", "zh": "錢德勒：我知道。但當我隨時都想親你的時候，真的很難。"},
-  {"en": "Monica: I know, sweetie. But if Joey finds out, he'll tell everyone. And Ross will go crazy because you're his best friend and I'm his sister.", "zh": "莫妮卡：我知道，親愛的。但如果喬伊發現，他會告訴所有人。而且羅斯會發瘋，因為你是他最好的朋友，而我也是他妹妹。"},
-  {"en": "Chandler: Right. So we just act normal. No holding hands, no whispering, and absolutely no looking at each other like we like each other.", "zh": "錢德勒：對。所以我們就裝正常。不牽手、不竊竊私語，絕對不可以互相對看像喜歡對方那樣。"},
-  {"en": "Monica: Deal. Now go stand over there and look annoyed.", "zh": "莫妮卡：成交。現在去那邊站著，一副很惱火的樣子。"},
-  {"en": "Chandler: That is my default setting anyway.", "zh": "錢德勒：反正那就是我的預設模式。"},
-  {"en": "Rachel: I can't believe you did that!", "zh": "瑞秋：我不敢相信你做了那件事！"},
-  {"en": "Ross: Rachel, we were on a break!", "zh": "羅斯：瑞秋，我們那時在冷靜期！"},
-  {"en": "Rachel: That does not give you the right to sleep with someone else!", "zh": "瑞秋：那不表示你可以跟別人上床！"},
-  {"en": "Ross: We were broken up! You said we should take a break!", "zh": "羅斯：我們已經分手了！是妳說要冷靜一下的！"},
-  {"en": "Rachel: A break from us, Ross! Not a break from reality!", "zh": "瑞秋：是跟我們之間的冷靜期，羅斯！不是跟現實的冷靜期！"},
-  {"en": "Ross: I thought you were with Mark! I was hurt, I was drunk, and I made a mistake!", "zh": "羅斯：我以為你跟 Mark 在一起！我受傷了、我醉了，我犯了錯！"},
-  {"en": "Rachel: Yes, you did! And now you have to live with it!", "zh": "瑞秋：沒錯，你犯了！現在你得承受後果！"},
-  {"en": "Monica: Joey, what are you doing?", "zh": "莫妮卡：喬伊，你在幹嘛？"},
-  {"en": "Joey: I got my head stuck in the turkey!", "zh": "喬伊：我的頭卡在火雞裡了！"},
-  {"en": "Monica: You what?! How is that even possible?", "zh": "莫妮卡：什麼？！怎麼可能？"},
-  {"en": "Joey: I was trying to scare Chandler! But now it's stuck and I can't see anything!", "zh": "喬伊：我原本想嚇錢德勒！但現在卡住了，我什麼都看不見！"},
-  {"en": "Monica: Joey! This is a twenty-pound turkey!", "zh": "莫妮卡：喬伊！這是二十磅重的火雞！"},
-  {"en": "Chandler: Oh my God, Joey! You look like a giant mutant bird!", "zh": "錢德勒：天啊，喬伊！你看起來像隻巨大的變種鳥！"},
-  {"en": "Joey: Help me! It smells like raw onion in here!", "zh": "喬伊：救我！裡面聞起來像生洋蔥！"},
-  {"en": "Monica: Hold still, I'm going to put some butter on your neck!", "zh": "莫妮卡：別動，我要在你脖子上抹點奶油！"},
-  {"en": "Ross: Monica, look at my teeth. Are they too white?", "zh": "羅斯：莫妮卡，看看我的牙齒。會不會太白了？"},
-  {"en": "Monica: Ross, they look like they are glowing in the dark!", "zh": "莫妮卡：羅斯，它們看起來像在暗處會發光！"},
-  {"en": "Ross: I just left the whitener on a little too long!", "zh": "羅斯：我只是美白劑放久了一點！"},
-  {"en": "Monica: You left it on for two hours!", "zh": "莫妮卡：你放了兩個小時！"},
-  {"en": "Ross: What am I going to do? I have a date with Hillary tonight!", "zh": "羅斯：我該怎麼辦？我今晚要跟 Hilary 約會！"},
-  {"en": "Monica: Well, don't smile. And if she tells a joke, just look very serious.", "zh": "莫妮卡：那就別笑。要是她講笑話，就裝得很嚴肅。"},
-  {"en": "Ross: Or I could only hang out in brightly lit rooms?", "zh": "羅斯：或者我只能待在光線很亮的房間？"},
-  {"en": "Monica: Ross, your teeth are brighter than the sun!", "zh": "莫妮卡：羅斯，你的牙齒比太陽還亮！"},
-  {"en": "Ross: Someone ate my sandwich.", "zh": "羅斯：有人吃了我的三明治。"},
-  {"en": "Joey: So what? It's just a sandwich.", "zh": "喬伊：那又怎樣？只是個三明治。"},
-  {"en": "Ross: It was not just a sandwich! It was the only good thing happening in my life! It had a gravy-soaked slice of bread in the middle! I call it the Moist Maker!", "zh": "羅斯：不只是三明治！那是我人生中唯一美好的事！中間有一片浸滿肉汁的麵包！我把它叫做 Moist Maker！"},
-  {"en": "Chandler: Okay, Ross. Calm down. Who ate it?", "zh": "錢德勒：好了，羅斯。冷靜。誰吃的？"},
-  {"en": "Ross: My boss! He ate half of it, and then he threw the rest in the trash!", "zh": "羅斯：我的老闆！他吃了一半，然後把剩下的扔進垃圾桶！"},
-  {"en": "Joey: He threw it in the trash?! That's a crime against food!", "zh": "喬伊：他扔進垃圾桶？！這是對食物的犯罪！"},
-  {"en": "Ross: Exactly! I'm going to write a very angry letter!", "zh": "羅斯：沒錯！我要寫一封非常生氣的信！"},
-  {"en": "Rachel: I made the dessert for Thanksgiving! It's a traditional English trifle!", "zh": "瑞秋：我做了感恩節甜點！是傳統的英式雜錦甜點 trifle！"},
-  {"en": "Ross: Rachel, what is in this?", "zh": "羅斯：瑞秋，這裡面是什麼？"},
-  {"en": "Rachel: It has ladyfingers, jam, custard, raspberries, more ladyfingers, beef sautéed with peas and onions, and then a little more custard!", "zh": "瑞秋：有手指餅乾、果醬、卡士達、覆盆子、更多手指餅乾、跟豌豆洋蔥一起炒的牛肉，然後再一點卡士達！"},
-  {"en": "Joey: Beef? Sautéed with peas and onions?", "zh": "喬伊：牛肉？跟豌豆洋蔥一起炒？"},
-  {"en": "Rachel: Yes! I followed the recipe!", "zh": "瑞秋：對！我是照食譜做的！"},
-  {"en": "Ross: Rachel, the pages of the cookbook were stuck together! You made half a trifle and half a shepherd's pie!", "zh": "羅斯：瑞秋，食譜的頁面黏在一起了！你做了半份 trifle 半份牧羊人派！"},
-  {"en": "Joey: Well, I think it sounds delicious. I like custard, I like jam, and I like beef! What's not to like?", "zh": "喬伊：我覺得聽起來很好吃啊。我喜歡卡士達、喜歡果醬，也喜歡牛肉！有什麼不好？"},
-  {"en": "Chandler: It tastes like feet!", "zh": "錢德勒：吃起來像腳！"},
-  {"en": "Janice: Oh. My. God!", "zh": "珍妮絲：喔。我的。天啊！"},
-  {"en": "Chandler: Janice?! What are you doing here?", "zh": "錢德勒：珍妮絲？！你在這裡做什麼？"},
-  {"en": "Janice: I was just walking down the street, and I felt a little pull in my heart, and I knew my Chandler was nearby!", "zh": "珍妮絲：我剛走在街上，心裡感到一點牽引，我就知道我的錢德勒就在附近！"},
-  {"en": "Chandler: Janice, we broke up. Three times.", "zh": "錢德勒：珍妮絲，我們分手了。三次。"},
-  {"en": "Janice: But Chandler, we are like magnets! You can try to run, but we will always stick back together!", "zh": "珍妮絲：但是錢德勒，我們就像磁鐵！你可以試著跑，但我們總會再黏在一起！"},
-  {"en": "Chandler: Somebody please help me.", "zh": "錢德勒：誰來救救我。"},
-  {"en": "Janice: Don't be silly, channy-bear! Give me a big hug!", "zh": "珍妮絲：別傻，channy-bear！給我一個大大的擁抱！"},
-  {"en": "Phoebe: Oh, look, there's Monica and Chandler through the window.", "zh": "菲比：喔，看，從窗戶可以看到莫妮卡和錢德勒。"},
-  {"en": "Phoebe: Oh! Oh! Oh my God!", "zh": "菲比：喔！喔！天啊！"},
-  {"en": "Rachel: What? What is it?", "zh": "瑞秋：什麼？怎麼了？"},
-  {"en": "Phoebe: Chandler and Monica! Chandler and Monica! They're doing it!", "zh": "菲比：錢德勒和莫妮卡！錢德勒和莫妮卡！他們在做那件事！"},
-  {"en": "Rachel: I know! I know!", "zh": "瑞秋：我知道！我知道！"},
-  {"en": "Phoebe: You know?!", "zh": "菲比：你知道？！"},
-  {"en": "Rachel: Yes, Joey and I found out! But we can't let them know we know!", "zh": "瑞秋：對，喬伊跟我都發現了！但不能讓他們知道我們知道！"},
-  {"en": "Phoebe: Oh my God! My eyes! My eyes!", "zh": "菲比：天啊！我的眼睛！我的眼睛！"},
-  {"en": "Joey: Chandler, where is Ben?", "zh": "喬伊：錢德勒，Ben 在哪？"},
-  {"en": "Chandler: He's right here in the stroller.", "zh": "錢德勒：他就在嬰兒車裡啊。"},
-  {"en": "Joey: No, he's not. That is a diaper bag.", "zh": "喬伊：才不是。那是尿布包。"},
-  {"en": "Chandler: What?! Oh my God! Where is the baby?", "zh": "錢德勒：什麼？！天啊！寶寶在哪？"},
-  {"en": "Joey: We left him on the bus!", "zh": "喬伊：我們把他留在公車上了！"},
-  {"en": "Chandler: We left Ross's baby on a city bus?!", "zh": "錢德勒：我們把羅斯的寶寶留在市區公車上了？！"},
-  {"en": "Joey: Okay, don't panic. We just need to catch the next bus!", "zh": "喬伊：好，別慌。我們只要搭下一班公車趕上去！"},
-  {"en": "Chandler: Joey, they don't travel in packs!", "zh": "錢德勒：喬伊，公車又不是成群行動的！"},
-  {"en": "Rachel: Well, I guess this is it.", "zh": "瑞秋：好吧，我想就是這樣了。"},
-  {"en": "Monica: I can't believe we are all leaving this apartment.", "zh": "莫妮卡：真不敢相信我們都要離開這間公寓了。"},
-  {"en": "Joey: It feels so empty without all the furniture.", "zh": "喬伊：少了所有家具，感覺好空。"},
-  {"en": "Chandler: Yeah. It looks smaller.", "zh": "錢德勒：是啊。看起來還變小了。"},
-  {"en": "Phoebe: Do you guys want to go get some coffee?", "zh": "菲比：你們要去喝杯咖啡嗎？"},
-  {"en": "Rachel: Sure. Where should we go?", "zh": "瑞秋：好啊。要去哪？"},
-  {"en": "Chandler: Under the circumstances, I think we should go to Central Perk.", "zh": "錢德勒：在這種情況下，我覺得應該去 Central Perk。"},
-  {"en": "Monica: We have to.", "zh": "莫妮卡：我們得去。"},
-  {"en": "Joey: Let's go.", "zh": "喬伊：走吧。"}
+  {
+    "en": "Monica: There's nothing to tell! He's just some guy I work with!",
+    "zh": "莫妮卡：沒什麼好說的！他只是跟我一起工作的某個男人而已！"
+  },
+  {
+    "en": "Joey: C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+    "zh": "喬伊：拜託，妳都要跟那男人約會了！他一定有什麼問題！"
+  },
+  {
+    "en": "Chandler: All right Joey, be nice. So does he have a hump? A hump and a hairpiece?",
+    "zh": "錢德勒：好啦喬伊，客氣點。那他駝背嗎？駝背又戴假髮？"
+  },
+  {
+    "en": "Phoebe: Wait, does he eat chalk? Just, 'cause, I don't want her to go through what I went through with Carl.",
+    "zh": "菲比：等等，他會吃粉筆嗎？因為，我不想讓她經歷我跟卡爾那時候一樣的事。"
+  },
+  {
+    "en": "Monica: Okay, everybody relax. This is not even a date. It's just two people going out to dinner and not having sex.",
+    "zh": "莫妮卡：好了，大家別緊張。這根本不算約會。只是兩個人一起出去吃晚餐，又不會上床。"
+  },
+  {
+    "en": "Chandler: Sounds like a date to me.",
+    "zh": "錢德勒：聽起來就像約會啊。"
+  },
+  {
+    "en": "Monica: Rachel?!",
+    "zh": "莫妮卡：瑞秋？！"
+  },
+  {
+    "en": "Rachel: Oh God Monica hi! Thank God! I went to your building and you weren't there, then this guy with a big hammer said you might be here and you are!",
+    "zh": "瑞秋：天啊莫妮卡妳好！謝天謝地！我去了妳那棟大樓，妳不在，然後有個拿大錘子的傢伙說妳可能在這裡，果然在！"
+  },
+  {
+    "en": "Monica: Can I get you some coffee?",
+    "zh": "莫妮卡：要來點咖啡嗎？"
+  },
+  {
+    "en": "Rachel: Decaf. Okay, everybody, this is Rachel, another Lincoln High survivor. This is everybody. Chandler, Phoebe, Joey, and you remember my brother Ross?",
+    "zh": "瑞秋：無咖啡因的。好了各位，這是瑞秋，另一位林肯高中生還者。這是大家一起。錢德勒、菲比、喬伊，還有你還記得我哥羅斯吧？"
+  },
+  {
+    "en": "Ross: Hi.",
+    "zh": "羅斯：嗨。"
+  },
+  {
+    "en": "Rachel: Oh, hi.",
+    "zh": "瑞秋：喔，嗨。"
+  },
+  {
+    "en": "Monica: So, you wanna tell us now, or are we waiting for four wet bridesmaids?",
+    "zh": "莫妮卡：所以，你現在要跟我們說了嗎，還是得等四位全身濕透的伴娘？"
+  },
+  {
+    "en": "Rachel: Oh, God... well, it started about a half-hour before the wedding. I was in the room, and I was looking at this gravy boat. This really gorgeous Limoges gravy boat. And then I realized that I was more turned on by this gravy boat than by Barry! And then I got really freaked out, and that's when it hit me: how much Barry looks like Mr. Potato Head.",
+    "zh": "瑞秋：喔，天啊……其實是婚禮大概半小時前開始的。我在房間裡，看著這個醬汁壺。一個超漂亮的利摩日瓷醬汁壺。然後我發現，我對這個醬汁壺的感覺比對巴里還強烈！然後我真的嚇壞了，那時我才明白：巴里長得有多像馬鈴薯先生。"
+  },
+  {
+    "en": "Joey: You guys, I need some help. I have an audition for a play tomorrow, and the character is supposed to be really angry, but I just can't get it right.",
+    "zh": "喬伊：各位，我需要幫忙。我明天有個戲劇試鏡，角色應該要非常生氣，但我就是演不對。"
+  },
+  {
+    "en": "Monica: Well, what is he angry about?",
+    "zh": "莫妮卡：那他為什麼生氣？"
+  },
+  {
+    "en": "Joey: He found out his wife is having an affair with his best friend.",
+    "zh": "喬伊：他發現他老婆跟他最好的朋友搞外遇。"
+  },
+  {
+    "en": "Chandler: Wow, that's heavy. Have you tried thinking about something that makes you really mad?",
+    "zh": "錢德勒：哇，這太沉重了。你有試過想一些讓你真的很生氣的事嗎？"
+  },
+  {
+    "en": "Joey: Yeah, I tried thinking about someone eating the last slice of pizza. But it just made me sad, not angry.",
+    "zh": "喬伊：有啊，我試過想有人吃掉最後一片披薩。但那只讓我難過，沒有生氣。"
+  },
+  {
+    "en": "Phoebe: Oh, Joey. Try thinking about a world where there is no pizza at all!",
+    "zh": "菲比：喔，喬伊。試著想像一個完全沒有披薩的世界！"
+  },
+  {
+    "en": "Joey: Whoa! Phoebe! That's too dark! I want to get the part, not have a nervous breakdown!",
+    "zh": "喬伊：哇！菲比！那太黑暗了！我是想拿到角色，不是要精神崩潰！"
+  },
+  {
+    "en": "Ross: Okay, just a little more. Chandler, turn it. Rachel, lift it.",
+    "zh": "羅斯：好，再一點就好。錢德勒，轉一下。瑞秋，抬一下。"
+  },
+  {
+    "en": "Chandler: Ross, there is no room to turn!",
+    "zh": "錢德勒：羅斯，根本沒空間轉！"
+  },
+  {
+    "en": "Ross: Yes there is! You just have to pivot!",
+    "zh": "羅斯：有啦！你只要 pivot 就好！"
+  },
+  {
+    "en": "Chandler: What?",
+    "zh": "錢德勒：什麼？"
+  },
+  {
+    "en": "Ross: Pivot! Pivot! Pivot!",
+    "zh": "羅斯：Pivot！Pivot！Pivot！"
+  },
+  {
+    "en": "Chandler: Shut up! Shut up! Shut up!",
+    "zh": "錢德勒：閉嘴！閉嘴！閉嘴！"
+  },
+  {
+    "en": "Ross: Okay, I don't think it's gonna go any further.",
+    "zh": "羅斯：好了，我覺得搬不進去了。"
+  },
+  {
+    "en": "Chandler: You think? What are you gonna do now?",
+    "zh": "錢德勒：你還用說？你現在要怎麼辦？"
+  },
+  {
+    "en": "Ross: I'm gonna go to the store and tell them I want a couch that is not broken.",
+    "zh": "羅斯：我要回去店家，跟他們說我要一張沒壞的沙發。"
+  },
+  {
+    "en": "Chandler: You mean a couch that is not cut in half?",
+    "zh": "錢德勒：你是說沒被切成一半的那種？"
+  },
+  {
+    "en": "Ross: I will take what they give me!",
+    "zh": "羅斯：他們給什麼我就拿什麼！"
+  },
+  {
+    "en": "Phoebe: Okay Joey, let's try again. Repeat after me: Je.",
+    "zh": "菲比：好喬伊，我們再試一次。跟著我念：Je。"
+  },
+  {
+    "en": "Joey: Je.",
+    "zh": "喬伊：Je。"
+  },
+  {
+    "en": "Phoebe: M'appelle.",
+    "zh": "菲比：M'appelle。"
+  },
+  {
+    "en": "Joey: M'appelle.",
+    "zh": "喬伊：M'appelle。"
+  },
+  {
+    "en": "Phoebe: Claude.",
+    "zh": "菲比：Claude。"
+  },
+  {
+    "en": "Joey: Claude.",
+    "zh": "喬伊：Claude。"
+  },
+  {
+    "en": "Phoebe: Je m'appelle Claude.",
+    "zh": "菲比：Je m'appelle Claude。"
+  },
+  {
+    "en": "Joey: Jet-blue bla-blo-bla!",
+    "zh": "喬伊：Jet-blue bla-blo-bla！"
+  },
+  {
+    "en": "Phoebe: No, Joey! Not even close!",
+    "zh": "菲比：不行，喬伊！差十萬八千里！"
+  },
+  {
+    "en": "Joey: What? I said exactly what you said!",
+    "zh": "喬伊：什麼？我念的跟你一模一樣啊！"
+  },
+  {
+    "en": "Phoebe: No you didn't! Let's try it faster. Je m'appelle.",
+    "zh": "菲比：才沒有！我們念快一點。Je m'appelle。"
+  },
+  {
+    "en": "Joey: Me-poo-poo!",
+    "zh": "喬伊：Me-poo-poo！"
+  },
+  {
+    "en": "Phoebe: Oh, we are never going to get this audition.",
+    "zh": "菲比：喔，這試鏡我們永遠別想了。"
+  },
+  {
+    "en": "Phoebe: Hey guys, do you want to hear my new song?",
+    "zh": "菲比：嘿各位，你們想聽我的新歌嗎？"
+  },
+  {
+    "en": "Monica: Sure, Phoebe. What's it about?",
+    "zh": "莫妮卡：好啊，菲比。是關於什麼的？"
+  },
+  {
+    "en": "Phoebe: It's about a cat. But not just any cat. A very smelly cat.",
+    "zh": "菲比：是關於一隻貓。但不是隨便一隻貓。是一隻非常臭的貓。"
+  },
+  {
+    "en": "Phoebe: Smelly Cat, Smelly Cat, what are they feeding you? Smelly Cat, Smelly Cat, it's not your fault!",
+    "zh": "菲比：Smelly Cat，Smelly Cat，他們餵你吃什麼？Smelly Cat，Smelly Cat，這不是你的錯！"
+  },
+  {
+    "en": "Joey: That's actually really catchy, Pheebs.",
+    "zh": "喬伊：其實還挺好記的，菲比。"
+  },
+  {
+    "en": "Phoebe: Thank you, Joey. It's about how society rejects those who are different, even if they just smell bad.",
+    "zh": "菲比：謝謝你，喬伊。這是在講社會如何排斥與眾不同的人，就算他們只是聞起來很臭。"
+  },
+  {
+    "en": "Chandler: I think it's just about a cat that needs a bath.",
+    "zh": "錢德勒：我覺得只是關於一隻需要洗澡的貓。"
+  },
+  {
+    "en": "Phoebe: You don't understand art, Chandler.",
+    "zh": "菲比：你不懂藝術，錢德勒。"
+  },
+  {
+    "en": "Joey: What is this?",
+    "zh": "喬伊：這是什麼？"
+  },
+  {
+    "en": "Rachel: It's my salad. I was just offering you some.",
+    "zh": "瑞秋：這是我的沙拉。我只是想分你一些。"
+  },
+  {
+    "en": "Joey: No! No, no, no! Joey doesn't share food!",
+    "zh": "喬伊：不行！不行不行不行！喬伊不分享食物！"
+  },
+  {
+    "en": "Rachel: Joey, it's just a grape tomato.",
+    "zh": "瑞秋：喬伊，只是一顆小番茄而已。"
+  },
+  {
+    "en": "Joey: I don't care if it's a grape tomato or a whole turkey! Once it's on my plate, or if it's mine, it's mine!",
+    "zh": "喬伊：我才不管是一顆小番茄還是一整隻火雞！只要在我盤子上，或是我的，就是我的！"
+  },
+  {
+    "en": "Phoebe: He's serious, Rachel. Once he ordered a seafood platter and he almost bit my hand off when I reached for a clam.",
+    "zh": "菲比：他是認真的，瑞秋。有一次他點海鮮拼盤，我伸手去拿蛤蜊，他差點咬掉我的手。"
+  },
+  {
+    "en": "Joey: You wanted my clam! You don't take a man's clam!",
+    "zh": "喬伊：你想搶我的蛤蜊！不准動男人的蛤蜊！"
+  },
+  {
+    "en": "Ross: You guys, you need to understand the concept of Unagi.",
+    "zh": "羅斯：各位，你們需要了解 Unagi 的概念。"
+  },
+  {
+    "en": "Rachel: Isn't that a kind of sushi?",
+    "zh": "瑞秋：那不是一種壽司嗎？"
+  },
+  {
+    "en": "Ross: Yes, it is. But it is also a state of total awareness.",
+    "zh": "羅斯：是的。但它也是全知全覺的狀態。"
+  },
+  {
+    "en": "Phoebe: Total awareness? Like when you know there's only one cookie left in the jar?",
+    "zh": "菲比：全知全覺？就像你知道罐子裡只剩一塊餅乾那樣？"
+  },
+  {
+    "en": "Ross: No! It's a martial arts term. Only by achieving true Unagi can you prepare yourself for any danger that may come.",
+    "zh": "羅斯：不是！這是武術用語。只有達到真正的 Unagi，才能為任何可能的危險做好準備。"
+  },
+  {
+    "en": "Rachel: Ross, we took self-defense classes. We know how to defend ourselves.",
+    "zh": "瑞秋：羅斯，我們上過防身課。我們知道怎麼自保。"
+  },
+  {
+    "en": "Ross: Oh, really? What if I were to attack you right now?",
+    "zh": "羅斯：喔，真的嗎？要是我現在攻擊你們呢？"
+  },
+  {
+    "en": "Phoebe: Then we would kick you in the shins until you cry.",
+    "zh": "菲比：那我們就踢你小腿踢到你哭為止。"
+  },
+  {
+    "en": "Ross: That is not Unagi!",
+    "zh": "羅斯：那才不是 Unagi！"
+  },
+  {
+    "en": "Ross: Welcome to the ultimate trivia game. The stakes are high. If the guys win, they get the girls' apartment. If the girls win, the guys have to get rid of the rooster.",
+    "zh": "羅斯：歡迎來到終極問答遊戲。賭注很高。男生贏了，就能拿到女生的公寓。女生贏了，男生就得把公雞弄走。"
+  },
+  {
+    "en": "Monica: We are going to destroy you.",
+    "zh": "莫妮卡：我們要把你們打爆。"
+  },
+  {
+    "en": "Ross: Question number one. What is Monica's biggest pet peeve?",
+    "zh": "羅斯：第一題。莫妮卡最討厭什麼？"
+  },
+  {
+    "en": "Rachel: Easy! Animals dressed as humans!",
+    "zh": "瑞秋：簡單！動物打扮成人！"
+  },
+  {
+    "en": "Ross: Correct. Question number two. What is Chandler Bing's actual job?",
+    "zh": "羅斯：答對了。第二題。錢德勒·賓的實際工作是什麼？"
+  },
+  {
+    "en": "Rachel: Oh, it has something to do with numbers... and he carries a briefcase.",
+    "zh": "瑞秋：喔，跟數字有關……而且他還提公事包。"
+  },
+  {
+    "en": "Monica: He's a transponster!",
+    "zh": "莫妮卡：他是 transponster！"
+  },
+  {
+    "en": "Rachel: That's not even a word!",
+    "zh": "瑞秋：那根本不算字！"
+  },
+  {
+    "en": "Ross: Ten seconds...",
+    "zh": "羅斯：十秒……"
+  },
+  {
+    "en": "Monica: Oh my God, we are going to lose our apartment!",
+    "zh": "莫妮卡：天啊，我們要失去公寓了！"
+  },
+  {
+    "en": "Ross: Oh my God, it's so hot in here. My pants are sticking to my legs.",
+    "zh": "羅斯：天啊，這裡好熱。我的褲子黏在腿上了。"
+  },
+  {
+    "en": "Joey: Why did you wear leather pants on a date anyway?",
+    "zh": "喬伊：你約會幹嘛穿皮褲？"
+  },
+  {
+    "en": "Ross: Because I wanted to look cool! But now I'm in the bathroom, and I can't get them back up!",
+    "zh": "羅斯：因為我想看起來很酷！但現在我在浴室，褲子拉不上去！"
+  },
+  {
+    "en": "Joey: Did you try using lotion? Or baby powder?",
+    "zh": "喬伊：你有試過用乳液嗎？或嬰兒爽身粉？"
+  },
+  {
+    "en": "Ross: I tried both! Now I have a paste! A paste has formed on my legs, Joey!",
+    "zh": "羅斯：兩個都試了！現在我腿上有一坨糊狀物！喬伊，我腿上形成一坨糊狀物了！"
+  },
+  {
+    "en": "Joey: Okay, don't panic. Just try to walk out slowly.",
+    "zh": "喬伊：好，別慌。慢慢試著走出去。"
+  },
+  {
+    "en": "Ross: Joey, I can't walk! I look like a wet seal!",
+    "zh": "羅斯：喬伊，我走不了！我看起來像隻濕海豹！"
+  },
+  {
+    "en": "Monica: Chandler, we have to be careful. No one can find out about us.",
+    "zh": "莫妮卡：錢德勒，我們得小心。不能讓任何人發現我們的事。"
+  },
+  {
+    "en": "Chandler: I know. But it's hard when I just want to kiss you all the time.",
+    "zh": "錢德勒：我知道。但當我隨時都想親你的時候，真的很難。"
+  },
+  {
+    "en": "Monica: I know, sweetie. But if Joey finds out, he'll tell everyone. And Ross will go crazy because you're his best friend and I'm his sister.",
+    "zh": "莫妮卡：我知道，親愛的。但如果喬伊發現，他會告訴所有人。而且羅斯會發瘋，因為你是他最好的朋友，而我也是他妹妹。"
+  },
+  {
+    "en": "Chandler: Right. So we just act normal. No holding hands, no whispering, and absolutely no looking at each other like we like each other.",
+    "zh": "錢德勒：對。所以我們就裝正常。不牽手、不竊竊私語，絕對不可以互相對看像喜歡對方那樣。"
+  },
+  {
+    "en": "Monica: Deal. Now go stand over there and look annoyed.",
+    "zh": "莫妮卡：成交。現在去那邊站著，一副很惱火的樣子。"
+  },
+  {
+    "en": "Chandler: That is my default setting anyway.",
+    "zh": "錢德勒：反正那就是我的預設模式。"
+  },
+  {
+    "en": "Rachel: I can't believe you did that!",
+    "zh": "瑞秋：我不敢相信你做了那件事！"
+  },
+  {
+    "en": "Ross: Rachel, we were on a break!",
+    "zh": "羅斯：瑞秋，我們那時在冷靜期！"
+  },
+  {
+    "en": "Rachel: That does not give you the right to sleep with someone else!",
+    "zh": "瑞秋：那不表示你可以跟別人上床！"
+  },
+  {
+    "en": "Ross: We were broken up! You said we should take a break!",
+    "zh": "羅斯：我們已經分手了！是妳說要冷靜一下的！"
+  },
+  {
+    "en": "Rachel: A break from us, Ross! Not a break from reality!",
+    "zh": "瑞秋：是跟我們之間的冷靜期，羅斯！不是跟現實的冷靜期！"
+  },
+  {
+    "en": "Ross: I thought you were with Mark! I was hurt, I was drunk, and I made a mistake!",
+    "zh": "羅斯：我以為你跟 Mark 在一起！我受傷了、我醉了，我犯了錯！"
+  },
+  {
+    "en": "Rachel: Yes, you did! And now you have to live with it!",
+    "zh": "瑞秋：沒錯，你犯了！現在你得承受後果！"
+  },
+  {
+    "en": "Monica: Joey, what are you doing?",
+    "zh": "莫妮卡：喬伊，你在幹嘛？"
+  },
+  {
+    "en": "Joey: I got my head stuck in the turkey!",
+    "zh": "喬伊：我的頭卡在火雞裡了！"
+  },
+  {
+    "en": "Monica: You what?! How is that even possible?",
+    "zh": "莫妮卡：什麼？！怎麼可能？"
+  },
+  {
+    "en": "Joey: I was trying to scare Chandler! But now it's stuck and I can't see anything!",
+    "zh": "喬伊：我原本想嚇錢德勒！但現在卡住了，我什麼都看不見！"
+  },
+  {
+    "en": "Monica: Joey! This is a twenty-pound turkey!",
+    "zh": "莫妮卡：喬伊！這是二十磅重的火雞！"
+  },
+  {
+    "en": "Chandler: Oh my God, Joey! You look like a giant mutant bird!",
+    "zh": "錢德勒：天啊，喬伊！你看起來像隻巨大的變種鳥！"
+  },
+  {
+    "en": "Joey: Help me! It smells like raw onion in here!",
+    "zh": "喬伊：救我！裡面聞起來像生洋蔥！"
+  },
+  {
+    "en": "Monica: Hold still, I'm going to put some butter on your neck!",
+    "zh": "莫妮卡：別動，我要在你脖子上抹點奶油！"
+  },
+  {
+    "en": "Ross: Monica, look at my teeth. Are they too white?",
+    "zh": "羅斯：莫妮卡，看看我的牙齒。會不會太白了？"
+  },
+  {
+    "en": "Monica: Ross, they look like they are glowing in the dark!",
+    "zh": "莫妮卡：羅斯，它們看起來像在暗處會發光！"
+  },
+  {
+    "en": "Ross: I just left the whitener on a little too long!",
+    "zh": "羅斯：我只是美白劑放久了一點！"
+  },
+  {
+    "en": "Monica: You left it on for two hours!",
+    "zh": "莫妮卡：你放了兩個小時！"
+  },
+  {
+    "en": "Ross: What am I going to do? I have a date with Hillary tonight!",
+    "zh": "羅斯：我該怎麼辦？我今晚要跟 Hilary 約會！"
+  },
+  {
+    "en": "Monica: Well, don't smile. And if she tells a joke, just look very serious.",
+    "zh": "莫妮卡：那就別笑。要是她講笑話，就裝得很嚴肅。"
+  },
+  {
+    "en": "Ross: Or I could only hang out in brightly lit rooms?",
+    "zh": "羅斯：或者我只能待在光線很亮的房間？"
+  },
+  {
+    "en": "Monica: Ross, your teeth are brighter than the sun!",
+    "zh": "莫妮卡：羅斯，你的牙齒比太陽還亮！"
+  },
+  {
+    "en": "Ross: Someone ate my sandwich.",
+    "zh": "羅斯：有人吃了我的三明治。"
+  },
+  {
+    "en": "Joey: So what? It's just a sandwich.",
+    "zh": "喬伊：那又怎樣？只是個三明治。"
+  },
+  {
+    "en": "Ross: It was not just a sandwich! It was the only good thing happening in my life! It had a gravy-soaked slice of bread in the middle! I call it the Moist Maker!",
+    "zh": "羅斯：不只是三明治！那是我人生中唯一美好的事！中間有一片浸滿肉汁的麵包！我把它叫做 Moist Maker！"
+  },
+  {
+    "en": "Chandler: Okay, Ross. Calm down. Who ate it?",
+    "zh": "錢德勒：好了，羅斯。冷靜。誰吃的？"
+  },
+  {
+    "en": "Ross: My boss! He ate half of it, and then he threw the rest in the trash!",
+    "zh": "羅斯：我的老闆！他吃了一半，然後把剩下的扔進垃圾桶！"
+  },
+  {
+    "en": "Joey: He threw it in the trash?! That's a crime against food!",
+    "zh": "喬伊：他扔進垃圾桶？！這是對食物的犯罪！"
+  },
+  {
+    "en": "Ross: Exactly! I'm going to write a very angry letter!",
+    "zh": "羅斯：沒錯！我要寫一封非常生氣的信！"
+  },
+  {
+    "en": "Rachel: I made the dessert for Thanksgiving! It's a traditional English trifle!",
+    "zh": "瑞秋：我做了感恩節甜點！是傳統的英式雜錦甜點 trifle！"
+  },
+  {
+    "en": "Ross: Rachel, what is in this?",
+    "zh": "羅斯：瑞秋，這裡面是什麼？"
+  },
+  {
+    "en": "Rachel: It has ladyfingers, jam, custard, raspberries, more ladyfingers, beef sautéed with peas and onions, and then a little more custard!",
+    "zh": "瑞秋：有手指餅乾、果醬、卡士達、覆盆子、更多手指餅乾、跟豌豆洋蔥一起炒的牛肉，然後再一點卡士達！"
+  },
+  {
+    "en": "Joey: Beef? Sautéed with peas and onions?",
+    "zh": "喬伊：牛肉？跟豌豆洋蔥一起炒？"
+  },
+  {
+    "en": "Rachel: Yes! I followed the recipe!",
+    "zh": "瑞秋：對！我是照食譜做的！"
+  },
+  {
+    "en": "Ross: Rachel, the pages of the cookbook were stuck together! You made half a trifle and half a shepherd's pie!",
+    "zh": "羅斯：瑞秋，食譜的頁面黏在一起了！你做了半份 trifle 半份牧羊人派！"
+  },
+  {
+    "en": "Joey: Well, I think it sounds delicious. I like custard, I like jam, and I like beef! What's not to like?",
+    "zh": "喬伊：我覺得聽起來很好吃啊。我喜歡卡士達、喜歡果醬，也喜歡牛肉！有什麼不好？"
+  },
+  {
+    "en": "Chandler: It tastes like feet!",
+    "zh": "錢德勒：吃起來像腳！"
+  },
+  {
+    "en": "Janice: Oh. My. God!",
+    "zh": "珍妮絲：喔。我的。天啊！"
+  },
+  {
+    "en": "Chandler: Janice?! What are you doing here?",
+    "zh": "錢德勒：珍妮絲？！你在這裡做什麼？"
+  },
+  {
+    "en": "Janice: I was just walking down the street, and I felt a little pull in my heart, and I knew my Chandler was nearby!",
+    "zh": "珍妮絲：我剛走在街上，心裡感到一點牽引，我就知道我的錢德勒就在附近！"
+  },
+  {
+    "en": "Chandler: Janice, we broke up. Three times.",
+    "zh": "錢德勒：珍妮絲，我們分手了。三次。"
+  },
+  {
+    "en": "Janice: But Chandler, we are like magnets! You can try to run, but we will always stick back together!",
+    "zh": "珍妮絲：但是錢德勒，我們就像磁鐵！你可以試著跑，但我們總會再黏在一起！"
+  },
+  {
+    "en": "Chandler: Somebody please help me.",
+    "zh": "錢德勒：誰來救救我。"
+  },
+  {
+    "en": "Janice: Don't be silly, channy-bear! Give me a big hug!",
+    "zh": "珍妮絲：別傻，channy-bear！給我一個大大的擁抱！"
+  },
+  {
+    "en": "Phoebe: Oh, look, there's Monica and Chandler through the window.",
+    "zh": "菲比：喔，看，從窗戶可以看到莫妮卡和錢德勒。"
+  },
+  {
+    "en": "Phoebe: Oh! Oh! Oh my God!",
+    "zh": "菲比：喔！喔！天啊！"
+  },
+  {
+    "en": "Rachel: What? What is it?",
+    "zh": "瑞秋：什麼？怎麼了？"
+  },
+  {
+    "en": "Phoebe: Chandler and Monica! Chandler and Monica! They're doing it!",
+    "zh": "菲比：錢德勒和莫妮卡！錢德勒和莫妮卡！他們在做那件事！"
+  },
+  {
+    "en": "Rachel: I know! I know!",
+    "zh": "瑞秋：我知道！我知道！"
+  },
+  {
+    "en": "Phoebe: You know?!",
+    "zh": "菲比：你知道？！"
+  },
+  {
+    "en": "Rachel: Yes, Joey and I found out! But we can't let them know we know!",
+    "zh": "瑞秋：對，喬伊跟我都發現了！但不能讓他們知道我們知道！"
+  },
+  {
+    "en": "Phoebe: Oh my God! My eyes! My eyes!",
+    "zh": "菲比：天啊！我的眼睛！我的眼睛！"
+  },
+  {
+    "en": "Joey: Chandler, where is Ben?",
+    "zh": "喬伊：錢德勒，Ben 在哪？"
+  },
+  {
+    "en": "Chandler: He's right here in the stroller.",
+    "zh": "錢德勒：他就在嬰兒車裡啊。"
+  },
+  {
+    "en": "Joey: No, he's not. That is a diaper bag.",
+    "zh": "喬伊：才不是。那是尿布包。"
+  },
+  {
+    "en": "Chandler: What?! Oh my God! Where is the baby?",
+    "zh": "錢德勒：什麼？！天啊！寶寶在哪？"
+  },
+  {
+    "en": "Joey: We left him on the bus!",
+    "zh": "喬伊：我們把他留在公車上了！"
+  },
+  {
+    "en": "Chandler: We left Ross's baby on a city bus?!",
+    "zh": "錢德勒：我們把羅斯的寶寶留在市區公車上了？！"
+  },
+  {
+    "en": "Joey: Okay, don't panic. We just need to catch the next bus!",
+    "zh": "喬伊：好，別慌。我們只要搭下一班公車趕上去！"
+  },
+  {
+    "en": "Chandler: Joey, they don't travel in packs!",
+    "zh": "錢德勒：喬伊，公車又不是成群行動的！"
+  },
+  {
+    "en": "Rachel: Well, I guess this is it.",
+    "zh": "瑞秋：好吧，我想就是這樣了。"
+  },
+  {
+    "en": "Monica: I can't believe we are all leaving this apartment.",
+    "zh": "莫妮卡：真不敢相信我們都要離開這間公寓了。"
+  },
+  {
+    "en": "Joey: It feels so empty without all the furniture.",
+    "zh": "喬伊：少了所有家具，感覺好空。"
+  },
+  {
+    "en": "Chandler: Yeah. It looks smaller.",
+    "zh": "錢德勒：是啊。看起來還變小了。"
+  },
+  {
+    "en": "Phoebe: Do you guys want to go get some coffee?",
+    "zh": "菲比：你們要去喝杯咖啡嗎？"
+  },
+  {
+    "en": "Rachel: Sure. Where should we go?",
+    "zh": "瑞秋：好啊。要去哪？"
+  },
+  {
+    "en": "Chandler: Under the circumstances, I think we should go to Central Perk.",
+    "zh": "錢德勒：在這種情況下，我覺得應該去 Central Perk。"
+  },
+  {
+    "en": "Monica: We have to.",
+    "zh": "莫妮卡：我們得去。"
+  },
+  {
+    "en": "Joey: Let's go.",
+    "zh": "喬伊：走吧。"
+  },
+  {
+    "en": "Joey: Look at me! I'm Chandler! Could I be wearing any more clothes?",
+    "zh": "喬伊：看著我！我是錢德勒！我還能穿更多衣服嗎？"
+  },
+  {
+    "en": "Chandler: Oh my God!",
+    "zh": "錢德勒：喔，我的天啊！"
+  },
+  {
+    "en": "Joey: Yeah, I'm doing opposite is opposite! You hide my underwear, I wear everything you own!",
+    "zh": "喬伊：對啊，我這叫反其道而行！你藏我的內褲，我就穿上你所有的衣服！"
+  },
+  {
+    "en": "Chandler: That is so not opposite!",
+    "zh": "錢德勒：這根本不叫反其道而行！"
+  },
+  {
+    "en": "Joey: Oh, really? Check this out: I'm doing lunges!",
+    "zh": "喬伊：喔，是嗎？看好了：我在做弓步！"
+  },
+  {
+    "en": "Monica: It hurt so bad! I couldn't even stand up!",
+    "zh": "莫妮卡：那真的太痛了！我甚至站不起來！"
+  },
+  {
+    "en": "Joey: And the pain was just getting worse and worse! We had to do something!",
+    "zh": "喬伊：而且痛苦越來越劇烈！我們必須採取行動！"
+  },
+  {
+    "en": "Chandler: I still can't believe we actually did it.",
+    "zh": "錢德勒：我到現在還是不敢相信我們真的做了。"
+  },
+  {
+    "en": "Monica: We agreed we would never speak of this again!",
+    "zh": "莫妮卡：我們約定好再也不提這件事的！"
+  },
+  {
+    "en": "Joey: She's right, Chandler. It's a bond of silence! If anyone asks, she just put some cream on it!",
+    "zh": "喬伊：她說得對，錢德勒。這是沉默的契約！如果有人問起，就說她只是擦了些藥膏！"
+  },
+  {
+    "en": "Ross: I went to that tanning place you suggested.",
+    "zh": "羅斯：我去了你推薦的那家噴霧助曬店。"
+  },
+  {
+    "en": "Chandler: And did you count to five as they told you?",
+    "zh": "錢德勒：那你照他們說的數到五了嗎？"
+  },
+  {
+    "en": "Ross: I counted Mississippis! I went: one Mississippi, two Mississippi, three Mississippi...",
+    "zh": "羅斯：我用密西西比數法！我數：一個密西西比、兩個密西西比、三個密西西比……"
+  },
+  {
+    "en": "Chandler: Ross, they sprayed you twice on the front because you counted too slowly!",
+    "zh": "錢德勒：羅斯，他們朝你正面噴了兩次，因為你數得太慢了！"
+  },
+  {
+    "en": "Ross: I'm an eight! I'm an eight on the front, and a zero on the back!",
+    "zh": "羅斯：我是八號色！我前面是八號色，後面是零號色！"
+  },
+  {
+    "en": "Ross: Ben, look who's here! It's me, the Holiday Armadillo!",
+    "zh": "羅斯：班，看誰來了！是我，節日犰狳！"
+  },
+  {
+    "en": "Ben: An armadillo?",
+    "zh": "班：犰狳？"
+  },
+  {
+    "en": "Ross: Yes! I'm Santa's half-Jewish representative! I'm here to tell you all about the festival of lights!",
+    "zh": "羅斯：對！我是聖誕老人的半猶太裔代表！我是來告訴你所有關於光明節的故事！"
+  },
+  {
+    "en": "Chandler: Ho, ho, ho! Merry Christmas!",
+    "zh": "錢德勒：吼，吼，吼！聖誕快樂！"
+  },
+  {
+    "en": "Ross: Chandler, what are you doing here in a Santa suit? You're ruining my armadillo presentation!",
+    "zh": "羅斯：錢德勒，你穿著聖誕老人裝在這裡幹嘛？你毀了我的犰狳演講！"
+  },
+  {
+    "en": "Ross: Monica, we need to do The Routine if we want to get on the platform!",
+    "zh": "羅斯：莫妮卡，如果我們想上舞台跳舞，我們得跳「那套舞步」！"
+  },
+  {
+    "en": "Monica: The Routine? Ross, we haven't done that since middle school!",
+    "zh": "莫妮卡：那套舞步？羅斯，我們自從國中之後就再也沒跳過了！"
+  },
+  {
+    "en": "Ross: But it's our only chance to be on TV! We have to bring the heat!",
+    "zh": "羅斯：但這是我們上電視的唯一機會！我們得拿出熱情！"
+  },
+  {
+    "en": "Monica: Okay, let's do it! Five, six, seven, eight!",
+    "zh": "莫妮卡：好，來吧！五、六、七、八！"
+  },
+  {
+    "en": "Ross: Watch out, America! The Geller siblings are ready to roll!",
+    "zh": "羅斯：注意了，美國！蓋勒兄妹準備好大顯身手了！"
+  },
+  {
+    "en": "Ross: Welcome! I'm fine! Totally fine!",
+    "zh": "羅斯：歡迎！我很好！完全沒事！"
+  },
+  {
+    "en": "Rachel: Ross, you are wearing oven mitts and you just took a hot dish out with your bare hands.",
+    "zh": "瑞秋：羅斯，你戴著隔熱手套，但你剛剛是用光著的手把熱盤子拿出來的。"
+  },
+  {
+    "en": "Ross: I don't feel any pain! Unagi protects me!",
+    "zh": "羅斯：我感覺不到痛！Unagi 保護著我！"
+  },
+  {
+    "en": "Joey: Ross, I think you are drunk.",
+    "zh": "喬伊：羅斯，我覺得你喝醉了。"
+  },
+  {
+    "en": "Ross: I'm not drunk! I'm just very excited about my fajitas!",
+    "zh": "羅斯：我沒醉！我只是對我的法士達烤肉感到非常興奮！"
+  },
+  {
+    "en": "Monica: Chandler, there are seven zones. Seven!",
+    "zh": "莫妮卡：錢德勒，總共有七個部位。七個！"
+  },
+  {
+    "en": "Chandler: Seven? I thought there were only three.",
+    "zh": "錢德勒：七個？我以為只有三個。"
+  },
+  {
+    "en": "Monica: That is why you need this lesson! Now, one, two, three...",
+    "zh": "莫妮卡：這就是為什麼你需要這堂課！現在，一、二、三……"
+  },
+  {
+    "en": "Chandler: Okay, I'm listening.",
+    "zh": "錢德勒：好，我在聽。"
+  },
+  {
+    "en": "Monica: Four, five, six... and seven! Seven! Seven! Seven!",
+    "zh": "莫妮卡：四、五、六……還有七！七！七！七！"
+  },
+  {
+    "en": "Chandler: Wow. I think I understand now.",
+    "zh": "錢德勒：哇。我想我現在懂了。"
+  },
+  {
+    "en": "Rachel: Look at my new baby! Isn't she beautiful?",
+    "zh": "瑞秋：看看我的新寶貝！她不漂亮嗎？"
+  },
+  {
+    "en": "Ross: Rachel, what is that? It looks like a raw chicken!",
+    "zh": "羅斯：瑞秋，那是個什麼東西？看起來像隻生雞肉！"
+  },
+  {
+    "en": "Rachel: It's a show cat! A Sphynx! It cost me a thousand dollars!",
+    "zh": "瑞秋：這是名貴貓！斯芬克斯貓！花了我一千美元！"
+  },
+  {
+    "en": "Joey: Why is it inside out?!",
+    "zh": "喬伊：牠為什麼長得像裡外反過來一樣？！"
+  },
+  {
+    "en": "Rachel: It is not inside out! It's just hairless!",
+    "zh": "瑞秋：牠才沒有裡外反過來！牠只是沒有毛！"
+  },
+  {
+    "en": "Ross: Well, it's terrifying. It looks like some kind of ancient demon.",
+    "zh": "羅斯：好吧，這挺嚇人的。看起來像某種古代惡魔。"
+  },
+  {
+    "en": "Phoebe: Mike, I officially changed my name today!",
+    "zh": "菲比：麥克，我今天正式改名字了！"
+  },
+  {
+    "en": "Mike: That's great! What is it? Phoebe Buffay-Hannigan?",
+    "zh": "麥克：太棒了！改成什麼？菲比·布費-漢尼根？"
+  },
+  {
+    "en": "Phoebe: No. It is Princess Consuela Banana Hammock!",
+    "zh": "菲比：不是。是康蘇拉公主香蕉吊床！"
+  },
+  {
+    "en": "Mike: You're kidding, right? That is not a real name!",
+    "zh": "麥克：妳在開玩笑吧？那根本不是個真正的名字！"
+  },
+  {
+    "en": "Phoebe: It is real! And it sounds very elegant!",
+    "zh": "菲比：是真的！而且聽起來非常優雅！"
+  },
+  {
+    "en": "Mike: Okay. If you are Princess Consuela, then I am changing my name to Crap Bag!",
+    "zh": "麥克：行。如果妳是康蘇拉公主，那我要把我的名字改成垃圾袋！"
+  },
+  {
+    "en": "Monica: Joey, are you wearing Phoebe's maternity pants?",
+    "zh": "莫妮卡：喬伊，你穿著菲比的孕婦褲嗎？"
+  },
+  {
+    "en": "Joey: Yes, I am. These are my Thanksgiving pants!",
+    "zh": "喬伊：沒錯。這是我的感恩節專用褲！"
+  },
+  {
+    "en": "Monica: Why would you wear maternity pants?",
+    "zh": "莫妮卡：你為什麼要穿孕婦褲？"
+  },
+  {
+    "en": "Joey: Because the waistband stretches! I need the room if I'm going to eat this whole turkey!",
+    "zh": "喬伊：因為褲頭有彈性！如果我要吃掉整隻火雞，我需要足夠的空間！"
+  },
+  {
+    "en": "Monica: You are not eating the whole turkey!",
+    "zh": "莫妮卡：你不可能吃得下一整隻火雞！"
+  },
+  {
+    "en": "Joey: Watch me! I have been preparing for this all week!",
+    "zh": "喬伊：看好了！我這整個星期都在為此做準備！"
+  },
+  {
+    "en": "Rachel: Oh my God, the cheesecake fell!",
+    "zh": "瑞秋：天啊，起司蛋糕掉了！"
+  },
+  {
+    "en": "Chandler: This is a disaster. What are we going to do?",
+    "zh": "錢德勒：這簡直是災難。我們該怎麼辦？"
+  },
+  {
+    "en": "Rachel: Well, it only touched the hallway floor... and the floor looks clean.",
+    "zh": "瑞秋：嗯，牠只碰到了走廊地板……而且地板看起來滿乾淨的。"
+  },
+  {
+    "en": "Chandler: You are not thinking about eating it off the floor, are you?",
+    "zh": "錢德勒：妳該不會想坐在地板上吃吧？"
+  },
+  {
+    "en": "Rachel: I'm already doing it! It's still delicious!",
+    "zh": "瑞秋：我已經在吃了！依然美味！"
+  },
+  {
+    "en": "Joey: Hey guys, what are we having?",
+    "zh": "喬伊：嘿各位，我們在吃什麼？"
+  },
+  {
+    "en": "Ross: Joey, did you hear that? The door just locked behind us.",
+    "zh": "羅斯：羅斯：喬伊，你聽到了嗎？門在我們後面鎖上了。"
+  },
+  {
+    "en": "Joey: No problem, we can just use the fire escape.",
+    "zh": "喬伊：喬伊：沒問題，我們走安全梯就好。"
+  },
+  {
+    "en": "Ross: Joey, there is no fire escape on this side!",
+    "zh": "羅斯：羅斯：喬伊，這一側根本沒有安全梯！"
+  },
+  {
+    "en": "Joey: Oh. Then we are stuck. On the roof. In the cold.",
+    "zh": "喬伊：喬伊：喔。那我們被困住了。在屋頂上。在冷風中。"
+  },
+  {
+    "en": "Ross: Yes, we are! Why did you let the door close?",
+    "zh": "羅斯：羅斯：沒錯！你為什麼要讓門關上？"
+  },
+  {
+    "en": "Joey: I thought you were holding it! My hands were full of cookies!",
+    "zh": "喬伊：喬伊：我以為你拉著門！我的雙手當時都拿著餅乾！"
+  },
+  {
+    "en": "Phoebe: Look what I found under the cushion! A real police badge!",
+    "zh": "菲比：看我在沙發墊下找到了什麼！一個真正的警察徽章！"
+  },
+  {
+    "en": "Monica: Phoebe, you need to return it. It's illegal to pretend to be a cop.",
+    "zh": "莫妮卡：菲比，妳得把它還回去。冒充警察是違法的。"
+  },
+  {
+    "en": "Phoebe: I'm not pretending! I'm just enforcing the law!",
+    "zh": "菲比：我不是冒充！我是在執法！"
+  },
+  {
+    "en": "Gary: Excuse me, ma'am. Why are you flashing a badge at that man?",
+    "zh": "蓋瑞：抱歉女士。妳為什麼要對那個男人亮徽章？"
+  },
+  {
+    "en": "Phoebe: Because he was littering! Who are you?",
+    "zh": "菲比：因為他亂丟垃圾！你又是誰？"
+  },
+  {
+    "en": "Gary: I'm Detective Gary. And that is my badge you are holding.",
+    "zh": "蓋瑞：我是蓋瑞警探。妳手裡拿著的，是我的徽章。"
+  },
+  {
+    "en": "Joey: Monica, guess what I found! Keys to a brand new Porsche!",
+    "zh": "喬伊：喬伊：莫妮卡，猜猜我找到了什麼！一輛全新保時捷的鑰匙！"
+  },
+  {
+    "en": "Monica: Wow! Are you going to find the owner?",
+    "zh": "莫妮卡：莫妮卡：哇！你要去找車主嗎？"
+  },
+  {
+    "en": "Joey: Yes, eventually. But right now, everyone thinks this is my car!",
+    "zh": "喬伊：喬伊：要，遲早會的。但現在，大家都以為這是我的車！"
+  },
+  {
+    "en": "Monica: Joey, you are standing next to it wearing a Porsche jacket and a Porsche hat.",
+    "zh": "莫妮卡：莫妮卡：喬伊，你穿著保時捷夾克、戴著保時捷帽子站在車子旁邊耶。"
+  },
+  {
+    "en": "Joey: Exactly! I have never felt more popular!",
+    "zh": "喬伊：喬伊：沒錯！我從來沒覺得自己這麼受歡迎過！"
+  },
+  {
+    "en": "Monica: You know the owner is going to come back, right?",
+    "zh": "莫妮卡：莫妮卡：你知道車主遲早會回來吧？"
+  },
+  {
+    "en": "Monica: Chandler, I never thought I would find someone like you.",
+    "zh": "莫妮卡：錢德勒，我從來沒想過我會找到像你這樣的人。"
+  },
+  {
+    "en": "Chandler: Monica, you are crying so hard I can barely understand you.",
+    "zh": "錢德勒：錢德勒：莫妮卡，妳哭得太厲害了，我幾乎聽不懂妳在說什麼。"
+  },
+  {
+    "en": "Monica: I know! I had this whole speech prepared, but now I'm just a mess!",
+    "zh": "莫妮卡：我知道！我準備了整篇致詞，但現在我整個人一團糟！"
+  },
+  {
+    "en": "Chandler: Okay, let me do it. Monica, you make me happier than I ever thought I could be.",
+    "zh": "錢德勒：錢德勒：好，換我來。莫妮卡，你讓我比我想像的還要幸福。"
+  },
+  {
+    "en": "Monica: Oh, Chandler...",
+    "zh": "莫妮卡：喔，錢德勒……"
+  },
+  {
+    "en": "Chandler: Will you marry me?",
+    "zh": "錢德勒：錢德勒：妳願意嫁給我嗎？"
+  },
+  {
+    "en": "Monica: Yes! Yes, of course!",
+    "zh": "莫妮卡：我願意！是的，當然願意！"
+  },
+  {
+    "en": "Ross: Hello, Mrs. Ross!",
+    "zh": "羅斯：羅斯：哈囉，羅斯太太！"
+  },
+  {
+    "en": "Rachel: Hello, Mr. Rachel!",
+    "zh": "瑞秋：哈囉，瑞秋先生！"
+  },
+  {
+    "en": "Ross: Wait, did we actually get married last night?",
+    "zh": "羅斯：羅斯：等等，我們昨晚真的結婚了嗎？"
+  },
+  {
+    "en": "Rachel: I think we did! Look at the ring on my finger! It's drawn with a blue marker!",
+    "zh": "瑞秋：我想是的！看看我手上的戒指！是用藍色麥克筆畫上去的！"
+  },
+  {
+    "en": "Ross: Oh my God, what were we thinking?",
+    "zh": "羅斯：羅斯：天啊，我們那時在想什麼？"
+  },
+  {
+    "en": "Rachel: We weren't thinking! We were completely drunk!",
+    "zh": "瑞秋：我們根本沒在想！我們完全喝醉了！"
+  },
+  {
+    "en": "Joey: Chandler, are you still in there?",
+    "zh": "喬伊：喬伊：錢德勒，你還在裡面嗎？"
+  },
+  {
+    "en": "Chandler: Yes, Joey. I have been in this box for three hours.",
+    "zh": "錢德勒：錢德勒：在，喬伊。我已經在這個箱子裡待了三個小時。"
+  },
+  {
+    "en": "Joey: Good. It shows you really care about our friendship.",
+    "zh": "喬伊：喬伊：很好。這顯示你真的在乎我們的友誼。"
+  },
+  {
+    "en": "Chandler: It's very dark and cramped in here.",
+    "zh": "錢德勒：錢德勒：這裡非常暗而且很擠。"
+  },
+  {
+    "en": "Joey: Well, that is the price you pay for kissing my girlfriend!",
+    "zh": "喬伊：喬伊：嗯，這就是你親我女朋友所付出的代價！"
+  },
+  {
+    "en": "Chandler: I know, and I am truly sorry.",
+    "zh": "錢德勒：錢德勒：我知道，我真的很抱歉。"
+  },
+  {
+    "en": "Ross: Joey, what just happened?",
+    "zh": "羅斯：羅斯：喬伊，剛剛發生了什麼事？"
+  },
+  {
+    "en": "Joey: I think we just took a nap. Together.",
+    "zh": "喬伊：喬伊：我想我們剛剛睡了個午覺。一起。"
+  },
+  {
+    "en": "Ross: Oh my God, we did. Why did we do that?",
+    "zh": "羅斯：羅斯：天啊，我們真的睡了。我們幹嘛這樣做？"
+  },
+  {
+    "en": "Joey: I don't know, but it was the best nap I have ever had!",
+    "zh": "喬伊：喬伊：我不知道，但這是我睡過最舒服的一場午覺！"
+  },
+  {
+    "en": "Ross: It was really comfortable... but we must never speak of this to the guys.",
+    "zh": "羅斯：羅斯：真的非常舒服……但我們絕對不能跟其他人提起這件事。"
+  },
+  {
+    "en": "Joey: Definitely. So, same time tomorrow?",
+    "zh": "喬伊：喬伊：當然。那，明天同一時間？"
+  },
+  {
+    "en": "Phoebe: Oh Gary, I love waking up next to you in our new apartment.",
+    "zh": "菲比：喔蓋瑞，我真喜歡在我們新公寓裡醒來躺在你身邊。"
+  },
+  {
+    "en": "Gary: Me too, Phoebe. Everything is perfect.",
+    "zh": "蓋瑞：蓋瑞：我也是，菲比。一切都很完美。"
+  },
+  {
+    "en": "Phoebe: Except for that bird chirping outside. It's a little loud.",
+    "zh": "菲比：除了外面那隻鳥叫聲。有點吵。"
+  },
+  {
+    "en": "Gary: Don't worry. I'll take care of it.",
+    "zh": "蓋瑞：蓋瑞：別擔心。我來處理。"
+  },
+  {
+    "en": "Phoebe: Gary, why are you pulling out your gun? Gary, no!",
+    "zh": "菲比：蓋瑞，你幹嘛拔槍？蓋瑞，不要！"
+  },
+  {
+    "en": "Gary: Problem solved.",
+    "zh": "蓋瑞：蓋瑞：問題解決。"
+  },
+  {
+    "en": "Phoebe: Oh my God, you just shot a bird! We are over!",
+    "zh": "菲比：天啊，你居然開槍打一隻鳥！我們完了！"
+  },
+  {
+    "en": "Joey: Look at his hands, Chandler! They are identical to my hands!",
+    "zh": "喬伊：喬伊：看看他的手，錢德勒！跟我的手一模一樣！"
+  },
+  {
+    "en": "Chandler: Joey, he is a dealer in a Vegas casino. He just wants to do his job.",
+    "zh": "錢德勒：錢德勒：喬伊，他是拉斯維加斯賭場的發牌員。他只是想做好他的工作。"
+  },
+  {
+    "en": "Joey: But we are hand twins! This is a million-dollar idea!",
+    "zh": "喬伊：喬伊：但我們是雙胞胎手！這是個百萬商機點子！"
+  },
+  {
+    "en": "Chandler: How is having identical hands going to make you a million dollars?",
+    "zh": "錢德勒：錢德勒：擁有一模一樣的手是要怎麼幫你賺一百萬美元？"
+  },
+  {
+    "en": "Joey: We can do commercial work! Or hand modeling!",
+    "zh": "喬伊：喬伊：我們可以拍廣告！或是當手部模特兒！"
+  },
+  {
+    "en": "Chandler: I think you have spent too much time in Vegas.",
+    "zh": "錢德勒：錢德勒：我覺得你在拉斯維加斯待太久了。"
+  },
+  {
+    "en": "Monica: It's just... storage. You don't need to go in there.",
+    "zh": "莫妮卡：那只是……儲藏室。你沒必要進去。"
+  },
+  {
+    "en": "Chandler: Monica, why is this closet locked?",
+    "zh": "錢德勒：錢德勒：莫妮卡，為什麼這間衣櫃鎖著？"
+  },
+  {
+    "en": "Chandler: I'm your husband, Monica. I have a right to see what is behind this door.",
+    "zh": "錢德勒：錢德勒：我是妳老公，莫妮卡。我有權知道這扇門後面有什麼。"
+  },
+  {
+    "en": "Monica: No, you don't! Please don't open it!",
+    "zh": "莫妮卡：不行！請不要打開它！"
+  },
+  {
+    "en": "Chandler: Oh my God! It's full of junk! It's a complete mess!",
+    "zh": "錢德勒：錢德勒：天啊！裡面塞滿了垃圾！完全亂七八糟！"
+  },
+  {
+    "en": "Monica: Yes, it is! I'm a closet messy person!",
+    "zh": "莫妮卡：沒錯，就是這樣！我其實是個隱性邋遢鬼！"
+  },
+  {
+    "en": "Joey: Chandler, meet Pat!",
+    "zh": "喬伊：喬伊：錢德勒，來認識一下 Pat！"
+  },
+  {
+    "en": "Chandler: Joey, why is there a giant white porcelain dog in the living room?",
+    "zh": "錢德勒：錢德勒：喬伊，為什麼客廳裡會放一隻巨大的白色瓷狗？"
+  },
+  {
+    "en": "Joey: Because I'm rich now! I play Dr. Drake Ramoray on Days of Our Lives!",
+    "zh": "喬伊：喬伊：因為我現在有錢了！我在《我們的日子》裡演德瑞克·雷莫瑞醫生！"
+  },
+  {
+    "en": "And rich people buy ugly statues?",
+    "zh": "錢德勒：錢德勒：然後有錢人都買這種醜雕像？"
+  },
+  {
+    "en": "Joey: It's not ugly! It's art!",
+    "zh": "喬伊：喬伊：這才不醜！這是藝術！"
+  },
+  {
+    "en": "Chandler: Well, I hope you never go broke, because you are going to have a hard time selling that.",
+    "zh": "錢德勒：錢德勒：好吧，我希望你永遠別破產，因為這東西你大概很難賣出去。"
+  },
+  {
+    "en": "Monica: Chandler, this is the best Valentine's gift ever! A custom mixtape!",
+    "zh": "莫妮卡：莫妮卡：錢德勒，這是最棒的情人節禮物！特製混音帶！"
+  },
+  {
+    "en": "Chandler: Yes, I made it myself. I selected all the songs.",
+    "zh": "錢德勒：錢德勒：對，我自己錄的。所有歌都是我選的。"
+  },
+  {
+    "en": "Monica: Let's play it! I want to hear the first song.",
+    "zh": "莫妮卡：莫妮卡：我們播來聽聽！我想聽第一首歌。"
+  },
+  {
+    "en": "Janice: Happy Valentine's Day, channy-bear! I love you!",
+    "zh": "珍妮絲：珍妮絲：情人節快樂，channy-bear！我愛你！"
+  },
+  {
+    "en": "Monica: Chandler... is that Janice's voice?",
+    "zh": "莫妮卡：莫妮卡：錢德勒……那不是珍妮絲的聲音嗎？"
+  },
+  {
+    "en": "Chandler: I can explain! It was a very old cassette tape!",
+    "zh": "錢德勒：錢德勒：我可以解釋！這是一捲非常舊的卡帶！"
+  },
+  {
+    "en": "Phoebe: Why won't you stop beeping? I changed your battery twice!",
+    "zh": "菲比：你為什麼不停嗶嗶叫？我電池都換兩次了！"
+  },
+  {
+    "en": "Monica: Phoebe, what are you doing with that hammer?",
+    "zh": "莫妮卡：菲比，妳拿那把鐵鎚幹嘛？"
+  },
+  {
+    "en": "Phoebe: I'm going to kill this smoke detector!",
+    "zh": "菲比：我要砸爛這個住警器！"
+  },
+  {
+    "en": "Monica: Phoebe, no! You can't just smash it!",
+    "zh": "莫妮卡：菲比，不行！妳不能直接砸爛牠！"
+  },
+  {
+    "en": "Phoebe: I threw it down the trash chute and it beeped all the way down!",
+    "zh": "菲比：我把它扔進垃圾投遞道，結果牠一路叫到底！"
+  },
+  {
+    "en": "Fireman: Ma'am, did you throw a beeping fire alarm into the trash?",
+    "zh": "消防員：消防員：女士，是妳把一直嗶嗶叫的火警警報器丟進垃圾箱的嗎？"
+  },
+  {
+    "en": "Ross: Monica, Chandler, I have been practicing a song on the bagpipes for your wedding!",
+    "zh": "羅斯：羅斯：莫妮卡、錢德勒，我一直在用蘇格蘭風笛練習一首歌準備在你們婚禮上吹奏！"
+  },
+  {
+    "en": "Monica: Oh Ross, that is so... thoughtful.",
+    "zh": "莫妮卡：莫妮卡：喔羅斯，這真是太……貼心了。"
+  },
+  {
+    "en": "Ross: Let me play a little bit for you right now!",
+    "zh": "羅斯：羅斯：我現在就為你們吹一段！"
+  },
+  {
+    "en": "Phoebe: Oh, I know this song! Eeeee-eeeee-eeeee!",
+    "zh": "菲比：喔，我知道這首歌！咿——咿——咿——！"
+  },
+  {
+    "en": "Chandler: Phoebe, are you singing along to the sound of bagpipes?",
+    "zh": "錢德勒：錢德勒：菲比，妳是在跟著風笛的聲音一起唱歌嗎？"
+  },
+  {
+    "en": "Phoebe: Yes, I am! It's beautiful!",
+    "zh": "菲比：沒錯！這真美！"
+  },
+  {
+    "en": "Director: Okay Joey, just read the line: mm, noodle soup.",
+    "zh": "導演：導演：好的喬伊，只要念這句台詞：嗯，麵條湯（noodle soup）。"
+  },
+  {
+    "en": "Joey: Mm, soup!",
+    "zh": "喬伊：喬伊：嗯，湯！"
+  },
+  {
+    "en": "Director: No, Joey. You need to say \"noodle soup\".",
+    "zh": "導演：導演：不行，喬伊。你要說\"麵條湯\"。"
+  },
+  {
+    "en": "Joey: Mm, noodle... soup.",
+    "zh": "喬伊：喬伊：嗯，麵條……湯。"
+  },
+  {
+    "en": "Director: Can you say it naturally? Together?",
+    "zh": "導演：導演：你能念得自然點嗎？連在一起念？"
+  },
+  {
+    "en": "Joey: Mm, noodle! I mean, soup!",
+    "zh": "喬伊：喬伊：嗯，麵條！我是說，湯！"
+  },
+  {
+    "en": "Director: Okay, let's take a break.",
+    "zh": "導演：導演：好吧，我們先休息一下。"
+  },
+  {
+    "en": "Joey: Rachel, guess what! My character Dr. Drake Ramoray is coming back!",
+    "zh": "喬伊：喬伊：瑞秋，猜猜怎麼著！我的角色德瑞克·雷莫瑞醫生要回來了！"
+  },
+  {
+    "en": "Rachel: Really? I thought he fell down an elevator shaft and died.",
+    "zh": "瑞秋：真的嗎？我以為他掉進電梯井摔死了。"
+  },
+  {
+    "en": "Joey: He did! But now he is getting a brain transplant!",
+    "zh": "喬伊：喬伊：是摔死了！但現在他要接受腦移植！"
+  },
+  {
+    "en": "Rachel: A brain transplant? How is that even possible?",
+    "zh": "瑞秋：腦移植？這怎麼可能？"
+  },
+  {
+    "en": "Joey: They are putting the brain of Jessica Lockhart into my head!",
+    "zh": "喬伊：喬伊：他們要把潔西卡·洛克哈特的腦袋放到我的頭裡！"
+  },
+  {
+    "en": "Rachel: So you are playing a woman inside a man's body?",
+    "zh": "瑞秋：所以你要演一個卡在男人身體裡的女人？"
+  },
+  {
+    "en": "Joey: Exactly! I'm acting!",
+    "zh": "喬伊：喬伊：沒錯！這就是演技！"
+  },
+  {
+    "en": "Phoebe: Monica, look what I found in the bathroom. A red sweater.",
+    "zh": "菲比：莫妮卡，看我在浴室找到了什麼。一件紅毛衣。"
+  },
+  {
+    "en": "Monica: That is not Chandler's.",
+    "zh": "莫妮卡：那不是錢德勒的。"
+  },
+  {
+    "en": "Phoebe: And it's not Joey's. Which means... whoever owns this sweater is the father of Rachel's baby!",
+    "zh": "菲比：也不是喬伊的。這意味著……這件毛衣的主人就是瑞秋寶寶的爸爸！"
+  },
+  {
+    "en": "Joey: Oh! I know who that belongs to!",
+    "zh": "喬伊：喬伊：喔！我知道這件衣服是誰的！"
+  },
+  {
+    "en": "Monica: Joey, who is it?",
+    "zh": "莫妮卡：莫妮卡：喬伊，是誰的？"
+  },
+  {
+    "en": "Joey: It's Ross's! He left it here last week!",
+    "zh": "喬伊：喬伊：是羅斯的！他上週把它留在這的！"
+  },
+  {
+    "en": "Phoebe: Oh my God.",
+    "zh": "菲比：我的天啊。"
+  },
+  {
+    "en": "Monica: Chandler, are you still in the bath?",
+    "zh": "莫妮卡：莫妮卡：錢德勒，你還在泡澡嗎？"
+  },
+  {
+    "en": "Chandler: Yes, Monica. You were right. Baths are amazing.",
+    "zh": "錢德勒：錢德勒：在，莫妮卡。妳說得對。泡澡太棒了。"
+  },
+  {
+    "en": "Monica: I see you have bubbles, bath salts, and a little toy boat.",
+    "zh": "莫妮卡：莫妮卡：我看到你有泡泡、沐浴鹽，還有一隻小玩具船。"
+  },
+  {
+    "en": "Chandler: It's a very peaceful sanctuary.",
+    "zh": "錢德勒：錢德勒：這是一個非常寧靜的避風港。"
+  },
+  {
+    "en": "Monica: Well, you have been in there for two hours and your skin is completely wrinkled.",
+    "zh": "莫妮卡：莫妮卡：嗯，你已經在裡面待了兩個小時，你的皮膚都皺掉了。"
+  },
+  {
+    "en": "Chandler: I don't care. I am one with the water, Monica.",
+    "zh": "錢德勒：錢德勒：我不在乎。莫妮卡，我已經和水融為一體了。"
+  },
+  {
+    "en": "Joey: Monica, I finished my letter for the adoption agency!",
+    "zh": "喬伊：喬伊：莫妮卡，我寫完給收養機構的推薦信了！"
+  },
+  {
+    "en": "Monica: Let me read it. Joey, why did you write \"full-sized kangaroo\"?",
+    "zh": "莫妮卡：莫妮卡：我看看。喬伊，你為什麼寫\"足尺寸袋鼠\"？"
+  },
+  {
+    "en": "Joey: I used a thesaurus! I wanted to look smart!",
+    "zh": "喬伊：喬伊：我用了同義詞字典！我想看起來很聰明！"
+  },
+  {
+    "en": "Monica: Joey, a thesaurus doesn't just change every word automatically!",
+    "zh": "莫妮卡：莫妮卡：喬伊，同義詞字典又不是讓你自動隨便改每個字的！"
+  },
+  {
+    "en": "Joey: It does! I changed \"warm, nice people\" to \"humid, prepossessing Homo sapiens\"!",
+    "zh": "喬伊：喬伊：能啊！我把\"溫暖、友善的人\"改成了\"潮濕、引人注目的智人\"！"
+  },
+  {
+    "en": "And you signed it \"Baby Kangaroo Tribbiani\"?",
+    "zh": "莫妮卡：莫妮卡：而且你最後署名\"袋鼠寶寶·崔比亞尼\"（Baby Kangaroo Tribbiani）？"
+  },
+  {
+    "en": "Joey: Yes, I did! It sounds very professional!",
+    "zh": "喬伊：喬伊：沒錯！聽起來非常專業！"
+  }
 ]
