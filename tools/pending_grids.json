@@ -47,6 +47,11 @@
     },
     {
       "level": "B1",
+      "word": "accent",
+      "chinese": "口音"
+    },
+    {
+      "level": "B1",
       "word": "accept",
       "chinese": "接受"
     },
@@ -74,14 +79,14 @@
       "level": "B1",
       "word": "accompany",
       "chinese": "陪伴"
-    },
+    }
+  ],
+  "22": [
     {
       "level": "B1",
       "word": "accomplish",
       "chinese": "完成"
-    }
-  ],
-  "22": [
+    },
     {
       "level": "B1",
       "word": "accomplishment",
@@ -156,14 +161,14 @@
       "level": "B1",
       "word": "acute",
       "chinese": "急性的/敏銳的"
-    },
+    }
+  ],
+  "23": [
     {
       "level": "B1",
       "word": "add-on",
       "chinese": "附加產品"
-    }
-  ],
-  "23": [
+    },
     {
       "level": "B1",
       "word": "addendum",
@@ -238,14 +243,14 @@
       "level": "B1",
       "word": "adventure",
       "chinese": "冒險"
-    },
+    }
+  ],
+  "24": [
     {
       "level": "B1",
       "word": "adverse",
       "chinese": "不利的"
-    }
-  ],
-  "24": [
+    },
     {
       "level": "B1",
       "word": "aerial",
@@ -320,14 +325,14 @@
       "level": "B1",
       "word": "agriculture",
       "chinese": "農業"
-    },
+    }
+  ],
+  "25": [
     {
       "level": "B1",
       "word": "aid",
       "chinese": "幫助"
-    }
-  ],
-  "25": [
+    },
     {
       "level": "B2",
       "word": "AIDS",
@@ -402,14 +407,14 @@
       "level": "B1",
       "word": "alter",
       "chinese": "改變"
-    },
+    }
+  ],
+  "26": [
     {
       "level": "B1",
       "word": "alternate",
       "chinese": "交替"
-    }
-  ],
-  "26": [
+    },
     {
       "level": "B2",
       "word": "alternative",
@@ -484,14 +489,14 @@
       "level": "B1",
       "word": "analytics",
       "chinese": "數據分析"
-    },
+    }
+  ],
+  "27": [
     {
       "level": "B1",
       "word": "anchor",
       "chinese": "錨"
-    }
-  ],
-  "27": [
+    },
     {
       "level": "B1",
       "word": "angle",
@@ -566,14 +571,14 @@
       "level": "B1",
       "word": "antitrust",
       "chinese": "反壟斷"
-    },
+    }
+  ],
+  "28": [
     {
       "level": "B1",
       "word": "anxiety",
       "chinese": "焦慮"
-    }
-  ],
-  "28": [
+    },
     {
       "level": "B1",
       "word": "anxious",
@@ -648,14 +653,14 @@
       "level": "B1",
       "word": "appoint",
       "chinese": "任命"
-    },
+    }
+  ],
+  "29": [
     {
       "level": "B1",
       "word": "apprentice",
       "chinese": "學徒"
-    }
-  ],
-  "29": [
+    },
     {
       "level": "B2",
       "word": "approach",
@@ -730,14 +735,14 @@
       "level": "B1",
       "word": "arithmetic",
       "chinese": "算術"
-    },
+    }
+  ],
+  "30": [
     {
       "level": "B1",
       "word": "armor",
       "chinese": "盔甲"
-    }
-  ],
-  "30": [
+    },
     {
       "level": "B2",
       "word": "arms",
@@ -762,6 +767,11 @@
       "level": "B1",
       "word": "artery",
       "chinese": "動脈"
+    },
+    {
+      "level": "B1",
+      "word": "article",
+      "chinese": "文章"
     },
     {
       "level": "B2",
@@ -807,7 +817,9 @@
       "level": "B2",
       "word": "assistant",
       "chinese": "助理"
-    },
+    }
+  ],
+  "31": [
     {
       "level": "B2",
       "word": "associated",
@@ -817,9 +829,7 @@
       "level": "B1",
       "word": "association",
       "chinese": "協會"
-    }
-  ],
-  "31": [
+    },
     {
       "level": "B1",
       "word": "assume",
@@ -889,7 +899,9 @@
       "level": "B1",
       "word": "attitude",
       "chinese": "態度"
-    },
+    }
+  ],
+  "32": [
     {
       "level": "B1",
       "word": "attorney",
@@ -899,9 +911,7 @@
       "level": "B1",
       "word": "attraction",
       "chinese": "景點"
-    }
-  ],
-  "32": [
+    },
     {
       "level": "B2",
       "word": "auction",
@@ -971,7 +981,9 @@
       "level": "B1",
       "word": "awake",
       "chinese": "醒著的"
-    },
+    }
+  ],
+  "33": [
     {
       "level": "B1",
       "word": "award",
@@ -981,9 +993,7 @@
       "level": "B1",
       "word": "aware",
       "chinese": "意識到的"
-    }
-  ],
-  "33": [
+    },
     {
       "level": "B1",
       "word": "awesome",
@@ -1053,7 +1063,9 @@
       "level": "B1",
       "word": "balloon",
       "chinese": "氣球"
-    },
+    }
+  ],
+  "34": [
     {
       "level": "B1",
       "word": "bandwidth",
@@ -1063,9 +1075,7 @@
       "level": "B1",
       "word": "banister",
       "chinese": "扶手"
-    }
-  ],
-  "34": [
+    },
     {
       "level": "B1",
       "word": "bankrupt",
@@ -1122,9 +1132,91 @@
       "chinese": "障礙"
     },
     {
+      "level": "B1",
+      "word": "barter",
+      "chinese": "以物易物"
+    },
+    {
+      "level": "B1",
+      "word": "base",
+      "chinese": "底部"
+    },
+    {
+      "level": "B1",
+      "word": "baseball",
+      "chinese": "棒球"
+    }
+  ],
+  "35": [
+    {
+      "level": "B1",
+      "word": "baseboard",
+      "chinese": "踢腳線"
+    },
+    {
+      "level": "B1",
+      "word": "basin",
+      "chinese": "盆地"
+    },
+    {
+      "level": "B1",
+      "word": "basis",
+      "chinese": "基礎"
+    },
+    {
+      "level": "B1",
+      "word": "basket",
+      "chinese": "籃子"
+    },
+    {
+      "level": "B1",
+      "word": "basketball",
+      "chinese": "籃球"
+    },
+    {
+      "level": "B1",
+      "word": "bay",
+      "chinese": "海灣"
+    },
+    {
+      "level": "B1",
+      "word": "bazaar",
+      "chinese": "集市"
+    },
+    {
+      "level": "B1",
+      "word": "beam",
+      "chinese": "光束"
+    },
+    {
+      "level": "B1",
+      "word": "bean",
+      "chinese": "豆"
+    },
+    {
+      "level": "B1",
+      "word": "beanie",
+      "chinese": "針織帽"
+    },
+    {
       "level": "B2",
       "word": "beauty",
       "chinese": "美麗"
+    },
+    {
+      "level": "B1",
+      "word": "beaver",
+      "chinese": "河狸"
+    },
+    {
+      "level": "B1",
+      "word": "beetle",
+      "chinese": "甲蟲"
+    },
+    {
+      "level": "B1",
+      "word": "behavior",
+      "chinese": "行為"
     },
     {
       "level": "B2",
@@ -1132,9 +1224,56 @@
       "chinese": "存在 / 生物"
     },
     {
+      "level": "B1",
+      "word": "belief",
+      "chinese": "信念"
+    }
+  ],
+  "36": [
+    {
+      "level": "B1",
+      "word": "bell",
+      "chinese": "鈴"
+    },
+    {
+      "level": "B1",
+      "word": "bend",
+      "chinese": "彎曲"
+    },
+    {
+      "level": "B1",
+      "word": "benefit",
+      "chinese": "福利"
+    },
+    {
+      "level": "B1",
+      "word": "benefits",
+      "chinese": "福利"
+    },
+    {
+      "level": "B1",
+      "word": "berth",
+      "chinese": "鋪位"
+    },
+    {
+      "level": "B1",
+      "word": "beta",
+      "chinese": "測試版"
+    },
+    {
       "level": "B2",
       "word": "beyond",
       "chinese": "超過 / 在…之外"
+    },
+    {
+      "level": "B1",
+      "word": "bibimbap",
+      "chinese": "拌飯"
+    },
+    {
+      "level": "B1",
+      "word": "bibliography",
+      "chinese": "參考文獻"
     },
     {
       "level": "B2",
@@ -1142,16 +1281,476 @@
       "chinese": "投標"
     },
     {
+      "level": "B1",
+      "word": "bike-sharing",
+      "chinese": "共享單車"
+    },
+    {
+      "level": "B1",
+      "word": "billboard",
+      "chinese": "廣告牌"
+    },
+    {
+      "level": "B1",
+      "word": "billion",
+      "chinese": "十億"
+    },
+    {
+      "level": "B1",
+      "word": "bind",
+      "chinese": "綁"
+    },
+    {
+      "level": "B1",
+      "word": "birch",
+      "chinese": "樺樹"
+    },
+    {
+      "level": "B1",
+      "word": "bistro",
+      "chinese": "小餐館"
+    }
+  ],
+  "37": [
+    {
+      "level": "B1",
+      "word": "bite",
+      "chinese": "咬"
+    },
+    {
+      "level": "B1",
+      "word": "biweekly",
+      "chinese": "雙周的"
+    },
+    {
+      "level": "B1",
+      "word": "blame",
+      "chinese": "責怪"
+    },
+    {
+      "level": "B1",
+      "word": "blanch",
+      "chinese": "焯"
+    },
+    {
+      "level": "B1",
+      "word": "bland",
+      "chinese": "清淡的"
+    },
+    {
+      "level": "B1",
+      "word": "blank",
+      "chinese": "空白的"
+    },
+    {
+      "level": "B1",
+      "word": "blast",
+      "chinese": "爆炸"
+    },
+    {
+      "level": "B1",
+      "word": "bleach",
+      "chinese": "漂白"
+    },
+    {
+      "level": "B1",
+      "word": "blend",
+      "chinese": "混合"
+    },
+    {
+      "level": "B1",
+      "word": "bless",
+      "chinese": "祝福"
+    },
+    {
+      "level": "B1",
+      "word": "blind",
+      "chinese": "瞎的"
+    },
+    {
       "level": "B2",
       "word": "block",
       "chinese": "阻撓"
+    },
+    {
+      "level": "B1",
+      "word": "bloom",
+      "chinese": "開花"
+    },
+    {
+      "level": "B1",
+      "word": "blossom",
+      "chinese": "盛開"
+    },
+    {
+      "level": "B1",
+      "word": "blow",
+      "chinese": "吹"
+    },
+    {
+      "level": "B1",
+      "word": "blueprint",
+      "chinese": "藍圖"
     }
   ],
-  "35": [
+  "38": [
+    {
+      "level": "B1",
+      "word": "blustery",
+      "chinese": "颳風的"
+    },
+    {
+      "level": "B1",
+      "word": "board",
+      "chinese": "板/董事會"
+    },
+    {
+      "level": "B1",
+      "word": "boardwalk",
+      "chinese": "木棧道"
+    },
+    {
+      "level": "B1",
+      "word": "boast",
+      "chinese": "吹噓"
+    },
+    {
+      "level": "B1",
+      "word": "bodysuit",
+      "chinese": "連體衣"
+    },
+    {
+      "level": "B1",
+      "word": "boiler",
+      "chinese": "鍋爐"
+    },
+    {
+      "level": "B1",
+      "word": "boiling",
+      "chinese": "酷熱的"
+    },
+    {
+      "level": "B1",
+      "word": "bold",
+      "chinese": "大膽的"
+    },
+    {
+      "level": "B1",
+      "word": "bolognese",
+      "chinese": "肉醬"
+    },
+    {
+      "level": "B1",
+      "word": "bolt",
+      "chinese": "閃電"
+    },
+    {
+      "level": "B1",
+      "word": "bomb",
+      "chinese": "炸彈"
+    },
+    {
+      "level": "B1",
+      "word": "bonding",
+      "chinese": "聯繫"
+    },
+    {
+      "level": "B1",
+      "word": "bookkeeper",
+      "chinese": "記帳員"
+    },
+    {
+      "level": "B1",
+      "word": "bookkeeping",
+      "chinese": "簿記"
+    },
+    {
+      "level": "B1",
+      "word": "bookmark",
+      "chinese": "書籤"
+    },
+    {
+      "level": "B1",
+      "word": "boost",
+      "chinese": "提升"
+    }
+  ],
+  "39": [
+    {
+      "level": "B1",
+      "word": "border",
+      "chinese": "邊界"
+    },
+    {
+      "level": "B1",
+      "word": "borderline",
+      "chinese": "邊界；國界"
+    },
+    {
+      "level": "B1",
+      "word": "bother",
+      "chinese": "打擾"
+    },
+    {
+      "level": "B1",
+      "word": "bottle-feed",
+      "chinese": "奶瓶餵養"
+    },
+    {
+      "level": "B1",
+      "word": "boulevard",
+      "chinese": "大道/林蔭大道"
+    },
+    {
+      "level": "B1",
+      "word": "bounce",
+      "chinese": "彈跳"
+    },
+    {
+      "level": "B1",
+      "word": "bound",
+      "chinese": "必定的/跳"
+    },
+    {
+      "level": "B1",
+      "word": "boundary",
+      "chinese": "界線"
+    },
+    {
+      "level": "B1",
+      "word": "boutique",
+      "chinese": "精品店"
+    },
+    {
+      "level": "B1",
+      "word": "bow",
+      "chinese": "鞠躬"
+    },
+    {
+      "level": "B1",
+      "word": "bracelet",
+      "chinese": "手鐲"
+    },
+    {
+      "level": "B1",
+      "word": "brainstorm",
+      "chinese": "頭腦風暴"
+    },
+    {
+      "level": "B1",
+      "word": "braise",
+      "chinese": "燉"
+    },
+    {
+      "level": "B1",
+      "word": "branch",
+      "chinese": "分支"
+    },
+    {
+      "level": "B1",
+      "word": "branding",
+      "chinese": "品牌建設"
+    },
+    {
+      "level": "B1",
+      "word": "brave",
+      "chinese": "勇敢的"
+    }
+  ],
+  "40": [
+    {
+      "level": "B1",
+      "word": "breach",
+      "chinese": "違約"
+    },
+    {
+      "level": "B1",
+      "word": "breadcrumb",
+      "chinese": "麵包屑"
+    },
+    {
+      "level": "B1",
+      "word": "breadstick",
+      "chinese": "麵包棒"
+    },
+    {
+      "level": "B1",
+      "word": "breakeven",
+      "chinese": "收支平衡"
+    },
     {
       "level": "B2",
       "word": "breast",
       "chinese": "乳房 / 胸部"
+    },
+    {
+      "level": "B1",
+      "word": "breastfeeding",
+      "chinese": "母乳餵養"
+    },
+    {
+      "level": "B1",
+      "word": "breathable",
+      "chinese": "透氣"
+    },
+    {
+      "level": "B1",
+      "word": "breathing",
+      "chinese": "呼吸"
+    },
+    {
+      "level": "B1",
+      "word": "breed",
+      "chinese": "繁殖"
+    },
+    {
+      "level": "B1",
+      "word": "breeze",
+      "chinese": "微風"
+    },
+    {
+      "level": "B1",
+      "word": "bribe",
+      "chinese": "賄賂"
+    },
+    {
+      "level": "B1",
+      "word": "bribery",
+      "chinese": "賄賂"
+    },
+    {
+      "level": "B1",
+      "word": "brick",
+      "chinese": "磚"
+    },
+    {
+      "level": "B1",
+      "word": "brief",
+      "chinese": "簡短的"
+    },
+    {
+      "level": "B1",
+      "word": "briefcase",
+      "chinese": "公文包"
+    },
+    {
+      "level": "B1",
+      "word": "briefing",
+      "chinese": "簡報"
+    }
+  ],
+  "41": [
+    {
+      "level": "B1",
+      "word": "brilliant",
+      "chinese": "傑出的"
+    },
+    {
+      "level": "B1",
+      "word": "brim",
+      "chinese": "帽簷"
+    },
+    {
+      "level": "B1",
+      "word": "broad",
+      "chinese": "寬廣的"
+    },
+    {
+      "level": "B1",
+      "word": "broadband",
+      "chinese": "寬帶"
+    },
+    {
+      "level": "B1",
+      "word": "broadcast",
+      "chinese": "廣播"
+    },
+    {
+      "level": "B1",
+      "word": "brochure",
+      "chinese": "宣傳冊"
+    },
+    {
+      "level": "B1",
+      "word": "broom",
+      "chinese": "掃帚"
+    },
+    {
+      "level": "B1",
+      "word": "broth",
+      "chinese": "肉湯"
+    },
+    {
+      "level": "B1",
+      "word": "brother-in-law",
+      "chinese": "姐夫"
+    },
+    {
+      "level": "B1",
+      "word": "browse",
+      "chinese": "瀏覽"
+    },
+    {
+      "level": "B1",
+      "word": "browser",
+      "chinese": "瀏覽器"
+    },
+    {
+      "level": "B1",
+      "word": "bubble",
+      "chinese": "泡泡"
+    },
+    {
+      "level": "B1",
+      "word": "bucket",
+      "chinese": "水桶"
+    },
+    {
+      "level": "B1",
+      "word": "bud",
+      "chinese": "花蕾"
+    },
+    {
+      "level": "B1",
+      "word": "budget",
+      "chinese": "預算"
+    },
+    {
+      "level": "B1",
+      "word": "buffer",
+      "chinese": "緩衝"
+    }
+  ],
+  "42": [
+    {
+      "level": "B1",
+      "word": "bulk",
+      "chinese": "大量"
+    },
+    {
+      "level": "B1",
+      "word": "bullet",
+      "chinese": "子彈"
+    },
+    {
+      "level": "B1",
+      "word": "bulletin",
+      "chinese": "公告"
+    },
+    {
+      "level": "B1",
+      "word": "bundle",
+      "chinese": "捆"
+    },
+    {
+      "level": "B1",
+      "word": "bungalow",
+      "chinese": "平房"
+    },
+    {
+      "level": "B1",
+      "word": "burden",
+      "chinese": "負擔"
     },
     {
       "level": "B2",
@@ -1159,14 +1758,138 @@
       "chinese": "局"
     },
     {
+      "level": "B1",
+      "word": "burnout",
+      "chinese": "倦怠"
+    },
+    {
+      "level": "B1",
+      "word": "burrow",
+      "chinese": "洞穴"
+    },
+    {
+      "level": "B1",
+      "word": "burst",
+      "chinese": "爆發"
+    },
+    {
+      "level": "B1",
+      "word": "bury",
+      "chinese": "埋葬"
+    },
+    {
+      "level": "B1",
+      "word": "bush",
+      "chinese": "灌木"
+    },
+    {
+      "level": "B1",
+      "word": "butterscotch",
+      "chinese": "奶油糖"
+    },
+    {
+      "level": "B1",
+      "word": "buyer",
+      "chinese": "買家"
+    },
+    {
+      "level": "B1",
+      "word": "buyout",
+      "chinese": "收購"
+    },
+    {
+      "level": "B1",
+      "word": "bylaws",
+      "chinese": "章程"
+    }
+  ],
+  "43": [
+    {
+      "level": "B1",
+      "word": "bypass",
+      "chinese": "繞城公路"
+    },
+    {
+      "level": "B1",
+      "word": "bystander",
+      "chinese": "旁觀者"
+    },
+    {
+      "level": "B1",
+      "word": "cabin",
+      "chinese": "小木屋"
+    },
+    {
+      "level": "B1",
+      "word": "cache",
+      "chinese": "緩存"
+    },
+    {
+      "level": "B1",
+      "word": "cage",
+      "chinese": "籠子"
+    },
+    {
+      "level": "B1",
+      "word": "calculate",
+      "chinese": "計算"
+    },
+    {
+      "level": "B1",
+      "word": "camouflage",
+      "chinese": "偽裝"
+    },
+    {
       "level": "B2",
       "word": "campaign",
       "chinese": "運動"
     },
     {
+      "level": "B1",
+      "word": "campervan",
+      "chinese": "露營車"
+    },
+    {
+      "level": "B1",
+      "word": "campsite",
+      "chinese": "營地"
+    },
+    {
       "level": "B2",
       "word": "campus",
       "chinese": "校園"
+    },
+    {
+      "level": "B1",
+      "word": "canal",
+      "chinese": "運河"
+    },
+    {
+      "level": "B1",
+      "word": "cancer",
+      "chinese": "癌症"
+    },
+    {
+      "level": "B1",
+      "word": "candidate",
+      "chinese": "候選人"
+    },
+    {
+      "level": "B1",
+      "word": "candle",
+      "chinese": "蠟燭"
+    },
+    {
+      "level": "B1",
+      "word": "canvas",
+      "chinese": "帆布"
+    }
+  ],
+  "44": [
+    {
+      "level": "B1",
+      "word": "canyon",
+      "chinese": "峽谷"
     },
     {
       "level": "B2",
@@ -1179,14 +1902,342 @@
       "chinese": "資本"
     },
     {
+      "level": "B1",
+      "word": "capitalism",
+      "chinese": "資本主義"
+    },
+    {
+      "level": "B1",
+      "word": "cappuccino",
+      "chinese": "卡布奇諾"
+    },
+    {
+      "level": "B1",
+      "word": "caravan",
+      "chinese": "房車"
+    },
+    {
+      "level": "B1",
+      "word": "carbohydrate",
+      "chinese": "碳水化合物"
+    },
+    {
+      "level": "B1",
+      "word": "carbonara",
+      "chinese": "培根蛋面"
+    },
+    {
+      "level": "B1",
+      "word": "cardboard",
+      "chinese": "紙板"
+    },
+    {
+      "level": "B1",
+      "word": "career",
+      "chinese": "職業生涯"
+    },
+    {
+      "level": "B1",
+      "word": "caregiver",
+      "chinese": "照顧者"
+    },
+    {
+      "level": "B1",
+      "word": "careless",
+      "chinese": "粗心的"
+    },
+    {
+      "level": "B1",
+      "word": "caretaker",
+      "chinese": "照顧者"
+    },
+    {
+      "level": "B1",
+      "word": "cargo",
+      "chinese": "貨物"
+    },
+    {
+      "level": "B1",
+      "word": "carnivore",
+      "chinese": "食肉動物"
+    },
+    {
+      "level": "B1",
+      "word": "carousel",
+      "chinese": "行李轉盤"
+    }
+  ],
+  "45": [
+    {
+      "level": "B1",
+      "word": "carpenter",
+      "chinese": "木匠"
+    },
+    {
+      "level": "B1",
+      "word": "carpool",
+      "chinese": "拼車"
+    },
+    {
+      "level": "B1",
+      "word": "carport",
+      "chinese": "車棚"
+    },
+    {
+      "level": "B1",
+      "word": "carriage",
+      "chinese": "馬車"
+    },
+    {
+      "level": "B1",
+      "word": "cart",
+      "chinese": "推車"
+    },
+    {
+      "level": "B1",
+      "word": "carve",
+      "chinese": "雕刻"
+    },
+    {
+      "level": "B1",
+      "word": "cases",
+      "chinese": "案例"
+    },
+    {
+      "level": "B1",
+      "word": "cashback",
+      "chinese": "返現"
+    },
+    {
+      "level": "B1",
+      "word": "cashier",
+      "chinese": "現金出納員"
+    },
+    {
+      "level": "B1",
+      "word": "cashmere",
+      "chinese": "開司米"
+    },
+    {
+      "level": "B1",
+      "word": "casserole",
+      "chinese": "砂鍋菜"
+    },
+    {
+      "level": "B1",
+      "word": "cast",
+      "chinese": "投擲/演員陣容"
+    },
+    {
+      "level": "B1",
+      "word": "castle",
+      "chinese": "城堡"
+    },
+    {
+      "level": "B1",
+      "word": "casual",
+      "chinese": "隨意的"
+    },
+    {
+      "level": "B1",
+      "word": "catalog",
+      "chinese": "目錄"
+    },
+    {
+      "level": "B1",
+      "word": "catastrophe",
+      "chinese": "災難"
+    }
+  ],
+  "46": [
+    {
       "level": "B2",
       "word": "category",
       "chinese": "類別"
     },
     {
+      "level": "B1",
+      "word": "catering",
+      "chinese": "餐飲"
+    },
+    {
+      "level": "B1",
+      "word": "cathedral",
+      "chinese": "大教堂"
+    },
+    {
+      "level": "B1",
+      "word": "cattle",
+      "chinese": "牛"
+    },
+    {
+      "level": "B1",
+      "word": "caulk",
+      "chinese": "密封膠"
+    },
+    {
+      "level": "B1",
+      "word": "cave",
+      "chinese": "洞穴"
+    },
+    {
+      "level": "B1",
+      "word": "cedar",
+      "chinese": "雪松"
+    },
+    {
+      "level": "B1",
+      "word": "cell",
+      "chinese": "細胞/手機"
+    },
+    {
+      "level": "B1",
+      "word": "cement",
+      "chinese": "水泥"
+    },
+    {
+      "level": "B1",
+      "word": "cemetery",
+      "chinese": "墓地"
+    },
+    {
+      "level": "B1",
+      "word": "center",
+      "chinese": "中心"
+    },
+    {
+      "level": "B1",
+      "word": "central",
+      "chinese": "中央"
+    },
+    {
+      "level": "B1",
+      "word": "ceramic",
+      "chinese": "陶瓷的"
+    },
+    {
+      "level": "B1",
+      "word": "certainly",
+      "chinese": "當然"
+    },
+    {
       "level": "B2",
       "word": "certificate",
       "chinese": "證書"
+    },
+    {
+      "level": "B1",
+      "word": "chai",
+      "chinese": "印度奶茶"
+    }
+  ],
+  "47": [
+    {
+      "level": "B1",
+      "word": "chalet",
+      "chinese": "小木屋"
+    },
+    {
+      "level": "B1",
+      "word": "chalk",
+      "chinese": "粉筆"
+    },
+    {
+      "level": "B1",
+      "word": "chamber",
+      "chinese": "房間/腔室"
+    },
+    {
+      "level": "B1",
+      "word": "chameleon",
+      "chinese": "變色龍"
+    },
+    {
+      "level": "B1",
+      "word": "chamomile",
+      "chinese": "洋甘菊"
+    },
+    {
+      "level": "B1",
+      "word": "champion",
+      "chinese": "冠軍"
+    },
+    {
+      "level": "B1",
+      "word": "chandelier",
+      "chinese": "水晶燈"
+    },
+    {
+      "level": "B1",
+      "word": "channel",
+      "chinese": "頻道"
+    },
+    {
+      "level": "B1",
+      "word": "chapter",
+      "chinese": "章節"
+    },
+    {
+      "level": "B1",
+      "word": "character",
+      "chinese": "角色"
+    },
+    {
+      "level": "B1",
+      "word": "charcoal",
+      "chinese": "木炭"
+    },
+    {
+      "level": "B1",
+      "word": "charger",
+      "chinese": "充電器"
+    },
+    {
+      "level": "B1",
+      "word": "chart",
+      "chinese": "圖表"
+    },
+    {
+      "level": "B1",
+      "word": "chase",
+      "chinese": "追逐"
+    },
+    {
+      "level": "B1",
+      "word": "cheat",
+      "chinese": "作弊"
+    },
+    {
+      "level": "B1",
+      "word": "checkup",
+      "chinese": "體檢"
+    }
+  ],
+  "48": [
+    {
+      "level": "B1",
+      "word": "cheerful",
+      "chinese": "開朗的"
+    },
+    {
+      "level": "B1",
+      "word": "chest",
+      "chinese": "胸部/箱子"
+    },
+    {
+      "level": "B1",
+      "word": "chief",
+      "chinese": "首席的"
+    },
+    {
+      "level": "B1",
+      "word": "chiffon",
+      "chinese": "雪紡"
+    },
+    {
+      "level": "B1",
+      "word": "childbirth",
+      "chinese": "分娩"
     },
     {
       "level": "B2",
@@ -1227,9 +2278,7 @@
       "level": "B2",
       "word": "commerce",
       "chinese": "商業"
-    }
-  ],
-  "36": [
+    },
     {
       "level": "B2",
       "word": "compliance",
@@ -1244,7 +2293,9 @@
       "level": "B2",
       "word": "concept",
       "chinese": "概念"
-    },
+    }
+  ],
+  "49": [
     {
       "level": "B2",
       "word": "condition",
@@ -1309,9 +2360,7 @@
       "level": "B2",
       "word": "criteria",
       "chinese": "標準"
-    }
-  ],
-  "37": [
+    },
     {
       "level": "B2",
       "word": "critical",
@@ -1326,7 +2375,9 @@
       "level": "B2",
       "word": "data",
       "chinese": "數據"
-    },
+    }
+  ],
+  "50": [
     {
       "level": "B2",
       "word": "debt",
@@ -1391,9 +2442,7 @@
       "level": "B2",
       "word": "distribution",
       "chinese": "分配"
-    }
-  ],
-  "38": [
+    },
     {
       "level": "B2",
       "word": "division",
@@ -1408,7 +2457,9 @@
       "level": "B2",
       "word": "domain",
       "chinese": "領域"
-    },
+    }
+  ],
+  "51": [
     {
       "level": "B2",
       "word": "domestic",
@@ -1473,9 +2524,7 @@
       "level": "B2",
       "word": "ensure",
       "chinese": "確保"
-    }
-  ],
-  "39": [
+    },
     {
       "level": "B2",
       "word": "enterprise",
@@ -1490,7 +2539,9 @@
       "level": "B2",
       "word": "essential",
       "chinese": "必要的"
-    },
+    }
+  ],
+  "52": [
     {
       "level": "B2",
       "word": "estate",
@@ -1555,9 +2606,7 @@
       "level": "B2",
       "word": "faith",
       "chinese": "信念"
-    }
-  ],
-  "40": [
+    },
     {
       "level": "B2",
       "word": "fantasy",
@@ -1572,7 +2621,9 @@
       "level": "B2",
       "word": "festival",
       "chinese": "節日"
-    },
+    }
+  ],
+  "53": [
     {
       "level": "B2",
       "word": "finance",
@@ -1637,9 +2688,7 @@
       "level": "B2",
       "word": "gaming",
       "chinese": "遊戲"
-    }
-  ],
-  "41": [
+    },
     {
       "level": "B2",
       "word": "gay",
@@ -1654,7 +2703,9 @@
       "level": "B2",
       "word": "gender",
       "chinese": "性別"
-    },
+    }
+  ],
+  "54": [
     {
       "level": "B2",
       "word": "gene",
@@ -1719,9 +2770,7 @@
       "level": "B2",
       "word": "ID",
       "chinese": "身份證件"
-    }
-  ],
-  "42": [
+    },
     {
       "level": "B2",
       "word": "identify",
@@ -1736,7 +2785,9 @@
       "level": "B2",
       "word": "importance",
       "chinese": "重要性"
-    },
+    }
+  ],
+  "55": [
     {
       "level": "B2",
       "word": "inch",
@@ -1801,9 +2852,7 @@
       "level": "B2",
       "word": "introduction",
       "chinese": "介紹"
-    }
-  ],
-  "43": [
+    },
     {
       "level": "B2",
       "word": "joint",
@@ -1818,7 +2867,9 @@
       "level": "B2",
       "word": "junior",
       "chinese": "初級的"
-    },
+    }
+  ],
+  "56": [
     {
       "level": "B2",
       "word": "justice",
@@ -1883,9 +2934,7 @@
       "level": "B2",
       "word": "lower",
       "chinese": "降低"
-    }
-  ],
-  "44": [
+    },
     {
       "level": "B2",
       "word": "maintenance",
@@ -1900,7 +2949,9 @@
       "level": "B2",
       "word": "manufacturing",
       "chinese": "製造"
-    },
+    }
+  ],
+  "57": [
     {
       "level": "B2",
       "word": "market",
@@ -1965,9 +3016,7 @@
       "level": "B2",
       "word": "mostly",
       "chinese": "大多"
-    }
-  ],
-  "45": [
+    },
     {
       "level": "B2",
       "word": "motor",
@@ -1982,7 +3031,9 @@
       "level": "B2",
       "word": "multimedia",
       "chinese": "多媒體"
-    },
+    }
+  ],
+  "58": [
     {
       "level": "B2",
       "word": "naked",
@@ -2045,11 +3096,14 @@
     },
     {
       "level": "B2",
+      "word": "policy",
+      "chinese": "政策"
+    },
+    {
+      "level": "B2",
       "word": "portable",
       "chinese": "可攜的"
-    }
-  ],
-  "46": [
+    },
     {
       "level": "B2",
       "word": "presence",
@@ -2059,7 +3113,9 @@
       "level": "B2",
       "word": "prevent",
       "chinese": "防止"
-    },
+    }
+  ],
+  "59": [
     {
       "level": "B2",
       "word": "previously",
@@ -2087,6 +3143,11 @@
     },
     {
       "level": "B2",
+      "word": "produce",
+      "chinese": "生產"
+    },
+    {
+      "level": "B2",
       "word": "programming",
       "chinese": "編程"
     },
@@ -2094,6 +3155,11 @@
       "level": "B2",
       "word": "promote",
       "chinese": "推進"
+    },
+    {
+      "level": "B2",
+      "word": "proof",
+      "chinese": "證據 / 證明"
     },
     {
       "level": "B2",
@@ -2131,7 +3197,7 @@
       "chinese": "等級 / 職位"
     }
   ],
-  "47": [
+  "60": [
     {
       "level": "B2",
       "word": "rating",
@@ -2213,7 +3279,7 @@
       "chinese": "共和國"
     }
   ],
-  "48": [
+  "61": [
     {
       "level": "B2",
       "word": "request",
@@ -2295,7 +3361,7 @@
       "chinese": "選擇"
     }
   ],
-  "49": [
+  "62": [
     {
       "level": "B2",
       "word": "selection",
@@ -2377,7 +3443,7 @@
       "chinese": "統計"
     }
   ],
-  "50": [
+  "63": [
     {
       "level": "B2",
       "word": "status",
@@ -2459,7 +3525,7 @@
       "chinese": "終極的"
     }
   ],
-  "51": [
+  "64": [
     {
       "level": "B2",
       "word": "unique",

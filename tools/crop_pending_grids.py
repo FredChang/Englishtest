@@ -50,8 +50,8 @@ def main():
     with open(GRIDS_PATH, "r", encoding="utf-8") as f:
         grids = json.load(f)
 
-    # We want to process grid 21 to 51
-    grid_numbers = [str(num) for num in range(21, 52)]
+    # We want to process grid 21 to 64
+    grid_numbers = [str(num) for num in range(21, 65)]
     
     total_cropped = 0
     total_updated = 0

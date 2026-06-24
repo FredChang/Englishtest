@@ -55,20 +55,20 @@ def main():
     b2_missing.sort(key=lambda x: x["word"].lower())
     b1_missing.sort(key=lambda x: x["word"].lower())
 
-    # We need exactly 496 words: all 299 B2 words + 197 B1 words
+    # We need exactly 704 words: all 302 B2 words + 402 B1 words
     selected_b2 = b2_missing
-    selected_b1 = b1_missing[:197]
+    selected_b1 = b1_missing[:402]
 
     selected_words = selected_b2 + selected_b1
     # Sort the combined selection alphabetically by word
     selected_words.sort(key=lambda x: x["word"].lower())
 
     print(f"Selected {len(selected_b2)} B2 words and {len(selected_b1)} B1 words.")
-    print(f"Total selected: {len(selected_words)} (target is 496)")
+    print(f"Total selected: {len(selected_words)} (target is 704)")
 
-    # Group into 31 grids (numbered 21 to 51) of 16 words each
+    # Group into 44 grids (numbered 21 to 64) of 16 words each
     grids = {}
-    for i in range(31):
+    for i in range(44):
         grid_num = str(21 + i)
         start_idx = i * 16
         end_idx = start_idx + 16
