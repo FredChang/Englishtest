@@ -1010,7 +1010,7 @@
     "Level": "A1",
     "Chinese": "能夠",
     "English": [
-      "can1"
+      "can"
     ],
     "Phonetic": "/kæn/",
     "Roots": []
@@ -1286,15 +1286,6 @@
       "close"
     ],
     "Phonetic": "/kloʊz/"
-  },
-  {
-    "Level": "A1",
-    "Chinese": "關閉",
-    "English": [
-      "close1"
-    ],
-    "Phonetic": "/kloʊz/",
-    "Roots": []
   },
   {
     "Level": "A1",
@@ -1718,15 +1709,6 @@
     "Chinese": "做",
     "English": [
       "do"
-    ],
-    "Phonetic": "/duː/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
-    "Chinese": "做",
-    "English": [
-      "do1"
     ],
     "Phonetic": "/duː/",
     "Roots": []
@@ -3654,15 +3636,6 @@
   },
   {
     "Level": "A1",
-    "Chinese": "躺",
-    "English": [
-      "lie1"
-    ],
-    "Phonetic": "/laɪ/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
     "Chinese": "生活",
     "English": [
       "life"
@@ -3739,15 +3712,6 @@
   },
   {
     "Level": "A1",
-    "Chinese": "居住",
-    "English": [
-      "live1"
-    ],
-    "Phonetic": "/lɪv/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
     "Chinese": "鎖",
     "English": [
       "lock"
@@ -3761,15 +3725,6 @@
     "English": [
       "long"
     ]
-  },
-  {
-    "Level": "A1",
-    "Chinese": "長",
-    "English": [
-      "long1"
-    ],
-    "Phonetic": "/lɒŋ/",
-    "Roots": []
   },
   {
     "Level": "A1",
@@ -4079,15 +4034,6 @@
       "minute"
     ],
     "Phonetic": "/ˈmɪnət/"
-  },
-  {
-    "Level": "A1",
-    "Chinese": "分鐘",
-    "English": [
-      "minute1"
-    ],
-    "Phonetic": "/mɪnɪt/",
-    "Roots": []
   },
   {
     "Level": "A1",
@@ -9536,21 +9482,12 @@
   },
   {
     "Level": "A2",
-    "Chinese": "可以",
+    "Chinese": "可以 / 罐頭",
     "English": [
       "can",
       "could"
     ],
     "Phonetic": "/kæn/"
-  },
-  {
-    "Level": "A2",
-    "Chinese": "罐頭",
-    "English": [
-      "can2"
-    ],
-    "Phonetic": "/kæn/",
-    "Roots": []
   },
   {
     "Level": "A2",
@@ -9990,7 +9927,7 @@
     "Level": "A2",
     "Chinese": "近的",
     "English": [
-      "close2"
+      "close"
     ],
     "Phonetic": "/kloʊs/",
     "Roots": []
@@ -14121,7 +14058,7 @@
     "Level": "A2",
     "Chinese": "領導",
     "English": [
-      "lead1"
+      "lead"
     ],
     "Phonetic": "/liːd/",
     "Roots": []
@@ -16899,7 +16836,7 @@
     "Level": "A2",
     "Chinese": "拒絕",
     "English": [
-      "refuse1"
+      "refuse"
     ],
     "Phonetic": "/rɪˈfjuːz/",
     "Roots": []
@@ -17180,27 +17117,9 @@
   },
   {
     "Level": "A2",
-    "Chinese": "戒指",
+    "Chinese": "戒指 / 按鈴",
     "English": [
       "ring"
-    ],
-    "Phonetic": "/rɪŋ/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
-    "Chinese": "戒指，環",
-    "English": [
-      "ring1"
-    ],
-    "Phonetic": "/rɪŋ/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
-    "Chinese": "響鈴，打電話",
-    "English": [
-      "ring2"
     ],
     "Phonetic": "/rɪŋ/",
     "Roots": []
@@ -20593,7 +20512,7 @@
     "Level": "A2",
     "Chinese": "風",
     "English": [
-      "wind1"
+      "wind"
     ],
     "Phonetic": "/wɪnd/",
     "Roots": []
@@ -20915,15 +20834,6 @@
       "zucchini"
     ],
     "Phonetic": "/zuːˈkiːni/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "5G",
-    "English": [
-      "5G"
-    ],
-    "Phonetic": "/faɪv dʒiː/",
     "Roots": []
   },
   {
@@ -25942,15 +25852,6 @@
       "content"
     ],
     "Phonetic": "/ˈkɑntɛnt/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "內容",
-    "English": [
-      "content1"
-    ],
-    "Phonetic": "/ˈkɒntɛnt/",
     "Roots": []
   },
   {
@@ -32643,7 +32544,7 @@
     "Level": "B1",
     "Chinese": "現場的",
     "English": [
-      "live2"
+      "live"
     ],
     "Phonetic": "/laɪv/",
     "Roots": []
@@ -35405,18 +35306,9 @@
   },
   {
     "Level": "B1",
-    "Chinese": "加",
+    "Chinese": "加 / 加上",
     "English": [
       "plus"
-    ],
-    "Phonetic": "/plʌs/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "加上",
-    "English": [
-      "plus1"
     ],
     "Phonetic": "/plʌs/",
     "Roots": []
@@ -37668,15 +37560,6 @@
       "row"
     ],
     "Phonetic": "/roʊ/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "排",
-    "English": [
-      "row1"
-    ],
-    "Phonetic": "/rəʊ/",
     "Roots": []
   },
   {
@@ -41461,27 +41344,9 @@
   },
   {
     "Level": "B1",
-    "Chinese": "二手的",
+    "Chinese": "習慣的 / 用過的",
     "English": [
       "used"
-    ],
-    "Phonetic": "/juːzd/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "習慣的",
-    "English": [
-      "used1"
-    ],
-    "Phonetic": "/juːzd/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "二手的",
-    "English": [
-      "used2"
     ],
     "Phonetic": "/juːzd/",
     "Roots": []

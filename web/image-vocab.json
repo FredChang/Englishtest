@@ -1798,32 +1798,6 @@
   {
     "Level": "B1",
     "English": [
-      "save energy"
-    ],
-    "ImageUrl": "images/b1-save_energy.jpg",
-    "Chinese": "節能",
-    "Phonetic": "/seɪv/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "weather pattern"
-    ],
-    "ImageUrl": "images/b1-weather_pattern.jpg",
-    "Chinese": "氣候",
-    "Phonetic": "/ˈwɛðər/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "displaced person"
-    ],
-    "ImageUrl": "images/b1-displaced_person.jpg",
-    "Chinese": "難民"
-  },
-  {
-    "Level": "B1",
-    "English": [
       "equality"
     ],
     "ImageUrl": "images/b1-equality.jpg",
@@ -1895,14 +1869,6 @@
   {
     "Level": "B1",
     "English": [
-      "power source"
-    ],
-    "ImageUrl": "images/b1-power_source.jpg",
-    "Chinese": "能源"
-  },
-  {
-    "Level": "B1",
-    "English": [
       "economize"
     ],
     "ImageUrl": "images/b1-economize.jpg",
@@ -1954,31 +1920,6 @@
     "Phonetic": "/ˈɡloʊ.bəl.aɪz/"
   },
   {
-    "Level": "A2",
-    "English": [
-      "too much"
-    ],
-    "ImageUrl": "images/a2-too_much.jpg",
-    "Chinese": "太多",
-    "Phonetic": "/tu/"
-  },
-  {
-    "Level": "A2",
-    "English": [
-      "a little"
-    ],
-    "ImageUrl": "images/a2-a_little.jpg",
-    "Chinese": "很少"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "hypothesis test"
-    ],
-    "ImageUrl": "images/b2-hypothesis_test.jpg",
-    "Chinese": "假設檢驗"
-  },
-  {
     "Level": "B2",
     "English": [
       "defend"
@@ -2007,37 +1948,11 @@
   {
     "Level": "B2",
     "English": [
-      "state clearly"
-    ],
-    "ImageUrl": "images/b2-state_clearly.jpg",
-    "Chinese": "明示",
-    "Phonetic": "/steɪt/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "summarize broadly"
-    ],
-    "ImageUrl": "images/b2-summarize_broadly.jpg",
-    "Chinese": "概括"
-  },
-  {
-    "Level": "B2",
-    "English": [
       "elaborate"
     ],
     "ImageUrl": "images/b2-elaborate.jpg",
     "Chinese": "具體說明",
     "Phonetic": "/ɪˈlæbərˌeɪt/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "clear up"
-    ],
-    "ImageUrl": "images/b2-clear_up.jpg",
-    "Chinese": "澄清",
-    "Phonetic": "/ˈklɪr ʌp/"
   },
   {
     "Level": "B2",
@@ -2055,14 +1970,6 @@
     "ImageUrl": "images/b2-minimize.jpg",
     "Chinese": "淡化",
     "Phonetic": "/ˈmɪnəˌmaɪz/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "stand for"
-    ],
-    "ImageUrl": "images/b2-stand_for.jpg",
-    "Chinese": "象徵"
   },
   {
     "Level": "C2",
@@ -2814,15 +2721,6 @@
     "ImageUrl": "images/a1-water.jpg",
     "Chinese": "水",
     "Phonetic": "/ˈwɔtər/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "5G"
-    ],
-    "ImageUrl": "images/b1-5g.jpg",
-    "Chinese": "5G",
-    "Phonetic": "/faɪv dʒiː/"
   },
   {
     "Level": "B1",
