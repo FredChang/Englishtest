@@ -372,7 +372,7 @@
       "watch"
     ],
     "ImageUrl": "images/a1-watch.jpg",
-    "Chinese": "手錶"
+    "Chinese": "觀察"
   },
   {
     "Level": "A2",
@@ -981,7 +981,7 @@
       "development"
     ],
     "ImageUrl": "images/b1-development.jpg",
-    "Chinese": "發展",
+    "Chinese": "開發",
     "Phonetic": "/dɪˈvɛləpmənt/"
   },
   {
@@ -1533,7 +1533,7 @@
       "watch"
     ],
     "ImageUrl": "images/b1-watch.jpg",
-    "Chinese": "手錶"
+    "Chinese": "觀察"
   },
   {
     "Level": "B1",
@@ -1541,7 +1541,7 @@
       "development"
     ],
     "ImageUrl": "images/b1-development.jpg",
-    "Chinese": "發展",
+    "Chinese": "開發",
     "Phonetic": "/dɪˈvɛləpmənt/"
   },
   {
@@ -1595,7 +1595,7 @@
       "stress"
     ],
     "ImageUrl": "images/b2-stress.jpg",
-    "Chinese": "壓力",
+    "Chinese": "強調",
     "Phonetic": "/ˈstres/"
   },
   {
@@ -1613,7 +1613,7 @@
       "suggest"
     ],
     "ImageUrl": "images/b1-suggest.jpg",
-    "Chinese": "建議",
+    "Chinese": "暗示",
     "Phonetic": "/ədˈvaɪs/"
   },
   {
@@ -1631,7 +1631,7 @@
       "appraiser"
     ],
     "ImageUrl": "images/b2-appraiser.jpg",
-    "Chinese": ""
+    "Chinese": "評估師"
   },
   {
     "Level": "B2",
@@ -1639,7 +1639,7 @@
       "forecaster"
     ],
     "ImageUrl": "images/b2-forecaster.jpg",
-    "Chinese": ""
+    "Chinese": "預測師"
   },
   {
     "Level": "B2",
@@ -1665,7 +1665,7 @@
       "rebut"
     ],
     "ImageUrl": "images/b2-rebut.jpg",
-    "Chinese": ""
+    "Chinese": "反駁"
   },
   {
     "Level": "B2",
@@ -1673,7 +1673,7 @@
       "interrogate"
     ],
     "ImageUrl": "images/b2-interrogate.jpg",
-    "Chinese": ""
+    "Chinese": "質詢"
   },
   {
     "Level": "B2",
@@ -1699,7 +1699,7 @@
       "accentuate"
     ],
     "ImageUrl": "images/b2-accentuate.jpg",
-    "Chinese": ""
+    "Chinese": "突出"
   },
   {
     "Level": "B2",
@@ -1707,7 +1707,7 @@
       "uncover"
     ],
     "ImageUrl": "images/b2-uncover.jpg",
-    "Chinese": ""
+    "Chinese": "暴露"
   },
   {
     "Level": "B2",
@@ -1733,7 +1733,7 @@
       "restrain"
     ],
     "ImageUrl": "images/b2-restrain.jpg",
-    "Chinese": ""
+    "Chinese": "抑制"
   },
   {
     "Level": "B2",
@@ -1768,7 +1768,7 @@
       "rage"
     ],
     "ImageUrl": "images/b1-rage.jpg",
-    "Chinese": "暴怒",
+    "Chinese": "憤怒",
     "Phonetic": "/reɪdʒ/"
   },
   {
@@ -1777,7 +1777,7 @@
       "remorse"
     ],
     "ImageUrl": "images/b1-remorse.jpg",
-    "Chinese": ""
+    "Chinese": "後悔"
   },
   {
     "Level": "B1",
@@ -1785,7 +1785,7 @@
       "hopelessness"
     ],
     "ImageUrl": "images/b1-hopelessness.jpg",
-    "Chinese": ""
+    "Chinese": "絕望"
   },
   {
     "Level": "B1",
@@ -1793,7 +1793,7 @@
       "contentment"
     ],
     "ImageUrl": "images/b1-contentment.jpg",
-    "Chinese": ""
+    "Chinese": "滿意"
   },
   {
     "Level": "B1",
@@ -1819,7 +1819,7 @@
       "displaced person"
     ],
     "ImageUrl": "images/b1-displaced_person.jpg",
-    "Chinese": ""
+    "Chinese": "難民"
   },
   {
     "Level": "B1",
@@ -1836,7 +1836,7 @@
       "harmony"
     ],
     "ImageUrl": "images/b1-harmony.jpg",
-    "Chinese": "和諧",
+    "Chinese": "和平",
     "Phonetic": "/ˈhɑːrməni/"
   },
   {
@@ -1890,7 +1890,7 @@
       "surroundings"
     ],
     "ImageUrl": "images/b1-surroundings.jpg",
-    "Chinese": ""
+    "Chinese": "環境"
   },
   {
     "Level": "B1",
@@ -1898,7 +1898,7 @@
       "power source"
     ],
     "ImageUrl": "images/b1-power_source.jpg",
-    "Chinese": ""
+    "Chinese": "能源"
   },
   {
     "Level": "B1",
@@ -1906,7 +1906,7 @@
       "economize"
     ],
     "ImageUrl": "images/b1-economize.jpg",
-    "Chinese": ""
+    "Chinese": "節約"
   },
   {
     "Level": "B1",
@@ -1923,7 +1923,7 @@
       "resolve"
     ],
     "ImageUrl": "images/b1-resolve.jpg",
-    "Chinese": "解析",
+    "Chinese": "解決",
     "Phonetic": "/riˈzɑlv/"
   },
   {
@@ -1932,7 +1932,7 @@
       "stable"
     ],
     "ImageUrl": "images/b1-stable.jpg",
-    "Chinese": "穩定的",
+    "Chinese": "穩定",
     "Phonetic": "/ˈsteɪbəl/"
   },
   {
@@ -1941,7 +1941,7 @@
       "modernize"
     ],
     "ImageUrl": "images/b1-modernize.jpg",
-    "Chinese": "使現代化",
+    "Chinese": "現代化",
     "Phonetic": "/ˈmɒd.ən.aɪz/"
   },
   {
@@ -1968,7 +1968,7 @@
       "a little"
     ],
     "ImageUrl": "images/a2-a_little.jpg",
-    "Chinese": ""
+    "Chinese": "很少"
   },
   {
     "Level": "B2",
@@ -1976,7 +1976,7 @@
       "hypothesis test"
     ],
     "ImageUrl": "images/b2-hypothesis_test.jpg",
-    "Chinese": ""
+    "Chinese": "假設檢驗"
   },
   {
     "Level": "B2",
@@ -1984,7 +1984,7 @@
       "defend"
     ],
     "ImageUrl": "images/b2-defend.jpg",
-    "Chinese": "保衛",
+    "Chinese": "辯護",
     "Phonetic": "/dɪˈfend/"
   },
   {
@@ -1993,7 +1993,7 @@
       "arbitrate"
     ],
     "ImageUrl": "images/b2-arbitrate.jpg",
-    "Chinese": ""
+    "Chinese": "調停"
   },
   {
     "Level": "B2",
@@ -2001,7 +2001,7 @@
       "insist"
     ],
     "ImageUrl": "images/b2-insist.jpg",
-    "Chinese": "堅持",
+    "Chinese": "堅持己見",
     "Phonetic": "/ɪnˈsɪst/"
   },
   {
@@ -2019,7 +2019,7 @@
       "summarize broadly"
     ],
     "ImageUrl": "images/b2-summarize_broadly.jpg",
-    "Chinese": ""
+    "Chinese": "概括"
   },
   {
     "Level": "B2",
@@ -2027,7 +2027,7 @@
       "elaborate"
     ],
     "ImageUrl": "images/b2-elaborate.jpg",
-    "Chinese": "詳細說明",
+    "Chinese": "具體說明",
     "Phonetic": "/ɪˈlæbərˌeɪt/"
   },
   {
@@ -2036,7 +2036,7 @@
       "clear up"
     ],
     "ImageUrl": "images/b2-clear_up.jpg",
-    "Chinese": "放晴",
+    "Chinese": "澄清",
     "Phonetic": "/ˈklɪr ʌp/"
   },
   {
@@ -2045,7 +2045,7 @@
       "complicate"
     ],
     "ImageUrl": "images/b2-complicate.jpg",
-    "Chinese": ""
+    "Chinese": "複雜化"
   },
   {
     "Level": "B2",
@@ -2053,7 +2053,7 @@
       "minimize"
     ],
     "ImageUrl": "images/b2-minimize.jpg",
-    "Chinese": "最小化",
+    "Chinese": "淡化",
     "Phonetic": "/ˈmɪnəˌmaɪz/"
   },
   {
@@ -2062,70 +2062,79 @@
       "stand for"
     ],
     "ImageUrl": "images/b2-stand_for.jpg",
-    "Chinese": ""
+    "Chinese": "象徵"
   },
   {
     "Level": "C2",
     "English": [
       "ubiquitously"
     ],
-    "ImageUrl": "images/c2-ubiquitously.jpg"
+    "ImageUrl": "images/c2-ubiquitously.jpg",
+    "Chinese": "無所不在地"
   },
   {
     "Level": "C2",
     "English": [
       "uniquely"
     ],
-    "ImageUrl": "images/c2-uniquely.jpg"
+    "ImageUrl": "images/c2-uniquely.jpg",
+    "Chinese": "獨特地"
   },
   {
     "Level": "C2",
     "English": [
       "ordinarily"
     ],
-    "ImageUrl": "images/c2-ordinarily.jpg"
+    "ImageUrl": "images/c2-ordinarily.jpg",
+    "Chinese": "平凡地"
   },
   {
     "Level": "C2",
     "English": [
       "remarkably"
     ],
-    "ImageUrl": "images/c2-remarkably.jpg"
+    "ImageUrl": "images/c2-remarkably.jpg",
+    "Chinese": "非凡地"
   },
   {
     "Level": "C2",
     "English": [
       "excellently"
     ],
-    "ImageUrl": "images/c2-excellently.jpg"
+    "ImageUrl": "images/c2-excellently.jpg",
+    "Chinese": "卓越地"
   },
   {
     "Level": "C2",
     "English": [
       "eminently"
     ],
-    "ImageUrl": "images/c2-eminently.jpg"
+    "ImageUrl": "images/c2-eminently.jpg",
+    "Chinese": "傑出地"
   },
   {
     "Level": "C2",
     "English": [
       "abysmally"
     ],
-    "ImageUrl": "images/c2-abysmally.jpg"
+    "ImageUrl": "images/c2-abysmally.jpg",
+    "Chinese": "拙劣地"
   },
   {
     "Level": "C2",
     "English": [
       "exquisitely"
     ],
-    "ImageUrl": "images/c2-exquisitely.jpg"
+    "ImageUrl": "images/c2-exquisitely.jpg",
+    "Chinese": "精湛地"
   },
   {
     "Level": "C2",
     "English": [
       "vulgarly"
     ],
-    "ImageUrl": "images/c2-vulgarly.jpg"
+    "ImageUrl": "images/c2-vulgarly.jpg",
+    "Chinese": "粗俗地"
   },
   {
     "Level": "A1",
@@ -2744,35 +2753,40 @@
     "English": [
       "elegantly"
     ],
-    "ImageUrl": "images/c2-elegantly.jpg"
+    "ImageUrl": "images/c2-elegantly.jpg",
+    "Chinese": "優雅地"
   },
   {
     "Level": "C2",
     "English": [
       "sloppily"
     ],
-    "ImageUrl": "images/c2-sloppily.jpg"
+    "ImageUrl": "images/c2-sloppily.jpg",
+    "Chinese": "邋遢地"
   },
   {
     "Level": "C2",
     "English": [
       "circumspectly"
     ],
-    "ImageUrl": "images/c2-circumspectly.jpg"
+    "ImageUrl": "images/c2-circumspectly.jpg",
+    "Chinese": "謹慎地"
   },
   {
     "Level": "C2",
     "English": [
       "recklessly"
     ],
-    "ImageUrl": "images/c2-recklessly.jpg"
+    "ImageUrl": "images/c2-recklessly.jpg",
+    "Chinese": "魯莽地"
   },
   {
     "Level": "C2",
     "English": [
       "cunningly"
     ],
-    "ImageUrl": "images/c2-cunningly.jpg"
+    "ImageUrl": "images/c2-cunningly.jpg",
+    "Chinese": "狡猾地"
   },
   {
     "Level": "A1",

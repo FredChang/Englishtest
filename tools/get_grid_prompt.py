@@ -45,7 +45,7 @@ def main():
         
     items_str = ", ".join(items)
     
-    prompt = f"A high-quality 4x4 grid of 16 cute cartoon sticker icons on a solid white background, representing the following items (strictly do not write any English words, letters, labels, or writing on the stickers or in the image): {items_str}. Each icon is isolated, has a bold white die-cut outline border, and is cleanly separated. Flat vector style, vibrant colors."
+    prompt = f"A high-quality 4x4 grid of 16 cute cartoon sticker icons on a solid white background, representing the following items (strictly do not write any English or Chinese words, letters, characters, labels, or writing on the stickers or in the image; they must be completely text-free and show only the illustration): {items_str}. Each icon is isolated, has a bold white die-cut outline border, and is cleanly separated. Flat vector style, vibrant colors."
     
     print(f"ImageName: grid_{grid_num}")
     print(f"Prompt: {prompt}")
