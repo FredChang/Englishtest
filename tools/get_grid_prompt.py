@@ -31,17 +31,21 @@ def main():
         
     words_info = grids[grid_num]
     
-    # Construct enumerated items list
+    # Construct enumerated items list without English words to prevent text labels
     items = []
     for idx, item in enumerate(words_info):
         word = item["word"]
         chi = item["chinese"]
-        items.append(f"{idx + 1}. {word} ({chi})")
+        # Special cases for standard uppercase acronyms
+        if word.upper() in ["5G", "AIDS", "DVD", "GPS", "IT", "TV", "PC", "IP", "ID", "IQ", "CEO", "VIP"]:
+            concept_desc = f"a cute cartoon sticker representing '{word.upper()}'"
+        else:
+            concept_desc = f"a cute cartoon sticker representing the concept of '{chi}'"
+        items.append(f"{idx + 1}. {concept_desc}")
         
     items_str = ", ".join(items)
     
-    # Prompt explicitly forbidding text/letters/words
-    prompt = f"A high-quality 4x4 grid of 16 cute cartoon sticker icons on a solid white background, representing the following items: {items_str}. Each icon is isolated, has a bold white die-cut outline border, and is cleanly separated. Flat vector style, vibrant colors. Strictly DO NOT include any text, letters, words, labels, or writing on the icons or in the image."
+    prompt = f"A high-quality 4x4 grid of 16 cute cartoon sticker icons on a solid white background, representing the following items (strictly do not write any English words, letters, labels, or writing on the stickers or in the image): {items_str}. Each icon is isolated, has a bold white die-cut outline border, and is cleanly separated. Flat vector style, vibrant colors."
     
     print(f"ImageName: grid_{grid_num}")
     print(f"Prompt: {prompt}")
