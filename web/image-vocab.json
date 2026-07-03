@@ -2996,145 +2996,6 @@
     "Phonetic": "/əˈkjut/"
   },
   {
-    "Level": "B1",
-    "English": [
-      "armor"
-    ],
-    "ImageUrl": "images/b1-armor.jpg",
-    "Chinese": "盔甲",
-    "Phonetic": "/ˈɑrmər/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "arms"
-    ],
-    "ImageUrl": "images/b2-arms.jpg",
-    "Chinese": "武器 / 軍備",
-    "Phonetic": "/ɑːrmz/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "aroma"
-    ],
-    "ImageUrl": "images/b1-aroma.jpg",
-    "Chinese": "香氣"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "arrest"
-    ],
-    "ImageUrl": "images/b1-arrest.jpg",
-    "Chinese": "逮捕",
-    "Phonetic": "/ərˈɛst/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "arrogant"
-    ],
-    "ImageUrl": "images/b1-arrogant.jpg",
-    "Chinese": "傲慢的"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "artery"
-    ],
-    "ImageUrl": "images/b1-artery.jpg",
-    "Chinese": "動脈"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "article"
-    ],
-    "ImageUrl": "images/b1-article.jpg",
-    "Chinese": "文章",
-    "Phonetic": "/ˈɑrtɪkəl/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "artist"
-    ],
-    "ImageUrl": "images/b2-artist.jpg",
-    "Chinese": "藝術家",
-    "Phonetic": "/ˈɑrtɪst/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "artwork"
-    ],
-    "ImageUrl": "images/b1-artwork.jpg",
-    "Chinese": "藝術品",
-    "Phonetic": "/ˈɑrtˌwərk/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "aspect"
-    ],
-    "ImageUrl": "images/b1-aspect.jpg",
-    "Chinese": "方面",
-    "Phonetic": "/ˈæˌspɛkt/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "assemble"
-    ],
-    "ImageUrl": "images/b1-assemble.jpg",
-    "Chinese": "組裝"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "assert"
-    ],
-    "ImageUrl": "images/b1-assert.jpg",
-    "Chinese": "斷言"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "assign"
-    ],
-    "ImageUrl": "images/b1-assign.jpg",
-    "Chinese": "分配",
-    "Phonetic": "/əˈsaɪn/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "assist"
-    ],
-    "ImageUrl": "images/b1-assist.jpg",
-    "Chinese": "協助",
-    "Phonetic": "/əˈsɪst/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "assistance"
-    ],
-    "ImageUrl": "images/b2-assistance.jpg",
-    "Chinese": "幫助",
-    "Phonetic": "/əˈsɪstəns/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "assistant"
-    ],
-    "ImageUrl": "images/b2-assistant.jpg",
-    "Chinese": "助理",
-    "Phonetic": "/əˈsɪstənt/"
-  },
-  {
     "Level": "B2",
     "English": [
       "associated"
@@ -4274,142 +4135,6 @@
   {
     "Level": "B1",
     "English": [
-      "bandwidth"
-    ],
-    "ImageUrl": "images/b1-bandwidth.jpg",
-    "Chinese": "帶寬",
-    "Phonetic": "/ˈbændwɪdθ/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "banister"
-    ],
-    "ImageUrl": "images/b1-banister.jpg",
-    "Chinese": "扶手"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bankrupt"
-    ],
-    "ImageUrl": "images/b1-bankrupt.jpg",
-    "Chinese": "破產的"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "banner"
-    ],
-    "ImageUrl": "images/b1-banner.jpg",
-    "Chinese": "橫幅",
-    "Phonetic": "/ˈbænər/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "banquet"
-    ],
-    "ImageUrl": "images/b1-banquet.jpg",
-    "Chinese": "宴會"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "barcode"
-    ],
-    "ImageUrl": "images/b1-barcode.jpg",
-    "Chinese": "條形碼"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bare"
-    ],
-    "ImageUrl": "images/b1-bare.jpg",
-    "Chinese": "赤裸的",
-    "Phonetic": "/bɛr/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bargain"
-    ],
-    "ImageUrl": "images/b1-bargain.jpg",
-    "Chinese": "便宜貨",
-    "Phonetic": "/ˈbɑrgɪn/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bargaining"
-    ],
-    "ImageUrl": "images/b1-bargaining.jpg",
-    "Chinese": "討價還價"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bark"
-    ],
-    "ImageUrl": "images/b1-bark.jpg",
-    "Chinese": "樹皮"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "barley"
-    ],
-    "ImageUrl": "images/b1-barley.jpg",
-    "Chinese": "大麥"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "barrel"
-    ],
-    "ImageUrl": "images/b1-barrel.jpg",
-    "Chinese": "桶",
-    "Phonetic": "/ˈbɛrəl/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "barrier"
-    ],
-    "ImageUrl": "images/b1-barrier.jpg",
-    "Chinese": "障礙",
-    "Phonetic": "/ˈbɛriər/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "barter"
-    ],
-    "ImageUrl": "images/b1-barter.jpg",
-    "Chinese": "以物易物"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "base"
-    ],
-    "ImageUrl": "images/b1-base.jpg",
-    "Chinese": "底部",
-    "Phonetic": "/beɪs/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "baseball"
-    ],
-    "ImageUrl": "images/b1-baseball.jpg",
-    "Chinese": "棒球",
-    "Phonetic": "/ˈbeɪsˈbɔl/"
-  },
-  {
-    "Level": "B1",
-    "English": [
       "brilliant"
     ],
     "ImageUrl": "images/b1-brilliant.jpg",
@@ -5107,142 +4832,6 @@
   {
     "Level": "B1",
     "English": [
-      "anxiety"
-    ],
-    "ImageUrl": "images/b1-anxiety.jpg",
-    "Chinese": "焦慮"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "anxious"
-    ],
-    "ImageUrl": "images/b1-anxious.jpg",
-    "Chinese": "焦慮的"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "apart"
-    ],
-    "ImageUrl": "images/b1-apart.jpg",
-    "Chinese": "分開",
-    "Phonetic": "/əˈpɑːrt/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "apologize"
-    ],
-    "ImageUrl": "images/b1-apologize.jpg",
-    "Chinese": "道歉"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "apparatus"
-    ],
-    "ImageUrl": "images/b1-apparatus.jpg",
-    "Chinese": "設備",
-    "Phonetic": "/ˌæpərˈætəs/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "apparel"
-    ],
-    "ImageUrl": "images/b2-apparel.jpg",
-    "Chinese": "服裝",
-    "Phonetic": "/əˈpær.əl/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "apparent"
-    ],
-    "ImageUrl": "images/b1-apparent.jpg",
-    "Chinese": "明顯的",
-    "Phonetic": "/əˈpɛrənt/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "appeal"
-    ],
-    "ImageUrl": "images/b1-appeal.jpg",
-    "Chinese": "呼籲",
-    "Phonetic": "/əˈpil/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "appetite"
-    ],
-    "ImageUrl": "images/b1-appetite.jpg",
-    "Chinese": "食慾"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "applaud"
-    ],
-    "ImageUrl": "images/b1-applaud.jpg",
-    "Chinese": "鼓掌"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "appliance"
-    ],
-    "ImageUrl": "images/b1-appliance.jpg",
-    "Chinese": "家電",
-    "Phonetic": "/əˈplaɪəns/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "applicable"
-    ],
-    "ImageUrl": "images/b1-applicable.jpg",
-    "Chinese": "適用的",
-    "Phonetic": "/ˈæpləkəbəl/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "application"
-    ],
-    "ImageUrl": "images/b1-application.jpg",
-    "Chinese": "申請"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "appliqué"
-    ],
-    "ImageUrl": "images/b1-appliqué.jpg",
-    "Chinese": "貼花"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "apply"
-    ],
-    "ImageUrl": "images/b2-apply.jpg",
-    "Chinese": "申請",
-    "Phonetic": "/əˈplaɪ/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "appoint"
-    ],
-    "ImageUrl": "images/b1-appoint.jpg",
-    "Chinese": "任命"
-  },
-  {
-    "Level": "B1",
-    "English": [
       "apprentice"
     ],
     "ImageUrl": "images/b1-apprentice.jpg",
@@ -5380,146 +4969,6 @@
     ],
     "ImageUrl": "images/b1-arithmetic.jpg",
     "Chinese": "算術"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "baseboard"
-    ],
-    "ImageUrl": "images/b1-baseboard.jpg",
-    "Chinese": "踢腳線"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "basin"
-    ],
-    "ImageUrl": "images/b1-basin.jpg",
-    "Chinese": "盆地",
-    "Phonetic": "/ˈbeɪsən/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "basis"
-    ],
-    "ImageUrl": "images/b1-basis.jpg",
-    "Chinese": "基礎",
-    "Phonetic": "/ˈbeɪsɪs/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "basket"
-    ],
-    "ImageUrl": "images/b1-basket.jpg",
-    "Chinese": "籃子",
-    "Phonetic": "/ˈbæskət/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "basketball"
-    ],
-    "ImageUrl": "images/b1-basketball.jpg",
-    "Chinese": "籃球",
-    "Phonetic": "/ˈbæskətˌbɔl/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bay"
-    ],
-    "ImageUrl": "images/b1-bay.jpg",
-    "Chinese": "海灣",
-    "Phonetic": "/beɪ/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bazaar"
-    ],
-    "ImageUrl": "images/b1-bazaar.jpg",
-    "Chinese": "集市"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "beam"
-    ],
-    "ImageUrl": "images/b1-beam.jpg",
-    "Chinese": "光束",
-    "Phonetic": "/bim/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "bean"
-    ],
-    "ImageUrl": "images/b1-bean.jpg",
-    "Chinese": "豆",
-    "Phonetic": "/bin/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "beanie"
-    ],
-    "ImageUrl": "images/b1-beanie.jpg",
-    "Chinese": "針織帽"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "beauty"
-    ],
-    "ImageUrl": "images/b2-beauty.jpg",
-    "Chinese": "美麗",
-    "Phonetic": "/ˈbjuti/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "beaver"
-    ],
-    "ImageUrl": "images/b1-beaver.jpg",
-    "Chinese": "河狸",
-    "Phonetic": "/ˈbiːvər/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "beetle"
-    ],
-    "ImageUrl": "images/b1-beetle.jpg",
-    "Chinese": "甲蟲"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "behavior"
-    ],
-    "ImageUrl": "images/b1-behavior.jpg",
-    "Chinese": "行為",
-    "Phonetic": "/bɪˈheɪ.vjər/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "being"
-    ],
-    "ImageUrl": "images/b2-being.jpg",
-    "Chinese": "存在 / 生物",
-    "Phonetic": "/ˈbiːɪŋ/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "belief"
-    ],
-    "ImageUrl": "images/b1-belief.jpg",
-    "Chinese": "信念",
-    "Phonetic": "/bɪˈlif/"
   },
   {
     "Level": "B1",
@@ -5942,146 +5391,6 @@
     "ImageUrl": "images/b2-zone.jpg",
     "Chinese": "區域",
     "Phonetic": "/zoʊn/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "attorney"
-    ],
-    "ImageUrl": "images/b1-attorney.jpg",
-    "Chinese": "律師",
-    "Phonetic": "/əˈtərni/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "attraction"
-    ],
-    "ImageUrl": "images/b1-attraction.jpg",
-    "Chinese": "景點",
-    "Phonetic": "/əˈtrækʃən/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "auction"
-    ],
-    "ImageUrl": "images/b2-auction.jpg",
-    "Chinese": "拍賣"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "audio"
-    ],
-    "ImageUrl": "images/b2-audio.jpg",
-    "Chinese": "音頻的",
-    "Phonetic": "/ˈɔːdiəʊ/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "auditorium"
-    ],
-    "ImageUrl": "images/b1-auditorium.jpg",
-    "Chinese": "禮堂"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "authentic"
-    ],
-    "ImageUrl": "images/b1-authentic.jpg",
-    "Chinese": "真實的",
-    "Phonetic": "/əˈθɛnɪk/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "author"
-    ],
-    "ImageUrl": "images/b1-author.jpg",
-    "Chinese": "作者",
-    "Phonetic": "/ˈɔθər/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "authority"
-    ],
-    "ImageUrl": "images/b2-authority.jpg",
-    "Chinese": "權威",
-    "Phonetic": "/əˈθɔrəti/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "auto"
-    ],
-    "ImageUrl": "images/b1-auto.jpg",
-    "Chinese": "自動",
-    "Phonetic": "/ˈɔtoʊ/"
-  },
-  {
-    "Level": "B2",
-    "English": [
-      "automatically"
-    ],
-    "ImageUrl": "images/b2-automatically.jpg",
-    "Chinese": "自動地",
-    "Phonetic": "/ˌɔtəˈmætɪkli/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "automobile"
-    ],
-    "ImageUrl": "images/b1-automobile.jpg",
-    "Chinese": "汽車",
-    "Phonetic": "/ˌɔtəmoʊˈbil/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "avenue"
-    ],
-    "ImageUrl": "images/b1-avenue.jpg",
-    "Chinese": "大道",
-    "Phonetic": "/ˈævəˌnu/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "aviation"
-    ],
-    "ImageUrl": "images/b1-aviation.jpg",
-    "Chinese": "航空",
-    "Phonetic": "/ˌeɪviˈeɪʃən/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "avoid"
-    ],
-    "ImageUrl": "images/b1-avoid.jpg",
-    "Chinese": "避免",
-    "Phonetic": "/əˈvɔɪd/"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "await"
-    ],
-    "ImageUrl": "images/b1-await.jpg",
-    "Chinese": "等待"
-  },
-  {
-    "Level": "B1",
-    "English": [
-      "awake"
-    ],
-    "ImageUrl": "images/b1-awake.jpg",
-    "Chinese": "醒著的"
   },
   {
     "Level": "B1",
@@ -7898,5 +7207,431 @@
     "ImageUrl": "images/b2-junior.jpg",
     "Chinese": "初級的",
     "Phonetic": "/ˈdʒuːniər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anchor"
+    ],
+    "ImageUrl": "images/b1-anchor.jpg",
+    "Chinese": "錨",
+    "Phonetic": "/ˈæŋkər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "angle"
+    ],
+    "ImageUrl": "images/b1-angle.jpg",
+    "Chinese": "角度",
+    "Phonetic": "/ˈæŋgəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "animal"
+    ],
+    "ImageUrl": "images/b2-animal.jpg",
+    "Chinese": "動物",
+    "Phonetic": "/ˈænəməl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "announcement"
+    ],
+    "ImageUrl": "images/b1-announcement.jpg",
+    "Chinese": "公告",
+    "Phonetic": "/əˈnaʊns.mənt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "annoy"
+    ],
+    "ImageUrl": "images/b1-annoy.jpg",
+    "Chinese": "惹惱"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "annoyed"
+    ],
+    "ImageUrl": "images/b1-annoyed.jpg",
+    "Chinese": "惱怒的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "annoying"
+    ],
+    "ImageUrl": "images/b1-annoying.jpg",
+    "Chinese": "煩人的",
+    "Phonetic": "/əˈnɔɪɪŋ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "annual"
+    ],
+    "ImageUrl": "images/b2-annual.jpg",
+    "Chinese": "年度的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "annually"
+    ],
+    "ImageUrl": "images/b1-annually.jpg",
+    "Chinese": "每年",
+    "Phonetic": "/ˈænjuəli/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anonymous"
+    ],
+    "ImageUrl": "images/b1-anonymous.jpg",
+    "Chinese": "匿名的",
+    "Phonetic": "/əˈnɑnəməs/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anorak"
+    ],
+    "ImageUrl": "images/b1-anorak.jpg",
+    "Chinese": "防雨外套"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "answer"
+    ],
+    "ImageUrl": "images/b1-answer.jpg",
+    "Chinese": "回答",
+    "Phonetic": "/ˈænsər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "antenna"
+    ],
+    "ImageUrl": "images/b1-antenna.jpg",
+    "Chinese": "天線",
+    "Phonetic": "/ænˈten.ə/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "antique"
+    ],
+    "ImageUrl": "images/b1-antique.jpg",
+    "Chinese": "古董",
+    "Phonetic": "/ænˈtik/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "antiseptic"
+    ],
+    "ImageUrl": "images/b1-antiseptic.jpg",
+    "Chinese": "消毒劑"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "antitrust"
+    ],
+    "ImageUrl": "images/b1-antitrust.jpg",
+    "Chinese": "反壟斷"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "estate"
+    ],
+    "ImageUrl": "images/b2-estate.jpg",
+    "Chinese": "財產",
+    "Phonetic": "/ɛˈsteɪt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "excellent"
+    ],
+    "ImageUrl": "images/b2-excellent.jpg",
+    "Chinese": "出色的",
+    "Phonetic": "/ˈɛksələnt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "exchange"
+    ],
+    "ImageUrl": "images/b2-exchange.jpg",
+    "Chinese": "交換",
+    "Phonetic": "/ɪksˈʧeɪnʤ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "exclusive"
+    ],
+    "ImageUrl": "images/b2-exclusive.jpg",
+    "Chinese": "獨家的",
+    "Phonetic": "/ɪkˈsklusɪv/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "exercise"
+    ],
+    "ImageUrl": "images/b2-exercise.jpg",
+    "Chinese": "鍛鍊",
+    "Phonetic": "/ˈɛksərˌsaɪz/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "exposure"
+    ],
+    "ImageUrl": "images/b2-exposure.jpg",
+    "Chinese": "暴露",
+    "Phonetic": "/ɪkˈspoʊʒər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "express"
+    ],
+    "ImageUrl": "images/b2-express.jpg",
+    "Chinese": "表達",
+    "Phonetic": "/ɪkˈsprɛs/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "expression"
+    ],
+    "ImageUrl": "images/b2-expression.jpg",
+    "Chinese": "表達",
+    "Phonetic": "/ɪkˈsprɛʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "external"
+    ],
+    "ImageUrl": "images/b2-external.jpg",
+    "Chinese": "外部的",
+    "Phonetic": "/ɪkˈstərnəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "facility"
+    ],
+    "ImageUrl": "images/b2-facility.jpg",
+    "Chinese": "設施",
+    "Phonetic": "/fəˈsɪlɪti/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "failed"
+    ],
+    "ImageUrl": "images/b2-failed.jpg",
+    "Chinese": "失敗的",
+    "Phonetic": "/feɪld/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "failure"
+    ],
+    "ImageUrl": "images/b2-failure.jpg",
+    "Chinese": "失敗",
+    "Phonetic": "/ˈfeɪljər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "faith"
+    ],
+    "ImageUrl": "images/b2-faith.jpg",
+    "Chinese": "信念",
+    "Phonetic": "/feɪθ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "fantasy"
+    ],
+    "ImageUrl": "images/b2-fantasy.jpg",
+    "Chinese": "幻想",
+    "Phonetic": "/ˈfæntəsi/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "feature"
+    ],
+    "ImageUrl": "images/b2-feature.jpg",
+    "Chinese": "特色",
+    "Phonetic": "/ˈfiʧər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "festival"
+    ],
+    "ImageUrl": "images/b2-festival.jpg",
+    "Chinese": "節日",
+    "Phonetic": "/ˈfɛstɪvəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "selection"
+    ],
+    "ImageUrl": "images/b2-selection.jpg",
+    "Chinese": "選擇",
+    "Phonetic": "/səˈlɛkʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "self"
+    ],
+    "ImageUrl": "images/b2-self.jpg",
+    "Chinese": "自我",
+    "Phonetic": "/self/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "senate"
+    ],
+    "ImageUrl": "images/b2-senate.jpg",
+    "Chinese": "參議院",
+    "Phonetic": "/ˈsɛnɪt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "separate"
+    ],
+    "ImageUrl": "images/b2-separate.jpg",
+    "Chinese": "分離",
+    "Phonetic": "/ˈsɛpərˌeɪt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "sequence"
+    ],
+    "ImageUrl": "images/b2-sequence.jpg",
+    "Chinese": "順序",
+    "Phonetic": "/ˈsiː.kwəns/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "session"
+    ],
+    "ImageUrl": "images/b2-session.jpg",
+    "Chinese": "會話",
+    "Phonetic": "/ˈsɛʃ.ən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "sexual"
+    ],
+    "ImageUrl": "images/b2-sexual.jpg",
+    "Chinese": "性的",
+    "Phonetic": "/ˈsɛkʃuəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "shot"
+    ],
+    "ImageUrl": "images/b2-shot.jpg",
+    "Chinese": "射擊",
+    "Phonetic": "/ʃɒt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "signature"
+    ],
+    "ImageUrl": "images/b2-signature.jpg",
+    "Chinese": "籤名",
+    "Phonetic": "/ˈsɪɡnətʃə/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "significant"
+    ],
+    "ImageUrl": "images/b2-significant.jpg",
+    "Chinese": "顯著的",
+    "Phonetic": "/sɪgˈnɪfɪkənt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "silver"
+    ],
+    "ImageUrl": "images/b2-silver.jpg",
+    "Chinese": "銀",
+    "Phonetic": "/ˈsɪlvər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "sitemap"
+    ],
+    "ImageUrl": "images/b2-sitemap.jpg",
+    "Chinese": "站點地圖",
+    "Phonetic": "/ˈsaɪt.mæp/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "slightly"
+    ],
+    "ImageUrl": "images/b2-slightly.jpg",
+    "Chinese": "輕微地",
+    "Phonetic": "/sˈlaɪtli/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "soul"
+    ],
+    "ImageUrl": "images/b2-soul.jpg",
+    "Chinese": "靈魂",
+    "Phonetic": "/səʊl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "sponsor"
+    ],
+    "ImageUrl": "images/b2-sponsor.jpg",
+    "Chinese": "贊助",
+    "Phonetic": "/ˈspɒn.sər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "statistics"
+    ],
+    "ImageUrl": "images/b2-statistics.jpg",
+    "Chinese": "統計",
+    "Phonetic": "/stəˈtɪstɪks/"
   }
 ]
