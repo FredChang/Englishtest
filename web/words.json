@@ -9600,6 +9600,20 @@
   },
   {
     "Level": "A2",
+    "Chinese": "蜜蜂",
+    "English": [
+      "bee"
+    ]
+  },
+  {
+    "Level": "A2",
+    "Chinese": "牛肉",
+    "English": [
+      "beef"
+    ]
+  },
+  {
+    "Level": "A2",
     "Chinese": "開始",
     "English": [
       "begin"
@@ -33261,20 +33275,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "蜜蜂",
-    "English": [
-      "bee"
-    ]
-  },
-  {
-    "Level": "B2",
-    "Chinese": "牛肉",
-    "English": [
-      "beef"
-    ]
-  },
-  {
-    "Level": "B2",
     "Chinese": "已開始",
     "English": [
       "begun"
@@ -40835,7 +40835,7 @@
   },
   {
     "Level": "B2",
-    "Chinese": "運動鞋",
+    "Chinese": "教練 / 運動鞋",
     "English": [
       "trainer"
     ],
