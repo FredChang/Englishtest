@@ -643,7 +643,7 @@ els.optionButtons.forEach((btn) => btn.addEventListener('click', onOptionClick))
 els.imageOptionButtons.forEach((btn) => btn.addEventListener('click', onImageOptionClick));
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).catch(() => {});
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     window.location.reload();
   });
