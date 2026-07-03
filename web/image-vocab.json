@@ -7613,5 +7613,290 @@
     "ImageUrl": "images/b2-importance.jpg",
     "Chinese": "重要性",
     "Phonetic": "/ˌɪmˈpɔrtəns/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "domestic"
+    ],
+    "ImageUrl": "images/b2-domestic.jpg",
+    "Chinese": "家用的",
+    "Phonetic": "/dəˈmɛstɪk/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "dot"
+    ],
+    "ImageUrl": "images/b2-dot.jpg",
+    "Chinese": "點",
+    "Phonetic": "/dɒt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "draft"
+    ],
+    "ImageUrl": "images/b2-draft.jpg",
+    "Chinese": "草案"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "dynamic"
+    ],
+    "ImageUrl": "images/b2-dynamic.jpg",
+    "Chinese": "動態的"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "easier"
+    ],
+    "ImageUrl": "images/b2-easier.jpg",
+    "Chinese": "更輕鬆",
+    "Phonetic": "/ˈiziər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "economic"
+    ],
+    "ImageUrl": "images/b2-economic.jpg",
+    "Chinese": "經濟的"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "edit"
+    ],
+    "ImageUrl": "images/b2-edit.jpg",
+    "Chinese": "編輯",
+    "Phonetic": "/ˈɛdɪt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "edition"
+    ],
+    "ImageUrl": "images/b2-edition.jpg",
+    "Chinese": "版",
+    "Phonetic": "/ɪˈdɪʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "effective"
+    ],
+    "ImageUrl": "images/b2-effective.jpg",
+    "Chinese": "有效的",
+    "Phonetic": "/ˈifɛktɪv/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "electric"
+    ],
+    "ImageUrl": "images/b2-electric.jpg",
+    "Chinese": "電的",
+    "Phonetic": "/ɪˈlɛktrɪk/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "electronic"
+    ],
+    "ImageUrl": "images/b2-electronic.jpg",
+    "Chinese": "電子的",
+    "Phonetic": "/ˌɪˌlɛkˈtrɑnɪk/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "enable"
+    ],
+    "ImageUrl": "images/b2-enable.jpg",
+    "Chinese": "促成",
+    "Phonetic": "/ɪˈneɪbəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "ensure"
+    ],
+    "ImageUrl": "images/b2-ensure.jpg",
+    "Chinese": "確保",
+    "Phonetic": "/ɪnˈʃʊər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "enterprise"
+    ],
+    "ImageUrl": "images/b2-enterprise.jpg",
+    "Chinese": "企業、公司",
+    "Phonetic": "/ˈen.tə.praɪz/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "entire"
+    ],
+    "ImageUrl": "images/b2-entire.jpg",
+    "Chinese": "整個",
+    "Phonetic": "/ɪnˈtaɪər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "essential"
+    ],
+    "ImageUrl": "images/b2-essential.jpg",
+    "Chinese": "必要的",
+    "Phonetic": "/ɛˈsɛnʃəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "inch"
+    ],
+    "ImageUrl": "images/b2-inch.jpg",
+    "Chinese": "英寸",
+    "Phonetic": "/ɪntʃ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "index"
+    ],
+    "ImageUrl": "images/b2-index.jpg",
+    "Chinese": "索引 / 指數",
+    "Phonetic": "/ˈɪndeks/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "info"
+    ],
+    "ImageUrl": "images/b2-info.jpg",
+    "Chinese": "信息 / 資訊",
+    "Phonetic": "/ˈɪnfoʊ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "infrastructure"
+    ],
+    "ImageUrl": "images/b2-infrastructure.jpg",
+    "Chinese": "基礎設施",
+    "Phonetic": "/ˌɪnfrəˈstrəkʧər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "initial"
+    ],
+    "ImageUrl": "images/b2-initial.jpg",
+    "Chinese": "最初的",
+    "Phonetic": "/ɪˈnɪʃəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "input"
+    ],
+    "ImageUrl": "images/b2-input.jpg",
+    "Chinese": "輸入 / 意見",
+    "Phonetic": "/ˈɪnpʊt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "installation"
+    ],
+    "ImageUrl": "images/b2-installation.jpg",
+    "Chinese": "安裝 / 裝置",
+    "Phonetic": "/ˌɪnstəˈleɪʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "instance"
+    ],
+    "ImageUrl": "images/b2-instance.jpg",
+    "Chinese": "案例",
+    "Phonetic": "/ˈɪnstəns/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "integration"
+    ],
+    "ImageUrl": "images/b2-integration.jpg",
+    "Chinese": "整合",
+    "Phonetic": "/ˌɪnəˈgreɪʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "interactive"
+    ],
+    "ImageUrl": "images/b2-interactive.jpg",
+    "Chinese": "互動的",
+    "Phonetic": "/ˌɪnərˈæktɪv/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "interior"
+    ],
+    "ImageUrl": "images/b2-interior.jpg",
+    "Chinese": "內部的",
+    "Phonetic": "/ˌɪnˈtɪriər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "internal"
+    ],
+    "ImageUrl": "images/b2-internal.jpg",
+    "Chinese": "內部的",
+    "Phonetic": "/ˌɪnˈtərnəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "introduction"
+    ],
+    "ImageUrl": "images/b2-introduction.jpg",
+    "Chinese": "介紹",
+    "Phonetic": "/ˌɪntrəˈdəkʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "joint"
+    ],
+    "ImageUrl": "images/b2-joint.jpg",
+    "Chinese": "聯合的",
+    "Phonetic": "/dʒɔɪnt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "journal"
+    ],
+    "ImageUrl": "images/b2-journal.jpg",
+    "Chinese": "雜誌",
+    "Phonetic": "/ˈʤərnəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "junior"
+    ],
+    "ImageUrl": "images/b2-junior.jpg",
+    "Chinese": "初級的",
+    "Phonetic": "/ˈdʒuːniər/"
   }
 ]
