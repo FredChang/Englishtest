@@ -6740,5 +6740,581 @@
     "ImageUrl": "images/b2-select.jpg",
     "Chinese": "選擇",
     "Phonetic": "/sɪˈlekt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bite"
+    ],
+    "ImageUrl": "images/b1-bite.jpg",
+    "Chinese": "咬",
+    "Phonetic": "/baɪt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "biweekly"
+    ],
+    "ImageUrl": "images/b1-biweekly.jpg",
+    "Chinese": "雙周的",
+    "Phonetic": "/baɪˈwiːkli/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blame"
+    ],
+    "ImageUrl": "images/b1-blame.jpg",
+    "Chinese": "責怪",
+    "Phonetic": "/bleɪm/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blanch"
+    ],
+    "ImageUrl": "images/b1-blanch.jpg",
+    "Chinese": "焯",
+    "Phonetic": "/blæntʃ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bland"
+    ],
+    "ImageUrl": "images/b1-bland.jpg",
+    "Chinese": "清淡的",
+    "Phonetic": "/blænd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blank"
+    ],
+    "ImageUrl": "images/b1-blank.jpg",
+    "Chinese": "空白的",
+    "Phonetic": "/blæŋk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blast"
+    ],
+    "ImageUrl": "images/b1-blast.jpg",
+    "Chinese": "爆炸",
+    "Phonetic": "/blæst/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bleach"
+    ],
+    "ImageUrl": "images/b1-bleach.jpg",
+    "Chinese": "漂白",
+    "Phonetic": "/bliːtʃ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blend"
+    ],
+    "ImageUrl": "images/b1-blend.jpg",
+    "Chinese": "混合",
+    "Phonetic": "/blɛnd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bless"
+    ],
+    "ImageUrl": "images/b1-bless.jpg",
+    "Chinese": "祝福",
+    "Phonetic": "/blɛs/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blind"
+    ],
+    "ImageUrl": "images/b1-blind.jpg",
+    "Chinese": "瞎的",
+    "Phonetic": "/blaɪnd/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "block"
+    ],
+    "ImageUrl": "images/b2-block.jpg",
+    "Chinese": "阻撓",
+    "Phonetic": "/blɑk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bloom"
+    ],
+    "ImageUrl": "images/b1-bloom.jpg",
+    "Chinese": "開花",
+    "Phonetic": "/blum/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blossom"
+    ],
+    "ImageUrl": "images/b1-blossom.jpg",
+    "Chinese": "盛開",
+    "Phonetic": "/ˈblɑsəm/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blow"
+    ],
+    "ImageUrl": "images/b1-blow.jpg",
+    "Chinese": "吹",
+    "Phonetic": "/bloʊ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blueprint"
+    ],
+    "ImageUrl": "images/b1-blueprint.jpg",
+    "Chinese": "藍圖",
+    "Phonetic": "/ˈbluːprɪnt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "blustery"
+    ],
+    "ImageUrl": "images/b1-blustery.jpg",
+    "Chinese": "颳風的",
+    "Phonetic": "/ˈblʌstəri/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "board"
+    ],
+    "ImageUrl": "images/b1-board.jpg",
+    "Chinese": "板/董事會",
+    "Phonetic": "/bɔrd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "boardwalk"
+    ],
+    "ImageUrl": "images/b1-boardwalk.jpg",
+    "Chinese": "木棧道",
+    "Phonetic": "/ˈbɔːrdwɔːk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "boast"
+    ],
+    "ImageUrl": "images/b1-boast.jpg",
+    "Chinese": "吹噓",
+    "Phonetic": "/boʊst/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bodysuit"
+    ],
+    "ImageUrl": "images/b1-bodysuit.jpg",
+    "Chinese": "連體衣",
+    "Phonetic": "/ˈbɒdisuːt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "boiler"
+    ],
+    "ImageUrl": "images/b1-boiler.jpg",
+    "Chinese": "鍋爐",
+    "Phonetic": "/ˈbɔɪ.lər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "boiling"
+    ],
+    "ImageUrl": "images/b1-boiling.jpg",
+    "Chinese": "酷熱的",
+    "Phonetic": "/ˈbɔɪlɪŋ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bold"
+    ],
+    "ImageUrl": "images/b1-bold.jpg",
+    "Chinese": "大膽的",
+    "Phonetic": "/boʊld/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bolognese"
+    ],
+    "ImageUrl": "images/b1-bolognese.jpg",
+    "Chinese": "肉醬",
+    "Phonetic": "/ˌboʊləˈneɪz/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bolt"
+    ],
+    "ImageUrl": "images/b1-bolt.jpg",
+    "Chinese": "閃電",
+    "Phonetic": "/boʊlt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bomb"
+    ],
+    "ImageUrl": "images/b1-bomb.jpg",
+    "Chinese": "炸彈",
+    "Phonetic": "/bɔm/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bonding"
+    ],
+    "ImageUrl": "images/b1-bonding.jpg",
+    "Chinese": "聯繫",
+    "Phonetic": "/ˈbɒndɪŋ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bookkeeper"
+    ],
+    "ImageUrl": "images/b1-bookkeeper.jpg",
+    "Chinese": "記帳員",
+    "Phonetic": "/ˈbʊkkiːpər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bookkeeping"
+    ],
+    "ImageUrl": "images/b1-bookkeeping.jpg",
+    "Chinese": "簿記",
+    "Phonetic": "/ˈbʊkˌkiːpɪŋ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bookmark"
+    ],
+    "ImageUrl": "images/b1-bookmark.jpg",
+    "Chinese": "書籤",
+    "Phonetic": "/ˈbʊkmɑrk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "boost"
+    ],
+    "ImageUrl": "images/b1-boost.jpg",
+    "Chinese": "提升",
+    "Phonetic": "/bust/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breach"
+    ],
+    "ImageUrl": "images/b1-breach.jpg",
+    "Chinese": "違約",
+    "Phonetic": "/briːtʃ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breadcrumb"
+    ],
+    "ImageUrl": "images/b1-breadcrumb.jpg",
+    "Chinese": "麵包屑",
+    "Phonetic": "/ˈbrɛdkrʌm/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breadstick"
+    ],
+    "ImageUrl": "images/b1-breadstick.jpg",
+    "Chinese": "麵包棒",
+    "Phonetic": "/ˈbrɛdstɪk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breakeven"
+    ],
+    "ImageUrl": "images/b1-breakeven.jpg",
+    "Chinese": "收支平衡",
+    "Phonetic": "/ˈbreɪk.iː.vən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "breast"
+    ],
+    "ImageUrl": "images/b2-breast.jpg",
+    "Chinese": "乳房 / 胸部",
+    "Phonetic": "/brɛst/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breastfeeding"
+    ],
+    "ImageUrl": "images/b1-breastfeeding.jpg",
+    "Chinese": "母乳餵養",
+    "Phonetic": "/ˈbrest.fiː.dɪŋ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breathable"
+    ],
+    "ImageUrl": "images/b1-breathable.jpg",
+    "Chinese": "透氣",
+    "Phonetic": "/ˈbriːðəbəl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breathing"
+    ],
+    "ImageUrl": "images/b1-breathing.jpg",
+    "Chinese": "呼吸",
+    "Phonetic": "/ˈbriːðɪŋ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breed"
+    ],
+    "ImageUrl": "images/b1-breed.jpg",
+    "Chinese": "繁殖",
+    "Phonetic": "/brid/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "breeze"
+    ],
+    "ImageUrl": "images/b1-breeze.jpg",
+    "Chinese": "微風",
+    "Phonetic": "/briz/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bribe"
+    ],
+    "ImageUrl": "images/b1-bribe.jpg",
+    "Chinese": "賄賂",
+    "Phonetic": "/braɪb/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bribery"
+    ],
+    "ImageUrl": "images/b1-bribery.jpg",
+    "Chinese": "賄賂",
+    "Phonetic": "/ˈbraɪbəri/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "brick"
+    ],
+    "ImageUrl": "images/b1-brick.jpg",
+    "Chinese": "磚",
+    "Phonetic": "/brɪk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "brief"
+    ],
+    "ImageUrl": "images/b1-brief.jpg",
+    "Chinese": "簡短的",
+    "Phonetic": "/brif/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "briefcase"
+    ],
+    "ImageUrl": "images/b1-briefcase.jpg",
+    "Chinese": "公文包",
+    "Phonetic": "/ˈbriːf.keɪs/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "briefing"
+    ],
+    "ImageUrl": "images/b1-briefing.jpg",
+    "Chinese": "簡報",
+    "Phonetic": "/ˈbriː.fɪŋ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "justice"
+    ],
+    "ImageUrl": "images/b2-justice.jpg",
+    "Chinese": "正義",
+    "Phonetic": "/ˈʤəstɪs/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "keyword"
+    ],
+    "ImageUrl": "images/b2-keyword.jpg",
+    "Chinese": "關鍵字",
+    "Phonetic": "/ˈkiˌwərd/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "kit"
+    ],
+    "ImageUrl": "images/b2-kit.jpg",
+    "Chinese": "套裝工具",
+    "Phonetic": "/kɪt/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "laboratory"
+    ],
+    "ImageUrl": "images/b2-laboratory.jpg",
+    "Chinese": "實驗室",
+    "Phonetic": "/ˈlæbrəˌtɔri/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "larger"
+    ],
+    "ImageUrl": "images/b2-larger.jpg",
+    "Chinese": "更大",
+    "Phonetic": "/ˈlɑrʤər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "layer"
+    ],
+    "ImageUrl": "images/b2-layer.jpg",
+    "Chinese": "層級",
+    "Phonetic": "/leɪər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "league"
+    ],
+    "ImageUrl": "images/b2-league.jpg",
+    "Chinese": "聯賽",
+    "Phonetic": "/liːɡ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "learning"
+    ],
+    "ImageUrl": "images/b2-learning.jpg",
+    "Chinese": "學習",
+    "Phonetic": "/ˈlərnɪŋ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "legislation"
+    ],
+    "ImageUrl": "images/b2-legislation.jpg",
+    "Chinese": "立法",
+    "Phonetic": "/ˌlɛʤəsˈleɪʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "lighting"
+    ],
+    "ImageUrl": "images/b2-lighting.jpg",
+    "Chinese": "照明",
+    "Phonetic": "/ˈlaɪtɪŋ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "location"
+    ],
+    "ImageUrl": "images/b2-location.jpg",
+    "Chinese": "地點",
+    "Phonetic": "/loʊˈkeɪʃən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "lord"
+    ],
+    "ImageUrl": "images/b2-lord.jpg",
+    "Chinese": "領主",
+    "Phonetic": "/lɔːrd/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "lower"
+    ],
+    "ImageUrl": "images/b2-lower.jpg",
+    "Chinese": "降低",
+    "Phonetic": "/ˈloʊər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "maintenance"
+    ],
+    "ImageUrl": "images/b2-maintenance.jpg",
+    "Chinese": "維護、保養",
+    "Phonetic": "/ˈmeɪn.tən.əns/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "making"
+    ],
+    "ImageUrl": "images/b2-making.jpg",
+    "Chinese": "製作",
+    "Phonetic": "/ˈmeɪkɪŋ/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "manufacturing"
+    ],
+    "ImageUrl": "images/b2-manufacturing.jpg",
+    "Chinese": "製造",
+    "Phonetic": "/ˌmænjəˈfækʧərɪŋ/"
   }
 ]
