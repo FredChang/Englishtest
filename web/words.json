@@ -110,15 +110,6 @@
   },
   {
     "Level": "A1",
-    "Chinese": "公元",
-    "English": [
-      "AD"
-    ],
-    "Phonetic": "/eɪ diː/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
     "Chinese": "添加",
     "English": [
       "add"
@@ -9562,15 +9553,6 @@
   },
   {
     "Level": "A2",
-    "Chinese": "公元前",
-    "English": [
-      "BC"
-    ],
-    "Phonetic": "/biː siː/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
     "Chinese": "熊",
     "English": [
       "bear"
@@ -14419,15 +14401,6 @@
   },
   {
     "Level": "A2",
-    "Chinese": "液晶顯示器",
-    "English": [
-      "LCD"
-    ],
-    "Phonetic": "/ˌɛlsiːˈdiː/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
     "Chinese": "領導者",
     "English": [
       "leader"
@@ -14472,15 +14445,6 @@
       "leather"
     ],
     "Phonetic": "/ˈlɛð.ər/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
-    "Chinese": "LED",
-    "English": [
-      "LED"
-    ],
-    "Phonetic": "/ˌɛlˌiːˈdiː/",
     "Roots": []
   },
   {
@@ -20376,15 +20340,6 @@
   },
   {
     "Level": "B1",
-    "Chinese": "應用程式接口",
-    "English": [
-      "API"
-    ],
-    "Phonetic": "/ˌeɪ.piːˈaɪ/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
     "Chinese": "應用",
     "English": [
       "app"
@@ -22737,15 +22692,6 @@
       "cotton"
     ],
     "Phonetic": "/ˈkɑː.tən/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "中央處理器",
-    "English": [
-      "CPU"
-    ],
-    "Phonetic": "/ˌsiː piː ˈjuː/",
     "Roots": []
   },
   {
@@ -29086,15 +29032,6 @@
   },
   {
     "Level": "B1",
-    "Chinese": "內存",
-    "English": [
-      "RAM"
-    ],
-    "Phonetic": "/ræm/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
     "Chinese": "排名",
     "English": [
       "ranking"
@@ -33429,15 +33366,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "基本輸入輸出系統",
-    "English": [
-      "BIOS"
-    ],
-    "Phonetic": "/ˈbaɪɒs/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "生物技術",
     "English": [
       "biotechnology"
@@ -35104,15 +35032,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "DNS",
-    "English": [
-      "DNS"
-    ],
-    "Phonetic": "/ˌdiː.ɛnˈɛs/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "紀錄片",
     "English": [
       "documentary"
@@ -36312,15 +36231,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "圖形用戶界面",
-    "English": [
-      "GUI"
-    ],
-    "Phonetic": "/ˌdʒiː juː ˈaɪ/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "行會",
     "English": [
       "guild"
@@ -36600,15 +36510,6 @@
       "hydrogen"
     ],
     "Phonetic": "/ˈhaɪdrədʒən/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
-    "Chinese": "集成開發環境",
-    "English": [
-      "IDE"
-    ],
-    "Phonetic": "/ˌaɪ diː ˈiː/",
     "Roots": []
   },
   {
@@ -37821,29 +37722,11 @@
   },
   {
     "Level": "B2",
-    "Chinese": "味精",
-    "English": [
-      "MSG"
-    ],
-    "Phonetic": "/ɛm.ɛs.ˈdʒiː/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "釘子",
     "English": [
       "nail"
     ],
     "Phonetic": "/neɪl/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
-    "Chinese": "納斯達克",
-    "English": [
-      "NASDAQ"
-    ],
-    "Phonetic": "/ˈnæzdæk/",
     "Roots": []
   },
   {
@@ -39735,15 +39618,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "搜尋引擎優化",
-    "English": [
-      "SEO"
-    ],
-    "Phonetic": "/ˌes.iːˈoʊ/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "分離",
     "English": [
       "separation"
@@ -40154,15 +40028,6 @@
       "squad"
     ],
     "Phonetic": "/skwɒd/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
-    "Chinese": "SSL",
-    "English": [
-      "SSL"
-    ],
-    "Phonetic": "/ˌɛs.ɛsˈɛl/",
     "Roots": []
   },
   {
@@ -47335,15 +47200,6 @@
   },
   {
     "Level": "C1",
-    "Chinese": "虛擬專用網",
-    "English": [
-      "VPN"
-    ],
-    "Phonetic": "/ˌviː piː ˈɛn/",
-    "Roots": []
-  },
-  {
-    "Level": "C1",
     "Chinese": "錢包",
     "English": [
       "wallet"
@@ -48380,15 +48236,6 @@
   },
   {
     "Level": "C2",
-    "Chinese": "財務長",
-    "English": [
-      "CFO"
-    ],
-    "Phonetic": "/ˌsiː.ɛfˈoʊ/",
-    "Roots": []
-  },
-  {
-    "Level": "C2",
     "Chinese": "聊天機器人",
     "English": [
       "chatbot"
@@ -48566,15 +48413,6 @@
       "contactless"
     ],
     "Phonetic": "/ˈkɒntæktləs/",
-    "Roots": []
-  },
-  {
-    "Level": "C2",
-    "Chinese": "營運長",
-    "English": [
-      "COO"
-    ],
-    "Phonetic": "/ˌsiː.oʊˈoʊ/",
     "Roots": []
   },
   {
@@ -48761,15 +48599,6 @@
       "crumb"
     ],
     "Phonetic": "/krʌm/",
-    "Roots": []
-  },
-  {
-    "Level": "C2",
-    "Chinese": "首席技術官",
-    "English": [
-      "CTO"
-    ],
-    "Phonetic": "/ˌsiː.tiːˈoʊ/",
     "Roots": []
   },
   {
@@ -49486,11 +49315,101 @@
   },
   {
     "Level": "C2",
+    "Chinese": "冰櫃",
+    "English": [
+      "freezer"
+    ],
+    "Phonetic": "/ˈfrizər/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "極冷的",
+    "English": [
+      "freezing"
+    ],
+    "Phonetic": "/ˈfriːzɪŋ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "炸",
+    "English": [
+      "fry"
+    ],
+    "Phonetic": "/fraɪ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "全職",
+    "English": [
+      "full-time"
+    ],
+    "Phonetic": "/ˌfʊl ˈtaɪm/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "意式冰淇淋",
+    "English": [
+      "gelato"
+    ],
+    "Phonetic": "/dʒəˈlɑːtoʊ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "姜",
+    "English": [
+      "ginger"
+    ],
+    "Phonetic": "/ˈdʒɪn.dʒər/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "長頸鹿",
+    "English": [
+      "giraffe"
+    ],
+    "Phonetic": "/dʒəˈræf/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "陰沉的",
+    "English": [
+      "gloomy"
+    ],
+    "Phonetic": "/ˈɡluːmi/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
     "Chinese": "手套",
     "English": [
       "glove"
     ],
     "Phonetic": "/gləv/"
+  },
+  {
+    "Level": "C2",
+    "Chinese": "無麩質",
+    "English": [
+      "gluten-free"
+    ],
+    "Phonetic": "/ˈɡluːtən friː/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "神/上帝",
+    "English": [
+      "god"
+    ],
+    "Phonetic": "/ɡɒd/",
+    "Roots": []
   },
   {
     "Level": "C2",
@@ -49503,11 +49422,29 @@
   },
   {
     "Level": "C2",
+    "Chinese": "長禮服",
+    "English": [
+      "gown"
+    ],
+    "Phonetic": "/ɡaʊn/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
     "Chinese": "孫子/孫女",
     "English": [
       "grandchild"
     ],
     "Phonetic": "/ˈɡræntʃaɪld/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "孫女/外孫女",
+    "English": [
+      "granddaughter"
+    ],
+    "Phonetic": "/ˈɡræn.dɔː.tər/",
     "Roots": []
   },
   {
@@ -49553,11 +49490,74 @@
   },
   {
     "Level": "C2",
+    "Chinese": "孫子/外孫",
+    "English": [
+      "grandson"
+    ],
+    "Phonetic": "/ˈɡræn.sʌn/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
     "Chinese": "葡萄",
     "English": [
       "grape"
     ],
     "Phonetic": "/ɡreɪp/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "碎石",
+    "English": [
+      "gravel"
+    ],
+    "Phonetic": "/ˈɡrævəl/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "曾祖父",
+    "English": [
+      "great-grandfather"
+    ],
+    "Phonetic": "/ɡreɪt ˈɡrænfɑːðər/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "曾祖母",
+    "English": [
+      "great-grandmother"
+    ],
+    "Phonetic": "/ɡreɪt ˈɡrænmʌðər/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "迎接/問候",
+    "English": [
+      "greet"
+    ],
+    "Phonetic": "/ɡriːt/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "新郎",
+    "English": [
+      "groom"
+    ],
+    "Phonetic": "/ɡruːm/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "民宿",
+    "English": [
+      "guesthouse"
+    ],
+    "Phonetic": "/ˈɡɛsthaʊs/",
     "Roots": []
   },
   {
