@@ -624,15 +624,6 @@
   },
   {
     "Level": "A1",
-    "Chinese": "光碟",
-    "English": [
-      "CD"
-    ],
-    "Phonetic": "/ˌsiːˈdiː/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
     "Chinese": "中心",
     "English": [
       "center"
@@ -930,15 +921,6 @@
       "draw"
     ],
     "Phonetic": "/drɔ/",
-    "Roots": []
-  },
-  {
-    "Level": "A1",
-    "Chinese": "DVD",
-    "English": [
-      "DVD"
-    ],
-    "Phonetic": "/ˌdiːˌviːˈdiː/",
     "Roots": []
   },
   {
@@ -1515,15 +1497,6 @@
       "husband"
     ],
     "Phonetic": "/ˈhəzbənd/"
-  },
-  {
-    "Level": "A1",
-    "Chinese": "身份證件",
-    "English": [
-      "ID"
-    ],
-    "Phonetic": "/aɪ diː/",
-    "Roots": []
   },
   {
     "Level": "A1",
@@ -3747,15 +3720,6 @@
       "ahead"
     ],
     "Phonetic": "/əˈhɛd/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
-    "Chinese": "愛滋病",
-    "English": [
-      "AIDS"
-    ],
-    "Phonetic": "/eɪdz/",
     "Roots": []
   },
   {
@@ -6740,15 +6704,6 @@
   },
   {
     "Level": "A2",
-    "Chinese": "全球定位系統",
-    "English": [
-      "GPS"
-    ],
-    "Phonetic": "/ˌdʒiːpiːˈɛs/",
-    "Roots": []
-  },
-  {
-    "Level": "A2",
     "Chinese": "抓",
     "English": [
       "grab"
@@ -6856,6 +6811,15 @@
       "guitar"
     ],
     "Phonetic": "/ɡɪˈtɑː/",
+    "Roots": []
+  },
+  {
+    "Level": "A2",
+    "Chinese": "走廊",
+    "English": [
+      "hallway"
+    ],
+    "Phonetic": "/ˈhɔlˌweɪ/",
     "Roots": []
   },
   {
@@ -8990,7 +8954,8 @@
     "Level": "A2",
     "Chinese": "壓力",
     "English": [
-      "pressure"
+      "pressure",
+      "stress"
     ],
     "Phonetic": "/ˈstres/",
     "Roots": [
@@ -10502,20 +10467,6 @@
   },
   {
     "Level": "A2",
-    "Chinese": "強調",
-    "English": [
-      "stress"
-    ],
-    "Phonetic": "/strɛs/",
-    "Roots": [
-      {
-        "Part": "-ess",
-        "Hint": "女性名詞字尾：actress (女演員), princess (公主)"
-      }
-    ]
-  },
-  {
-    "Level": "A2",
     "Chinese": "強烈地",
     "English": [
       "strongly"
@@ -11857,7 +11808,8 @@
     "Level": "B1",
     "Chinese": "建議",
     "English": [
-      "advice"
+      "advice",
+      "suggest"
     ],
     "Phonetic": "/ədˈvaɪs/",
     "Roots": [
@@ -12455,15 +12407,6 @@
     "English": [
       "apartment"
     ]
-  },
-  {
-    "Level": "B1",
-    "Chinese": "應用",
-    "English": [
-      "app"
-    ],
-    "Phonetic": "/æp/",
-    "Roots": []
   },
   {
     "Level": "B1",
@@ -14940,15 +14883,6 @@
       "cement"
     ],
     "Phonetic": "/sɪˈmɛnt/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "執行長",
-    "English": [
-      "CEO"
-    ],
-    "Phonetic": "/ˌsiː.iːˈoʊ/",
     "Roots": []
   },
   {
@@ -19138,13 +19072,6 @@
   },
   {
     "Level": "B1",
-    "Chinese": "經濟的",
-    "English": [
-      "economic"
-    ]
-  },
-  {
-    "Level": "B1",
     "Chinese": "經濟學",
     "English": [
       "economics"
@@ -19154,7 +19081,8 @@
     "Level": "B1",
     "Chinese": "經濟",
     "English": [
-      "economy"
+      "economy",
+      "economic"
     ],
     "Phonetic": "/ɪˈkɒn.ə.mi/",
     "Roots": [
@@ -28617,15 +28545,6 @@
   },
   {
     "Level": "B1",
-    "Chinese": "密碼",
-    "English": [
-      "PIN"
-    ],
-    "Phonetic": "/pɪn/",
-    "Roots": []
-  },
-  {
-    "Level": "B1",
     "Chinese": "松樹",
     "English": [
       "pine"
@@ -34447,20 +34366,6 @@
   },
   {
     "Level": "B1",
-    "Chinese": "暗示",
-    "English": [
-      "suggest"
-    ],
-    "Phonetic": "/səˈʤɛst/",
-    "Roots": [
-      {
-        "Part": "gest",
-        "Hint": "攜帶：suggest (建議), digest (消化)"
-      }
-    ]
-  },
-  {
-    "Level": "B1",
     "Chinese": "建議",
     "English": [
       "suggestion"
@@ -36165,14 +36070,6 @@
     ],
     "Phonetic": "/tuˈtɔriəl/",
     "Roots": []
-  },
-  {
-    "Level": "B1",
-    "Chinese": "電視",
-    "English": [
-      "TV"
-    ],
-    "Phonetic": "/ˌtɛləˈvɪʒən/"
   },
   {
     "Level": "B1",
@@ -38156,15 +38053,6 @@
   },
   {
     "Level": "B2",
-    "Chinese": "自動取款機",
-    "English": [
-      "ATM"
-    ],
-    "Phonetic": "/ˌeɪ.tiːˈɛm/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
     "Chinese": "原子的",
     "English": [
       "atomic"
@@ -39887,15 +39775,6 @@
       "gathering"
     ],
     "Phonetic": "/ˈɡæðərɪŋ/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
-    "Chinese": "國內生產總值",
-    "English": [
-      "GDP"
-    ],
-    "Phonetic": "/ˌdʒiː.diːˈpiː/",
     "Roots": []
   },
   {
@@ -42347,15 +42226,6 @@
       "statute"
     ],
     "Phonetic": "/ˈstætʃuːt/",
-    "Roots": []
-  },
-  {
-    "Level": "B2",
-    "Chinese": "STEM",
-    "English": [
-      "STEM"
-    ],
-    "Phonetic": "/stɛm/",
     "Roots": []
   },
   {
@@ -49675,6 +49545,130 @@
       "guesthouse"
     ],
     "Phonetic": "/ˈɡɛsthaʊs/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "體育館",
+    "English": [
+      "gymnasium"
+    ],
+    "Phonetic": "/dʒɪmˈneɪ.zi.əm/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "吹風機",
+    "English": [
+      "hairdryer"
+    ]
+  },
+  {
+    "Level": "C2",
+    "Chinese": "半場",
+    "English": [
+      "half-time"
+    ],
+    "Phonetic": "/hɑːf taɪm/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "手提包",
+    "English": [
+      "handbag"
+    ],
+    "Phonetic": "/ˈhændbæɡ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "握手",
+    "English": [
+      "handshake"
+    ],
+    "Phonetic": "/ˈhænd.ʃeɪk/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "衣架",
+    "English": [
+      "hanger"
+    ],
+    "Phonetic": "/ˈhæŋər/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "快樂地",
+    "English": [
+      "happily"
+    ],
+    "Phonetic": "/ˈhæpɪli/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "話題標籤",
+    "English": [
+      "hashtag"
+    ],
+    "Phonetic": "/ˈhæʃ.tæɡ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "頭痛",
+    "English": [
+      "headache"
+    ],
+    "Phonetic": "/ˈhɛˌdeɪk/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "髮帶",
+    "English": [
+      "headband"
+    ],
+    "Phonetic": "/ˈhed.bænd/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "癒合",
+    "English": [
+      "heal"
+    ],
+    "Phonetic": "/hiːl/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "刺蝟",
+    "English": [
+      "hedgehog"
+    ],
+    "Phonetic": "/ˈhɛdʒˌhɒɡ/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "下擺",
+    "English": [
+      "hem"
+    ],
+    "Phonetic": "/hɛm/",
+    "Roots": []
+  },
+  {
+    "Level": "C2",
+    "Chinese": "她的",
+    "English": [
+      "hers"
+    ],
+    "Phonetic": "/hɜːrz/",
     "Roots": []
   },
   {
