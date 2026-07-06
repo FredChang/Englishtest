@@ -7633,5 +7633,409 @@
     "ImageUrl": "images/b2-statistics.jpg",
     "Chinese": "統計",
     "Phonetic": "/stəˈtɪstɪks/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bandwidth"
+    ],
+    "ImageUrl": "images/b1-bandwidth.jpg",
+    "Chinese": "帶寬",
+    "Phonetic": "/ˈbændwɪdθ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "banister"
+    ],
+    "ImageUrl": "images/b1-banister.jpg",
+    "Chinese": "扶手"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bankrupt"
+    ],
+    "ImageUrl": "images/b1-bankrupt.jpg",
+    "Chinese": "破產的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "banner"
+    ],
+    "ImageUrl": "images/b1-banner.jpg",
+    "Chinese": "橫幅",
+    "Phonetic": "/ˈbænər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "banquet"
+    ],
+    "ImageUrl": "images/b1-banquet.jpg",
+    "Chinese": "宴會"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "barcode"
+    ],
+    "ImageUrl": "images/b1-barcode.jpg",
+    "Chinese": "條形碼"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bare"
+    ],
+    "ImageUrl": "images/b1-bare.jpg",
+    "Chinese": "赤裸的",
+    "Phonetic": "/bɛr/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bargain"
+    ],
+    "ImageUrl": "images/b1-bargain.jpg",
+    "Chinese": "便宜貨",
+    "Phonetic": "/ˈbɑrgɪn/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bargaining"
+    ],
+    "ImageUrl": "images/b1-bargaining.jpg",
+    "Chinese": "討價還價"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bark"
+    ],
+    "ImageUrl": "images/b1-bark.jpg",
+    "Chinese": "樹皮"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "barley"
+    ],
+    "ImageUrl": "images/b1-barley.jpg",
+    "Chinese": "大麥"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "barrel"
+    ],
+    "ImageUrl": "images/b1-barrel.jpg",
+    "Chinese": "桶",
+    "Phonetic": "/ˈbɛrəl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "barrier"
+    ],
+    "ImageUrl": "images/b1-barrier.jpg",
+    "Chinese": "障礙",
+    "Phonetic": "/ˈbɛriər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "barter"
+    ],
+    "ImageUrl": "images/b1-barter.jpg",
+    "Chinese": "以物易物"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "base"
+    ],
+    "ImageUrl": "images/b1-base.jpg",
+    "Chinese": "底部",
+    "Phonetic": "/beɪs/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "baseball"
+    ],
+    "ImageUrl": "images/b1-baseball.jpg",
+    "Chinese": "棒球",
+    "Phonetic": "/ˈbeɪsˈbɔl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "canyon"
+    ],
+    "ImageUrl": "images/b1-canyon.jpg",
+    "Chinese": "峽谷",
+    "Phonetic": "/ˈkæn.jən/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "capacity"
+    ],
+    "ImageUrl": "images/b2-capacity.jpg",
+    "Chinese": "容量",
+    "Phonetic": "/kəˈpæsɪti/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "capital"
+    ],
+    "ImageUrl": "images/b2-capital.jpg",
+    "Chinese": "資本"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "capitalism"
+    ],
+    "ImageUrl": "images/b1-capitalism.jpg",
+    "Chinese": "資本主義"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cappuccino"
+    ],
+    "ImageUrl": "images/b1-cappuccino.jpg",
+    "Chinese": "卡布奇諾"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "caravan"
+    ],
+    "ImageUrl": "images/b1-caravan.jpg",
+    "Chinese": "房車"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "carbohydrate"
+    ],
+    "ImageUrl": "images/b1-carbohydrate.jpg",
+    "Chinese": "碳水化合物"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "carbonara"
+    ],
+    "ImageUrl": "images/b1-carbonara.jpg",
+    "Chinese": "培根蛋面"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cardboard"
+    ],
+    "ImageUrl": "images/b1-cardboard.jpg",
+    "Chinese": "紙板"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "career"
+    ],
+    "ImageUrl": "images/b1-career.jpg",
+    "Chinese": "職業生涯"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "caregiver"
+    ],
+    "ImageUrl": "images/b1-caregiver.jpg",
+    "Chinese": "照顧者"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "careless"
+    ],
+    "ImageUrl": "images/b1-careless.jpg",
+    "Chinese": "粗心的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "caretaker"
+    ],
+    "ImageUrl": "images/b1-caretaker.jpg",
+    "Chinese": "照顧者"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cargo"
+    ],
+    "ImageUrl": "images/b1-cargo.jpg",
+    "Chinese": "貨物",
+    "Phonetic": "/ˈkɑrˌgoʊ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "carnivore"
+    ],
+    "ImageUrl": "images/b1-carnivore.jpg",
+    "Chinese": "食肉動物"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "carousel"
+    ],
+    "ImageUrl": "images/b1-carousel.jpg",
+    "Chinese": "行李轉盤"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chalet"
+    ],
+    "ImageUrl": "images/b1-chalet.jpg",
+    "Chinese": "小木屋"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chalk"
+    ],
+    "ImageUrl": "images/b1-chalk.jpg",
+    "Chinese": "粉筆"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chamber"
+    ],
+    "ImageUrl": "images/b1-chamber.jpg",
+    "Chinese": "房間/腔室",
+    "Phonetic": "/ˈʧeɪmbər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chameleon"
+    ],
+    "ImageUrl": "images/b1-chameleon.jpg",
+    "Chinese": "變色龍"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chamomile"
+    ],
+    "ImageUrl": "images/b1-chamomile.jpg",
+    "Chinese": "洋甘菊"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "champion"
+    ],
+    "ImageUrl": "images/b1-champion.jpg",
+    "Chinese": "冠軍",
+    "Phonetic": "/ˈʧæmpiən/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chandelier"
+    ],
+    "ImageUrl": "images/b1-chandelier.jpg",
+    "Chinese": "水晶燈"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "channel"
+    ],
+    "ImageUrl": "images/b1-channel.jpg",
+    "Chinese": "頻道",
+    "Phonetic": "/ˈʧænəl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chapter"
+    ],
+    "ImageUrl": "images/b1-chapter.jpg",
+    "Chinese": "章節",
+    "Phonetic": "/ˈʧæptər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "character"
+    ],
+    "ImageUrl": "images/b1-character.jpg",
+    "Chinese": "角色",
+    "Phonetic": "/ˈkɛrɪktər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "charcoal"
+    ],
+    "ImageUrl": "images/b1-charcoal.jpg",
+    "Chinese": "木炭"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "charger"
+    ],
+    "ImageUrl": "images/b1-charger.jpg",
+    "Chinese": "充電器",
+    "Phonetic": "/ˈʧɑrʤər/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chart"
+    ],
+    "ImageUrl": "images/b1-chart.jpg",
+    "Chinese": "圖表",
+    "Phonetic": "/ʧɑrt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "chase"
+    ],
+    "ImageUrl": "images/b1-chase.jpg",
+    "Chinese": "追逐",
+    "Phonetic": "/ʧeɪs/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "cheat"
+    ],
+    "ImageUrl": "images/b1-cheat.jpg",
+    "Chinese": "作弊",
+    "Phonetic": "/tʃiːt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "checkup"
+    ],
+    "ImageUrl": "images/b1-checkup.jpg",
+    "Chinese": "體檢"
   }
 ]
