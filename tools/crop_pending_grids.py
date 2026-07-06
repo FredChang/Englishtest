@@ -169,18 +169,21 @@ def main():
                 bottom = bottom_rough - margin
                 cell = img.crop((left, top, right, bottom)).convert("RGB")
                 
-            cell = cell.convert("RGB").resize((128, 128), Image.Resampling.LANCZOS)
-            
             # Safe filename e.g. b2-acceptance.jpg
             safe_word = word.lower().replace(" ", "_").replace("-", "_").replace("'", "")
             filename_out = f"{level.lower()}-{safe_word}.jpg"
             out_path = os.path.join(IMAGE_DIR, filename_out)
             
+            word_key = word.lower().strip()
+            if os.path.exists(out_path) and word_key in existing_map:
+                # Already exists and verified clean. Skip overwriting!
+                continue
+                
+            cell = cell.convert("RGB").resize((128, 128), Image.Resampling.LANCZOS)
             cell.save(out_path, "JPEG", quality=90)
             total_cropped += 1
             
             # Lookup metadata
-            word_key = word.lower().strip()
             word_info = words_db.get(word_key, {})
             chinese = word_info.get("Chinese", chi_fallback)
             phonetic = word_info.get("Phonetic", "")
