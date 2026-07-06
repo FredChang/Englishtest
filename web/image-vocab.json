@@ -4008,8 +4008,7 @@
       "AIDS"
     ],
     "ImageUrl": "images/b2-aids.jpg",
-    "Chinese": "愛滋病",
-    "Phonetic": "/eɪdz/"
+    "Chinese": "愛滋病"
   },
   {
     "Level": "B1",
@@ -6893,8 +6892,7 @@
       "ID"
     ],
     "ImageUrl": "images/b2-id.jpg",
-    "Chinese": "身份證件",
-    "Phonetic": "/aɪ diː/"
+    "Chinese": "身份證件"
   },
   {
     "Level": "B2",
@@ -8461,5 +8459,144 @@
     "ImageUrl": "images/b2-ultimate.jpg",
     "Chinese": "終極的",
     "Phonetic": "/ˈʌltɪmɪt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "armor"
+    ],
+    "ImageUrl": "images/b1-armor.jpg",
+    "Chinese": "盔甲",
+    "Phonetic": "/ˈɑrmər/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "arms"
+    ],
+    "ImageUrl": "images/b2-arms.jpg",
+    "Chinese": "武器 / 軍備",
+    "Phonetic": "/ɑːrmz/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "aroma"
+    ],
+    "ImageUrl": "images/b1-aroma.jpg",
+    "Chinese": "香氣"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "arrest"
+    ],
+    "ImageUrl": "images/b1-arrest.jpg",
+    "Chinese": "逮捕",
+    "Phonetic": "/ərˈɛst/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "arrogant"
+    ],
+    "ImageUrl": "images/b1-arrogant.jpg",
+    "Chinese": "傲慢的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "artery"
+    ],
+    "ImageUrl": "images/b1-artery.jpg",
+    "Chinese": "動脈"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "article"
+    ],
+    "ImageUrl": "images/b1-article.jpg",
+    "Chinese": "文章",
+    "Phonetic": "/ˈɑrtɪkəl/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "artist"
+    ],
+    "ImageUrl": "images/b2-artist.jpg",
+    "Chinese": "藝術家",
+    "Phonetic": "/ˈɑrtɪst/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "artwork"
+    ],
+    "ImageUrl": "images/b1-artwork.jpg",
+    "Chinese": "藝術品",
+    "Phonetic": "/ˈɑrtˌwərk/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "aspect"
+    ],
+    "ImageUrl": "images/b1-aspect.jpg",
+    "Chinese": "方面",
+    "Phonetic": "/ˈæˌspɛkt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assemble"
+    ],
+    "ImageUrl": "images/b1-assemble.jpg",
+    "Chinese": "組裝"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assert"
+    ],
+    "ImageUrl": "images/b1-assert.jpg",
+    "Chinese": "斷言"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assign"
+    ],
+    "ImageUrl": "images/b1-assign.jpg",
+    "Chinese": "分配",
+    "Phonetic": "/əˈsaɪn/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "assist"
+    ],
+    "ImageUrl": "images/b1-assist.jpg",
+    "Chinese": "協助",
+    "Phonetic": "/əˈsɪst/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "assistance"
+    ],
+    "ImageUrl": "images/b2-assistance.jpg",
+    "Chinese": "幫助",
+    "Phonetic": "/əˈsɪstəns/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "assistant"
+    ],
+    "ImageUrl": "images/b2-assistant.jpg",
+    "Chinese": "助理",
+    "Phonetic": "/əˈsɪstənt/"
   }
 ]
