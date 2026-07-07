@@ -1,84 +1,1314 @@
 {
   "21": [
     {
-      "level": "B1",
-      "word": "anxiety",
-      "chinese": "焦慮"
+      "level": "A2",
+      "word": "after",
+      "chinese": "以後"
     },
     {
-      "level": "B1",
-      "word": "anxious",
-      "chinese": "焦慮的"
+      "level": "A1",
+      "word": "against",
+      "chinese": "反對"
     },
     {
-      "level": "B1",
-      "word": "apart",
-      "chinese": "分開"
+      "level": "A1",
+      "word": "ago",
+      "chinese": "以前"
     },
     {
-      "level": "B1",
-      "word": "apologize",
-      "chinese": "道歉"
+      "level": "A2",
+      "word": "ahead",
+      "chinese": "向前"
     },
     {
-      "level": "B1",
-      "word": "apparatus",
-      "chinese": "設備"
+      "level": "A1",
+      "word": "airport",
+      "chinese": "機場"
     },
     {
-      "level": "B2",
-      "word": "apparel",
-      "chinese": "服裝"
+      "level": "A1",
+      "word": "all",
+      "chinese": "所有"
     },
     {
-      "level": "B1",
-      "word": "apparent",
-      "chinese": "明顯的"
+      "level": "A1",
+      "word": "already",
+      "chinese": "已經"
     },
     {
-      "level": "B1",
-      "word": "appeal",
-      "chinese": "呼籲"
+      "level": "A1",
+      "word": "also",
+      "chinese": "也"
     },
     {
-      "level": "B1",
-      "word": "appetite",
-      "chinese": "食慾"
+      "level": "A1",
+      "word": "always",
+      "chinese": "總是"
     },
     {
-      "level": "B1",
-      "word": "applaud",
-      "chinese": "鼓掌"
+      "level": "A1",
+      "word": "and",
+      "chinese": "和"
     },
     {
-      "level": "B1",
-      "word": "appliance",
-      "chinese": "家電"
+      "level": "A1",
+      "word": "any",
+      "chinese": "任何"
     },
     {
-      "level": "B1",
-      "word": "applicable",
-      "chinese": "適用的"
+      "level": "A2",
+      "word": "apparently",
+      "chinese": "顯然"
     },
     {
-      "level": "B1",
-      "word": "application",
-      "chinese": "申請"
+      "level": "A2",
+      "word": "appointment",
+      "chinese": "預約"
     },
     {
-      "level": "B1",
-      "word": "appliqué",
-      "chinese": "貼花"
+      "level": "A1",
+      "word": "April",
+      "chinese": "四月"
     },
     {
-      "level": "B2",
-      "word": "apply",
-      "chinese": "申請"
+      "level": "A2",
+      "word": "architecture",
+      "chinese": "架構"
     },
     {
-      "level": "B1",
-      "word": "appoint",
-      "chinese": "任命"
+      "level": "A2",
+      "word": "area",
+      "chinese": "區域"
+    }
+  ],
+  "22": [
+    {
+      "level": "A2",
+      "word": "arrange",
+      "chinese": "安排"
+    },
+    {
+      "level": "A2",
+      "word": "arrival",
+      "chinese": "到達"
+    },
+    {
+      "level": "A2",
+      "word": "artificial",
+      "chinese": "人工的"
+    },
+    {
+      "level": "A2",
+      "word": "ask",
+      "chinese": "問"
+    },
+    {
+      "level": "A2",
+      "word": "assembly",
+      "chinese": "議會, 集會"
+    },
+    {
+      "level": "A2",
+      "word": "atom",
+      "chinese": "原子"
+    },
+    {
+      "level": "A2",
+      "word": "attach",
+      "chinese": "附上"
+    },
+    {
+      "level": "A1",
+      "word": "August",
+      "chinese": "八月"
+    },
+    {
+      "level": "A1",
+      "word": "aunt",
+      "chinese": "阿姨"
+    },
+    {
+      "level": "A2",
+      "word": "automotive",
+      "chinese": "汽車"
+    },
+    {
+      "level": "A1",
+      "word": "availability",
+      "chinese": "可用性"
+    },
+    {
+      "level": "A2",
+      "word": "average",
+      "chinese": "平均的"
+    },
+    {
+      "level": "A1",
+      "word": "back",
+      "chinese": "背部"
+    },
+    {
+      "level": "A1",
+      "word": "ball",
+      "chinese": "球"
+    },
+    {
+      "level": "A1",
+      "word": "band",
+      "chinese": "樂隊"
+    },
+    {
+      "level": "A2",
+      "word": "bank",
+      "chinese": "銀行"
+    }
+  ],
+  "23": [
+    {
+      "level": "A1",
+      "word": "bar",
+      "chinese": "酒吧"
+    },
+    {
+      "level": "A2",
+      "word": "barely",
+      "chinese": "幾乎不"
+    },
+    {
+      "level": "A1",
+      "word": "based",
+      "chinese": "位於，基於"
+    },
+    {
+      "level": "A2",
+      "word": "basement",
+      "chinese": "地下室"
+    },
+    {
+      "level": "A2",
+      "word": "basic",
+      "chinese": "基本的"
+    },
+    {
+      "level": "A2",
+      "word": "basically",
+      "chinese": "基本上"
+    },
+    {
+      "level": "A2",
+      "word": "bath",
+      "chinese": "浴缸/沐浴"
+    },
+    {
+      "level": "A2",
+      "word": "battery",
+      "chinese": "電池"
+    },
+    {
+      "level": "A1",
+      "word": "beach",
+      "chinese": "沙灘"
+    },
+    {
+      "level": "A2",
+      "word": "bee",
+      "chinese": "蜜蜂"
+    },
+    {
+      "level": "A2",
+      "word": "beef",
+      "chinese": "牛肉"
+    },
+    {
+      "level": "A2",
+      "word": "before",
+      "chinese": "以前"
+    },
+    {
+      "level": "A1",
+      "word": "begin",
+      "chinese": "開始"
+    },
+    {
+      "level": "A2",
+      "word": "beginning",
+      "chinese": "開始"
+    },
+    {
+      "level": "A2",
+      "word": "belong",
+      "chinese": "屬於"
+    },
+    {
+      "level": "A1",
+      "word": "best",
+      "chinese": "最好的"
+    }
+  ],
+  "24": [
+    {
+      "level": "A1",
+      "word": "better",
+      "chinese": "更好的"
+    },
+    {
+      "level": "A1",
+      "word": "bill",
+      "chinese": "鈔票"
+    },
+    {
+      "level": "A2",
+      "word": "bin",
+      "chinese": "垃圾桶"
+    },
+    {
+      "level": "A2",
+      "word": "birth",
+      "chinese": "出生"
+    },
+    {
+      "level": "A1",
+      "word": "birthday",
+      "chinese": "生日"
+    },
+    {
+      "level": "A2",
+      "word": "bitter",
+      "chinese": "苦的"
+    },
+    {
+      "level": "A1",
+      "word": "blog",
+      "chinese": "博客"
+    },
+    {
+      "level": "A1",
+      "word": "blood",
+      "chinese": "血液"
+    },
+    {
+      "level": "A2",
+      "word": "boil",
+      "chinese": "煮"
+    },
+    {
+      "level": "A2",
+      "word": "bonus",
+      "chinese": "獎金"
+    },
+    {
+      "level": "A2",
+      "word": "break",
+      "chinese": "打破"
+    },
+    {
+      "level": "A2",
+      "word": "bright",
+      "chinese": "明亮的"
+    },
+    {
+      "level": "A2",
+      "word": "buildings",
+      "chinese": "建築物"
+    },
+    {
+      "level": "A2",
+      "word": "built",
+      "chinese": "建造的"
+    },
+    {
+      "level": "A1",
+      "word": "busy",
+      "chinese": "忙碌的"
+    },
+    {
+      "level": "A1",
+      "word": "cafe",
+      "chinese": "咖啡館"
+    }
+  ],
+  "25": [
+    {
+      "level": "A2",
+      "word": "calendar",
+      "chinese": "日曆"
+    },
+    {
+      "level": "A2",
+      "word": "call",
+      "chinese": "打電話/叫"
+    },
+    {
+      "level": "A2",
+      "word": "calm",
+      "chinese": "平靜的"
+    },
+    {
+      "level": "A1",
+      "word": "camera",
+      "chinese": "相機"
+    },
+    {
+      "level": "A2",
+      "word": "can",
+      "chinese": "可以"
+    },
+    {
+      "level": "A2",
+      "word": "cancel",
+      "chinese": "取消"
+    },
+    {
+      "level": "A2",
+      "word": "cape",
+      "chinese": "鬥篷"
+    },
+    {
+      "level": "A1",
+      "word": "card",
+      "chinese": "卡片"
+    },
+    {
+      "level": "A2",
+      "word": "carefully",
+      "chinese": "小心地"
+    },
+    {
+      "level": "A2",
+      "word": "carpet",
+      "chinese": "地毯"
+    },
+    {
+      "level": "A2",
+      "word": "case",
+      "chinese": "情況，案例"
+    },
+    {
+      "level": "A2",
+      "word": "cash",
+      "chinese": "現金"
+    },
+    {
+      "level": "A1",
+      "word": "casino",
+      "chinese": "賭場"
+    },
+    {
+      "level": "A1",
+      "word": "catch",
+      "chinese": "抓住"
+    },
+    {
+      "level": "A2",
+      "word": "celebration",
+      "chinese": "慶祝活動"
+    },
+    {
+      "level": "A2",
+      "word": "cent",
+      "chinese": "美分"
+    }
+  ],
+  "26": [
+    {
+      "level": "A2",
+      "word": "clinical",
+      "chinese": "臨床的"
+    },
+    {
+      "level": "A1",
+      "word": "close",
+      "chinese": "關上"
+    },
+    {
+      "level": "A1",
+      "word": "closed",
+      "chinese": "關閉的"
+    },
+    {
+      "level": "A2",
+      "word": "closet",
+      "chinese": "衣櫃"
+    },
+    {
+      "level": "A1",
+      "word": "clothing",
+      "chinese": "衣服"
+    },
+    {
+      "level": "A1",
+      "word": "club",
+      "chinese": "俱樂部"
+    },
+    {
+      "level": "A2",
+      "word": "coal",
+      "chinese": "煤炭"
+    },
+    {
+      "level": "A2",
+      "word": "codes",
+      "chinese": "規範/代碼"
+    },
+    {
+      "level": "A1",
+      "word": "color",
+      "chinese": "顏色"
+    },
+    {
+      "level": "A2",
+      "word": "colour",
+      "chinese": "顏色"
+    },
+    {
+      "level": "A2",
+      "word": "combination",
+      "chinese": "組合"
+    },
+    {
+      "level": "A2",
+      "word": "combine",
+      "chinese": "結合"
+    },
+    {
+      "level": "A2",
+      "word": "comfort",
+      "chinese": "舒適"
+    },
+    {
+      "level": "A2",
+      "word": "communicate",
+      "chinese": "溝通"
+    },
+    {
+      "level": "A2",
+      "word": "compatible",
+      "chinese": "兼容的"
+    },
+    {
+      "level": "A2",
+      "word": "complain",
+      "chinese": "抱怨"
+    }
+  ],
+  "27": [
+    {
+      "level": "A2",
+      "word": "completely",
+      "chinese": "完全地"
+    },
+    {
+      "level": "A2",
+      "word": "complex",
+      "chinese": "複雜的"
+    },
+    {
+      "level": "A2",
+      "word": "computing",
+      "chinese": "計算"
+    },
+    {
+      "level": "A2",
+      "word": "concerned",
+      "chinese": "擔心的"
+    },
+    {
+      "level": "A1",
+      "word": "concert",
+      "chinese": "音樂會"
+    },
+    {
+      "level": "A1",
+      "word": "conditions",
+      "chinese": "條件"
+    },
+    {
+      "level": "A2",
+      "word": "conference",
+      "chinese": "會議"
+    },
+    {
+      "level": "A2",
+      "word": "connect",
+      "chinese": "連接"
+    },
+    {
+      "level": "A2",
+      "word": "connected",
+      "chinese": "連接的"
+    },
+    {
+      "level": "A2",
+      "word": "conservation",
+      "chinese": "保護"
+    },
+    {
+      "level": "A2",
+      "word": "constitutes",
+      "chinese": "構成"
+    },
+    {
+      "level": "A2",
+      "word": "conversion",
+      "chinese": "轉化"
+    },
+    {
+      "level": "A2",
+      "word": "convert",
+      "chinese": "轉換"
+    },
+    {
+      "level": "A1",
+      "word": "cookie",
+      "chinese": "餅乾"
+    },
+    {
+      "level": "A2",
+      "word": "cope",
+      "chinese": "應對"
+    },
+    {
+      "level": "A2",
+      "word": "copy",
+      "chinese": "複製"
+    }
+  ],
+  "28": [
+    {
+      "level": "A1",
+      "word": "date",
+      "chinese": "日期/約會"
+    },
+    {
+      "level": "A1",
+      "word": "david",
+      "chinese": "大衛"
+    },
+    {
+      "level": "A2",
+      "word": "deal",
+      "chinese": "交易"
+    },
+    {
+      "level": "A2",
+      "word": "death",
+      "chinese": "死亡"
+    },
+    {
+      "level": "A2",
+      "word": "debit",
+      "chinese": "借方"
+    },
+    {
+      "level": "A2",
+      "word": "decade",
+      "chinese": "十年"
+    },
+    {
+      "level": "A1",
+      "word": "December",
+      "chinese": "十二月"
+    },
+    {
+      "level": "A2",
+      "word": "decide",
+      "chinese": "決定"
+    },
+    {
+      "level": "A2",
+      "word": "decisions",
+      "chinese": "決定"
+    },
+    {
+      "level": "A2",
+      "word": "decline",
+      "chinese": "下降"
+    },
+    {
+      "level": "A2",
+      "word": "decrease",
+      "chinese": "減少"
+    },
+    {
+      "level": "A2",
+      "word": "deeply",
+      "chinese": "深深地"
+    },
+    {
+      "level": "A2",
+      "word": "defined",
+      "chinese": "定義的"
+    },
+    {
+      "level": "A2",
+      "word": "definitely",
+      "chinese": "肯定地"
+    },
+    {
+      "level": "A2",
+      "word": "degree",
+      "chinese": "程度"
+    },
+    {
+      "level": "A2",
+      "word": "delay",
+      "chinese": "延後"
+    }
+  ],
+  "29": [
+    {
+      "level": "A2",
+      "word": "delete",
+      "chinese": "刪除"
+    },
+    {
+      "level": "A2",
+      "word": "delicious",
+      "chinese": "可口的"
+    },
+    {
+      "level": "A2",
+      "word": "delivery",
+      "chinese": "交付"
+    },
+    {
+      "level": "A2",
+      "word": "delta",
+      "chinese": "德爾塔"
+    },
+    {
+      "level": "A2",
+      "word": "departure",
+      "chinese": "出發"
+    },
+    {
+      "level": "A1",
+      "word": "depth",
+      "chinese": "深度"
+    },
+    {
+      "level": "A2",
+      "word": "desire",
+      "chinese": "願望"
+    },
+    {
+      "level": "A2",
+      "word": "desk",
+      "chinese": "書桌"
+    },
+    {
+      "level": "A2",
+      "word": "desktop",
+      "chinese": "桌面"
+    },
+    {
+      "level": "A2",
+      "word": "determined",
+      "chinese": "堅定的"
+    },
+    {
+      "level": "A2",
+      "word": "developer",
+      "chinese": "開發商"
+    },
+    {
+      "level": "A2",
+      "word": "dictionary",
+      "chinese": "字典"
+    },
+    {
+      "level": "A2",
+      "word": "differently",
+      "chinese": "不同地"
+    },
+    {
+      "level": "A2",
+      "word": "difficult",
+      "chinese": "困難"
+    },
+    {
+      "level": "A2",
+      "word": "dining",
+      "chinese": "餐廳"
+    },
+    {
+      "level": "A2",
+      "word": "direction",
+      "chinese": "方向"
+    }
+  ],
+  "30": [
+    {
+      "level": "A2",
+      "word": "directly",
+      "chinese": "直接地"
+    },
+    {
+      "level": "A1",
+      "word": "directory",
+      "chinese": "目錄"
+    },
+    {
+      "level": "A1",
+      "word": "dirty",
+      "chinese": "髒的"
+    },
+    {
+      "level": "A2",
+      "word": "disclaimer",
+      "chinese": "免責聲明"
+    },
+    {
+      "level": "A2",
+      "word": "discount",
+      "chinese": "折扣"
+    },
+    {
+      "level": "A2",
+      "word": "discuss",
+      "chinese": "討論"
+    },
+    {
+      "level": "A2",
+      "word": "distributed",
+      "chinese": "分散式的"
+    },
+    {
+      "level": "A2",
+      "word": "divide",
+      "chinese": "分割"
+    },
+    {
+      "level": "A1",
+      "word": "do",
+      "chinese": "做"
+    },
+    {
+      "level": "A1",
+      "word": "doctor",
+      "chinese": "醫生"
+    },
+    {
+      "level": "A2",
+      "word": "dollars",
+      "chinese": "美元"
+    },
+    {
+      "level": "A2",
+      "word": "download",
+      "chinese": "下載"
+    },
+    {
+      "level": "A1",
+      "word": "draw",
+      "chinese": "畫"
+    },
+    {
+      "level": "A2",
+      "word": "drawer",
+      "chinese": "抽屜"
+    },
+    {
+      "level": "A2",
+      "word": "driving",
+      "chinese": "駕駛"
+    },
+    {
+      "level": "A2",
+      "word": "drop",
+      "chinese": "下降"
+    }
+  ],
+  "31": [
+    {
+      "level": "A2",
+      "word": "dry",
+      "chinese": "幹的"
+    },
+    {
+      "level": "A2",
+      "word": "dual",
+      "chinese": "雙重的"
+    },
+    {
+      "level": "A2",
+      "word": "during",
+      "chinese": "在...期間"
+    },
+    {
+      "level": "A2",
+      "word": "dust",
+      "chinese": "灰塵"
+    },
+    {
+      "level": "A2",
+      "word": "earlier",
+      "chinese": "早些時候"
+    },
+    {
+      "level": "A1",
+      "word": "early",
+      "chinese": "早"
+    },
+    {
+      "level": "A2",
+      "word": "easily",
+      "chinese": "容易地"
+    },
+    {
+      "level": "A1",
+      "word": "east",
+      "chinese": "東"
+    },
+    {
+      "level": "A2",
+      "word": "easy",
+      "chinese": "容易的"
+    },
+    {
+      "level": "A2",
+      "word": "edge",
+      "chinese": "邊緣"
+    },
+    {
+      "level": "A2",
+      "word": "editorial",
+      "chinese": "編輯的"
+    },
+    {
+      "level": "A2",
+      "word": "eight",
+      "chinese": "八"
+    },
+    {
+      "level": "A1",
+      "word": "eighteen",
+      "chinese": "十八"
+    },
+    {
+      "level": "A1",
+      "word": "eighty",
+      "chinese": "八十"
+    },
+    {
+      "level": "A1",
+      "word": "either",
+      "chinese": "任一個"
+    },
+    {
+      "level": "A2",
+      "word": "elderly",
+      "chinese": "老年的"
+    }
+  ],
+  "32": [
+    {
+      "level": "A2",
+      "word": "equally",
+      "chinese": "同樣地"
+    },
+    {
+      "level": "A2",
+      "word": "equity",
+      "chinese": "公平"
+    },
+    {
+      "level": "A2",
+      "word": "era",
+      "chinese": "時代"
+    },
+    {
+      "level": "A2",
+      "word": "errors",
+      "chinese": "錯誤"
+    },
+    {
+      "level": "A2",
+      "word": "especially",
+      "chinese": "特別地"
+    },
+    {
+      "level": "A2",
+      "word": "estimated",
+      "chinese": "估計的"
+    },
+    {
+      "level": "A2",
+      "word": "euro",
+      "chinese": "歐元"
+    },
+    {
+      "level": "A1",
+      "word": "even",
+      "chinese": "甚至"
+    },
+    {
+      "level": "A2",
+      "word": "event",
+      "chinese": "事件"
+    },
+    {
+      "level": "A2",
+      "word": "eventually",
+      "chinese": "最終"
+    },
+    {
+      "level": "A1",
+      "word": "every",
+      "chinese": "每個"
+    },
+    {
+      "level": "A2",
+      "word": "exactly",
+      "chinese": "確切地"
+    },
+    {
+      "level": "A2",
+      "word": "example",
+      "chinese": "例子"
+    },
+    {
+      "level": "A1",
+      "word": "excuse",
+      "chinese": "藉口"
+    },
+    {
+      "level": "A2",
+      "word": "expand",
+      "chinese": "擴張"
+    },
+    {
+      "level": "A2",
+      "word": "expected",
+      "chinese": "預期的"
+    }
+  ],
+  "33": [
+    {
+      "level": "A2",
+      "word": "expense",
+      "chinese": "花費"
+    },
+    {
+      "level": "A1",
+      "word": "expensive",
+      "chinese": "昂貴的"
+    },
+    {
+      "level": "A2",
+      "word": "experience",
+      "chinese": "經驗"
+    },
+    {
+      "level": "A2",
+      "word": "experts",
+      "chinese": "專家"
+    },
+    {
+      "level": "A2",
+      "word": "explain",
+      "chinese": "解釋"
+    },
+    {
+      "level": "A1",
+      "word": "face",
+      "chinese": "臉"
+    },
+    {
+      "level": "A1",
+      "word": "fact",
+      "chinese": "事實"
+    },
+    {
+      "level": "A2",
+      "word": "fairly",
+      "chinese": "相當"
+    },
+    {
+      "level": "A2",
+      "word": "fake",
+      "chinese": "假的"
+    },
+    {
+      "level": "A2",
+      "word": "fall",
+      "chinese": "秋天"
+    },
+    {
+      "level": "A2",
+      "word": "false",
+      "chinese": "錯誤的"
+    },
+    {
+      "level": "A1",
+      "word": "family",
+      "chinese": "家庭"
+    },
+    {
+      "level": "A1",
+      "word": "farm",
+      "chinese": "農場"
+    },
+    {
+      "level": "A2",
+      "word": "fate",
+      "chinese": "命運"
+    },
+    {
+      "level": "A1",
+      "word": "february",
+      "chinese": "二月"
+    },
+    {
+      "level": "A2",
+      "word": "feel",
+      "chinese": "感覺"
+    }
+  ],
+  "34": [
+    {
+      "level": "A2",
+      "word": "fence",
+      "chinese": "圍欄"
+    },
+    {
+      "level": "A1",
+      "word": "fight",
+      "chinese": "戰鬥/爭吵"
+    },
+    {
+      "level": "A2",
+      "word": "fill",
+      "chinese": "填滿"
+    },
+    {
+      "level": "A2",
+      "word": "filter",
+      "chinese": "過濾器"
+    },
+    {
+      "level": "A2",
+      "word": "finally",
+      "chinese": "最後"
+    },
+    {
+      "level": "A2",
+      "word": "fire",
+      "chinese": "解僱/火"
+    },
+    {
+      "level": "A2",
+      "word": "fit",
+      "chinese": "合適"
+    },
+    {
+      "level": "A2",
+      "word": "fixed",
+      "chinese": "固定的"
+    },
+    {
+      "level": "A2",
+      "word": "flame",
+      "chinese": "火焰"
+    },
+    {
+      "level": "A2",
+      "word": "flow",
+      "chinese": "流動"
+    },
+    {
+      "level": "A2",
+      "word": "forbid",
+      "chinese": "禁止"
+    },
+    {
+      "level": "A2",
+      "word": "forecast",
+      "chinese": "天氣預報"
+    },
+    {
+      "level": "A2",
+      "word": "foreign",
+      "chinese": "外國的"
+    },
+    {
+      "level": "A2",
+      "word": "forget",
+      "chinese": "忘記"
+    },
+    {
+      "level": "A2",
+      "word": "fork",
+      "chinese": "叉子"
+    },
+    {
+      "level": "A2",
+      "word": "forms",
+      "chinese": "形式"
+    }
+  ],
+  "35": [
+    {
+      "level": "A2",
+      "word": "fortunately",
+      "chinese": "幸運的是"
+    },
+    {
+      "level": "A1",
+      "word": "forty",
+      "chinese": "四十"
+    },
+    {
+      "level": "A2",
+      "word": "forward",
+      "chinese": "向前"
+    },
+    {
+      "level": "A1",
+      "word": "fourteen",
+      "chinese": "十四"
+    },
+    {
+      "level": "A2",
+      "word": "fraction",
+      "chinese": "分數"
+    },
+    {
+      "level": "A1",
+      "word": "free",
+      "chinese": "免費的/空閒的"
+    },
+    {
+      "level": "A2",
+      "word": "freeze",
+      "chinese": "凍結，凍住"
+    },
+    {
+      "level": "A2",
+      "word": "fresh",
+      "chinese": "新鮮的"
+    },
+    {
+      "level": "A1",
+      "word": "Friday",
+      "chinese": "星期五"
+    },
+    {
+      "level": "A1",
+      "word": "front",
+      "chinese": "前面"
+    },
+    {
+      "level": "A2",
+      "word": "frozen",
+      "chinese": "冷凍的"
+    },
+    {
+      "level": "A2",
+      "word": "fuel",
+      "chinese": "燃料，燃油"
+    },
+    {
+      "level": "A1",
+      "word": "full",
+      "chinese": "滿的"
+    },
+    {
+      "level": "A2",
+      "word": "functions",
+      "chinese": "功能"
+    },
+    {
+      "level": "A2",
+      "word": "funeral",
+      "chinese": "葬禮"
+    },
+    {
+      "level": "A2",
+      "word": "furniture",
+      "chinese": "家具"
+    }
+  ],
+  "36": [
+    {
+      "level": "A1",
+      "word": "future",
+      "chinese": "未來"
+    },
+    {
+      "level": "A2",
+      "word": "gambling",
+      "chinese": "賭博"
+    },
+    {
+      "level": "A1",
+      "word": "game",
+      "chinese": "遊戲"
+    },
+    {
+      "level": "A2",
+      "word": "garage",
+      "chinese": "車庫"
+    },
+    {
+      "level": "A2",
+      "word": "gas",
+      "chinese": "氣體/汽油"
+    },
+    {
+      "level": "A2",
+      "word": "gate",
+      "chinese": "大門"
+    },
+    {
+      "level": "A2",
+      "word": "generally",
+      "chinese": "一般來說"
+    },
+    {
+      "level": "A2",
+      "word": "generated",
+      "chinese": "生成的"
+    },
+    {
+      "level": "A2",
+      "word": "generation",
+      "chinese": "世代"
+    },
+    {
+      "level": "A2",
+      "word": "genuine",
+      "chinese": "真正的"
+    },
+    {
+      "level": "A1",
+      "word": "gift",
+      "chinese": "禮物"
+    },
+    {
+      "level": "A2",
+      "word": "glance",
+      "chinese": "一瞥"
+    },
+    {
+      "level": "A2",
+      "word": "glass",
+      "chinese": "玻璃杯"
+    },
+    {
+      "level": "A2",
+      "word": "goal",
+      "chinese": "目標"
+    },
+    {
+      "level": "A2",
+      "word": "goals",
+      "chinese": "目標"
+    },
+    {
+      "level": "A2",
+      "word": "gold",
+      "chinese": "黃金"
     }
   ]
 }
