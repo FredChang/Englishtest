@@ -11038,5 +11038,193 @@
     "ImageUrl": "images/a2-gold.jpg",
     "Chinese": "黃金",
     "Phonetic": "/ɡoʊld/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "automotive"
+    ],
+    "ImageUrl": "images/a2-automotive.jpg",
+    "Chinese": "汽車",
+    "Phonetic": "/ˌɔtəˈmoʊtɪv/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "availability"
+    ],
+    "ImageUrl": "images/a1-availability.jpg",
+    "Chinese": "可用性",
+    "Phonetic": "/əˌveɪləˈbɪlɪti/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "average"
+    ],
+    "ImageUrl": "images/a2-average.jpg",
+    "Chinese": "平均的",
+    "Phonetic": "/ˈævərɪʤ/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "back"
+    ],
+    "ImageUrl": "images/a1-back.jpg",
+    "Chinese": "背部"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "ball"
+    ],
+    "ImageUrl": "images/a1-ball.jpg",
+    "Chinese": "球",
+    "Phonetic": "/bɔl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "convert"
+    ],
+    "ImageUrl": "images/a2-convert.jpg",
+    "Chinese": "轉換",
+    "Phonetic": "/ˈkɑnvərt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "cookie"
+    ],
+    "ImageUrl": "images/a1-cookie.jpg",
+    "Chinese": "餅乾",
+    "Phonetic": "/ˈkʊk.i/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "cope"
+    ],
+    "ImageUrl": "images/a2-cope.jpg",
+    "Chinese": "應對",
+    "Phonetic": "/koʊp/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "copy"
+    ],
+    "ImageUrl": "images/a2-copy.jpg",
+    "Chinese": "複製",
+    "Phonetic": "/ˈkɑpi/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "dry"
+    ],
+    "ImageUrl": "images/a2-dry.jpg",
+    "Chinese": "幹的",
+    "Phonetic": "/draɪ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "dual"
+    ],
+    "ImageUrl": "images/a2-dual.jpg",
+    "Chinese": "雙重的",
+    "Phonetic": "/ˈdjuːəl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "during"
+    ],
+    "ImageUrl": "images/a2-during.jpg",
+    "Chinese": "在...期間",
+    "Phonetic": "/ˈdʊrɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "earlier"
+    ],
+    "ImageUrl": "images/a2-earlier.jpg",
+    "Chinese": "早些時候",
+    "Phonetic": "/ˈərliər/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "early"
+    ],
+    "ImageUrl": "images/a1-early.jpg",
+    "Chinese": "早",
+    "Phonetic": "/ˈərli/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "easily"
+    ],
+    "ImageUrl": "images/a2-easily.jpg",
+    "Chinese": "容易地",
+    "Phonetic": "/ˈizəli/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "easy"
+    ],
+    "ImageUrl": "images/a2-easy.jpg",
+    "Chinese": "容易的",
+    "Phonetic": "/ˈizi/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "edge"
+    ],
+    "ImageUrl": "images/a2-edge.jpg",
+    "Chinese": "邊緣",
+    "Phonetic": "/ɛʤ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "editorial"
+    ],
+    "ImageUrl": "images/a2-editorial.jpg",
+    "Chinese": "編輯的",
+    "Phonetic": "/ˌɛdəˈtɔriəl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "eight"
+    ],
+    "ImageUrl": "images/a2-eight.jpg",
+    "Chinese": "八",
+    "Phonetic": "/eɪt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "eighteen"
+    ],
+    "ImageUrl": "images/a1-eighteen.jpg",
+    "Chinese": "十八",
+    "Phonetic": "/ˈeɪˈtin/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "eighty"
+    ],
+    "ImageUrl": "images/a1-eighty.jpg",
+    "Chinese": "八十",
+    "Phonetic": "/ˈeɪti/"
   }
 ]
