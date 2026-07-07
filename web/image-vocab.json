@@ -8598,5 +8598,142 @@
     "ImageUrl": "images/b2-assistant.jpg",
     "Chinese": "助理",
     "Phonetic": "/əˈsɪstənt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bell"
+    ],
+    "ImageUrl": "images/b1-bell.jpg",
+    "Chinese": "鈴",
+    "Phonetic": "/bɛl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bend"
+    ],
+    "ImageUrl": "images/b1-bend.jpg",
+    "Chinese": "彎曲",
+    "Phonetic": "/bɛnd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "benefit"
+    ],
+    "ImageUrl": "images/b1-benefit.jpg",
+    "Chinese": "福利",
+    "Phonetic": "/ˈbɛnəfɪt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "benefits"
+    ],
+    "ImageUrl": "images/b1-benefits.jpg",
+    "Chinese": "福利",
+    "Phonetic": "/ˈbɛnɪfɪts/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "berth"
+    ],
+    "ImageUrl": "images/b1-berth.jpg",
+    "Chinese": "鋪位"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "beta"
+    ],
+    "ImageUrl": "images/b1-beta.jpg",
+    "Chinese": "測試版",
+    "Phonetic": "/ˈbeɪ.tə/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "beyond"
+    ],
+    "ImageUrl": "images/b2-beyond.jpg",
+    "Chinese": "超過 / 在…之外",
+    "Phonetic": "/biˈɒnd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bibimbap"
+    ],
+    "ImageUrl": "images/b1-bibimbap.jpg",
+    "Chinese": "拌飯"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bibliography"
+    ],
+    "ImageUrl": "images/b1-bibliography.jpg",
+    "Chinese": "參考文獻",
+    "Phonetic": "/ˌbɪbliˈɑgrəfi/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "bid"
+    ],
+    "ImageUrl": "images/b2-bid.jpg",
+    "Chinese": "投標"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bike-sharing"
+    ],
+    "ImageUrl": "images/b1-bike_sharing.jpg",
+    "Chinese": "共享單車"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "billboard"
+    ],
+    "ImageUrl": "images/b1-billboard.jpg",
+    "Chinese": "廣告牌"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "billion"
+    ],
+    "ImageUrl": "images/b1-billion.jpg",
+    "Chinese": "十億",
+    "Phonetic": "/ˈbɪljən/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bind"
+    ],
+    "ImageUrl": "images/b1-bind.jpg",
+    "Chinese": "綁",
+    "Phonetic": "/baɪnd/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "birch"
+    ],
+    "ImageUrl": "images/b1-birch.jpg",
+    "Chinese": "樺樹"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "bistro"
+    ],
+    "ImageUrl": "images/b1-bistro.jpg",
+    "Chinese": "小餐館"
   }
 ]
