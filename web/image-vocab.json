@@ -8735,5 +8735,141 @@
     ],
     "ImageUrl": "images/b1-bistro.jpg",
     "Chinese": "小餐館"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anxiety"
+    ],
+    "ImageUrl": "images/b1-anxiety.jpg",
+    "Chinese": "焦慮"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "anxious"
+    ],
+    "ImageUrl": "images/b1-anxious.jpg",
+    "Chinese": "焦慮的"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "apart"
+    ],
+    "ImageUrl": "images/b1-apart.jpg",
+    "Chinese": "分開",
+    "Phonetic": "/əˈpɑːrt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "apologize"
+    ],
+    "ImageUrl": "images/b1-apologize.jpg",
+    "Chinese": "道歉"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "apparatus"
+    ],
+    "ImageUrl": "images/b1-apparatus.jpg",
+    "Chinese": "設備",
+    "Phonetic": "/ˌæpərˈætəs/"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "apparel"
+    ],
+    "ImageUrl": "images/b2-apparel.jpg",
+    "Chinese": "服裝",
+    "Phonetic": "/əˈpær.əl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "apparent"
+    ],
+    "ImageUrl": "images/b1-apparent.jpg",
+    "Chinese": "明顯的",
+    "Phonetic": "/əˈpɛrənt/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "appeal"
+    ],
+    "ImageUrl": "images/b1-appeal.jpg",
+    "Chinese": "呼籲",
+    "Phonetic": "/əˈpil/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "appetite"
+    ],
+    "ImageUrl": "images/b1-appetite.jpg",
+    "Chinese": "食慾"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "applaud"
+    ],
+    "ImageUrl": "images/b1-applaud.jpg",
+    "Chinese": "鼓掌"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "appliance"
+    ],
+    "ImageUrl": "images/b1-appliance.jpg",
+    "Chinese": "家電",
+    "Phonetic": "/əˈplaɪəns/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "applicable"
+    ],
+    "ImageUrl": "images/b1-applicable.jpg",
+    "Chinese": "適用的",
+    "Phonetic": "/ˈæpləkəbəl/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "application"
+    ],
+    "ImageUrl": "images/b1-application.jpg",
+    "Chinese": "申請"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "appliqué"
+    ],
+    "ImageUrl": "images/b1-appliqué.jpg",
+    "Chinese": "貼花"
+  },
+  {
+    "Level": "B2",
+    "English": [
+      "apply"
+    ],
+    "ImageUrl": "images/b2-apply.jpg",
+    "Chinese": "申請",
+    "Phonetic": "/əˈplaɪ/"
+  },
+  {
+    "Level": "B1",
+    "English": [
+      "appoint"
+    ],
+    "ImageUrl": "images/b1-appoint.jpg",
+    "Chinese": "任命"
   }
 ]
