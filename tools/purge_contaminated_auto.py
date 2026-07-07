@@ -46,14 +46,14 @@ def main():
         print("No contaminated grids found in this OCR scan.")
         return
 
-    print(f"Contaminated grids identified for purge: {list(contaminated_grids)}")
+    print(f"Contaminated grids identified for PNG cleanup: {list(contaminated_grids)}")
 
-    # Gather all words from contaminated grids
+    # Gather only the specific contaminated words
     purge_words = set()
-    for grid_num in contaminated_grids:
-        if grid_num in pending_grids:
-            for item in pending_grids[grid_num]:
-                purge_words.add(item["word"].lower().strip())
+    for item in detected_items:
+        word = item.get("word", "").lower().strip()
+        if word:
+            purge_words.add(word)
 
     print(f"Total words to purge from database: {len(purge_words)}")
 
