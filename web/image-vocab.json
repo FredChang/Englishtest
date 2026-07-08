@@ -11226,5 +11226,1083 @@
     "ImageUrl": "images/a1-eighty.jpg",
     "Chinese": "八十",
     "Phonetic": "/ˈeɪti/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "ask"
+    ],
+    "ImageUrl": "images/a2-ask.jpg",
+    "Chinese": "問",
+    "Phonetic": "/æsk/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "either"
+    ],
+    "ImageUrl": "images/a1-either.jpg",
+    "Chinese": "任一個",
+    "Phonetic": "/ˈiðər/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "february"
+    ],
+    "ImageUrl": "images/a1-february.jpg",
+    "Chinese": "二月",
+    "Phonetic": "/ˈfɛbruˌɛri/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "graphics"
+    ],
+    "ImageUrl": "images/a2-graphics.jpg",
+    "Chinese": "圖形",
+    "Phonetic": "/ˈgræfɪks/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "greet"
+    ],
+    "ImageUrl": "images/a2-greet.jpg",
+    "Chinese": "迎接/問候",
+    "Phonetic": "/ɡriːt/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "group"
+    ],
+    "ImageUrl": "images/a2-group.jpg",
+    "Chinese": "群體",
+    "Phonetic": "/ɡruːp/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "groups"
+    ],
+    "ImageUrl": "images/a1-groups.jpg",
+    "Chinese": "群體",
+    "Phonetic": "/grups/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "growth"
+    ],
+    "ImageUrl": "images/a2-growth.jpg",
+    "Chinese": "成長"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "guide"
+    ],
+    "ImageUrl": "images/a2-guide.jpg",
+    "Chinese": "導遊",
+    "Phonetic": "/gaɪd/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "gun"
+    ],
+    "ImageUrl": "images/a1-gun.jpg",
+    "Chinese": "槍",
+    "Phonetic": "/ɡʌn/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hallway"
+    ],
+    "ImageUrl": "images/a2-hallway.jpg",
+    "Chinese": "走廊",
+    "Phonetic": "/ˈhɔlˌweɪ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "handling"
+    ],
+    "ImageUrl": "images/a2-handling.jpg",
+    "Chinese": "處理",
+    "Phonetic": "/ˈhændlɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hang"
+    ],
+    "ImageUrl": "images/a2-hang.jpg",
+    "Chinese": "掛",
+    "Phonetic": "/hæŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hardly"
+    ],
+    "ImageUrl": "images/a2-hardly.jpg",
+    "Chinese": "幾乎不，勉強",
+    "Phonetic": "/ˈhɑːrdli/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hardware"
+    ],
+    "ImageUrl": "images/a1-hardware.jpg",
+    "Chinese": "硬體",
+    "Phonetic": "/ˈhɑrdˌwɛr/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "health"
+    ],
+    "ImageUrl": "images/a1-health.jpg",
+    "Chinese": "健康",
+    "Phonetic": "/hɛlθ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "heat"
+    ],
+    "ImageUrl": "images/a2-heat.jpg",
+    "Chinese": "熱量",
+    "Phonetic": "/hit/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "heavily"
+    ],
+    "ImageUrl": "images/a2-heavily.jpg",
+    "Chinese": "大量地",
+    "Phonetic": "/ˈhɛvəli/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "height"
+    ],
+    "ImageUrl": "images/a1-height.jpg",
+    "Chinese": "高度/身高",
+    "Phonetic": "/haɪt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hello"
+    ],
+    "ImageUrl": "images/a1-hello.jpg",
+    "Chinese": "你好",
+    "Phonetic": "/hɛˈloʊ/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "help"
+    ],
+    "ImageUrl": "images/a1-help.jpg",
+    "Chinese": "幫助",
+    "Phonetic": "/hɛlp/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "higher"
+    ],
+    "ImageUrl": "images/a1-higher.jpg",
+    "Chinese": "更高",
+    "Phonetic": "/haɪər/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hire"
+    ],
+    "ImageUrl": "images/a2-hire.jpg",
+    "Chinese": "僱用",
+    "Phonetic": "/haɪər/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "history"
+    ],
+    "ImageUrl": "images/a1-history.jpg",
+    "Chinese": "歷史",
+    "Phonetic": "/ˈhɪstəri/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hold"
+    ],
+    "ImageUrl": "images/a2-hold.jpg",
+    "Chinese": "握，持",
+    "Phonetic": "/hoʊld/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "holiday"
+    ],
+    "ImageUrl": "images/a1-holiday.jpg",
+    "Chinese": "假日",
+    "Phonetic": "/ˈhɑlɪˌdeɪ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "homework"
+    ],
+    "ImageUrl": "images/a2-homework.jpg",
+    "Chinese": "作業",
+    "Phonetic": "/ˈhoʊmˌwərk/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hopefully"
+    ],
+    "ImageUrl": "images/a2-hopefully.jpg",
+    "Chinese": "希望 / 但願",
+    "Phonetic": "/ˈhoʊpfəli/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "how"
+    ],
+    "ImageUrl": "images/a2-how.jpg",
+    "Chinese": "怎樣",
+    "Phonetic": "/haʊ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "hug"
+    ],
+    "ImageUrl": "images/a2-hug.jpg",
+    "Chinese": "擁抱",
+    "Phonetic": "/hʌɡ/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hundred"
+    ],
+    "ImageUrl": "images/a1-hundred.jpg",
+    "Chinese": "百",
+    "Phonetic": "/ˈhənərd/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "hurt"
+    ],
+    "ImageUrl": "images/a1-hurt.jpg",
+    "Chinese": "傷害，疼痛",
+    "Phonetic": "/hɜːrt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "husband"
+    ],
+    "ImageUrl": "images/a1-husband.jpg",
+    "Chinese": "丈夫",
+    "Phonetic": "/ˈhəzbənd/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "idea"
+    ],
+    "ImageUrl": "images/a1-idea.jpg",
+    "Chinese": "點子",
+    "Phonetic": "/aɪˈdiə/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "ignore"
+    ],
+    "ImageUrl": "images/a2-ignore.jpg",
+    "Chinese": "忽視",
+    "Phonetic": "/ˌɪgˈnɔr/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "immediately"
+    ],
+    "ImageUrl": "images/a2-immediately.jpg",
+    "Chinese": "立即地",
+    "Phonetic": "/ˌɪˈmiˌdiətli/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "implementation"
+    ],
+    "ImageUrl": "images/a2-implementation.jpg",
+    "Chinese": "實施",
+    "Phonetic": "/ˌɪmpləmɛnˈteɪʃən/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "impossible"
+    ],
+    "ImageUrl": "images/a2-impossible.jpg",
+    "Chinese": "不可能的",
+    "Phonetic": "/ˌɪmˈpɑsəbəl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "improvement"
+    ],
+    "ImageUrl": "images/a2-improvement.jpg",
+    "Chinese": "改進，提高",
+    "Phonetic": "/ɪmˈpruːvmənt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "included"
+    ],
+    "ImageUrl": "images/a1-included.jpg",
+    "Chinese": "包括在內的",
+    "Phonetic": "/ɪnˈkluːdɪd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "income"
+    ],
+    "ImageUrl": "images/a2-income.jpg",
+    "Chinese": "收入"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "increase"
+    ],
+    "ImageUrl": "images/a2-increase.jpg",
+    "Chinese": "增加",
+    "Phonetic": "/ˌɪnˈkris/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "individuals"
+    ],
+    "ImageUrl": "images/a2-individuals.jpg",
+    "Chinese": "個人",
+    "Phonetic": "/ˌɪndəˈvɪʤəwəlz/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "indoor"
+    ],
+    "ImageUrl": "images/a2-indoor.jpg",
+    "Chinese": "室內的",
+    "Phonetic": "/ˈɪndɔːr/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "influence"
+    ],
+    "ImageUrl": "images/a2-influence.jpg",
+    "Chinese": "影響",
+    "Phonetic": "/ˈɪnfluəns/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "inform"
+    ],
+    "ImageUrl": "images/a2-inform.jpg",
+    "Chinese": "通知",
+    "Phonetic": "/ɪnˈfɔːrm/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "informed"
+    ],
+    "ImageUrl": "images/a2-informed.jpg",
+    "Chinese": "知情的",
+    "Phonetic": "/ˌɪnˈfɔrmd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "inn"
+    ],
+    "ImageUrl": "images/a2-inn.jpg",
+    "Chinese": "小旅館",
+    "Phonetic": "/ɪn/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "insert"
+    ],
+    "ImageUrl": "images/a2-insert.jpg",
+    "Chinese": "插入 / 嵌入",
+    "Phonetic": "/ɪnˈsɜːrt/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "install"
+    ],
+    "ImageUrl": "images/a2-install.jpg",
+    "Chinese": "安裝",
+    "Phonetic": "/ɪnˈstɔːl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "instant"
+    ],
+    "ImageUrl": "images/a2-instant.jpg",
+    "Chinese": "瞬間",
+    "Phonetic": "/ˈɪn.stənt/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "instantly"
+    ],
+    "ImageUrl": "images/a2-instantly.jpg",
+    "Chinese": "立即 / 馬上",
+    "Phonetic": "/ˈɪnstəntli/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "institute"
+    ],
+    "ImageUrl": "images/a1-institute.jpg",
+    "Chinese": "研究所",
+    "Phonetic": "/ˈɪnstɪˌtut/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "institutions"
+    ],
+    "ImageUrl": "images/a2-institutions.jpg",
+    "Chinese": "機構",
+    "Phonetic": "/ˌɪnstɪˈtuʃənz/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "integrated"
+    ],
+    "ImageUrl": "images/a2-integrated.jpg",
+    "Chinese": "綜合的",
+    "Phonetic": "/ˈɪntɪɡreɪtɪd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "intended"
+    ],
+    "ImageUrl": "images/a2-intended.jpg",
+    "Chinese": "預期的",
+    "Phonetic": "/ˌɪnˈtɛndɪd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "interest"
+    ],
+    "ImageUrl": "images/a2-interest.jpg",
+    "Chinese": "興趣",
+    "Phonetic": "/ˈɪntəˌrɛst/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "interface"
+    ],
+    "ImageUrl": "images/a2-interface.jpg",
+    "Chinese": "界面",
+    "Phonetic": "/ˈɪnərˌfeɪs/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "internet"
+    ],
+    "ImageUrl": "images/a1-internet.jpg",
+    "Chinese": "網路",
+    "Phonetic": "/ˈɪntərˌnɛt/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "introduce"
+    ],
+    "ImageUrl": "images/a2-introduce.jpg",
+    "Chinese": "介紹",
+    "Phonetic": "/ˌɪntrəˈdus/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "iron"
+    ],
+    "ImageUrl": "images/a2-iron.jpg",
+    "Chinese": "熨斗"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "island"
+    ],
+    "ImageUrl": "images/a1-island.jpg",
+    "Chinese": "島嶼"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "january"
+    ],
+    "ImageUrl": "images/a1-january.jpg",
+    "Chinese": "一月",
+    "Phonetic": "/ˈʤænjuˌɛri/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "jersey"
+    ],
+    "ImageUrl": "images/a2-jersey.jpg",
+    "Chinese": "針織面料",
+    "Phonetic": "/ˈdʒɜːrzi/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "job"
+    ],
+    "ImageUrl": "images/a2-job.jpg",
+    "Chinese": "工作",
+    "Phonetic": "/ʤɑb/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "journey"
+    ],
+    "ImageUrl": "images/a2-journey.jpg",
+    "Chinese": "旅程",
+    "Phonetic": "/ˈʤərni/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "July"
+    ],
+    "ImageUrl": "images/a1-july.jpg",
+    "Chinese": "七月",
+    "Phonetic": "/dʒuˈlaɪ/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "June"
+    ],
+    "ImageUrl": "images/a1-june.jpg",
+    "Chinese": "六月",
+    "Phonetic": "/dʒuːn/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "key"
+    ],
+    "ImageUrl": "images/a1-key.jpg",
+    "Chinese": "鑰匙"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "keyboard"
+    ],
+    "ImageUrl": "images/a1-keyboard.jpg",
+    "Chinese": "鍵盤",
+    "Phonetic": "/ˈkiˌbɔrd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "kiss"
+    ],
+    "ImageUrl": "images/a2-kiss.jpg",
+    "Chinese": "親吻",
+    "Phonetic": "/kɪs/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "knife"
+    ],
+    "ImageUrl": "images/a1-knife.jpg",
+    "Chinese": "刀子"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "label"
+    ],
+    "ImageUrl": "images/a2-label.jpg",
+    "Chinese": "標籤",
+    "Phonetic": "/ˈleɪbəl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "laser"
+    ],
+    "ImageUrl": "images/a2-laser.jpg",
+    "Chinese": "雷射",
+    "Phonetic": "/ˈleɪzər/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "late"
+    ],
+    "ImageUrl": "images/a1-late.jpg",
+    "Chinese": "晚",
+    "Phonetic": "/leɪt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "latest"
+    ],
+    "ImageUrl": "images/a1-latest.jpg",
+    "Chinese": "最新的",
+    "Phonetic": "/ˈleɪtəst/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "laugh"
+    ],
+    "ImageUrl": "images/a2-laugh.jpg",
+    "Chinese": "笑",
+    "Phonetic": "/læf/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "learn"
+    ],
+    "ImageUrl": "images/a1-learn.jpg",
+    "Chinese": "學習",
+    "Phonetic": "/lərn/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "limit"
+    ],
+    "ImageUrl": "images/a2-limit.jpg",
+    "Chinese": "限制",
+    "Phonetic": "/ˈlɪmət/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "line"
+    ],
+    "ImageUrl": "images/a1-line.jpg",
+    "Chinese": "線/行",
+    "Phonetic": "/laɪn/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "link"
+    ],
+    "ImageUrl": "images/a2-link.jpg",
+    "Chinese": "連結",
+    "Phonetic": "/lɪŋk/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "lion"
+    ],
+    "ImageUrl": "images/a2-lion.jpg",
+    "Chinese": "獅子"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "list"
+    ],
+    "ImageUrl": "images/a2-list.jpg",
+    "Chinese": "清單 / 列表",
+    "Phonetic": "/lɪst/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "listing"
+    ],
+    "ImageUrl": "images/a1-listing.jpg",
+    "Chinese": "列表",
+    "Phonetic": "/ˈlɪs.tɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "lives"
+    ],
+    "ImageUrl": "images/a2-lives.jpg",
+    "Chinese": "生命",
+    "Phonetic": "/lɪvz/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "load"
+    ],
+    "ImageUrl": "images/a2-load.jpg",
+    "Chinese": "負荷",
+    "Phonetic": "/loʊd/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "loan"
+    ],
+    "ImageUrl": "images/a2-loan.jpg",
+    "Chinese": "貸款"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "located"
+    ],
+    "ImageUrl": "images/a2-located.jpg",
+    "Chinese": "位於",
+    "Phonetic": "/loʊˈkeɪtɪd/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "lock"
+    ],
+    "ImageUrl": "images/a1-lock.jpg",
+    "Chinese": "鎖",
+    "Phonetic": "/lɒk/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "logo"
+    ],
+    "ImageUrl": "images/a1-logo.jpg",
+    "Chinese": "標誌",
+    "Phonetic": "/ˈloʊ.ɡoʊ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "longer"
+    ],
+    "ImageUrl": "images/a2-longer.jpg",
+    "Chinese": "更長",
+    "Phonetic": "/ˈlɔŋgər/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "lose"
+    ],
+    "ImageUrl": "images/a1-lose.jpg",
+    "Chinese": "丟",
+    "Phonetic": "/luz/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "loss"
+    ],
+    "ImageUrl": "images/a2-loss.jpg",
+    "Chinese": "虧損",
+    "Phonetic": "/lɔːs/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "luxury"
+    ],
+    "ImageUrl": "images/a2-luxury.jpg",
+    "Chinese": "奢侈"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "machine"
+    ],
+    "ImageUrl": "images/a2-machine.jpg",
+    "Chinese": "機器",
+    "Phonetic": "/məˈʃin/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "magic"
+    ],
+    "ImageUrl": "images/a2-magic.jpg",
+    "Chinese": "魔法",
+    "Phonetic": "/ˈmæʤɪk/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "medicine"
+    ],
+    "ImageUrl": "images/a1-medicine.jpg",
+    "Chinese": "藥",
+    "Phonetic": "/ˈmɛdəsən/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "meeting"
+    ],
+    "ImageUrl": "images/a2-meeting.jpg",
+    "Chinese": "會議",
+    "Phonetic": "/ˈmitɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "metal"
+    ],
+    "ImageUrl": "images/a2-metal.jpg",
+    "Chinese": "金屬",
+    "Phonetic": "/ˈmetl/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "middle"
+    ],
+    "ImageUrl": "images/a1-middle.jpg",
+    "Chinese": "中間",
+    "Phonetic": "/ˈmɪdəl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "ministry"
+    ],
+    "ImageUrl": "images/a2-ministry.jpg",
+    "Chinese": "部",
+    "Phonetic": "/ˈmɪn.ɪ.stri/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "missouri"
+    ],
+    "ImageUrl": "images/a2-missouri.jpg",
+    "Chinese": "密蘇裡州",
+    "Phonetic": "/məˈzʊri/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "mix"
+    ],
+    "ImageUrl": "images/a2-mix.jpg",
+    "Chinese": "混合",
+    "Phonetic": "/mɪks/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "model"
+    ],
+    "ImageUrl": "images/a2-model.jpg",
+    "Chinese": "模型 / 模特",
+    "Phonetic": "/ˈmɒdl/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "models"
+    ],
+    "ImageUrl": "images/a1-models.jpg",
+    "Chinese": "模型",
+    "Phonetic": "/ˈmɑdəlz/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "modify"
+    ],
+    "ImageUrl": "images/a2-modify.jpg",
+    "Chinese": "修改",
+    "Phonetic": "/ˈmɒd.ɪ.faɪ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "module"
+    ],
+    "ImageUrl": "images/a2-module.jpg",
+    "Chinese": "模塊",
+    "Phonetic": "/ˈmɒdjuːl/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "moment"
+    ],
+    "ImageUrl": "images/a2-moment.jpg",
+    "Chinese": "片刻",
+    "Phonetic": "/ˈmoʊmənt/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "Monday"
+    ],
+    "ImageUrl": "images/a1-monday.jpg",
+    "Chinese": "星期一",
+    "Phonetic": "/ˈmʌn.deɪ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "monitoring"
+    ],
+    "ImageUrl": "images/a2-monitoring.jpg",
+    "Chinese": "監視、監測",
+    "Phonetic": "/ˈmɒn.ɪ.tər.ɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "monkey"
+    ],
+    "ImageUrl": "images/a2-monkey.jpg",
+    "Chinese": "猴子"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "monthly"
+    ],
+    "ImageUrl": "images/a2-monthly.jpg",
+    "Chinese": "每月",
+    "Phonetic": "/ˈmʌnθli/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "more"
+    ],
+    "ImageUrl": "images/a1-more.jpg",
+    "Chinese": "更多 / 再多",
+    "Phonetic": "/mɔː/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "most"
+    ],
+    "ImageUrl": "images/a1-most.jpg",
+    "Chinese": "最多 / 大多數",
+    "Phonetic": "/məʊst/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "mountain"
+    ],
+    "ImageUrl": "images/a1-mountain.jpg",
+    "Chinese": "山"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "move"
+    ],
+    "ImageUrl": "images/a2-move.jpg",
+    "Chinese": "移動",
+    "Phonetic": "/muv/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "moving"
+    ],
+    "ImageUrl": "images/a2-moving.jpg",
+    "Chinese": "移動",
+    "Phonetic": "/ˈmuvɪŋ/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "natural"
+    ],
+    "ImageUrl": "images/a2-natural.jpg",
+    "Chinese": "自然的",
+    "Phonetic": "/ˈnæʧərəl/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "no"
+    ],
+    "ImageUrl": "images/a1-no.jpg",
+    "Chinese": "不",
+    "Phonetic": "/noʊ/"
+  },
+  {
+    "Level": "A1",
+    "English": [
+      "not"
+    ],
+    "ImageUrl": "images/a1-not.jpg",
+    "Chinese": "不 / 沒有",
+    "Phonetic": "/nɒt/"
+  },
+  {
+    "Level": "A2",
+    "English": [
+      "notebook"
+    ],
+    "ImageUrl": "images/a2-notebook.jpg",
+    "Chinese": "筆記本",
+    "Phonetic": "/ˈnoʊtˌbʊk/"
   }
 ]
