@@ -1,0 +1,1772 @@
+[
+  {
+    "index": 27,
+    "word": "meaning",
+    "level": "B1",
+    "image": "images/b1-meaning.jpg",
+    "detected": [
+      "'Life)' (0.47)"
+    ]
+  },
+  {
+    "index": 38,
+    "word": "rule",
+    "level": "B1",
+    "image": "images/b1-rule.jpg",
+    "detected": [
+      "'KULES' (0.59)"
+    ]
+  },
+  {
+    "index": 39,
+    "word": "sentence",
+    "level": "B1",
+    "image": "images/b1-sentence.jpg",
+    "detected": [
+      "'This is a' (0.82)",
+      "'sentence.' (0.98)"
+    ]
+  },
+  {
+    "index": 57,
+    "word": "complete",
+    "level": "A2",
+    "image": "images/a2-complete.jpg",
+    "detected": [
+      "'task 1' (1.00)",
+      "'task 2' (0.77)"
+    ]
+  },
+  {
+    "index": 60,
+    "word": "cost",
+    "level": "B1",
+    "image": "images/b1-cost.jpg",
+    "detected": [
+      "'PRICE]' (0.54)"
+    ]
+  },
+  {
+    "index": 63,
+    "word": "donate",
+    "level": "B1",
+    "image": "images/b1-donate.jpg",
+    "detected": [
+      "'DONATE' (1.00)"
+    ]
+  },
+  {
+    "index": 70,
+    "word": "invite",
+    "level": "A2",
+    "image": "images/a2-invite.jpg",
+    "detected": [
+      "'INVITE' (0.99)"
+    ]
+  },
+  {
+    "index": 87,
+    "word": "speech",
+    "level": "B1",
+    "image": "images/b1-speech.jpg",
+    "detected": [
+      "'SPEECH' (0.99)"
+    ]
+  },
+  {
+    "index": 96,
+    "word": "accent",
+    "level": "B1",
+    "image": "images/b1-accent.jpg",
+    "detected": [
+      "'(Hi therc)' (0.45)",
+      "'Hello)' (0.72)"
+    ]
+  },
+  {
+    "index": 100,
+    "word": "article",
+    "level": "B1",
+    "image": "images/b1-article.jpg",
+    "detected": [
+      "'NEWS' (1.00)"
+    ]
+  },
+  {
+    "index": 104,
+    "word": "benefit",
+    "level": "B1",
+    "image": "images/b1-benefit.jpg",
+    "detected": [
+      "'BONUS' (0.97)"
+    ]
+  },
+  {
+    "index": 116,
+    "word": "conclusion",
+    "level": "B1",
+    "image": "images/b1-conclusion.jpg",
+    "detected": [
+      "'conclusiov' (0.45)"
+    ]
+  },
+  {
+    "index": 120,
+    "word": "demand",
+    "level": "B1",
+    "image": "images/b1-demand.jpg",
+    "detected": [
+      "'WANT' (1.00)",
+      "'WANT' (0.99)"
+    ]
+  },
+  {
+    "index": 126,
+    "word": "encourage",
+    "level": "B1",
+    "image": "images/b1-encourage.jpg",
+    "detected": [
+      "'Gol' (0.97)"
+    ]
+  },
+  {
+    "index": 151,
+    "word": "modesty",
+    "level": "B1",
+    "image": "images/b1-modesty.jpg",
+    "detected": [
+      "'no; no' (0.63)"
+    ]
+  },
+  {
+    "index": 159,
+    "word": "policy",
+    "level": "B1",
+    "image": "images/b1-policy.jpg",
+    "detected": [
+      "'APPROVEL' (0.70)"
+    ]
+  },
+  {
+    "index": 160,
+    "word": "pressure",
+    "level": "B1",
+    "image": "images/b1-pressure.jpg",
+    "detected": [
+      "'DEADLINE' (1.00)"
+    ]
+  },
+  {
+    "index": 165,
+    "word": "quantity",
+    "level": "B1",
+    "image": "images/b1-quantity.jpg",
+    "detected": [
+      "'QTY 1' (0.97)"
+    ]
+  },
+  {
+    "index": 166,
+    "word": "recommend",
+    "level": "B1",
+    "image": "images/b1-recommend.jpg",
+    "detected": [
+      "'Must' (1.00)",
+      "'Readl' (0.51)"
+    ]
+  },
+  {
+    "index": 168,
+    "word": "report",
+    "level": "B1",
+    "image": "images/b1-report.jpg",
+    "detected": [
+      "'REPORT' (1.00)",
+      "'bl' (0.41)"
+    ]
+  },
+  {
+    "index": 186,
+    "word": "translate",
+    "level": "B1",
+    "image": "images/b1-translate.jpg",
+    "detected": [
+      "'Hello' (1.00)"
+    ]
+  },
+  {
+    "index": 187,
+    "word": "uprising",
+    "level": "B1",
+    "image": "images/b1-uprising.jpg",
+    "detected": [
+      "'Now' (0.50)",
+      "'CHANC' (0.98)"
+    ]
+  },
+  {
+    "index": 198,
+    "word": "policy",
+    "level": "B1",
+    "image": "images/b1-policy.jpg",
+    "detected": [
+      "'APPROVEL' (0.70)"
+    ]
+  },
+  {
+    "index": 199,
+    "word": "produce",
+    "level": "B1",
+    "image": "images/b1-produce.jpg",
+    "detected": [
+      "'ORGANIC' (0.98)"
+    ]
+  },
+  {
+    "index": 200,
+    "word": "proof",
+    "level": "B1",
+    "image": "images/b1-proof.jpg",
+    "detected": [
+      "'CONFIRMEDJ' (0.51)"
+    ]
+  },
+  {
+    "index": 222,
+    "word": "ambivalence",
+    "level": "C1",
+    "image": "images/c1-ambivalence.jpg",
+    "detected": [
+      "'Ambivalence' (0.69)"
+    ]
+  },
+  {
+    "index": 223,
+    "word": "paradox",
+    "level": "C1",
+    "image": "images/c1-paradox.jpg",
+    "detected": [
+      "'Paradox' (1.00)"
+    ]
+  },
+  {
+    "index": 224,
+    "word": "irony",
+    "level": "C1",
+    "image": "images/c1-irony.jpg",
+    "detected": [
+      "'Irony' (1.00)"
+    ]
+  },
+  {
+    "index": 225,
+    "word": "figurative",
+    "level": "C1",
+    "image": "images/c1-figurative.jpg",
+    "detected": [
+      "'Figurative' (1.00)"
+    ]
+  },
+  {
+    "index": 226,
+    "word": "abstraction",
+    "level": "C1",
+    "image": "images/c1-abstraction.jpg",
+    "detected": [
+      "'Abstraction' (1.00)"
+    ]
+  },
+  {
+    "index": 227,
+    "word": "relativity",
+    "level": "C1",
+    "image": "images/c1-relativity.jpg",
+    "detected": [
+      "'Relativity' (1.00)"
+    ]
+  },
+  {
+    "index": 228,
+    "word": "universality",
+    "level": "C1",
+    "image": "images/c1-universality.jpg",
+    "detected": [
+      "'Universality' (1.00)"
+    ]
+  },
+  {
+    "index": 229,
+    "word": "specificity",
+    "level": "C1",
+    "image": "images/c1-specificity.jpg",
+    "detected": [
+      "'Specificity' (1.00)"
+    ]
+  },
+  {
+    "index": 230,
+    "word": "ostensibly",
+    "level": "C1",
+    "image": "images/c1-ostensibly.jpg",
+    "detected": [
+      "'Ostensibly' (1.00)"
+    ]
+  },
+  {
+    "index": 231,
+    "word": "subtly",
+    "level": "C1",
+    "image": "images/c1-subtly.jpg",
+    "detected": [
+      "'Essentially' (0.95)",
+      "'Subtly' (1.00)"
+    ]
+  },
+  {
+    "index": 232,
+    "word": "tacitly",
+    "level": "C1",
+    "image": "images/c1-tacitly.jpg",
+    "detected": [
+      "'tacitly' (0.98)"
+    ]
+  },
+  {
+    "index": 241,
+    "word": "financial plan",
+    "level": "B1",
+    "image": "images/b1-financial_plan.jpg",
+    "detected": [
+      "'BUDGET' (1.00)"
+    ]
+  },
+  {
+    "index": 243,
+    "word": "ballot",
+    "level": "B1",
+    "image": "images/b1-ballot.jpg",
+    "detected": [
+      "'VOTING' (1.00)",
+      "'BOX' (0.99)"
+    ]
+  },
+  {
+    "index": 247,
+    "word": "vocabulary",
+    "level": "B1",
+    "image": "images/b1-vocabulary.jpg",
+    "detected": [
+      "'AbG*' (0.63)",
+      "'Yz' (0.89)",
+      "'Vocab-' (1.00)",
+      "'ulary' (0.98)"
+    ]
+  },
+  {
+    "index": 272,
+    "word": "subjectivity",
+    "level": "C1",
+    "image": "images/c1-subjectivity.jpg",
+    "detected": [
+      "'Subjectivity' (1.00)"
+    ]
+  },
+  {
+    "index": 273,
+    "word": "objectivity",
+    "level": "C1",
+    "image": "images/c1-objectivity.jpg",
+    "detected": [
+      "'Objectivity' (0.78)"
+    ]
+  },
+  {
+    "index": 274,
+    "word": "absoluteness",
+    "level": "C1",
+    "image": "images/c1-absoluteness.jpg",
+    "detected": [
+      "'Absoluteness' (1.00)"
+    ]
+  },
+  {
+    "index": 275,
+    "word": "essentially",
+    "level": "C1",
+    "image": "images/c1-essentially.jpg",
+    "detected": [
+      "'Essentially' (1.00)"
+    ]
+  },
+  {
+    "index": 276,
+    "word": "in depth",
+    "level": "C1",
+    "image": "images/c1-in_depth.jpg",
+    "detected": [
+      "'universallty' (0.69)",
+      "'In Depth' (1.00)"
+    ]
+  },
+  {
+    "index": 277,
+    "word": "superficially",
+    "level": "C1",
+    "image": "images/c1-superficially.jpg",
+    "detected": [
+      "'speciticity' (0.90)",
+      "'Superficially' (1.00)"
+    ]
+  },
+  {
+    "index": 278,
+    "word": "manifestly",
+    "level": "C1",
+    "image": "images/c1-manifestly.jpg",
+    "detected": [
+      "'manifestly' (1.00)"
+    ]
+  },
+  {
+    "index": 279,
+    "word": "explicitly",
+    "level": "C1",
+    "image": "images/c1-explicitly.jpg",
+    "detected": [
+      "'explicitly' (1.00)",
+      "'@EXPLICITLY!' (0.71)"
+    ]
+  },
+  {
+    "index": 280,
+    "word": "ambiguously",
+    "level": "C1",
+    "image": "images/c1-ambiguously.jpg",
+    "detected": [
+      "'ambiguously' (1.00)"
+    ]
+  },
+  {
+    "index": 281,
+    "word": "lucidly",
+    "level": "C1",
+    "image": "images/c1-lucidly.jpg",
+    "detected": [
+      "'lucidly' (0.97)"
+    ]
+  },
+  {
+    "index": 282,
+    "word": "systematically",
+    "level": "C1",
+    "image": "images/c1-systematically.jpg",
+    "detected": [
+      "'systematically' (1.00)"
+    ]
+  },
+  {
+    "index": 283,
+    "word": "comprehensively",
+    "level": "C1",
+    "image": "images/c1-comprehensively.jpg",
+    "detected": [
+      "'comprehensively' (1.00)"
+    ]
+  },
+  {
+    "index": 284,
+    "word": "partially",
+    "level": "C1",
+    "image": "images/c1-partially.jpg",
+    "detected": [
+      "'partially' (0.88)"
+    ]
+  },
+  {
+    "index": 285,
+    "word": "evenly",
+    "level": "C1",
+    "image": "images/c1-evenly.jpg",
+    "detected": [
+      "'evenly' (1.00)"
+    ]
+  },
+  {
+    "index": 286,
+    "word": "extremely",
+    "level": "C1",
+    "image": "images/c1-extremely.jpg",
+    "detected": [
+      "'extremely' (1.00)"
+    ]
+  },
+  {
+    "index": 287,
+    "word": "moderately",
+    "level": "C1",
+    "image": "images/c1-moderately.jpg",
+    "detected": [
+      "'moderately' (1.00)"
+    ]
+  },
+  {
+    "index": 288,
+    "word": "radically",
+    "level": "C1",
+    "image": "images/c1-radically.jpg",
+    "detected": [
+      "'radically' (0.73)"
+    ]
+  },
+  {
+    "index": 289,
+    "word": "conservatively",
+    "level": "C1",
+    "image": "images/c1-conservatively.jpg",
+    "detected": [
+      "'conservatively' (0.99)"
+    ]
+  },
+  {
+    "index": 290,
+    "word": "progressively",
+    "level": "C1",
+    "image": "images/c1-progressively.jpg",
+    "detected": [
+      "'progressively' (1.00)"
+    ]
+  },
+  {
+    "index": 291,
+    "word": "traditionally",
+    "level": "C1",
+    "image": "images/c1-traditionally.jpg",
+    "detected": [
+      "'traditionally' (0.71)"
+    ]
+  },
+  {
+    "index": 292,
+    "word": "contemporarily",
+    "level": "C1",
+    "image": "images/c1-contemporarily.jpg",
+    "detected": [
+      "'contemporarily' (0.89)"
+    ]
+  },
+  {
+    "index": 298,
+    "word": "mediocrely",
+    "level": "C2",
+    "image": "images/c2-mediocrely.jpg",
+    "detected": [
+      "'average' (1.00)"
+    ]
+  },
+  {
+    "index": 313,
+    "word": "actress",
+    "level": "A1",
+    "image": "images/a1-actress.jpg",
+    "detected": [
+      "'ACTRESS' (1.00)"
+    ]
+  },
+  {
+    "index": 314,
+    "word": "app",
+    "level": "A1",
+    "image": "images/a1-app.jpg",
+    "detected": [
+      "'APP' (1.00)"
+    ]
+  },
+  {
+    "index": 316,
+    "word": "April",
+    "level": "A1",
+    "image": "images/a1-april.jpg",
+    "detected": [
+      "'APRIL' (1.00)"
+    ]
+  },
+  {
+    "index": 318,
+    "word": "August",
+    "level": "A1",
+    "image": "images/a1-august.jpg",
+    "detected": [
+      "'AUGUST' (1.00)"
+    ]
+  },
+  {
+    "index": 319,
+    "word": "aunt",
+    "level": "A1",
+    "image": "images/a1-aunt.jpg",
+    "detected": [
+      "'AUNT' (1.00)"
+    ]
+  },
+  {
+    "index": 320,
+    "word": "autumn",
+    "level": "A1",
+    "image": "images/a1-autumn.jpg",
+    "detected": [
+      "'AUTUMN' (1.00)"
+    ]
+  },
+  {
+    "index": 321,
+    "word": "bag",
+    "level": "A1",
+    "image": "images/a1-bag.jpg",
+    "detected": [
+      "'BAG' (1.00)"
+    ]
+  },
+  {
+    "index": 322,
+    "word": "ball",
+    "level": "A1",
+    "image": "images/a1-ball.jpg",
+    "detected": [
+      "'BALL' (1.00)"
+    ]
+  },
+  {
+    "index": 323,
+    "word": "banana",
+    "level": "A1",
+    "image": "images/a1-banana.jpg",
+    "detected": [
+      "'BANANA' (1.00)"
+    ]
+  },
+  {
+    "index": 324,
+    "word": "band",
+    "level": "A1",
+    "image": "images/a1-band.jpg",
+    "detected": [
+      "'BAND' (0.65)"
+    ]
+  },
+  {
+    "index": 325,
+    "word": "bank",
+    "level": "A1",
+    "image": "images/a1-bank.jpg",
+    "detected": [
+      "'BANK' (1.00)"
+    ]
+  },
+  {
+    "index": 326,
+    "word": "bath",
+    "level": "A1",
+    "image": "images/a1-bath.jpg",
+    "detected": [
+      "'BATH' (1.00)"
+    ]
+  },
+  {
+    "index": 327,
+    "word": "bathroom",
+    "level": "A1",
+    "image": "images/a1-bathroom.jpg",
+    "detected": [
+      "'BATHROOM' (1.00)"
+    ]
+  },
+  {
+    "index": 328,
+    "word": "bathtime",
+    "level": "A1",
+    "image": "images/a1-bathtime.jpg",
+    "detected": [
+      "'BATHTIME' (1.00)"
+    ]
+  },
+  {
+    "index": 329,
+    "word": "beach",
+    "level": "A1",
+    "image": "images/a1-beach.jpg",
+    "detected": [
+      "'Beach' (0.98)"
+    ]
+  },
+  {
+    "index": 330,
+    "word": "bear",
+    "level": "A1",
+    "image": "images/a1-bear.jpg",
+    "detected": [
+      "'Bear' (0.60)"
+    ]
+  },
+  {
+    "index": 331,
+    "word": "beautiful",
+    "level": "A1",
+    "image": "images/a1-beautiful.jpg",
+    "detected": [
+      "'Beautiful' (1.00)"
+    ]
+  },
+  {
+    "index": 332,
+    "word": "bedtime",
+    "level": "A1",
+    "image": "images/a1-bedtime.jpg",
+    "detected": [
+      "'Bedtime' (1.00)"
+    ]
+  },
+  {
+    "index": 333,
+    "word": "bee",
+    "level": "A1",
+    "image": "images/a1-bee.jpg",
+    "detected": [
+      "'Bee' (1.00)"
+    ]
+  },
+  {
+    "index": 334,
+    "word": "beef",
+    "level": "A1",
+    "image": "images/a1-beef.jpg",
+    "detected": [
+      "'Beef' (0.99)"
+    ]
+  },
+  {
+    "index": 335,
+    "word": "beer",
+    "level": "A1",
+    "image": "images/a1-beer.jpg",
+    "detected": [
+      "'Beer' (1.00)"
+    ]
+  },
+  {
+    "index": 336,
+    "word": "belt",
+    "level": "A1",
+    "image": "images/a1-belt.jpg",
+    "detected": [
+      "'Belt' (1.00)"
+    ]
+  },
+  {
+    "index": 337,
+    "word": "bike",
+    "level": "A1",
+    "image": "images/a1-bike.jpg",
+    "detected": [
+      "'Bike' (0.76)"
+    ]
+  },
+  {
+    "index": 338,
+    "word": "bill",
+    "level": "A1",
+    "image": "images/a1-bill.jpg",
+    "detected": [
+      "'Bill' (1.00)"
+    ]
+  },
+  {
+    "index": 339,
+    "word": "bin",
+    "level": "A1",
+    "image": "images/a1-bin.jpg",
+    "detected": [
+      "'Bin' (1.00)"
+    ]
+  },
+  {
+    "index": 341,
+    "word": "black",
+    "level": "A1",
+    "image": "images/a1-black.jpg",
+    "detected": [
+      "'Black' (0.73)"
+    ]
+  },
+  {
+    "index": 342,
+    "word": "blog",
+    "level": "A1",
+    "image": "images/a1-blog.jpg",
+    "detected": [
+      "'BLOG' (1.00)",
+      "'Blog' (1.00)"
+    ]
+  },
+  {
+    "index": 343,
+    "word": "blonde",
+    "level": "A1",
+    "image": "images/a1-blonde.jpg",
+    "detected": [
+      "'Blonde' (1.00)"
+    ]
+  },
+  {
+    "index": 344,
+    "word": "blue",
+    "level": "A1",
+    "image": "images/a1-blue.jpg",
+    "detected": [
+      "'Blue' (1.00)"
+    ]
+  },
+  {
+    "index": 349,
+    "word": "bookstore",
+    "level": "A1",
+    "image": "images/a1-bookstore.jpg",
+    "detected": [
+      "'BOOKSTORE' (0.99)"
+    ]
+  },
+  {
+    "index": 364,
+    "word": "butter",
+    "level": "A1",
+    "image": "images/a1-butter.jpg",
+    "detected": [
+      "'\"BUTTER' (0.59)"
+    ]
+  },
+  {
+    "index": 365,
+    "word": "cafe",
+    "level": "A1",
+    "image": "images/a1-cafe.jpg",
+    "detected": [
+      "'CAFE' (1.00)"
+    ]
+  },
+  {
+    "index": 370,
+    "word": "card",
+    "level": "A1",
+    "image": "images/a1-card.jpg",
+    "detected": [
+      "'HEL' (1.00)"
+    ]
+  },
+  {
+    "index": 373,
+    "word": "cent",
+    "level": "A1",
+    "image": "images/a1-cent.jpg",
+    "detected": [
+      "'CENT-' (0.49)"
+    ]
+  },
+  {
+    "index": 377,
+    "word": "child",
+    "level": "A1",
+    "image": "images/a1-child.jpg",
+    "detected": [
+      "'Playing' (1.00)"
+    ]
+  },
+  {
+    "index": 378,
+    "word": "chocolate",
+    "level": "A1",
+    "image": "images/a1-chocolate.jpg",
+    "detected": [
+      "'Chocolate' (1.00)"
+    ]
+  },
+  {
+    "index": 379,
+    "word": "cinema",
+    "level": "A1",
+    "image": "images/a1-cinema.jpg",
+    "detected": [
+      "'MOVIES' (1.00)",
+      "'cinema' (0.65)"
+    ]
+  },
+  {
+    "index": 380,
+    "word": "circle",
+    "level": "A1",
+    "image": "images/a1-circle.jpg",
+    "detected": [
+      "'Circle' (0.97)"
+    ]
+  },
+  {
+    "index": 381,
+    "word": "city",
+    "level": "A1",
+    "image": "images/a1-city.jpg",
+    "detected": [
+      "'city' (0.87)"
+    ]
+  },
+  {
+    "index": 382,
+    "word": "classroom",
+    "level": "A1",
+    "image": "images/a1-classroom.jpg",
+    "detected": [
+      "'ABC' (1.00)",
+      "'Classroom' (0.97)"
+    ]
+  },
+  {
+    "index": 383,
+    "word": "clock",
+    "level": "A1",
+    "image": "images/a1-clock.jpg",
+    "detected": [
+      "'Clock' (0.93)"
+    ]
+  },
+  {
+    "index": 384,
+    "word": "cloth",
+    "level": "A1",
+    "image": "images/a1-cloth.jpg",
+    "detected": [
+      "'Cloth' (1.00)"
+    ]
+  },
+  {
+    "index": 385,
+    "word": "clothes",
+    "level": "A1",
+    "image": "images/a1-clothes.jpg",
+    "detected": [
+      "'Clothes' (0.99)"
+    ]
+  },
+  {
+    "index": 386,
+    "word": "clothing",
+    "level": "A1",
+    "image": "images/a1-clothing.jpg",
+    "detected": [
+      "'Clothing' (0.95)"
+    ]
+  },
+  {
+    "index": 387,
+    "word": "cloud",
+    "level": "A1",
+    "image": "images/a1-cloud.jpg",
+    "detected": [
+      "'Cloud' (1.00)"
+    ]
+  },
+  {
+    "index": 388,
+    "word": "cloudy",
+    "level": "A1",
+    "image": "images/a1-cloudy.jpg",
+    "detected": [
+      "'Cloudy' (1.00)"
+    ]
+  },
+  {
+    "index": 389,
+    "word": "club",
+    "level": "A1",
+    "image": "images/a1-club.jpg",
+    "detected": [
+      "'Club' (0.99)"
+    ]
+  },
+  {
+    "index": 390,
+    "word": "coat",
+    "level": "A1",
+    "image": "images/a1-coat.jpg",
+    "detected": [
+      "'Coat' (1.00)"
+    ]
+  },
+  {
+    "index": 391,
+    "word": "coffee",
+    "level": "A1",
+    "image": "images/a1-coffee.jpg",
+    "detected": [
+      "'COFFEE' (1.00)",
+      "'Coffee' (1.00)"
+    ]
+  },
+  {
+    "index": 392,
+    "word": "coin",
+    "level": "A1",
+    "image": "images/a1-coin.jpg",
+    "detected": [
+      "'Coin' (1.00)"
+    ]
+  },
+  {
+    "index": 393,
+    "word": "cold",
+    "level": "A1",
+    "image": "images/a1-cold.jpg",
+    "detected": [
+      "'COLD' (0.99)"
+    ]
+  },
+  {
+    "index": 394,
+    "word": "college",
+    "level": "A1",
+    "image": "images/a1-college.jpg",
+    "detected": [
+      "'COLLEGE' (0.96)"
+    ]
+  },
+  {
+    "index": 395,
+    "word": "colour",
+    "level": "A1",
+    "image": "images/a1-colour.jpg",
+    "detected": [
+      "'COLOUR' (1.00)"
+    ]
+  },
+  {
+    "index": 397,
+    "word": "cooking",
+    "level": "A1",
+    "image": "images/a1-cooking.jpg",
+    "detected": [
+      "'cooking' (0.76)",
+      "'COOKING' (0.97)"
+    ]
+  },
+  {
+    "index": 398,
+    "word": "country",
+    "level": "A1",
+    "image": "images/a1-country.jpg",
+    "detected": [
+      "'COUNTRY' (1.00)"
+    ]
+  },
+  {
+    "index": 399,
+    "word": "couple",
+    "level": "A1",
+    "image": "images/a1-couple.jpg",
+    "detected": [
+      "'COUPLE' (0.99)"
+    ]
+  },
+  {
+    "index": 400,
+    "word": "cream",
+    "level": "A1",
+    "image": "images/a1-cream.jpg",
+    "detected": [
+      "'CREAM' (1.00)"
+    ]
+  },
+  {
+    "index": 401,
+    "word": "cucumber",
+    "level": "A1",
+    "image": "images/a1-cucumber.jpg",
+    "detected": [
+      "'CUCUMBER' (0.99)"
+    ]
+  },
+  {
+    "index": 402,
+    "word": "cup",
+    "level": "A1",
+    "image": "images/a1-cup.jpg",
+    "detected": [
+      "'CUP' (1.00)"
+    ]
+  },
+  {
+    "index": 403,
+    "word": "dad",
+    "level": "A1",
+    "image": "images/a1-dad.jpg",
+    "detected": [
+      "'DAD' (1.00)"
+    ]
+  },
+  {
+    "index": 404,
+    "word": "dancer",
+    "level": "A1",
+    "image": "images/a1-dancer.jpg",
+    "detected": [
+      "'12.DANCER' (0.97)"
+    ]
+  },
+  {
+    "index": 405,
+    "word": "dancing",
+    "level": "A1",
+    "image": "images/a1-dancing.jpg",
+    "detected": [
+      "'DANCING' (0.97)"
+    ]
+  },
+  {
+    "index": 406,
+    "word": "daughter",
+    "level": "A1",
+    "image": "images/a1-daughter.jpg",
+    "detected": [
+      "'14.DAUGHTER' (0.80)"
+    ]
+  },
+  {
+    "index": 407,
+    "word": "December",
+    "level": "A1",
+    "image": "images/a1-december.jpg",
+    "detected": [
+      "'DECEMBER' (0.99)",
+      "'DECEMBER' (1.00)"
+    ]
+  },
+  {
+    "index": 408,
+    "word": "desk",
+    "level": "A1",
+    "image": "images/a1-desk.jpg",
+    "detected": [
+      "'DESK' (1.00)"
+    ]
+  },
+  {
+    "index": 409,
+    "word": "diaper",
+    "level": "A1",
+    "image": "images/a1-diaper.jpg",
+    "detected": [
+      "'DIAPER' (1.00)"
+    ]
+  },
+  {
+    "index": 410,
+    "word": "dinnertime",
+    "level": "A1",
+    "image": "images/a1-dinnertime.jpg",
+    "detected": [
+      "'DINNERTIME' (1.00)"
+    ]
+  },
+  {
+    "index": 411,
+    "word": "dish",
+    "level": "A1",
+    "image": "images/a1-dish.jpg",
+    "detected": [
+      "'DISH' (0.59)"
+    ]
+  },
+  {
+    "index": 412,
+    "word": "doctor",
+    "level": "A1",
+    "image": "images/a1-doctor.jpg",
+    "detected": [
+      "'DOCTOR' (1.00)"
+    ]
+  },
+  {
+    "index": 414,
+    "word": "dollar",
+    "level": "A1",
+    "image": "images/a1-dollar.jpg",
+    "detected": [
+      "'DOLLAR' (1.00)"
+    ]
+  },
+  {
+    "index": 415,
+    "word": "door",
+    "level": "A1",
+    "image": "images/a1-door.jpg",
+    "detected": [
+      "'DOOR' (0.79)"
+    ]
+  },
+  {
+    "index": 416,
+    "word": "dress",
+    "level": "A1",
+    "image": "images/a1-dress.jpg",
+    "detected": [
+      "'DRESS' (1.00)"
+    ]
+  },
+  {
+    "index": 417,
+    "word": "drink",
+    "level": "A1",
+    "image": "images/a1-drink.jpg",
+    "detected": [
+      "'DRINK' (0.82)",
+      "'SODa' (0.85)"
+    ]
+  },
+  {
+    "index": 418,
+    "word": "driver",
+    "level": "A1",
+    "image": "images/a1-driver.jpg",
+    "detected": [
+      "'DRIVER' (1.00)"
+    ]
+  },
+  {
+    "index": 419,
+    "word": "duck",
+    "level": "A1",
+    "image": "images/a1-duck.jpg",
+    "detected": [
+      "'DUCk' (0.47)"
+    ]
+  },
+  {
+    "index": 420,
+    "word": "DVD",
+    "level": "A1",
+    "image": "images/a1-dvd.jpg",
+    "detected": [
+      "'DVD' (1.00)",
+      "'DVD' (1.00)"
+    ]
+  },
+  {
+    "index": 421,
+    "word": "e-ticket",
+    "level": "A1",
+    "image": "images/a1-e_ticket.jpg",
+    "detected": [
+      "'DRINK' (1.00)",
+      "'LIVE' (1.00)",
+      "'E-TICKET' (0.98)"
+    ]
+  },
+  {
+    "index": 422,
+    "word": "eat",
+    "level": "A1",
+    "image": "images/a1-eat.jpg",
+    "detected": [
+      "'DRIVER' (0.78)",
+      "'EAT' (1.00)"
+    ]
+  },
+  {
+    "index": 424,
+    "word": "eight",
+    "level": "A1",
+    "image": "images/a1-eight.jpg",
+    "detected": [
+      "'DVD' (0.99)",
+      "'EIGHT' (0.93)"
+    ]
+  },
+  {
+    "index": 425,
+    "word": "eighteen",
+    "level": "A1",
+    "image": "images/a1-eighteen.jpg",
+    "detected": [
+      "'1. Eighteen' (0.77)"
+    ]
+  },
+  {
+    "index": 426,
+    "word": "eighty",
+    "level": "A1",
+    "image": "images/a1-eighty.jpg",
+    "detected": [
+      "'2. Eighty' (0.76)"
+    ]
+  },
+  {
+    "index": 427,
+    "word": "elephant",
+    "level": "A1",
+    "image": "images/a1-elephant.jpg",
+    "detected": [
+      "'3. Elephant' (0.69)"
+    ]
+  },
+  {
+    "index": 428,
+    "word": "eleven",
+    "level": "A1",
+    "image": "images/a1-eleven.jpg",
+    "detected": [
+      "'4.Eleven' (0.99)"
+    ]
+  },
+  {
+    "index": 429,
+    "word": "emoji",
+    "level": "A1",
+    "image": "images/a1-emoji.jpg",
+    "detected": [
+      "'5. Emoji' (0.95)"
+    ]
+  },
+  {
+    "index": 430,
+    "word": "enjoy",
+    "level": "A1",
+    "image": "images/a1-enjoy.jpg",
+    "detected": [
+      "'Enjoy' (1.00)"
+    ]
+  },
+  {
+    "index": 431,
+    "word": "euro",
+    "level": "A1",
+    "image": "images/a1-euro.jpg",
+    "detected": [
+      "'7. Euro' (0.61)"
+    ]
+  },
+  {
+    "index": 432,
+    "word": "event",
+    "level": "A1",
+    "image": "images/a1-event.jpg",
+    "detected": [
+      "'EVENT' (1.00)",
+      "'Event' (1.00)"
+    ]
+  },
+  {
+    "index": 433,
+    "word": "example",
+    "level": "A1",
+    "image": "images/a1-example.jpg",
+    "detected": [
+      "'Example' (1.00)"
+    ]
+  },
+  {
+    "index": 434,
+    "word": "face",
+    "level": "A1",
+    "image": "images/a1-face.jpg",
+    "detected": [
+      "'10. Face' (0.86)"
+    ]
+  },
+  {
+    "index": 435,
+    "word": "factory",
+    "level": "A1",
+    "image": "images/a1-factory.jpg",
+    "detected": [
+      "'11. Factory' (0.96)"
+    ]
+  },
+  {
+    "index": 436,
+    "word": "family",
+    "level": "A1",
+    "image": "images/a1-family.jpg",
+    "detected": [
+      "'12. Family' (0.85)"
+    ]
+  },
+  {
+    "index": 437,
+    "word": "fan",
+    "level": "A1",
+    "image": "images/a1-fan.jpg",
+    "detected": [
+      "'13. Fan' (0.77)"
+    ]
+  },
+  {
+    "index": 438,
+    "word": "fantastic",
+    "level": "A1",
+    "image": "images/a1-fantastic.jpg",
+    "detected": [
+      "'<ANTASTIC' (0.61)",
+      "'14. Fantastic' (0.74)"
+    ]
+  },
+  {
+    "index": 439,
+    "word": "farm",
+    "level": "A1",
+    "image": "images/a1-farm.jpg",
+    "detected": [
+      "'15. Farm' (0.74)"
+    ]
+  },
+  {
+    "index": 440,
+    "word": "farmer",
+    "level": "A1",
+    "image": "images/a1-farmer.jpg",
+    "detected": [
+      "'16. Farmer' (0.73)"
+    ]
+  },
+  {
+    "index": 457,
+    "word": "fork",
+    "level": "A1",
+    "image": "images/a1-fork.jpg",
+    "detected": [
+      "'Fork' (1.00)"
+    ]
+  },
+  {
+    "index": 458,
+    "word": "forty",
+    "level": "A1",
+    "image": "images/a1-forty.jpg",
+    "detected": [
+      "'Forty' (0.86)"
+    ]
+  },
+  {
+    "index": 459,
+    "word": "four",
+    "level": "A1",
+    "image": "images/a1-four.jpg",
+    "detected": [
+      "'Four' (1.00)"
+    ]
+  },
+  {
+    "index": 460,
+    "word": "fourteen",
+    "level": "A1",
+    "image": "images/a1-fourteen.jpg",
+    "detected": [
+      "'Tourteen' (1.00)"
+    ]
+  },
+  {
+    "index": 461,
+    "word": "fourth",
+    "level": "A1",
+    "image": "images/a1-fourth.jpg",
+    "detected": [
+      "'5. Fourth' (0.65)"
+    ]
+  },
+  {
+    "index": 462,
+    "word": "Friday",
+    "level": "A1",
+    "image": "images/a1-friday.jpg",
+    "detected": [
+      "'FRI' (0.98)",
+      "'Friday' (1.00)"
+    ]
+  },
+  {
+    "index": 463,
+    "word": "friend",
+    "level": "A1",
+    "image": "images/a1-friend.jpg",
+    "detected": [
+      "'7. Friend' (0.88)"
+    ]
+  },
+  {
+    "index": 464,
+    "word": "friendly",
+    "level": "A1",
+    "image": "images/a1-friendly.jpg",
+    "detected": [
+      "'8. Friendly' (0.99)"
+    ]
+  },
+  {
+    "index": 465,
+    "word": "fruit",
+    "level": "A1",
+    "image": "images/a1-fruit.jpg",
+    "detected": [
+      "'9. Fruit' (0.81)"
+    ]
+  },
+  {
+    "index": 466,
+    "word": "game",
+    "level": "A1",
+    "image": "images/a1-game.jpg",
+    "detected": [
+      "'10. Game' (0.78)"
+    ]
+  },
+  {
+    "index": 467,
+    "word": "garden",
+    "level": "A1",
+    "image": "images/a1-garden.jpg",
+    "detected": [
+      "'11. Garden' (0.93)"
+    ]
+  },
+  {
+    "index": 468,
+    "word": "gate",
+    "level": "A1",
+    "image": "images/a1-gate.jpg",
+    "detected": [
+      "'12. Gate' (0.93)"
+    ]
+  },
+  {
+    "index": 469,
+    "word": "girlfriend",
+    "level": "A1",
+    "image": "images/a1-girlfriend.jpg",
+    "detected": [
+      "'13. Girlfriend' (0.72)"
+    ]
+  },
+  {
+    "index": 470,
+    "word": "glass",
+    "level": "A1",
+    "image": "images/a1-glass.jpg",
+    "detected": [
+      "'14. Glass' (0.61)"
+    ]
+  },
+  {
+    "index": 471,
+    "word": "glasses",
+    "level": "A1",
+    "image": "images/a1-glasses.jpg",
+    "detected": [
+      "'15. Glasses' (0.99)"
+    ]
+  },
+  {
+    "index": 472,
+    "word": "glove",
+    "level": "A1",
+    "image": "images/a1-glove.jpg",
+    "detected": [
+      "'16. Glove' (0.90)"
+    ]
+  },
+  {
+    "index": 473,
+    "word": "goodbye",
+    "level": "A1",
+    "image": "images/a1-goodbye.jpg",
+    "detected": [
+      "'byel' (1.00)"
+    ]
+  },
+  {
+    "index": 482,
+    "word": "gray",
+    "level": "A1",
+    "image": "images/a1-gray.jpg",
+    "detected": [
+      "'10.GRAY' (0.95)"
+    ]
+  },
+  {
+    "index": 483,
+    "word": "green",
+    "level": "A1",
+    "image": "images/a1-green.jpg",
+    "detected": [
+      "'11. GREEN' (0.79)"
+    ]
+  },
+  {
+    "index": 484,
+    "word": "grey",
+    "level": "A1",
+    "image": "images/a1-grey.jpg",
+    "detected": [
+      "'12, GREY' (0.90)"
+    ]
+  },
+  {
+    "index": 494,
+    "word": "naively",
+    "level": "C2",
+    "image": "images/c2-naively.jpg",
+    "detected": [
+      "'naively' (1.00)"
+    ]
+  },
+  {
+    "index": 495,
+    "word": "sophisticatedly",
+    "level": "C2",
+    "image": "images/c2-sophisticatedly.jpg",
+    "detected": [
+      "'sophisticatedly' (1.00)"
+    ]
+  },
+  {
+    "index": 496,
+    "word": "ingenuously",
+    "level": "C2",
+    "image": "images/c2-ingenuously.jpg",
+    "detected": [
+      "'ingenuously' (0.95)"
+    ]
+  },
+  {
+    "index": 497,
+    "word": "hypocritically",
+    "level": "C2",
+    "image": "images/c2-hypocritically.jpg",
+    "detected": [
+      "'hypocritically' (1.00)"
+    ]
+  },
+  {
+    "index": 498,
+    "word": "sincerely",
+    "level": "C2",
+    "image": "images/c2-sincerely.jpg",
+    "detected": [
+      "'sincerely' (1.00)"
+    ]
+  },
+  {
+    "index": 499,
+    "word": "affectedly",
+    "level": "C2",
+    "image": "images/c2-affectedly.jpg",
+    "detected": [
+      "'affectedly' (1.00)"
+    ]
+  },
+  {
+    "index": 500,
+    "word": "unassumingly",
+    "level": "C2",
+    "image": "images/c2-unassumingly.jpg",
+    "detected": [
+      "'unassumingly' (1.00)"
+    ]
+  },
+  {
+    "index": 501,
+    "word": "arrogantly",
+    "level": "C2",
+    "image": "images/c2-arrogantly.jpg",
+    "detected": [
+      "'arrogantly' (1.00)"
+    ]
+  },
+  {
+    "index": 502,
+    "word": "obstinately",
+    "level": "C2",
+    "image": "images/c2-obstinately.jpg",
+    "detected": [
+      "'obstinately' (1.00)"
+    ]
+  },
+  {
+    "index": 503,
+    "word": "affably",
+    "level": "C2",
+    "image": "images/c2-affably.jpg",
+    "detected": [
+      "'affably' (1.00)"
+    ]
+  },
+  {
+    "index": 504,
+    "word": "reclusively",
+    "level": "C2",
+    "image": "images/c2-reclusively.jpg",
+    "detected": [
+      "'reclusively' (0.84)"
+    ]
+  },
+  {
+    "index": 505,
+    "word": "extrovertedly",
+    "level": "C2",
+    "image": "images/c2-extrovertedly.jpg",
+    "detected": [
+      "'extrovertedly' (1.00)"
+    ]
+  },
+  {
+    "index": 506,
+    "word": "introvertedly",
+    "level": "C2",
+    "image": "images/c2-introvertedly.jpg",
+    "detected": [
+      "'opstinately' (0.70)",
+      "'introvertedly' (1.00)"
+    ]
+  },
+  {
+    "index": 507,
+    "word": "loquaciously",
+    "level": "C2",
+    "image": "images/c2-loquaciously.jpg",
+    "detected": [
+      "'loquaciously' (0.97)"
+    ]
+  },
+  {
+    "index": 508,
+    "word": "taciturnly",
+    "level": "C2",
+    "image": "images/c2-taciturnly.jpg",
+    "detected": [
+      "'reciusiveiy' (0.65)",
+      "'taciturnly' (1.00)"
+    ]
+  },
+  {
+    "index": 509,
+    "word": "verbosely",
+    "level": "C2",
+    "image": "images/c2-verbosely.jpg",
+    "detected": [
+      "'extrovertediy' (0.82)",
+      "'verbosely' (0.97)"
+    ]
+  },
+  {
+    "index": 511,
+    "word": "milk",
+    "level": "A1",
+    "image": "images/a1-milk.jpg",
+    "detected": [
+      "'MiLK' (0.57)"
+    ]
+  }
+]

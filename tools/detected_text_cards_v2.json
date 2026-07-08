@@ -1,0 +1,1221 @@
+[
+  {
+    "index": 1277,
+    "word": "after",
+    "level": "A2",
+    "image": "images/a2-after.jpg",
+    "detected": [
+      "'以後' (0.99)"
+    ]
+  },
+  {
+    "index": 1278,
+    "word": "against",
+    "level": "A1",
+    "image": "images/a1-against.jpg",
+    "detected": [
+      "'反對' (0.99)"
+    ]
+  },
+  {
+    "index": 1279,
+    "word": "ago",
+    "level": "A1",
+    "image": "images/a1-ago.jpg",
+    "detected": [
+      "'以前' (1.00)"
+    ]
+  },
+  {
+    "index": 1280,
+    "word": "ahead",
+    "level": "A2",
+    "image": "images/a2-ahead.jpg",
+    "detected": [
+      "'向前' (0.97)"
+    ]
+  },
+  {
+    "index": 1281,
+    "word": "airport",
+    "level": "A1",
+    "image": "images/a1-airport.jpg",
+    "detected": [
+      "'機場' (1.00)"
+    ]
+  },
+  {
+    "index": 1282,
+    "word": "all",
+    "level": "A1",
+    "image": "images/a1-all.jpg",
+    "detected": [
+      "'所有' (0.99)"
+    ]
+  },
+  {
+    "index": 1283,
+    "word": "already",
+    "level": "A1",
+    "image": "images/a1-already.jpg",
+    "detected": [
+      "'已經' (0.98)"
+    ]
+  },
+  {
+    "index": 1284,
+    "word": "also",
+    "level": "A1",
+    "image": "images/a1-also.jpg",
+    "detected": [
+      "'也' (1.00)"
+    ]
+  },
+  {
+    "index": 1285,
+    "word": "always",
+    "level": "A1",
+    "image": "images/a1-always.jpg",
+    "detected": [
+      "'總是' (1.00)"
+    ]
+  },
+  {
+    "index": 1286,
+    "word": "and",
+    "level": "A1",
+    "image": "images/a1-and.jpg",
+    "detected": [
+      "'和' (0.98)"
+    ]
+  },
+  {
+    "index": 1287,
+    "word": "any",
+    "level": "A1",
+    "image": "images/a1-any.jpg",
+    "detected": [
+      "'任何?' (0.57)"
+    ]
+  },
+  {
+    "index": 1288,
+    "word": "apparently",
+    "level": "A2",
+    "image": "images/a2-apparently.jpg",
+    "detected": [
+      "'顯然' (1.00)"
+    ]
+  },
+  {
+    "index": 1289,
+    "word": "appointment",
+    "level": "A2",
+    "image": "images/a2-appointment.jpg",
+    "detected": [
+      "'預約' (1.00)"
+    ]
+  },
+  {
+    "index": 1290,
+    "word": "April",
+    "level": "A1",
+    "image": "images/a1-april.jpg",
+    "detected": [
+      "'四月' (0.99)"
+    ]
+  },
+  {
+    "index": 1291,
+    "word": "architecture",
+    "level": "A2",
+    "image": "images/a2-architecture.jpg",
+    "detected": [
+      "'架構' (0.99)"
+    ]
+  },
+  {
+    "index": 1292,
+    "word": "area",
+    "level": "A2",
+    "image": "images/a2-area.jpg",
+    "detected": [
+      "'區域' (1.00)"
+    ]
+  },
+  {
+    "index": 1293,
+    "word": "arrange",
+    "level": "A2",
+    "image": "images/a2-arrange.jpg",
+    "detected": [
+      "'安排' (1.00)"
+    ]
+  },
+  {
+    "index": 1294,
+    "word": "arrival",
+    "level": "A2",
+    "image": "images/a2-arrival.jpg",
+    "detected": [
+      "'到達' (1.00)"
+    ]
+  },
+  {
+    "index": 1295,
+    "word": "artificial",
+    "level": "A2",
+    "image": "images/a2-artificial.jpg",
+    "detected": [
+      "'人工的' (0.99)"
+    ]
+  },
+  {
+    "index": 1297,
+    "word": "band",
+    "level": "A1",
+    "image": "images/a1-band.jpg",
+    "detected": [
+      "'樂隊' (1.00)"
+    ]
+  },
+  {
+    "index": 1298,
+    "word": "bank",
+    "level": "A2",
+    "image": "images/a2-bank.jpg",
+    "detected": [
+      "'銀行' (1.00)"
+    ]
+  },
+  {
+    "index": 1299,
+    "word": "bar",
+    "level": "A1",
+    "image": "images/a1-bar.jpg",
+    "detected": [
+      "'酒吧' (1.00)"
+    ]
+  },
+  {
+    "index": 1300,
+    "word": "barely",
+    "level": "A2",
+    "image": "images/a2-barely.jpg",
+    "detected": [
+      "'幾乎不' (1.00)"
+    ]
+  },
+  {
+    "index": 1301,
+    "word": "based",
+    "level": "A1",
+    "image": "images/a1-based.jpg",
+    "detected": [
+      "'位於' (0.94)",
+      "'基於' (1.00)"
+    ]
+  },
+  {
+    "index": 1302,
+    "word": "basement",
+    "level": "A2",
+    "image": "images/a2-basement.jpg",
+    "detected": [
+      "'地下室' (1.00)"
+    ]
+  },
+  {
+    "index": 1303,
+    "word": "basic",
+    "level": "A2",
+    "image": "images/a2-basic.jpg",
+    "detected": [
+      "'基本的' (0.61)",
+      "'日' (0.52)"
+    ]
+  },
+  {
+    "index": 1304,
+    "word": "basically",
+    "level": "A2",
+    "image": "images/a2-basically.jpg",
+    "detected": [
+      "'基本上' (1.00)"
+    ]
+  },
+  {
+    "index": 1305,
+    "word": "bath",
+    "level": "A2",
+    "image": "images/a2-bath.jpg",
+    "detected": [
+      "'浴缸/沐浴' (0.77)"
+    ]
+  },
+  {
+    "index": 1306,
+    "word": "battery",
+    "level": "A2",
+    "image": "images/a2-battery.jpg",
+    "detected": [
+      "'電池' (1.00)"
+    ]
+  },
+  {
+    "index": 1307,
+    "word": "beach",
+    "level": "A1",
+    "image": "images/a1-beach.jpg",
+    "detected": [
+      "'沙灘' (1.00)"
+    ]
+  },
+  {
+    "index": 1308,
+    "word": "bee",
+    "level": "A2",
+    "image": "images/a2-bee.jpg",
+    "detected": [
+      "'蜜蜂' (0.99)"
+    ]
+  },
+  {
+    "index": 1309,
+    "word": "beef",
+    "level": "A2",
+    "image": "images/a2-beef.jpg",
+    "detected": [
+      "'牛肉' (1.00)"
+    ]
+  },
+  {
+    "index": 1310,
+    "word": "before",
+    "level": "A2",
+    "image": "images/a2-before.jpg",
+    "detected": [
+      "'以前' (1.00)"
+    ]
+  },
+  {
+    "index": 1311,
+    "word": "begin",
+    "level": "A1",
+    "image": "images/a1-begin.jpg",
+    "detected": [
+      "'開始' (1.00)"
+    ]
+  },
+  {
+    "index": 1312,
+    "word": "beginning",
+    "level": "A2",
+    "image": "images/a2-beginning.jpg",
+    "detected": [
+      "'開始' (1.00)"
+    ]
+  },
+  {
+    "index": 1313,
+    "word": "belong",
+    "level": "A2",
+    "image": "images/a2-belong.jpg",
+    "detected": [
+      "'屬於' (0.99)"
+    ]
+  },
+  {
+    "index": 1314,
+    "word": "best",
+    "level": "A1",
+    "image": "images/a1-best.jpg",
+    "detected": [
+      "'最好的' (1.00)"
+    ]
+  },
+  {
+    "index": 1315,
+    "word": "connect",
+    "level": "A2",
+    "image": "images/a2-connect.jpg",
+    "detected": [
+      "'連接' (1.00)"
+    ]
+  },
+  {
+    "index": 1316,
+    "word": "connected",
+    "level": "A2",
+    "image": "images/a2-connected.jpg",
+    "detected": [
+      "'連接的' (1.00)"
+    ]
+  },
+  {
+    "index": 1317,
+    "word": "conservation",
+    "level": "A2",
+    "image": "images/a2-conservation.jpg",
+    "detected": [
+      "'保護' (1.00)"
+    ]
+  },
+  {
+    "index": 1318,
+    "word": "constitutes",
+    "level": "A2",
+    "image": "images/a2-constitutes.jpg",
+    "detected": [
+      "'構成' (1.00)"
+    ]
+  },
+  {
+    "index": 1319,
+    "word": "conversion",
+    "level": "A2",
+    "image": "images/a2-conversion.jpg",
+    "detected": [
+      "'轉化' (1.00)"
+    ]
+  },
+  {
+    "index": 1321,
+    "word": "elderly",
+    "level": "A2",
+    "image": "images/a2-elderly.jpg",
+    "detected": [
+      "'老年的' (1.00)"
+    ]
+  },
+  {
+    "index": 1322,
+    "word": "era",
+    "level": "A2",
+    "image": "images/a2-era.jpg",
+    "detected": [
+      "'時代' (0.99)"
+    ]
+  },
+  {
+    "index": 1323,
+    "word": "expensive",
+    "level": "A1",
+    "image": "images/a1-expensive.jpg",
+    "detected": [
+      "'昂貴的' (1.00)"
+    ]
+  },
+  {
+    "index": 1324,
+    "word": "fairly",
+    "level": "A2",
+    "image": "images/a2-fairly.jpg",
+    "detected": [
+      "'相當' (1.00)"
+    ]
+  },
+  {
+    "index": 1325,
+    "word": "fake",
+    "level": "A2",
+    "image": "images/a2-fake.jpg",
+    "detected": [
+      "'假的' (0.72)"
+    ]
+  },
+  {
+    "index": 1326,
+    "word": "fall",
+    "level": "A2",
+    "image": "images/a2-fall.jpg",
+    "detected": [
+      "'秋天' (1.00)"
+    ]
+  },
+  {
+    "index": 1327,
+    "word": "false",
+    "level": "A2",
+    "image": "images/a2-false.jpg",
+    "detected": [
+      "'錯誤的' (0.75)"
+    ]
+  },
+  {
+    "index": 1328,
+    "word": "family",
+    "level": "A1",
+    "image": "images/a1-family.jpg",
+    "detected": [
+      "'家庭' (1.00)"
+    ]
+  },
+  {
+    "index": 1330,
+    "word": "frozen",
+    "level": "A2",
+    "image": "images/a2-frozen.jpg",
+    "detected": [
+      "'冷凍的' (1.00)"
+    ]
+  },
+  {
+    "index": 1331,
+    "word": "fuel",
+    "level": "A2",
+    "image": "images/a2-fuel.jpg",
+    "detected": [
+      "'燃料' (1.00)",
+      "'燃油' (1.00)"
+    ]
+  },
+  {
+    "index": 1332,
+    "word": "functions",
+    "level": "A2",
+    "image": "images/a2-functions.jpg",
+    "detected": [
+      "'功能' (1.00)"
+    ]
+  },
+  {
+    "index": 1333,
+    "word": "goodbye",
+    "level": "A1",
+    "image": "images/a1-goodbye.jpg",
+    "detected": [
+      "'再見' (1.00)"
+    ]
+  },
+  {
+    "index": 1334,
+    "word": "goods",
+    "level": "A2",
+    "image": "images/a2-goods.jpg",
+    "detected": [
+      "'商品' (1.00)"
+    ]
+  },
+  {
+    "index": 1335,
+    "word": "grab",
+    "level": "A2",
+    "image": "images/a2-grab.jpg",
+    "detected": [
+      "'抓' (1.00)"
+    ]
+  },
+  {
+    "index": 1336,
+    "word": "gradually",
+    "level": "A2",
+    "image": "images/a2-gradually.jpg",
+    "detected": [
+      "'逐漸地' (1.00)"
+    ]
+  },
+  {
+    "index": 1337,
+    "word": "graphic",
+    "level": "A2",
+    "image": "images/a2-graphic.jpg",
+    "detected": [
+      "'形象的' (1.00)"
+    ]
+  },
+  {
+    "index": 1339,
+    "word": "gray",
+    "level": "A1",
+    "image": "images/a1-gray.jpg",
+    "detected": [
+      "'灰色' (0.97)"
+    ]
+  },
+  {
+    "index": 1340,
+    "word": "greater",
+    "level": "A2",
+    "image": "images/a2-greater.jpg",
+    "detected": [
+      "'更大' (0.99)"
+    ]
+  },
+  {
+    "index": 1407,
+    "word": "kind",
+    "level": "A2",
+    "image": "images/a2-kind.jpg",
+    "detected": [
+      "'Kindness Type' (0.61)"
+    ]
+  },
+  {
+    "index": 1408,
+    "word": "kingdom",
+    "level": "A1",
+    "image": "images/a1-kingdom.jpg",
+    "detected": [
+      "'王 Hingdom' (0.46)"
+    ]
+  },
+  {
+    "index": 1410,
+    "word": "knew",
+    "level": "A2",
+    "image": "images/a2-knew.jpg",
+    "detected": [
+      "'Understood' (0.76)"
+    ]
+  },
+  {
+    "index": 1412,
+    "word": "know",
+    "level": "A2",
+    "image": "images/a2-know.jpg",
+    "detected": [
+      "'知道/Know' (0.72)"
+    ]
+  },
+  {
+    "index": 1414,
+    "word": "lake",
+    "level": "A1",
+    "image": "images/a1-lake.jpg",
+    "detected": [
+      "'Understood' (1.00)"
+    ]
+  },
+  {
+    "index": 1415,
+    "word": "language",
+    "level": "A1",
+    "image": "images/a1-language.jpg",
+    "detected": [
+      "'Language' (1.00)"
+    ]
+  },
+  {
+    "index": 1416,
+    "word": "laptop",
+    "level": "A2",
+    "image": "images/a2-laptop.jpg",
+    "detected": [
+      "'筆記本電腦 Laptop' (0.90)"
+    ]
+  },
+  {
+    "index": 1421,
+    "word": "lawn",
+    "level": "A2",
+    "image": "images/a2-lawn.jpg",
+    "detected": [
+      "'草坪' (1.00)"
+    ]
+  },
+  {
+    "index": 1422,
+    "word": "laws",
+    "level": "A2",
+    "image": "images/a2-laws.jpg",
+    "detected": [
+      "'法律' (0.86)"
+    ]
+  },
+  {
+    "index": 1424,
+    "word": "lease",
+    "level": "A2",
+    "image": "images/a2-lease.jpg",
+    "detected": [
+      "'租約' (1.00)"
+    ]
+  },
+  {
+    "index": 1425,
+    "word": "least",
+    "level": "A1",
+    "image": "images/a1-least.jpg",
+    "detected": [
+      "'最少的' (1.00)"
+    ]
+  },
+  {
+    "index": 1426,
+    "word": "leather",
+    "level": "A2",
+    "image": "images/a2-leather.jpg",
+    "detected": [
+      "'皮革' (1.00)"
+    ]
+  },
+  {
+    "index": 1427,
+    "word": "left",
+    "level": "A1",
+    "image": "images/a1-left.jpg",
+    "detected": [
+      "'左' (1.00)"
+    ]
+  },
+  {
+    "index": 1428,
+    "word": "lesbian",
+    "level": "A1",
+    "image": "images/a1-lesbian.jpg",
+    "detected": [
+      "'女同性戀的' (0.99)"
+    ]
+  },
+  {
+    "index": 1429,
+    "word": "less",
+    "level": "A1",
+    "image": "images/a1-less.jpg",
+    "detected": [
+      "'更少的' (1.00)"
+    ]
+  },
+  {
+    "index": 1430,
+    "word": "letter",
+    "level": "A1",
+    "image": "images/a1-letter.jpg",
+    "detected": [
+      "'信件' (1.00)"
+    ]
+  },
+  {
+    "index": 1431,
+    "word": "level",
+    "level": "A2",
+    "image": "images/a2-level.jpg",
+    "detected": [
+      "'水平' (1.00)"
+    ]
+  },
+  {
+    "index": 1432,
+    "word": "liability",
+    "level": "A2",
+    "image": "images/a2-liability.jpg",
+    "detected": [
+      "'法律責任' (0.99)"
+    ]
+  },
+  {
+    "index": 1433,
+    "word": "lie",
+    "level": "A1",
+    "image": "images/a1-lie.jpg",
+    "detected": [
+      "'躺/平臥' (0.66)"
+    ]
+  },
+  {
+    "index": 1434,
+    "word": "life",
+    "level": "A2",
+    "image": "images/a2-life.jpg",
+    "detected": [
+      "'生活' (0.99)"
+    ]
+  },
+  {
+    "index": 1435,
+    "word": "light",
+    "level": "A2",
+    "image": "images/a2-light.jpg",
+    "detected": [
+      "'輕的|光' (1.00)"
+    ]
+  },
+  {
+    "index": 1436,
+    "word": "likely",
+    "level": "A2",
+    "image": "images/a2-likely.jpg",
+    "detected": [
+      "'可能的' (1.00)"
+    ]
+  },
+  {
+    "index": 1448,
+    "word": "log",
+    "level": "A1",
+    "image": "images/a1-log.jpg",
+    "detected": [
+      "'0511巳' (0.64)"
+    ]
+  },
+  {
+    "index": 1455,
+    "word": "machines",
+    "level": "A2",
+    "image": "images/a2-machines.jpg",
+    "detected": [
+      "'機器' (1.00)"
+    ]
+  },
+  {
+    "index": 1457,
+    "word": "mail",
+    "level": "A2",
+    "image": "images/a2-mail.jpg",
+    "detected": [
+      "'郵件' (0.93)"
+    ]
+  },
+  {
+    "index": 1458,
+    "word": "main",
+    "level": "A2",
+    "image": "images/a2-main.jpg",
+    "detected": [
+      "'主要的' (0.99)"
+    ]
+  },
+  {
+    "index": 1459,
+    "word": "mainly",
+    "level": "A2",
+    "image": "images/a2-mainly.jpg",
+    "detected": [
+      "'主要地' (0.99)"
+    ]
+  },
+  {
+    "index": 1460,
+    "word": "major",
+    "level": "A2",
+    "image": "images/a2-major.jpg",
+    "detected": [
+      "'主要的' (0.97)"
+    ]
+  },
+  {
+    "index": 1461,
+    "word": "manage",
+    "level": "A2",
+    "image": "images/a2-manage.jpg",
+    "detected": [
+      "'管理' (1.00)"
+    ]
+  },
+  {
+    "index": 1462,
+    "word": "manual",
+    "level": "A2",
+    "image": "images/a2-manual.jpg",
+    "detected": [
+      "'說明書' (0.96)"
+    ]
+  },
+  {
+    "index": 1463,
+    "word": "map",
+    "level": "A1",
+    "image": "images/a1-map.jpg",
+    "detected": [
+      "'地圖' (0.89)"
+    ]
+  },
+  {
+    "index": 1464,
+    "word": "March",
+    "level": "A1",
+    "image": "images/a1-march.jpg",
+    "detected": [
+      "'月' (1.00)"
+    ]
+  },
+  {
+    "index": 1465,
+    "word": "marine",
+    "level": "A2",
+    "image": "images/a2-marine.jpg",
+    "detected": [
+      "'海洋的' (1.00)"
+    ]
+  },
+  {
+    "index": 1466,
+    "word": "marketplace",
+    "level": "A2",
+    "image": "images/a2-marketplace.jpg",
+    "detected": [
+      "'市場平臺' (0.77)"
+    ]
+  },
+  {
+    "index": 1467,
+    "word": "match",
+    "level": "A2",
+    "image": "images/a2-match.jpg",
+    "detected": [
+      "'匹配' (1.00)"
+    ]
+  },
+  {
+    "index": 1468,
+    "word": "material",
+    "level": "A2",
+    "image": "images/a2-material.jpg",
+    "detected": [
+      "'材料' (1.00)"
+    ]
+  },
+  {
+    "index": 1469,
+    "word": "materials",
+    "level": "A1",
+    "image": "images/a1-materials.jpg",
+    "detected": [
+      "'材料' (1.00)"
+    ]
+  },
+  {
+    "index": 1470,
+    "word": "matter",
+    "level": "A2",
+    "image": "images/a2-matter.jpg",
+    "detected": [
+      "'物質,事情' (0.99)"
+    ]
+  },
+  {
+    "index": 1471,
+    "word": "mature",
+    "level": "A1",
+    "image": "images/a1-mature.jpg",
+    "detected": [
+      "'成熟' (1.00)"
+    ]
+  },
+  {
+    "index": 1472,
+    "word": "measure",
+    "level": "A2",
+    "image": "images/a2-measure.jpg",
+    "detected": [
+      "'測量' (1.00)"
+    ]
+  },
+  {
+    "index": 1474,
+    "word": "medium",
+    "level": "A2",
+    "image": "images/a2-medium.jpg",
+    "detected": [
+      "'中號' (1.00)"
+    ]
+  },
+  {
+    "index": 1475,
+    "word": "meet",
+    "level": "A2",
+    "image": "images/a2-meet.jpg",
+    "detected": [
+      "'遇見/會面' (0.98)"
+    ]
+  },
+  {
+    "index": 1477,
+    "word": "menu",
+    "level": "A1",
+    "image": "images/a1-menu.jpg",
+    "detected": [
+      "'菜單' (0.99)",
+      "'HEiU' (0.46)"
+    ]
+  },
+  {
+    "index": 1478,
+    "word": "message",
+    "level": "A1",
+    "image": "images/a1-message.jpg",
+    "detected": [
+      "'訊息' (1.00)"
+    ]
+  },
+  {
+    "index": 1481,
+    "word": "minimum",
+    "level": "A2",
+    "image": "images/a2-minimum.jpg",
+    "detected": [
+      "'最低限度' (1.00)"
+    ]
+  },
+  {
+    "index": 1483,
+    "word": "minutes",
+    "level": "A1",
+    "image": "images/a1-minutes.jpg",
+    "detected": [
+      "'議記錄' (0.58)"
+    ]
+  },
+  {
+    "index": 1484,
+    "word": "missing",
+    "level": "A2",
+    "image": "images/a2-missing.jpg",
+    "detected": [
+      "'失蹤的' (0.44)"
+    ]
+  },
+  {
+    "index": 1501,
+    "word": "museum",
+    "level": "A1",
+    "image": "images/a1-museum.jpg",
+    "detected": [
+      "'博物館' (0.97)"
+    ]
+  },
+  {
+    "index": 1502,
+    "word": "nail",
+    "level": "A2",
+    "image": "images/a2-nail.jpg",
+    "detected": [
+      "'釘子' (1.00)"
+    ]
+  },
+  {
+    "index": 1503,
+    "word": "name",
+    "level": "A2",
+    "image": "images/a2-name.jpg",
+    "detected": [
+      "'名字' (1.00)"
+    ]
+  },
+  {
+    "index": 1504,
+    "word": "nations",
+    "level": "A2",
+    "image": "images/a2-nations.jpg",
+    "detected": [
+      "'國家' (0.96)"
+    ]
+  },
+  {
+    "index": 1505,
+    "word": "native",
+    "level": "A2",
+    "image": "images/a2-native.jpg",
+    "detected": [
+      "'本地的' (1.00)"
+    ]
+  },
+  {
+    "index": 1507,
+    "word": "navigation",
+    "level": "A2",
+    "image": "images/a2-navigation.jpg",
+    "detected": [
+      "'導航' (1.00)"
+    ]
+  },
+  {
+    "index": 1508,
+    "word": "need",
+    "level": "A2",
+    "image": "images/a2-need.jpg",
+    "detected": [
+      "'需要' (1.00)"
+    ]
+  },
+  {
+    "index": 1509,
+    "word": "neither",
+    "level": "A1",
+    "image": "images/a1-neither.jpg",
+    "detected": [
+      "'兩者都不' (0.83)"
+    ]
+  },
+  {
+    "index": 1510,
+    "word": "networking",
+    "level": "A2",
+    "image": "images/a2-networking.jpg",
+    "detected": [
+      "'社交網絡' (1.00)"
+    ]
+  },
+  {
+    "index": 1511,
+    "word": "never",
+    "level": "A1",
+    "image": "images/a1-never.jpg",
+    "detected": [
+      "'從不' (0.58)"
+    ]
+  },
+  {
+    "index": 1512,
+    "word": "newsletter",
+    "level": "A1",
+    "image": "images/a1-newsletter.jpg",
+    "detected": [
+      "'通訊' (0.99)"
+    ]
+  },
+  {
+    "index": 1513,
+    "word": "nineteen",
+    "level": "A1",
+    "image": "images/a1-nineteen.jpg",
+    "detected": [
+      "'十九' (0.99)"
+    ]
+  },
+  {
+    "index": 1514,
+    "word": "ninety",
+    "level": "A1",
+    "image": "images/a1-ninety.jpg",
+    "detected": [
+      "'九十' (0.91)"
+    ]
+  },
+  {
+    "index": 1516,
+    "word": "none",
+    "level": "A1",
+    "image": "images/a1-none.jpg",
+    "detected": [
+      "'沒有一個' (0.95)"
+    ]
+  },
+  {
+    "index": 1517,
+    "word": "normally",
+    "level": "A2",
+    "image": "images/a2-normally.jpg",
+    "detected": [
+      "'Usually' (1.00)"
+    ]
+  },
+  {
+    "index": 1518,
+    "word": "north",
+    "level": "A1",
+    "image": "images/a1-north.jpg",
+    "detected": [
+      "'North' (0.77)"
+    ]
+  },
+  {
+    "index": 1521,
+    "word": "notice",
+    "level": "A2",
+    "image": "images/a2-notice.jpg",
+    "detected": [
+      "'Motice' (0.66)"
+    ]
+  },
+  {
+    "index": 1522,
+    "word": "november",
+    "level": "A1",
+    "image": "images/a1-november.jpg",
+    "detected": [
+      "'Movember' (0.49)"
+    ]
+  },
+  {
+    "index": 1523,
+    "word": "now",
+    "level": "A1",
+    "image": "images/a1-now.jpg",
+    "detected": [
+      "'How' (0.61)"
+    ]
+  },
+  {
+    "index": 1524,
+    "word": "nuclear",
+    "level": "A2",
+    "image": "images/a2-nuclear.jpg",
+    "detected": [
+      "'Nuclear' (0.82)"
+    ]
+  },
+  {
+    "index": 1525,
+    "word": "number",
+    "level": "A1",
+    "image": "images/a1-number.jpg",
+    "detected": [
+      "'Humber' (0.86)"
+    ]
+  },
+  {
+    "index": 1526,
+    "word": "nutrition",
+    "level": "A2",
+    "image": "images/a2-nutrition.jpg",
+    "detected": [
+      "'Nutrition' (0.66)"
+    ]
+  },
+  {
+    "index": 1527,
+    "word": "observe",
+    "level": "A2",
+    "image": "images/a2-observe.jpg",
+    "detected": [
+      "'Observe' (1.00)"
+    ]
+  },
+  {
+    "index": 1528,
+    "word": "obviously",
+    "level": "A2",
+    "image": "images/a2-obviously.jpg",
+    "detected": [
+      "'Obviously' (0.99)"
+    ]
+  },
+  {
+    "index": 1529,
+    "word": "october",
+    "level": "A1",
+    "image": "images/a1-october.jpg",
+    "detected": [
+      "'October' (0.78)"
+    ]
+  },
+  {
+    "index": 1530,
+    "word": "offering",
+    "level": "A2",
+    "image": "images/a2-offering.jpg",
+    "detected": [
+      "'Product' (1.00)"
+    ]
+  },
+  {
+    "index": 1531,
+    "word": "offers",
+    "level": "A1",
+    "image": "images/a1-offers.jpg",
+    "detected": [
+      "'Offer' (1.00)"
+    ]
+  },
+  {
+    "index": 1532,
+    "word": "offline",
+    "level": "A2",
+    "image": "images/a2-offline.jpg",
+    "detected": [
+      "'Offline' (1.00)"
+    ]
+  }
+]
