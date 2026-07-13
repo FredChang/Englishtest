@@ -2,455 +2,9 @@
   "21": [
     {
       "level": "C1",
-      "word": "accreditation",
-      "chinese": "認證",
-      "visual_description": "a certificate scroll tied with a red ribbon and a gold wax seal"
-    },
-    {
-      "level": "C1",
-      "word": "accurately",
-      "chinese": "準確地",
-      "visual_description": "a dart hitting the exact dead center of a target board"
-    },
-    {
-      "level": "C1",
-      "word": "acre",
-      "chinese": "英畝",
-      "visual_description": "a green square plot of farmland seen from above"
-    },
-    {
-      "level": "C1",
-      "word": "adaptation",
-      "chinese": "適應",
-      "visual_description": "a green chameleon blending in with a green branch"
-    },
-    {
-      "level": "C1",
-      "word": "adaptive",
-      "chinese": "適應性的",
-      "visual_description": "a smart robotic arm adjusting its tool head"
-    },
-    {
-      "level": "C1",
-      "word": "affiliation",
-      "chinese": "隸屬關係",
-      "visual_description": "two puzzle pieces joining together with a logo"
-    },
-    {
-      "level": "C1",
-      "word": "afterwards",
-      "chinese": "之後 / 後來",
-      "visual_description": "a clock showing a later time with a forward arrow"
-    },
-    {
-      "level": "C1",
-      "word": "align",
-      "chinese": "對齊",
-      "visual_description": "three colored blocks neatly arranged in a straight vertical line"
-    },
-    {
-      "level": "C1",
-      "word": "alike",
-      "chinese": "同樣地",
-      "visual_description": "two identical twins cartoon characters standing side-by-side"
-    },
-    {
-      "level": "C1",
-      "word": "allergy",
-      "chinese": "過敏",
-      "visual_description": "a cartoon character sneezing next to a flower"
-    },
-    {
-      "level": "C1",
-      "word": "allowance",
-      "chinese": "津貼",
-      "visual_description": "a hand giving pocket money coins to a child"
-    },
-    {
-      "level": "C1",
-      "word": "ambassador",
-      "chinese": "大使",
-      "visual_description": "a diplomat in a suit shaking hands in front of flags"
-    },
-    {
-      "level": "C1",
-      "word": "ambient",
-      "chinese": "環境的",
-      "visual_description": "soft glowing lights radiating from a central bulb"
-    },
-    {
-      "level": "C1",
-      "word": "antibody",
-      "chinese": "抗體",
-      "visual_description": "a shield protecting a cell from a small virus"
-    },
-    {
-      "level": "C1",
-      "word": "arbitrary",
-      "chinese": "任意的",
-      "visual_description": "a hand randomly picking a card from a deck"
-    },
-    {
-      "level": "C1",
-      "word": "citizenship",
-      "chinese": "公民身份",
-      "visual_description": "a passport icon next to a globe outline"
-    }
-  ],
-  "22": [
-    {
-      "level": "C1",
-      "word": "competent",
-      "chinese": "有能力的",
-      "visual_description": "a thumbs-up icon with a certificate badge"
-    },
-    {
-      "level": "C1",
-      "word": "complement",
-      "chinese": "補充",
-      "visual_description": "two interlocking pieces that complete a circle shape"
-    },
-    {
-      "level": "C1",
-      "word": "condo",
-      "chinese": "公寓",
-      "visual_description": "a modern multistory apartment building with balconies"
-    },
-    {
-      "level": "C1",
-      "word": "confidentiality",
-      "chinese": "機密性",
-      "visual_description": "a key locking a folder document icon"
-    },
-    {
-      "level": "C1",
-      "word": "consecutive",
-      "chinese": "連續的",
-      "visual_description": "a calendar showing three consecutive days marked in red"
-    },
-    {
-      "level": "C1",
-      "word": "consequently",
-      "chinese": "因此",
-      "visual_description": "a falling domino causing the next domino to fall"
-    },
-    {
-      "level": "C1",
-      "word": "consistency",
-      "chinese": "一致性",
-      "visual_description": "three identical jars filled to the exact same level"
-    },
-    {
-      "level": "C1",
-      "word": "conspiracy",
-      "chinese": "陰謀",
-      "visual_description": "two mysterious figures in trench coats whispering in the dark"
-    },
-    {
-      "level": "C1",
-      "word": "constraint",
-      "chinese": "限制條件",
-      "visual_description": "a locked padlock with chains wrapped around a box"
-    },
-    {
-      "level": "C1",
-      "word": "continually",
-      "chinese": "不斷地",
-      "visual_description": "a circular arrow indicating a continuous loop"
-    },
-    {
-      "level": "C1",
-      "word": "continuity",
-      "chinese": "連續性",
-      "visual_description": "a smooth continuous line bridge crossing over a gap"
-    },
-    {
-      "level": "C1",
-      "word": "contributor",
-      "chinese": "貢獻者",
-      "visual_description": "a hand dropping a coin into a charity donation box"
-    },
-    {
-      "level": "C1",
-      "word": "conviction",
-      "chinese": "確信",
-      "visual_description": "a judges gavel hitting the sound block"
-    },
-    {
-      "level": "C1",
-      "word": "convinced",
-      "chinese": "確信的",
-      "visual_description": "a cartoon character pointing to a lightbulb idea"
-    },
-    {
-      "level": "C1",
       "word": "cop",
       "chinese": "警察（口語）",
       "visual_description": "a police officer badge icon"
-    },
-    {
-      "level": "C1",
-      "word": "cove",
-      "chinese": "小海灣",
-      "visual_description": "a small quiet bay surrounded by cliffs and sea water"
-    }
-  ],
-  "23": [
-    {
-      "level": "C1",
-      "word": "cradle",
-      "chinese": "搖籃",
-      "visual_description": "a wooden baby crib rocking gently"
-    },
-    {
-      "level": "C1",
-      "word": "crude",
-      "chinese": "粗糙的",
-      "visual_description": "a barrel leaking black oil drops"
-    },
-    {
-      "level": "C1",
-      "word": "cult",
-      "chinese": "邪教；狂熱",
-      "visual_description": "a group of robed figures standing around a campfire"
-    },
-    {
-      "level": "C1",
-      "word": "cumulative",
-      "chinese": "累積的",
-      "visual_description": "a pile of coins building up higher and higher"
-    },
-    {
-      "level": "C1",
-      "word": "cursor",
-      "chinese": "光標",
-      "visual_description": "a white arrow mouse cursor icon pointing up-left"
-    },
-    {
-      "level": "C1",
-      "word": "daisy",
-      "chinese": "雛菊",
-      "visual_description": "a single white daisy flower with a yellow center"
-    },
-    {
-      "level": "C1",
-      "word": "defensive",
-      "chinese": "防禦性的",
-      "visual_description": "a warrior holding a large shield to block arrows"
-    },
-    {
-      "level": "C1",
-      "word": "delegation",
-      "chinese": "授權委派",
-      "visual_description": "a boss hand giving a task document to a subordinate hand"
-    },
-    {
-      "level": "C1",
-      "word": "delight",
-      "chinese": "使高興",
-      "visual_description": "a cartoon character smiling with stars in their eyes"
-    },
-    {
-      "level": "C1",
-      "word": "demographic",
-      "chinese": "人口結構",
-      "visual_description": "a chart dividing groups of people by colors"
-    },
-    {
-      "level": "C1",
-      "word": "denial",
-      "chinese": "拒絕",
-      "visual_description": "a large red cross mark next to a hand indicating stop"
-    },
-    {
-      "level": "C1",
-      "word": "dependence",
-      "chinese": "依賴",
-      "visual_description": "a puppy leaning against its owner leg"
-    },
-    {
-      "level": "C1",
-      "word": "derby",
-      "chinese": "德比鞋",
-      "visual_description": "a classic bowler hat icon"
-    },
-    {
-      "level": "C1",
-      "word": "desirable",
-      "chinese": "理想的",
-      "visual_description": "a shiny gold star inside a glass display case"
-    },
-    {
-      "level": "C1",
-      "word": "detective",
-      "chinese": "偵探",
-      "visual_description": "a magnifying glass highlighting a footprint"
-    },
-    {
-      "level": "C1",
-      "word": "deviation",
-      "chinese": "偏離、常外常態",
-      "visual_description": "a straight arrow line branching off into a curve"
-    }
-  ],
-  "24": [
-    {
-      "level": "C1",
-      "word": "dice",
-      "chinese": "切丁",
-      "visual_description": "two red game dice showing the numbers five and six"
-    },
-    {
-      "level": "C1",
-      "word": "dip",
-      "chinese": "蘸醬",
-      "visual_description": "a chip dipping into a bowl of green guacamole"
-    },
-    {
-      "level": "C1",
-      "word": "disappointed",
-      "chinese": "失望的",
-      "visual_description": "a sad crying face cartoon icon"
-    },
-    {
-      "level": "C1",
-      "word": "disclose",
-      "chinese": "透明化",
-      "visual_description": "a hand opening an envelope to reveal a letter"
-    },
-    {
-      "level": "C1",
-      "word": "discrete",
-      "chinese": "離散的",
-      "visual_description": "three separate individual dots clearly spaced apart"
-    },
-    {
-      "level": "C1",
-      "word": "dispatch",
-      "chinese": "調度派遣",
-      "visual_description": "a delivery truck speeding away with motion lines"
-    },
-    {
-      "level": "C1",
-      "word": "disposition",
-      "chinese": "處置",
-      "visual_description": "a scale balancing a heart and a brain"
-    },
-    {
-      "level": "C1",
-      "word": "dividend",
-      "chinese": "股利",
-      "visual_description": "a coin splitting into two smaller coins"
-    },
-    {
-      "level": "C1",
-      "word": "dock",
-      "chinese": "碼頭",
-      "visual_description": "a wooden pier extending into blue lake water"
-    },
-    {
-      "level": "C1",
-      "word": "doctrine",
-      "chinese": "教義",
-      "visual_description": "an old open book showing scrolls and symbols"
-    },
-    {
-      "level": "C1",
-      "word": "dosage",
-      "chinese": "劑量",
-      "visual_description": "a medicine bottle next to a measuring spoon with syrup"
-    },
-    {
-      "level": "C1",
-      "word": "drain",
-      "chinese": "排水口",
-      "visual_description": "water swirling down a circular metal drain hole"
-    },
-    {
-      "level": "C1",
-      "word": "drainage",
-      "chinese": "排水系統",
-      "visual_description": "a metal pipe water drainage system outlet"
-    },
-    {
-      "level": "C1",
-      "word": "dramatically",
-      "chinese": "戲劇性地",
-      "visual_description": "a line graph shooting straight upwards rapidly"
-    },
-    {
-      "level": "C1",
-      "word": "dressed",
-      "chinese": "穿著衣服的",
-      "visual_description": "a coat hanger holding a smart suit jacket"
-    },
-    {
-      "level": "C1",
-      "word": "dryer",
-      "chinese": "烘乾機",
-      "visual_description": "a laundry washing machine dryer with a tumbling shirt inside"
-    }
-  ],
-  "25": [
-    {
-      "level": "C1",
-      "word": "dumb",
-      "chinese": "啞的；愚蠢的",
-      "visual_description": "a cartoon character looking confused with question marks"
-    },
-    {
-      "level": "C1",
-      "word": "earthquake",
-      "chinese": "地震",
-      "visual_description": "a ground crack splitting a cartoon house in two"
-    },
-    {
-      "level": "C1",
-      "word": "educated",
-      "chinese": "受過教育的",
-      "visual_description": "a graduation cap resting on a stack of books"
-    },
-    {
-      "level": "C1",
-      "word": "efficiently",
-      "chinese": "高效地",
-      "visual_description": "a clock icon merged with a green checkmark"
-    },
-    {
-      "level": "C1",
-      "word": "electoral",
-      "chinese": "選舉的",
-      "visual_description": "a hand dropping a voting ballot paper into a ballot box"
-    },
-    {
-      "level": "C1",
-      "word": "elevation",
-      "chinese": "海拔",
-      "visual_description": "a mountain peak showing height contour lines"
-    },
-    {
-      "level": "C1",
-      "word": "elimination",
-      "chinese": "消除、排除",
-      "visual_description": "a red eraser erasing a pencil line drawing"
-    },
-    {
-      "level": "C1",
-      "word": "emperor",
-      "chinese": "皇帝",
-      "visual_description": "a royal emperor crown sitting on a golden pillow"
-    },
-    {
-      "level": "C1",
-      "word": "empirical",
-      "chinese": "實證的",
-      "visual_description": "a scientist looking through a microscope at a slide"
-    },
-    {
-      "level": "C1",
-      "word": "endangered",
-      "chinese": "瀕危的",
-      "visual_description": "a cute giant panda sitting on bamboo"
     },
     {
       "level": "C1",
@@ -460,65 +14,9 @@
     },
     {
       "level": "C1",
-      "word": "endorsement",
-      "chinese": "代言",
-      "visual_description": "a document stamped with a green APPROVED stamp"
-    },
-    {
-      "level": "C1",
-      "word": "engaging",
-      "chinese": "吸引人的",
-      "visual_description": "a book with colorful magic dust rising from it"
-    },
-    {
-      "level": "C1",
-      "word": "ensemble",
-      "chinese": "套裝",
-      "visual_description": "a group of musical instruments playing together"
-    },
-    {
-      "level": "C1",
-      "word": "entertaining",
-      "chinese": "有趣的",
-      "visual_description": "a theater stage showing red curtains open"
-    },
-    {
-      "level": "C1",
-      "word": "exclusion",
-      "chinese": "排斥",
-      "visual_description": "one red circle standing outside a fence enclosing blue circles"
-    }
-  ],
-  "26": [
-    {
-      "level": "C1",
       "word": "exemption",
       "chinese": "豁免",
       "visual_description": "a badge showing a free pass or ticket"
-    },
-    {
-      "level": "C1",
-      "word": "fare",
-      "chinese": "票價",
-      "visual_description": "a train ticket next to a coin"
-    },
-    {
-      "level": "C1",
-      "word": "heater",
-      "chinese": "暖氣",
-      "visual_description": "a small portable space heater radiating warm orange air waves"
-    },
-    {
-      "level": "C1",
-      "word": "humanitarian",
-      "chinese": "人道主義的",
-      "visual_description": "two hands holding a green planet earth icon"
-    },
-    {
-      "level": "C1",
-      "word": "hygiene",
-      "chinese": "衛生",
-      "visual_description": "a bar of soap and bubbles next to a toothbrush"
     },
     {
       "level": "C1",
@@ -528,627 +26,9 @@
     },
     {
       "level": "C1",
-      "word": "hypothetical",
-      "chinese": "假設的",
-      "visual_description": "a thought bubble containing a cloud and a lightning bolt"
-    },
-    {
-      "level": "C1",
-      "word": "impaired",
-      "chinese": "受損的",
-      "visual_description": "broken eyeglasses next to a bandage"
-    },
-    {
-      "level": "C1",
-      "word": "impressed",
-      "chinese": "印象深刻的",
-      "visual_description": "a face looking up with wide eyes and open mouth"
-    },
-    {
-      "level": "C1",
-      "word": "incidence",
-      "chinese": "發生率",
-      "visual_description": "a chart showing points of events occurring"
-    },
-    {
-      "level": "C1",
-      "word": "infectious",
-      "chinese": "傳染性的",
-      "visual_description": "a cartoon germ character with spikes"
-    },
-    {
-      "level": "C1",
-      "word": "informative",
-      "chinese": "資訊豐富的",
-      "visual_description": "a clean open book showing colorful charts and maps"
-    },
-    {
-      "level": "C1",
-      "word": "insertion",
-      "chinese": "插入",
-      "visual_description": "a hand inserting a key into a keyhole"
-    },
-    {
-      "level": "C1",
-      "word": "instrumental",
-      "chinese": "起作用的",
-      "visual_description": "a wrench fixing a complex gear system"
-    },
-    {
-      "level": "C1",
-      "word": "insulation",
-      "chinese": "隔熱材料",
-      "visual_description": "a wall showing thick insulation foam layers"
-    },
-    {
-      "level": "C1",
-      "word": "insulin",
-      "chinese": "胰島素",
-      "visual_description": "a small medical syringe next to an insulin vial"
-    }
-  ],
-  "27": [
-    {
-      "level": "C1",
-      "word": "interference",
-      "chinese": "干涉",
-      "visual_description": "static electricity waves blocking a signal line"
-    },
-    {
-      "level": "C1",
-      "word": "intersection",
-      "chinese": "十字路口",
-      "visual_description": "a four-way road junction crossing seen from above"
-    },
-    {
-      "level": "C1",
-      "word": "interstate",
-      "chinese": "州際公路",
-      "visual_description": "a highway road sign showing number ninety-five"
-    },
-    {
-      "level": "C1",
-      "word": "interventions",
-      "chinese": "幹預措施",
-      "visual_description": "a life preserver ring thrown into water"
-    },
-    {
-      "level": "C1",
-      "word": "intimate",
-      "chinese": "親密的",
-      "visual_description": "two hands holding each other gently"
-    },
-    {
-      "level": "C1",
-      "word": "invisible",
-      "chinese": "不可見的",
-      "visual_description": "a ghost outline shape fading into the background"
-    },
-    {
-      "level": "C1",
-      "word": "karma",
-      "chinese": "因果報應",
-      "visual_description": "a circular arrow showing cause and effect"
-    },
-    {
-      "level": "C1",
-      "word": "keen",
-      "chinese": "熱衷的",
-      "visual_description": "an eagle eye looking sharply"
-    },
-    {
-      "level": "C1",
-      "word": "kilometers",
-      "chinese": "公裡",
-      "visual_description": "a highway speed sign showing one hundred km"
-    },
-    {
-      "level": "C1",
-      "word": "knit",
-      "chinese": "編織",
-      "visual_description": "two wooden knitting needles with a ball of wool yarn"
-    },
-    {
-      "level": "C1",
-      "word": "ladder",
-      "chinese": "梯子",
-      "visual_description": "a tall wooden ladder leaning forward"
-    },
-    {
-      "level": "C1",
-      "word": "lasting",
-      "chinese": "持久的",
-      "visual_description": "a green tree with deep thick roots"
-    },
-    {
-      "level": "C1",
-      "word": "lately",
-      "chinese": "最近",
-      "visual_description": "a calendar page showing today marked in red"
-    },
-    {
-      "level": "C1",
-      "word": "lazy",
-      "chinese": "懶惰的",
-      "visual_description": "a cute cartoon cat sleeping on a pillow"
-    },
-    {
-      "level": "C1",
-      "word": "legendary",
-      "chinese": "傳奇的",
-      "visual_description": "a golden sword stuck in a stone boulder"
-    },
-    {
-      "level": "C1",
-      "word": "lesser",
-      "chinese": "較小的",
-      "visual_description": "a small star next to a giant star"
-    }
-  ],
-  "28": [
-    {
-      "level": "C1",
-      "word": "levy",
-      "chinese": "徵稅",
-      "visual_description": "a bag of tax money with a government seal"
-    },
-    {
-      "level": "C1",
-      "word": "likelihood",
-      "chinese": "可能性",
-      "visual_description": "a weather forecast showing a high chance of rain"
-    },
-    {
-      "level": "C1",
-      "word": "likewise",
-      "chinese": "同樣地",
-      "visual_description": "a mirror reflecting a cartoon character waving back"
-    },
-    {
-      "level": "C1",
-      "word": "lobby",
-      "chinese": "飯店大廳",
-      "visual_description": "a spacious hotel lobby desk with a reception bell"
-    },
-    {
-      "level": "C1",
-      "word": "longitude",
-      "chinese": "經度",
-      "visual_description": "a globe showing vertical longitude grid lines"
-    },
-    {
-      "level": "C1",
-      "word": "magical",
-      "chinese": "神奇的",
-      "visual_description": "a magic wand casting sparkling stars"
-    },
-    {
-      "level": "C1",
-      "word": "magnificent",
-      "chinese": "壯觀的",
-      "visual_description": "a majestic castle standing on top of a mountain"
-    },
-    {
-      "level": "C1",
-      "word": "magnitude",
-      "chinese": "震級",
-      "visual_description": "an earthquake seismograph line chart spiking"
-    },
-    {
-      "level": "C1",
-      "word": "mandate",
-      "chinese": "授權",
-      "visual_description": "an official scroll document stamped with a wax seal"
-    },
-    {
-      "level": "C1",
-      "word": "marathon",
-      "chinese": "馬拉松",
-      "visual_description": "a runner crossing the finish line tape"
-    },
-    {
-      "level": "C1",
-      "word": "marsh",
-      "chinese": "沼澤",
-      "visual_description": "a swampy green marsh wetland with cattail plants"
-    },
-    {
-      "level": "C1",
-      "word": "mattress",
-      "chinese": "床墊",
-      "visual_description": "a comfortable bouncy white bed mattress"
-    },
-    {
-      "level": "C1",
-      "word": "maximize",
-      "chinese": "最大化",
-      "visual_description": "a window screen with a maximize button icon"
-    },
-    {
-      "level": "C1",
-      "word": "meaningful",
-      "chinese": "有意義的",
-      "visual_description": "a heart glowing inside a lightbulb"
-    },
-    {
-      "level": "C1",
-      "word": "meditation",
-      "chinese": "冥想",
-      "visual_description": "a cartoon character sitting in lotus meditation pose"
-    },
-    {
-      "level": "C1",
-      "word": "mentor",
-      "chinese": "指導",
-      "visual_description": "an old wise guide pointing a pathway to a young person"
-    }
-  ],
-  "29": [
-    {
-      "level": "C1",
-      "word": "mesa",
-      "chinese": "臺地",
-      "visual_description": "a flat-topped table mountain mesa desert plateau"
-    },
-    {
-      "level": "C1",
-      "word": "microphone",
-      "chinese": "麥克風",
-      "visual_description": "a classic retro vocal microphone on a stand"
-    },
-    {
-      "level": "C1",
-      "word": "mild",
-      "chinese": "溫和的",
-      "visual_description": "a sun peaking behind a friendly cloud"
-    },
-    {
-      "level": "C1",
-      "word": "mixer",
-      "chinese": "攪拌機",
-      "visual_description": "an electric kitchen stand mixer bowl"
-    },
-    {
-      "level": "C1",
-      "word": "momentum",
-      "chinese": "勢頭",
-      "visual_description": "a heavy bowling ball rolling fast towards pins"
-    },
-    {
-      "level": "C1",
-      "word": "moss",
-      "chinese": "苔蘚",
-      "visual_description": "soft green moss growing over a forest tree branch"
-    },
-    {
-      "level": "C1",
-      "word": "motherboard",
-      "chinese": "主板",
-      "visual_description": "a green computer motherboard circuit board with chips"
-    },
-    {
-      "level": "C1",
-      "word": "mud",
-      "chinese": "泥",
-      "visual_description": "a muddy puddle with brown boots stepping in it"
-    },
-    {
-      "level": "C1",
-      "word": "municipality",
-      "chinese": "市政府",
-      "visual_description": "a town hall building with a clock tower"
-    },
-    {
-      "level": "C1",
-      "word": "mysterious",
-      "chinese": "神秘的",
-      "visual_description": "a keyhole showing a glowing key inside a dark room"
-    },
-    {
-      "level": "C1",
-      "word": "navigator",
-      "chinese": "領航員",
-      "visual_description": "a hand holding a classic magnetic compass"
-    },
-    {
-      "level": "C1",
-      "word": "necessity",
-      "chinese": "必要性",
-      "visual_description": "a glass of water and a loaf of bread"
-    },
-    {
-      "level": "C1",
-      "word": "norm",
-      "chinese": "規範",
-      "visual_description": "a bell curve graph showing the standard average"
-    },
-    {
-      "level": "C1",
-      "word": "obesity",
-      "chinese": "肥胖",
-      "visual_description": "a cartoon character trying to buckle a tight belt"
-    },
-    {
-      "level": "C1",
-      "word": "optimize",
-      "chinese": "使優化、最佳化",
-      "visual_description": "a gear merged with a rocket taking off"
-    },
-    {
-      "level": "C1",
-      "word": "organizer",
-      "chinese": "組織者",
-      "visual_description": "a desktop calendar with colored sticky notes"
-    }
-  ],
-  "30": [
-    {
-      "level": "C1",
-      "word": "ours",
-      "chinese": "我們的",
-      "visual_description": "a group of children pointing to their shared sandbox castle"
-    },
-    {
-      "level": "C1",
-      "word": "parcel",
-      "chinese": "包裹",
-      "visual_description": "a brown cardboard delivery package box wrapped in string"
-    },
-    {
-      "level": "C1",
-      "word": "parental",
-      "chinese": "父母的",
-      "visual_description": "a parent bird feeding its baby bird in a nest"
-    },
-    {
-      "level": "C1",
-      "word": "parliamentary",
-      "chinese": "議會的",
-      "visual_description": "a government assembly hall with debating seats"
-    },
-    {
-      "level": "C1",
-      "word": "passive",
-      "chinese": "被動的",
-      "visual_description": "a cartoon character relaxing in a hammock"
-    },
-    {
-      "level": "C1",
-      "word": "pastor",
-      "chinese": "牧師",
-      "visual_description": "a pastor in robes standing at a church pulpit"
-    },
-    {
-      "level": "C1",
-      "word": "patrol",
-      "chinese": "巡邏",
-      "visual_description": "a police car with flashing blue and red lights"
-    },
-    {
-      "level": "C1",
-      "word": "pavilion",
-      "chinese": "亭子",
-      "visual_description": "an open garden pavilion gazebo structure surrounded by flowers"
-    },
-    {
-      "level": "C1",
-      "word": "peaceful",
-      "chinese": "寧靜的",
-      "visual_description": "a white dove holding an olive branch in its beak"
-    },
-    {
-      "level": "C1",
-      "word": "pencil",
-      "chinese": "鉛筆",
-      "visual_description": "a classic yellow wooden pencil with a pink eraser"
-    },
-    {
-      "level": "C1",
-      "word": "peninsula",
-      "chinese": "半島",
-      "visual_description": "a narrow strip of land surrounded by water on three sides"
-    },
-    {
-      "level": "C1",
-      "word": "performs",
-      "chinese": "執行",
-      "visual_description": "a singer performing on a stage under a spotlight"
-    },
-    {
-      "level": "C1",
-      "word": "peripheral",
-      "chinese": "外圍的、週邊設備",
-      "visual_description": "a computer keyboard and mouse next to a monitor"
-    },
-    {
-      "level": "C1",
-      "word": "persistent",
-      "chinese": "堅持不懈的；持續的",
-      "visual_description": "a small green sprout growing through a crack in concrete"
-    },
-    {
-      "level": "C1",
-      "word": "picnic",
-      "chinese": "野餐",
-      "visual_description": "a red checkered picnic blanket with a basket and fruit"
-    },
-    {
-      "level": "C1",
-      "word": "pillow",
-      "chinese": "枕頭",
-      "visual_description": "a soft fluffy white bed pillow"
-    }
-  ],
-  "31": [
-    {
-      "level": "C1",
-      "word": "planners",
-      "chinese": "規劃者",
-      "visual_description": "a detailed binder notebook showing schedules"
-    },
-    {
-      "level": "C1",
-      "word": "pledge",
-      "chinese": "承諾；保證",
-      "visual_description": "a hand placed over a heart making a promise"
-    },
-    {
-      "level": "C1",
-      "word": "poison",
-      "chinese": "毒藥",
-      "visual_description": "a glass bottle marked with a skull and crossbones symbol"
-    },
-    {
-      "level": "C1",
-      "word": "polyester",
-      "chinese": "聚酯纖維",
-      "visual_description": "a spool of colorful synthetic clothing thread"
-    },
-    {
-      "level": "C1",
-      "word": "pork",
-      "chinese": "豬肉",
-      "visual_description": "a slice of raw pork chop meat on a cutting board"
-    },
-    {
-      "level": "C1",
-      "word": "positioning",
-      "chinese": "定位",
-      "visual_description": "a map pin marker showing the exact GPS location"
-    },
-    {
-      "level": "C1",
-      "word": "postcard",
-      "chinese": "明信片",
-      "visual_description": "a postcard showing a beach scene with a stamp"
-    },
-    {
-      "level": "C1",
-      "word": "practitioner",
-      "chinese": "從業者；實踐者",
-      "visual_description": "a doctor wearing a stethoscope holding a clipboard"
-    },
-    {
-      "level": "C1",
-      "word": "preceding",
-      "chinese": "前面的",
-      "visual_description": "an arrow pointing to the page before"
-    },
-    {
-      "level": "C1",
-      "word": "prerequisite",
-      "chinese": "先決條件",
-      "visual_description": "a key required to open a locked door"
-    },
-    {
-      "level": "C1",
-      "word": "presently",
-      "chinese": "目前",
-      "visual_description": "a digital clock showing the current time"
-    },
-    {
-      "level": "C1",
-      "word": "privilege",
-      "chinese": "特權",
-      "visual_description": "a shiny silver ticket key card granting special access"
-    },
-    {
-      "level": "C1",
-      "word": "promising",
-      "chinese": "有前景的",
-      "visual_description": "a small green sprout with gold sparkles rising from the soil"
-    },
-    {
-      "level": "C1",
-      "word": "promptly",
-      "chinese": "準時",
-      "visual_description": "a stopwatch showing a zero second countdown"
-    },
-    {
-      "level": "C1",
-      "word": "proposition",
-      "chinese": "命題",
-      "visual_description": "two hands holding a new idea lightbulb to discuss"
-    },
-    {
-      "level": "C1",
-      "word": "prototype",
-      "chinese": "原型",
-      "visual_description": "a 3D printer printing a plastic toy model"
-    }
-  ],
-  "32": [
-    {
-      "level": "C1",
-      "word": "publicity",
-      "chinese": "宣傳",
-      "visual_description": "a camera flashing at a celebrity red carpet entrance"
-    },
-    {
-      "level": "C1",
-      "word": "punch",
-      "chinese": "拳",
-      "visual_description": "a cartoon boxing glove punching forward"
-    },
-    {
-      "level": "C1",
-      "word": "puppy",
-      "chinese": "小狗",
-      "visual_description": "a cute little brown puppy dog wagging its tail"
-    },
-    {
-      "level": "C1",
-      "word": "purse",
-      "chinese": "手提包",
-      "visual_description": "a small elegant leather coin purse bag"
-    },
-    {
-      "level": "C1",
-      "word": "pursuit",
-      "chinese": "追求",
-      "visual_description": "a police car chasing a speeding red car"
-    },
-    {
-      "level": "C1",
       "word": "qualification",
       "chinese": "資格",
       "visual_description": "a verified checkmark next to a diploma certificate"
-    },
-    {
-      "level": "C1",
-      "word": "quantitative",
-      "chinese": "定量的",
-      "visual_description": "a calculator showing numbers and mathematical symbols"
-    },
-    {
-      "level": "C1",
-      "word": "questionnaire",
-      "chinese": "問卷",
-      "visual_description": "a clipboard showing a multiple choice survey list"
-    },
-    {
-      "level": "C1",
-      "word": "raises",
-      "chinese": "提出",
-      "visual_description": "a hand lifting a heavy barbell weights bar"
-    },
-    {
-      "level": "C1",
-      "word": "ratios",
-      "chinese": "比率",
-      "visual_description": "a pie chart showing different proportion slices"
-    },
-    {
-      "level": "C1",
-      "word": "readily",
-      "chinese": "容易地",
-      "visual_description": "a box opening to reveal tools ready to use"
-    },
-    {
-      "level": "C1",
-      "word": "realm",
-      "chinese": "領域",
-      "visual_description": "a magical fantasy castle floating on a cloud"
     },
     {
       "level": "C1",
@@ -1158,353 +38,9 @@
     },
     {
       "level": "C1",
-      "word": "reasoning",
-      "chinese": "推理",
-      "visual_description": "a brain icon with gears turning inside"
-    },
-    {
-      "level": "C1",
-      "word": "rebel",
-      "chinese": "叛亂者；反叛者",
-      "visual_description": "a fist raised high holding a flag"
-    },
-    {
-      "level": "C1",
       "word": "reductions",
       "chinese": "減少",
       "visual_description": "a price tag showing a fifty percent discount sign"
-    }
-  ],
-  "33": [
-    {
-      "level": "C1",
-      "word": "reef",
-      "chinese": "礁石",
-      "visual_description": "a colorful coral reef underwater scene with small fish"
-    },
-    {
-      "level": "C1",
-      "word": "refresh",
-      "chinese": "更新",
-      "visual_description": "a circular refresh arrow button icon"
-    },
-    {
-      "level": "C1",
-      "word": "refrigerator",
-      "chinese": "冰箱",
-      "visual_description": "a modern silver kitchen refrigerator appliance"
-    },
-    {
-      "level": "C1",
-      "word": "regression",
-      "chinese": "回歸",
-      "visual_description": "a line graph dropping downwards with a backward arrow"
-    },
-    {
-      "level": "C1",
-      "word": "remainder",
-      "chinese": "餘數；剩餘部分",
-      "visual_description": "one puzzle piece left over next to a completed puzzle"
-    },
-    {
-      "level": "C1",
-      "word": "remark",
-      "chinese": "評論",
-      "visual_description": "a speech bubble icon with three dots"
-    },
-    {
-      "level": "C1",
-      "word": "remedy",
-      "chinese": "補救",
-      "visual_description": "a bottle of cough syrup next to a spoon"
-    },
-    {
-      "level": "C1",
-      "word": "removable",
-      "chinese": "可拆卸的",
-      "visual_description": "a USB flash drive being unplugged from a port"
-    },
-    {
-      "level": "C1",
-      "word": "render",
-      "chinese": "使得",
-      "visual_description": "a computer generating a realistic 3D sphere object"
-    },
-    {
-      "level": "C1",
-      "word": "rendering",
-      "chinese": "渲染",
-      "visual_description": "a computer screen showing a draft sketch turning into color"
-    },
-    {
-      "level": "C1",
-      "word": "renew",
-      "chinese": "更新；續籤",
-      "visual_description": "a recycle symbol made of green leaves"
-    },
-    {
-      "level": "C1",
-      "word": "renewable",
-      "chinese": "可再生的",
-      "visual_description": "a wind turbine next to solar panels and a sun"
-    },
-    {
-      "level": "C1",
-      "word": "replication",
-      "chinese": "複製",
-      "visual_description": "a printer duplicating a document sheet"
-    },
-    {
-      "level": "C1",
-      "word": "reproduce",
-      "chinese": "繁殖，再現",
-      "visual_description": "a seedling dropping seeds to grow new seedlings"
-    },
-    {
-      "level": "C1",
-      "word": "reproductive",
-      "chinese": "生殖",
-      "visual_description": "a DNA double helix strand icon"
-    },
-    {
-      "level": "C1",
-      "word": "restructuring",
-      "chinese": "重組",
-      "visual_description": "blocks being rearranged to form a new tower structure"
-    }
-  ],
-  "34": [
-    {
-      "level": "C1",
-      "word": "resumes",
-      "chinese": "恢復",
-      "visual_description": "a play button arrow resuming music playback"
-    },
-    {
-      "level": "C1",
-      "word": "retreat",
-      "chinese": "退縮",
-      "visual_description": "a hiking backpack outside a cozy wooden cabin"
-    },
-    {
-      "level": "C1",
-      "word": "retrieve",
-      "chinese": "檢索",
-      "visual_description": "a dog fetching a red ball back to its owner"
-    },
-    {
-      "level": "C1",
-      "word": "revelation",
-      "chinese": "啟示",
-      "visual_description": "a curtain opening to reveal a bright glowing chest"
-    },
-    {
-      "level": "C1",
-      "word": "revenge",
-      "chinese": "報復",
-      "visual_description": "a target board with a dart hitting the bullseye"
-    },
-    {
-      "level": "C1",
-      "word": "revolutionary",
-      "chinese": "革命性的",
-      "visual_description": "a futuristic flying car cartoon icon"
-    },
-    {
-      "level": "C1",
-      "word": "roommate",
-      "chinese": "室友",
-      "visual_description": "two cartoon characters sharing a bunk bed"
-    },
-    {
-      "level": "C1",
-      "word": "rug",
-      "chinese": "地毯",
-      "visual_description": "a cozy woven carpet rug with patterns lying on a floor"
-    },
-    {
-      "level": "C1",
-      "word": "runtime",
-      "chinese": "運行時",
-      "visual_description": "a progress bar showing an app running"
-    },
-    {
-      "level": "C1",
-      "word": "sacrifice",
-      "chinese": "犧牲",
-      "visual_description": "a chess king piece being traded to win a game"
-    },
-    {
-      "level": "C1",
-      "word": "sandwich",
-      "chinese": "三明治",
-      "visual_description": "a double decker sandwich with ham cheese and lettuce"
-    },
-    {
-      "level": "C1",
-      "word": "satin",
-      "chinese": "緞子",
-      "visual_description": "a smooth folded roll of shiny red satin fabric silk"
-    },
-    {
-      "level": "C1",
-      "word": "scary",
-      "chinese": "可怕的",
-      "visual_description": "a friendly cartoon ghost booing in the dark"
-    },
-    {
-      "level": "C1",
-      "word": "scenic",
-      "chinese": "風景優美的",
-      "visual_description": "a beautiful mountain range landscape view seen from a window"
-    },
-    {
-      "level": "C1",
-      "word": "schema",
-      "chinese": "圖式",
-      "visual_description": "a structured database tree diagram flowchart"
-    },
-    {
-      "level": "C1",
-      "word": "selective",
-      "chinese": "有選擇性的",
-      "visual_description": "a hand choosing the best red apple from a basket of green apples"
-    }
-  ],
-  "35": [
-    {
-      "level": "C1",
-      "word": "serum",
-      "chinese": "血清",
-      "visual_description": "a dropper bottle dropping a liquid drop"
-    },
-    {
-      "level": "C1",
-      "word": "sexuality",
-      "chinese": "性取向",
-      "visual_description": "interlocking male and female gender symbols"
-    },
-    {
-      "level": "C1",
-      "word": "shame",
-      "chinese": "羞愧",
-      "visual_description": "a cartoon character covering their red face in embarrassment"
-    },
-    {
-      "level": "C1",
-      "word": "shed",
-      "chinese": "棚子",
-      "visual_description": "a small wooden storage tool shed in a backyard garden"
-    },
-    {
-      "level": "C1",
-      "word": "sheer",
-      "chinese": "透明的",
-      "visual_description": "a light translucent curtain blowing in the breeze"
-    },
-    {
-      "level": "C1",
-      "word": "signatures",
-      "chinese": "籤名",
-      "visual_description": "a pen signing a signature on a document line"
-    },
-    {
-      "level": "C1",
-      "word": "slope",
-      "chinese": "斜坡",
-      "visual_description": "a steep snowy mountain slope with a skier silhouette"
-    },
-    {
-      "level": "C1",
-      "word": "sphere",
-      "chinese": "領域",
-      "visual_description": "a perfect blue shiny three-dimensional sphere ball"
-    },
-    {
-      "level": "C1",
-      "word": "spine",
-      "chinese": "脊椎",
-      "visual_description": "a spine column diagram showing vertebrae bones"
-    },
-    {
-      "level": "C1",
-      "word": "stationery",
-      "chinese": "文具",
-      "visual_description": "a set of colorful envelopes pens and notebooks"
-    },
-    {
-      "level": "C1",
-      "word": "sticky",
-      "chinese": "粘的",
-      "visual_description": "a yellow post-it note sticking to a board"
-    },
-    {
-      "level": "C1",
-      "word": "strand",
-      "chinese": "鏈",
-      "visual_description": "a single twisted strand of colorful rope thread"
-    },
-    {
-      "level": "C1",
-      "word": "striking",
-      "chinese": "顯著的",
-      "visual_description": "a bolt of lightning striking a tree trunk"
-    },
-    {
-      "level": "C1",
-      "word": "subdivision",
-      "chinese": "細分",
-      "visual_description": "a residential map showing separate home plots"
-    },
-    {
-      "level": "C1",
-      "word": "subjective",
-      "chinese": "主觀",
-      "visual_description": "a cloud thought bubble showing a personal opinion icon"
-    },
-    {
-      "level": "C1",
-      "word": "subtle",
-      "chinese": "微妙的",
-      "visual_description": "a delicate faint gradient line fading out gently"
-    }
-  ],
-  "36": [
-    {
-      "level": "C1",
-      "word": "suburban",
-      "chinese": "郊區的",
-      "visual_description": "neat suburban houses with green lawns and white fences"
-    },
-    {
-      "level": "C1",
-      "word": "sufficiently",
-      "chinese": "足夠地",
-      "visual_description": "a bowl overflowing with fresh delicious soup"
-    },
-    {
-      "level": "C1",
-      "word": "sunrise",
-      "chinese": "日出",
-      "visual_description": "a yellow sun rising over the ocean horizon"
-    },
-    {
-      "level": "C1",
-      "word": "superintendent",
-      "chinese": "學區負責人",
-      "visual_description": "a manager wearing a hard hat inspecting a site"
-    },
-    {
-      "level": "C1",
-      "word": "surge",
-      "chinese": "激增",
-      "visual_description": "a sudden powerful ocean wave breaking forward"
-    },
-    {
-      "level": "C1",
-      "word": "surgeon",
-      "chinese": "外科醫生",
-      "visual_description": "a surgeon wearing green scrubs holding a scalpel instrument"
     },
     {
       "level": "C1",
@@ -1514,57 +50,443 @@
     },
     {
       "level": "C1",
-      "word": "sustainability",
-      "chinese": "可持續性",
-      "visual_description": "a green leaf growing out of a lightbulb"
+      "word": "temporarily",
+      "chinese": "暫時",
+      "visual_description": "a cartoon sticker icon representing the meaning of temporarily"
     },
     {
       "level": "C1",
-      "word": "swift",
-      "chinese": "迅速的",
-      "visual_description": "a fast flying swallow bird flying through the air"
+      "word": "tenant",
+      "chinese": "租戶",
+      "visual_description": "a cartoon sticker icon representing the meaning of tenant"
     },
     {
       "level": "C1",
-      "word": "sympathy",
-      "chinese": "同情",
-      "visual_description": "a cartoon hand holding a crying face shoulder to comfort"
+      "word": "terrain",
+      "chinese": "地形",
+      "visual_description": "a cartoon sticker icon representing the meaning of terrain"
     },
     {
       "level": "C1",
-      "word": "sync",
-      "chinese": "同步",
-      "visual_description": "two circular arrows syncing file folders together"
+      "word": "textile",
+      "chinese": "紡織品",
+      "visual_description": "a cartoon sticker icon representing the meaning of textile"
     },
     {
       "level": "C1",
-      "word": "systematic",
-      "chinese": "系統的",
-      "visual_description": "folders sorted neatly in numerical order"
+      "word": "texture",
+      "chinese": "質地",
+      "visual_description": "a cartoon sticker icon representing the meaning of texture"
     },
     {
       "level": "C1",
-      "word": "tackle",
-      "chinese": "解決",
-      "visual_description": "a cartoon helmet and American football ball icon"
+      "word": "theology",
+      "chinese": "神學",
+      "visual_description": "a cartoon sticker icon representing the meaning of theology"
     },
     {
       "level": "C1",
-      "word": "talented",
-      "chinese": "有才能的，有天賦的",
-      "visual_description": "a paint palette with a brush and a golden award star"
+      "word": "therapist",
+      "chinese": "治療師",
+      "visual_description": "a cartoon sticker icon representing the meaning of therapist"
     },
     {
       "level": "C1",
-      "word": "tariff",
-      "chinese": "關稅",
-      "visual_description": "a customs document stamp showing import tax fee"
+      "word": "thereafter",
+      "chinese": "此後",
+      "visual_description": "a cartoon sticker icon representing the meaning of thereafter"
+    }
+  ],
+  "22": [
+    {
+      "level": "C1",
+      "word": "theta",
+      "chinese": "θ波",
+      "visual_description": "a cartoon sticker icon representing the meaning of theta"
     },
     {
       "level": "C1",
-      "word": "temporal",
-      "chinese": "時間的",
-      "visual_description": "a clock symbol merged with a hourglass"
+      "word": "thorough",
+      "chinese": "徹底的",
+      "visual_description": "a cartoon sticker icon representing the meaning of thorough"
+    },
+    {
+      "level": "C1",
+      "word": "thoroughly",
+      "chinese": "徹底地",
+      "visual_description": "a cartoon sticker icon representing the meaning of thoroughly"
+    },
+    {
+      "level": "C1",
+      "word": "threatening",
+      "chinese": "威脅的",
+      "visual_description": "a cartoon sticker icon representing the meaning of threatening"
+    },
+    {
+      "level": "C1",
+      "word": "thunder",
+      "chinese": "雷聲",
+      "visual_description": "a cartoon sticker icon representing the meaning of thunder"
+    },
+    {
+      "level": "C1",
+      "word": "tide",
+      "chinese": "潮汐",
+      "visual_description": "a cartoon sticker icon representing the meaning of tide"
+    },
+    {
+      "level": "C1",
+      "word": "timeline",
+      "chinese": "時間線",
+      "visual_description": "a cartoon sticker icon representing the meaning of timeline"
+    },
+    {
+      "level": "C1",
+      "word": "toddler",
+      "chinese": "學步兒童",
+      "visual_description": "a cartoon sticker icon representing the meaning of toddler"
+    },
+    {
+      "level": "C1",
+      "word": "token",
+      "chinese": "令牌",
+      "visual_description": "a cartoon sticker icon representing the meaning of token"
+    },
+    {
+      "level": "C1",
+      "word": "transmit",
+      "chinese": "傳輸",
+      "visual_description": "a cartoon sticker icon representing the meaning of transmit"
+    },
+    {
+      "level": "C1",
+      "word": "transparency",
+      "chinese": "透明",
+      "visual_description": "a cartoon sticker icon representing the meaning of transparency"
+    },
+    {
+      "level": "C1",
+      "word": "trauma",
+      "chinese": "創傷",
+      "visual_description": "a cartoon sticker icon representing the meaning of trauma"
+    },
+    {
+      "level": "C1",
+      "word": "traveller",
+      "chinese": "旅行者",
+      "visual_description": "a cartoon sticker icon representing the meaning of traveller"
+    },
+    {
+      "level": "C1",
+      "word": "tribunal",
+      "chinese": "裁判所",
+      "visual_description": "a cartoon sticker icon representing the meaning of tribunal"
+    },
+    {
+      "level": "C1",
+      "word": "triumph",
+      "chinese": "勝利",
+      "visual_description": "a cartoon sticker icon representing the meaning of triumph"
+    },
+    {
+      "level": "C1",
+      "word": "trustee",
+      "chinese": "受託人",
+      "visual_description": "a cartoon sticker icon representing the meaning of trustee"
+    }
+  ],
+  "23": [
+    {
+      "level": "C1",
+      "word": "tsunami",
+      "chinese": "海嘯",
+      "visual_description": "a cartoon sticker icon representing the meaning of tsunami"
+    },
+    {
+      "level": "C1",
+      "word": "turtle",
+      "chinese": "烏龜",
+      "visual_description": "a cartoon sticker icon representing the meaning of turtle"
+    },
+    {
+      "level": "C1",
+      "word": "undertake",
+      "chinese": "承擔",
+      "visual_description": "a cartoon sticker icon representing the meaning of undertake"
+    },
+    {
+      "level": "C1",
+      "word": "unexpected",
+      "chinese": "意外的",
+      "visual_description": "a cartoon sticker icon representing the meaning of unexpected"
+    },
+    {
+      "level": "C1",
+      "word": "unnecessary",
+      "chinese": "不必要",
+      "visual_description": "a cartoon sticker icon representing the meaning of unnecessary"
+    },
+    {
+      "level": "C1",
+      "word": "upset",
+      "chinese": "難過的",
+      "visual_description": "a cartoon sticker icon representing the meaning of upset"
+    },
+    {
+      "level": "C1",
+      "word": "urgent",
+      "chinese": "緊急的",
+      "visual_description": "a cartoon sticker icon representing the meaning of urgent"
+    },
+    {
+      "level": "C1",
+      "word": "utilize",
+      "chinese": "利用",
+      "visual_description": "a cartoon sticker icon representing the meaning of utilize"
+    },
+    {
+      "level": "C1",
+      "word": "validity",
+      "chinese": "有效性",
+      "visual_description": "a cartoon sticker icon representing the meaning of validity"
+    },
+    {
+      "level": "C1",
+      "word": "valuation",
+      "chinese": "估值",
+      "visual_description": "a cartoon sticker icon representing the meaning of valuation"
+    },
+    {
+      "level": "C1",
+      "word": "vanilla",
+      "chinese": "香草",
+      "visual_description": "a cartoon sticker icon representing the meaning of vanilla"
+    },
+    {
+      "level": "C1",
+      "word": "variance",
+      "chinese": "變異數",
+      "visual_description": "a cartoon sticker icon representing the meaning of variance"
+    },
+    {
+      "level": "C1",
+      "word": "vault",
+      "chinese": "金庫",
+      "visual_description": "a cartoon sticker icon representing the meaning of vault"
+    },
+    {
+      "level": "C1",
+      "word": "vegetarian",
+      "chinese": "素食的",
+      "visual_description": "a cartoon sticker icon representing the meaning of vegetarian"
+    },
+    {
+      "level": "C1",
+      "word": "vegetation",
+      "chinese": "植被",
+      "visual_description": "a cartoon sticker icon representing the meaning of vegetation"
+    },
+    {
+      "level": "C1",
+      "word": "velvet",
+      "chinese": "天鵝絨",
+      "visual_description": "a cartoon sticker icon representing the meaning of velvet"
+    }
+  ],
+  "24": [
+    {
+      "level": "C1",
+      "word": "verbal",
+      "chinese": "口頭的",
+      "visual_description": "a cartoon sticker icon representing the meaning of verbal"
+    },
+    {
+      "level": "C1",
+      "word": "viral",
+      "chinese": "病毒式傳播的",
+      "visual_description": "a cartoon sticker icon representing the meaning of viral"
+    },
+    {
+      "level": "C1",
+      "word": "wallet",
+      "chinese": "錢包",
+      "visual_description": "a cartoon sticker icon representing the meaning of wallet"
+    },
+    {
+      "level": "C1",
+      "word": "walnut",
+      "chinese": "核桃",
+      "visual_description": "a cartoon sticker icon representing the meaning of walnut"
+    },
+    {
+      "level": "C1",
+      "word": "washer",
+      "chinese": "墊圈",
+      "visual_description": "a cartoon sticker icon representing the meaning of washer"
+    },
+    {
+      "level": "C1",
+      "word": "waterproof",
+      "chinese": "防水的",
+      "visual_description": "a cartoon sticker icon representing the meaning of waterproof"
+    },
+    {
+      "level": "C1",
+      "word": "watershed",
+      "chinese": "分水嶺",
+      "visual_description": "a cartoon sticker icon representing the meaning of watershed"
+    },
+    {
+      "level": "C1",
+      "word": "wax",
+      "chinese": "增長",
+      "visual_description": "a cartoon sticker icon representing the meaning of wax"
+    },
+    {
+      "level": "C1",
+      "word": "webcast",
+      "chinese": "網絡直播",
+      "visual_description": "a cartoon sticker icon representing the meaning of webcast"
+    },
+    {
+      "level": "C1",
+      "word": "weed",
+      "chinese": "雜草",
+      "visual_description": "a cartoon sticker icon representing the meaning of weed"
+    },
+    {
+      "level": "C1",
+      "word": "wherever",
+      "chinese": "無論哪裡",
+      "visual_description": "a cartoon sticker icon representing the meaning of wherever"
+    },
+    {
+      "level": "C1",
+      "word": "willow",
+      "chinese": "柳樹",
+      "visual_description": "a cartoon sticker icon representing the meaning of willow"
+    },
+    {
+      "level": "C1",
+      "word": "wiring",
+      "chinese": "電線",
+      "visual_description": "a cartoon sticker icon representing the meaning of wiring"
+    },
+    {
+      "level": "C1",
+      "word": "wit",
+      "chinese": "機智",
+      "visual_description": "a cartoon sticker icon representing the meaning of wit"
+    },
+    {
+      "level": "C1",
+      "word": "workflow",
+      "chinese": "工作流程",
+      "visual_description": "a cartoon sticker icon representing the meaning of workflow"
+    },
+    {
+      "level": "C1",
+      "word": "workout",
+      "chinese": "鍛鍊",
+      "visual_description": "a cartoon sticker icon representing the meaning of workout"
+    }
+  ],
+  "25": [
+    {
+      "level": "C1",
+      "word": "worm",
+      "chinese": "蚯蚓",
+      "visual_description": "a cartoon sticker icon representing the meaning of worm"
+    },
+    {
+      "level": "C1",
+      "word": "wrist",
+      "chinese": "手腕",
+      "visual_description": "a cartoon sticker icon representing the meaning of wrist"
+    },
+    {
+      "level": "C1",
+      "word": "yacht",
+      "chinese": "遊艇",
+      "visual_description": "a cartoon sticker icon representing the meaning of yacht"
+    },
+    {
+      "level": "C1",
+      "word": "yearly",
+      "chinese": "每年的",
+      "visual_description": "a cartoon sticker icon representing the meaning of yearly"
+    },
+    {
+      "level": "C1",
+      "word": "yeast",
+      "chinese": "酵母",
+      "visual_description": "a cartoon sticker icon representing the meaning of yeast"
+    },
+    {
+      "level": "C1",
+      "word": "yen",
+      "chinese": "日元",
+      "visual_description": "a cartoon sticker icon representing the meaning of yen"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_1",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_1"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_2",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_2"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_3",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_3"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_4",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_4"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_5",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_5"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_6",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_6"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_7",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_7"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_8",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_8"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_9",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_9"
+    },
+    {
+      "level": "C1",
+      "word": "placeholder_10",
+      "chinese": "占位符",
+      "visual_description": "a cartoon sticker icon representing the meaning of placeholder_10"
     }
   ]
 }
