@@ -12308,145 +12308,11 @@
   {
     "Level": "C1",
     "English": [
-      "accreditation"
-    ],
-    "ImageUrl": "images/c1-accreditation.jpg",
-    "Chinese": "認證",
-    "Phonetic": "/əˌkrɛdɪˈteɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "accurately"
-    ],
-    "ImageUrl": "images/c1-accurately.jpg",
-    "Chinese": "準確地",
-    "Phonetic": "/ˈækjərətli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "acre"
-    ],
-    "ImageUrl": "images/c1-acre.jpg",
-    "Chinese": "英畝",
-    "Phonetic": "/ˈeɪkə/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "adaptation"
-    ],
-    "ImageUrl": "images/c1-adaptation.jpg",
-    "Chinese": "適應",
-    "Phonetic": "/ˌædəpˈteɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "adaptive"
-    ],
-    "ImageUrl": "images/c1-adaptive.jpg",
-    "Chinese": "適應性的",
-    "Phonetic": "/əˈdæptɪv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "affiliation"
-    ],
-    "ImageUrl": "images/c1-affiliation.jpg",
-    "Chinese": "隸屬關係",
-    "Phonetic": "/əˌfɪl.iˈeɪ.ʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "afterwards"
-    ],
-    "ImageUrl": "images/c1-afterwards.jpg",
-    "Chinese": "之後 / 後來",
-    "Phonetic": "/ˈɑːftərwədz/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "align"
-    ],
-    "ImageUrl": "images/c1-align.jpg",
-    "Chinese": "對齊",
-    "Phonetic": "/əˈlaɪn/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "alike"
-    ],
-    "ImageUrl": "images/c1-alike.jpg",
-    "Chinese": "同樣地",
-    "Phonetic": "/əˈlaɪk/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "allergy"
-    ],
-    "ImageUrl": "images/c1-allergy.jpg",
-    "Chinese": "過敏",
-    "Phonetic": "/ˈælərʤi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "allowance"
-    ],
-    "ImageUrl": "images/c1-allowance.jpg",
-    "Chinese": "津貼"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "aluminium"
     ],
     "ImageUrl": "images/c1-aluminium.jpg",
     "Chinese": "鋁",
     "Phonetic": "/ˌæljəˈmɪniəm/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "ambassador"
-    ],
-    "ImageUrl": "images/c1-ambassador.jpg",
-    "Chinese": "大使",
-    "Phonetic": "/æmˈbæsədər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "ambient"
-    ],
-    "ImageUrl": "images/c1-ambient.jpg",
-    "Chinese": "環境的",
-    "Phonetic": "/ˈæmbiənt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "antibody"
-    ],
-    "ImageUrl": "images/c1-antibody.jpg",
-    "Chinese": "抗體",
-    "Phonetic": "/ˈæntɪˌbɒdi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "arbitrary"
-    ],
-    "ImageUrl": "images/c1-arbitrary.jpg",
-    "Chinese": "任意的",
-    "Phonetic": "/ˈɑrbɪˌtrɛri/"
   },
   {
     "Level": "C1",
@@ -12712,15 +12578,6 @@
   {
     "Level": "C1",
     "English": [
-      "citizenship"
-    ],
-    "ImageUrl": "images/c1-citizenship.jpg",
-    "Chinese": "公民身份",
-    "Phonetic": "/ˈsɪtɪzənˌʃɪp/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "civilian"
     ],
     "ImageUrl": "images/c1-civilian.jpg",
@@ -12801,24 +12658,6 @@
   {
     "Level": "C1",
     "English": [
-      "competent"
-    ],
-    "ImageUrl": "images/c1-competent.jpg",
-    "Chinese": "有能力的",
-    "Phonetic": "/ˈkɒmpɪtənt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "complement"
-    ],
-    "ImageUrl": "images/c1-complement.jpg",
-    "Chinese": "補充",
-    "Phonetic": "/ˈkɒmplɪment/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "complimentary"
     ],
     "ImageUrl": "images/c1-complimentary.jpg",
@@ -12882,186 +12721,6 @@
   {
     "Level": "C1",
     "English": [
-      "condo"
-    ],
-    "ImageUrl": "images/c1-condo.jpg",
-    "Chinese": "公寓",
-    "Phonetic": "/ˈkɒndoʊ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "confidentiality"
-    ],
-    "ImageUrl": "images/c1-confidentiality.jpg",
-    "Chinese": "機密性",
-    "Phonetic": "/ˌkɑnfəˌdɛnʃiˈæləti/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "consecutive"
-    ],
-    "ImageUrl": "images/c1-consecutive.jpg",
-    "Chinese": "連續的",
-    "Phonetic": "/kənˈsɛkjʊtɪv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "consequently"
-    ],
-    "ImageUrl": "images/c1-consequently.jpg",
-    "Chinese": "因此",
-    "Phonetic": "/ˈkɒnsɪkwəntli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "consistency"
-    ],
-    "ImageUrl": "images/c1-consistency.jpg",
-    "Chinese": "一致性",
-    "Phonetic": "/kənˈsɪstənsi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "conspiracy"
-    ],
-    "ImageUrl": "images/c1-conspiracy.jpg",
-    "Chinese": "陰謀",
-    "Phonetic": "/kənˈspɪrəsi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "constraint"
-    ],
-    "ImageUrl": "images/c1-constraint.jpg",
-    "Chinese": "限制條件",
-    "Phonetic": "/kənˈstreɪnt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "continually"
-    ],
-    "ImageUrl": "images/c1-continually.jpg",
-    "Chinese": "不斷地",
-    "Phonetic": "/kənˈtɪnjuəli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "continuity"
-    ],
-    "ImageUrl": "images/c1-continuity.jpg",
-    "Chinese": "連續性",
-    "Phonetic": "/ˌkɒn.tɪˈnjuː.ə.ti/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "contributor"
-    ],
-    "ImageUrl": "images/c1-contributor.jpg",
-    "Chinese": "貢獻者",
-    "Phonetic": "/kənˈtrɪbjətər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "conviction"
-    ],
-    "ImageUrl": "images/c1-conviction.jpg",
-    "Chinese": "確信",
-    "Phonetic": "/kənˈvɪkʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "convinced"
-    ],
-    "ImageUrl": "images/c1-convinced.jpg",
-    "Chinese": "確信的",
-    "Phonetic": "/kənˈvɪnst/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cop"
-    ],
-    "ImageUrl": "images/c1-cop.jpg",
-    "Chinese": "警察（口語）",
-    "Phonetic": "/kɒp/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cove"
-    ],
-    "ImageUrl": "images/c1-cove.jpg",
-    "Chinese": "小海灣",
-    "Phonetic": "/koʊv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cradle"
-    ],
-    "ImageUrl": "images/c1-cradle.jpg",
-    "Chinese": "搖籃",
-    "Phonetic": "/ˈkreɪdəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "crude"
-    ],
-    "ImageUrl": "images/c1-crude.jpg",
-    "Chinese": "粗糙的",
-    "Phonetic": "/kruːd/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cult"
-    ],
-    "ImageUrl": "images/c1-cult.jpg",
-    "Chinese": "邪教；狂熱",
-    "Phonetic": "/kʌlt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cumulative"
-    ],
-    "ImageUrl": "images/c1-cumulative.jpg",
-    "Chinese": "累積的",
-    "Phonetic": "/ˈkjumjələtɪv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "cursor"
-    ],
-    "ImageUrl": "images/c1-cursor.jpg",
-    "Chinese": "光標",
-    "Phonetic": "/ˈkɜːrsər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "daisy"
-    ],
-    "ImageUrl": "images/c1-daisy.jpg",
-    "Chinese": "雛菊",
-    "Phonetic": "/ˈdeɪzi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "deadly"
     ],
     "ImageUrl": "images/c1-deadly.jpg",
@@ -13071,186 +12730,10 @@
   {
     "Level": "C1",
     "English": [
-      "defensive"
-    ],
-    "ImageUrl": "images/c1-defensive.jpg",
-    "Chinese": "防禦性的",
-    "Phonetic": "/dɪˈfɛnsɪv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "deficit"
     ],
     "ImageUrl": "images/c1-deficit.jpg",
     "Chinese": "赤字"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "delegation"
-    ],
-    "ImageUrl": "images/c1-delegation.jpg",
-    "Chinese": "授權委派",
-    "Phonetic": "/ˌdɛləˈgeɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "delight"
-    ],
-    "ImageUrl": "images/c1-delight.jpg",
-    "Chinese": "使高興",
-    "Phonetic": "/dɪˈlaɪt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "demographic"
-    ],
-    "ImageUrl": "images/c1-demographic.jpg",
-    "Chinese": "人口結構",
-    "Phonetic": "/ˌdɛməˈgræfɪk/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "denial"
-    ],
-    "ImageUrl": "images/c1-denial.jpg",
-    "Chinese": "拒絕"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dependence"
-    ],
-    "ImageUrl": "images/c1-dependence.jpg",
-    "Chinese": "依賴"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "derby"
-    ],
-    "ImageUrl": "images/c1-derby.jpg",
-    "Chinese": "德比鞋",
-    "Phonetic": "/ˈdɜːr.bi/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "desirable"
-    ],
-    "ImageUrl": "images/c1-desirable.jpg",
-    "Chinese": "理想的",
-    "Phonetic": "/dɪˈzaɪərəbəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "detective"
-    ],
-    "ImageUrl": "images/c1-detective.jpg",
-    "Chinese": "偵探",
-    "Phonetic": "/dɪˈtɛktɪv/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "deviation"
-    ],
-    "ImageUrl": "images/c1-deviation.jpg",
-    "Chinese": "偏離、常外常態",
-    "Phonetic": "/ˌdiː.viˈeɪ.ʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dice"
-    ],
-    "ImageUrl": "images/c1-dice.jpg",
-    "Chinese": "切丁",
-    "Phonetic": "/daɪs/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dip"
-    ],
-    "ImageUrl": "images/c1-dip.jpg",
-    "Chinese": "蘸醬",
-    "Phonetic": "/dɪp/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "disappointed"
-    ],
-    "ImageUrl": "images/c1-disappointed.jpg",
-    "Chinese": "失望的",
-    "Phonetic": "/ˌdɪsəˈpɔɪntɪd/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "disclose"
-    ],
-    "ImageUrl": "images/c1-disclose.jpg",
-    "Chinese": "透明化",
-    "Phonetic": "/dɪˈskloʊz/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "discrete"
-    ],
-    "ImageUrl": "images/c1-discrete.jpg",
-    "Chinese": "離散的",
-    "Phonetic": "/dɪˈskrit/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dispatch"
-    ],
-    "ImageUrl": "images/c1-dispatch.jpg",
-    "Chinese": "調度派遣"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "disposition"
-    ],
-    "ImageUrl": "images/c1-disposition.jpg",
-    "Chinese": "處置",
-    "Phonetic": "/ˌdɪspəˈzɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dividend"
-    ],
-    "ImageUrl": "images/c1-dividend.jpg",
-    "Chinese": "股利"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dock"
-    ],
-    "ImageUrl": "images/c1-dock.jpg",
-    "Chinese": "碼頭",
-    "Phonetic": "/dɒk/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "doctrine"
-    ],
-    "ImageUrl": "images/c1-doctrine.jpg",
-    "Chinese": "教義",
-    "Phonetic": "/ˈdɔktərɪn/"
   },
   {
     "Level": "C1",
@@ -13264,218 +12747,11 @@
   {
     "Level": "C1",
     "English": [
-      "dosage"
-    ],
-    "ImageUrl": "images/c1-dosage.jpg",
-    "Chinese": "劑量",
-    "Phonetic": "/ˈdoʊsɪdʒ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "drain"
-    ],
-    "ImageUrl": "images/c1-drain.jpg",
-    "Chinese": "排水口",
-    "Phonetic": "/dreɪn/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "drainage"
-    ],
-    "ImageUrl": "images/c1-drainage.jpg",
-    "Chinese": "排水系統",
-    "Phonetic": "/ˈdreɪnɪdʒ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dramatically"
-    ],
-    "ImageUrl": "images/c1-dramatically.jpg",
-    "Chinese": "戲劇性地",
-    "Phonetic": "/drəˈmætɪkəli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dressed"
-    ],
-    "ImageUrl": "images/c1-dressed.jpg",
-    "Chinese": "穿著衣服的",
-    "Phonetic": "/drest/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dryer"
-    ],
-    "ImageUrl": "images/c1-dryer.jpg",
-    "Chinese": "烘乾機",
-    "Phonetic": "/ˈdraɪər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "dumb"
-    ],
-    "ImageUrl": "images/c1-dumb.jpg",
-    "Chinese": "啞的；愚蠢的",
-    "Phonetic": "/dʌm/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "earthquake"
-    ],
-    "ImageUrl": "images/c1-earthquake.jpg",
-    "Chinese": "地震",
-    "Phonetic": "/ˈərθkˌweɪk/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "educated"
-    ],
-    "ImageUrl": "images/c1-educated.jpg",
-    "Chinese": "受過教育的",
-    "Phonetic": "/ˈedʒukeɪtɪd/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "efficiently"
-    ],
-    "ImageUrl": "images/c1-efficiently.jpg",
-    "Chinese": "高效地",
-    "Phonetic": "/ɪˈfɪʃəntli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "electoral"
-    ],
-    "ImageUrl": "images/c1-electoral.jpg",
-    "Chinese": "選舉的",
-    "Phonetic": "/ɪˈlektərəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "elevation"
-    ],
-    "ImageUrl": "images/c1-elevation.jpg",
-    "Chinese": "海拔",
-    "Phonetic": "/ˌɛlɪˈveɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "elimination"
-    ],
-    "ImageUrl": "images/c1-elimination.jpg",
-    "Chinese": "消除、排除",
-    "Phonetic": "/iˌlɪm.ɪˈneɪ.ʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "emperor"
-    ],
-    "ImageUrl": "images/c1-emperor.jpg",
-    "Chinese": "皇帝",
-    "Phonetic": "/ˈɛmpərər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "empirical"
-    ],
-    "ImageUrl": "images/c1-empirical.jpg",
-    "Chinese": "實證的",
-    "Phonetic": "/ˌɛmˈpɪrɪkəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "endangered"
-    ],
-    "ImageUrl": "images/c1-endangered.jpg",
-    "Chinese": "瀕危的",
-    "Phonetic": "/ɪnˈdeɪn.dʒərd/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "endless"
-    ],
-    "ImageUrl": "images/c1-endless.jpg",
-    "Chinese": "無盡的",
-    "Phonetic": "/ˈendləs/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "endorsement"
-    ],
-    "ImageUrl": "images/c1-endorsement.jpg",
-    "Chinese": "代言",
-    "Phonetic": "/ɪnˈdɔːrs.mənt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "engaging"
-    ],
-    "ImageUrl": "images/c1-engaging.jpg",
-    "Chinese": "吸引人的",
-    "Phonetic": "/ɪnˈɡeɪdʒɪŋ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "ensemble"
-    ],
-    "ImageUrl": "images/c1-ensemble.jpg",
-    "Chinese": "套裝",
-    "Phonetic": "/ɑːnˈsɑːmbəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "entertaining"
-    ],
-    "ImageUrl": "images/c1-entertaining.jpg",
-    "Chinese": "有趣的",
-    "Phonetic": "/ˌɛntəˈteɪnɪŋ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "evident"
     ],
     "ImageUrl": "images/c1-evident.jpg",
     "Chinese": "明顯的",
     "Phonetic": "/ˈɛvɪdənt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "exclusion"
-    ],
-    "ImageUrl": "images/c1-exclusion.jpg",
-    "Chinese": "排斥",
-    "Phonetic": "/ɪkˈskluʒən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "exemption"
-    ],
-    "ImageUrl": "images/c1-exemption.jpg",
-    "Chinese": "豁免",
-    "Phonetic": "/ɪɡˈzemp.ʃən/"
   },
   {
     "Level": "C1",
@@ -13503,14 +12779,6 @@
     "ImageUrl": "images/c1-extraction.jpg",
     "Chinese": "萃取",
     "Phonetic": "/ɛkˈstrækʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "fare"
-    ],
-    "ImageUrl": "images/c1-fare.jpg",
-    "Chinese": "票價"
   },
   {
     "Level": "C1",
@@ -13803,15 +13071,6 @@
   {
     "Level": "C1",
     "English": [
-      "heater"
-    ],
-    "ImageUrl": "images/c1-heater.jpg",
-    "Chinese": "暖氣",
-    "Phonetic": "/ˈhiːtər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "helmet"
     ],
     "ImageUrl": "images/c1-helmet.jpg",
@@ -13884,6 +13143,882 @@
   {
     "Level": "C1",
     "English": [
+      "instrumentation"
+    ],
+    "ImageUrl": "images/c1-instrumentation.jpg",
+    "Chinese": "儀器設備、儀表化",
+    "Phonetic": "/ˌɪn.strə.menˈteɪ.ʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "internship"
+    ],
+    "ImageUrl": "images/c1-internship.jpg",
+    "Chinese": "實習",
+    "Phonetic": "/ˈɪntɜːrnˌʃɪp/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "irrigation"
+    ],
+    "ImageUrl": "images/c1-irrigation.jpg",
+    "Chinese": "灌溉",
+    "Phonetic": "/ˌɪrəˈgeɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "lamb"
+    ],
+    "ImageUrl": "images/c1-lamb.jpg",
+    "Chinese": "羊肉",
+    "Phonetic": "/læm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "memo"
+    ],
+    "ImageUrl": "images/c1-memo.jpg",
+    "Chinese": "備忘錄",
+    "Phonetic": "/ˈmem.oʊ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "mercy"
+    ],
+    "ImageUrl": "images/c1-mercy.jpg",
+    "Chinese": "仁慈",
+    "Phonetic": "/ˈmɜː.si/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "merge"
+    ],
+    "ImageUrl": "images/c1-merge.jpg",
+    "Chinese": "合併",
+    "Phonetic": "/mɜːrdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "merger"
+    ],
+    "ImageUrl": "images/c1-merger.jpg",
+    "Chinese": "併購",
+    "Phonetic": "/ˈmərʤər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "merit"
+    ],
+    "ImageUrl": "images/c1-merit.jpg",
+    "Chinese": "優點",
+    "Phonetic": "/ˈmer.ɪt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "metadata"
+    ],
+    "ImageUrl": "images/c1-metadata.jpg",
+    "Chinese": "元數據",
+    "Phonetic": "/ˈmɛtədeɪtə/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "namely"
+    ],
+    "ImageUrl": "images/c1-namely.jpg",
+    "Chinese": "即",
+    "Phonetic": "/ˈneɪmli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "needle"
+    ],
+    "ImageUrl": "images/c1-needle.jpg",
+    "Chinese": "針",
+    "Phonetic": "/ˈniːdəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "nest"
+    ],
+    "ImageUrl": "images/c1-nest.jpg",
+    "Chinese": "巢",
+    "Phonetic": "/nɛst/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "neural"
+    ],
+    "ImageUrl": "images/c1-neural.jpg",
+    "Chinese": "神經的",
+    "Phonetic": "/ˈnʊrəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "nightmare"
+    ],
+    "ImageUrl": "images/c1-nightmare.jpg",
+    "Chinese": "噩夢",
+    "Phonetic": "/ˈnaɪtmeər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "occasional"
+    ],
+    "ImageUrl": "images/c1-occasional.jpg",
+    "Chinese": "偶爾的",
+    "Phonetic": "/əˈkeɪʒənəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "occurrence"
+    ],
+    "ImageUrl": "images/c1-occurrence.jpg",
+    "Chinese": "事件",
+    "Phonetic": "/əˈkʌrəns/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "ozone"
+    ],
+    "ImageUrl": "images/c1-ozone.jpg",
+    "Chinese": "臭氧",
+    "Phonetic": "/ˈoʊ.zoʊn/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "accreditation"
+    ],
+    "ImageUrl": "images/c1-accreditation.jpg",
+    "Chinese": "認證",
+    "Phonetic": "/əˌkrɛdɪˈteɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "accurately"
+    ],
+    "ImageUrl": "images/c1-accurately.jpg",
+    "Chinese": "準確地",
+    "Phonetic": "/ˈækjərətli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "acre"
+    ],
+    "ImageUrl": "images/c1-acre.jpg",
+    "Chinese": "英畝",
+    "Phonetic": "/ˈeɪkə/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "adaptation"
+    ],
+    "ImageUrl": "images/c1-adaptation.jpg",
+    "Chinese": "適應",
+    "Phonetic": "/ˌædəpˈteɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "adaptive"
+    ],
+    "ImageUrl": "images/c1-adaptive.jpg",
+    "Chinese": "適應性的",
+    "Phonetic": "/əˈdæptɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "affiliation"
+    ],
+    "ImageUrl": "images/c1-affiliation.jpg",
+    "Chinese": "隸屬關係",
+    "Phonetic": "/əˌfɪl.iˈeɪ.ʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "afterwards"
+    ],
+    "ImageUrl": "images/c1-afterwards.jpg",
+    "Chinese": "之後 / 後來",
+    "Phonetic": "/ˈɑːftərwədz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "align"
+    ],
+    "ImageUrl": "images/c1-align.jpg",
+    "Chinese": "對齊",
+    "Phonetic": "/əˈlaɪn/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "alike"
+    ],
+    "ImageUrl": "images/c1-alike.jpg",
+    "Chinese": "同樣地",
+    "Phonetic": "/əˈlaɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "allergy"
+    ],
+    "ImageUrl": "images/c1-allergy.jpg",
+    "Chinese": "過敏",
+    "Phonetic": "/ˈælərʤi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "allowance"
+    ],
+    "ImageUrl": "images/c1-allowance.jpg",
+    "Chinese": "津貼"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "ambassador"
+    ],
+    "ImageUrl": "images/c1-ambassador.jpg",
+    "Chinese": "大使",
+    "Phonetic": "/æmˈbæsədər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "ambient"
+    ],
+    "ImageUrl": "images/c1-ambient.jpg",
+    "Chinese": "環境的",
+    "Phonetic": "/ˈæmbiənt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "antibody"
+    ],
+    "ImageUrl": "images/c1-antibody.jpg",
+    "Chinese": "抗體",
+    "Phonetic": "/ˈæntɪˌbɒdi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "arbitrary"
+    ],
+    "ImageUrl": "images/c1-arbitrary.jpg",
+    "Chinese": "任意的",
+    "Phonetic": "/ˈɑrbɪˌtrɛri/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "citizenship"
+    ],
+    "ImageUrl": "images/c1-citizenship.jpg",
+    "Chinese": "公民身份",
+    "Phonetic": "/ˈsɪtɪzənˌʃɪp/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "competent"
+    ],
+    "ImageUrl": "images/c1-competent.jpg",
+    "Chinese": "有能力的",
+    "Phonetic": "/ˈkɒmpɪtənt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "complement"
+    ],
+    "ImageUrl": "images/c1-complement.jpg",
+    "Chinese": "補充",
+    "Phonetic": "/ˈkɒmplɪment/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "condo"
+    ],
+    "ImageUrl": "images/c1-condo.jpg",
+    "Chinese": "公寓",
+    "Phonetic": "/ˈkɒndoʊ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "confidentiality"
+    ],
+    "ImageUrl": "images/c1-confidentiality.jpg",
+    "Chinese": "機密性",
+    "Phonetic": "/ˌkɑnfəˌdɛnʃiˈæləti/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "consecutive"
+    ],
+    "ImageUrl": "images/c1-consecutive.jpg",
+    "Chinese": "連續的",
+    "Phonetic": "/kənˈsɛkjʊtɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "consequently"
+    ],
+    "ImageUrl": "images/c1-consequently.jpg",
+    "Chinese": "因此",
+    "Phonetic": "/ˈkɒnsɪkwəntli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "consistency"
+    ],
+    "ImageUrl": "images/c1-consistency.jpg",
+    "Chinese": "一致性",
+    "Phonetic": "/kənˈsɪstənsi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "conspiracy"
+    ],
+    "ImageUrl": "images/c1-conspiracy.jpg",
+    "Chinese": "陰謀",
+    "Phonetic": "/kənˈspɪrəsi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "constraint"
+    ],
+    "ImageUrl": "images/c1-constraint.jpg",
+    "Chinese": "限制條件",
+    "Phonetic": "/kənˈstreɪnt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "continually"
+    ],
+    "ImageUrl": "images/c1-continually.jpg",
+    "Chinese": "不斷地",
+    "Phonetic": "/kənˈtɪnjuəli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "continuity"
+    ],
+    "ImageUrl": "images/c1-continuity.jpg",
+    "Chinese": "連續性",
+    "Phonetic": "/ˌkɒn.tɪˈnjuː.ə.ti/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "contributor"
+    ],
+    "ImageUrl": "images/c1-contributor.jpg",
+    "Chinese": "貢獻者",
+    "Phonetic": "/kənˈtrɪbjətər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "conviction"
+    ],
+    "ImageUrl": "images/c1-conviction.jpg",
+    "Chinese": "確信",
+    "Phonetic": "/kənˈvɪkʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "convinced"
+    ],
+    "ImageUrl": "images/c1-convinced.jpg",
+    "Chinese": "確信的",
+    "Phonetic": "/kənˈvɪnst/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "cove"
+    ],
+    "ImageUrl": "images/c1-cove.jpg",
+    "Chinese": "小海灣",
+    "Phonetic": "/koʊv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "cradle"
+    ],
+    "ImageUrl": "images/c1-cradle.jpg",
+    "Chinese": "搖籃",
+    "Phonetic": "/ˈkreɪdəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "crude"
+    ],
+    "ImageUrl": "images/c1-crude.jpg",
+    "Chinese": "粗糙的",
+    "Phonetic": "/kruːd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "cult"
+    ],
+    "ImageUrl": "images/c1-cult.jpg",
+    "Chinese": "邪教；狂熱",
+    "Phonetic": "/kʌlt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "cumulative"
+    ],
+    "ImageUrl": "images/c1-cumulative.jpg",
+    "Chinese": "累積的",
+    "Phonetic": "/ˈkjumjələtɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "cursor"
+    ],
+    "ImageUrl": "images/c1-cursor.jpg",
+    "Chinese": "光標",
+    "Phonetic": "/ˈkɜːrsər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "daisy"
+    ],
+    "ImageUrl": "images/c1-daisy.jpg",
+    "Chinese": "雛菊",
+    "Phonetic": "/ˈdeɪzi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "defensive"
+    ],
+    "ImageUrl": "images/c1-defensive.jpg",
+    "Chinese": "防禦性的",
+    "Phonetic": "/dɪˈfɛnsɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "delegation"
+    ],
+    "ImageUrl": "images/c1-delegation.jpg",
+    "Chinese": "授權委派",
+    "Phonetic": "/ˌdɛləˈgeɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "delight"
+    ],
+    "ImageUrl": "images/c1-delight.jpg",
+    "Chinese": "使高興",
+    "Phonetic": "/dɪˈlaɪt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "demographic"
+    ],
+    "ImageUrl": "images/c1-demographic.jpg",
+    "Chinese": "人口結構",
+    "Phonetic": "/ˌdɛməˈgræfɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "denial"
+    ],
+    "ImageUrl": "images/c1-denial.jpg",
+    "Chinese": "拒絕"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dependence"
+    ],
+    "ImageUrl": "images/c1-dependence.jpg",
+    "Chinese": "依賴"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "derby"
+    ],
+    "ImageUrl": "images/c1-derby.jpg",
+    "Chinese": "德比鞋",
+    "Phonetic": "/ˈdɜːr.bi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "desirable"
+    ],
+    "ImageUrl": "images/c1-desirable.jpg",
+    "Chinese": "理想的",
+    "Phonetic": "/dɪˈzaɪərəbəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "detective"
+    ],
+    "ImageUrl": "images/c1-detective.jpg",
+    "Chinese": "偵探",
+    "Phonetic": "/dɪˈtɛktɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "deviation"
+    ],
+    "ImageUrl": "images/c1-deviation.jpg",
+    "Chinese": "偏離、常外常態",
+    "Phonetic": "/ˌdiː.viˈeɪ.ʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dice"
+    ],
+    "ImageUrl": "images/c1-dice.jpg",
+    "Chinese": "切丁",
+    "Phonetic": "/daɪs/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dip"
+    ],
+    "ImageUrl": "images/c1-dip.jpg",
+    "Chinese": "蘸醬",
+    "Phonetic": "/dɪp/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "disappointed"
+    ],
+    "ImageUrl": "images/c1-disappointed.jpg",
+    "Chinese": "失望的",
+    "Phonetic": "/ˌdɪsəˈpɔɪntɪd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "disclose"
+    ],
+    "ImageUrl": "images/c1-disclose.jpg",
+    "Chinese": "透明化",
+    "Phonetic": "/dɪˈskloʊz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "discrete"
+    ],
+    "ImageUrl": "images/c1-discrete.jpg",
+    "Chinese": "離散的",
+    "Phonetic": "/dɪˈskrit/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dispatch"
+    ],
+    "ImageUrl": "images/c1-dispatch.jpg",
+    "Chinese": "調度派遣"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "disposition"
+    ],
+    "ImageUrl": "images/c1-disposition.jpg",
+    "Chinese": "處置",
+    "Phonetic": "/ˌdɪspəˈzɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dividend"
+    ],
+    "ImageUrl": "images/c1-dividend.jpg",
+    "Chinese": "股利"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dock"
+    ],
+    "ImageUrl": "images/c1-dock.jpg",
+    "Chinese": "碼頭",
+    "Phonetic": "/dɒk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "doctrine"
+    ],
+    "ImageUrl": "images/c1-doctrine.jpg",
+    "Chinese": "教義",
+    "Phonetic": "/ˈdɔktərɪn/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dosage"
+    ],
+    "ImageUrl": "images/c1-dosage.jpg",
+    "Chinese": "劑量",
+    "Phonetic": "/ˈdoʊsɪdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "drain"
+    ],
+    "ImageUrl": "images/c1-drain.jpg",
+    "Chinese": "排水口",
+    "Phonetic": "/dreɪn/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "drainage"
+    ],
+    "ImageUrl": "images/c1-drainage.jpg",
+    "Chinese": "排水系統",
+    "Phonetic": "/ˈdreɪnɪdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dramatically"
+    ],
+    "ImageUrl": "images/c1-dramatically.jpg",
+    "Chinese": "戲劇性地",
+    "Phonetic": "/drəˈmætɪkəli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dressed"
+    ],
+    "ImageUrl": "images/c1-dressed.jpg",
+    "Chinese": "穿著衣服的",
+    "Phonetic": "/drest/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dryer"
+    ],
+    "ImageUrl": "images/c1-dryer.jpg",
+    "Chinese": "烘乾機",
+    "Phonetic": "/ˈdraɪər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "dumb"
+    ],
+    "ImageUrl": "images/c1-dumb.jpg",
+    "Chinese": "啞的；愚蠢的",
+    "Phonetic": "/dʌm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "earthquake"
+    ],
+    "ImageUrl": "images/c1-earthquake.jpg",
+    "Chinese": "地震",
+    "Phonetic": "/ˈərθkˌweɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "educated"
+    ],
+    "ImageUrl": "images/c1-educated.jpg",
+    "Chinese": "受過教育的",
+    "Phonetic": "/ˈedʒukeɪtɪd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "efficiently"
+    ],
+    "ImageUrl": "images/c1-efficiently.jpg",
+    "Chinese": "高效地",
+    "Phonetic": "/ɪˈfɪʃəntli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "electoral"
+    ],
+    "ImageUrl": "images/c1-electoral.jpg",
+    "Chinese": "選舉的",
+    "Phonetic": "/ɪˈlektərəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "elevation"
+    ],
+    "ImageUrl": "images/c1-elevation.jpg",
+    "Chinese": "海拔",
+    "Phonetic": "/ˌɛlɪˈveɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "elimination"
+    ],
+    "ImageUrl": "images/c1-elimination.jpg",
+    "Chinese": "消除、排除",
+    "Phonetic": "/iˌlɪm.ɪˈneɪ.ʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "emperor"
+    ],
+    "ImageUrl": "images/c1-emperor.jpg",
+    "Chinese": "皇帝",
+    "Phonetic": "/ˈɛmpərər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "empirical"
+    ],
+    "ImageUrl": "images/c1-empirical.jpg",
+    "Chinese": "實證的",
+    "Phonetic": "/ˌɛmˈpɪrɪkəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "endangered"
+    ],
+    "ImageUrl": "images/c1-endangered.jpg",
+    "Chinese": "瀕危的",
+    "Phonetic": "/ɪnˈdeɪn.dʒərd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "endorsement"
+    ],
+    "ImageUrl": "images/c1-endorsement.jpg",
+    "Chinese": "代言",
+    "Phonetic": "/ɪnˈdɔːrs.mənt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "engaging"
+    ],
+    "ImageUrl": "images/c1-engaging.jpg",
+    "Chinese": "吸引人的",
+    "Phonetic": "/ɪnˈɡeɪdʒɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "ensemble"
+    ],
+    "ImageUrl": "images/c1-ensemble.jpg",
+    "Chinese": "套裝",
+    "Phonetic": "/ɑːnˈsɑːmbəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "entertaining"
+    ],
+    "ImageUrl": "images/c1-entertaining.jpg",
+    "Chinese": "有趣的",
+    "Phonetic": "/ˌɛntəˈteɪnɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "exclusion"
+    ],
+    "ImageUrl": "images/c1-exclusion.jpg",
+    "Chinese": "排斥",
+    "Phonetic": "/ɪkˈskluʒən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "fare"
+    ],
+    "ImageUrl": "images/c1-fare.jpg",
+    "Chinese": "票價"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "heater"
+    ],
+    "ImageUrl": "images/c1-heater.jpg",
+    "Chinese": "暖氣",
+    "Phonetic": "/ˈhiːtər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
       "humanitarian"
     ],
     "ImageUrl": "images/c1-humanitarian.jpg",
@@ -13898,15 +14033,6 @@
     "ImageUrl": "images/c1-hygiene.jpg",
     "Chinese": "衛生",
     "Phonetic": "/ˈhaɪˌʤin/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "hypothesis"
-    ],
-    "ImageUrl": "images/c1-hypothesis.jpg",
-    "Chinese": "假說",
-    "Phonetic": "/haɪˈpɒθ.ə.sɪs/"
   },
   {
     "Level": "C1",
@@ -13983,15 +14109,6 @@
   {
     "Level": "C1",
     "English": [
-      "instrumentation"
-    ],
-    "ImageUrl": "images/c1-instrumentation.jpg",
-    "Chinese": "儀器設備、儀表化",
-    "Phonetic": "/ˌɪn.strə.menˈteɪ.ʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "insulation"
     ],
     "ImageUrl": "images/c1-insulation.jpg",
@@ -14015,15 +14132,6 @@
     "ImageUrl": "images/c1-interference.jpg",
     "Chinese": "干涉",
     "Phonetic": "/ˌɪnərˈfɪrəns/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "internship"
-    ],
-    "ImageUrl": "images/c1-internship.jpg",
-    "Chinese": "實習",
-    "Phonetic": "/ˈɪntɜːrnˌʃɪp/"
   },
   {
     "Level": "C1",
@@ -14072,15 +14180,6 @@
   {
     "Level": "C1",
     "English": [
-      "irrigation"
-    ],
-    "ImageUrl": "images/c1-irrigation.jpg",
-    "Chinese": "灌溉",
-    "Phonetic": "/ˌɪrəˈgeɪʃən/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "karma"
     ],
     "ImageUrl": "images/c1-karma.jpg",
@@ -14122,15 +14221,6 @@
     "ImageUrl": "images/c1-ladder.jpg",
     "Chinese": "梯子",
     "Phonetic": "/ˈlædər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "lamb"
-    ],
-    "ImageUrl": "images/c1-lamb.jpg",
-    "Chinese": "羊肉",
-    "Phonetic": "/læm/"
   },
   {
     "Level": "C1",
@@ -14314,15 +14404,6 @@
   {
     "Level": "C1",
     "English": [
-      "memo"
-    ],
-    "ImageUrl": "images/c1-memo.jpg",
-    "Chinese": "備忘錄",
-    "Phonetic": "/ˈmem.oʊ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "mentor"
     ],
     "ImageUrl": "images/c1-mentor.jpg",
@@ -14332,56 +14413,11 @@
   {
     "Level": "C1",
     "English": [
-      "mercy"
-    ],
-    "ImageUrl": "images/c1-mercy.jpg",
-    "Chinese": "仁慈",
-    "Phonetic": "/ˈmɜː.si/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "merge"
-    ],
-    "ImageUrl": "images/c1-merge.jpg",
-    "Chinese": "合併",
-    "Phonetic": "/mɜːrdʒ/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "merger"
-    ],
-    "ImageUrl": "images/c1-merger.jpg",
-    "Chinese": "併購",
-    "Phonetic": "/ˈmərʤər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "merit"
-    ],
-    "ImageUrl": "images/c1-merit.jpg",
-    "Chinese": "優點",
-    "Phonetic": "/ˈmer.ɪt/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "mesa"
     ],
     "ImageUrl": "images/c1-mesa.jpg",
     "Chinese": "臺地",
     "Phonetic": "/ˈmeɪsə/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "metadata"
-    ],
-    "ImageUrl": "images/c1-metadata.jpg",
-    "Chinese": "元數據",
-    "Phonetic": "/ˈmɛtədeɪtə/"
   },
   {
     "Level": "C1",
@@ -14467,15 +14503,6 @@
   {
     "Level": "C1",
     "English": [
-      "namely"
-    ],
-    "ImageUrl": "images/c1-namely.jpg",
-    "Chinese": "即",
-    "Phonetic": "/ˈneɪmli/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "navigator"
     ],
     "ImageUrl": "images/c1-navigator.jpg",
@@ -14494,42 +14521,6 @@
   {
     "Level": "C1",
     "English": [
-      "needle"
-    ],
-    "ImageUrl": "images/c1-needle.jpg",
-    "Chinese": "針",
-    "Phonetic": "/ˈniːdəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "nest"
-    ],
-    "ImageUrl": "images/c1-nest.jpg",
-    "Chinese": "巢",
-    "Phonetic": "/nɛst/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "neural"
-    ],
-    "ImageUrl": "images/c1-neural.jpg",
-    "Chinese": "神經的",
-    "Phonetic": "/ˈnʊrəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "nightmare"
-    ],
-    "ImageUrl": "images/c1-nightmare.jpg",
-    "Chinese": "噩夢",
-    "Phonetic": "/ˈnaɪtmeər/"
-  },
-  {
-    "Level": "C1",
-    "English": [
       "norm"
     ],
     "ImageUrl": "images/c1-norm.jpg",
@@ -14544,24 +14535,6 @@
     "ImageUrl": "images/c1-obesity.jpg",
     "Chinese": "肥胖",
     "Phonetic": "/oʊˈbiːsɪti/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "occasional"
-    ],
-    "ImageUrl": "images/c1-occasional.jpg",
-    "Chinese": "偶爾的",
-    "Phonetic": "/əˈkeɪʒənəl/"
-  },
-  {
-    "Level": "C1",
-    "English": [
-      "occurrence"
-    ],
-    "ImageUrl": "images/c1-occurrence.jpg",
-    "Chinese": "事件",
-    "Phonetic": "/əˈkʌrəns/"
   },
   {
     "Level": "C1",
@@ -14593,10 +14566,961 @@
   {
     "Level": "C1",
     "English": [
-      "ozone"
+      "parcel"
     ],
-    "ImageUrl": "images/c1-ozone.jpg",
-    "Chinese": "臭氧",
-    "Phonetic": "/ˈoʊ.zoʊn/"
+    "ImageUrl": "images/c1-parcel.jpg",
+    "Chinese": "包裹",
+    "Phonetic": "/ˈpɑːrsəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "parental"
+    ],
+    "ImageUrl": "images/c1-parental.jpg",
+    "Chinese": "父母的",
+    "Phonetic": "/pəˈren.t̬əl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "parliamentary"
+    ],
+    "ImageUrl": "images/c1-parliamentary.jpg",
+    "Chinese": "議會的",
+    "Phonetic": "/ˌpɑːləˈmentri/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "passive"
+    ],
+    "ImageUrl": "images/c1-passive.jpg",
+    "Chinese": "被動的",
+    "Phonetic": "/ˈpæsɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pastor"
+    ],
+    "ImageUrl": "images/c1-pastor.jpg",
+    "Chinese": "牧師",
+    "Phonetic": "/ˈpæstər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "patrol"
+    ],
+    "ImageUrl": "images/c1-patrol.jpg",
+    "Chinese": "巡邏",
+    "Phonetic": "/pəˈtroʊl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pavilion"
+    ],
+    "ImageUrl": "images/c1-pavilion.jpg",
+    "Chinese": "亭子",
+    "Phonetic": "/pəˈvɪl.jən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "peaceful"
+    ],
+    "ImageUrl": "images/c1-peaceful.jpg",
+    "Chinese": "寧靜的",
+    "Phonetic": "/ˈpiːs.fəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pencil"
+    ],
+    "ImageUrl": "images/c1-pencil.jpg",
+    "Chinese": "鉛筆",
+    "Phonetic": "/ˈpɛnsəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "peninsula"
+    ],
+    "ImageUrl": "images/c1-peninsula.jpg",
+    "Chinese": "半島",
+    "Phonetic": "/pəˈnɪnsələ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "performs"
+    ],
+    "ImageUrl": "images/c1-performs.jpg",
+    "Chinese": "執行",
+    "Phonetic": "/pərˈfɔrmz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "peripheral"
+    ],
+    "ImageUrl": "images/c1-peripheral.jpg",
+    "Chinese": "外圍的、週邊設備",
+    "Phonetic": "/pəˈrɪf.ər.əl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "persistent"
+    ],
+    "ImageUrl": "images/c1-persistent.jpg",
+    "Chinese": "堅持不懈的；持續的",
+    "Phonetic": "/pərˈsɪstənt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "picnic"
+    ],
+    "ImageUrl": "images/c1-picnic.jpg",
+    "Chinese": "野餐",
+    "Phonetic": "/ˈpɪknɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pillow"
+    ],
+    "ImageUrl": "images/c1-pillow.jpg",
+    "Chinese": "枕頭"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "planners"
+    ],
+    "ImageUrl": "images/c1-planners.jpg",
+    "Chinese": "規劃者",
+    "Phonetic": "/ˈplænərz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pledge"
+    ],
+    "ImageUrl": "images/c1-pledge.jpg",
+    "Chinese": "承諾；保證",
+    "Phonetic": "/plɛdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "poison"
+    ],
+    "ImageUrl": "images/c1-poison.jpg",
+    "Chinese": "毒藥",
+    "Phonetic": "/ˈpɔɪ.zən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "polyester"
+    ],
+    "ImageUrl": "images/c1-polyester.jpg",
+    "Chinese": "聚酯纖維",
+    "Phonetic": "/ˌpɒliˈestər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pork"
+    ],
+    "ImageUrl": "images/c1-pork.jpg",
+    "Chinese": "豬肉"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "positioning"
+    ],
+    "ImageUrl": "images/c1-positioning.jpg",
+    "Chinese": "定位",
+    "Phonetic": "/pəˈzɪʃ.ən.ɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "postcard"
+    ],
+    "ImageUrl": "images/c1-postcard.jpg",
+    "Chinese": "明信片",
+    "Phonetic": "/ˈpoʊˌskɑrd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "practitioner"
+    ],
+    "ImageUrl": "images/c1-practitioner.jpg",
+    "Chinese": "從業者；實踐者",
+    "Phonetic": "/præktɪˈʃənər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "preceding"
+    ],
+    "ImageUrl": "images/c1-preceding.jpg",
+    "Chinese": "前面的",
+    "Phonetic": "/prɪˈsiː.dɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "prerequisite"
+    ],
+    "ImageUrl": "images/c1-prerequisite.jpg",
+    "Chinese": "先決條件",
+    "Phonetic": "/priˈrɛkwəzət/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "presently"
+    ],
+    "ImageUrl": "images/c1-presently.jpg",
+    "Chinese": "目前",
+    "Phonetic": "/ˈprezəntli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "privilege"
+    ],
+    "ImageUrl": "images/c1-privilege.jpg",
+    "Chinese": "特權",
+    "Phonetic": "/ˈprɪvəlɪdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "promising"
+    ],
+    "ImageUrl": "images/c1-promising.jpg",
+    "Chinese": "有前景的",
+    "Phonetic": "/ˈprɑməsɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "promptly"
+    ],
+    "ImageUrl": "images/c1-promptly.jpg",
+    "Chinese": "準時",
+    "Phonetic": "/ˈprɒmptli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "proposition"
+    ],
+    "ImageUrl": "images/c1-proposition.jpg",
+    "Chinese": "命題",
+    "Phonetic": "/ˌprɑpəˈzɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "prototype"
+    ],
+    "ImageUrl": "images/c1-prototype.jpg",
+    "Chinese": "原型",
+    "Phonetic": "/ˈproʊtoʊˌtaɪp/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "publicity"
+    ],
+    "ImageUrl": "images/c1-publicity.jpg",
+    "Chinese": "宣傳",
+    "Phonetic": "/pʌbˈlɪs.ɪ.ti/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "punch"
+    ],
+    "ImageUrl": "images/c1-punch.jpg",
+    "Chinese": "拳",
+    "Phonetic": "/pʌntʃ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "puppy"
+    ],
+    "ImageUrl": "images/c1-puppy.jpg",
+    "Chinese": "小狗",
+    "Phonetic": "/ˈpʌpi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "purse"
+    ],
+    "ImageUrl": "images/c1-purse.jpg",
+    "Chinese": "手提包",
+    "Phonetic": "/pɜːrs/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "pursuit"
+    ],
+    "ImageUrl": "images/c1-pursuit.jpg",
+    "Chinese": "追求",
+    "Phonetic": "/pərˈsut/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "quantitative"
+    ],
+    "ImageUrl": "images/c1-quantitative.jpg",
+    "Chinese": "定量的",
+    "Phonetic": "/ˈkwɒn.tɪ.tə.tɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "questionnaire"
+    ],
+    "ImageUrl": "images/c1-questionnaire.jpg",
+    "Chinese": "問卷",
+    "Phonetic": "/ˌkwes.tʃəˈneər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "raises"
+    ],
+    "ImageUrl": "images/c1-raises.jpg",
+    "Chinese": "提出",
+    "Phonetic": "/ˈreɪzɪz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "ratios"
+    ],
+    "ImageUrl": "images/c1-ratios.jpg",
+    "Chinese": "比率",
+    "Phonetic": "/ˈreɪʃiˌoʊz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "readily"
+    ],
+    "ImageUrl": "images/c1-readily.jpg",
+    "Chinese": "容易地",
+    "Phonetic": "/ˈredɪli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "realm"
+    ],
+    "ImageUrl": "images/c1-realm.jpg",
+    "Chinese": "領域",
+    "Phonetic": "/relm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "reasoning"
+    ],
+    "ImageUrl": "images/c1-reasoning.jpg",
+    "Chinese": "推理",
+    "Phonetic": "/ˈriːzənɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "rebel"
+    ],
+    "ImageUrl": "images/c1-rebel.jpg",
+    "Chinese": "叛亂者；反叛者",
+    "Phonetic": "/ˈrɛbəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "reef"
+    ],
+    "ImageUrl": "images/c1-reef.jpg",
+    "Chinese": "礁石",
+    "Phonetic": "/rif/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "refresh"
+    ],
+    "ImageUrl": "images/c1-refresh.jpg",
+    "Chinese": "更新",
+    "Phonetic": "/rɪˈfrɛʃ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "refrigerator"
+    ],
+    "ImageUrl": "images/c1-refrigerator.jpg",
+    "Chinese": "冰箱"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "regression"
+    ],
+    "ImageUrl": "images/c1-regression.jpg",
+    "Chinese": "回歸",
+    "Phonetic": "/rəˈgrɛʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "remainder"
+    ],
+    "ImageUrl": "images/c1-remainder.jpg",
+    "Chinese": "餘數；剩餘部分",
+    "Phonetic": "/rɪˈmeɪndər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "remark"
+    ],
+    "ImageUrl": "images/c1-remark.jpg",
+    "Chinese": "評論",
+    "Phonetic": "/rɪˈmɑːk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "remedy"
+    ],
+    "ImageUrl": "images/c1-remedy.jpg",
+    "Chinese": "補救",
+    "Phonetic": "/ˈrɛmədi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "removable"
+    ],
+    "ImageUrl": "images/c1-removable.jpg",
+    "Chinese": "可拆卸的",
+    "Phonetic": "/rɪˈmuvəbəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "render"
+    ],
+    "ImageUrl": "images/c1-render.jpg",
+    "Chinese": "使得",
+    "Phonetic": "/ˈrɛndər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "rendering"
+    ],
+    "ImageUrl": "images/c1-rendering.jpg",
+    "Chinese": "渲染",
+    "Phonetic": "/ˈrɛndərɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "renew"
+    ],
+    "ImageUrl": "images/c1-renew.jpg",
+    "Chinese": "更新；續籤",
+    "Phonetic": "/rɪˈnjuː/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "renewable"
+    ],
+    "ImageUrl": "images/c1-renewable.jpg",
+    "Chinese": "可再生的",
+    "Phonetic": "/riˈnuəbəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "replication"
+    ],
+    "ImageUrl": "images/c1-replication.jpg",
+    "Chinese": "複製",
+    "Phonetic": "/ˌrɛplɪˈkeɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "reproduce"
+    ],
+    "ImageUrl": "images/c1-reproduce.jpg",
+    "Chinese": "繁殖，再現",
+    "Phonetic": "/ˌriprəˈdus/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "reproductive"
+    ],
+    "ImageUrl": "images/c1-reproductive.jpg",
+    "Chinese": "生殖",
+    "Phonetic": "/ˌriprəˈdəktɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "restructuring"
+    ],
+    "ImageUrl": "images/c1-restructuring.jpg",
+    "Chinese": "重組",
+    "Phonetic": "/riːˈstrʌktʃərɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "resumes"
+    ],
+    "ImageUrl": "images/c1-resumes.jpg",
+    "Chinese": "恢復",
+    "Phonetic": "/ˈrɛzəˌmeɪz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "retreat"
+    ],
+    "ImageUrl": "images/c1-retreat.jpg",
+    "Chinese": "退縮",
+    "Phonetic": "/riˈtrit/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "retrieve"
+    ],
+    "ImageUrl": "images/c1-retrieve.jpg",
+    "Chinese": "檢索",
+    "Phonetic": "/rɪˈtriːv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "revelation"
+    ],
+    "ImageUrl": "images/c1-revelation.jpg",
+    "Chinese": "啟示",
+    "Phonetic": "/ˌrɛvəˈleɪʃən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "revenge"
+    ],
+    "ImageUrl": "images/c1-revenge.jpg",
+    "Chinese": "報復",
+    "Phonetic": "/rɪˈvɛndʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "revolutionary"
+    ],
+    "ImageUrl": "images/c1-revolutionary.jpg",
+    "Chinese": "革命性的",
+    "Phonetic": "/ˌrev.əˈluː.ʃən.ər.i/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "roommate"
+    ],
+    "ImageUrl": "images/c1-roommate.jpg",
+    "Chinese": "室友",
+    "Phonetic": "/ˈruːm.meɪt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "rug"
+    ],
+    "ImageUrl": "images/c1-rug.jpg",
+    "Chinese": "地毯",
+    "Phonetic": "/rʌɡ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "runtime"
+    ],
+    "ImageUrl": "images/c1-runtime.jpg",
+    "Chinese": "運行時",
+    "Phonetic": "/ˈrʌntaɪm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sacrifice"
+    ],
+    "ImageUrl": "images/c1-sacrifice.jpg",
+    "Chinese": "犧牲",
+    "Phonetic": "/ˈsækrɪfaɪs/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sandwich"
+    ],
+    "ImageUrl": "images/c1-sandwich.jpg",
+    "Chinese": "三明治",
+    "Phonetic": "/ˈsænwɪʧ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "satin"
+    ],
+    "ImageUrl": "images/c1-satin.jpg",
+    "Chinese": "緞子",
+    "Phonetic": "/ˈsæt.ən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "scary"
+    ],
+    "ImageUrl": "images/c1-scary.jpg",
+    "Chinese": "可怕的",
+    "Phonetic": "/ˈskɛri/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "scenic"
+    ],
+    "ImageUrl": "images/c1-scenic.jpg",
+    "Chinese": "風景優美的",
+    "Phonetic": "/ˈsiːnɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "schema"
+    ],
+    "ImageUrl": "images/c1-schema.jpg",
+    "Chinese": "圖式",
+    "Phonetic": "/ˈskimə/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "selective"
+    ],
+    "ImageUrl": "images/c1-selective.jpg",
+    "Chinese": "有選擇性的",
+    "Phonetic": "/sɪˈlektɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "serum"
+    ],
+    "ImageUrl": "images/c1-serum.jpg",
+    "Chinese": "血清",
+    "Phonetic": "/ˈsɪrəm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sexuality"
+    ],
+    "ImageUrl": "images/c1-sexuality.jpg",
+    "Chinese": "性取向",
+    "Phonetic": "/ˌsekʃuˈælɪti/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "shame"
+    ],
+    "ImageUrl": "images/c1-shame.jpg",
+    "Chinese": "羞愧",
+    "Phonetic": "/ʃeɪm/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "shed"
+    ],
+    "ImageUrl": "images/c1-shed.jpg",
+    "Chinese": "棚子",
+    "Phonetic": "/ʃed/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sheer"
+    ],
+    "ImageUrl": "images/c1-sheer.jpg",
+    "Chinese": "透明的",
+    "Phonetic": "/ʃɪr/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "signatures"
+    ],
+    "ImageUrl": "images/c1-signatures.jpg",
+    "Chinese": "籤名",
+    "Phonetic": "/ˈsɪgnəʧərz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "slope"
+    ],
+    "ImageUrl": "images/c1-slope.jpg",
+    "Chinese": "斜坡",
+    "Phonetic": "/sləʊp/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sphere"
+    ],
+    "ImageUrl": "images/c1-sphere.jpg",
+    "Chinese": "領域",
+    "Phonetic": "/sfɪər/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "spine"
+    ],
+    "ImageUrl": "images/c1-spine.jpg",
+    "Chinese": "脊椎",
+    "Phonetic": "/spaɪn/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "stationery"
+    ],
+    "ImageUrl": "images/c1-stationery.jpg",
+    "Chinese": "文具",
+    "Phonetic": "/ˈsteɪʃəneri/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sticky"
+    ],
+    "ImageUrl": "images/c1-sticky.jpg",
+    "Chinese": "粘的",
+    "Phonetic": "/ˈstɪki/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "strand"
+    ],
+    "ImageUrl": "images/c1-strand.jpg",
+    "Chinese": "鏈",
+    "Phonetic": "/strænd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "striking"
+    ],
+    "ImageUrl": "images/c1-striking.jpg",
+    "Chinese": "顯著的",
+    "Phonetic": "/ˈstraɪkɪŋ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "subdivision"
+    ],
+    "ImageUrl": "images/c1-subdivision.jpg",
+    "Chinese": "細分",
+    "Phonetic": "/ˈsəbdɪˌvɪʒən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "subjective"
+    ],
+    "ImageUrl": "images/c1-subjective.jpg",
+    "Chinese": "主觀",
+    "Phonetic": "/səˈbʤɛktɪv/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "subtle"
+    ],
+    "ImageUrl": "images/c1-subtle.jpg",
+    "Chinese": "微妙的",
+    "Phonetic": "/ˈsətəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "suburban"
+    ],
+    "ImageUrl": "images/c1-suburban.jpg",
+    "Chinese": "郊區的",
+    "Phonetic": "/səˈbɜːr.bən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sufficiently"
+    ],
+    "ImageUrl": "images/c1-sufficiently.jpg",
+    "Chinese": "足夠地",
+    "Phonetic": "/səˈfɪʃəntli/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sunrise"
+    ],
+    "ImageUrl": "images/c1-sunrise.jpg",
+    "Chinese": "日出",
+    "Phonetic": "/ˈsʌnraɪz/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "superintendent"
+    ],
+    "ImageUrl": "images/c1-superintendent.jpg",
+    "Chinese": "學區負責人",
+    "Phonetic": "/ˌsuːpərɪnˈtɛndənt/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "surge"
+    ],
+    "ImageUrl": "images/c1-surge.jpg",
+    "Chinese": "激增",
+    "Phonetic": "/sɜːrdʒ/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "surgeon"
+    ],
+    "ImageUrl": "images/c1-surgeon.jpg",
+    "Chinese": "外科醫生",
+    "Phonetic": "/ˈsɜːr.dʒən/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sustainability"
+    ],
+    "ImageUrl": "images/c1-sustainability.jpg",
+    "Chinese": "可持續性",
+    "Phonetic": "/səˌsteɪnəˈbɪlɪti/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "swift"
+    ],
+    "ImageUrl": "images/c1-swift.jpg",
+    "Chinese": "迅速的",
+    "Phonetic": "/swɪft/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sympathy"
+    ],
+    "ImageUrl": "images/c1-sympathy.jpg",
+    "Chinese": "同情",
+    "Phonetic": "/ˈsɪmpəθi/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "sync"
+    ],
+    "ImageUrl": "images/c1-sync.jpg",
+    "Chinese": "同步",
+    "Phonetic": "/sɪŋk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "systematic"
+    ],
+    "ImageUrl": "images/c1-systematic.jpg",
+    "Chinese": "系統的",
+    "Phonetic": "/ˌsɪstəˈmætɪk/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "tackle"
+    ],
+    "ImageUrl": "images/c1-tackle.jpg",
+    "Chinese": "解決",
+    "Phonetic": "/ˈtækəl/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "talented"
+    ],
+    "ImageUrl": "images/c1-talented.jpg",
+    "Chinese": "有才能的，有天賦的",
+    "Phonetic": "/ˈtæləntɪd/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "tariff"
+    ],
+    "ImageUrl": "images/c1-tariff.jpg",
+    "Chinese": "關稅",
+    "Phonetic": "/ˈtɛrəf/"
+  },
+  {
+    "Level": "C1",
+    "English": [
+      "temporal"
+    ],
+    "ImageUrl": "images/c1-temporal.jpg",
+    "Chinese": "時間的",
+    "Phonetic": "/ˈtɛmpərəl/"
   }
 ]

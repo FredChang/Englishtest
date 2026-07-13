@@ -36,11 +36,14 @@ def main():
     for idx, item in enumerate(words_info):
         word = item["word"]
         chi = item["chinese"]
-        # Special cases for standard uppercase acronyms
-        if word.upper() in ["5G", "AIDS", "DVD", "GPS", "IT", "TV", "PC", "IP", "ID", "IQ", "CEO", "VIP"]:
+        
+        if "visual_description" in item:
+            concept_desc = f"a cute cartoon sticker showing {item['visual_description']}"
+        elif word.upper() in ["5G", "AIDS", "DVD", "GPS", "IT", "TV", "PC", "IP", "ID", "IQ", "CEO", "VIP"]:
             concept_desc = f"a cute cartoon sticker representing '{word.upper()}'"
         else:
             concept_desc = f"a cute cartoon sticker representing the concept of '{chi}'"
+            
         items.append(f"{idx + 1}. {concept_desc}")
         
     items_str = ", ".join(items)
