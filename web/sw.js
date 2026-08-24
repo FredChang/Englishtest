@@ -1,5 +1,4 @@
-const CACHE = 'englishtest-v1.8.1';
-
+const CACHE = 'englishtest-v1.8.2';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -14,6 +13,7 @@ const PRECACHE_ASSETS = [
   './js/sentences.js',
   './js/version.js',
   './data/sentences_1000.json',
+  './sentences_1000.json',
   './words.json',
   './friends.txt',
   './friends_zh.json',
@@ -21,7 +21,6 @@ const PRECACHE_ASSETS = [
   './manifest.webmanifest',
   './icon.svg'
 ];
-
 
 function isWordsJsonRequest(request) {
   try {
@@ -68,7 +67,8 @@ function isAppCodeRequest(request) {
       pathname.endsWith('/index.html') ||
       pathname.endsWith('index.html') ||
       pathname.includes('/js/') ||
-      pathname.includes('/css/')
+      pathname.includes('/css/') ||
+      pathname.endsWith('sentences_1000.json')
     );
   } catch {
     return false;
@@ -99,7 +99,22 @@ async function networkFirstWords(request) {
   try {
     const response = await fetch(request);
     if (response && response.status === 200) {
-      await cache.put(request, response.clone());
+      const responseToCache = response.clone();
+      try {
+        const text = await response.clone().text();
+        const data = JSON.parse(text);
+        if (typeof data === 'object' && data !== null && !Array.isArray(data)) {
+          const keys = Object.keys(data);
+          const hasCefrLevels = keys.some((k) =>
+            ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(k)
+          );
+          if (hasCefrLevels) {
+            await cache.put(request, responseToCache);
+          }
+        }
+      } catch {
+        // ignore parse error
+      }
       return response;
     }
     const cached = await cache.match(request);
@@ -131,7 +146,9 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE);
-      await cache.addAll(PRECACHE_ASSETS);
+      await Promise.allSettled(
+        PRECACHE_ASSETS.map(asset => cache.add(asset).catch(() => {}))
+      );
       await self.skipWaiting();
     })()
   );
@@ -154,7 +171,6 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
-  // 跨域請求（雲端 TTS、字典 API 等）不經 SW，避免攔截失敗
   if (!isSameOrigin(event.request)) return;
 
   if (isWordsJsonRequest(event.request)) {

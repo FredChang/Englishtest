@@ -1,5 +1,6 @@
 // 常用 1000 句練習模組
 // 支援遮罩英文、遮罩句子（標記已學會排除出隨機循環名單）、發音朗讀與清單管理
+import { APP_VERSION } from './version.js';
 
 const STORAGE_KEY_MASKED = 'englishtest_masked_sentence_ids';
 const STORAGE_KEY_MASK_EN_DEFAULT = 'englishtest_mask_english_default';
@@ -106,14 +107,32 @@ export class SentencesPractice {
   async loadData() {
     if (this.sentences.length > 0) return;
     try {
-      let res = await fetch('data/sentences_1000.json');
-      if (!res.ok) {
-        res = await fetch('sentences_1000.json');
+      const candidates = [
+        'data/sentences_1000.json',
+        'sentences_1000.json',
+        './data/sentences_1000.json',
+        './sentences_1000.json',
+        '../data/sentences_1000.json'
+      ];
+
+      let data = null;
+      for (const p of candidates) {
+        try {
+          const res = await fetch(`${p}?v=${APP_VERSION}`);
+          if (res.ok) {
+            const json = await res.json();
+            if (Array.isArray(json) && json.length > 0) {
+              data = json;
+              break;
+            }
+          }
+        } catch (err) {}
       }
-      if (!res.ok) {
-        res = await fetch('../data/sentences_1000.json');
+
+      if (!data) {
+        throw new Error('無法載入 sentences_1000.json 檔案');
       }
-      const data = await res.json();
+
       this.sentences = data;
 
       const catSet = new Set();
@@ -125,7 +144,7 @@ export class SentencesPractice {
       this.updateStats();
     } catch (err) {
       console.error('Failed to load sentences_1000.json', err);
-      alert('載入 1000 句題庫失敗，請確認網路連線或檔案路徑。');
+      alert('載入 1000 句題庫失敗，請重新整理頁面或清除快取。');
     }
   }
 
@@ -294,7 +313,9 @@ export class SentencesPractice {
     if (this.els.nextBtn) {
       this.els.nextBtn.textContent = this.mode === 'random' ? '🎲 隨機下一句' : '➡️ 依序下一句';
     }
-    this.next();
+    if (this.sentences.length > 0) {
+      this.next();
+    }
   }
 
   getFilteredSentences(includeMasked = false) {
@@ -340,7 +361,6 @@ export class SentencesPractice {
         this.renderAllLearnedState();
         return;
       } else {
-        alert('此類別沒有任何句子。');
         return;
       }
     }

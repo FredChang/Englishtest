@@ -709,7 +709,9 @@ if (guideOpenBtn) {
 const sentencesOpenBtn = document.getElementById('sentences-open-btn');
 if (sentencesOpenBtn) {
   const handleSentencesOpen = async (e) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
+    console.log('sentences-open-btn clicked');
+
     try {
       const warmup = new SpeechSynthesisUtterance('');
       warmup.volume = 0;
@@ -717,13 +719,26 @@ if (sentencesOpenBtn) {
     } catch (err) {}
 
     showScreen('sentences');
-    if (sentencesPractice) {
+
+    try {
+      if (!sentencesPractice) {
+        sentencesPractice = new SentencesPractice({
+          container: screens.sentences,
+          onBack: () => showScreen('setup')
+        });
+      }
       await sentencesPractice.loadData();
       sentencesPractice.start();
+    } catch (err) {
+      console.error('常用 1000 句開啟失敗', err);
+      alert('常用 1000 句載入失敗: ' + (err?.message || err));
     }
   };
 
   sentencesOpenBtn.addEventListener('click', handleSentencesOpen);
   sentencesOpenBtn.addEventListener('touchend', handleSentencesOpen);
+} else {
+  console.error('sentences-open-btn not found in DOM');
 }
+
 
