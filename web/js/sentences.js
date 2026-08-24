@@ -150,7 +150,8 @@ export class SentencesPractice {
 
   populateCategories() {
     if (!this.els.categorySelect) return;
-    const optionsHtml = ['<option value="all">全部類別 (1000 句)</option>']
+    const total = this.sentences.length;
+    const optionsHtml = [`<option value="all">全部類別 (${total} 句)</option>`]
       .concat(this.categories.map(cat => {
         const count = this.sentences.filter(s => s.category === cat).length;
         return `<option value="${cat}">${cat} (${count}句)</option>`;
@@ -159,6 +160,9 @@ export class SentencesPractice {
     this.els.categorySelect.innerHTML = optionsHtml;
     if (this.els.modalCatSelect) {
       this.els.modalCatSelect.innerHTML = optionsHtml;
+    }
+    if (this.els.modalTabAll) {
+      this.els.modalTabAll.textContent = `全部 (${total})`;
     }
   }
 
@@ -459,7 +463,7 @@ export class SentencesPractice {
     const s = this.currentSentence;
     const isMasked = this.maskedIds.has(s.id);
 
-    if (this.els.badgeId) this.els.badgeId.textContent = `#${s.id} / 1000`;
+    if (this.els.badgeId) this.els.badgeId.textContent = `#${s.id} / ${this.sentences.length}`;
     if (this.els.badgeCat) this.els.badgeCat.textContent = s.category || '常用句子';
     if (this.els.zhText) this.els.zhText.textContent = s.zh;
     if (this.els.enText) this.els.enText.textContent = s.en;
@@ -547,7 +551,7 @@ export class SentencesPractice {
     });
 
     if (this.els.modalCountInfo) {
-      this.els.modalCountInfo.textContent = `共符合 ${list.length} 句（已遮罩: ${this.maskedIds.size} / 總數: 1000）`;
+      this.els.modalCountInfo.textContent = `共符合 ${list.length} 句（已遮罩: ${this.maskedIds.size} / 總數: ${this.sentences.length}）`;
     }
 
     if (list.length === 0) {

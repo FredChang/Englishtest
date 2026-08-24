@@ -116,7 +116,7 @@ namespace Englishtest
             _currentSentence = item;
             _isRevealed = MaskEnCheckBox.IsChecked != true;
 
-            BadgeIdText.Text = $"#{item.id} / 1000";
+            BadgeIdText.Text = $"#{item.id} / {_service.TotalCount}";
             BadgeCatText.Text = item.category ?? "常用句子";
             ZhText.Text = item.zh;
             EnText.Text = item.en;
