@@ -570,6 +570,7 @@ async function checkForServiceWorkerUpdate() {
 }
 
 async function init() {
+  showScreen('setup');
   await displayAppVersion();
   checkForServiceWorkerUpdate();
 
@@ -589,32 +590,34 @@ async function init() {
     console.error('常用 1000 句初始化失敗', err);
   }
 
-  els.loading.classList.remove('hidden');
   try {
+    if (els.levelPoolText) els.levelPoolText.textContent = '載入單字題庫中…';
     await vocabulary.load('words.json');
-  } catch {
-    alert('載入題庫失敗，請確認 words.json 是否存在。導讀練習仍可使用。');
+  } catch (err) {
+    console.warn('載入題庫失敗', err);
   } finally {
-    els.loading.classList.add('hidden');
+    els.loading?.classList.add('hidden');
   }
 
   const total = Object.values(vocabulary.countByLevel).reduce((a, b) => a + b, 0);
   if (total === 0) {
-    els.startBtn.disabled = true;
-    els.levelPoolText.textContent = '找不到題庫，單字練習無法使用；導讀練習仍可使用。';
+    if (els.startBtn) els.startBtn.disabled = true;
+    if (els.levelPoolText) els.levelPoolText.textContent = '找不到題庫，單字練習無法使用；導讀與 1000 句練習仍可使用。';
     showScreen('setup');
     return;
   }
 
-  const activeLevels = CEFR_LEVELS.filter(level => (vocabulary.countByLevel[level] || 0) > 0);
-
-  activeLevels.forEach((level) => {
-    const opt = document.createElement('option');
-    opt.value = level;
-    opt.textContent = level;
-    if (level === 'B1') opt.selected = true;
-    els.levelSelect.appendChild(opt);
-  });
+  if (els.levelSelect) {
+    els.levelSelect.innerHTML = '';
+    const activeLevels = CEFR_LEVELS.filter(level => (vocabulary.countByLevel[level] || 0) > 0);
+    activeLevels.forEach((level) => {
+      const opt = document.createElement('option');
+      opt.value = level;
+      opt.textContent = level;
+      if (level === 'B1') opt.selected = true;
+      els.levelSelect.appendChild(opt);
+    });
+  }
 
   updateLevelInfo();
   updateSetupForMode();
