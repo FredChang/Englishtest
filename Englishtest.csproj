@@ -73,6 +73,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SentencesWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,7 +97,13 @@
       <DependentUpon>GuideReadingWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SentencesWindow.xaml.cs">
+      <DependentUpon>SentencesWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Services\GuideReadingContentService.cs" />
+    <Compile Include="Services\SentencesService.cs" />
+    <Compile Include="Models\SentenceItem.cs" />
     <Compile Include="Models\QuizSessionSettings.cs" />
     <Compile Include="Models\VocabularyItem.cs" />
     <Compile Include="Models\CefrLevel.cs" />
@@ -131,6 +141,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <Content Include="words.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sentences_1000.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="read.txt">

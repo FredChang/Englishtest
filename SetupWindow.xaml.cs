@@ -150,6 +150,13 @@ namespace Englishtest
             DialogResult = true;
         }
 
+        private void SentencesButton_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new SentencesWindow();
+            win.Owner = this;
+            win.ShowDialog();
+        }
+
         private void GuideReadingButton_Click(object sender, RoutedEventArgs e)
         {
             var guide = new GuideReadingWindow();

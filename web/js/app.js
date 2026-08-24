@@ -1,6 +1,7 @@
 import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
 import { initGuideReading } from './guide-reading.js';
+import { SentencesPractice } from './sentences.js';
 import { APP_VERSION } from './version.js';
 
 const vocabulary = new VocabularyService();
@@ -9,10 +10,12 @@ const screens = {
   setup: document.getElementById('screen-setup'),
   quiz: document.getElementById('screen-quiz'),
   guideLoad: document.getElementById('screen-guide-load'),
-  guidePlay: document.getElementById('screen-guide-play')
+  guidePlay: document.getElementById('screen-guide-play'),
+  sentences: document.getElementById('screen-sentences')
 };
 
 let guideReading = null;
+let sentencesPractice = null;
 
 const els = {
   levelSelect: document.getElementById('level-select'),
@@ -570,11 +573,20 @@ async function init() {
   await displayAppVersion();
   checkForServiceWorkerUpdate();
 
-  // 導讀不依賴題庫，先初始化避免按鈕無反應
+  // 導讀與常用句子不依賴單字題庫，先初始化避免按鈕無反應
   try {
     guideReading = initGuideReading({ screens, showScreen });
   } catch (err) {
     console.error('導讀初始化失敗', err);
+  }
+
+  try {
+    sentencesPractice = new SentencesPractice({
+      container: screens.sentences,
+      onBack: () => showScreen('setup')
+    });
+  } catch (err) {
+    console.error('常用 1000 句初始化失敗', err);
   }
 
   els.loading.classList.remove('hidden');
@@ -693,3 +705,25 @@ if (guideOpenBtn) {
 } else {
   console.error('guide-open-btn not found in DOM');
 }
+
+const sentencesOpenBtn = document.getElementById('sentences-open-btn');
+if (sentencesOpenBtn) {
+  const handleSentencesOpen = async (e) => {
+    e.preventDefault();
+    try {
+      const warmup = new SpeechSynthesisUtterance('');
+      warmup.volume = 0;
+      window.speechSynthesis?.speak(warmup);
+    } catch (err) {}
+
+    showScreen('sentences');
+    if (sentencesPractice) {
+      await sentencesPractice.loadData();
+      sentencesPractice.start();
+    }
+  };
+
+  sentencesOpenBtn.addEventListener('click', handleSentencesOpen);
+  sentencesOpenBtn.addEventListener('touchend', handleSentencesOpen);
+}
+

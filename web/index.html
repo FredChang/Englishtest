@@ -54,6 +54,10 @@
         </div>
       </div>
 
+      <button type="button" id="sentences-open-btn" class="btn-sentences" style="width:100%;margin-bottom:10px">
+        📚 常用 1000 句練習（遮罩與排除）
+      </button>
+
       <button type="button" id="guide-open-btn" class="btn-guide" style="width:100%;margin-bottom:12px">
         開啟導讀練習
       </button>
@@ -217,6 +221,124 @@
         <button type="button" id="next-btn" class="btn-primary" style="width:100%" disabled>下一題</button>
       </div>
     </section>
+
+    <!-- 常用 1000 句練習畫面 -->
+    <section id="screen-sentences" class="hidden">
+      <header class="header sent-header">
+        <div>
+          <h1>常用 1000 句練習</h1>
+          <div class="sent-stats-row">
+            <span class="sent-stat-badge unmasked">循環中: <b id="sent-stat-unmasked">1000</b> 句</span>
+            <span class="sent-stat-badge masked">已學會遮罩: <b id="sent-stat-masked">0</b> 句</span>
+          </div>
+        </div>
+        <div class="sent-header-actions">
+          <button type="button" id="sent-manage-btn" class="btn-secondary" title="句子清單與管理">📋 清單管理</button>
+          <button type="button" id="sent-back-btn" class="btn-ghost">返回</button>
+        </div>
+      </header>
+
+      <!-- 控制列與篩選 -->
+      <div class="card sent-controls-card">
+        <div class="sent-control-grid">
+          <div>
+            <label class="field-label" for="sent-category-select">主題分類</label>
+            <select id="sent-category-select" class="sent-select"></select>
+          </div>
+          <div>
+            <label class="field-label">抽題模式</label>
+            <div class="sent-mode-toggle">
+              <button type="button" id="sent-mode-random" class="sent-mode-btn active">🎲 隨機循環</button>
+              <button type="button" id="sent-mode-seq" class="sent-mode-btn">🔢 依序瀏覽</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sent-mask-toggle-row">
+          <label class="sent-switch-label">
+            <input type="checkbox" id="sent-mask-en-toggle" checked />
+            <span class="sent-switch-slider"></span>
+            <span class="sent-switch-text">預設遮罩英文（先想後看）</span>
+          </label>
+          <span id="sent-seq-counter" class="sent-seq-counter"></span>
+        </div>
+      </div>
+
+      <!-- 核心句子卡片 -->
+      <div class="card sent-card">
+        <div class="sent-card-header">
+          <span id="sent-badge-id" class="sent-badge-id">#1 / 1000</span>
+          <span id="sent-badge-cat" class="sent-badge-cat">日常問候</span>
+        </div>
+
+        <!-- 中文意思 -->
+        <div class="sent-zh-box">
+          <div id="sent-zh-text" class="sent-zh-text">載入中…</div>
+        </div>
+
+        <!-- 英文句子（支援遮罩） -->
+        <div id="sent-en-container" class="sent-en-box masked" title="點擊切換揭曉 / 遮罩英文">
+          <div id="sent-en-text" class="sent-en-text"></div>
+          <div id="sent-en-mask-overlay" class="sent-en-mask-overlay">
+            <span>👁️ 點擊或按 V 鍵揭曉英文</span>
+          </div>
+        </div>
+
+        <!-- 操作按鈕列 -->
+        <div class="sent-actions-row">
+          <button type="button" id="sent-play-btn" class="btn-secondary sent-btn-action" title="朗讀發音 (快捷鍵: R)">
+            🔊 播放發音
+          </button>
+          <button type="button" id="sent-reveal-btn" class="btn-secondary sent-btn-action" title="揭曉/遮罩 (快捷鍵: V)">
+            👁️ 點擊揭曉英文
+          </button>
+        </div>
+
+        <!-- 遮罩句子功能 (學會排除) -->
+        <div class="sent-learned-section">
+          <button type="button" id="sent-mask-sentence-btn" class="btn-learned" title="學會後遮罩此句，不再進入隨機循環名單 (快捷鍵: M)">
+            ⚪ 標記已學會 (遮罩此句排除)
+          </button>
+          <p class="sent-learned-hint">💡 標記為「已學會」後，此句會被遮罩排除，不再出現於隨機循環抽題名單中。</p>
+        </div>
+      </div>
+
+      <!-- 底部導覽按鈕 -->
+      <div class="sent-nav-row">
+        <button type="button" id="sent-prev-btn" class="btn-secondary" disabled>⬅️ 上一句</button>
+        <button type="button" id="sent-next-btn" class="btn-primary sent-btn-next">🎲 隨機下一句</button>
+      </div>
+      <p class="sent-keyboard-hint">⌨️ 鍵盤快捷鍵：[空白鍵 / ➡️] 下一句 · [⬅️] 上一句 · [R] 朗讀發音 · [V] 揭曉英文 · [M] 標記學會</p>
+    </section>
+
+    <!-- 句子清單與遮罩管理彈窗 Modal -->
+    <div id="sent-modal" class="sent-modal hidden">
+      <div class="sent-modal-content">
+        <div class="sent-modal-header">
+          <h2>📋 常用 1000 句清單與遮罩管理</h2>
+          <button type="button" id="sent-modal-close-btn" class="sent-modal-close" title="關閉">✕</button>
+        </div>
+
+        <div class="sent-modal-filters">
+          <div class="sent-modal-filter-row">
+            <input type="text" id="sent-modal-search" class="sent-modal-search-input" placeholder="🔍 搜尋中英文或編號..." />
+            <select id="sent-modal-cat-select" class="sent-modal-cat-select"></select>
+          </div>
+          <div class="sent-modal-tabs">
+            <button type="button" id="sent-tab-all" class="sent-tab-btn active">全部 (1000)</button>
+            <button type="button" id="sent-tab-unmasked" class="sent-tab-btn">待學習 / 循環中</button>
+            <button type="button" id="sent-tab-masked" class="sent-tab-btn">已學會 / 遮罩排除</button>
+          </div>
+        </div>
+
+        <div class="sent-modal-info-row">
+          <span id="sent-modal-count-info" class="sent-modal-count-info"></span>
+          <button type="button" id="sent-modal-reset-all-btn" class="btn-ghost sent-btn-reset-all">🔄 重設全部遮罩</button>
+        </div>
+
+        <div id="sent-modal-list" class="sent-modal-list"></div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="js/app.js"></script>
