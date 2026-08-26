@@ -289,9 +289,40 @@
           <button type="button" id="sent-play-btn" class="btn-secondary sent-btn-action" title="朗讀發音 (快捷鍵: R)">
             🔊 播放發音
           </button>
-          <button type="button" id="sent-reveal-btn" class="btn-secondary sent-btn-action" title="揭曉/遮罩 (快捷鍵: V)">
-            👁️ 點擊揭曉英文
+          <button type="button" id="sent-record-btn" class="btn-secondary sent-btn-action sent-btn-record" title="錄音練習發音比對 (快捷鍵: S)">
+            🎤 錄音評分
           </button>
+          <button type="button" id="sent-reveal-btn" class="btn-secondary sent-btn-action" title="揭曉/遮罩 (快捷鍵: V)">
+            👁️ 揭曉英文
+          </button>
+        </div>
+
+        <!-- 錄音比對與發音評分結果面板 -->
+        <div id="sent-eval-panel" class="sent-eval-panel hidden">
+          <div id="sent-eval-status" class="sent-eval-status">
+            <span class="eval-pulse-dot"></span>
+            <span id="sent-eval-status-text" class="sent-eval-status-text">正在聆聽您的發音… 請朗讀英文句子</span>
+          </div>
+          <div id="sent-eval-result" class="sent-eval-result hidden">
+            <div class="sent-eval-score-row">
+              <div class="sent-eval-score-badge" id="sent-eval-score-badge">
+                <span class="sent-eval-score-num" id="sent-eval-score-num">--</span>
+                <span class="sent-eval-score-unit">分</span>
+              </div>
+              <div class="sent-eval-score-meta">
+                <div class="sent-eval-grade" id="sent-eval-grade">--</div>
+                <div class="sent-eval-summary" id="sent-eval-summary">--</div>
+              </div>
+            </div>
+            <div class="sent-eval-breakdown">
+              <div class="sent-eval-words-title">逐字比對：</div>
+              <div id="sent-eval-words" class="sent-eval-words"></div>
+            </div>
+            <div class="sent-eval-transcript-box">
+              <span class="sent-eval-transcript-label">🎤 辨識結果：</span>
+              <span id="sent-eval-transcript-text" class="sent-eval-transcript-text">--</span>
+            </div>
+          </div>
         </div>
 
         <!-- 遮罩句子功能 (學會排除) -->
@@ -308,7 +339,7 @@
         <button type="button" id="sent-prev-btn" class="btn-secondary" disabled>⬅️ 上一句</button>
         <button type="button" id="sent-next-btn" class="btn-primary sent-btn-next">🎲 隨機下一句</button>
       </div>
-      <p class="sent-keyboard-hint">⌨️ 鍵盤快捷鍵：[空白鍵 / ➡️] 下一句 · [⬅️] 上一句 · [R] 朗讀發音 · [V] 揭曉英文 · [M] 標記學會</p>
+      <p class="sent-keyboard-hint">⌨️ 鍵盤快捷鍵：[空白鍵 / ➡️] 下一句 · [⬅️] 上一句 · [R] 朗讀發音 · [S] 錄音評分 · [V] 揭曉英文 · [M] 標記學會</p>
     </section>
 
     <!-- 句子清單與遮罩管理彈窗 Modal -->
@@ -341,6 +372,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.0.0"></script>
+  <script type="module" src="js/app.js?v=2.1.0"></script>
 </body>
 </html>

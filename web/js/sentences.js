@@ -24,6 +24,11 @@ export class SentencesPractice {
     this.selectedVoice = null;
     this.speechRate = 1.0;
 
+    // Speech recognition for pronunciation practice
+    this.recognition = null;
+    this.isRecording = false;
+    this.speechRecognitionSupported = false;
+
     this.modalFilter = 'all'; // 'all' | 'unmasked' | 'masked'
     this.modalSearchQuery = '';
     this.modalCategory = 'all';
@@ -32,6 +37,7 @@ export class SentencesPractice {
     this.loadSettings();
     this.bindEvents();
     this.initSpeech();
+    this.initSpeechRecognition();
   }
 
   initElements() {
@@ -54,8 +60,21 @@ export class SentencesPractice {
       enMaskOverlay: document.getElementById('sent-en-mask-overlay'),
       revealBtn: document.getElementById('sent-reveal-btn'),
       playBtn: document.getElementById('sent-play-btn'),
+      recordBtn: document.getElementById('sent-record-btn'),
       maskSentenceBtn: document.getElementById('sent-mask-sentence-btn'),
       maskStatusBadge: document.getElementById('sent-mask-status-badge'),
+
+      // Eval panel
+      evalPanel: document.getElementById('sent-eval-panel'),
+      evalStatus: document.getElementById('sent-eval-status'),
+      evalStatusText: document.getElementById('sent-eval-status-text'),
+      evalResult: document.getElementById('sent-eval-result'),
+      evalScoreBadge: document.getElementById('sent-eval-score-badge'),
+      evalScoreNum: document.getElementById('sent-eval-score-num'),
+      evalGrade: document.getElementById('sent-eval-grade'),
+      evalSummary: document.getElementById('sent-eval-summary'),
+      evalWords: document.getElementById('sent-eval-words'),
+      evalTranscriptText: document.getElementById('sent-eval-transcript-text'),
 
       // Nav
       prevBtn: document.getElementById('sent-prev-btn'),
@@ -192,9 +211,332 @@ export class SentencesPractice {
     window.speechSynthesis.speak(u);
   }
 
+  initSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      this.speechRecognitionSupported = false;
+      return;
+    }
+    this.speechRecognitionSupported = true;
+
+    try {
+      this.recognition = new SpeechRecognition();
+      this.recognition.lang = 'en-US';
+      this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
+      this.recognition.continuous = false;
+
+      this.recognition.onstart = () => {
+        this.isRecording = true;
+        this.updateRecordButtonUI(true);
+        this.showEvalStatus('正在聆聽您的發音… 請清晰朗讀英文句子');
+      };
+
+      this.recognition.onresult = (event) => {
+        let interim = '';
+        let final = '';
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            final += event.results[i][0].transcript;
+          } else {
+            interim += event.results[i][0].transcript;
+          }
+        }
+        const text = (final || interim).trim();
+        if (text) {
+          this.showEvalStatus(`🎙️ 聽到：「${text}」...`);
+        }
+        if (final && this.currentSentence) {
+          this.evaluatePronunciation(final, this.currentSentence.en);
+        }
+      };
+
+      this.recognition.onerror = (event) => {
+        console.warn('SpeechRecognition error:', event.error);
+        this.isRecording = false;
+        this.updateRecordButtonUI(false);
+        if (event.error === 'no-speech') {
+          this.showEvalStatus('⚠️ 沒有偵測到聲音，請靠近麥克風再試一次。', 'warning');
+        } else if (event.error === 'not-allowed') {
+          this.showEvalStatus('🚫 請允許瀏覽器麥克風權限以進行發音練習。', 'error');
+        } else if (event.error !== 'aborted') {
+          this.showEvalStatus(`⚠️ 語音辨識發生錯誤 (${event.error})，請再試一次。`, 'error');
+        }
+      };
+
+      this.recognition.onend = () => {
+        this.isRecording = false;
+        this.updateRecordButtonUI(false);
+      };
+    } catch (e) {
+      console.warn('Failed to initialize SpeechRecognition', e);
+      this.speechRecognitionSupported = false;
+    }
+  }
+
+  toggleRecording() {
+    if (!this.speechRecognitionSupported || !this.recognition) {
+      alert('您的瀏覽器暫不支援 Web Speech API 語音辨識。\n建議使用 Chrome、Edge 或 Safari 瀏覽器以獲得最佳口說練習體驗。');
+      return;
+    }
+
+    if (this.isRecording) {
+      this.recognition.stop();
+      return;
+    }
+
+    // Stop TTS if speaking
+    window.speechSynthesis?.cancel();
+
+    // Automatically reveal English so user can read it while speaking
+    if (!this.isRevealed) {
+      this.isRevealed = true;
+      this.renderEnglishMaskState();
+    }
+
+    this.resetEvalPanel();
+    if (this.els.evalPanel) {
+      this.els.evalPanel.classList.remove('hidden');
+    }
+
+    try {
+      this.recognition.start();
+    } catch (err) {
+      console.warn('Failed to start speech recognition', err);
+      try {
+        this.recognition.stop();
+        setTimeout(() => this.recognition.start(), 200);
+      } catch (e) {}
+    }
+  }
+
+  updateRecordButtonUI(recording) {
+    if (!this.els.recordBtn) return;
+    if (recording) {
+      this.els.recordBtn.classList.add('recording');
+      this.els.recordBtn.innerHTML = '⏹️ 停止錄音';
+      this.els.recordBtn.title = '點擊停止錄音 (快捷鍵: S)';
+    } else {
+      this.els.recordBtn.classList.remove('recording');
+      this.els.recordBtn.innerHTML = '🎤 錄音評分';
+      this.els.recordBtn.title = '錄音練習發音比對 (快捷鍵: S)';
+    }
+  }
+
+  showEvalStatus(text, type = 'normal') {
+    if (!this.els.evalPanel || !this.els.evalStatusText) return;
+    this.els.evalPanel.classList.remove('hidden');
+    this.els.evalStatus?.classList.remove('hidden', 'warning', 'error');
+    if (type !== 'normal') {
+      this.els.evalStatus?.classList.add(type);
+    }
+    this.els.evalStatusText.textContent = text;
+  }
+
+  resetEvalPanel() {
+    if (this.els.evalPanel) this.els.evalPanel.classList.add('hidden');
+    if (this.els.evalResult) this.els.evalResult.classList.add('hidden');
+    if (this.els.evalStatus) this.els.evalStatus.classList.remove('hidden', 'warning', 'error');
+  }
+
+  evaluatePronunciation(userTranscript, targetSentence) {
+    if (!userTranscript || !targetSentence) return;
+
+    const contractionsMap = {
+      "i'm": ["i", "am"],
+      "it's": ["it", "is"],
+      "don't": ["do", "not"],
+      "doesn't": ["does", "not"],
+      "didn't": ["did", "not"],
+      "can't": ["can", "not"],
+      "won't": ["will", "not"],
+      "i've": ["i", "have"],
+      "you've": ["you", "have"],
+      "we've": ["we", "have"],
+      "they've": ["they", "have"],
+      "i'll": ["i", "will"],
+      "you'll": ["you", "will"],
+      "he'll": ["he", "will"],
+      "she'll": ["she", "will"],
+      "we'll": ["we", "will"],
+      "they'll": ["they", "will"],
+      "you're": ["you", "are"],
+      "we're": ["we", "are"],
+      "they're": ["they", "are"],
+      "what's": ["what", "is"],
+      "how's": ["how", "is"],
+      "where's": ["where", "is"],
+      "there's": ["there", "is"],
+      "that's": ["that", "is"],
+      "let's": ["let", "us"],
+      "couldn't": ["could", "not"],
+      "wouldn't": ["would", "not"],
+      "shouldn't": ["should", "not"],
+      "haven't": ["have", "not"],
+      "hasn't": ["has", "not"],
+      "aren't": ["are", "not"],
+      "isn't": ["is", "not"],
+      "wasn't": ["was", "not"],
+      "weren't": ["were", "not"]
+    };
+
+    const clean = (w) => w.toLowerCase().replace(/[^a-z0-9']/g, '').trim();
+
+    const levenshtein = (a, b) => {
+      if (a === b) return 0;
+      if (!a.length) return b.length;
+      if (!b.length) return a.length;
+      const matrix = [];
+      for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+      for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+      for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+          if (b.charAt(i - 1) === a.charAt(j - 1)) {
+            matrix[i][j] = matrix[i - 1][j - 1];
+          } else {
+            matrix[i][j] = Math.min(
+              matrix[i - 1][j - 1] + 1,
+              matrix[i][j - 1] + 1,
+              matrix[i - 1][j] + 1
+            );
+          }
+        }
+      }
+      return matrix[b.length][a.length];
+    };
+
+    const targetRawTokens = targetSentence.trim().split(/\s+/);
+    const spokenTokens = userTranscript.trim().split(/\s+/).map(clean).filter(Boolean);
+
+    let spokenIdx = 0;
+    let matchedWeight = 0;
+    const wordResults = [];
+
+    for (let i = 0; i < targetRawTokens.length; i++) {
+      const raw = targetRawTokens[i];
+      const targetClean = clean(raw);
+      if (!targetClean) continue;
+
+      let status = 'miss';
+      let bestMatchIdx = -1;
+
+      // Lookahead window in spoken tokens (up to 4 tokens ahead)
+      const maxLookahead = Math.min(spokenTokens.length, spokenIdx + 4);
+      for (let j = spokenIdx; j < maxLookahead; j++) {
+        const spoken = spokenTokens[j];
+        if (spoken === targetClean) {
+          status = 'match';
+          bestMatchIdx = j;
+          break;
+        }
+
+        // Check contractions
+        if (contractionsMap[targetClean] && contractionsMap[targetClean].includes(spoken)) {
+          status = 'match';
+          bestMatchIdx = j;
+          break;
+        }
+        if (contractionsMap[spoken] && contractionsMap[spoken].includes(targetClean)) {
+          status = 'match';
+          bestMatchIdx = j;
+          break;
+        }
+
+        // Check fuzzy distance
+        const dist = levenshtein(targetClean, spoken);
+        if (dist === 1 || (dist === 2 && targetClean.length >= 6)) {
+          status = 'near';
+          bestMatchIdx = j;
+          break;
+        }
+      }
+
+      if (status !== 'miss' && bestMatchIdx !== -1) {
+        spokenIdx = bestMatchIdx + 1;
+        if (status === 'match') {
+          matchedWeight += 1.0;
+        } else if (status === 'near') {
+          matchedWeight += 0.8;
+        }
+      }
+
+      wordResults.push({
+        raw,
+        status
+      });
+    }
+
+    const totalWords = targetRawTokens.length || 1;
+    const score = Math.min(100, Math.max(0, Math.round((matchedWeight / totalWords) * 100)));
+
+    this.renderPronunciationResult({
+      score,
+      wordResults,
+      userTranscript
+    });
+  }
+
+  renderPronunciationResult({ score, wordResults, userTranscript }) {
+    if (!this.els.evalPanel) return;
+
+    this.els.evalPanel.classList.remove('hidden');
+    this.els.evalStatus?.classList.add('hidden');
+    this.els.evalResult?.classList.remove('hidden');
+
+    if (this.els.evalScoreNum) {
+      this.els.evalScoreNum.textContent = String(score);
+    }
+
+    let gradeText = '';
+    let gradeClass = '';
+    let summaryText = '';
+
+    if (score >= 90) {
+      gradeText = '🌟 優秀 (Excellent!)';
+      gradeClass = 'grade-excellent';
+      summaryText = '太棒了！發音非常清晰且標準！';
+    } else if (score >= 75) {
+      gradeText = '👍 良好 (Good!)';
+      gradeClass = 'grade-good';
+      summaryText = '很不錯！絕大多數單字發音正確。';
+    } else if (score >= 50) {
+      gradeText = '⚠️ 還行 (Keep Trying)';
+      gradeClass = 'grade-average';
+      summaryText = '還可以，注意標紅的單字再試一次！';
+    } else {
+      gradeText = '🔄 需加強 (Try Again)';
+      gradeClass = 'grade-poor';
+      summaryText = '請再試一次，試著放慢語速、清晰朗讀。';
+    }
+
+    if (this.els.evalScoreBadge) {
+      this.els.evalScoreBadge.className = `sent-eval-score-badge ${gradeClass}`;
+    }
+    if (this.els.evalGrade) {
+      this.els.evalGrade.textContent = gradeText;
+    }
+    if (this.els.evalSummary) {
+      this.els.evalSummary.textContent = summaryText;
+    }
+
+    if (this.els.evalWords) {
+      this.els.evalWords.innerHTML = wordResults.map(item => {
+        const title = item.status === 'match' ? '發音正確' : (item.status === 'near' ? '發音相近' : '未辨識到或發音不準');
+        return `<span class="word-chip ${item.status}" title="${title}">${item.raw}</span>`;
+      }).join(' ');
+    }
+
+    if (this.els.evalTranscriptText) {
+      this.els.evalTranscriptText.textContent = `"${userTranscript}"`;
+    }
+  }
+
   bindEvents() {
     this.els.backBtn?.addEventListener('click', () => {
       window.speechSynthesis?.cancel();
+      if (this.isRecording && this.recognition) {
+        try { this.recognition.stop(); } catch (e) {}
+      }
       this.onBack();
     });
 
@@ -237,6 +579,11 @@ export class SentencesPractice {
       }
     });
 
+    this.els.recordBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.toggleRecording();
+    });
+
     this.els.maskSentenceBtn?.addEventListener('click', (e) => {
       e.stopPropagation();
       if (!this.currentSentence) return;
@@ -265,6 +612,9 @@ export class SentencesPractice {
       } else if (e.key === 'r' || e.key === 'R') {
         e.preventDefault();
         if (this.currentSentence) this.speak(this.currentSentence.en);
+      } else if (e.key === 's' || e.key === 'S') {
+        e.preventDefault();
+        this.toggleRecording();
       } else if (e.key === 'v' || e.key === 'V') {
         e.preventDefault();
         this.toggleReveal();
@@ -407,6 +757,10 @@ export class SentencesPractice {
   }
 
   setCurrentSentence(sentence) {
+    if (this.isRecording && this.recognition) {
+      try { this.recognition.stop(); } catch (e) {}
+    }
+    this.resetEvalPanel();
     this.currentSentence = sentence;
     this.isRevealed = !this.maskEnglishGlobal;
     this.updateCurrentCard();
