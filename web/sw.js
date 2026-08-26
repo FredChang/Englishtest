@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v1.9.0';
+const CACHE = 'englishtest-v2.0.0';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
