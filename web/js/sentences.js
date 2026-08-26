@@ -213,82 +213,32 @@ export class SentencesPractice {
 
   initSpeechRecognition() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-      this.speechRecognitionSupported = false;
-      return;
-    }
-    this.speechRecognitionSupported = true;
-
-    try {
-      this.recognition = new SpeechRecognition();
-      this.recognition.lang = 'en-US';
-      this.recognition.interimResults = true;
-      this.recognition.maxAlternatives = 1;
-      this.recognition.continuous = false;
-
-      this.recognition.onstart = () => {
-        this.isRecording = true;
-        this.updateRecordButtonUI(true);
-        this.showEvalStatus('正在聆聽您的發音… 請清晰朗讀英文句子');
-      };
-
-      this.recognition.onresult = (event) => {
-        let interim = '';
-        let final = '';
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
-          if (event.results[i].isFinal) {
-            final += event.results[i][0].transcript;
-          } else {
-            interim += event.results[i][0].transcript;
-          }
-        }
-        const text = (final || interim).trim();
-        if (text) {
-          this.showEvalStatus(`🎙️ 聽到：「${text}」...`);
-        }
-        if (final && this.currentSentence) {
-          this.evaluatePronunciation(final, this.currentSentence.en);
-        }
-      };
-
-      this.recognition.onerror = (event) => {
-        console.warn('SpeechRecognition error:', event.error);
-        this.isRecording = false;
-        this.updateRecordButtonUI(false);
-        if (event.error === 'no-speech') {
-          this.showEvalStatus('⚠️ 沒有偵測到聲音，請靠近麥克風再試一次。', 'warning');
-        } else if (event.error === 'not-allowed') {
-          this.showEvalStatus('🚫 請允許瀏覽器麥克風權限以進行發音練習。', 'error');
-        } else if (event.error !== 'aborted') {
-          this.showEvalStatus(`⚠️ 語音辨識發生錯誤 (${event.error})，請再試一次。`, 'error');
-        }
-      };
-
-      this.recognition.onend = () => {
-        this.isRecording = false;
-        this.updateRecordButtonUI(false);
-      };
-    } catch (e) {
-      console.warn('Failed to initialize SpeechRecognition', e);
-      this.speechRecognitionSupported = false;
-    }
+    this.speechRecognitionSupported = !!SpeechRecognition;
   }
 
   toggleRecording() {
-    if (!this.speechRecognitionSupported || !this.recognition) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
       alert('您的瀏覽器暫不支援 Web Speech API 語音辨識。\n建議使用 Chrome、Edge 或 Safari 瀏覽器以獲得最佳口說練習體驗。');
       return;
     }
 
     if (this.isRecording) {
-      this.recognition.stop();
+      this.stopRecording();
       return;
     }
 
-    // Stop TTS if speaking
-    window.speechSynthesis?.cancel();
+    this.startRecording();
+  }
 
-    // Automatically reveal English so user can read it while speaking
+  startRecording() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return;
+
+    // Stop any existing instance
+    this.stopRecording();
+
+    // Automatically reveal English so user can read it
     if (!this.isRevealed) {
       this.isRevealed = true;
       this.renderEnglishMaskState();
@@ -298,15 +248,112 @@ export class SentencesPractice {
     if (this.els.evalPanel) {
       this.els.evalPanel.classList.remove('hidden');
     }
+    this.showEvalStatus('正在聆聽您的發音… 請清晰朗讀英文句子');
+
+    this.accumulatedTranscript = '';
+    this.evaluated = false;
 
     try {
+      // Create a FRESH instance every time for iOS Safari and Android Chrome stability
+      this.recognition = new SpeechRecognition();
+      this.recognition.lang = 'en-US';
+      this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
+      this.recognition.continuous = false;
+
+      this.recognition.onstart = () => {
+        this.isRecording = true;
+        this.updateRecordButtonUI(true);
+      };
+
+      this.recognition.onresult = (event) => {
+        let currentFinal = '';
+        let currentInterim = '';
+
+        for (let i = 0; i < event.results.length; ++i) {
+          const res = event.results[i];
+          if (res.isFinal) {
+            currentFinal += res[0].transcript + ' ';
+          } else {
+            currentInterim += res[0].transcript;
+          }
+        }
+
+        const bestText = (currentFinal || currentInterim || '').trim();
+        if (bestText) {
+          this.accumulatedTranscript = bestText;
+          this.showEvalStatus(`🎙️ 聽到：「${bestText}」...`);
+        }
+      };
+
+      this.recognition.onerror = (event) => {
+        console.warn('SpeechRecognition error:', event.error);
+        if (event.error === 'no-speech') {
+          if (!this.accumulatedTranscript && !this.evaluated) {
+            this.showEvalStatus('⚠️ 沒有偵測到聲音，請靠近麥克風再試一次。', 'warning');
+          }
+        } else if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          this.showEvalStatus('🚫 請允許瀏覽器麥克風權限以進行發音練習。', 'error');
+        } else if (event.error !== 'aborted') {
+          if (!this.accumulatedTranscript && !this.evaluated) {
+            this.showEvalStatus(`⚠️ 語音辨識發生錯誤 (${event.error})，請再試一次。`, 'error');
+          }
+        }
+      };
+
+      this.recognition.onend = () => {
+        this.isRecording = false;
+        this.updateRecordButtonUI(false);
+        this.clearRecordTimeout();
+
+        // Process accumulated transcript if available
+        if (this.accumulatedTranscript && !this.evaluated && this.currentSentence) {
+          this.evaluated = true;
+          this.evaluatePronunciation(this.accumulatedTranscript, this.currentSentence.en);
+        } else if (!this.evaluated && (!this.els.evalStatus || (!this.els.evalStatus.classList.contains('warning') && !this.els.evalStatus.classList.contains('error')))) {
+          this.showEvalStatus('⚠️ 未偵測到清晰語音，請靠近麥克風並清晰朗讀。', 'warning');
+        }
+      };
+
       this.recognition.start();
+
+      // Safety timeout: auto-stop after 8 seconds of recording
+      this.clearRecordTimeout();
+      this.recordTimeout = setTimeout(() => {
+        if (this.isRecording) {
+          this.stopRecording();
+        }
+      }, 8000);
+
     } catch (err) {
       console.warn('Failed to start speech recognition', err);
+      this.isRecording = false;
+      this.updateRecordButtonUI(false);
+      this.showEvalStatus('⚠️ 無法啟動語音辨識，請重新整理頁面後再試。', 'error');
+    }
+  }
+
+  stopRecording() {
+    this.clearRecordTimeout();
+    if (this.recognition) {
       try {
         this.recognition.stop();
-        setTimeout(() => this.recognition.start(), 200);
       } catch (e) {}
+    }
+    this.isRecording = false;
+    this.updateRecordButtonUI(false);
+
+    // If we have text and haven't evaluated yet, evaluate immediately
+    if (this.accumulatedTranscript && !this.evaluated && this.currentSentence) {
+      this.evaluated = true;
+      this.evaluatePronunciation(this.accumulatedTranscript, this.currentSentence.en);
+    }
+  }
+
+  clearRecordTimeout() {
+    if (this.recordTimeout) {
+      clearTimeout(this.recordTimeout);
+      this.recordTimeout = null;
     }
   }
 
@@ -334,6 +381,9 @@ export class SentencesPractice {
   }
 
   resetEvalPanel() {
+    this.clearRecordTimeout();
+    this.accumulatedTranscript = '';
+    this.evaluated = false;
     if (this.els.evalPanel) this.els.evalPanel.classList.add('hidden');
     if (this.els.evalResult) this.els.evalResult.classList.add('hidden');
     if (this.els.evalStatus) this.els.evalStatus.classList.remove('hidden', 'warning', 'error');
@@ -534,9 +584,7 @@ export class SentencesPractice {
   bindEvents() {
     this.els.backBtn?.addEventListener('click', () => {
       window.speechSynthesis?.cancel();
-      if (this.isRecording && this.recognition) {
-        try { this.recognition.stop(); } catch (e) {}
-      }
+      this.stopRecording();
       this.onBack();
     });
 
@@ -757,9 +805,7 @@ export class SentencesPractice {
   }
 
   setCurrentSentence(sentence) {
-    if (this.isRecording && this.recognition) {
-      try { this.recognition.stop(); } catch (e) {}
-    }
+    this.stopRecording();
     this.resetEvalPanel();
     this.currentSentence = sentence;
     this.isRevealed = !this.maskEnglishGlobal;
