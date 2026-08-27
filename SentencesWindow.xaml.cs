@@ -407,6 +407,36 @@ namespace Englishtest
             UpdateStats();
         }
 
+        private bool _isCompactMode = false;
+
+        private void CompactModeButton_Click(object sender, RoutedEventArgs e)
+        {
+            _isCompactMode = !_isCompactMode;
+            ApplyCompactMode();
+        }
+
+        private void ApplyCompactMode()
+        {
+            if (ControlsBorder != null)
+                ControlsBorder.Visibility = _isCompactMode ? Visibility.Collapsed : Visibility.Visible;
+
+            if (StatsPanel != null)
+                StatsPanel.Visibility = _isCompactMode ? Visibility.Collapsed : Visibility.Visible;
+
+            if (CompactModeButton != null)
+            {
+                CompactModeButton.Content = _isCompactMode ? "📋 標準模式" : "✨ 簡潔模式";
+                CompactModeButton.Background = _isCompactMode ? new SolidColorBrush(Color.FromRgb(254, 243, 199)) : new SolidColorBrush(Color.FromRgb(239, 246, 255));
+                CompactModeButton.Foreground = _isCompactMode ? new SolidColorBrush(Color.FromRgb(180, 83, 9)) : new SolidColorBrush(Color.FromRgb(37, 99, 235));
+            }
+
+            if (ZhText != null)
+                ZhText.FontSize = _isCompactMode ? 26 : 22;
+
+            if (EnText != null)
+                EnText.FontSize = _isCompactMode ? 24 : 20;
+        }
+
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Close();

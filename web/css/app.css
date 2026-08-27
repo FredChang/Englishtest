@@ -1131,6 +1131,62 @@ button {
   transition: all 0.2s ease;
 }
 
+/* --- 1200 句簡潔面板模式 (Compact View Mode) --- */
+#screen-sentences.compact-mode .sent-stats-row,
+#screen-sentences.compact-mode .sent-controls-card,
+#screen-sentences.compact-mode #sent-eval-panel,
+#screen-sentences.compact-mode .sent-badge-cat {
+  display: none !important;
+}
+
+#screen-sentences.compact-mode .sent-card {
+  padding: 28px 20px;
+  border-radius: 16px;
+  border: 2px solid var(--primary);
+  background: #ffffff;
+  box-shadow: 0 12px 30px -8px rgba(37, 99, 235, 0.12);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#screen-sentences.compact-mode .sent-zh-box {
+  padding: 20px 14px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+#screen-sentences.compact-mode .sent-zh-text {
+  font-size: clamp(1.4rem, 5vw, 1.85rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+#screen-sentences.compact-mode .sent-en-box {
+  padding: 22px 14px;
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+#screen-sentences.compact-mode .sent-en-text {
+  font-size: clamp(1.3rem, 4.5vw, 1.7rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+#screen-sentences.compact-mode .sent-actions-row {
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#screen-sentences.compact-mode .sent-actions-row .btn-secondary {
+  padding: 12px 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .btn-learned:hover {
   border-color: #10b981;
   color: #047857;

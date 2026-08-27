@@ -22,7 +22,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0">
                 <TextBlock Text="常用 1200 句練習" FontSize="22" FontWeight="Bold" Foreground="#1A1A2E"/>
-                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                <StackPanel x:Name="StatsPanel" Orientation="Horizontal" Margin="0,4,0,0">
                     <Border Background="#DBEAFE" CornerRadius="4" Padding="6,2" Margin="0,0,8,0">
                         <TextBlock x:Name="StatUnmaskedText" Text="循環中: 1200 句" FontSize="12" Foreground="#1E40AF" FontWeight="SemiBold"/>
                     </Border>
@@ -32,17 +32,20 @@
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button x:Name="CompactModeButton" Content="✨ 簡潔模式" Width="100" Height="32" Margin="0,0,8,0"
+                        Click="CompactModeButton_Click" Background="#EFF6FF" Foreground="#2563EB" BorderBrush="#BFDBFE"
+                        FontWeight="SemiBold" Cursor="Hand"/>
                 <Button x:Name="ManageListButton" Content="📋 清單管理" Width="100" Height="32" Margin="0,0,8,0"
                         Click="ManageListButton_Click" Background="#EFF6FF" Foreground="#1D4ED8" BorderBrush="#BFDBFE"
                         FontWeight="SemiBold" Cursor="Hand"/>
-                <Button x:Name="CloseButton" Content="返回" Width="70" Height="32"
+                <Button x:Name="CloseButton" Content="🏠 回首頁" Width="80" Height="32"
                         Click="CloseButton_Click" Background="#F1F5F9" Foreground="#475569" BorderBrush="#CBD5E1"
                         Cursor="Hand"/>
             </StackPanel>
         </Grid>
 
         <!-- 控制列與篩選 -->
-        <Border Grid.Row="1" Margin="0,0,0,14" Padding="12" Background="White" CornerRadius="10"
+        <Border x:Name="ControlsBorder" Grid.Row="1" Margin="0,0,0,14" Padding="12" Background="White" CornerRadius="10"
                 BorderBrush="#E2E8F0" BorderThickness="1">
             <Grid>
                 <Grid.ColumnDefinitions>

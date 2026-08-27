@@ -68,9 +68,20 @@ function getDirection() {
   return document.querySelector('input[name="direction"]:checked')?.value || 'ctoE';
 }
 
-function showScreen(name) {
-  Object.values(screens).forEach((s) => s.classList.add('hidden'));
-  screens[name]?.classList.remove('hidden');
+function showScreen(name, updateHistory = true) {
+  Object.values(screens).forEach((s) => s?.classList.add('hidden'));
+  if (screens[name]) {
+    screens[name].classList.remove('hidden');
+  }
+  if (updateHistory) {
+    if (name !== 'setup') {
+      history.pushState({ screen: name }, '', `#${name}`);
+    } else {
+      if (history.state?.screen && history.state.screen !== 'setup') {
+        history.replaceState({ screen: 'setup' }, '', '#setup');
+      }
+    }
+  }
 }
 
 function isImageMode() {
@@ -619,9 +630,18 @@ async function init() {
     });
   }
 
+  try {
+    history.replaceState({ screen: 'setup' }, '', '#setup');
+  } catch (e) {}
+
+  window.addEventListener('popstate', (e) => {
+    const target = e.state?.screen || 'setup';
+    showScreen(target, false);
+  });
+
   updateLevelInfo();
   updateSetupForMode();
-  showScreen('setup');
+  showScreen('setup', false);
 }
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];

@@ -43,6 +43,7 @@ export class SentencesPractice {
   initElements() {
     this.els = {
       backBtn: document.getElementById('sent-back-btn'),
+      compactBtn: document.getElementById('sent-compact-btn'),
       manageBtn: document.getElementById('sent-manage-btn'),
       statUnmasked: document.getElementById('sent-stat-unmasked'),
       statMasked: document.getElementById('sent-stat-masked'),
@@ -109,8 +110,32 @@ export class SentencesPractice {
       if (this.els.maskEnToggle) {
         this.els.maskEnToggle.checked = this.maskEnglishGlobal;
       }
+      const savedCompact = localStorage.getItem('englishtest_compact_mode');
+      if (savedCompact !== null) {
+        this.compactMode = savedCompact === 'true';
+      }
+      this.applyCompactMode();
     } catch (e) {
       console.warn('Failed to load sentence settings from localStorage', e);
+    }
+  }
+
+  toggleCompactMode() {
+    this.compactMode = !this.compactMode;
+    try {
+      localStorage.setItem('englishtest_compact_mode', String(this.compactMode));
+    } catch (e) {}
+    this.applyCompactMode();
+  }
+
+  applyCompactMode() {
+    if (!this.container) return;
+    this.container.classList.toggle('compact-mode', !!this.compactMode);
+    if (this.els.compactBtn) {
+      this.els.compactBtn.innerHTML = this.compactMode ? '📋 標準模式' : '✨ 簡潔模式';
+      this.els.compactBtn.title = this.compactMode ? '切換為標準模式' : '切換為簡潔模式';
+      this.els.compactBtn.classList.toggle('btn-primary', !!this.compactMode);
+      this.els.compactBtn.classList.toggle('btn-secondary', !this.compactMode);
     }
   }
 
@@ -118,6 +143,7 @@ export class SentencesPractice {
     try {
       localStorage.setItem(STORAGE_KEY_MASKED, JSON.stringify(Array.from(this.maskedIds)));
       localStorage.setItem(STORAGE_KEY_MASK_EN_DEFAULT, String(this.maskEnglishGlobal));
+      localStorage.setItem('englishtest_compact_mode', String(!!this.compactMode));
     } catch (e) {
       console.warn('Failed to save sentence settings', e);
     }
@@ -586,6 +612,10 @@ export class SentencesPractice {
       window.speechSynthesis?.cancel();
       this.stopRecording();
       this.onBack();
+    });
+
+    this.els.compactBtn?.addEventListener('click', () => {
+      this.toggleCompactMode();
     });
 
     this.els.manageBtn?.addEventListener('click', () => {
