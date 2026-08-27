@@ -743,7 +743,7 @@ export class SentencesPractice {
       this.els.modeSeqBtn.classList.toggle('active', this.mode === 'sequential');
     }
     if (this.els.nextBtn) {
-      this.els.nextBtn.textContent = this.mode === 'random' ? '🎲 隨機下一句' : '➡️ 依序下一句';
+      this.els.nextBtn.textContent = '下一句';
     }
     if (this.sentences.length > 0) {
       this.next();

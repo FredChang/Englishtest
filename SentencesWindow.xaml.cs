@@ -151,12 +151,10 @@ namespace Englishtest
             if (_isRevealed || MaskEnCheckBox.IsChecked != true)
             {
                 EnMaskOverlay.Visibility = Visibility.Collapsed;
-                RevealButton.Content = "🙈 遮罩英文";
             }
             else
             {
                 EnMaskOverlay.Visibility = Visibility.Visible;
-                RevealButton.Content = "👁️ 點擊揭曉英文";
             }
         }
 
@@ -197,12 +195,6 @@ namespace Englishtest
             PlayAudio();
         }
 
-        private void RevealButton_Click(object sender, RoutedEventArgs e)
-        {
-            _isRevealed = !_isRevealed;
-            UpdateCardMaskState();
-        }
-
         private void EnBox_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             _isRevealed = !_isRevealed;
@@ -241,7 +233,7 @@ namespace Englishtest
         private void ModeRadio_Checked(object sender, RoutedEventArgs e)
         {
             if (!IsLoaded) return;
-            NextButton.Content = ModeRandomRadio.IsChecked == true ? "🎲 隨機下一句" : "➡️ 依序下一句";
+            NextButton.Content = "下一句";
         }
 
         private void MaskEnCheckBox_Changed(object sender, RoutedEventArgs e)
