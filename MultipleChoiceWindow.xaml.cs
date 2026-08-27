@@ -258,35 +258,19 @@ namespace Englishtest
             ShowNextQuestion();
         }
 
+        protected override void OnPreviewKeyDown(System.Windows.Input.KeyEventArgs e)
+        {
+            base.OnPreviewKeyDown(e);
+            if (e.Key == System.Windows.Input.Key.Escape || e.Key == System.Windows.Input.Key.Back || e.Key == System.Windows.Input.Key.BrowserBack)
+            {
+                e.Handled = true;
+                Close();
+            }
+        }
+
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            var vocabulary = new VocabularyService();
-            vocabulary.Load();
-
-            var setup = new SetupWindow(vocabulary);
-            if (setup.ShowDialog() != true || setup.Settings == null)
-                return;
-
-            Window newWindow;
-            if (setup.Settings.Mode == QuizMode.MultipleChoice)
-            {
-                var mc = new MultipleChoiceWindow(setup.Settings, vocabulary);
-                if (!mc.IsReady) return;
-                newWindow = mc;
-            }
-            else
-            {
-                var main = new MainWindow(setup.Settings, vocabulary);
-                if (!main.IsReady) return;
-                newWindow = main;
-            }
-
-            _pronunciation.Dispose();
-            Application.Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
-            Application.Current.MainWindow = newWindow;
-            newWindow.Show();
             Close();
-            Application.Current.ShutdownMode = ShutdownMode.OnMainWindowClose;
         }
 
         private void ShowSessionComplete()

@@ -82,35 +82,28 @@ namespace Englishtest
             ScoreText.Text = $"得分：0 / {_vocabulary.SessionTotal}";
         }
 
+        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        {
+            base.OnPreviewKeyDown(e);
+            if (e.Key == Key.Escape || e.Key == Key.BrowserBack)
+            {
+                e.Handled = true;
+                Close();
+            }
+            else if (e.Key == Key.Back)
+            {
+                if (AnswerBox != null && AnswerBox.IsFocused && !string.IsNullOrEmpty(AnswerBox.Text))
+                {
+                    return;
+                }
+                e.Handled = true;
+                Close();
+            }
+        }
+
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            var vocabulary = new VocabularyService();
-            vocabulary.Load();
-
-            var setup = new SetupWindow(vocabulary);
-            if (setup.ShowDialog() != true || setup.Settings == null)
-                return;
-
-            Window newWindow;
-            if (setup.Settings.Mode == Models.QuizMode.MultipleChoice)
-            {
-                var mc = new MultipleChoiceWindow(setup.Settings, vocabulary);
-                if (!mc.IsReady) return;
-                newWindow = mc;
-            }
-            else
-            {
-                var main = new MainWindow(setup.Settings, vocabulary);
-                if (!main.IsReady) return;
-                newWindow = main;
-            }
-
-            _pronunciation.Dispose();
-            Application.Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
-            Application.Current.MainWindow = newWindow;
-            newWindow.Show();
             Close();
-            Application.Current.ShutdownMode = ShutdownMode.OnMainWindowClose;
         }
 
         private void ShowNextQuestion()

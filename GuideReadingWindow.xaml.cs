@@ -20,6 +20,16 @@ namespace Englishtest
 
         public bool IsReady { get; private set; }
 
+        protected override void OnPreviewKeyDown(System.Windows.Input.KeyEventArgs e)
+        {
+            base.OnPreviewKeyDown(e);
+            if (e.Key == System.Windows.Input.Key.Escape || e.Key == System.Windows.Input.Key.Back || e.Key == System.Windows.Input.Key.BrowserBack)
+            {
+                e.Handled = true;
+                Close();
+            }
+        }
+
         public GuideReadingWindow()
         {
             InitializeComponent();

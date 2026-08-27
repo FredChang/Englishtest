@@ -53,10 +53,7 @@ namespace Englishtest
                 }
 
                 MainWindow = target;
-                // Restore normal shutdown mode now that the real MainWindow is set.
-                ShutdownMode = ShutdownMode.OnMainWindowClose;
-                target.Show();
-                return;
+                target.ShowDialog();
             }
         }
     }

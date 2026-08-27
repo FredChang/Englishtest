@@ -34,7 +34,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" x:Name="SessionInfoText" Text=""
                        FontSize="14" Foreground="#475569" VerticalAlignment="Center"/>
-            <Button Grid.Column="1" x:Name="RestartButton" Content="重新選擇" Height="32" Padding="12,0"
+            <Button Grid.Column="1" x:Name="RestartButton" Content="🏠 回首頁" Height="32" Padding="12,0"
                     Click="RestartButton_Click"
                     Background="#F1F5F9" Foreground="#475569" BorderBrush="#CBD5E1" BorderThickness="1"/>
         </Grid>

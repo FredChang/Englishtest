@@ -21,6 +21,25 @@ namespace Englishtest
         private int _seqIndex = 0;
         private bool _isRevealed = false;
 
+        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        {
+            base.OnPreviewKeyDown(e);
+            if (e.Key == Key.Escape || e.Key == Key.BrowserBack)
+            {
+                e.Handled = true;
+                Close();
+            }
+            else if (e.Key == Key.Back)
+            {
+                if (e.OriginalSource is TextBox tb && !string.IsNullOrEmpty(tb.SelectedText))
+                {
+                    return;
+                }
+                e.Handled = true;
+                Close();
+            }
+        }
+
         public SentencesWindow()
         {
             InitializeComponent();
