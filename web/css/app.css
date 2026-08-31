@@ -1192,47 +1192,10 @@ button {
   font-size: 1.25rem;
 }
 
-#screen-sentences.compact-mode .sent-stats-row {
-  margin-top: 4px;
-}
-
-#screen-sentences.compact-mode .sent-stat-badge {
-  font-size: 0.75rem;
-  padding: 2px 6px;
-}
-
-#screen-sentences.compact-mode .sent-controls-card {
-  padding: 8px 12px;
-  margin-bottom: 8px;
-}
-
-#screen-sentences.compact-mode .sent-control-grid {
-  gap: 8px;
-}
-
-#screen-sentences.compact-mode .sent-control-grid .field-label {
-  display: none;
-}
-
-#screen-sentences.compact-mode .sent-select {
-  padding: 5px 8px;
-  font-size: 0.85rem;
-  height: 32px;
-}
-
-#screen-sentences.compact-mode .sent-mode-btn {
-  padding: 5px 6px;
-  font-size: 0.8rem;
-  height: 32px;
-}
-
-#screen-sentences.compact-mode .sent-mask-toggle-row {
-  margin-top: 6px;
-  padding-top: 6px;
-}
-
-#screen-sentences.compact-mode .sent-switch-text {
-  font-size: 0.8rem;
+#screen-sentences.compact-mode .sent-stats-row,
+#screen-sentences.compact-mode .sent-controls-card,
+#screen-sentences.compact-mode .sent-badge-cat {
+  display: none !important;
 }
 
 #screen-sentences.compact-mode .sent-card {
