@@ -1227,6 +1227,205 @@ button {
   margin: 12px 0 0;
 }
 
+/* ==========================================================================
+   常用 1200 句練習：簡潔模式 (Compact Mode) 專屬樣式
+   ========================================================================== */
+
+#sent-compact-btn.active {
+  background: #ede9fe;
+  color: #7c3aed;
+  border-color: #c4b5fd;
+  font-weight: 700;
+}
+
+#screen-sentences.compact-mode .sent-header {
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-header h1 {
+  font-size: 1.25rem;
+}
+
+#screen-sentences.compact-mode .sent-stats-row {
+  margin-top: 4px;
+}
+
+#screen-sentences.compact-mode .sent-stat-badge {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+}
+
+#screen-sentences.compact-mode .sent-controls-card {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-control-grid {
+  gap: 8px;
+}
+
+#screen-sentences.compact-mode .sent-control-grid .field-label {
+  display: none;
+}
+
+#screen-sentences.compact-mode .sent-select {
+  padding: 5px 8px;
+  font-size: 0.85rem;
+  height: 32px;
+}
+
+#screen-sentences.compact-mode .sent-mode-btn {
+  padding: 5px 6px;
+  font-size: 0.8rem;
+  height: 32px;
+}
+
+#screen-sentences.compact-mode .sent-mask-toggle-row {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+
+#screen-sentences.compact-mode .sent-switch-text {
+  font-size: 0.8rem;
+}
+
+#screen-sentences.compact-mode .sent-card {
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-card-header {
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-badge-id,
+#screen-sentences.compact-mode .sent-badge-cat {
+  font-size: 0.78rem;
+  padding: 2px 8px;
+}
+
+#screen-sentences.compact-mode .sent-zh-box {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-zh-text {
+  font-size: clamp(1.15rem, 3.8vw, 1.35rem);
+  line-height: 1.35;
+}
+
+#screen-sentences.compact-mode .sent-en-box {
+  min-height: 52px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-en-text {
+  font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+  line-height: 1.35;
+}
+
+#screen-sentences.compact-mode .sent-actions-row {
+  margin: 10px 0;
+  gap: 6px;
+}
+
+#screen-sentences.compact-mode .sent-btn-action {
+  padding: 8px 6px;
+  font-size: 0.88rem;
+}
+
+/* 簡潔模式下之發音校正評分面板適配 */
+#screen-sentences.compact-mode .sent-eval-panel {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-eval-status {
+  font-size: 0.85rem;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+#screen-sentences.compact-mode .eval-pulse-dot {
+  width: 10px;
+  height: 10px;
+}
+
+#screen-sentences.compact-mode .sent-eval-score-row {
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+#screen-sentences.compact-mode .sent-eval-score-badge {
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+#screen-sentences.compact-mode .sent-eval-score-num {
+  font-size: 1.3rem;
+}
+
+#screen-sentences.compact-mode .sent-eval-grade {
+  font-size: 0.9rem;
+}
+
+#screen-sentences.compact-mode .sent-eval-summary {
+  font-size: 0.78rem;
+}
+
+#screen-sentences.compact-mode .sent-eval-words-title {
+  font-size: 0.76rem;
+  margin-bottom: 4px;
+}
+
+#screen-sentences.compact-mode .sent-eval-words {
+  gap: 4px;
+}
+
+#screen-sentences.compact-mode .word-chip {
+  padding: 2px 6px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+#screen-sentences.compact-mode .sent-eval-transcript-box {
+  margin-top: 6px;
+  padding: 6px 8px;
+  font-size: 0.82rem;
+}
+
+#screen-sentences.compact-mode .sent-learned-section {
+  padding-top: 8px;
+  margin-top: 2px;
+}
+
+#screen-sentences.compact-mode .btn-learned {
+  padding: 8px 10px;
+  font-size: 0.88rem;
+}
+
+#screen-sentences.compact-mode .sent-learned-hint {
+  display: none !important;
+}
+
+#screen-sentences.compact-mode .sent-nav-row {
+  margin-top: 8px;
+  gap: 8px;
+}
+
+#screen-sentences.compact-mode .sent-nav-row button {
+  padding: 10px 12px;
+}
+
+#screen-sentences.compact-mode .sent-btn-next {
+  font-size: 0.98rem;
+}
+
+#screen-sentences.compact-mode .sent-keyboard-hint {
+  display: none !important;
+}
+
 /* 句子清單 Modal */
 .sent-modal {
   position: fixed;

@@ -4,6 +4,7 @@ import { APP_VERSION } from './version.js';
 
 const STORAGE_KEY_MASKED = 'englishtest_masked_sentence_ids';
 const STORAGE_KEY_MASK_EN_DEFAULT = 'englishtest_mask_english_default';
+const STORAGE_KEY_COMPACT_MODE = 'englishtest_sentences_compact_mode';
 
 export class SentencesPractice {
   constructor(options = {}) {
@@ -14,6 +15,7 @@ export class SentencesPractice {
     this.categories = [];
     this.maskedIds = new Set();
     this.maskEnglishGlobal = true;
+    this.isCompactMode = false;
     this.currentSentence = null;
     this.history = [];
     this.historyIndex = -1;
@@ -146,6 +148,23 @@ export class SentencesPractice {
       localStorage.setItem('englishtest_compact_mode', String(!!this.compactMode));
     } catch (e) {
       console.warn('Failed to save sentence settings', e);
+    }
+  }
+
+  toggleCompactMode() {
+    this.compactMode = !this.compactMode;
+    this.saveSettings();
+    this.applyCompactMode();
+  }
+
+  applyCompactMode() {
+    if (!this.container) return;
+    this.container.classList.toggle('compact-mode', !!this.compactMode);
+    if (this.els.compactBtn) {
+      this.els.compactBtn.innerHTML = this.compactMode ? '📋 標準模式' : '✨ 簡潔模式';
+      this.els.compactBtn.title = this.compactMode ? '切換為標準模式' : '切換為簡潔模式';
+      this.els.compactBtn.classList.toggle('btn-primary', !!this.compactMode);
+      this.els.compactBtn.classList.toggle('btn-secondary', !this.compactMode);
     }
   }
 
