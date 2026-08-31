@@ -221,17 +221,16 @@
     <!-- 常用 1200 句練習畫面 -->
     <section id="screen-sentences" class="hidden">
       <header class="header sent-header">
-        <div>
-          <h1>常用 1200 句練習</h1>
+        <div class="sent-header-stats">
           <div class="sent-stats-row">
             <span class="sent-stat-badge unmasked">循環中: <b id="sent-stat-unmasked">1200</b> 句</span>
-            <span class="sent-stat-badge masked">已學會遮罩: <b id="sent-stat-masked">0</b> 句</span>
+            <span class="sent-stat-badge masked">已學會: <b id="sent-stat-masked">0</b> 句</span>
           </div>
         </div>
         <div class="sent-header-actions">
-          <button type="button" id="sent-compact-btn" class="btn-secondary" title="切換簡潔/標準面板">✨ 簡潔模式</button>
-          <button type="button" id="sent-manage-btn" class="btn-secondary" title="句子清單與管理">📋 清單管理</button>
-          <button type="button" id="sent-back-btn" class="btn-ghost">🏠 回首頁</button>
+          <button type="button" id="sent-compact-btn" class="btn-secondary sent-nav-btn" title="切換簡潔/標準面板">✨ 簡潔模式</button>
+          <button type="button" id="sent-manage-btn" class="btn-secondary sent-nav-btn" title="句子清單與管理">📋 清單管理</button>
+          <button type="button" id="sent-back-btn" class="btn-ghost sent-nav-btn" title="返回首頁">🏠 回首頁</button>
         </div>
       </header>
 
@@ -365,6 +364,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.2.5"></script>
+  <script type="module" src="js/app.js?v=2.2.6"></script>
 </body>
 </html>
