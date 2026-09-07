@@ -456,7 +456,42 @@ export class SentencesPractice {
       "weren't": ["were", "not"]
     };
 
-    const clean = (w) => w.toLowerCase().replace(/[^a-z0-9']/g, '').trim();
+    const numberWords = {
+      '0': ['zero', 'oh'],
+      '1': ['one', '1st', 'first'],
+      '2': ['two', '2nd', 'second'],
+      '3': ['three', '3rd', 'third'],
+      '4': ['four', '4th', 'fourth'],
+      '5': ['five', '5th', 'fifth'],
+      '6': ['six', '6th', 'sixth'],
+      '7': ['seven', '7th', 'seventh'],
+      '8': ['eight', '8th', 'eighth'],
+      '9': ['nine', '9th', 'ninth'],
+      '10': ['ten', '10th', 'tenth'],
+      '11': ['eleven'],
+      '12': ['twelve'],
+      '15': ['fifteen'],
+      '18': ['eighteen'],
+      '20': ['twenty'],
+      '24': ['twenty-four', 'twenty four'],
+      '30': ['thirty'],
+      '38': ['thirty-eight', 'thirty eight'],
+      '45': ['forty-five', 'forty five'],
+      '85': ['eighty-five', 'eighty five'],
+      '100': ['one hundred', 'hundred'],
+      '120': ['one hundred twenty', 'one twenty'],
+      '205': ['two hundred five', 'two zero five', 'two oh five'],
+      '300': ['three hundred'],
+      '1008': ['ten oh eight', 'one thousand eight'],
+      '8899': ['eight eight nine nine', 'eighty-eight ninety-nine']
+    };
+
+    const wordToNumber = {};
+    for (const [num, words] of Object.entries(numberWords)) {
+      for (const w of words) {
+        wordToNumber[w] = num;
+      }
+    }
 
     const levenshtein = (a, b) => {
       if (a === b) return 0;
@@ -481,54 +516,205 @@ export class SentencesPractice {
       return matrix[b.length][a.length];
     };
 
+    const getCandidatesForWord = (rawWord) => {
+      const candidates = [];
+      const base = rawWord.toLowerCase().replace(/[.,!?:;"'()]/g, '').trim();
+      const baseWithApos = rawWord.toLowerCase().replace(/[.,!?:;"()]/g, '').trim();
+
+      if (!base && !baseWithApos) return candidates;
+
+      if (base) candidates.push([base]);
+      if (baseWithApos && baseWithApos !== base) candidates.push([baseWithApos]);
+
+      if (contractionsMap[baseWithApos]) {
+        candidates.push(contractionsMap[baseWithApos]);
+      }
+
+      // Handle hyphenated words like check-in, check-out, win-win, 24-hour, 1-on-1
+      if (rawWord.includes('-')) {
+        const parts = rawWord.toLowerCase().replace(/[.,!?:;"'()]/g, '').split('-').filter(Boolean);
+        if (parts.length > 1) {
+          candidates.push(parts);
+          candidates.push([parts.join('')]);
+
+          const expandedParts = [];
+          let canExpandNum = false;
+          for (const p of parts) {
+            if (numberWords[p]) {
+              canExpandNum = true;
+              expandedParts.push(numberWords[p][0].split(/\s+/));
+            } else if (wordToNumber[p]) {
+              canExpandNum = true;
+              expandedParts.push([wordToNumber[p]]);
+            } else {
+              expandedParts.push([p]);
+            }
+          }
+          if (canExpandNum) {
+            candidates.push(expandedParts.flat());
+          }
+        }
+      }
+
+      if (rawWord === '/' || rawWord === '-') {
+        return [[]];
+      }
+
+      if (rawWord.includes('%')) {
+        const numPart = rawWord.replace(/[^0-9]/g, '');
+        if (numPart) {
+          candidates.push([numPart, 'percent']);
+          candidates.push([numPart, '%']);
+          candidates.push([numPart]);
+          if (numberWords[numPart]) {
+            for (const nw of numberWords[numPart]) {
+              candidates.push([...nw.split(/\s+/), 'percent']);
+            }
+          }
+        }
+      }
+
+      if (rawWord.includes(':')) {
+        const timeParts = rawWord.replace(/[^0-9:]/g, '').split(':');
+        if (timeParts.length === 2) {
+          candidates.push([timeParts[0], timeParts[1]]);
+          candidates.push([timeParts.join(':')]);
+          candidates.push([timeParts.join('')]);
+          const hrWords = numberWords[timeParts[0]] || [timeParts[0]];
+          const minWords = numberWords[timeParts[1]] || [timeParts[1]];
+          for (const h of hrWords) {
+            for (const m of minWords) {
+              candidates.push([...h.split(/\s+/), ...m.split(/\s+/)]);
+            }
+          }
+        }
+      }
+
+      if (/^\d+$/.test(base)) {
+        candidates.push([base]);
+        if (numberWords[base]) {
+          for (const nw of numberWords[base]) {
+            candidates.push(nw.split(/\s+/));
+          }
+        }
+      }
+
+      if (wordToNumber[base]) {
+        candidates.push([wordToNumber[base]]);
+      }
+
+      if (base === 'wifi' || base === 'wi-fi') {
+        candidates.push(['wifi']);
+        candidates.push(['wi', 'fi']);
+      }
+      if (base === 'pm') {
+        candidates.push(['pm']);
+        candidates.push(['p', 'm']);
+      }
+      if (base === 'am') {
+        candidates.push(['am']);
+        candidates.push(['a', 'm']);
+      }
+
+      const unique = [];
+      const seen = new Set();
+      for (const c of candidates) {
+        const key = c.join('|');
+        if (!seen.has(key)) {
+          seen.add(key);
+          unique.push(c);
+        }
+      }
+      return unique;
+    };
+
+    const normalizeSpokenTokens = (transcript) => {
+      return transcript
+        .toLowerCase()
+        .replace(/(\w+)\.([a-z]+)\b/g, '$1$2') // e.g. p.m. -> pm, a.m. -> am
+        .replace(/\b(\d+):00\b/g, '$1') // e.g. 3:00 -> 3
+        .split(/\s+/)
+        .map(w => w.replace(/[^\w\d':%-]/g, '').trim())
+        .filter(Boolean);
+    };
+
     const targetRawTokens = targetSentence.trim().split(/\s+/);
-    const spokenTokens = userTranscript.trim().split(/\s+/).map(clean).filter(Boolean);
+    const spokenTokens = normalizeSpokenTokens(userTranscript);
 
     let spokenIdx = 0;
     let matchedWeight = 0;
+    let validWordCount = 0;
     const wordResults = [];
 
     for (let i = 0; i < targetRawTokens.length; i++) {
       const raw = targetRawTokens[i];
-      const targetClean = clean(raw);
-      if (!targetClean) continue;
+      const candidates = getCandidatesForWord(raw);
 
+      if (candidates.length === 1 && candidates[0].length === 0) {
+        wordResults.push({ raw, status: 'match' });
+        continue;
+      }
+
+      if (candidates.length === 0) {
+        wordResults.push({ raw, status: 'match' });
+        continue;
+      }
+
+      validWordCount++;
       let status = 'miss';
+      let matchedLength = 0;
       let bestMatchIdx = -1;
 
-      // Lookahead window in spoken tokens (up to 4 tokens ahead)
-      const maxLookahead = Math.min(spokenTokens.length, spokenIdx + 4);
+      const maxLookahead = Math.min(spokenTokens.length, spokenIdx + 6);
+
+      // 1. Check for exact match among candidate token sequences
       for (let j = spokenIdx; j < maxLookahead; j++) {
-        const spoken = spokenTokens[j];
-        if (spoken === targetClean) {
-          status = 'match';
-          bestMatchIdx = j;
-          break;
+        for (const cand of candidates) {
+          const k = cand.length;
+          if (k === 0) continue;
+          if (j + k <= spokenTokens.length) {
+            let allMatch = true;
+            for (let m = 0; m < k; m++) {
+              const spk = spokenTokens[j + m].replace(/[^a-z0-9]/g, '');
+              const cnd = cand[m].replace(/[^a-z0-9]/g, '');
+              if (spk !== cnd) {
+                allMatch = false;
+                break;
+              }
+            }
+            if (allMatch) {
+              status = 'match';
+              matchedLength = k;
+              bestMatchIdx = j;
+              break;
+            }
+          }
         }
+        if (status === 'match') break;
+      }
 
-        // Check contractions
-        if (contractionsMap[targetClean] && contractionsMap[targetClean].includes(spoken)) {
-          status = 'match';
-          bestMatchIdx = j;
-          break;
-        }
-        if (contractionsMap[spoken] && contractionsMap[spoken].includes(targetClean)) {
-          status = 'match';
-          bestMatchIdx = j;
-          break;
-        }
-
-        // Check fuzzy distance
-        const dist = levenshtein(targetClean, spoken);
-        if (dist === 1 || (dist === 2 && targetClean.length >= 6)) {
-          status = 'near';
-          bestMatchIdx = j;
-          break;
+      // 2. Check for fuzzy / near match if no exact match found
+      if (status === 'miss') {
+        for (let j = spokenIdx; j < maxLookahead; j++) {
+          const spk = spokenTokens[j].replace(/[^a-z0-9]/g, '');
+          for (const cand of candidates) {
+            if (cand.length === 1) {
+              const cnd = cand[0].replace(/[^a-z0-9]/g, '');
+              const dist = levenshtein(cnd, spk);
+              if (dist === 1 || (dist === 2 && cnd.length >= 6)) {
+                status = 'near';
+                matchedLength = 1;
+                bestMatchIdx = j;
+                break;
+              }
+            }
+          }
+          if (status === 'near') break;
         }
       }
 
       if (status !== 'miss' && bestMatchIdx !== -1) {
-        spokenIdx = bestMatchIdx + 1;
+        spokenIdx = bestMatchIdx + matchedLength;
         if (status === 'match') {
           matchedWeight += 1.0;
         } else if (status === 'near') {
@@ -536,13 +722,10 @@ export class SentencesPractice {
         }
       }
 
-      wordResults.push({
-        raw,
-        status
-      });
+      wordResults.push({ raw, status });
     }
 
-    const totalWords = targetRawTokens.length || 1;
+    const totalWords = validWordCount || 1;
     const score = Math.min(100, Math.max(0, Math.round((matchedWeight / totalWords) * 100)));
 
     this.renderPronunciationResult({
