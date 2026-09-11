@@ -730,11 +730,11 @@ button {
 
 .sent-control-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr 1fr 1fr;
   gap: 12px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .sent-control-grid {
     grid-template-columns: 1fr;
   }

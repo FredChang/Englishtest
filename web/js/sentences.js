@@ -1,7 +1,8 @@
-// 常用 1000 句練習模組
-// 支援遮罩英文、遮罩句子（標記已學會排除出隨機循環名單）、發音朗讀與清單管理
+// 常用句子練習模組
+// 支援生活口語模式（預設）與標準生活 1200 句、遮罩英文、標記已學會排除出隨機循環、發音朗讀與評分
 import { APP_VERSION } from './version.js';
 
+const STORAGE_KEY_POOL = 'englishtest_sentences_pool';
 const STORAGE_KEY_MASKED = 'englishtest_masked_sentence_ids';
 const STORAGE_KEY_MASK_EN_DEFAULT = 'englishtest_mask_english_default';
 const STORAGE_KEY_COMPACT = 'englishtest_compact_mode';
@@ -11,6 +12,9 @@ export class SentencesPractice {
     this.container = options.container || document.getElementById('screen-sentences');
     this.onBack = options.onBack || (() => {});
     
+    this.currentPool = 'spoken'; // 'spoken' | 'standard'
+    this.loadedPool = null;
+    this.cacheData = {};
     this.sentences = [];
     this.categories = [];
     this.maskedIds = new Set();
@@ -49,6 +53,7 @@ export class SentencesPractice {
       manageBtn: document.getElementById('sent-manage-btn'),
       statUnmasked: document.getElementById('sent-stat-unmasked'),
       statMasked: document.getElementById('sent-stat-masked'),
+      poolSelect: document.getElementById('sent-pool-select'),
       categorySelect: document.getElementById('sent-category-select'),
       modeRandomBtn: document.getElementById('sent-mode-random'),
       modeSeqBtn: document.getElementById('sent-mode-seq'),
@@ -98,13 +103,38 @@ export class SentencesPractice {
     };
   }
 
-  loadSettings() {
-    try {
-      const savedMasked = localStorage.getItem(STORAGE_KEY_MASKED);
-      if (savedMasked) {
+  getMaskedStorageKey() {
+    return `${STORAGE_KEY_MASKED}_${this.currentPool}`;
+  }
+
+  loadMaskedForCurrentPool() {
+    this.maskedIds = new Set();
+    const key = this.getMaskedStorageKey();
+    let savedMasked = localStorage.getItem(key);
+    if (!savedMasked && this.currentPool === 'standard') {
+      savedMasked = localStorage.getItem(STORAGE_KEY_MASKED);
+    }
+    if (savedMasked) {
+      try {
         const ids = JSON.parse(savedMasked);
         this.maskedIds = new Set(ids);
+      } catch (e) {}
+    }
+  }
+
+  loadSettings() {
+    try {
+      const savedPool = localStorage.getItem(STORAGE_KEY_POOL);
+      if (savedPool === 'spoken' || savedPool === 'standard') {
+        this.currentPool = savedPool;
+      } else {
+        this.currentPool = 'spoken';
       }
+      if (this.els.poolSelect) {
+        this.els.poolSelect.value = this.currentPool;
+      }
+      this.loadMaskedForCurrentPool();
+
       const savedMaskEn = localStorage.getItem(STORAGE_KEY_MASK_EN_DEFAULT);
       if (savedMaskEn !== null) {
         this.maskEnglishGlobal = savedMaskEn === 'true';
@@ -141,7 +171,8 @@ export class SentencesPractice {
 
   saveSettings() {
     try {
-      localStorage.setItem(STORAGE_KEY_MASKED, JSON.stringify(Array.from(this.maskedIds)));
+      localStorage.setItem(this.getMaskedStorageKey(), JSON.stringify(Array.from(this.maskedIds)));
+      localStorage.setItem(STORAGE_KEY_POOL, this.currentPool);
       localStorage.setItem(STORAGE_KEY_MASK_EN_DEFAULT, String(this.maskEnglishGlobal));
       localStorage.setItem(STORAGE_KEY_COMPACT, String(!!this.compactMode));
     } catch (e) {
@@ -149,36 +180,45 @@ export class SentencesPractice {
     }
   }
 
-  async loadData() {
-    if (this.sentences.length > 0) return;
+  async loadData(force = false) {
+    if (!force && this.sentences.length > 0 && this.loadedPool === this.currentPool) return;
     try {
-      const candidates = [
-        'data/sentences_1000.json',
-        'sentences_1000.json',
-        './data/sentences_1000.json',
-        './sentences_1000.json',
-        '../data/sentences_1000.json'
-      ];
-
+      const poolFile = this.currentPool === 'standard' ? 'sentences_1000.json' : 'sentences_spoken.json';
+      
       let data = null;
-      for (const p of candidates) {
-        try {
-          const res = await fetch(`${p}?v=${APP_VERSION}`);
-          if (res.ok) {
-            const json = await res.json();
-            if (Array.isArray(json) && json.length > 0) {
-              data = json;
-              break;
+      if (this.cacheData[this.currentPool] && Array.isArray(this.cacheData[this.currentPool])) {
+        data = this.cacheData[this.currentPool];
+      } else {
+        const candidates = [
+          `data/${poolFile}`,
+          `${poolFile}`,
+          `./data/${poolFile}`,
+          `./${poolFile}`,
+          `../data/${poolFile}`
+        ];
+
+        for (const p of candidates) {
+          try {
+            const res = await fetch(`${p}?v=${APP_VERSION}`);
+            if (res.ok) {
+              const json = await res.json();
+              if (Array.isArray(json) && json.length > 0) {
+                data = json;
+                break;
+              }
             }
-          }
-        } catch (err) {}
+          } catch (err) {}
+        }
       }
 
       if (!data) {
-        throw new Error('無法載入 sentences_1000.json 檔案');
+        throw new Error(`無法載入 ${poolFile} 檔案`);
       }
 
+      this.cacheData[this.currentPool] = data;
       this.sentences = data;
+      this.loadedPool = this.currentPool;
+      this.loadMaskedForCurrentPool();
 
       const catSet = new Set();
       this.sentences.forEach(s => {
@@ -188,8 +228,27 @@ export class SentencesPractice {
       this.populateCategories();
       this.updateStats();
     } catch (err) {
-      console.error('Failed to load sentences_1000.json', err);
-      alert('載入 1000 句題庫失敗，請重新整理頁面或清除快取。');
+      console.error('Failed to load sentences data', err);
+      alert('載入句子題庫失敗，請重新整理頁面或清除快取。');
+    }
+  }
+
+  async switchPool(newPool) {
+    if (this.currentPool === newPool && this.sentences.length > 0) return;
+    this.currentPool = newPool;
+    this.saveSettings();
+    if (this.els.poolSelect) {
+      this.els.poolSelect.value = newPool;
+    }
+    this.currentCategory = 'all';
+    this.history = [];
+    this.historyIndex = -1;
+    this.sequentialIndex = 0;
+    this.currentSentence = null;
+    await this.loadData(true);
+    this.next();
+    if (this.els.modal && !this.els.modal.classList.contains('hidden')) {
+      this.renderModalList();
     }
   }
 
@@ -203,8 +262,10 @@ export class SentencesPractice {
       }))
       .join('');
     this.els.categorySelect.innerHTML = optionsHtml;
+    this.els.categorySelect.value = this.currentCategory || 'all';
     if (this.els.modalCatSelect) {
       this.els.modalCatSelect.innerHTML = optionsHtml;
+      this.els.modalCatSelect.value = this.modalCategory || 'all';
     }
     if (this.els.modalTabAll) {
       this.els.modalTabAll.textContent = `全部 (${total})`;
@@ -803,6 +864,10 @@ export class SentencesPractice {
 
     this.els.manageBtn?.addEventListener('click', () => {
       this.openModal();
+    });
+
+    this.els.poolSelect?.addEventListener('change', (e) => {
+      this.switchPool(e.target.value);
     });
 
     this.els.categorySelect?.addEventListener('change', (e) => {

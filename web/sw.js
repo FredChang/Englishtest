@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v2.2.7';
+const CACHE = 'englishtest-v2.3.0';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -12,6 +12,8 @@ const PRECACHE_ASSETS = [
   './js/guide-reading.js',
   './js/sentences.js',
   './js/version.js',
+  './data/sentences_spoken.json',
+  './sentences_spoken.json',
   './data/sentences_1000.json',
   './sentences_1000.json',
   './words.json',
@@ -68,6 +70,7 @@ function isAppCodeRequest(request) {
       pathname.endsWith('index.html') ||
       pathname.includes('/js/') ||
       pathname.includes('/css/') ||
+      pathname.endsWith('sentences_spoken.json') ||
       pathname.endsWith('sentences_1000.json')
     );
   } catch {

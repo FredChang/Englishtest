@@ -11,9 +11,11 @@ namespace Englishtest.Services
     {
         private readonly List<SentenceItem> _allSentences = new List<SentenceItem>();
         private readonly HashSet<int> _maskedIds = new HashSet<int>();
-        private readonly string _storagePath;
+        private readonly string _storageDir;
+        private string _currentPool = "spoken";
         private readonly Random _rand = new Random();
 
+        public string CurrentPool => _currentPool;
         public IReadOnlyList<SentenceItem> AllSentences => _allSentences;
         public IReadOnlyList<string> Categories { get; private set; } = new List<string>();
         public int TotalCount => _allSentences.Count;
@@ -23,32 +25,42 @@ namespace Englishtest.Services
         public SentencesService()
         {
             var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var dir = Path.Combine(appData, "Englishtest");
-            if (!Directory.Exists(dir))
+            _storageDir = Path.Combine(appData, "Englishtest");
+            if (!Directory.Exists(_storageDir))
             {
-                Directory.CreateDirectory(dir);
+                Directory.CreateDirectory(_storageDir);
             }
-            _storagePath = Path.Combine(dir, "masked_sentences.json");
-            LoadMaskedSettings();
         }
 
-        public bool Load()
+        private string GetStoragePath(string pool)
         {
+            return Path.Combine(_storageDir, $"masked_sentences_{pool}.json");
+        }
+
+        public bool Load(string poolType = "spoken")
+        {
+            _currentPool = poolType;
             _allSentences.Clear();
+            _maskedIds.Clear();
+            LoadMaskedSettings();
+
+            string fileName = poolType == "standard" ? "sentences_1000.json" : "sentences_spoken.json";
+
             var candidates = new[]
             {
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "sentences_1000.json"),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sentences_1000.json"),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "web", "data", "sentences_1000.json"),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "web", "data", "sentences_1000.json"),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "data", "sentences_1000.json"),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "sentences_1000.json")
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", fileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "web", "data", fileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "web", "data", fileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "data", fileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", fileName)
             };
 
             string foundPath = candidates.FirstOrDefault(File.Exists);
             if (foundPath == null)
             {
-                return false;
+                foundPath = candidates.Select(c => c.Replace(fileName, "sentences_1000.json")).FirstOrDefault(File.Exists);
+                if (foundPath == null) return false;
             }
 
             try
@@ -79,9 +91,15 @@ namespace Englishtest.Services
         {
             try
             {
-                if (File.Exists(_storagePath))
+                string path = GetStoragePath(_currentPool);
+                if (!File.Exists(path) && _currentPool == "standard")
                 {
-                    var json = File.ReadAllText(_storagePath);
+                    path = Path.Combine(_storageDir, "masked_sentences.json");
+                }
+
+                if (File.Exists(path))
+                {
+                    var json = File.ReadAllText(path);
                     var serializer = new JavaScriptSerializer();
                     var list = serializer.Deserialize<List<int>>(json);
                     if (list != null)
@@ -97,10 +115,11 @@ namespace Englishtest.Services
         {
             try
             {
+                string path = GetStoragePath(_currentPool);
                 var list = _maskedIds.ToList();
                 var serializer = new JavaScriptSerializer();
                 var json = serializer.Serialize(list);
-                File.WriteAllText(_storagePath, json);
+                File.WriteAllText(path, json);
             }
             catch { }
         }

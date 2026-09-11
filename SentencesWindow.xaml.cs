@@ -65,21 +65,36 @@ namespace Englishtest
             catch { }
         }
 
-        private void LoadData()
+        private void LoadData(string poolType = "spoken")
         {
-            if (_service.Load())
+            if (_service.Load(poolType))
             {
                 var cats = new List<string> { "全部類別" };
                 cats.AddRange(_service.Categories);
                 CategoryComboBox.ItemsSource = cats;
                 CategoryComboBox.SelectedIndex = 0;
 
+                _history.Clear();
+                _historyIndex = -1;
+                _seqIndex = 0;
+                _currentSentence = null;
+
                 UpdateStats();
                 NextSentence();
             }
             else
             {
-                MessageBox.Show("找不到 1000 句題庫檔案 (sentences_1000.json)。", "載入失敗", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"找不到句子題庫檔案 ({poolType})。", "載入失敗", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void PoolComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (!IsLoaded) return;
+            if (PoolComboBox?.SelectedItem is ComboBoxItem item && item.Tag != null)
+            {
+                string pool = item.Tag.ToString();
+                LoadData(pool);
             }
         }
 

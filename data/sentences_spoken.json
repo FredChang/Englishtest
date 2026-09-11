@@ -1,0 +1,7202 @@
+[
+  {
+    "id": 1,
+    "category": "日常問候與道別",
+    "en": "What's up?",
+    "zh": "嗨！最近如何？"
+  },
+  {
+    "id": 2,
+    "category": "日常問候與道別",
+    "en": "How's it going?",
+    "zh": "最近過得怎麼樣？"
+  },
+  {
+    "id": 3,
+    "category": "日常問候與道別",
+    "en": "What's new?",
+    "zh": "有什麼新鮮事嗎？"
+  },
+  {
+    "id": 4,
+    "category": "日常問候與道別",
+    "en": "How are things?",
+    "zh": "近況如何？"
+  },
+  {
+    "id": 5,
+    "category": "日常問候與道別",
+    "en": "How've you been?",
+    "zh": "最近好嗎？"
+  },
+  {
+    "id": 6,
+    "category": "日常問候與道別",
+    "en": "Good to see you!",
+    "zh": "很高興見到你！"
+  },
+  {
+    "id": 7,
+    "category": "日常問候與道別",
+    "en": "Great seeing you again!",
+    "zh": "太高興又碰見你了！"
+  },
+  {
+    "id": 8,
+    "category": "日常問候與道別",
+    "en": "Long time no see!",
+    "zh": "好久不見！"
+  },
+  {
+    "id": 9,
+    "category": "日常問候與道別",
+    "en": "Look who it is!",
+    "zh": "看看這是誰啊！"
+  },
+  {
+    "id": 10,
+    "category": "日常問候與道別",
+    "en": "Morning!",
+    "zh": "早啊！"
+  },
+  {
+    "id": 11,
+    "category": "日常問候與道別",
+    "en": "Afternoon!",
+    "zh": "午安！"
+  },
+  {
+    "id": 12,
+    "category": "日常問候與道別",
+    "en": "Evening!",
+    "zh": "晚上好！"
+  },
+  {
+    "id": 13,
+    "category": "日常問候與道別",
+    "en": "How's your day going?",
+    "zh": "你今天過得如何？"
+  },
+  {
+    "id": 14,
+    "category": "日常問候與道別",
+    "en": "How was your day?",
+    "zh": "你今天過得好嗎？"
+  },
+  {
+    "id": 15,
+    "category": "日常問候與道別",
+    "en": "How was your weekend?",
+    "zh": "你週末過得怎麼樣？"
+  },
+  {
+    "id": 16,
+    "category": "日常問候與道別",
+    "en": "Sleep well?",
+    "zh": "昨晚睡得好嗎？"
+  },
+  {
+    "id": 17,
+    "category": "日常問候與道別",
+    "en": "Did you sleep okay?",
+    "zh": "有睡好嗎？"
+  },
+  {
+    "id": 18,
+    "category": "日常問候與道別",
+    "en": "Catch you later!",
+    "zh": "待會兒聊！／回頭見！"
+  },
+  {
+    "id": 19,
+    "category": "日常問候與道別",
+    "en": "See you around!",
+    "zh": "隨時再見！"
+  },
+  {
+    "id": 20,
+    "category": "日常問候與道別",
+    "en": "See ya!",
+    "zh": "先走囉！掰掰！"
+  },
+  {
+    "id": 21,
+    "category": "日常問候與道別",
+    "en": "Talk soon!",
+    "zh": "晚點再聊！"
+  },
+  {
+    "id": 22,
+    "category": "日常問候與道別",
+    "en": "I gotta run.",
+    "zh": "我得先走了。"
+  },
+  {
+    "id": 23,
+    "category": "日常問候與道別",
+    "en": "I gotta bounce.",
+    "zh": "我該動身閃人囉。"
+  },
+  {
+    "id": 24,
+    "category": "日常問候與道別",
+    "en": "I'm outta here.",
+    "zh": "我先撤了。"
+  },
+  {
+    "id": 25,
+    "category": "日常問候與道別",
+    "en": "I gotta head out.",
+    "zh": "我得準備出發了。"
+  },
+  {
+    "id": 26,
+    "category": "日常問候與道別",
+    "en": "I should get going.",
+    "zh": "我想我差不多該走了。"
+  },
+  {
+    "id": 27,
+    "category": "日常問候與道別",
+    "en": "Time for me to go.",
+    "zh": "我該出門了。"
+  },
+  {
+    "id": 28,
+    "category": "日常問候與道別",
+    "en": "Take care!",
+    "zh": "保重喔！／多加小心！"
+  },
+  {
+    "id": 29,
+    "category": "日常問候與道別",
+    "en": "Take it easy!",
+    "zh": "放輕鬆點！／別太累喔！"
+  },
+  {
+    "id": 30,
+    "category": "日常問候與道別",
+    "en": "Have a good one!",
+    "zh": "祝你今天愉快！"
+  },
+  {
+    "id": 31,
+    "category": "日常問候與道別",
+    "en": "Have a great day!",
+    "zh": "祝你有個美好的一天！"
+  },
+  {
+    "id": 32,
+    "category": "日常問候與道別",
+    "en": "Have a good night!",
+    "zh": "祝你有個美好的夜晚！"
+  },
+  {
+    "id": 33,
+    "category": "日常問候與道別",
+    "en": "Have a safe trip!",
+    "zh": "路上小心喔！"
+  },
+  {
+    "id": 34,
+    "category": "日常問候與道別",
+    "en": "Get home safe!",
+    "zh": "安全到家喔！"
+  },
+  {
+    "id": 35,
+    "category": "日常問候與道別",
+    "en": "Sleep tight!",
+    "zh": "睡個好覺！"
+  },
+  {
+    "id": 36,
+    "category": "日常問候與道別",
+    "en": "Sweet dreams!",
+    "zh": "祝你好夢！"
+  },
+  {
+    "id": 37,
+    "category": "日常問候與道別",
+    "en": "Stay in touch!",
+    "zh": "保持聯絡喔！"
+  },
+  {
+    "id": 38,
+    "category": "日常問候與道別",
+    "en": "Keep me posted!",
+    "zh": "隨時讓我知道後續情況！"
+  },
+  {
+    "id": 39,
+    "category": "日常問候與道別",
+    "en": "Let me know when you're free.",
+    "zh": "你有空時跟我說一聲。"
+  },
+  {
+    "id": 40,
+    "category": "日常問候與道別",
+    "en": "Text me later.",
+    "zh": "晚點傳訊息給我。"
+  },
+  {
+    "id": 41,
+    "category": "日常問候與道別",
+    "en": "Call me anytime.",
+    "zh": "隨時打給我。"
+  },
+  {
+    "id": 42,
+    "category": "日常問候與道別",
+    "en": "Welcome!",
+    "zh": "歡迎！"
+  },
+  {
+    "id": 43,
+    "category": "日常問候與道別",
+    "en": "Welcome back!",
+    "zh": "歡迎回來！"
+  },
+  {
+    "id": 44,
+    "category": "日常問候與道別",
+    "en": "Make yourself comfortable.",
+    "zh": "別客氣，放輕鬆當自己家。"
+  },
+  {
+    "id": 45,
+    "category": "日常問候與道別",
+    "en": "Come on in!",
+    "zh": "快請進！"
+  },
+  {
+    "id": 46,
+    "category": "日常問候與道別",
+    "en": "Thanks for coming over.",
+    "zh": "謝謝你特地過來。"
+  },
+  {
+    "id": 47,
+    "category": "日常問候與道別",
+    "en": "Thanks for dropping by.",
+    "zh": "謝謝你順道過來坐坐。"
+  },
+  {
+    "id": 48,
+    "category": "日常問候與道別",
+    "en": "Nice chatting with you.",
+    "zh": "跟你聊天很愉快。"
+  },
+  {
+    "id": 49,
+    "category": "日常問候與道別",
+    "en": "So glad we ran into each other.",
+    "zh": "真高興今天巧遇你。"
+  },
+  {
+    "id": 50,
+    "category": "日常問候與道別",
+    "en": "Until next time!",
+    "zh": "下次見囉！"
+  },
+  {
+    "id": 51,
+    "category": "日常問候與道別",
+    "en": "Peace out!",
+    "zh": "走囉！再會！"
+  },
+  {
+    "id": 52,
+    "category": "日常問候與道別",
+    "en": "See you tomorrow morning.",
+    "zh": "明天一早見。"
+  },
+  {
+    "id": 53,
+    "category": "日常問候與道別",
+    "en": "See you next week.",
+    "zh": "下週見。"
+  },
+  {
+    "id": 54,
+    "category": "日常問候與道別",
+    "en": "Enjoy your weekend!",
+    "zh": "週末好好享受！"
+  },
+  {
+    "id": 55,
+    "category": "日常問候與道別",
+    "en": "Enjoy your trip!",
+    "zh": "旅行玩得開心！"
+  },
+  {
+    "id": 56,
+    "category": "日常問候與道別",
+    "en": "Have fun today!",
+    "zh": "今天玩得盡興點！"
+  },
+  {
+    "id": 57,
+    "category": "日常問候與道別",
+    "en": "Best of luck!",
+    "zh": "祝你好運！"
+  },
+  {
+    "id": 58,
+    "category": "日常問候與道別",
+    "en": "Fingers crossed!",
+    "zh": "為你祈求好運！"
+  },
+  {
+    "id": 59,
+    "category": "日常問候與道別",
+    "en": "Say hi to your family.",
+    "zh": "幫我向你家人問好。"
+  },
+  {
+    "id": 60,
+    "category": "日常問候與道別",
+    "en": "Give everyone my love.",
+    "zh": "代我向大家問好。"
+  },
+  {
+    "id": 61,
+    "category": "日常問候與道別",
+    "en": "What bring you here?",
+    "zh": "是什麼風把你吹來的？"
+  },
+  {
+    "id": 62,
+    "category": "日常問候與道別",
+    "en": "Fancy meeting you here!",
+    "zh": "真巧，居然在這裡遇到你！"
+  },
+  {
+    "id": 63,
+    "category": "日常問候與道別",
+    "en": "What a nice surprise!",
+    "zh": "真是個大驚喜！"
+  },
+  {
+    "id": 64,
+    "category": "日常問候與道別",
+    "en": "How's your morning been?",
+    "zh": "你今天早上一早還好嗎？"
+  },
+  {
+    "id": 65,
+    "category": "日常問候與道別",
+    "en": "How's your week going?",
+    "zh": "你這週過得怎麼樣？"
+  },
+  {
+    "id": 66,
+    "category": "日常問候與道別",
+    "en": "Same as always.",
+    "zh": "跟平常一樣老樣子。"
+  },
+  {
+    "id": 67,
+    "category": "日常問候與道別",
+    "en": "Can't complain.",
+    "zh": "還不錯啦，沒什麼好挑剔的。"
+  },
+  {
+    "id": 68,
+    "category": "日常問候與道別",
+    "en": "Pretty good, thanks!",
+    "zh": "滿好的，謝謝！"
+  },
+  {
+    "id": 69,
+    "category": "日常問候與道別",
+    "en": "Never better!",
+    "zh": "好得不能再好了！"
+  },
+  {
+    "id": 70,
+    "category": "日常問候與道別",
+    "en": "Just busy as usual.",
+    "zh": "就跟平常一樣忙。"
+  },
+  {
+    "id": 71,
+    "category": "日常問候與道別",
+    "en": "Hanging in there.",
+    "zh": "還撐得住／還過得去。"
+  },
+  {
+    "id": 72,
+    "category": "日常問候與道別",
+    "en": "Not bad at all.",
+    "zh": "挺不賴的。"
+  },
+  {
+    "id": 73,
+    "category": "日常問候與道別",
+    "en": "Could be better.",
+    "zh": "還可以更好／普普通通。"
+  },
+  {
+    "id": 74,
+    "category": "日常問候與道別",
+    "en": "Could be worse.",
+    "zh": "至少還不算太糟。"
+  },
+  {
+    "id": 75,
+    "category": "日常問候與道別",
+    "en": "Just the usual stuff.",
+    "zh": "就平常那些瑣事。"
+  },
+  {
+    "id": 76,
+    "category": "日常問候與道別",
+    "en": "Living the dream!",
+    "zh": "過得爽歪歪！／日子充實極了！"
+  },
+  {
+    "id": 77,
+    "category": "日常問候與道別",
+    "en": "Surviving!",
+    "zh": "還活著／在硬撐！"
+  },
+  {
+    "id": 78,
+    "category": "日常問候與道別",
+    "en": "Busy day today.",
+    "zh": "今天真是忙碌的一天。"
+  },
+  {
+    "id": 79,
+    "category": "日常問候與道別",
+    "en": "Long time, friend!",
+    "zh": "老朋友，好久不見！"
+  },
+  {
+    "id": 80,
+    "category": "日常問候與道別",
+    "en": "Good seeing your face!",
+    "zh": "很高興看到你！"
+  },
+  {
+    "id": 81,
+    "category": "日常問候與道別",
+    "en": "Catch up soon, okay?",
+    "zh": "我們近期敘舊一下，好嗎？"
+  },
+  {
+    "id": 82,
+    "category": "日常問候與道別",
+    "en": "Let's do this again soon.",
+    "zh": "我們改天再來約。"
+  },
+  {
+    "id": 83,
+    "category": "日常問候與道別",
+    "en": "Don't be a stranger!",
+    "zh": "別斷了聯絡喔！／常來玩喔！"
+  },
+  {
+    "id": 84,
+    "category": "日常問候與道別",
+    "en": "Look after yourself.",
+    "zh": "好好照顧自己。"
+  },
+  {
+    "id": 85,
+    "category": "日常問候與道別",
+    "en": "Drive safe!",
+    "zh": "開車小心！"
+  },
+  {
+    "id": 86,
+    "category": "日常問候與道別",
+    "en": "Fly safe!",
+    "zh": "飛行平安！"
+  },
+  {
+    "id": 87,
+    "category": "日常問候與道別",
+    "en": "Have a blast!",
+    "zh": "玩得痛快點！"
+  },
+  {
+    "id": 88,
+    "category": "日常問候與道別",
+    "en": "Take care of business!",
+    "zh": "好好處理正事！"
+  },
+  {
+    "id": 89,
+    "category": "日常問候與道別",
+    "en": "Catch you in a bit.",
+    "zh": "待會兒見。"
+  },
+  {
+    "id": 90,
+    "category": "日常問候與道別",
+    "en": "See you in five minutes.",
+    "zh": "五分鐘後見。"
+  },
+  {
+    "id": 91,
+    "category": "日常問候與道別",
+    "en": "I'm on my way out.",
+    "zh": "我正準備出門。"
+  },
+  {
+    "id": 92,
+    "category": "日常問候與道別",
+    "en": "Heading out now.",
+    "zh": "現在出發囉。"
+  },
+  {
+    "id": 93,
+    "category": "日常問候與道別",
+    "en": "Just stepped out.",
+    "zh": "剛踏出門。"
+  },
+  {
+    "id": 94,
+    "category": "日常問候與道別",
+    "en": "Back in a minute.",
+    "zh": "馬上回來。"
+  },
+  {
+    "id": 95,
+    "category": "日常問候與道別",
+    "en": "Be right back.",
+    "zh": "馬上回來喔。"
+  },
+  {
+    "id": 96,
+    "category": "日常問候與道別",
+    "en": "Hold that thought.",
+    "zh": "先打住一下，等等繼續聊。"
+  },
+  {
+    "id": 97,
+    "category": "日常問候與道別",
+    "en": "Ready to roll?",
+    "zh": "準備好出發了嗎？"
+  },
+  {
+    "id": 98,
+    "category": "日常問候與道別",
+    "en": "Let's hit the road.",
+    "zh": "我們動身出發吧。"
+  },
+  {
+    "id": 99,
+    "category": "日常問候與道別",
+    "en": "Time to take off.",
+    "zh": "該走人囉。"
+  },
+  {
+    "id": 100,
+    "category": "日常問候與道別",
+    "en": "Catch you on the flip side.",
+    "zh": "回頭見囉！"
+  },
+  {
+    "id": 101,
+    "category": "社交閒聊與即時反應",
+    "en": "Totally!",
+    "zh": "完全同意！太贊成了！"
+  },
+  {
+    "id": 102,
+    "category": "社交閒聊與即時反應",
+    "en": "Exactly!",
+    "zh": "沒錯！完全就是這樣！"
+  },
+  {
+    "id": 103,
+    "category": "社交閒聊與即時反應",
+    "en": "Definitely!",
+    "zh": "絕對是這樣！肯定沒錯！"
+  },
+  {
+    "id": 104,
+    "category": "社交閒聊與即時反應",
+    "en": "Absolutely!",
+    "zh": "毫無疑問！完全同意！"
+  },
+  {
+    "id": 105,
+    "category": "社交閒聊與即時反應",
+    "en": "Fair enough.",
+    "zh": "有道理，我可以接受。"
+  },
+  {
+    "id": 106,
+    "category": "社交閒聊與即時反應",
+    "en": "Makes sense.",
+    "zh": "說得通／滿有道理的。"
+  },
+  {
+    "id": 107,
+    "category": "社交閒聊與即時反應",
+    "en": "That explains it.",
+    "zh": "原來是這樣啊，難怪！"
+  },
+  {
+    "id": 108,
+    "category": "社交閒聊與即時反應",
+    "en": "I hear you.",
+    "zh": "我懂你的感受／我明白。"
+  },
+  {
+    "id": 109,
+    "category": "社交閒聊與即時反應",
+    "en": "Tell me about it!",
+    "zh": "這還用說嗎！我太懂了！"
+  },
+  {
+    "id": 110,
+    "category": "社交閒聊與即時反應",
+    "en": "You can say that again!",
+    "zh": "你說得太對了！"
+  },
+  {
+    "id": 111,
+    "category": "社交閒聊與即時反應",
+    "en": "No way!",
+    "zh": "不會吧！怎麼可能！"
+  },
+  {
+    "id": 112,
+    "category": "社交閒聊與即時反應",
+    "en": "Are you serious?",
+    "zh": "你是認真的嗎？"
+  },
+  {
+    "id": 113,
+    "category": "社交閒聊與即時反應",
+    "en": "You're kidding!",
+    "zh": "你在開玩笑吧！"
+  },
+  {
+    "id": 114,
+    "category": "社交閒聊與即時反應",
+    "en": "For real?",
+    "zh": "真的假的啦？"
+  },
+  {
+    "id": 115,
+    "category": "社交閒聊與即時反應",
+    "en": "I bet!",
+    "zh": "我想也是！肯定是這樣！"
+  },
+  {
+    "id": 116,
+    "category": "社交閒聊與即時反應",
+    "en": "No wonder!",
+    "zh": "難怪會這樣！"
+  },
+  {
+    "id": 117,
+    "category": "社交閒聊與即時反應",
+    "en": "My bad!",
+    "zh": "我的錯！抱歉抱歉！"
+  },
+  {
+    "id": 118,
+    "category": "社交閒聊與即時反應",
+    "en": "No worries!",
+    "zh": "別擔心！沒關係啦！"
+  },
+  {
+    "id": 119,
+    "category": "社交閒聊與即時反應",
+    "en": "No big deal.",
+    "zh": "沒什麼大不了的。"
+  },
+  {
+    "id": 120,
+    "category": "社交閒聊與即時反應",
+    "en": "No biggie!",
+    "zh": "小事一樁！別放在心上！"
+  },
+  {
+    "id": 121,
+    "category": "社交閒聊與即時反應",
+    "en": "Don't sweat it.",
+    "zh": "別太緊張啦／小事啦。"
+  },
+  {
+    "id": 122,
+    "category": "社交閒聊與即時反應",
+    "en": "It happens.",
+    "zh": "難免會這樣啦。"
+  },
+  {
+    "id": 123,
+    "category": "社交閒聊與即時反應",
+    "en": "You're good.",
+    "zh": "你沒事啦／沒問題的。"
+  },
+  {
+    "id": 124,
+    "category": "社交閒聊與即時反應",
+    "en": "All good!",
+    "zh": "一切都好／沒問題！"
+  },
+  {
+    "id": 125,
+    "category": "社交閒聊與即時反應",
+    "en": "I'm down!",
+    "zh": "算我一個！我很想去！"
+  },
+  {
+    "id": 126,
+    "category": "社交閒聊與即時反應",
+    "en": "I'm in!",
+    "zh": "我加入！我也要！"
+  },
+  {
+    "id": 127,
+    "category": "社交閒聊與即時反應",
+    "en": "Count me in!",
+    "zh": "算我一份！"
+  },
+  {
+    "id": 128,
+    "category": "社交閒聊與即時反應",
+    "en": "Same here!",
+    "zh": "我也是這樣！"
+  },
+  {
+    "id": 129,
+    "category": "社交閒聊與即時反應",
+    "en": "Me neither.",
+    "zh": "我也沒有／我也不覺得。"
+  },
+  {
+    "id": 130,
+    "category": "社交閒聊與即時反應",
+    "en": "Good call!",
+    "zh": "好決定！你選得好！"
+  },
+  {
+    "id": 131,
+    "category": "社交閒聊與即時反應",
+    "en": "Nice one!",
+    "zh": "幹得好！這招厲害！"
+  },
+  {
+    "id": 132,
+    "category": "社交閒聊與即時反應",
+    "en": "Way to go!",
+    "zh": "做得很棒！太讚了！"
+  },
+  {
+    "id": 133,
+    "category": "社交閒聊與即時反應",
+    "en": "Good for you!",
+    "zh": "真替你高興！"
+  },
+  {
+    "id": 134,
+    "category": "社交閒聊與即時反應",
+    "en": "Lucky you!",
+    "zh": "你真幸運！好羨慕！"
+  },
+  {
+    "id": 135,
+    "category": "社交閒聊與即時反應",
+    "en": "Must be nice!",
+    "zh": "那一定很爽吧！真好！"
+  },
+  {
+    "id": 136,
+    "category": "社交閒聊與即時反應",
+    "en": "I feel you.",
+    "zh": "我能體會你的心情。"
+  },
+  {
+    "id": 137,
+    "category": "社交閒聊與即時反應",
+    "en": "Go for it!",
+    "zh": "放手去做吧！衝了！"
+  },
+  {
+    "id": 138,
+    "category": "社交閒聊與即時反應",
+    "en": "Why not?",
+    "zh": "有何不可呢？試試看啊！"
+  },
+  {
+    "id": 139,
+    "category": "社交閒聊與即時反應",
+    "en": "Let's do it!",
+    "zh": "就這麼辦吧！上吧！"
+  },
+  {
+    "id": 140,
+    "category": "社交閒聊與即時反應",
+    "en": "Sounds great!",
+    "zh": "聽起來太棒了！"
+  },
+  {
+    "id": 141,
+    "category": "社交閒聊與即時反應",
+    "en": "Sounds like a plan!",
+    "zh": "就照這個計畫進行！"
+  },
+  {
+    "id": 142,
+    "category": "社交閒聊與即時反應",
+    "en": "You nailed it!",
+    "zh": "你完全抓到精髓了！做得漂亮！"
+  },
+  {
+    "id": 143,
+    "category": "社交閒聊與即時反應",
+    "en": "Spot on!",
+    "zh": "一針見血！完全正確！"
+  },
+  {
+    "id": 144,
+    "category": "社交閒聊與即時反應",
+    "en": "Big deal!",
+    "zh": "有什麼了不起！"
+  },
+  {
+    "id": 145,
+    "category": "社交閒聊與即時反應",
+    "en": "Whatever you say.",
+    "zh": "隨你怎麼說囉。"
+  },
+  {
+    "id": 146,
+    "category": "社交閒聊與即時反應",
+    "en": "If you say so.",
+    "zh": "既然你都這麼說了。"
+  },
+  {
+    "id": 147,
+    "category": "社交閒聊與即時反應",
+    "en": "Never mind.",
+    "zh": "算了，當我沒說。"
+  },
+  {
+    "id": 148,
+    "category": "社交閒聊與即時反應",
+    "en": "Forget about it.",
+    "zh": "別提了／算了吧。"
+  },
+  {
+    "id": 149,
+    "category": "社交閒聊與即時反應",
+    "en": "Let it go.",
+    "zh": "看開點吧，別糾結了。"
+  },
+  {
+    "id": 150,
+    "category": "社交閒聊與即時反應",
+    "en": "Keep it up!",
+    "zh": "繼續保持喔！"
+  },
+  {
+    "id": 151,
+    "category": "社交閒聊與即時反應",
+    "en": "Hang on a second.",
+    "zh": "等等，稍等一下。"
+  },
+  {
+    "id": 152,
+    "category": "社交閒聊與即時反應",
+    "en": "Guess what?",
+    "zh": "你猜怎麼著？"
+  },
+  {
+    "id": 153,
+    "category": "社交閒聊與即時反應",
+    "en": "You know what?",
+    "zh": "你知道嗎？跟跟你說喔。"
+  },
+  {
+    "id": 154,
+    "category": "社交閒聊與即時反應",
+    "en": "Here's the thing.",
+    "zh": "事情是這樣的。"
+  },
+  {
+    "id": 155,
+    "category": "社交閒聊與即時反應",
+    "en": "Long story short.",
+    "zh": "長話短說。"
+  },
+  {
+    "id": 156,
+    "category": "社交閒聊與即時反應",
+    "en": "To be honest.",
+    "zh": "老實說啦。"
+  },
+  {
+    "id": 157,
+    "category": "社交閒聊與即時反應",
+    "en": "Frankly speaking.",
+    "zh": "坦白說。"
+  },
+  {
+    "id": 158,
+    "category": "社交閒聊與即時反應",
+    "en": "Not really.",
+    "zh": "其實沒有耶／不大算。"
+  },
+  {
+    "id": 159,
+    "category": "社交閒聊與即時反應",
+    "en": "Not quite.",
+    "zh": "不太算／還差一點。"
+  },
+  {
+    "id": 160,
+    "category": "社交閒聊與即時反應",
+    "en": "Kind of.",
+    "zh": "有一點啦／算是吧。"
+  },
+  {
+    "id": 161,
+    "category": "社交閒聊與即時反應",
+    "en": "Sort of.",
+    "zh": "稍微有一點點。"
+  },
+  {
+    "id": 162,
+    "category": "社交閒聊與即時反應",
+    "en": "Pretty much.",
+    "zh": "基本上差不多就是這樣。"
+  },
+  {
+    "id": 163,
+    "category": "社交閒聊與即時反應",
+    "en": "More or less.",
+    "zh": "大概差不多吧。"
+  },
+  {
+    "id": 164,
+    "category": "社交閒聊與即時反應",
+    "en": "Not a chance!",
+    "zh": "門都沒有！絕對不可能！"
+  },
+  {
+    "id": 165,
+    "category": "社交閒聊與即時反應",
+    "en": "Over my dead body!",
+    "zh": "門都沒有！除非我死了！"
+  },
+  {
+    "id": 166,
+    "category": "社交閒聊與即時反應",
+    "en": "Deal!",
+    "zh": "成交！一言為定！"
+  },
+  {
+    "id": 167,
+    "category": "社交閒聊與即時反應",
+    "en": "You bet!",
+    "zh": "那當然！沒問題！"
+  },
+  {
+    "id": 168,
+    "category": "社交閒聊與即時反應",
+    "en": "Anytime!",
+    "zh": "隨時為您效勞！不客氣！"
+  },
+  {
+    "id": 169,
+    "category": "社交閒聊與即時反應",
+    "en": "My pleasure!",
+    "zh": "我的榮幸／很樂意幫忙！"
+  },
+  {
+    "id": 170,
+    "category": "社交閒聊與即時反應",
+    "en": "Don't mention it.",
+    "zh": "別客氣，小事啦。"
+  },
+  {
+    "id": 171,
+    "category": "社交閒聊與即時反應",
+    "en": "Glad I could help.",
+    "zh": "很高興能幫上忙。"
+  },
+  {
+    "id": 172,
+    "category": "社交閒聊與即時反應",
+    "en": "You're a lifesaver!",
+    "zh": "你真是我的救命恩人！"
+  },
+  {
+    "id": 173,
+    "category": "社交閒聊與即時反應",
+    "en": "I owe you one.",
+    "zh": "我欠你一次人情。"
+  },
+  {
+    "id": 174,
+    "category": "社交閒聊與即時反應",
+    "en": "Much appreciated!",
+    "zh": "非常感謝！銘記在心！"
+  },
+  {
+    "id": 175,
+    "category": "社交閒聊與即時反應",
+    "en": "Thanks a ton!",
+    "zh": "超級感謝你！"
+  },
+  {
+    "id": 176,
+    "category": "社交閒聊與即時反應",
+    "en": "Cheers!",
+    "zh": "謝啦！／乾杯！"
+  },
+  {
+    "id": 177,
+    "category": "社交閒聊與即時反應",
+    "en": "Bummer!",
+    "zh": "真可惜！太掃興了！"
+  },
+  {
+    "id": 178,
+    "category": "社交閒聊與即時反應",
+    "en": "What a pity!",
+    "zh": "太可惜了吧！"
+  },
+  {
+    "id": 179,
+    "category": "社交閒聊與即時反應",
+    "en": "Too bad!",
+    "zh": "真遺憾／太糟糕了！"
+  },
+  {
+    "id": 180,
+    "category": "社交閒聊與即時反應",
+    "en": "That sucks!",
+    "zh": "那真的太爛了／真倒楣！"
+  },
+  {
+    "id": 181,
+    "category": "社交閒聊與即時反應",
+    "en": "What a mess!",
+    "zh": "真是一團糟！"
+  },
+  {
+    "id": 182,
+    "category": "社交閒聊與即時反應",
+    "en": "How weird!",
+    "zh": "太奇怪了吧！"
+  },
+  {
+    "id": 183,
+    "category": "社交閒聊與即時反應",
+    "en": "How funny!",
+    "zh": "真搞笑！太逗了！"
+  },
+  {
+    "id": 184,
+    "category": "社交閒聊與即時反應",
+    "en": "That's hilarious!",
+    "zh": "那超好笑的！笑死！"
+  },
+  {
+    "id": 185,
+    "category": "社交閒聊與即時反應",
+    "en": "That's awesome!",
+    "zh": "那太屌了！太酷了！"
+  },
+  {
+    "id": 186,
+    "category": "社交閒聊與即時反應",
+    "en": "That's wicked!",
+    "zh": "那太厲害了吧！"
+  },
+  {
+    "id": 187,
+    "category": "社交閒聊與即時反應",
+    "en": "That's epic!",
+    "zh": "那太傳奇了！超狂！"
+  },
+  {
+    "id": 188,
+    "category": "社交閒聊與即時反應",
+    "en": "Sweet!",
+    "zh": "讚啦！太棒了！"
+  },
+  {
+    "id": 189,
+    "category": "社交閒聊與即時反應",
+    "en": "Nice job!",
+    "zh": "做得好！"
+  },
+  {
+    "id": 190,
+    "category": "社交閒聊與即時反應",
+    "en": "Proud of you!",
+    "zh": "為你感到驕傲！"
+  },
+  {
+    "id": 191,
+    "category": "社交閒聊與即時反應",
+    "en": "You rock!",
+    "zh": "你太強了！太棒了！"
+  },
+  {
+    "id": 192,
+    "category": "社交閒聊與即時反應",
+    "en": "Keep dreaming!",
+    "zh": "慢慢做夢吧你！"
+  },
+  {
+    "id": 193,
+    "category": "社交閒聊與即時反應",
+    "en": "Don't get smart with me.",
+    "zh": "別跟我耍嘴皮子。"
+  },
+  {
+    "id": 194,
+    "category": "社交閒聊與即時反應",
+    "en": "Cut it out!",
+    "zh": "少來這套！別鬧了！"
+  },
+  {
+    "id": 195,
+    "category": "社交閒聊與即時反應",
+    "en": "Give me a break!",
+    "zh": "饒了我吧！別鬧了！"
+  },
+  {
+    "id": 196,
+    "category": "社交閒聊與即時反應",
+    "en": "Come off it!",
+    "zh": "少吹牛了／別胡扯了！"
+  },
+  {
+    "id": 197,
+    "category": "社交閒聊與即時反應",
+    "en": "Get real!",
+    "zh": "清醒點吧！面對現實！"
+  },
+  {
+    "id": 198,
+    "category": "社交閒聊與即時反應",
+    "en": "Suit yourself.",
+    "zh": "隨便你，高興就好。"
+  },
+  {
+    "id": 199,
+    "category": "社交閒聊與即時反應",
+    "en": "Who cares?",
+    "zh": "誰在乎啊？"
+  },
+  {
+    "id": 200,
+    "category": "社交閒聊與即時反應",
+    "en": "Whatever.",
+    "zh": "隨便啦／隨你便。"
+  },
+  {
+    "id": 201,
+    "category": "餐廳點餐與外帶",
+    "en": "Table for two, please.",
+    "zh": "兩位，謝謝。"
+  },
+  {
+    "id": 202,
+    "category": "餐廳點餐與外帶",
+    "en": "Can we sit by the window?",
+    "zh": "我們可以坐靠窗的位置嗎？"
+  },
+  {
+    "id": 203,
+    "category": "餐廳點餐與外帶",
+    "en": "Can we sit outside?",
+    "zh": "我們可以坐戶外區嗎？"
+  },
+  {
+    "id": 204,
+    "category": "餐廳點餐與外帶",
+    "en": "Do we seat ourselves?",
+    "zh": "是自己找位子坐嗎？"
+  },
+  {
+    "id": 205,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I see the menu, please?",
+    "zh": "可以給我看一下菜單嗎？"
+  },
+  {
+    "id": 206,
+    "category": "餐廳點餐與外帶",
+    "en": "What do you recommend?",
+    "zh": "你們有推薦什麼招牌嗎？"
+  },
+  {
+    "id": 207,
+    "category": "餐廳點餐與外帶",
+    "en": "What's the special today?",
+    "zh": "今天的特餐是什麼？"
+  },
+  {
+    "id": 208,
+    "category": "餐廳點餐與外帶",
+    "en": "What's your most popular dish?",
+    "zh": "你們最受歡迎的餐點是什麼？"
+  },
+  {
+    "id": 209,
+    "category": "餐廳點餐與外帶",
+    "en": "Is this spicy?",
+    "zh": "這個會辣嗎？"
+  },
+  {
+    "id": 210,
+    "category": "餐廳點餐與外帶",
+    "en": "How spicy is this?",
+    "zh": "這道菜有多辣？"
+  },
+  {
+    "id": 211,
+    "category": "餐廳點餐與外帶",
+    "en": "Make it mild, please.",
+    "zh": "請幫我做微辣就好。"
+  },
+  {
+    "id": 212,
+    "category": "餐廳點餐與外帶",
+    "en": "Not too spicy, please.",
+    "zh": "請不要做得太辣。"
+  },
+  {
+    "id": 213,
+    "category": "餐廳點餐與外帶",
+    "en": "No onions, please.",
+    "zh": "不要放洋蔥，謝謝。"
+  },
+  {
+    "id": 214,
+    "category": "餐廳點餐與外帶",
+    "en": "Hold the ice, please.",
+    "zh": "請幫我去冰。"
+  },
+  {
+    "id": 215,
+    "category": "餐廳點餐與外帶",
+    "en": "Easy ice, please.",
+    "zh": "請幫我微冰。"
+  },
+  {
+    "id": 216,
+    "category": "餐廳點餐與外帶",
+    "en": "No sugar, please.",
+    "zh": "請幫我無糖。"
+  },
+  {
+    "id": 217,
+    "category": "餐廳點餐與外帶",
+    "en": "Extra cheese, please.",
+    "zh": "請幫我多加點起司。"
+  },
+  {
+    "id": 218,
+    "category": "餐廳點餐與外帶",
+    "en": "Dressing on the side, please.",
+    "zh": "沙拉醬請另外放旁邊。"
+  },
+  {
+    "id": 219,
+    "category": "餐廳點餐與外帶",
+    "en": "Sauce on the side, please.",
+    "zh": "沾醬請分開裝。"
+  },
+  {
+    "id": 220,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I get a coffee, please?",
+    "zh": "可以給我一杯咖啡嗎？"
+  },
+  {
+    "id": 221,
+    "category": "餐廳點餐與外帶",
+    "en": "I'll have a latte.",
+    "zh": "我要一杯拿鐵。"
+  },
+  {
+    "id": 222,
+    "category": "餐廳點餐與外帶",
+    "en": "Make that an iced latte.",
+    "zh": "幫我改成冰拿鐵。"
+  },
+  {
+    "id": 223,
+    "category": "餐廳點餐與外帶",
+    "en": "I'll take the burger combo.",
+    "zh": "我要漢堡套餐。"
+  },
+  {
+    "id": 224,
+    "category": "餐廳點餐與外帶",
+    "en": "I'll have the same thing.",
+    "zh": "我和他點一樣的。"
+  },
+  {
+    "id": 225,
+    "category": "餐廳點餐與外帶",
+    "en": "Make that two, please.",
+    "zh": "一樣的再來一份／請算兩份。"
+  },
+  {
+    "id": 226,
+    "category": "餐廳點餐與外帶",
+    "en": "Just water for now, thanks.",
+    "zh": "先給我水就好，謝謝。"
+  },
+  {
+    "id": 227,
+    "category": "餐廳點餐與外帶",
+    "en": "Tap water is fine.",
+    "zh": "一般飲用水（自來水）就可以。"
+  },
+  {
+    "id": 228,
+    "category": "餐廳點餐與外帶",
+    "en": "Sparkling or still?",
+    "zh": "氣泡水還是一般水？"
+  },
+  {
+    "id": 229,
+    "category": "餐廳點餐與外帶",
+    "en": "For here or to go?",
+    "zh": "內用還是外帶？"
+  },
+  {
+    "id": 230,
+    "category": "餐廳點餐與外帶",
+    "en": "To go, please.",
+    "zh": "外帶，謝謝。"
+  },
+  {
+    "id": 231,
+    "category": "餐廳點餐與外帶",
+    "en": "For here, please.",
+    "zh": "內用，謝謝。"
+  },
+  {
+    "id": 232,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I get this wrapped up?",
+    "zh": "可以幫我把這個打包嗎？"
+  },
+  {
+    "id": 233,
+    "category": "餐廳點餐與外帶",
+    "en": "Could we get a to-go box?",
+    "zh": "可以給我們一個外帶打包盒嗎？"
+  },
+  {
+    "id": 234,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I get another fork?",
+    "zh": "可以再給我一支叉子嗎？"
+  },
+  {
+    "id": 235,
+    "category": "餐廳點餐與外帶",
+    "en": "More napkins, please.",
+    "zh": "請多給我幾張紙巾。"
+  },
+  {
+    "id": 236,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I get a refill?",
+    "zh": "可以幫我續杯嗎？"
+  },
+  {
+    "id": 237,
+    "category": "餐廳點餐與外帶",
+    "en": "Is the refill free?",
+    "zh": "續杯是免費的嗎？"
+  },
+  {
+    "id": 238,
+    "category": "餐廳點餐與外帶",
+    "en": "We're ready to order.",
+    "zh": "我們準備好可以點餐了。"
+  },
+  {
+    "id": 239,
+    "category": "餐廳點餐與外帶",
+    "en": "Give us a few more minutes.",
+    "zh": "再給我們幾分鐘看一下。"
+  },
+  {
+    "id": 240,
+    "category": "餐廳點餐與外帶",
+    "en": "Still deciding, thanks.",
+    "zh": "我們還在考慮，謝謝。"
+  },
+  {
+    "id": 241,
+    "category": "餐廳點餐與外帶",
+    "en": "I'll have the steak.",
+    "zh": "我要一份牛排。"
+  },
+  {
+    "id": 242,
+    "category": "餐廳點餐與外帶",
+    "en": "Medium rare, please.",
+    "zh": "三分熟／五分熟，謝謝。"
+  },
+  {
+    "id": 243,
+    "category": "餐廳點餐與外帶",
+    "en": "Well done, please.",
+    "zh": "全熟，謝謝。"
+  },
+  {
+    "id": 244,
+    "category": "餐廳點餐與外帶",
+    "en": "Everything looks delicious!",
+    "zh": "每樣看起來都好好吃！"
+  },
+  {
+    "id": 245,
+    "category": "餐廳點餐與外帶",
+    "en": "This tastes amazing!",
+    "zh": "這個太好吃了！味道超棒！"
+  },
+  {
+    "id": 246,
+    "category": "餐廳點餐與外帶",
+    "en": "It's a bit salty.",
+    "zh": "稍微有點鹹。"
+  },
+  {
+    "id": 247,
+    "category": "餐廳點餐與外帶",
+    "en": "It's a bit cold.",
+    "zh": "食物有點涼掉了。"
+  },
+  {
+    "id": 248,
+    "category": "餐廳點餐與外帶",
+    "en": "Excuse me, this isn't what I ordered.",
+    "zh": "不好意思，這好像不是我點的。"
+  },
+  {
+    "id": 249,
+    "category": "餐廳點餐與外帶",
+    "en": "Did our food get ordered?",
+    "zh": "我們的餐點有點到了嗎？"
+  },
+  {
+    "id": 250,
+    "category": "餐廳點餐與外帶",
+    "en": "How long will it take?",
+    "zh": "大概還要等多久？"
+  },
+  {
+    "id": 251,
+    "category": "餐廳點餐與外帶",
+    "en": "Is our order coming soon?",
+    "zh": "我們的餐點快好了嗎？"
+  },
+  {
+    "id": 252,
+    "category": "餐廳點餐與外帶",
+    "en": "Can we get the check, please?",
+    "zh": "麻煩買單結帳，謝謝。"
+  },
+  {
+    "id": 253,
+    "category": "餐廳點餐與外帶",
+    "en": "Check, please!",
+    "zh": "買單，謝謝！"
+  },
+  {
+    "id": 254,
+    "category": "餐廳點餐與外帶",
+    "en": "Bill, please!",
+    "zh": "結帳，謝謝！"
+  },
+  {
+    "id": 255,
+    "category": "餐廳點餐與外帶",
+    "en": "We'd like to pay separately.",
+    "zh": "我們想分開結帳。"
+  },
+  {
+    "id": 256,
+    "category": "餐廳點餐與外帶",
+    "en": "Can we split the bill?",
+    "zh": "我們可以各付各的（分攤）嗎？"
+  },
+  {
+    "id": 257,
+    "category": "餐廳點餐與外帶",
+    "en": "Together or separate?",
+    "zh": "一起算還是分開算？"
+  },
+  {
+    "id": 258,
+    "category": "餐廳點餐與外帶",
+    "en": "All on one bill, please.",
+    "zh": "全部算一張單，謝謝。"
+  },
+  {
+    "id": 259,
+    "category": "餐廳點餐與外帶",
+    "en": "It's on me today!",
+    "zh": "今天這餐我請客！"
+  },
+  {
+    "id": 260,
+    "category": "餐廳點餐與外帶",
+    "en": "My treat!",
+    "zh": "我請客！我買單！"
+  },
+  {
+    "id": 261,
+    "category": "餐廳點餐與外帶",
+    "en": "Let me get this.",
+    "zh": "這頓讓我來付就好。"
+  },
+  {
+    "id": 262,
+    "category": "餐廳點餐與外帶",
+    "en": "Let's go Dutch.",
+    "zh": "我們各付各的吧。"
+  },
+  {
+    "id": 263,
+    "category": "餐廳點餐與外帶",
+    "en": "Do you take credit cards?",
+    "zh": "你們收信用卡嗎？"
+  },
+  {
+    "id": 264,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I pay with cash?",
+    "zh": "我可以付現嗎？"
+  },
+  {
+    "id": 265,
+    "category": "餐廳點餐與外帶",
+    "en": "Keep the change.",
+    "zh": "零錢不用找了。"
+  },
+  {
+    "id": 266,
+    "category": "餐廳點餐與外帶",
+    "en": "Is service charge included?",
+    "zh": "服務費已經包含在裡面了嗎？"
+  },
+  {
+    "id": 267,
+    "category": "餐廳點餐與外帶",
+    "en": "Where's the restroom?",
+    "zh": "請問洗手間在哪裡？"
+  },
+  {
+    "id": 268,
+    "category": "餐廳點餐與外帶",
+    "en": "Is there outdoor seating?",
+    "zh": "有室外座位嗎？"
+  },
+  {
+    "id": 269,
+    "category": "餐廳點餐與外帶",
+    "en": "Is there a minimum spend?",
+    "zh": "店裡有低消限制嗎？"
+  },
+  {
+    "id": 270,
+    "category": "餐廳點餐與外帶",
+    "en": "Any vegetarian options?",
+    "zh": "有素食的餐點選項嗎？"
+  },
+  {
+    "id": 271,
+    "category": "餐廳點餐與外帶",
+    "en": "I'm allergic to peanuts.",
+    "zh": "我對花生過敏。"
+  },
+  {
+    "id": 272,
+    "category": "餐廳點餐與外帶",
+    "en": "Does this have dairy?",
+    "zh": "這個裡面有乳製品成分嗎？"
+  },
+  {
+    "id": 273,
+    "category": "餐廳點餐與外帶",
+    "en": "Is this gluten-free?",
+    "zh": "這是無麩質的嗎？"
+  },
+  {
+    "id": 274,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I swap the fries for salad?",
+    "zh": "我可以把薯條換成沙拉嗎？"
+  },
+  {
+    "id": 275,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I substitute soup?",
+    "zh": "可以換成湯品嗎？"
+  },
+  {
+    "id": 276,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I get extra sauce?",
+    "zh": "可以多給我一點沾醬嗎？"
+  },
+  {
+    "id": 277,
+    "category": "餐廳點餐與外帶",
+    "en": "Warm water, please.",
+    "zh": "請給我溫開水。"
+  },
+  {
+    "id": 278,
+    "category": "餐廳點餐與外帶",
+    "en": "No ice, please.",
+    "zh": "完全去冰，謝謝。"
+  },
+  {
+    "id": 279,
+    "category": "餐廳點餐與外帶",
+    "en": "Large size, please.",
+    "zh": "大杯／大份，謝謝。"
+  },
+  {
+    "id": 280,
+    "category": "餐廳點餐與外帶",
+    "en": "Regular size is good.",
+    "zh": "中杯／正常份量就好。"
+  },
+  {
+    "id": 281,
+    "category": "餐廳點餐與外帶",
+    "en": "One more beer, please.",
+    "zh": "請再來一杯啤酒。"
+  },
+  {
+    "id": 282,
+    "category": "餐廳點餐與外帶",
+    "en": "Another round, please.",
+    "zh": "大家再來一輪！"
+  },
+  {
+    "id": 283,
+    "category": "餐廳點餐與外帶",
+    "en": "Last call for drinks!",
+    "zh": "最後點飲品時間到了！"
+  },
+  {
+    "id": 284,
+    "category": "餐廳點餐與外帶",
+    "en": "Are you still working on that?",
+    "zh": "這盤您還在用嗎？還是可以收了？"
+  },
+  {
+    "id": 285,
+    "category": "餐廳點餐與外帶",
+    "en": "All done with this plate.",
+    "zh": "這盤用完了，可以收走。"
+  },
+  {
+    "id": 286,
+    "category": "餐廳點餐與外帶",
+    "en": "I'm stuffed!",
+    "zh": "我吃得好撐啊！"
+  },
+  {
+    "id": 287,
+    "category": "餐廳點餐與外帶",
+    "en": "I couldn't eat another bite.",
+    "zh": "我一口都吃不下了，太飽了。"
+  },
+  {
+    "id": 288,
+    "category": "餐廳點餐與外帶",
+    "en": "That hit the spot!",
+    "zh": "太好吃了！完全滿足味蕾！"
+  },
+  {
+    "id": 289,
+    "category": "餐廳點餐與外帶",
+    "en": "Best meal ever!",
+    "zh": "吃過最棒的一餐！"
+  },
+  {
+    "id": 290,
+    "category": "餐廳點餐與外帶",
+    "en": "We loved the food!",
+    "zh": "我們很喜歡你們的料理！"
+  },
+  {
+    "id": 291,
+    "category": "餐廳點餐與外帶",
+    "en": "Compliments to the chef!",
+    "zh": "幫我們向主廚致敬！煮得太棒了！"
+  },
+  {
+    "id": 292,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I see the dessert menu?",
+    "zh": "可以看一下甜點菜單嗎？"
+  },
+  {
+    "id": 293,
+    "category": "餐廳點餐與外帶",
+    "en": "What flavor ice cream do you have?",
+    "zh": "你們有什麼口味的冰淇淋？"
+  },
+  {
+    "id": 294,
+    "category": "餐廳點餐與外帶",
+    "en": "Just black coffee for dessert.",
+    "zh": "甜點只要一杯黑咖啡就好。"
+  },
+  {
+    "id": 295,
+    "category": "餐廳點餐與外帶",
+    "en": "Let's get some dessert.",
+    "zh": "我們來點個甜點吧。"
+  },
+  {
+    "id": 296,
+    "category": "餐廳點餐與外帶",
+    "en": "Can we have two glasses?",
+    "zh": "可以給我們兩個杯子嗎？"
+  },
+  {
+    "id": 297,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I have a straw?",
+    "zh": "可以給我一根吸管嗎？"
+  },
+  {
+    "id": 298,
+    "category": "餐廳點餐與外帶",
+    "en": "Can I have a takeout menu?",
+    "zh": "可以給我一張外帶菜單嗎？"
+  },
+  {
+    "id": 299,
+    "category": "餐廳點餐與外帶",
+    "en": "I'll take the lunch special.",
+    "zh": "我要午間特惠套餐。"
+  },
+  {
+    "id": 300,
+    "category": "餐廳點餐與外帶",
+    "en": "Thanks for the great service!",
+    "zh": "謝謝你們優質的服務！"
+  },
+  {
+    "id": 301,
+    "category": "購物消費與結帳",
+    "en": "How much is this?",
+    "zh": "這個多少錢？"
+  },
+  {
+    "id": 302,
+    "category": "購物消費與結帳",
+    "en": "How much for both?",
+    "zh": "兩個一起算多少錢？"
+  },
+  {
+    "id": 303,
+    "category": "購物消費與結帳",
+    "en": "Is this on sale?",
+    "zh": "這個有特價嗎？"
+  },
+  {
+    "id": 304,
+    "category": "購物消費與結帳",
+    "en": "Any discounts today?",
+    "zh": "今天有任何折扣優惠嗎？"
+  },
+  {
+    "id": 305,
+    "category": "購物消費與結帳",
+    "en": "Do you have this in small?",
+    "zh": "這款有 S 號的嗎？"
+  },
+  {
+    "id": 306,
+    "category": "購物消費與結帳",
+    "en": "Do you have this in medium?",
+    "zh": "這款有 M 號的嗎？"
+  },
+  {
+    "id": 307,
+    "category": "購物消費與結帳",
+    "en": "Do you have this in large?",
+    "zh": "這款有 L 號的嗎？"
+  },
+  {
+    "id": 308,
+    "category": "購物消費與結帳",
+    "en": "Do you have other colors?",
+    "zh": "這件還有其他顏色嗎？"
+  },
+  {
+    "id": 309,
+    "category": "購物消費與結帳",
+    "en": "Do you have a bigger size?",
+    "zh": "有大一點的尺寸嗎？"
+  },
+  {
+    "id": 310,
+    "category": "購物消費與結帳",
+    "en": "Do you have a smaller size?",
+    "zh": "有小一點的尺寸嗎？"
+  },
+  {
+    "id": 311,
+    "category": "購物消費與結帳",
+    "en": "Where are the fitting rooms?",
+    "zh": "更衣室在哪裡？"
+  },
+  {
+    "id": 312,
+    "category": "購物消費與結帳",
+    "en": "Can I try this on?",
+    "zh": "我可以試穿這個嗎？"
+  },
+  {
+    "id": 313,
+    "category": "購物消費與結帳",
+    "en": "Can I try these on?",
+    "zh": "我可以試穿這幾件嗎？"
+  },
+  {
+    "id": 314,
+    "category": "購物消費與結帳",
+    "en": "It's too small.",
+    "zh": "這件太小了。"
+  },
+  {
+    "id": 315,
+    "category": "購物消費與結帳",
+    "en": "It's too big.",
+    "zh": "這件太大了。"
+  },
+  {
+    "id": 316,
+    "category": "購物消費與結帳",
+    "en": "It's too tight.",
+    "zh": "這件太緊了。"
+  },
+  {
+    "id": 317,
+    "category": "購物消費與結帳",
+    "en": "It's too loose.",
+    "zh": "這件太寬鬆了。"
+  },
+  {
+    "id": 318,
+    "category": "購物消費與結帳",
+    "en": "It fits perfectly!",
+    "zh": "尺寸剛剛好！非常合身！"
+  },
+  {
+    "id": 319,
+    "category": "購物消費與結帳",
+    "en": "How does this look?",
+    "zh": "穿起來好看嗎？看起來如何？"
+  },
+  {
+    "id": 320,
+    "category": "購物消費與結帳",
+    "en": "Looks great on you!",
+    "zh": "你穿起來超好看！很適合你！"
+  },
+  {
+    "id": 321,
+    "category": "購物消費與結帳",
+    "en": "I'll take it!",
+    "zh": "這個我要了！買了！"
+  },
+  {
+    "id": 322,
+    "category": "購物消費與結帳",
+    "en": "I'll pass on this.",
+    "zh": "這個我先不要好了。"
+  },
+  {
+    "id": 323,
+    "category": "購物消費與結帳",
+    "en": "Let me think about it.",
+    "zh": "我再考慮看看好了。"
+  },
+  {
+    "id": 324,
+    "category": "購物消費與結帳",
+    "en": "Just looking, thanks!",
+    "zh": "我只是隨便看看，謝謝！"
+  },
+  {
+    "id": 325,
+    "category": "購物消費與結帳",
+    "en": "Just browsing, thank you.",
+    "zh": "我只是隨便逛逛，謝謝。"
+  },
+  {
+    "id": 326,
+    "category": "購物消費與結帳",
+    "en": "Where can I find shirts?",
+    "zh": "襯衫區在哪裡？"
+  },
+  {
+    "id": 327,
+    "category": "購物消費與結帳",
+    "en": "Where is the checkout?",
+    "zh": "結帳櫃台在哪裡？"
+  },
+  {
+    "id": 328,
+    "category": "購物消費與結帳",
+    "en": "Are you open?",
+    "zh": "你們開始營業了嗎？"
+  },
+  {
+    "id": 329,
+    "category": "購物消費與結帳",
+    "en": "What time do you close?",
+    "zh": "你們幾點打烊？"
+  },
+  {
+    "id": 330,
+    "category": "購物消費與結帳",
+    "en": "Are you in line?",
+    "zh": "請問你是在排隊嗎？"
+  },
+  {
+    "id": 331,
+    "category": "購物消費與結帳",
+    "en": "Is this the end of the line?",
+    "zh": "這是隊伍末端嗎？"
+  },
+  {
+    "id": 332,
+    "category": "購物消費與結帳",
+    "en": "Next, please!",
+    "zh": "下一位客人，請！"
+  },
+  {
+    "id": 333,
+    "category": "購物消費與結帳",
+    "en": "Did you find everything okay?",
+    "zh": "商品都有找齊嗎？"
+  },
+  {
+    "id": 334,
+    "category": "購物消費與結帳",
+    "en": "Can I pay by card?",
+    "zh": "我可以刷卡嗎？"
+  },
+  {
+    "id": 335,
+    "category": "購物消費與結帳",
+    "en": "Do you take Apple Pay?",
+    "zh": "你們收 Apple Pay 嗎？"
+  },
+  {
+    "id": 336,
+    "category": "購物消費與結帳",
+    "en": "Can I tap my card?",
+    "zh": "可以直接感應卡片嗎？"
+  },
+  {
+    "id": 337,
+    "category": "購物消費與結帳",
+    "en": "Cash or card?",
+    "zh": "現金還是刷卡？"
+  },
+  {
+    "id": 338,
+    "category": "購物消費與結帳",
+    "en": "Cash, please.",
+    "zh": "付現，謝謝。"
+  },
+  {
+    "id": 339,
+    "category": "購物消費與結帳",
+    "en": "Card, please.",
+    "zh": "刷卡，謝謝。"
+  },
+  {
+    "id": 340,
+    "category": "購物消費與結帳",
+    "en": "Insert your card here.",
+    "zh": "請在這裡插入晶片卡。"
+  },
+  {
+    "id": 341,
+    "category": "購物消費與結帳",
+    "en": "Tap your phone here.",
+    "zh": "請把手機靠在這裡感應。"
+  },
+  {
+    "id": 342,
+    "category": "購物消費與結帳",
+    "en": "Enter your PIN, please.",
+    "zh": "請輸入您的密碼。"
+  },
+  {
+    "id": 343,
+    "category": "購物消費與結帳",
+    "en": "Sign here, please.",
+    "zh": "請在這邊簽名。"
+  },
+  {
+    "id": 344,
+    "category": "購物消費與結帳",
+    "en": "Do you want a bag?",
+    "zh": "你需要購物袋嗎？"
+  },
+  {
+    "id": 345,
+    "category": "購物消費與結帳",
+    "en": "No bag, thanks.",
+    "zh": "不用袋子，謝謝。"
+  },
+  {
+    "id": 346,
+    "category": "購物消費與結帳",
+    "en": "I brought my own bag.",
+    "zh": "我自己有帶購物袋。"
+  },
+  {
+    "id": 347,
+    "category": "購物消費與結帳",
+    "en": "Can I get a paper bag?",
+    "zh": "可以給我紙袋嗎？"
+  },
+  {
+    "id": 348,
+    "category": "購物消費與結帳",
+    "en": "Here's your receipt.",
+    "zh": "這是您的收據發票。"
+  },
+  {
+    "id": 349,
+    "category": "購物消費與結帳",
+    "en": "Keep the receipt.",
+    "zh": "收據留好喔。"
+  },
+  {
+    "id": 350,
+    "category": "購物消費與結帳",
+    "en": "No receipt needed, thanks.",
+    "zh": "不用收據發票，謝謝。"
+  },
+  {
+    "id": 351,
+    "category": "購物消費與結帳",
+    "en": "Can I get a gift receipt?",
+    "zh": "可以給我一張禮品收據（不顯示價格）嗎？"
+  },
+  {
+    "id": 352,
+    "category": "購物消費與結帳",
+    "en": "Can you gift wrap this?",
+    "zh": "可以幫我包裝成禮物嗎？"
+  },
+  {
+    "id": 353,
+    "category": "購物消費與結帳",
+    "en": "What's the return policy?",
+    "zh": "退貨規定是什麼？"
+  },
+  {
+    "id": 354,
+    "category": "購物消費與結帳",
+    "en": "Can I return this?",
+    "zh": "這個可以退貨嗎？"
+  },
+  {
+    "id": 355,
+    "category": "購物消費與結帳",
+    "en": "Can I exchange this?",
+    "zh": "這個可以換貨嗎？"
+  },
+  {
+    "id": 356,
+    "category": "購物消費與結帳",
+    "en": "I have the receipt.",
+    "zh": "我有帶發票收據。"
+  },
+  {
+    "id": 357,
+    "category": "購物消費與結帳",
+    "en": "It's the wrong size.",
+    "zh": "尺寸買錯了。"
+  },
+  {
+    "id": 358,
+    "category": "購物消費與結帳",
+    "en": "It's damaged.",
+    "zh": "這個有破損瑕疵。"
+  },
+  {
+    "id": 359,
+    "category": "購物消費與結帳",
+    "en": "It doesn't work.",
+    "zh": "這個故障不能運作。"
+  },
+  {
+    "id": 360,
+    "category": "購物消費與結帳",
+    "en": "Can I get a refund?",
+    "zh": "我可以申請退款嗎？"
+  },
+  {
+    "id": 361,
+    "category": "購物消費與結帳",
+    "en": "Store credit is fine.",
+    "zh": "換成店內購物折抵金也可以。"
+  },
+  {
+    "id": 362,
+    "category": "購物消費與結帳",
+    "en": "Is this buy one get one?",
+    "zh": "這是買一送一嗎？"
+  },
+  {
+    "id": 363,
+    "category": "購物消費與結帳",
+    "en": "Is this fifty percent off?",
+    "zh": "這是打五折嗎？"
+  },
+  {
+    "id": 364,
+    "category": "購物消費與結帳",
+    "en": "What's the total?",
+    "zh": "全部一共多少錢？"
+  },
+  {
+    "id": 365,
+    "category": "購物消費與結帳",
+    "en": "What's the damage?",
+    "zh": "這下一共要噴多少錢？（口語結帳）"
+  },
+  {
+    "id": 366,
+    "category": "購物消費與結帳",
+    "en": "That's twenty dollars total.",
+    "zh": "總共是二十元。"
+  },
+  {
+    "id": 367,
+    "category": "購物消費與結帳",
+    "en": "Here is twenty dollars.",
+    "zh": "這裡給您二十元。"
+  },
+  {
+    "id": 368,
+    "category": "購物消費與結帳",
+    "en": "Here's your change.",
+    "zh": "這是找給您的零錢。"
+  },
+  {
+    "id": 369,
+    "category": "購物消費與結帳",
+    "en": "Do you have a rewards card?",
+    "zh": "您有會員集點卡嗎？"
+  },
+  {
+    "id": 370,
+    "category": "購物消費與結帳",
+    "en": "Any membership points?",
+    "zh": "有會員點數可以折抵嗎？"
+  },
+  {
+    "id": 371,
+    "category": "購物消費與結帳",
+    "en": "Can I sign up for free?",
+    "zh": "可以免費加入會員嗎？"
+  },
+  {
+    "id": 372,
+    "category": "購物消費與結帳",
+    "en": "Is this tax included?",
+    "zh": "這有含稅金嗎？"
+  },
+  {
+    "id": 373,
+    "category": "購物消費與結帳",
+    "en": "Plus tax, right?",
+    "zh": "還要外加稅金，對吧？"
+  },
+  {
+    "id": 374,
+    "category": "購物消費與結帳",
+    "en": "Do you price match?",
+    "zh": "你們有買貴退差價（比價保證）嗎？"
+  },
+  {
+    "id": 375,
+    "category": "購物消費與結帳",
+    "en": "Is this the best price?",
+    "zh": "這已經是最划算的價格了嗎？"
+  },
+  {
+    "id": 376,
+    "category": "購物消費與結帳",
+    "en": "Can you do ten dollars?",
+    "zh": "算十元可以嗎？（殺價口語）"
+  },
+  {
+    "id": 377,
+    "category": "購物消費與結帳",
+    "en": "Can you give me a deal?",
+    "zh": "可以算我便宜一點嗎？"
+  },
+  {
+    "id": 378,
+    "category": "購物消費與結帳",
+    "en": "It's a steal!",
+    "zh": "太便宜了！買到賺到！"
+  },
+  {
+    "id": 379,
+    "category": "購物消費與結帳",
+    "en": "That's a rip-off!",
+    "zh": "那根本是敲竹槓！太貴了！"
+  },
+  {
+    "id": 380,
+    "category": "購物消費與結帳",
+    "en": "Way too expensive.",
+    "zh": "太貴了啦。"
+  },
+  {
+    "id": 381,
+    "category": "購物消費與結帳",
+    "en": "Pretty cheap!",
+    "zh": "挺便宜的！"
+  },
+  {
+    "id": 382,
+    "category": "購物消費與結帳",
+    "en": "Good quality!",
+    "zh": "品質很棒！"
+  },
+  {
+    "id": 383,
+    "category": "購物消費與結帳",
+    "en": "Feels really soft.",
+    "zh": "摸起來很柔軟舒服。"
+  },
+  {
+    "id": 384,
+    "category": "購物消費與結帳",
+    "en": "Made of real leather?",
+    "zh": "這是真皮做的嗎？"
+  },
+  {
+    "id": 385,
+    "category": "購物消費與結帳",
+    "en": "Is it waterproof?",
+    "zh": "這個防水嗎？"
+  },
+  {
+    "id": 386,
+    "category": "購物消費與結帳",
+    "en": "Is this dishwasher safe?",
+    "zh": "這個可以放洗碗機洗嗎？"
+  },
+  {
+    "id": 387,
+    "category": "購物消費與結帳",
+    "en": "Is this in stock?",
+    "zh": "這個有現貨嗎？"
+  },
+  {
+    "id": 388,
+    "category": "購物消費與結帳",
+    "en": "Out of stock right now.",
+    "zh": "目前缺貨中喔。"
+  },
+  {
+    "id": 389,
+    "category": "購物消費與結帳",
+    "en": "When will it come in?",
+    "zh": "什麼時候會進貨？"
+  },
+  {
+    "id": 390,
+    "category": "購物消費與結帳",
+    "en": "Can you hold it for me?",
+    "zh": "可以幫我保留嗎？"
+  },
+  {
+    "id": 391,
+    "category": "購物消費與結帳",
+    "en": "I'll take both.",
+    "zh": "兩個我都要了。"
+  },
+  {
+    "id": 392,
+    "category": "購物消費與結帳",
+    "en": "Just this one, please.",
+    "zh": "只要買這一個就好，謝謝。"
+  },
+  {
+    "id": 393,
+    "category": "購物消費與結帳",
+    "en": "Have a great day!",
+    "zh": "祝您有美好的一天！"
+  },
+  {
+    "id": 394,
+    "category": "購物消費與結帳",
+    "en": "Thanks for your help!",
+    "zh": "謝謝你的幫忙！"
+  },
+  {
+    "id": 395,
+    "category": "購物消費與結帳",
+    "en": "Have a good one!",
+    "zh": "祝你順心！"
+  },
+  {
+    "id": 396,
+    "category": "購物消費與結帳",
+    "en": "See you next time!",
+    "zh": "下次見！"
+  },
+  {
+    "id": 397,
+    "category": "購物消費與結帳",
+    "en": "Come back soon!",
+    "zh": "歡迎下次再來！"
+  },
+  {
+    "id": 398,
+    "category": "購物消費與結帳",
+    "en": "Can you check the back?",
+    "zh": "可以幫我去庫房找找看嗎？"
+  },
+  {
+    "id": 399,
+    "category": "購物消費與結帳",
+    "en": "All set!",
+    "zh": "全部弄好結清了！"
+  },
+  {
+    "id": 400,
+    "category": "購物消費與結帳",
+    "en": "You're all set to go!",
+    "zh": "您都結帳完成可以走囉！"
+  },
+  {
+    "id": 401,
+    "category": "外出交通與問路",
+    "en": "Where's the nearest station?",
+    "zh": "最近的車站站在哪裡？"
+  },
+  {
+    "id": 402,
+    "category": "外出交通與問路",
+    "en": "Where's the subway station?",
+    "zh": "地鐵捷運站在哪？"
+  },
+  {
+    "id": 403,
+    "category": "外出交通與問路",
+    "en": "Where's the bus stop?",
+    "zh": "公車站牌在哪裡？"
+  },
+  {
+    "id": 404,
+    "category": "外出交通與問路",
+    "en": "Which bus goes downtown?",
+    "zh": "哪一班公車有開往市中心？"
+  },
+  {
+    "id": 405,
+    "category": "外出交通與問路",
+    "en": "Does this bus go to the airport?",
+    "zh": "這班公車有到機場嗎？"
+  },
+  {
+    "id": 406,
+    "category": "外出交通與問路",
+    "en": "Is this the right train?",
+    "zh": "這班火車坐對了嗎？"
+  },
+  {
+    "id": 407,
+    "category": "外出交通與問路",
+    "en": "Which platform for the airport?",
+    "zh": "去機場要到哪個月台？"
+  },
+  {
+    "id": 408,
+    "category": "外出交通與問路",
+    "en": "Platform three, right over there.",
+    "zh": "三號月台，就在那邊。"
+  },
+  {
+    "id": 409,
+    "category": "外出交通與問路",
+    "en": "When is the next train?",
+    "zh": "下一班火車什麼時候來？"
+  },
+  {
+    "id": 410,
+    "category": "外出交通與問路",
+    "en": "Is the train on time?",
+    "zh": "火車有準點嗎？"
+  },
+  {
+    "id": 411,
+    "category": "外出交通與問路",
+    "en": "Running ten minutes late.",
+    "zh": "誤點了十分鐘。"
+  },
+  {
+    "id": 412,
+    "category": "外出交通與問路",
+    "en": "Where can I buy a ticket?",
+    "zh": "哪裡可以買車票？"
+  },
+  {
+    "id": 413,
+    "category": "外出交通與問路",
+    "en": "One ticket downtown, please.",
+    "zh": "買一張到市區的票，謝謝。"
+  },
+  {
+    "id": 414,
+    "category": "外出交通與問路",
+    "en": "Round trip or one way?",
+    "zh": "來回還是單程？"
+  },
+  {
+    "id": 415,
+    "category": "外出交通與問路",
+    "en": "One way, please.",
+    "zh": "單程，謝謝。"
+  },
+  {
+    "id": 416,
+    "category": "外出交通與問路",
+    "en": "Round trip, please.",
+    "zh": "來回票，謝謝。"
+  },
+  {
+    "id": 417,
+    "category": "外出交通與問路",
+    "en": "Can I tap with my phone?",
+    "zh": "可以直接用手機逼卡感應嗎？"
+  },
+  {
+    "id": 418,
+    "category": "外出交通與問路",
+    "en": "Where's the exit?",
+    "zh": "出口在哪個方向？"
+  },
+  {
+    "id": 419,
+    "category": "外出交通與問路",
+    "en": "Exit B is right upstairs.",
+    "zh": "B 出口直接往樓上走就是了。"
+  },
+  {
+    "id": 420,
+    "category": "外出交通與問路",
+    "en": "How do I get to the museum?",
+    "zh": "去博物館要怎麼走？"
+  },
+  {
+    "id": 421,
+    "category": "外出交通與問路",
+    "en": "Go straight ahead.",
+    "zh": "一直往前直走。"
+  },
+  {
+    "id": 422,
+    "category": "外出交通與問路",
+    "en": "Turn left at the light.",
+    "zh": "在紅綠燈路口左轉。"
+  },
+  {
+    "id": 423,
+    "category": "外出交通與問路",
+    "en": "Turn right at the corner.",
+    "zh": "在轉角處右轉。"
+  },
+  {
+    "id": 424,
+    "category": "外出交通與問路",
+    "en": "It's on your left.",
+    "zh": "它就在你的左手邊。"
+  },
+  {
+    "id": 425,
+    "category": "外出交通與問路",
+    "en": "It's on your right.",
+    "zh": "它就在你的右手邊。"
+  },
+  {
+    "id": 426,
+    "category": "外出交通與問路",
+    "en": "You can't miss it!",
+    "zh": "你一定找得到的！目標很明顯！"
+  },
+  {
+    "id": 427,
+    "category": "外出交通與問路",
+    "en": "Is it far from here?",
+    "zh": "離這裡很遠嗎？"
+  },
+  {
+    "id": 428,
+    "category": "外出交通與問路",
+    "en": "Is it walkable?",
+    "zh": "走路走得到嗎？"
+  },
+  {
+    "id": 429,
+    "category": "外出交通與問路",
+    "en": "About ten minutes on foot.",
+    "zh": "走路大概十分鐘。"
+  },
+  {
+    "id": 430,
+    "category": "外出交通與問路",
+    "en": "Just around the corner.",
+    "zh": "就在轉角過去而已。"
+  },
+  {
+    "id": 431,
+    "category": "外出交通與問路",
+    "en": "Right across the street.",
+    "zh": "就在正對面馬路。"
+  },
+  {
+    "id": 432,
+    "category": "外出交通與問路",
+    "en": "Next to the bank.",
+    "zh": "就在銀行隔壁。"
+  },
+  {
+    "id": 433,
+    "category": "外出交通與問路",
+    "en": "Behind the supermarket.",
+    "zh": "在超市後方。"
+  },
+  {
+    "id": 434,
+    "category": "外出交通與問路",
+    "en": "I'm lost.",
+    "zh": "我迷路了。"
+  },
+  {
+    "id": 435,
+    "category": "外出交通與問路",
+    "en": "Can you show me on the map?",
+    "zh": "可以在地圖上指給我看嗎？"
+  },
+  {
+    "id": 436,
+    "category": "外出交通與問路",
+    "en": "Follow me, I'll show you.",
+    "zh": "跟我走吧，我帶你去。"
+  },
+  {
+    "id": 437,
+    "category": "外出交通與問路",
+    "en": "Taxi!",
+    "zh": "計程車！"
+  },
+  {
+    "id": 438,
+    "category": "外出交通與問路",
+    "en": "Are you available?",
+    "zh": "請問有載客嗎？／空車嗎？"
+  },
+  {
+    "id": 439,
+    "category": "外出交通與問路",
+    "en": "Hop in!",
+    "zh": "快上車吧！"
+  },
+  {
+    "id": 440,
+    "category": "外出交通與問路",
+    "en": "Where to?",
+    "zh": "要去哪裡？"
+  },
+  {
+    "id": 441,
+    "category": "外出交通與問路",
+    "en": "Take me to this address, please.",
+    "zh": "請載我到這個地址，謝謝。"
+  },
+  {
+    "id": 442,
+    "category": "外出交通與問路",
+    "en": "Take me to the airport, please.",
+    "zh": "請載我到機場，謝謝。"
+  },
+  {
+    "id": 443,
+    "category": "外出交通與問路",
+    "en": "How long will it take?",
+    "zh": "大概需要多久時間？"
+  },
+  {
+    "id": 444,
+    "category": "外出交通與問路",
+    "en": "About twenty minutes.",
+    "zh": "大概二十分鐘。"
+  },
+  {
+    "id": 445,
+    "category": "外出交通與問路",
+    "en": "I'm in a rush.",
+    "zh": "我趕時間。"
+  },
+  {
+    "id": 446,
+    "category": "外出交通與問路",
+    "en": "Step on it, please.",
+    "zh": "麻煩開快一點（油門踩下去）。"
+  },
+  {
+    "id": 447,
+    "category": "外出交通與問路",
+    "en": "Please slow down.",
+    "zh": "請開慢一點。"
+  },
+  {
+    "id": 448,
+    "category": "外出交通與問路",
+    "en": "Drop me off here, please.",
+    "zh": "請讓我在這裡下車，謝謝。"
+  },
+  {
+    "id": 449,
+    "category": "外出交通與問路",
+    "en": "Drop me off at the corner.",
+    "zh": "請在轉角放我下車。"
+  },
+  {
+    "id": 450,
+    "category": "外出交通與問路",
+    "en": "Pull over here, please.",
+    "zh": "請靠邊停這裡就好。"
+  },
+  {
+    "id": 451,
+    "category": "外出交通與問路",
+    "en": "Keep the meter running.",
+    "zh": "請不要跳錶暫停，維持跳錶計費。"
+  },
+  {
+    "id": 452,
+    "category": "外出交通與問路",
+    "en": "How much is on the meter?",
+    "zh": "跳錶金額是多少？"
+  },
+  {
+    "id": 453,
+    "category": "外出交通與問路",
+    "en": "Stuck in traffic.",
+    "zh": "塞在車陣中。"
+  },
+  {
+    "id": 454,
+    "category": "外出交通與問路",
+    "en": "Traffic is awful today.",
+    "zh": "今天路況太差了，塞爆。"
+  },
+  {
+    "id": 455,
+    "category": "外出交通與問路",
+    "en": "Bumper to bumper traffic.",
+    "zh": "車子塞得動彈不得。"
+  },
+  {
+    "id": 456,
+    "category": "外出交通與問路",
+    "en": "Take the highway.",
+    "zh": "走高速公路／快速道路。"
+  },
+  {
+    "id": 457,
+    "category": "外出交通與問路",
+    "en": "Any toll fees?",
+    "zh": "有過路費嗎？"
+  },
+  {
+    "id": 458,
+    "category": "外出交通與問路",
+    "en": "Can I open the window?",
+    "zh": "我可以開窗戶嗎？"
+  },
+  {
+    "id": 459,
+    "category": "外出交通與問路",
+    "en": "Can you turn on the AC?",
+    "zh": "可以開一下冷氣空調嗎？"
+  },
+  {
+    "id": 460,
+    "category": "外出交通與問路",
+    "en": "Can you turn down the music?",
+    "zh": "可以把音樂關小聲點嗎？"
+  },
+  {
+    "id": 461,
+    "category": "外出交通與問路",
+    "en": "Fasten your seatbelt.",
+    "zh": "請繫上安全帶。"
+  },
+  {
+    "id": 462,
+    "category": "外出交通與問路",
+    "en": "Watch your step getting out.",
+    "zh": "下車時注意腳步。"
+  },
+  {
+    "id": 463,
+    "category": "外出交通與問路",
+    "en": "Mind the gap.",
+    "zh": "小心月台間隙。"
+  },
+  {
+    "id": 464,
+    "category": "外出交通與問路",
+    "en": "Stand clear of the doors.",
+    "zh": "請遠離車門／請勿靠近車門。"
+  },
+  {
+    "id": 465,
+    "category": "外出交通與問路",
+    "en": "Next stop is Main Street.",
+    "zh": "下一站是主街。"
+  },
+  {
+    "id": 466,
+    "category": "外出交通與問路",
+    "en": "This is our stop.",
+    "zh": "我們這站要下車了。"
+  },
+  {
+    "id": 467,
+    "category": "外出交通與問路",
+    "en": "Let people off first.",
+    "zh": "先讓車上的人下來。"
+  },
+  {
+    "id": 468,
+    "category": "外出交通與問路",
+    "en": "Move down the car, please.",
+    "zh": "請往車廂裡面走。"
+  },
+  {
+    "id": 469,
+    "category": "外出交通與問路",
+    "en": "Excuse me, getting off here.",
+    "zh": "不好意思，借過一下，我要下車。"
+  },
+  {
+    "id": 470,
+    "category": "外出交通與問路",
+    "en": "Can you call me an Uber?",
+    "zh": "可以幫我叫台 Uber 嗎？"
+  },
+  {
+    "id": 471,
+    "category": "外出交通與問路",
+    "en": "My ride is here.",
+    "zh": "來接我的車到了。"
+  },
+  {
+    "id": 472,
+    "category": "外出交通與問路",
+    "en": "I'm tracking your ride.",
+    "zh": "我正在追蹤你的車輛位置。"
+  },
+  {
+    "id": 473,
+    "category": "外出交通與問路",
+    "en": "Driver is two minutes away.",
+    "zh": "司機還有兩分鐘抵達。"
+  },
+  {
+    "id": 474,
+    "category": "外出交通與問路",
+    "en": "License plate matches.",
+    "zh": "車牌號碼對得起來。"
+  },
+  {
+    "id": 475,
+    "category": "外出交通與問路",
+    "en": "Where can I park?",
+    "zh": "哪裡可以停車？"
+  },
+  {
+    "id": 476,
+    "category": "外出交通與問路",
+    "en": "Is parking free here?",
+    "zh": "這裡停車免費嗎？"
+  },
+  {
+    "id": 477,
+    "category": "外出交通與問路",
+    "en": "Pay for parking over there.",
+    "zh": "去那邊繳停車費。"
+  },
+  {
+    "id": 478,
+    "category": "外出交通與問路",
+    "en": "Take a parking ticket.",
+    "zh": "抽一張停車票卡。"
+  },
+  {
+    "id": 479,
+    "category": "外出交通與問路",
+    "en": "Fill it up, please.",
+    "zh": "請幫我加滿油。"
+  },
+  {
+    "id": 480,
+    "category": "外出交通與問路",
+    "en": "Regular unleaded, please.",
+    "zh": "加 95 / 92 無鉛汽油，謝謝。"
+  },
+  {
+    "id": 481,
+    "category": "外出交通與問路",
+    "en": "Check the tires, please.",
+    "zh": "請幫我檢查胎壓。"
+  },
+  {
+    "id": 482,
+    "category": "外出交通與問路",
+    "en": "Clean the windshield, please.",
+    "zh": "麻煩幫忙擦一下擋風玻璃。"
+  },
+  {
+    "id": 483,
+    "category": "外出交通與問路",
+    "en": "I have a flat tire.",
+    "zh": "我爆胎了。"
+  },
+  {
+    "id": 484,
+    "category": "外出交通與問路",
+    "en": "My battery is dead.",
+    "zh": "我電瓶沒電了。"
+  },
+  {
+    "id": 485,
+    "category": "外出交通與問路",
+    "en": "Need a jump start.",
+    "zh": "需要接電過電發動。"
+  },
+  {
+    "id": 486,
+    "category": "外出交通與問路",
+    "en": "Call roadside assistance.",
+    "zh": "打給道路救援。"
+  },
+  {
+    "id": 487,
+    "category": "外出交通與問路",
+    "en": "Call a tow truck.",
+    "zh": "叫拖吊車來。"
+  },
+  {
+    "id": 488,
+    "category": "外出交通與問路",
+    "en": "Gas tank is empty.",
+    "zh": "油箱見底沒油了。"
+  },
+  {
+    "id": 489,
+    "category": "外出交通與問路",
+    "en": "Running on fumes.",
+    "zh": "油快燒光了，在撐最後一哩。"
+  },
+  {
+    "id": 490,
+    "category": "外出交通與問路",
+    "en": "Pedestrian crossing ahead.",
+    "zh": "前方是行人穿越道。"
+  },
+  {
+    "id": 491,
+    "category": "外出交通與問路",
+    "en": "Green light, let's go.",
+    "zh": "綠燈了，快走吧。"
+  },
+  {
+    "id": 492,
+    "category": "外出交通與問路",
+    "en": "Red light, stop here.",
+    "zh": "紅燈，停這裡。"
+  },
+  {
+    "id": 493,
+    "category": "外出交通與問路",
+    "en": "Watch out for bikes.",
+    "zh": "注意旁邊的腳踏車。"
+  },
+  {
+    "id": 494,
+    "category": "外出交通與問路",
+    "en": "Yield to pedestrians.",
+    "zh": "禮讓行人優先通行。"
+  },
+  {
+    "id": 495,
+    "category": "外出交通與問路",
+    "en": "One-way street.",
+    "zh": "單行道。"
+  },
+  {
+    "id": 496,
+    "category": "外出交通與問路",
+    "en": "No parking zone.",
+    "zh": "禁止停車區域。"
+  },
+  {
+    "id": 497,
+    "category": "外出交通與問路",
+    "en": "Tow-away zone.",
+    "zh": "拖吊專用區。"
+  },
+  {
+    "id": 498,
+    "category": "外出交通與問路",
+    "en": "Speed limit is fifty.",
+    "zh": "速限是五十。"
+  },
+  {
+    "id": 499,
+    "category": "外出交通與問路",
+    "en": "Slow down around the bend.",
+    "zh": "過彎時請減速慢行。"
+  },
+  {
+    "id": 500,
+    "category": "外出交通與問路",
+    "en": "Safe travels!",
+    "zh": "祝你旅途平安！"
+  },
+  {
+    "id": 501,
+    "category": "居家生活與日常",
+    "en": "I'll grab the door.",
+    "zh": "我去開門。"
+  },
+  {
+    "id": 502,
+    "category": "居家生活與日常",
+    "en": "Someone's knocking.",
+    "zh": "有人在敲門。"
+  },
+  {
+    "id": 503,
+    "category": "居家生活與日常",
+    "en": "The doorbell is ringing.",
+    "zh": "電鈴在響。"
+  },
+  {
+    "id": 504,
+    "category": "居家生活與日常",
+    "en": "Lock the front door.",
+    "zh": "把大門鎖好。"
+  },
+  {
+    "id": 505,
+    "category": "居家生活與日常",
+    "en": "Did you lock up?",
+    "zh": "你有鎖好門窗嗎？"
+  },
+  {
+    "id": 506,
+    "category": "居家生活與日常",
+    "en": "Where are my keys?",
+    "zh": "我的鑰匙跑去哪了？"
+  },
+  {
+    "id": 507,
+    "category": "居家生活與日常",
+    "en": "Found my keys!",
+    "zh": "找到我的鑰匙了！"
+  },
+  {
+    "id": 508,
+    "category": "居家生活與日常",
+    "en": "Can you take out the trash?",
+    "zh": "你可以幫忙拿垃圾去倒嗎？"
+  },
+  {
+    "id": 509,
+    "category": "居家生活與日常",
+    "en": "Today is recycling day.",
+    "zh": "今天是資源回收日。"
+  },
+  {
+    "id": 510,
+    "category": "居家生活與日常",
+    "en": "We're out of milk.",
+    "zh": "家裡的牛奶喝光了。"
+  },
+  {
+    "id": 511,
+    "category": "居家生活與日常",
+    "en": "We're out of eggs.",
+    "zh": "家裡沒有雞蛋了。"
+  },
+  {
+    "id": 512,
+    "category": "居家生活與日常",
+    "en": "Put it on the grocery list.",
+    "zh": "把它寫進採買清單裡。"
+  },
+  {
+    "id": 513,
+    "category": "居家生活與日常",
+    "en": "I'm doing the dishes.",
+    "zh": "我正在洗碗。"
+  },
+  {
+    "id": 514,
+    "category": "居家生活與日常",
+    "en": "Can you load the dishwasher?",
+    "zh": "你能把碗盤放進洗碗機嗎？"
+  },
+  {
+    "id": 515,
+    "category": "居家生活與日常",
+    "en": "Can you unload the dishwasher?",
+    "zh": "你能把洗碗機裡的碗盤拿出來收好嗎？"
+  },
+  {
+    "id": 516,
+    "category": "居家生活與日常",
+    "en": "I'll clean the kitchen.",
+    "zh": "我去清理廚房。"
+  },
+  {
+    "id": 517,
+    "category": "居家生活與日常",
+    "en": "Wipe down the counter, please.",
+    "zh": "麻煩把流理台擦乾淨。"
+  },
+  {
+    "id": 518,
+    "category": "居家生活與日常",
+    "en": "Sweep the floor, please.",
+    "zh": "幫忙掃一下地板。"
+  },
+  {
+    "id": 519,
+    "category": "居家生活與日常",
+    "en": "Mop the floor, please.",
+    "zh": "幫忙拖一下地板。"
+  },
+  {
+    "id": 520,
+    "category": "居家生活與日常",
+    "en": "Vacuum the living room.",
+    "zh": "用吸塵器吸一下客廳。"
+  },
+  {
+    "id": 521,
+    "category": "居家生活與日常",
+    "en": "Do a load of laundry.",
+    "zh": "洗一桶衣服。"
+  },
+  {
+    "id": 522,
+    "category": "居家生活與日常",
+    "en": "Hang up the clothes.",
+    "zh": "把衣服晾起來。"
+  },
+  {
+    "id": 523,
+    "category": "居家生活與日常",
+    "en": "Fold the laundry.",
+    "zh": "把洗好的衣服折好。"
+  },
+  {
+    "id": 524,
+    "category": "居家生活與日常",
+    "en": "Put away your clothes.",
+    "zh": "把你的衣服收進衣櫃裡。"
+  },
+  {
+    "id": 525,
+    "category": "居家生活與日常",
+    "en": "Iron this shirt, please.",
+    "zh": "幫我把這件襯衫燙一下。"
+  },
+  {
+    "id": 526,
+    "category": "居家生活與日常",
+    "en": "Make your bed.",
+    "zh": "把你自己的床鋪整理好。"
+  },
+  {
+    "id": 527,
+    "category": "居家生活與日常",
+    "en": "Change the sheets.",
+    "zh": "把床單換洗一下。"
+  },
+  {
+    "id": 528,
+    "category": "居家生活與日常",
+    "en": "Turn off the lights.",
+    "zh": "把燈關掉。"
+  },
+  {
+    "id": 529,
+    "category": "居家生活與日常",
+    "en": "Leave the light on.",
+    "zh": "讓燈開著沒關係。"
+  },
+  {
+    "id": 530,
+    "category": "居家生活與日常",
+    "en": "Turn down the TV, please.",
+    "zh": "請把電視聲音關小一點。"
+  },
+  {
+    "id": 531,
+    "category": "居家生活與日常",
+    "en": "Turn up the volume.",
+    "zh": "把音量調大一點。"
+  },
+  {
+    "id": 532,
+    "category": "居家生活與日常",
+    "en": "Where's the remote?",
+    "zh": "遙控器放在哪裡？"
+  },
+  {
+    "id": 533,
+    "category": "居家生活與日常",
+    "en": "Pass me the remote.",
+    "zh": "把遙控器遞給我一下。"
+  },
+  {
+    "id": 534,
+    "category": "居家生活與日常",
+    "en": "What's on TV tonight?",
+    "zh": "今晚電視有播什麼節目？"
+  },
+  {
+    "id": 535,
+    "category": "居家生活與日常",
+    "en": "Let's watch a movie.",
+    "zh": "我們來看部電影吧。"
+  },
+  {
+    "id": 536,
+    "category": "居家生活與日常",
+    "en": "Pick a show.",
+    "zh": "挑個影集或節目來看。"
+  },
+  {
+    "id": 537,
+    "category": "居家生活與日常",
+    "en": "Pause it real quick.",
+    "zh": "先暫停一下下。"
+  },
+  {
+    "id": 538,
+    "category": "居家生活與日常",
+    "en": "Play it again.",
+    "zh": "再重播一次。"
+  },
+  {
+    "id": 539,
+    "category": "居家生活與日常",
+    "en": "Time for bed.",
+    "zh": "該上床睡覺了。"
+  },
+  {
+    "id": 540,
+    "category": "居家生活與日常",
+    "en": "I'm hit the sack.",
+    "zh": "我要去躺平睡覺了。"
+  },
+  {
+    "id": 541,
+    "category": "居家生活與日常",
+    "en": "Time to crash.",
+    "zh": "該躺平昏睡了。"
+  },
+  {
+    "id": 542,
+    "category": "居家生活與日常",
+    "en": "Set your alarm.",
+    "zh": "記得設你的鬧鐘。"
+  },
+  {
+    "id": 543,
+    "category": "居家生活與日常",
+    "en": "My alarm didn't go off.",
+    "zh": "我的鬧鐘早上沒響。"
+  },
+  {
+    "id": 544,
+    "category": "居家生活與日常",
+    "en": "I overslept this morning.",
+    "zh": "我今天早上睡過頭了。"
+  },
+  {
+    "id": 545,
+    "category": "居家生活與日常",
+    "en": "Wake up, sleepyhead!",
+    "zh": "起床囉，小懶豬！"
+  },
+  {
+    "id": 546,
+    "category": "居家生活與日常",
+    "en": "Five more minutes, please.",
+    "zh": "拜託再讓我多睡五分鐘。"
+  },
+  {
+    "id": 547,
+    "category": "居家生活與日常",
+    "en": "Breakfast is ready!",
+    "zh": "早餐做好了！"
+  },
+  {
+    "id": 548,
+    "category": "居家生活與日常",
+    "en": "Dinner is served!",
+    "zh": "晚餐開動囉！"
+  },
+  {
+    "id": 549,
+    "category": "居家生活與日常",
+    "en": "Smells great in here!",
+    "zh": "這裡聞起來好香喔！"
+  },
+  {
+    "id": 550,
+    "category": "居家生活與日常",
+    "en": "What's for dinner?",
+    "zh": "今天晚餐吃什麼？"
+  },
+  {
+    "id": 551,
+    "category": "居家生活與日常",
+    "en": "I'll make some eggs.",
+    "zh": "我去煎幾顆蛋。"
+  },
+  {
+    "id": 552,
+    "category": "居家生活與日常",
+    "en": "Make some coffee, please.",
+    "zh": "幫忙泡點咖啡，謝謝。"
+  },
+  {
+    "id": 553,
+    "category": "居家生活與日常",
+    "en": "Warm it up in the microwave.",
+    "zh": "用微波爐熱一下。"
+  },
+  {
+    "id": 554,
+    "category": "居家生活與日常",
+    "en": "Put it in the fridge.",
+    "zh": "把它放進冰箱裡。"
+  },
+  {
+    "id": 555,
+    "category": "居家生活與日常",
+    "en": "Put it in the freezer.",
+    "zh": "把它放進冷凍庫。"
+  },
+  {
+    "id": 556,
+    "category": "居家生活與日常",
+    "en": "It's expired.",
+    "zh": "這個已經過期了。"
+  },
+  {
+    "id": 557,
+    "category": "居家生活與日常",
+    "en": "Throw it away.",
+    "zh": "把它丟掉吧。"
+  },
+  {
+    "id": 558,
+    "category": "居家生活與日常",
+    "en": "Keep the leftovers.",
+    "zh": "把剩菜留起來。"
+  },
+  {
+    "id": 559,
+    "category": "居家生活與日常",
+    "en": "Save it for tomorrow.",
+    "zh": "留到明天吃。"
+  },
+  {
+    "id": 560,
+    "category": "居家生活與日常",
+    "en": "Water the plants, please.",
+    "zh": "麻煩幫植物澆個水。"
+  },
+  {
+    "id": 561,
+    "category": "居家生活與日常",
+    "en": "Feed the cat, please.",
+    "zh": "幫忙餵一下貓咪。"
+  },
+  {
+    "id": 562,
+    "category": "居家生活與日常",
+    "en": "Walk the dog, please.",
+    "zh": "帶狗狗去散步。"
+  },
+  {
+    "id": 563,
+    "category": "居家生活與日常",
+    "en": "Close the blinds.",
+    "zh": "把百葉窗拉上。"
+  },
+  {
+    "id": 564,
+    "category": "居家生活與日常",
+    "en": "Open the curtains.",
+    "zh": "把窗簾拉開。"
+  },
+  {
+    "id": 565,
+    "category": "居家生活與日常",
+    "en": "Let some fresh air in.",
+    "zh": "讓新鮮空氣流通進來。"
+  },
+  {
+    "id": 566,
+    "category": "居家生活與日常",
+    "en": "It's chilly inside.",
+    "zh": "屋子裡有點涼意。"
+  },
+  {
+    "id": 567,
+    "category": "居家生活與日常",
+    "en": "Turn on the heater.",
+    "zh": "把暖氣打開。"
+  },
+  {
+    "id": 568,
+    "category": "居家生活與日常",
+    "en": "Turn on the fan.",
+    "zh": "把電風扇打開。"
+  },
+  {
+    "id": 569,
+    "category": "居家生活與日常",
+    "en": "The AC is too cold.",
+    "zh": "冷氣吹得太冷了。"
+  },
+  {
+    "id": 570,
+    "category": "居家生活與日常",
+    "en": "Grab a blanket.",
+    "zh": "去拿件毛毯蓋著。"
+  },
+  {
+    "id": 571,
+    "category": "居家生活與日常",
+    "en": "Cozy night in.",
+    "zh": "今晚窩在家裡真舒服。"
+  },
+  {
+    "id": 572,
+    "category": "居家生活與日常",
+    "en": "I love staying home.",
+    "zh": "我超喜歡待在家裡的。"
+  },
+  {
+    "id": 573,
+    "category": "居家生活與日常",
+    "en": "Home sweet home!",
+    "zh": "回到溫暖的家真好！"
+  },
+  {
+    "id": 574,
+    "category": "居家生活與日常",
+    "en": "House is a mess.",
+    "zh": "家裡亂成一團。"
+  },
+  {
+    "id": 575,
+    "category": "居家生活與日常",
+    "en": "Time for spring cleaning.",
+    "zh": "該來大掃除了。"
+  },
+  {
+    "id": 576,
+    "category": "居家生活與日常",
+    "en": "Tidy up your room.",
+    "zh": "把你房間整理整齊。"
+  },
+  {
+    "id": 577,
+    "category": "居家生活與日常",
+    "en": "Put things back in place.",
+    "zh": "東西用完放回原位。"
+  },
+  {
+    "id": 578,
+    "category": "居家生活與日常",
+    "en": "Take a quick shower.",
+    "zh": "去沖個快澡。"
+  },
+  {
+    "id": 579,
+    "category": "居家生活與日常",
+    "en": "Brush your teeth.",
+    "zh": "去刷牙。"
+  },
+  {
+    "id": 580,
+    "category": "居家生活與日常",
+    "en": "Wash your face.",
+    "zh": "去洗臉。"
+  },
+  {
+    "id": 581,
+    "category": "居家生活與日常",
+    "en": "Comb your hair.",
+    "zh": "梳一下頭髮。"
+  },
+  {
+    "id": 582,
+    "category": "居家生活與日常",
+    "en": "Put on some clothes.",
+    "zh": "換上外出衣服。"
+  },
+  {
+    "id": 583,
+    "category": "居家生活與日常",
+    "en": "Grab your coat.",
+    "zh": "拿上你的外套。"
+  },
+  {
+    "id": 584,
+    "category": "居家生活與日常",
+    "en": "Don't forget your umbrella.",
+    "zh": "別忘了帶雨傘。"
+  },
+  {
+    "id": 585,
+    "category": "居家生活與日常",
+    "en": "It looks like rain.",
+    "zh": "看起來好像快下雨了。"
+  },
+  {
+    "id": 586,
+    "category": "居家生活與日常",
+    "en": "Phone is on the charger.",
+    "zh": "手機正插著充電。"
+  },
+  {
+    "id": 587,
+    "category": "居家生活與日常",
+    "en": "Battery is at ten percent.",
+    "zh": "電量只剩百分之十了。"
+  },
+  {
+    "id": 588,
+    "category": "居家生活與日常",
+    "en": "Pass me the charger.",
+    "zh": "充電線遞給我一下。"
+  },
+  {
+    "id": 589,
+    "category": "居家生活與日常",
+    "en": "Wi-Fi is down.",
+    "zh": "Wi-Fi 網路斷掉了。"
+  },
+  {
+    "id": 590,
+    "category": "居家生活與日常",
+    "en": "Restart the router.",
+    "zh": "把路由器重開機一下。"
+  },
+  {
+    "id": 591,
+    "category": "居家生活與日常",
+    "en": "Connection is slow.",
+    "zh": "網路連線速度好慢。"
+  },
+  {
+    "id": 592,
+    "category": "居家生活與日常",
+    "en": "Everything is working now.",
+    "zh": "一切都恢復正常運作了。"
+  },
+  {
+    "id": 593,
+    "category": "居家生活與日常",
+    "en": "Good job cleaning up!",
+    "zh": "整理得很乾淨，做得好！"
+  },
+  {
+    "id": 594,
+    "category": "居家生活與日常",
+    "en": "Let's relax now.",
+    "zh": "現在可以好好放鬆了。"
+  },
+  {
+    "id": 595,
+    "category": "居家生活與日常",
+    "en": "Time to unwind.",
+    "zh": "該好好放鬆舒壓了。"
+  },
+  {
+    "id": 596,
+    "category": "居家生活與日常",
+    "en": "Read a book in bed.",
+    "zh": "躺在床上看本書。"
+  },
+  {
+    "id": 597,
+    "category": "居家生活與日常",
+    "en": "Night night!",
+    "zh": "晚安囉！"
+  },
+  {
+    "id": 598,
+    "category": "居家生活與日常",
+    "en": "Sleep well tonight.",
+    "zh": "今晚好好睡一覺。"
+  },
+  {
+    "id": 599,
+    "category": "居家生活與日常",
+    "en": "See you in the morning.",
+    "zh": "明早見囉。"
+  },
+  {
+    "id": 600,
+    "category": "居家生活與日常",
+    "en": "Everything is clean now.",
+    "zh": "現在每樣東西都弄得乾乾淨淨了。"
+  },
+  {
+    "id": 601,
+    "category": "朋友邀約與聚會",
+    "en": "Are you free tonight?",
+    "zh": "你今晚有空嗎？"
+  },
+  {
+    "id": 602,
+    "category": "朋友邀約與聚會",
+    "en": "Are you free this weekend?",
+    "zh": "你這週末有空嗎？"
+  },
+  {
+    "id": 603,
+    "category": "朋友邀約與聚會",
+    "en": "Got any plans later?",
+    "zh": "等等有任何安排或計畫嗎？"
+  },
+  {
+    "id": 604,
+    "category": "朋友邀約與聚會",
+    "en": "What are you up to tonight?",
+    "zh": "你今晚打算做什麼？"
+  },
+  {
+    "id": 605,
+    "category": "朋友邀約與聚會",
+    "en": "Wanna grab a coffee?",
+    "zh": "想一起去喝杯咖啡嗎？"
+  },
+  {
+    "id": 606,
+    "category": "朋友邀約與聚會",
+    "en": "Wanna grab lunch?",
+    "zh": "想不想一起去吃個午餐？"
+  },
+  {
+    "id": 607,
+    "category": "朋友邀約與聚會",
+    "en": "Wanna grab a bite?",
+    "zh": "想一起去吃點東西墊墊肚子嗎？"
+  },
+  {
+    "id": 608,
+    "category": "朋友邀約與聚會",
+    "en": "Wanna grab drinks later?",
+    "zh": "待會兒想一起去喝兩杯嗎？"
+  },
+  {
+    "id": 609,
+    "category": "朋友邀約與聚會",
+    "en": "Let's get dinner tonight.",
+    "zh": "今晚我們一起吃晚餐吧。"
+  },
+  {
+    "id": 610,
+    "category": "朋友邀約與聚會",
+    "en": "Let's hang out this weekend.",
+    "zh": "這週末我們一起出來聚聚吧。"
+  },
+  {
+    "id": 611,
+    "category": "朋友邀約與聚會",
+    "en": "Let's catch up soon.",
+    "zh": "我們改天找時間好好敘敘舊。"
+  },
+  {
+    "id": 612,
+    "category": "朋友邀約與聚會",
+    "en": "We should totally meet up.",
+    "zh": "我們真的該找機會碰個面了。"
+  },
+  {
+    "id": 613,
+    "category": "朋友邀約與聚會",
+    "en": "Count me in!",
+    "zh": "算我一份！我一定去！"
+  },
+  {
+    "id": 614,
+    "category": "朋友邀約與聚會",
+    "en": "I'm so in!",
+    "zh": "我超想去！加我一個！"
+  },
+  {
+    "id": 615,
+    "category": "朋友邀約與聚會",
+    "en": "I'm totally down!",
+    "zh": "我完全贊成！算我一個！"
+  },
+  {
+    "id": 616,
+    "category": "朋友邀約與聚會",
+    "en": "Sounds like a blast!",
+    "zh": "聽起來一定超好玩的！"
+  },
+  {
+    "id": 617,
+    "category": "朋友邀約與聚會",
+    "en": "Sounds fun, let's go!",
+    "zh": "聽起來很有趣，走吧！"
+  },
+  {
+    "id": 618,
+    "category": "朋友邀約與聚會",
+    "en": "I'd love to come!",
+    "zh": "我很想去！"
+  },
+  {
+    "id": 619,
+    "category": "朋友邀約與聚會",
+    "en": "What time works for you?",
+    "zh": "你什麼時間比較方便？"
+  },
+  {
+    "id": 620,
+    "category": "朋友邀約與聚會",
+    "en": "When are you free?",
+    "zh": "你什麼時候有空？"
+  },
+  {
+    "id": 621,
+    "category": "朋友邀約與聚會",
+    "en": "Where should we meet?",
+    "zh": "我們要在哪裡碰面集合？"
+  },
+  {
+    "id": 622,
+    "category": "朋友邀約與聚會",
+    "en": "Meet me at the cafe.",
+    "zh": "在咖啡店跟我碰面。"
+  },
+  {
+    "id": 623,
+    "category": "朋友邀約與聚會",
+    "en": "Meet you in the lobby.",
+    "zh": "在大廳跟你碰面。"
+  },
+  {
+    "id": 624,
+    "category": "朋友邀約與聚會",
+    "en": "Meet you outside.",
+    "zh": "在外面跟你碰頭。"
+  },
+  {
+    "id": 625,
+    "category": "朋友邀約與聚會",
+    "en": "See you there at seven.",
+    "zh": "七點在那邊見。"
+  },
+  {
+    "id": 626,
+    "category": "朋友邀約與聚會",
+    "en": "I'll pick you up.",
+    "zh": "我去開車接你。"
+  },
+  {
+    "id": 627,
+    "category": "朋友邀約與聚會",
+    "en": "Pick me up at six.",
+    "zh": "六點來接我。"
+  },
+  {
+    "id": 628,
+    "category": "朋友邀約與聚會",
+    "en": "Can you give me a ride?",
+    "zh": "你能順路載我一程嗎？"
+  },
+  {
+    "id": 629,
+    "category": "朋友邀約與聚會",
+    "en": "I'll meet you there directly.",
+    "zh": "我直接去現場跟你們會合。"
+  },
+  {
+    "id": 630,
+    "category": "朋友邀約與聚會",
+    "en": "I might be five minutes late.",
+    "zh": "我可能會遲到個五分鐘。"
+  },
+  {
+    "id": 631,
+    "category": "朋友邀約與聚會",
+    "en": "On my way right now!",
+    "zh": "我現在正趕過去途中！"
+  },
+  {
+    "id": 632,
+    "category": "朋友邀約與聚會",
+    "en": "Just parked my car.",
+    "zh": "我剛停好車。"
+  },
+  {
+    "id": 633,
+    "category": "朋友邀約與聚會",
+    "en": "I'm right outside.",
+    "zh": "我人就在正門外了。"
+  },
+  {
+    "id": 634,
+    "category": "朋友邀約與聚會",
+    "en": "I'm inside already.",
+    "zh": "我已經在裡面了。"
+  },
+  {
+    "id": 635,
+    "category": "朋友邀約與聚會",
+    "en": "Saved you a seat.",
+    "zh": "幫你留好位子了。"
+  },
+  {
+    "id": 636,
+    "category": "朋友邀約與聚會",
+    "en": "I can't make it today.",
+    "zh": "我今天去不了了。"
+  },
+  {
+    "id": 637,
+    "category": "朋友邀約與聚會",
+    "en": "Something came up.",
+    "zh": "臨時突然有事發生。"
+  },
+  {
+    "id": 638,
+    "category": "朋友邀約與聚會",
+    "en": "I have other plans.",
+    "zh": "我另外已經有約了。"
+  },
+  {
+    "id": 639,
+    "category": "朋友邀約與聚會",
+    "en": "I'm tied up today.",
+    "zh": "我今天抽不開身。"
+  },
+  {
+    "id": 640,
+    "category": "朋友邀約與聚會",
+    "en": "Rain check, please?",
+    "zh": "這次先改期改天好嗎？"
+  },
+  {
+    "id": 641,
+    "category": "朋友邀約與聚會",
+    "en": "Can we take a rain check?",
+    "zh": "我們可以下次再約嗎？"
+  },
+  {
+    "id": 642,
+    "category": "朋友邀約與聚會",
+    "en": "Next time for sure!",
+    "zh": "下次一定到！"
+  },
+  {
+    "id": 643,
+    "category": "朋友邀約與聚會",
+    "en": "No worries, another time!",
+    "zh": "沒關係，下次再約！"
+  },
+  {
+    "id": 644,
+    "category": "朋友邀約與聚會",
+    "en": "Let me check my schedule.",
+    "zh": "我查一下我的行事曆。"
+  },
+  {
+    "id": 645,
+    "category": "朋友邀約與聚會",
+    "en": "I'll let you know tomorrow.",
+    "zh": "我明天跟你確認。"
+  },
+  {
+    "id": 646,
+    "category": "朋友邀約與聚會",
+    "en": "Up to you!",
+    "zh": "隨你決定！由你作主！"
+  },
+  {
+    "id": 647,
+    "category": "朋友邀約與聚會",
+    "en": "Whatever you want.",
+    "zh": "你想怎樣都行。"
+  },
+  {
+    "id": 648,
+    "category": "朋友邀約與聚會",
+    "en": "You decide.",
+    "zh": "你來決定就好。"
+  },
+  {
+    "id": 649,
+    "category": "朋友邀約與聚會",
+    "en": "I'm easy.",
+    "zh": "我都隨意，很好配合。"
+  },
+  {
+    "id": 650,
+    "category": "朋友邀約與聚會",
+    "en": "Any place is fine with me.",
+    "zh": "去哪裡我都OK。"
+  },
+  {
+    "id": 651,
+    "category": "朋友邀約與聚會",
+    "en": "You pick the spot.",
+    "zh": "你來選地點。"
+  },
+  {
+    "id": 652,
+    "category": "朋友邀約與聚會",
+    "en": "Have you tried that new place?",
+    "zh": "你有去過那家新開的店嗎？"
+  },
+  {
+    "id": 653,
+    "category": "朋友邀約與聚會",
+    "en": "Let's try something new.",
+    "zh": "我們來嘗試點新花樣。"
+  },
+  {
+    "id": 654,
+    "category": "朋友邀約與聚會",
+    "en": "Let's stick to our usual spot.",
+    "zh": "我們還是去平常那家老地方吧。"
+  },
+  {
+    "id": 655,
+    "category": "朋友邀約與聚會",
+    "en": "Who else is coming?",
+    "zh": "還有誰會去？"
+  },
+  {
+    "id": 656,
+    "category": "朋友邀約與聚會",
+    "en": "Just the two of us.",
+    "zh": "就我們兩個人。"
+  },
+  {
+    "id": 657,
+    "category": "朋友邀約與聚會",
+    "en": "The whole crew will be there.",
+    "zh": "整群好朋友都會到。"
+  },
+  {
+    "id": 658,
+    "category": "朋友邀約與聚會",
+    "en": "Bring a friend along!",
+    "zh": "帶個朋友一起來啊！"
+  },
+  {
+    "id": 659,
+    "category": "朋友邀約與聚會",
+    "en": "Feel free to bring someone.",
+    "zh": "歡迎隨意帶人一起來。"
+  },
+  {
+    "id": 660,
+    "category": "朋友邀約與聚會",
+    "en": "The more the merrier!",
+    "zh": "人越多越熱鬧！"
+  },
+  {
+    "id": 661,
+    "category": "朋友邀約與聚會",
+    "en": "Party starts at eight.",
+    "zh": "派對八點開始。"
+  },
+  {
+    "id": 662,
+    "category": "朋友邀約與聚會",
+    "en": "Dress casual.",
+    "zh": "穿著休閒便服就可以了。"
+  },
+  {
+    "id": 663,
+    "category": "朋友邀約與聚會",
+    "en": "BYOB, bring your own beer.",
+    "zh": "自己帶酒水飲料喔。"
+  },
+  {
+    "id": 664,
+    "category": "朋友邀約與聚會",
+    "en": "I'll bring some snacks.",
+    "zh": "我會帶點零食點心過去。"
+  },
+  {
+    "id": 665,
+    "category": "朋友邀約與聚會",
+    "en": "Thanks for having us!",
+    "zh": "謝謝你的熱情招待！"
+  },
+  {
+    "id": 666,
+    "category": "朋友邀約與聚會",
+    "en": "Great party tonight!",
+    "zh": "今晚的派對太讚了！"
+  },
+  {
+    "id": 667,
+    "category": "朋友邀約與聚會",
+    "en": "We had so much fun!",
+    "zh": "我們玩得太開心了！"
+  },
+  {
+    "id": 668,
+    "category": "朋友邀約與聚會",
+    "en": "Time flies when you're having fun!",
+    "zh": "歡樂時光總是過得特別快！"
+  },
+  {
+    "id": 669,
+    "category": "朋友邀約與聚會",
+    "en": "I had a great time.",
+    "zh": "我玩得很開心。"
+  },
+  {
+    "id": 670,
+    "category": "朋友邀約與聚會",
+    "en": "Thanks for organizing this!",
+    "zh": "謝謝你主辦籌劃這次聚會！"
+  },
+  {
+    "id": 671,
+    "category": "朋友邀約與聚會",
+    "en": "We gotta do this more often.",
+    "zh": "我們真的要常常這樣聚聚。"
+  },
+  {
+    "id": 672,
+    "category": "朋友邀約與聚會",
+    "en": "Let's make this a weekly thing.",
+    "zh": "我們把它變成每週固定聚會吧。"
+  },
+  {
+    "id": 673,
+    "category": "朋友邀約與聚會",
+    "en": "I'm exhausted but happy.",
+    "zh": "雖然很累但心情超好。"
+  },
+  {
+    "id": 674,
+    "category": "朋友邀約與聚會",
+    "en": "Heading home now.",
+    "zh": "現在準備回家囉。"
+  },
+  {
+    "id": 675,
+    "category": "朋友邀約與聚會",
+    "en": "Text me when you get back.",
+    "zh": "回到家傳個訊息給我喔。"
+  },
+  {
+    "id": 676,
+    "category": "朋友邀約與聚會",
+    "en": "Made it home safe!",
+    "zh": "我平安到家了！"
+  },
+  {
+    "id": 677,
+    "category": "朋友邀約與聚會",
+    "en": "Thanks for the ride home!",
+    "zh": "謝謝你開車送我回家！"
+  },
+  {
+    "id": 678,
+    "category": "朋友邀約與聚會",
+    "en": "Sleep well after all that fun.",
+    "zh": "玩了一整天好好睡一覺吧。"
+  },
+  {
+    "id": 679,
+    "category": "朋友邀約與聚會",
+    "en": "See you guys next time!",
+    "zh": "大家下次見囉！"
+  },
+  {
+    "id": 680,
+    "category": "朋友邀約與聚會",
+    "en": "Can't wait for our next trip!",
+    "zh": "等不及我們下一次出遊了！"
+  },
+  {
+    "id": 681,
+    "category": "朋友邀約與聚會",
+    "en": "Let's plan a beach trip.",
+    "zh": "我們來規畫去海邊玩吧。"
+  },
+  {
+    "id": 682,
+    "category": "朋友邀約與聚會",
+    "en": "Are you into board games?",
+    "zh": "你喜歡玩桌遊嗎？"
+  },
+  {
+    "id": 683,
+    "category": "朋友邀約與聚會",
+    "en": "Let's have a game night.",
+    "zh": "我們來辦個桌遊遊戲之夜吧。"
+  },
+  {
+    "id": 684,
+    "category": "朋友邀約與聚會",
+    "en": "Let's have a movie night.",
+    "zh": "我們來辦個電影之夜。"
+  },
+  {
+    "id": 685,
+    "category": "朋友邀約與聚會",
+    "en": "I'll make the popcorn.",
+    "zh": "我來爆爆米花。"
+  },
+  {
+    "id": 686,
+    "category": "朋友邀約與聚會",
+    "en": "Grab some ice cream on the way.",
+    "zh": "路上順便買個冰淇淋。"
+  },
+  {
+    "id": 687,
+    "category": "朋友邀約與聚會",
+    "en": "Don't be late!",
+    "zh": "別遲到喔！"
+  },
+  {
+    "id": 688,
+    "category": "朋友邀約與聚會",
+    "en": "I'm running on time.",
+    "zh": "我時間抓得很準沒遲到。"
+  },
+  {
+    "id": 689,
+    "category": "朋友邀約與聚會",
+    "en": "Traffic was crazy.",
+    "zh": "剛剛路上塞瘋了。"
+  },
+  {
+    "id": 690,
+    "category": "朋友邀約與聚會",
+    "en": "Glad you could make it!",
+    "zh": "很高興你能趕得及來！"
+  },
+  {
+    "id": 691,
+    "category": "朋友邀約與聚會",
+    "en": "So good seeing everyone!",
+    "zh": "能看到大家聚在一起真好！"
+  },
+  {
+    "id": 692,
+    "category": "朋友邀約與聚會",
+    "en": "Cheers to the weekend!",
+    "zh": "為美好的週末乾杯！"
+  },
+  {
+    "id": 693,
+    "category": "朋友邀約與聚會",
+    "en": "Cheers to friendship!",
+    "zh": "為我們的友誼乾杯！"
+  },
+  {
+    "id": 694,
+    "category": "朋友邀約與聚會",
+    "en": "Bottoms up!",
+    "zh": "乾杯！喝光它！"
+  },
+  {
+    "id": 695,
+    "category": "朋友邀約與聚會",
+    "en": "One more drink won't hurt.",
+    "zh": "再喝一杯沒事的啦。"
+  },
+  {
+    "id": 696,
+    "category": "朋友邀約與聚會",
+    "en": "I'm calling it a night.",
+    "zh": "我今天喝到／玩到這就好，該退場了。"
+  },
+  {
+    "id": 697,
+    "category": "朋友邀約與聚會",
+    "en": "Time for me to head out.",
+    "zh": "我差不多該先走囉。"
+  },
+  {
+    "id": 698,
+    "category": "朋友邀約與聚會",
+    "en": "Don't leave yet!",
+    "zh": "別這麼早走嘛！"
+  },
+  {
+    "id": 699,
+    "category": "朋友邀約與聚會",
+    "en": "Stay for one more song!",
+    "zh": "再留下來聽一首歌啦！"
+  },
+  {
+    "id": 700,
+    "category": "朋友邀約與聚會",
+    "en": "Catch you guys soon!",
+    "zh": "各位改天見囉！"
+  },
+  {
+    "id": 701,
+    "category": "情緒表達與安慰",
+    "en": "I'm swamped.",
+    "zh": "我快被事情淹沒了／忙得不可開交。"
+  },
+  {
+    "id": 702,
+    "category": "情緒表達與安慰",
+    "en": "I'm so stressed out.",
+    "zh": "我壓力真的超級大。"
+  },
+  {
+    "id": 703,
+    "category": "情緒表達與安慰",
+    "en": "I'm burned out.",
+    "zh": "我精疲力竭、快要燃燒殆盡了。"
+  },
+  {
+    "id": 704,
+    "category": "情緒表達與安慰",
+    "en": "I need a break.",
+    "zh": "我需要好好喘口氣休息一下。"
+  },
+  {
+    "id": 705,
+    "category": "情緒表達與安慰",
+    "en": "I'm losing my mind.",
+    "zh": "我快被逼瘋了。"
+  },
+  {
+    "id": 706,
+    "category": "情緒表達與安慰",
+    "en": "I can't take this anymore.",
+    "zh": "我快受不了這一切了。"
+  },
+  {
+    "id": 707,
+    "category": "情緒表達與安慰",
+    "en": "Everything is going wrong.",
+    "zh": "每件事都不順遂。"
+  },
+  {
+    "id": 708,
+    "category": "情緒表達與安慰",
+    "en": "Nothing is going my way.",
+    "zh": "沒有一件事情照著我想的走。"
+  },
+  {
+    "id": 709,
+    "category": "情緒表達與安慰",
+    "en": "Hang in there!",
+    "zh": "撐住！堅持下去！"
+  },
+  {
+    "id": 710,
+    "category": "情緒表達與安慰",
+    "en": "Stay strong!",
+    "zh": "要堅強喔！加油！"
+  },
+  {
+    "id": 711,
+    "category": "情緒表達與安慰",
+    "en": "You got this!",
+    "zh": "你沒問題的！你可以辦到！"
+  },
+  {
+    "id": 712,
+    "category": "情緒表達與安慰",
+    "en": "I believe in you.",
+    "zh": "我相信你的實力。"
+  },
+  {
+    "id": 713,
+    "category": "情緒表達與安慰",
+    "en": "Don't give up now.",
+    "zh": "千萬別在現在放棄。"
+  },
+  {
+    "id": 714,
+    "category": "情緒表達與安慰",
+    "en": "Keep your chin up!",
+    "zh": "抬起頭振作起來！別灰心！"
+  },
+  {
+    "id": 715,
+    "category": "情緒表達與安慰",
+    "en": "Cheer up!",
+    "zh": "開心點！振作起來！"
+  },
+  {
+    "id": 716,
+    "category": "情緒表達與安慰",
+    "en": "Things will get better.",
+    "zh": "情況一定會好轉的。"
+  },
+  {
+    "id": 717,
+    "category": "情緒表達與安慰",
+    "en": "Tomorrow is a fresh start.",
+    "zh": "明天又是全新的開始。"
+  },
+  {
+    "id": 718,
+    "category": "情緒表達與安慰",
+    "en": "Every cloud has a silver lining.",
+    "zh": "黑暗中總有一線光明／否極泰來。"
+  },
+  {
+    "id": 719,
+    "category": "情緒表達與安慰",
+    "en": "It's not the end of the world.",
+    "zh": "這又不是世界末日，別太難過。"
+  },
+  {
+    "id": 720,
+    "category": "情緒表達與安慰",
+    "en": "Don't beat yourself up.",
+    "zh": "別太自責了／別對自己太苛刻。"
+  },
+  {
+    "id": 721,
+    "category": "情緒表達與安慰",
+    "en": "You did your best.",
+    "zh": "你已經盡了全力了。"
+  },
+  {
+    "id": 722,
+    "category": "情緒表達與安慰",
+    "en": "That's all that matters.",
+    "zh": "盡力了才是最重要的。"
+  },
+  {
+    "id": 723,
+    "category": "情緒表達與安慰",
+    "en": "I'm always here for you.",
+    "zh": "我隨時都在這裡陪著你。"
+  },
+  {
+    "id": 724,
+    "category": "情緒表達與安慰",
+    "en": "You can lean on me.",
+    "zh": "你可以依靠我。"
+  },
+  {
+    "id": 725,
+    "category": "情緒表達與安慰",
+    "en": "Cry it out if you need to.",
+    "zh": "想哭就大聲哭出來吧。"
+  },
+  {
+    "id": 726,
+    "category": "情緒表達與安慰",
+    "en": "Let it all out.",
+    "zh": "把委屈都發洩出來吧。"
+  },
+  {
+    "id": 727,
+    "category": "情緒表達與安慰",
+    "en": "Take a deep breath.",
+    "zh": "深呼吸一下。"
+  },
+  {
+    "id": 728,
+    "category": "情緒表達與安慰",
+    "en": "One step at a time.",
+    "zh": "一步一步慢慢來。"
+  },
+  {
+    "id": 729,
+    "category": "情緒表達與安慰",
+    "en": "Don't rush yourself.",
+    "zh": "別給自己太大時間壓力。"
+  },
+  {
+    "id": 730,
+    "category": "情緒表達與安慰",
+    "en": "Give it some time.",
+    "zh": "給它一點時間沉澱。"
+  },
+  {
+    "id": 731,
+    "category": "情緒表達與安慰",
+    "en": "Time heals all wounds.",
+    "zh": "時間會撫平所有傷痛的。"
+  },
+  {
+    "id": 732,
+    "category": "情緒表達與安慰",
+    "en": "I'm so sorry you're going through this.",
+    "zh": "看到你經歷這些，我真的很心疼。"
+  },
+  {
+    "id": 733,
+    "category": "情緒表達與安慰",
+    "en": "That must be really tough.",
+    "zh": "那一定非常不好受。"
+  },
+  {
+    "id": 734,
+    "category": "情緒表達與安慰",
+    "en": "I can imagine how hard it is.",
+    "zh": "我完全能想像那有多不容易。"
+  },
+  {
+    "id": 735,
+    "category": "情緒表達與安慰",
+    "en": "Thanks for being there for me.",
+    "zh": "謝謝你一直陪在我身邊。"
+  },
+  {
+    "id": 736,
+    "category": "情緒表達與安慰",
+    "en": "That means the world to me.",
+    "zh": "這對我來說意義無比重大。"
+  },
+  {
+    "id": 737,
+    "category": "情緒表達與安慰",
+    "en": "I feel so much better now.",
+    "zh": "我現在心情好多了。"
+  },
+  {
+    "id": 738,
+    "category": "情緒表達與安慰",
+    "en": "Thanks for listening to me.",
+    "zh": "謝謝你願意聽我傾訴。"
+  },
+  {
+    "id": 739,
+    "category": "情緒表達與安慰",
+    "en": "I needed to hear that.",
+    "zh": "我正好需要聽你這句話。"
+  },
+  {
+    "id": 740,
+    "category": "情緒表達與安慰",
+    "en": "You made my day!",
+    "zh": "你讓我今天整天都變美好了！"
+  },
+  {
+    "id": 741,
+    "category": "情緒表達與安慰",
+    "en": "I'm so thrilled!",
+    "zh": "我太興奮了！超開心的！"
+  },
+  {
+    "id": 742,
+    "category": "情緒表達與安慰",
+    "en": "I'm over the moon!",
+    "zh": "我欣喜若狂！開心到飛上天！"
+  },
+  {
+    "id": 743,
+    "category": "情緒表達與安慰",
+    "en": "On cloud nine today!",
+    "zh": "今天心情好到像在雲端飄！"
+  },
+  {
+    "id": 744,
+    "category": "情緒表達與安慰",
+    "en": "Couldn't be happier!",
+    "zh": "幸福得不能再幸福了！"
+  },
+  {
+    "id": 745,
+    "category": "情緒表達與安慰",
+    "en": "Best day ever!",
+    "zh": "最棒的一天！"
+  },
+  {
+    "id": 746,
+    "category": "情緒表達與安慰",
+    "en": "I'm in such a good mood.",
+    "zh": "我今天心情超好。"
+  },
+  {
+    "id": 747,
+    "category": "情緒表達與安慰",
+    "en": "Good vibes only!",
+    "zh": "只要正能量！"
+  },
+  {
+    "id": 748,
+    "category": "情緒表達與安慰",
+    "en": "That put a smile on my face.",
+    "zh": "那讓我臉上露出了笑容。"
+  },
+  {
+    "id": 749,
+    "category": "情緒表達與安慰",
+    "en": "I feel so relieved.",
+    "zh": "我總算鬆了一口氣。"
+  },
+  {
+    "id": 750,
+    "category": "情緒表達與安慰",
+    "en": "What a relief!",
+    "zh": "真是鬆了一大口氣！"
+  },
+  {
+    "id": 751,
+    "category": "情緒表達與安慰",
+    "en": "A weight off my chest.",
+    "zh": "心頭的大石頭終於放下了。"
+  },
+  {
+    "id": 752,
+    "category": "情緒表達與安慰",
+    "en": "I was so nervous.",
+    "zh": "我剛才超級緊張的。"
+  },
+  {
+    "id": 753,
+    "category": "情緒表達與安慰",
+    "en": "I had butterflies in my stomach.",
+    "zh": "我剛剛心裡七上八下緊張極了。"
+  },
+  {
+    "id": 754,
+    "category": "情緒表達與安慰",
+    "en": "My hands were shaking.",
+    "zh": "我的雙手剛剛都在發抖。"
+  },
+  {
+    "id": 755,
+    "category": "情緒表達與安慰",
+    "en": "Glad that's over with.",
+    "zh": "真慶幸那件事情終於結束了。"
+  },
+  {
+    "id": 756,
+    "category": "情緒表達與安慰",
+    "en": "I'm so annoyed.",
+    "zh": "我真的覺得很煩很惱火。"
+  },
+  {
+    "id": 757,
+    "category": "情緒表達與安慰",
+    "en": "It drives me crazy!",
+    "zh": "那真的快把我逼瘋了！"
+  },
+  {
+    "id": 758,
+    "category": "情緒表達與安慰",
+    "en": "It gets on my nerves.",
+    "zh": "那一直刺激踩到我的神經底線。"
+  },
+  {
+    "id": 759,
+    "category": "情緒表達與安慰",
+    "en": "I'm fed up with this.",
+    "zh": "我真的受夠這件事了。"
+  },
+  {
+    "id": 760,
+    "category": "情緒表達與安慰",
+    "en": "I've had enough.",
+    "zh": "我忍無可忍了。"
+  },
+  {
+    "id": 761,
+    "category": "情緒表達與安慰",
+    "en": "Calm down, please.",
+    "zh": "請冷靜下來。"
+  },
+  {
+    "id": 762,
+    "category": "情緒表達與安慰",
+    "en": "Take it easy.",
+    "zh": "放寬心，別太激動。"
+  },
+  {
+    "id": 763,
+    "category": "情緒表達與安慰",
+    "en": "Don't lose your temper.",
+    "zh": "別發脾氣動怒。"
+  },
+  {
+    "id": 764,
+    "category": "情緒表達與安慰",
+    "en": "Count to ten.",
+    "zh": "在心裡數到十冷靜一下。"
+  },
+  {
+    "id": 765,
+    "category": "情緒表達與安慰",
+    "en": "Sleep on it.",
+    "zh": "先睡一覺明天再說。"
+  },
+  {
+    "id": 766,
+    "category": "情緒表達與安慰",
+    "en": "You'll feel better in the morning.",
+    "zh": "明早起來你心情就會好點了。"
+  },
+  {
+    "id": 767,
+    "category": "情緒表達與安慰",
+    "en": "I'm feeling down today.",
+    "zh": "我今天心情有點低落鬱悶。"
+  },
+  {
+    "id": 768,
+    "category": "情緒表達與安慰",
+    "en": "Just having an off day.",
+    "zh": "只是今天狀態稍微不太對而已。"
+  },
+  {
+    "id": 769,
+    "category": "情緒表達與安慰",
+    "en": "We all have bad days.",
+    "zh": "每個人都會有不順遂的日子。"
+  },
+  {
+    "id": 770,
+    "category": "情緒表達與安慰",
+    "en": "Don't let it ruin your day.",
+    "zh": "別讓這件事毀了你整天的心情。"
+  },
+  {
+    "id": 771,
+    "category": "情緒表達與安慰",
+    "en": "Look on the bright side!",
+    "zh": "往好處想嘛！"
+  },
+  {
+    "id": 772,
+    "category": "情緒表達與安慰",
+    "en": "It could have been worse.",
+    "zh": "情況本來可能會更糟的。"
+  },
+  {
+    "id": 773,
+    "category": "情緒表達與安慰",
+    "en": "Count your blessings.",
+    "zh": "多想想自己擁有的美好人事物。"
+  },
+  {
+    "id": 774,
+    "category": "情緒表達與安慰",
+    "en": "I'm proud of how you handled that.",
+    "zh": "我很欣賞你處理那件事的方式。"
+  },
+  {
+    "id": 775,
+    "category": "情緒表達與安慰",
+    "en": "You showed a lot of courage.",
+    "zh": "你展現了無比的勇氣。"
+  },
+  {
+    "id": 776,
+    "category": "情緒表達與安慰",
+    "en": "You're stronger than you think.",
+    "zh": "你比你自己想像的還要堅強。"
+  },
+  {
+    "id": 777,
+    "category": "情緒表達與安慰",
+    "en": "Never doubt yourself.",
+    "zh": "永遠不要懷疑自己的能力。"
+  },
+  {
+    "id": 778,
+    "category": "情緒表達與安慰",
+    "en": "Trust your gut.",
+    "zh": "相信你的直覺。"
+  },
+  {
+    "id": 779,
+    "category": "情緒表達與安慰",
+    "en": "Everything happens for a reason.",
+    "zh": "一切事情的發生都有它的原因安排。"
+  },
+  {
+    "id": 780,
+    "category": "情緒表達與安慰",
+    "en": "Better days are coming.",
+    "zh": "更美好的日子就在前方了。"
+  },
+  {
+    "id": 781,
+    "category": "情緒表達與安慰",
+    "en": "I've got your back.",
+    "zh": "我會挺你到底的。"
+  },
+  {
+    "id": 782,
+    "category": "情緒表達與安慰",
+    "en": "We're in this together.",
+    "zh": "我們共同面對、同在一艘船上。"
+  },
+  {
+    "id": 783,
+    "category": "情緒表達與安慰",
+    "en": "You're not alone.",
+    "zh": "你絕不是孤單一人。"
+  },
+  {
+    "id": 784,
+    "category": "情緒表達與安慰",
+    "en": "Call me if you need anything.",
+    "zh": "有任何需要隨時打給我。"
+  },
+  {
+    "id": 785,
+    "category": "情緒表達與安慰",
+    "en": "Just wanted to check on you.",
+    "zh": "只是想關心一下你過得好不好。"
+  },
+  {
+    "id": 786,
+    "category": "情緒表達與安慰",
+    "en": "Thinking of you!",
+    "zh": "心裡惦記著你！關心你！"
+  },
+  {
+    "id": 787,
+    "category": "情緒表達與安慰",
+    "en": "Sending you hugs!",
+    "zh": "給你大大的擁抱！"
+  },
+  {
+    "id": 788,
+    "category": "情緒表達與安慰",
+    "en": "Sending good vibes your way!",
+    "zh": "把滿滿的正能量傳送給你！"
+  },
+  {
+    "id": 789,
+    "category": "情緒表達與安慰",
+    "en": "Take all the time you need.",
+    "zh": "你需要多少時間就拿去，別急。"
+  },
+  {
+    "id": 790,
+    "category": "情緒表達與安慰",
+    "en": "No pressure at all.",
+    "zh": "完全沒有壓力的，放輕鬆。"
+  },
+  {
+    "id": 791,
+    "category": "情緒表達與安慰",
+    "en": "I understand completely.",
+    "zh": "我完全理解。"
+  },
+  {
+    "id": 792,
+    "category": "情緒表達與安慰",
+    "en": "It's okay not to be okay.",
+    "zh": "暫時感到沮喪難過也是沒關係的。"
+  },
+  {
+    "id": 793,
+    "category": "情緒表達與安慰",
+    "en": "Be kind to yourself.",
+    "zh": "對自己好一點，別太嚴苛。"
+  },
+  {
+    "id": 794,
+    "category": "情緒表達與安慰",
+    "en": "Treat yourself today.",
+    "zh": "今天好好犒賞一下自己吧。"
+  },
+  {
+    "id": 795,
+    "category": "情緒表達與安慰",
+    "en": "Go get some rest.",
+    "zh": "快去好好休息吧。"
+  },
+  {
+    "id": 796,
+    "category": "情緒表達與安慰",
+    "en": "You deserve a treat.",
+    "zh": "你值得好好享受一下。"
+  },
+  {
+    "id": 797,
+    "category": "情緒表達與安慰",
+    "en": "Tomorrow is another day.",
+    "zh": "明天又是新的一天。"
+  },
+  {
+    "id": 798,
+    "category": "情緒表達與安慰",
+    "en": "Keep your head high.",
+    "zh": "昂首闊步面對吧。"
+  },
+  {
+    "id": 799,
+    "category": "情緒表達與安慰",
+    "en": "Love ya, buddy!",
+    "zh": "愛你喔，好兄弟／好閨蜜！"
+  },
+  {
+    "id": 800,
+    "category": "情緒表達與安慰",
+    "en": "You're doing amazing.",
+    "zh": "你真的做得太棒了。"
+  },
+  {
+    "id": 801,
+    "category": "意見看法與簡短回應",
+    "en": "Sounds good!",
+    "zh": "聽起來很不錯！"
+  },
+  {
+    "id": 802,
+    "category": "意見看法與簡短回應",
+    "en": "Sounds like a good idea.",
+    "zh": "聽起來是個好點子。"
+  },
+  {
+    "id": 803,
+    "category": "意見看法與簡短回應",
+    "en": "I'm with you on that.",
+    "zh": "在那一點上我和你站在同一陣線。"
+  },
+  {
+    "id": 804,
+    "category": "意見看法與簡短回應",
+    "en": "I couldn't agree more.",
+    "zh": "我完全贊同，不能同意更多了。"
+  },
+  {
+    "id": 805,
+    "category": "意見看法與簡短回應",
+    "en": "You took the words right out of my mouth.",
+    "zh": "你把我想說的話都說出來了。"
+  },
+  {
+    "id": 806,
+    "category": "意見看法與簡短回應",
+    "en": "I was just about to say that.",
+    "zh": "我剛好正準備要那樣說呢。"
+  },
+  {
+    "id": 807,
+    "category": "意見看法與簡短回應",
+    "en": "Same here.",
+    "zh": "我也是這樣想。"
+  },
+  {
+    "id": 808,
+    "category": "意見看法與簡短回應",
+    "en": "I agree one hundred percent.",
+    "zh": "我百分之百同意。"
+  },
+  {
+    "id": 809,
+    "category": "意見看法與簡短回應",
+    "en": "Point taken.",
+    "zh": "你說的這點我聽進去了。"
+  },
+  {
+    "id": 810,
+    "category": "意見看法與簡短回應",
+    "en": "Good point.",
+    "zh": "說得好／這點很有道理。"
+  },
+  {
+    "id": 811,
+    "category": "意見看法與簡短回應",
+    "en": "That makes sense.",
+    "zh": "那樣很合理說得通。"
+  },
+  {
+    "id": 812,
+    "category": "意見看法與簡短回應",
+    "en": "Fair point.",
+    "zh": "合理的觀點。"
+  },
+  {
+    "id": 813,
+    "category": "意見看法與簡短回應",
+    "en": "I see what you mean.",
+    "zh": "我明白你的意思了。"
+  },
+  {
+    "id": 814,
+    "category": "意見看法與簡短回應",
+    "en": "I see your point.",
+    "zh": "我理解你的論點出發點。"
+  },
+  {
+    "id": 815,
+    "category": "意見看法與簡短回應",
+    "en": "I'm not so sure about that.",
+    "zh": "我對這點不太確定。"
+  },
+  {
+    "id": 816,
+    "category": "意見看法與簡短回應",
+    "en": "I doubt it.",
+    "zh": "我很懷疑會是那樣。"
+  },
+  {
+    "id": 817,
+    "category": "意見看法與簡短回應",
+    "en": "I don't think so.",
+    "zh": "我不這麼認為。"
+  },
+  {
+    "id": 818,
+    "category": "意見看法與簡短回應",
+    "en": "Not necessarily.",
+    "zh": "那倒也未必如此。"
+  },
+  {
+    "id": 819,
+    "category": "意見看法與簡短回應",
+    "en": "That's not always true.",
+    "zh": "那可不一定總是對的。"
+  },
+  {
+    "id": 820,
+    "category": "意見看法與簡短回應",
+    "en": "I see it differently.",
+    "zh": "我的看法跟你不太一樣。"
+  },
+  {
+    "id": 821,
+    "category": "意見看法與簡短回應",
+    "en": "Let's agree to disagree.",
+    "zh": "我們各自保留自己的看法吧。"
+  },
+  {
+    "id": 822,
+    "category": "意見看法與簡短回應",
+    "en": "To each their own.",
+    "zh": "青菜蘿蔔各有所好，每個人不同。"
+  },
+  {
+    "id": 823,
+    "category": "意見看法與簡短回應",
+    "en": "Whatever floats your boat.",
+    "zh": "只要你喜歡高興就好。"
+  },
+  {
+    "id": 824,
+    "category": "意見看法與簡短回應",
+    "en": "If you say so.",
+    "zh": "既然你堅持這樣說的話。"
+  },
+  {
+    "id": 825,
+    "category": "意見看法與簡短回應",
+    "en": "I don't care.",
+    "zh": "我不在乎。"
+  },
+  {
+    "id": 826,
+    "category": "意見看法與簡短回應",
+    "en": "It doesn't matter to me.",
+    "zh": "這對我來說都沒差。"
+  },
+  {
+    "id": 827,
+    "category": "意見看法與簡短回應",
+    "en": "Either way is fine.",
+    "zh": "兩種方式都可以。"
+  },
+  {
+    "id": 828,
+    "category": "意見看法與簡短回應",
+    "en": "Whatever works.",
+    "zh": "只要行得通都好。"
+  },
+  {
+    "id": 829,
+    "category": "意見看法與簡短回應",
+    "en": "Whatever you prefer.",
+    "zh": "看你比較喜歡哪種。"
+  },
+  {
+    "id": 830,
+    "category": "意見看法與簡短回應",
+    "en": "It's totally your call.",
+    "zh": "完全由你做決定。"
+  },
+  {
+    "id": 831,
+    "category": "意見看法與簡短回應",
+    "en": "I'm fine with whatever.",
+    "zh": "我怎樣都可以配合。"
+  },
+  {
+    "id": 832,
+    "category": "意見看法與簡短回應",
+    "en": "I'm flexible.",
+    "zh": "我的時間和安排很彈性。"
+  },
+  {
+    "id": 833,
+    "category": "意見看法與簡短回應",
+    "en": "Not my cup of tea.",
+    "zh": "那不是我喜歡的類型／我不太感興趣。"
+  },
+  {
+    "id": 834,
+    "category": "意見看法與簡短回應",
+    "en": "Not really a fan.",
+    "zh": "我其實不是很熱衷那個。"
+  },
+  {
+    "id": 835,
+    "category": "意見看法與簡短回應",
+    "en": "Hard pass for me.",
+    "zh": "我直接果斷拒絕／我先不要。"
+  },
+  {
+    "id": 836,
+    "category": "意見看法與簡短回應",
+    "en": "I'll pass on that one.",
+    "zh": "那項我就先跳過不跟了。"
+  },
+  {
+    "id": 837,
+    "category": "意見看法與簡短回應",
+    "en": "No way in hell.",
+    "zh": "絕無可能！休想！"
+  },
+  {
+    "id": 838,
+    "category": "意見看法與簡短回應",
+    "en": "Don't count on it.",
+    "zh": "別指望那件事會發生。"
+  },
+  {
+    "id": 839,
+    "category": "意見看法與簡短回應",
+    "en": "Fat chance!",
+    "zh": "機會渺茫！門都沒有！"
+  },
+  {
+    "id": 840,
+    "category": "意見看法與簡短回應",
+    "en": "As if!",
+    "zh": "哪可能！才怪！"
+  },
+  {
+    "id": 841,
+    "category": "意見看法與簡短回應",
+    "en": "I have no clue.",
+    "zh": "我完全毫無頭緒。"
+  },
+  {
+    "id": 842,
+    "category": "意見看法與簡短回應",
+    "en": "Beats me!",
+    "zh": "考倒我了！我哪知道！"
+  },
+  {
+    "id": 843,
+    "category": "意見看法與簡短回應",
+    "en": "Your guess is as good as mine.",
+    "zh": "我跟你一樣一無所知。"
+  },
+  {
+    "id": 844,
+    "category": "意見看法與簡短回應",
+    "en": "Who knows?",
+    "zh": "誰知道呢？"
+  },
+  {
+    "id": 845,
+    "category": "意見看法與簡短回應",
+    "en": "Time will tell.",
+    "zh": "時間會給出答案的。"
+  },
+  {
+    "id": 846,
+    "category": "意見看法與簡短回應",
+    "en": "We'll see.",
+    "zh": "我們走著瞧／到時再看吧。"
+  },
+  {
+    "id": 847,
+    "category": "意見看法與簡短回應",
+    "en": "Let's wait and see.",
+    "zh": "我們先靜觀其變。"
+  },
+  {
+    "id": 848,
+    "category": "意見看法與簡短回應",
+    "en": "It depends.",
+    "zh": "這要看情況而定。"
+  },
+  {
+    "id": 849,
+    "category": "意見看法與簡短回應",
+    "en": "Depends on the weather.",
+    "zh": "看天氣狀況而定。"
+  },
+  {
+    "id": 850,
+    "category": "意見看法與簡短回應",
+    "en": "Depends on the price.",
+    "zh": "看價格多少而定。"
+  },
+  {
+    "id": 851,
+    "category": "意見看法與簡短回應",
+    "en": "That works for me.",
+    "zh": "那樣的安排對我很合適。"
+  },
+  {
+    "id": 852,
+    "category": "意見看法與簡短回應",
+    "en": "Works like a charm!",
+    "zh": "效果奇好無比！靈驗極了！"
+  },
+  {
+    "id": 853,
+    "category": "意見看法與簡短回應",
+    "en": "That's a deal breaker.",
+    "zh": "那是無法妥協的破局點。"
+  },
+  {
+    "id": 854,
+    "category": "意見看法與簡短回應",
+    "en": "No brainer!",
+    "zh": "這根本不用思考（顯而易見的好選擇）！"
+  },
+  {
+    "id": 855,
+    "category": "意見看法與簡短回應",
+    "en": "Easy decision.",
+    "zh": "輕而易舉的決定。"
+  },
+  {
+    "id": 856,
+    "category": "意見看法與簡短回應",
+    "en": "Tough call.",
+    "zh": "這真的很難下決定。"
+  },
+  {
+    "id": 857,
+    "category": "意見看法與簡短回應",
+    "en": "I'm torn between the two.",
+    "zh": "我在這兩者之間猶豫不決。"
+  },
+  {
+    "id": 858,
+    "category": "意見看法與簡短回應",
+    "en": "I'm on the fence.",
+    "zh": "我還在觀望猶豫、舉棋不定。"
+  },
+  {
+    "id": 859,
+    "category": "意見看法與簡短回應",
+    "en": "I'm leaning towards yes.",
+    "zh": "我目前比較傾向答應同意。"
+  },
+  {
+    "id": 860,
+    "category": "意見看法與簡短回應",
+    "en": "Let me sleep on it.",
+    "zh": "讓我深思熟慮考慮一晚。"
+  },
+  {
+    "id": 861,
+    "category": "意見看法與簡短回應",
+    "en": "I changed my mind.",
+    "zh": "我改變心意了。"
+  },
+  {
+    "id": 862,
+    "category": "意見看法與簡短回應",
+    "en": "Second thoughts.",
+    "zh": "我又有了第二種想法／有些猶豫。"
+  },
+  {
+    "id": 863,
+    "category": "意見看法與簡短回應",
+    "en": "Stick to the plan.",
+    "zh": "堅持原定計畫不要改。"
+  },
+  {
+    "id": 864,
+    "category": "意見看法與簡短回應",
+    "en": "Back to square one.",
+    "zh": "又回到最初的原點了。"
+  },
+  {
+    "id": 865,
+    "category": "意見看法與簡短回應",
+    "en": "Start from scratch.",
+    "zh": "從零開始從頭來過。"
+  },
+  {
+    "id": 866,
+    "category": "意見看法與簡短回應",
+    "en": "In my opinion.",
+    "zh": "依我個人的看法。"
+  },
+  {
+    "id": 867,
+    "category": "意見看法與簡短回應",
+    "en": "From my perspective.",
+    "zh": "從我的觀點來看。"
+  },
+  {
+    "id": 868,
+    "category": "意見看法與簡短回應",
+    "en": "As far as I know.",
+    "zh": "就我所知。"
+  },
+  {
+    "id": 869,
+    "category": "意見看法與簡短回應",
+    "en": "If I'm not mistaken.",
+    "zh": "如果我沒弄錯的話。"
+  },
+  {
+    "id": 870,
+    "category": "意見看法與簡短回應",
+    "en": "Correct me if I'm wrong.",
+    "zh": "如果我有說錯請糾正我。"
+  },
+  {
+    "id": 871,
+    "category": "意見看法與簡短回應",
+    "en": "Off the top of my head.",
+    "zh": "不假思索憑直覺來說。"
+  },
+  {
+    "id": 872,
+    "category": "意見看法與簡短回應",
+    "en": "Don't quote me on this.",
+    "zh": "這只是我個人印象，別當作官方說法。"
+  },
+  {
+    "id": 873,
+    "category": "意見看法與簡短回應",
+    "en": "Take it with a grain of salt.",
+    "zh": "聽聽就好，持保留態度。"
+  },
+  {
+    "id": 874,
+    "category": "意見看法與簡短回應",
+    "en": "For what it's worth.",
+    "zh": "無論是否有價值，姑且說說。"
+  },
+  {
+    "id": 875,
+    "category": "意見看法與簡短回應",
+    "en": "Just my two cents.",
+    "zh": "純粹是我個人的淺見。"
+  },
+  {
+    "id": 876,
+    "category": "意見看法與簡短回應",
+    "en": "No offense taken.",
+    "zh": "我沒介意，沒放在心上。"
+  },
+  {
+    "id": 877,
+    "category": "意見看法與簡短回應",
+    "en": "No offense, but...",
+    "zh": "無意冒犯，但..."
+  },
+  {
+    "id": 878,
+    "category": "意見看法與簡短回應",
+    "en": "Don't take it personally.",
+    "zh": "別針對個人對號入座。"
+  },
+  {
+    "id": 879,
+    "category": "意見看法與簡短回應",
+    "en": "Fair is fair.",
+    "zh": "公道話還是要講／公平就是公平。"
+  },
+  {
+    "id": 880,
+    "category": "意見看法與簡短回應",
+    "en": "Give credit where it's due.",
+    "zh": "該給肯定時就要給予肯定。"
+  },
+  {
+    "id": 881,
+    "category": "意見看法與簡短回應",
+    "en": "That's beside the point.",
+    "zh": "那根本偏離重點了。"
+  },
+  {
+    "id": 882,
+    "category": "意見看法與簡短回應",
+    "en": "You're missing the point.",
+    "zh": "你沒抓到核心重點。"
+  },
+  {
+    "id": 883,
+    "category": "意見看法與簡短回應",
+    "en": "Get to the point.",
+    "zh": "請講重點。"
+  },
+  {
+    "id": 884,
+    "category": "意見看法與簡短回應",
+    "en": "Cut to the chase.",
+    "zh": "直接切入正題吧。"
+  },
+  {
+    "id": 885,
+    "category": "意見看法與簡短回應",
+    "en": "Keep it simple.",
+    "zh": "簡單明瞭就好。"
+  },
+  {
+    "id": 886,
+    "category": "意見看法與簡短回應",
+    "en": "Let's be real here.",
+    "zh": "我們現實一點面對吧。"
+  },
+  {
+    "id": 887,
+    "category": "意見看法與簡短回應",
+    "en": "Truth hurts.",
+    "zh": "忠言逆耳／事實往往殘酷。"
+  },
+  {
+    "id": 888,
+    "category": "意見看法與簡短回應",
+    "en": "Face the music.",
+    "zh": "勇敢面對現實和後果吧。"
+  },
+  {
+    "id": 889,
+    "category": "意見看法與簡短回應",
+    "en": "It is what it is.",
+    "zh": "事情就是這樣了，只能接受。"
+  },
+  {
+    "id": 890,
+    "category": "意見看法與簡短回應",
+    "en": "What's done is done.",
+    "zh": "做了就做了，覆水難收。"
+  },
+  {
+    "id": 891,
+    "category": "意見看法與簡短回應",
+    "en": "No use crying over spilled milk.",
+    "zh": "事情發生了，哭也沒有用。"
+  },
+  {
+    "id": 892,
+    "category": "意見看法與簡短回應",
+    "en": "Live and learn.",
+    "zh": "吸取教訓，增長見識。"
+  },
+  {
+    "id": 893,
+    "category": "意見看法與簡短回應",
+    "en": "Better late than never.",
+    "zh": "遲做總比不做好。"
+  },
+  {
+    "id": 894,
+    "category": "意見看法與簡短回應",
+    "en": "Practice makes perfect.",
+    "zh": "熟能生巧。"
+  },
+  {
+    "id": 895,
+    "category": "意見看法與簡短回應",
+    "en": "Easier said than done.",
+    "zh": "說得容易做起來難。"
+  },
+  {
+    "id": 896,
+    "category": "意見看法與簡短回應",
+    "en": "Actions speak louder than words.",
+    "zh": "行動勝於空談。"
+  },
+  {
+    "id": 897,
+    "category": "意見看法與簡短回應",
+    "en": "So far so good.",
+    "zh": "到目前為止一切都很順利。"
+  },
+  {
+    "id": 898,
+    "category": "意見看法與簡短回應",
+    "en": "Touch wood!",
+    "zh": "敲敲木頭！（求好運避免霉運）"
+  },
+  {
+    "id": 899,
+    "category": "意見看法與簡短回應",
+    "en": "Cross my heart!",
+    "zh": "我發誓說的是真話！"
+  },
+  {
+    "id": 900,
+    "category": "意見看法與簡短回應",
+    "en": "You have my word.",
+    "zh": "我向你打包票保證。"
+  },
+  {
+    "id": 901,
+    "category": "職場工作與快速同步",
+    "en": "Got a minute?",
+    "zh": "現在有一分鐘空檔嗎？"
+  },
+  {
+    "id": 902,
+    "category": "職場工作與快速同步",
+    "en": "Can we talk real quick?",
+    "zh": "我們可以快速講兩句話嗎？"
+  },
+  {
+    "id": 903,
+    "category": "職場工作與快速同步",
+    "en": "Quick question for you.",
+    "zh": "快速請教你一個小問題。"
+  },
+  {
+    "id": 904,
+    "category": "職場工作與快速同步",
+    "en": "I'm on it.",
+    "zh": "我現在立刻去處理。"
+  },
+  {
+    "id": 905,
+    "category": "職場工作與快速同步",
+    "en": "I'll take care of it.",
+    "zh": "這件事我來負責辦好。"
+  },
+  {
+    "id": 906,
+    "category": "職場工作與快速同步",
+    "en": "Consider it done.",
+    "zh": "包在我身上，當作已經搞定了。"
+  },
+  {
+    "id": 907,
+    "category": "職場工作與快速同步",
+    "en": "Let's touch base later.",
+    "zh": "我們晚點再對一下進度。"
+  },
+  {
+    "id": 908,
+    "category": "職場工作與快速同步",
+    "en": "Let's sync up after lunch.",
+    "zh": "午餐後我們快速同步一下資訊。"
+  },
+  {
+    "id": 909,
+    "category": "職場工作與快速同步",
+    "en": "Loop me in on the email.",
+    "zh": "寫信時記得把我加入副本 (CC)。"
+  },
+  {
+    "id": 910,
+    "category": "職場工作與快速同步",
+    "en": "Keep me in the loop.",
+    "zh": "有最新進度請隨時讓我知道。"
+  },
+  {
+    "id": 911,
+    "category": "職場工作與快速同步",
+    "en": "Let's wrap this up.",
+    "zh": "我們把這個會議／工作做個收尾吧。"
+  },
+  {
+    "id": 912,
+    "category": "職場工作與快速同步",
+    "en": "Let's call it a day.",
+    "zh": "今天就先做到這裡，收工！"
+  },
+  {
+    "id": 913,
+    "category": "職場工作與快速同步",
+    "en": "I'm swamped with work.",
+    "zh": "我被工作塞得滿滿的。"
+  },
+  {
+    "id": 914,
+    "category": "職場工作與快速同步",
+    "en": "My plate is full.",
+    "zh": "我手頭上的事情已經全滿了。"
+  },
+  {
+    "id": 915,
+    "category": "職場工作與快速同步",
+    "en": "I can't take on more tasks.",
+    "zh": "我沒辦法再接更多工作了。"
+  },
+  {
+    "id": 916,
+    "category": "職場工作與快速同步",
+    "en": "What's the deadline?",
+    "zh": "截止期限是什麼時候？"
+  },
+  {
+    "id": 917,
+    "category": "職場工作與快速同步",
+    "en": "Deadline is end of day.",
+    "zh": "截止時間是今天下班前。"
+  },
+  {
+    "id": 918,
+    "category": "職場工作與快速同步",
+    "en": "ASAP, please.",
+    "zh": "越快越好，拜託了。"
+  },
+  {
+    "id": 919,
+    "category": "職場工作與快速同步",
+    "en": "First thing tomorrow morning.",
+    "zh": "明天一大早第一優先處理。"
+  },
+  {
+    "id": 920,
+    "category": "職場工作與快速同步",
+    "en": "On track for tomorrow.",
+    "zh": "進度一切正常，明天可完成。"
+  },
+  {
+    "id": 921,
+    "category": "職場工作與快速同步",
+    "en": "Running a bit behind.",
+    "zh": "進度稍微有點落後。"
+  },
+  {
+    "id": 922,
+    "category": "職場工作與快速同步",
+    "en": "Ahead of schedule.",
+    "zh": "進度超前了。"
+  },
+  {
+    "id": 923,
+    "category": "職場工作與快速同步",
+    "en": "Let me double check that.",
+    "zh": "讓我再仔細覆核確認一下。"
+  },
+  {
+    "id": 924,
+    "category": "職場工作與快速同步",
+    "en": "I'll get back to you soon.",
+    "zh": "我等等查好再回覆你。"
+  },
+  {
+    "id": 925,
+    "category": "職場工作與快速同步",
+    "en": "Leave it with me.",
+    "zh": "這件事交給我處理就好。"
+  },
+  {
+    "id": 926,
+    "category": "職場工作與快速同步",
+    "en": "Send me the file.",
+    "zh": "把檔案傳給我。"
+  },
+  {
+    "id": 927,
+    "category": "職場工作與快速同步",
+    "en": "Did you get my email?",
+    "zh": "你有收到我發的電子郵件嗎？"
+  },
+  {
+    "id": 928,
+    "category": "職場工作與快速同步",
+    "en": "Check your inbox.",
+    "zh": "看一下你的收件匣。"
+  },
+  {
+    "id": 929,
+    "category": "職場工作與快速同步",
+    "en": "I just sent it over.",
+    "zh": "我剛剛已經寄過去了。"
+  },
+  {
+    "id": 930,
+    "category": "職場工作與快速同步",
+    "en": "Thanks for the quick reply!",
+    "zh": "謝謝你迅速的回信！"
+  },
+  {
+    "id": 931,
+    "category": "職場工作與快速同步",
+    "en": "Sorry for the delay.",
+    "zh": "抱歉回覆延誤了。"
+  },
+  {
+    "id": 932,
+    "category": "職場工作與快速同步",
+    "en": "I was away from my desk.",
+    "zh": "我剛才離開座位了一下。"
+  },
+  {
+    "id": 933,
+    "category": "職場工作與快速同步",
+    "en": "I was stuck in a meeting.",
+    "zh": "我剛剛卡在會議中開會。"
+  },
+  {
+    "id": 934,
+    "category": "職場工作與快速同步",
+    "en": "Meeting is rescheduled.",
+    "zh": "會議改時間了。"
+  },
+  {
+    "id": 935,
+    "category": "職場工作與快速同步",
+    "en": "Meeting is pushed back.",
+    "zh": "會議往後延期了。"
+  },
+  {
+    "id": 936,
+    "category": "職場工作與快速同步",
+    "en": "Meeting is canceled.",
+    "zh": "會議取消了。"
+  },
+  {
+    "id": 937,
+    "category": "職場工作與快速同步",
+    "en": "Let's take this offline.",
+    "zh": "這個問題我們私下再另外討論。"
+  },
+  {
+    "id": 938,
+    "category": "職場工作與快速同步",
+    "en": "Who's running the meeting?",
+    "zh": "這場會議是由誰主持的？"
+  },
+  {
+    "id": 939,
+    "category": "職場工作與快速同步",
+    "en": "Can everyone see my screen?",
+    "zh": "大家都能看到我的分享畫面嗎？"
+  },
+  {
+    "id": 940,
+    "category": "職場工作與快速同步",
+    "en": "You're on mute.",
+    "zh": "你麥克風靜音了。"
+  },
+  {
+    "id": 941,
+    "category": "職場工作與快速同步",
+    "en": "Unmute yourself, please.",
+    "zh": "請把你的麥克風開啟。"
+  },
+  {
+    "id": 942,
+    "category": "職場工作與快速同步",
+    "en": "We can hear you clearly now.",
+    "zh": "現在聽得很清楚了。"
+  },
+  {
+    "id": 943,
+    "category": "職場工作與快速同步",
+    "en": "Share your screen, please.",
+    "zh": "麻煩請分享一下你的螢幕。"
+  },
+  {
+    "id": 944,
+    "category": "職場工作與快速同步",
+    "en": "Let me share my slides.",
+    "zh": "讓我來分享一下我的簡報投影片。"
+  },
+  {
+    "id": 945,
+    "category": "職場工作與快速同步",
+    "en": "Next slide, please.",
+    "zh": "請切換到下一張投影片。"
+  },
+  {
+    "id": 946,
+    "category": "職場工作與快速同步",
+    "en": "Any questions so far?",
+    "zh": "到目前為止大家有任何問題嗎？"
+  },
+  {
+    "id": 947,
+    "category": "職場工作與快速同步",
+    "en": "Let's brainstorm some ideas.",
+    "zh": "我們來腦力激盪想些點子。"
+  },
+  {
+    "id": 948,
+    "category": "職場工作與快速同步",
+    "en": "Think outside the box.",
+    "zh": "跳脫框架思考。"
+  },
+  {
+    "id": 949,
+    "category": "職場工作與快速同步",
+    "en": "Bottom line is this.",
+    "zh": "核心最關鍵的重點就是這個。"
+  },
+  {
+    "id": 950,
+    "category": "職場工作與快速同步",
+    "en": "We need to cut costs.",
+    "zh": "我們需要精簡降低成本。"
+  },
+  {
+    "id": 951,
+    "category": "職場工作與快速同步",
+    "en": "Boost our sales.",
+    "zh": "衝高我們的銷售業績。"
+  },
+  {
+    "id": 952,
+    "category": "職場工作與快速同步",
+    "en": "Hit our monthly target.",
+    "zh": "達成我們的月度業績目標。"
+  },
+  {
+    "id": 953,
+    "category": "職場工作與快速同步",
+    "en": "Team effort!",
+    "zh": "這是團隊共同努力的成果！"
+  },
+  {
+    "id": 954,
+    "category": "職場工作與快速同步",
+    "en": "Great job, everyone!",
+    "zh": "大家做得太棒了！"
+  },
+  {
+    "id": 955,
+    "category": "職場工作與快速同步",
+    "en": "Shout out to the dev team!",
+    "zh": "特別感謝研發團隊的付出！"
+  },
+  {
+    "id": 956,
+    "category": "職場工作與快速同步",
+    "en": "Give him a round of applause.",
+    "zh": "大家給他熱烈的掌聲。"
+  },
+  {
+    "id": 957,
+    "category": "職場工作與快速同步",
+    "en": "Well deserved promotion!",
+    "zh": "升遷當之無愧！恭喜！"
+  },
+  {
+    "id": 958,
+    "category": "職場工作與快速同步",
+    "en": "Who's leading this project?",
+    "zh": "這個專案目前是由誰主導？"
+  },
+  {
+    "id": 959,
+    "category": "職場工作與快速同步",
+    "en": "I'm heading this project.",
+    "zh": "我是這個專案的負責人。"
+  },
+  {
+    "id": 960,
+    "category": "職場工作與快速同步",
+    "en": "Let's assign tasks.",
+    "zh": "我們來分配工作事項。"
+  },
+  {
+    "id": 961,
+    "category": "職場工作與快速同步",
+    "en": "Take notes, please.",
+    "zh": "麻煩做一下會議紀錄。"
+  },
+  {
+    "id": 962,
+    "category": "職場工作與快速同步",
+    "en": "Send meeting minutes later.",
+    "zh": "會後請發送會議記錄。"
+  },
+  {
+    "id": 963,
+    "category": "職場工作與快速同步",
+    "en": "Action items for today.",
+    "zh": "今天的待辦執行項目。"
+  },
+  {
+    "id": 964,
+    "category": "職場工作與快速同步",
+    "en": "Follow up with the client.",
+    "zh": "跟客戶追蹤後續進度。"
+  },
+  {
+    "id": 965,
+    "category": "職場工作與快速同步",
+    "en": "Sign the contract.",
+    "zh": "在合約上簽名。"
+  },
+  {
+    "id": 966,
+    "category": "職場工作與快速同步",
+    "en": "Deal is signed!",
+    "zh": "合約順利簽下來了！"
+  },
+  {
+    "id": 967,
+    "category": "職場工作與快速同步",
+    "en": "Good news from the client.",
+    "zh": "客戶那邊傳來好消息。"
+  },
+  {
+    "id": 968,
+    "category": "職場工作與快速同步",
+    "en": "Client approved the plan.",
+    "zh": "客戶已經核准計畫案了。"
+  },
+  {
+    "id": 969,
+    "category": "職場工作與快速同步",
+    "en": "Back to work!",
+    "zh": "回到工作崗位上工吧！"
+  },
+  {
+    "id": 970,
+    "category": "職場工作與快速同步",
+    "en": "Coffee break time!",
+    "zh": "咖啡休息時間到了！"
+  },
+  {
+    "id": 971,
+    "category": "職場工作與快速同步",
+    "en": "Who wants coffee?",
+    "zh": "有誰想喝咖啡嗎？"
+  },
+  {
+    "id": 972,
+    "category": "職場工作與快速同步",
+    "en": "Grab me an espresso, please.",
+    "zh": "幫我帶一杯濃縮咖啡，謝謝。"
+  },
+  {
+    "id": 973,
+    "category": "職場工作與快速同步",
+    "en": "Office is quiet today.",
+    "zh": "今天辦公室好安靜。"
+  },
+  {
+    "id": 974,
+    "category": "職場工作與快速同步",
+    "en": "Working from home today.",
+    "zh": "今天在家遠端工作。"
+  },
+  {
+    "id": 975,
+    "category": "職場工作與快速同步",
+    "en": "I'll be in the office tomorrow.",
+    "zh": "我明天會進辦公室。"
+  },
+  {
+    "id": 976,
+    "category": "職場工作與快速同步",
+    "en": "Out of office today.",
+    "zh": "今天休假外出不在辦公室。"
+  },
+  {
+    "id": 977,
+    "category": "職場工作與快速同步",
+    "en": "Set your automatic reply.",
+    "zh": "記得設定自動休假回信。"
+  },
+  {
+    "id": 978,
+    "category": "職場工作與快速同步",
+    "en": "Taking half a day off.",
+    "zh": "今天下午請半天假。"
+  },
+  {
+    "id": 979,
+    "category": "職場工作與快速同步",
+    "en": "Taking sick leave today.",
+    "zh": "今天請病假一天。"
+  },
+  {
+    "id": 980,
+    "category": "職場工作與快速同步",
+    "en": "Get well soon!",
+    "zh": "早日康復！"
+  },
+  {
+    "id": 981,
+    "category": "職場工作與快速同步",
+    "en": "Cover for me, please.",
+    "zh": "拜託幫我代班一下。"
+  },
+  {
+    "id": 982,
+    "category": "職場工作與快速同步",
+    "en": "I'll cover your shift.",
+    "zh": "我會幫你頂這個班。"
+  },
+  {
+    "id": 983,
+    "category": "職場工作與快速同步",
+    "en": "Clock in on time.",
+    "zh": "準時打卡上班。"
+  },
+  {
+    "id": 984,
+    "category": "職場工作與快速同步",
+    "en": "Clock out now.",
+    "zh": "現在打卡下班囉。"
+  },
+  {
+    "id": 985,
+    "category": "職場工作與快速同步",
+    "en": "Working overtime today.",
+    "zh": "今天得留下來加班。"
+  },
+  {
+    "id": 986,
+    "category": "職場工作與快速同步",
+    "en": "No overtime today, yes!",
+    "zh": "今天不用加班，太棒了！"
+  },
+  {
+    "id": 987,
+    "category": "職場工作與快速同步",
+    "en": "TGIF, Thank God it's Friday!",
+    "zh": "感謝老天，終於星期五了！"
+  },
+  {
+    "id": 988,
+    "category": "職場工作與快速同步",
+    "en": "Have a good weekend, team!",
+    "zh": "大家週末愉快！"
+  },
+  {
+    "id": 989,
+    "category": "職場工作與快速同步",
+    "en": "See you all on Monday.",
+    "zh": "各位週一見囉。"
+  },
+  {
+    "id": 990,
+    "category": "職場工作與快速同步",
+    "en": "Fresh week, fresh start.",
+    "zh": "新的一週，全新衝刺。"
+  },
+  {
+    "id": 991,
+    "category": "職場工作與快速同步",
+    "en": "Let's crush this week!",
+    "zh": "這週我們一起大顯身手！"
+  },
+  {
+    "id": 992,
+    "category": "職場工作與快速同步",
+    "en": "Keep up the good work!",
+    "zh": "繼續保持優異表現！"
+  },
+  {
+    "id": 993,
+    "category": "職場工作與快速同步",
+    "en": "Nice presentation today.",
+    "zh": "今天簡報報得很精彩。"
+  },
+  {
+    "id": 994,
+    "category": "職場工作與快速同步",
+    "en": "You handled the questions well.",
+    "zh": "你剛才回答問題答得很好。"
+  },
+  {
+    "id": 995,
+    "category": "職場工作與快速同步",
+    "en": "Thanks for the feedback.",
+    "zh": "謝謝你的寶貴回饋建議。"
+  },
+  {
+    "id": 996,
+    "category": "職場工作與快速同步",
+    "en": "Open to constructive criticism.",
+    "zh": "樂於接受建設性的批評。"
+  },
+  {
+    "id": 997,
+    "category": "職場工作與快速同步",
+    "en": "Let's improve on this.",
+    "zh": "我們可以在這點上再做優化。"
+  },
+  {
+    "id": 998,
+    "category": "職場工作與快速同步",
+    "en": "Ready for launch!",
+    "zh": "一切準備就緒，可以正式上線！"
+  },
+  {
+    "id": 999,
+    "category": "職場工作與快速同步",
+    "en": "Project goes live tomorrow.",
+    "zh": "專案明天正式上線發布。"
+  },
+  {
+    "id": 1000,
+    "category": "職場工作與快速同步",
+    "en": "All systems green.",
+    "zh": "所有系統運作一切正常。"
+  },
+  {
+    "id": 1001,
+    "category": "電話通訊與訊息",
+    "en": "Hello, who's calling?",
+    "zh": "您好，請問哪位找？"
+  },
+  {
+    "id": 1002,
+    "category": "電話通訊與訊息",
+    "en": "This is Alex speaking.",
+    "zh": "我是 Alex。"
+  },
+  {
+    "id": 1003,
+    "category": "電話通訊與訊息",
+    "en": "Can I speak to Sarah, please?",
+    "zh": "可以請 Sarah 接電話嗎？"
+  },
+  {
+    "id": 1004,
+    "category": "電話通訊與訊息",
+    "en": "Speaking!",
+    "zh": "我就是！（電話中回答本人）"
+  },
+  {
+    "id": 1005,
+    "category": "電話通訊與訊息",
+    "en": "Hold on a second, please.",
+    "zh": "請稍候一下下。"
+  },
+  {
+    "id": 1006,
+    "category": "電話通訊與訊息",
+    "en": "Hang on a minute.",
+    "zh": "請先別掛斷，等我一下。"
+  },
+  {
+    "id": 1007,
+    "category": "電話通訊與訊息",
+    "en": "Let me transfer your call.",
+    "zh": "我幫您轉接電話。"
+  },
+  {
+    "id": 1008,
+    "category": "電話通訊與訊息",
+    "en": "I'll put you through.",
+    "zh": "我這就幫您接通過去。"
+  },
+  {
+    "id": 1009,
+    "category": "電話通訊與訊息",
+    "en": "Line is busy right now.",
+    "zh": "線路目前通話中忙線。"
+  },
+  {
+    "id": 1010,
+    "category": "電話通訊與訊息",
+    "en": "She's on another call.",
+    "zh": "她正在講另一通電話。"
+  },
+  {
+    "id": 1011,
+    "category": "電話通訊與訊息",
+    "en": "He's away from his desk.",
+    "zh": "他目前不在座位上。"
+  },
+  {
+    "id": 1012,
+    "category": "電話通訊與訊息",
+    "en": "Can I take a message?",
+    "zh": "需要我幫您留言嗎？"
+  },
+  {
+    "id": 1013,
+    "category": "電話通訊與訊息",
+    "en": "Would you like to leave a message?",
+    "zh": "您想留個話給他嗎？"
+  },
+  {
+    "id": 1014,
+    "category": "電話通訊與訊息",
+    "en": "Tell him Alex called.",
+    "zh": "請轉告他 Alex 有打電話來。"
+  },
+  {
+    "id": 1015,
+    "category": "電話通訊與訊息",
+    "en": "Ask her to call me back.",
+    "zh": "麻煩請她回電給我。"
+  },
+  {
+    "id": 1016,
+    "category": "電話通訊與訊息",
+    "en": "What's your phone number?",
+    "zh": "您的電話號碼是多少？"
+  },
+  {
+    "id": 1017,
+    "category": "電話通訊與訊息",
+    "en": "My number is 555-0199.",
+    "zh": "我的號碼是 555-0199。"
+  },
+  {
+    "id": 1018,
+    "category": "電話通訊與訊息",
+    "en": "Got it, I'll let him know.",
+    "zh": "記下來了，我會轉告他。"
+  },
+  {
+    "id": 1019,
+    "category": "電話通訊與訊息",
+    "en": "Thanks for calling.",
+    "zh": "謝謝您的來電。"
+  },
+  {
+    "id": 1020,
+    "category": "電話通訊與訊息",
+    "en": "I'll call you right back.",
+    "zh": "我等等立刻回撥給你。"
+  },
+  {
+    "id": 1021,
+    "category": "電話通訊與訊息",
+    "en": "Can you hear me okay?",
+    "zh": "你能聽得清楚我的聲音嗎？"
+  },
+  {
+    "id": 1022,
+    "category": "電話通訊與訊息",
+    "en": "You're breaking up.",
+    "zh": "你的聲音斷斷續續的。"
+  },
+  {
+    "id": 1023,
+    "category": "電話通訊與訊息",
+    "en": "Bad connection here.",
+    "zh": "這裡的收訊連線很差。"
+  },
+  {
+    "id": 1024,
+    "category": "電話通訊與訊息",
+    "en": "I lost you for a second.",
+    "zh": "剛才收訊斷了一下沒聽到你說的。"
+  },
+  {
+    "id": 1025,
+    "category": "電話通訊與訊息",
+    "en": "Say that again, please.",
+    "zh": "請再說一次好嗎？"
+  },
+  {
+    "id": 1026,
+    "category": "電話通訊與訊息",
+    "en": "Could you speak up a bit?",
+    "zh": "你可以說大聲一點點嗎？"
+  },
+  {
+    "id": 1027,
+    "category": "電話通訊與訊息",
+    "en": "It's noisy here.",
+    "zh": "我這邊環境滿吵的。"
+  },
+  {
+    "id": 1028,
+    "category": "電話通訊與訊息",
+    "en": "Call got disconnected.",
+    "zh": "電話剛剛斷線掉了。"
+  },
+  {
+    "id": 1029,
+    "category": "電話通訊與訊息",
+    "en": "My battery is dying.",
+    "zh": "我手機快沒電了。"
+  },
+  {
+    "id": 1030,
+    "category": "電話通訊與訊息",
+    "en": "Phone shut down.",
+    "zh": "手機自動關機了。"
+  },
+  {
+    "id": 1031,
+    "category": "電話通訊與訊息",
+    "en": "Send me a text instead.",
+    "zh": "改傳簡訊訊息給我吧。"
+  },
+  {
+    "id": 1032,
+    "category": "電話通訊與訊息",
+    "en": "Text me the address.",
+    "zh": "把地址傳訊息給我。"
+  },
+  {
+    "id": 1033,
+    "category": "電話通訊與訊息",
+    "en": "Text me your location.",
+    "zh": "把你的即時定位傳給我。"
+  },
+  {
+    "id": 1034,
+    "category": "電話通訊與訊息",
+    "en": "I'll send you a link.",
+    "zh": "我等等傳連結給你。"
+  },
+  {
+    "id": 1035,
+    "category": "電話通訊與訊息",
+    "en": "Check your messages.",
+    "zh": "看一下你的簡訊訊息。"
+  },
+  {
+    "id": 1036,
+    "category": "電話通訊與訊息",
+    "en": "Did you see my text?",
+    "zh": "你有看到我剛發的訊息嗎？"
+  },
+  {
+    "id": 1037,
+    "category": "電話通訊與訊息",
+    "en": "Replying to your text now.",
+    "zh": "我正在回覆你的訊息。"
+  },
+  {
+    "id": 1038,
+    "category": "電話通訊與訊息",
+    "en": "Got your voice note.",
+    "zh": "收到你的語音訊息了。"
+  },
+  {
+    "id": 1039,
+    "category": "電話通訊與訊息",
+    "en": "Send a quick voice note.",
+    "zh": "錄一小段語音訊息傳過去。"
+  },
+  {
+    "id": 1040,
+    "category": "電話通訊與訊息",
+    "en": "Let's do a video call.",
+    "zh": "我們來打視訊電話吧。"
+  },
+  {
+    "id": 1041,
+    "category": "電話通訊與訊息",
+    "en": "Turn on your camera.",
+    "zh": "把你的視訊鏡頭打開。"
+  },
+  {
+    "id": 1042,
+    "category": "電話通訊與訊息",
+    "en": "Nice seeing your face!",
+    "zh": "看見你的臉真好！"
+  },
+  {
+    "id": 1043,
+    "category": "電話通訊與訊息",
+    "en": "I'll screen share with you.",
+    "zh": "我把螢幕畫面分享給你看。"
+  },
+  {
+    "id": 1044,
+    "category": "電話通訊與訊息",
+    "en": "Mute your microphone.",
+    "zh": "把你的麥克風靜音。"
+  },
+  {
+    "id": 1045,
+    "category": "電話通訊與訊息",
+    "en": "Hit me up later!",
+    "zh": "晚點再敲我／聯絡我！"
+  },
+  {
+    "id": 1046,
+    "category": "電話通訊與訊息",
+    "en": "Drop me a line anytime.",
+    "zh": "隨時發個訊息給我。"
+  },
+  {
+    "id": 1047,
+    "category": "電話通訊與訊息",
+    "en": "Ping me on chat.",
+    "zh": "在聊天軟體上叮我一下。"
+  },
+  {
+    "id": 1048,
+    "category": "電話通訊與訊息",
+    "en": "I'll DM you the details.",
+    "zh": "我會私訊你詳細資訊。"
+  },
+  {
+    "id": 1049,
+    "category": "電話通訊與訊息",
+    "en": "Add me on Instagram.",
+    "zh": "在 Instagram 上加我好友。"
+  },
+  {
+    "id": 1050,
+    "category": "電話通訊與訊息",
+    "en": "What's your handle?",
+    "zh": "你的帳號 ID 是什麼？"
+  },
+  {
+    "id": 1051,
+    "category": "電話通訊與訊息",
+    "en": "Follow me back!",
+    "zh": "記得回追蹤我喔！"
+  },
+  {
+    "id": 1052,
+    "category": "電話通訊與訊息",
+    "en": "Tag me in the photo.",
+    "zh": "在照片裡標記 (Tag) 我。"
+  },
+  {
+    "id": 1053,
+    "category": "電話通訊與訊息",
+    "en": "Post it on your story.",
+    "zh": "把它發到你的限時動態。"
+  },
+  {
+    "id": 1054,
+    "category": "電話通訊與訊息",
+    "en": "Sent you a friend request.",
+    "zh": "我傳送交友邀請給你了。"
+  },
+  {
+    "id": 1055,
+    "category": "電話通訊與訊息",
+    "en": "Accept my invite.",
+    "zh": "接受我的邀請。"
+  },
+  {
+    "id": 1056,
+    "category": "電話通訊與訊息",
+    "en": "Join the group chat.",
+    "zh": "加入群組聊天室。"
+  },
+  {
+    "id": 1057,
+    "category": "電話通訊與訊息",
+    "en": "Created a new group.",
+    "zh": "建了一個新的群組。"
+  },
+  {
+    "id": 1058,
+    "category": "電話通訊與訊息",
+    "en": "Leave the group chat.",
+    "zh": "退出群組聊天室。"
+  },
+  {
+    "id": 1059,
+    "category": "電話通訊與訊息",
+    "en": "Spam call, ignore it.",
+    "zh": "那是垃圾推銷電話，別理它。"
+  },
+  {
+    "id": 1060,
+    "category": "電話通訊與訊息",
+    "en": "Block that number.",
+    "zh": "把那個號碼封鎖掉。"
+  },
+  {
+    "id": 1061,
+    "category": "電話通訊與訊息",
+    "en": "Wrong number, sorry.",
+    "zh": "抱歉，您打錯電話了。"
+  },
+  {
+    "id": 1062,
+    "category": "電話通訊與訊息",
+    "en": "No problem, have a good day.",
+    "zh": "沒關係，祝您順心。"
+  },
+  {
+    "id": 1063,
+    "category": "電話通訊與訊息",
+    "en": "Voicemail is full.",
+    "zh": "語音信箱已經全滿了。"
+  },
+  {
+    "id": 1064,
+    "category": "電話通訊與訊息",
+    "en": "Leave a voicemail.",
+    "zh": "在語音信箱留言。"
+  },
+  {
+    "id": 1065,
+    "category": "電話通訊與訊息",
+    "en": "Check your voicemail.",
+    "zh": "去聽一下你的語音信箱。"
+  },
+  {
+    "id": 1066,
+    "category": "電話通訊與訊息",
+    "en": "Ring tone is loud.",
+    "zh": "手機鈴聲調得很大聲。"
+  },
+  {
+    "id": 1067,
+    "category": "電話通訊與訊息",
+    "en": "Put it on vibrate.",
+    "zh": "把它切換成震動模式。"
+  },
+  {
+    "id": 1068,
+    "category": "電話通訊與訊息",
+    "en": "Put phone on silent.",
+    "zh": "把手機轉成靜音。"
+  },
+  {
+    "id": 1069,
+    "category": "電話通訊與訊息",
+    "en": "Do Not Disturb mode is on.",
+    "zh": "勿擾模式開啟中。"
+  },
+  {
+    "id": 1070,
+    "category": "電話通訊與訊息",
+    "en": "Missed your call.",
+    "zh": "剛才沒接到你的未接來電。"
+  },
+  {
+    "id": 1071,
+    "category": "電話通訊與訊息",
+    "en": "Calling you back now.",
+    "zh": "現在回撥給你。"
+  },
+  {
+    "id": 1072,
+    "category": "電話通訊與訊息",
+    "en": "Sorry, I was driving.",
+    "zh": "抱歉，剛才開車中沒辦法接。"
+  },
+  {
+    "id": 1073,
+    "category": "電話通訊與訊息",
+    "en": "Sorry, I was asleep.",
+    "zh": "抱歉，剛才睡著了。"
+  },
+  {
+    "id": 1074,
+    "category": "電話通訊與訊息",
+    "en": "Call me when you wake up.",
+    "zh": "醒來後打給我。"
+  },
+  {
+    "id": 1075,
+    "category": "電話通訊與訊息",
+    "en": "Call me when you land.",
+    "zh": "班機落地後打給我。"
+  },
+  {
+    "id": 1076,
+    "category": "電話通訊與訊息",
+    "en": "Call me when you get home.",
+    "zh": "回到家打給我。"
+  },
+  {
+    "id": 1077,
+    "category": "電話通訊與訊息",
+    "en": "Stay on the line.",
+    "zh": "請先在線上不要掛斷。"
+  },
+  {
+    "id": 1078,
+    "category": "電話通訊與訊息",
+    "en": "Thanks for waiting.",
+    "zh": "感謝您的耐心等候。"
+  },
+  {
+    "id": 1079,
+    "category": "電話通訊與訊息",
+    "en": "Glad we connected.",
+    "zh": "真高興能通上電話。"
+  },
+  {
+    "id": 1080,
+    "category": "電話通訊與訊息",
+    "en": "Talk to you later, bye!",
+    "zh": "晚點再聊囉，掰掰！"
+  },
+  {
+    "id": 1081,
+    "category": "電話通訊與訊息",
+    "en": "I gotta hang up now.",
+    "zh": "我現在得掛電話了。"
+  },
+  {
+    "id": 1082,
+    "category": "電話通訊與訊息",
+    "en": "Someone else is calling in.",
+    "zh": "有插播電話進來了。"
+  },
+  {
+    "id": 1083,
+    "category": "電話通訊與訊息",
+    "en": "Let me take this call.",
+    "zh": "我先接一下這通電話。"
+  },
+  {
+    "id": 1084,
+    "category": "電話通訊與訊息",
+    "en": "I'll call right after this.",
+    "zh": "講完這通立刻打給你。"
+  },
+  {
+    "id": 1085,
+    "category": "電話通訊與訊息",
+    "en": "Talk soon!",
+    "zh": "很快再聊！"
+  },
+  {
+    "id": 1086,
+    "category": "電話通訊與訊息",
+    "en": "Bye for now!",
+    "zh": "先這樣囉，掰！"
+  },
+  {
+    "id": 1087,
+    "category": "電話通訊與訊息",
+    "en": "Take care, bye!",
+    "zh": "保重喔，掰掰！"
+  },
+  {
+    "id": 1088,
+    "category": "電話通訊與訊息",
+    "en": "Catch you tomorrow.",
+    "zh": "明天再打給你聊。"
+  },
+  {
+    "id": 1089,
+    "category": "電話通訊與訊息",
+    "en": "Sending love over the phone.",
+    "zh": "透過電話送上滿滿的愛。"
+  },
+  {
+    "id": 1090,
+    "category": "電話通訊與訊息",
+    "en": "Goodnight, talk tomorrow.",
+    "zh": "晚安，明天再聊。"
+  },
+  {
+    "id": 1091,
+    "category": "電話通訊與訊息",
+    "en": "Read at 10 PM.",
+    "zh": "已讀時間晚上十點。"
+  },
+  {
+    "id": 1092,
+    "category": "電話通訊與訊息",
+    "en": "Left on read.",
+    "zh": "被已讀不回了。"
+  },
+  {
+    "id": 1093,
+    "category": "電話通訊與訊息",
+    "en": "Typing a response...",
+    "zh": "正在輸入訊息中..."
+  },
+  {
+    "id": 1094,
+    "category": "電話通訊與訊息",
+    "en": "Autocorrect failed me!",
+    "zh": "自動選字害慘我了！選錯字！"
+  },
+  {
+    "id": 1095,
+    "category": "電話通訊與訊息",
+    "en": "Typo, sorry!",
+    "zh": "打錯字了，抱歉！"
+  },
+  {
+    "id": 1096,
+    "category": "電話通訊與訊息",
+    "en": "Ignore my last message.",
+    "zh": "請略過我剛發的那條訊息。"
+  },
+  {
+    "id": 1097,
+    "category": "電話通訊與訊息",
+    "en": "Meant to send to John.",
+    "zh": "本來是要傳給 John 的，傳錯了。"
+  },
+  {
+    "id": 1098,
+    "category": "電話通訊與訊息",
+    "en": "Forward the message.",
+    "zh": "把這條訊息轉發出去。"
+  },
+  {
+    "id": 1099,
+    "category": "電話通訊與訊息",
+    "en": "Save the picture.",
+    "zh": "把照片儲存下來。"
+  },
+  {
+    "id": 1100,
+    "category": "電話通訊與訊息",
+    "en": "Sent!",
+    "zh": "傳送出去了！"
+  },
+  {
+    "id": 1101,
+    "category": "身體健康與日常狀況",
+    "en": "I'm feeling beat today.",
+    "zh": "我今天感到累翻了。"
+  },
+  {
+    "id": 1102,
+    "category": "身體健康與日常狀況",
+    "en": "I'm exhausted.",
+    "zh": "我精疲力竭了。"
+  },
+  {
+    "id": 1103,
+    "category": "身體健康與日常狀況",
+    "en": "I need some sleep.",
+    "zh": "我需要好好睡一覺。"
+  },
+  {
+    "id": 1104,
+    "category": "身體健康與日常狀況",
+    "en": "I'm under the weather.",
+    "zh": "我身體稍微有點不太舒服。"
+  },
+  {
+    "id": 1105,
+    "category": "身體健康與日常狀況",
+    "en": "I feel a cold coming on.",
+    "zh": "我感覺自己好像快感冒了。"
+  },
+  {
+    "id": 1106,
+    "category": "身體健康與日常狀況",
+    "en": "I have a sore throat.",
+    "zh": "我喉嚨很痛。"
+  },
+  {
+    "id": 1107,
+    "category": "身體健康與日常狀況",
+    "en": "I have a runny nose.",
+    "zh": "我一直在流鼻水。"
+  },
+  {
+    "id": 1108,
+    "category": "身體健康與日常狀況",
+    "en": "I can't stop sneezing.",
+    "zh": "我一直打噴嚏停不下來。"
+  },
+  {
+    "id": 1109,
+    "category": "身體健康與日常狀況",
+    "en": "I have a bad cough.",
+    "zh": "我咳得很厲害。"
+  },
+  {
+    "id": 1110,
+    "category": "身體健康與日常狀況",
+    "en": "My head is killing me.",
+    "zh": "我的頭痛得要命。"
+  },
+  {
+    "id": 1111,
+    "category": "身體健康與日常狀況",
+    "en": "I have a splitting headache.",
+    "zh": "我頭痛欲裂。"
+  },
+  {
+    "id": 1112,
+    "category": "身體健康與日常狀況",
+    "en": "I have a slight fever.",
+    "zh": "我有一點輕微發燒。"
+  },
+  {
+    "id": 1113,
+    "category": "身體健康與日常狀況",
+    "en": "My temperature is 38 degrees.",
+    "zh": "我體溫是三十八度。"
+  },
+  {
+    "id": 1114,
+    "category": "身體健康與日常狀況",
+    "en": "Take your temperature.",
+    "zh": "去量一下你的體溫。"
+  },
+  {
+    "id": 1115,
+    "category": "身體健康與日常狀況",
+    "en": "Take some medicine.",
+    "zh": "去吃點藥。"
+  },
+  {
+    "id": 1116,
+    "category": "身體健康與日常狀況",
+    "en": "Take two pills with water.",
+    "zh": "配水吞兩顆藥丸。"
+  },
+  {
+    "id": 1117,
+    "category": "身體健康與日常狀況",
+    "en": "Take this after meals.",
+    "zh": "這個請在三餐飯後服用。"
+  },
+  {
+    "id": 1118,
+    "category": "身體健康與日常狀況",
+    "en": "Take this on an empty stomach.",
+    "zh": "這個請空腹服用。"
+  },
+  {
+    "id": 1119,
+    "category": "身體健康與日常狀況",
+    "en": "Does this cause drowsiness?",
+    "zh": "這個藥吃了會嗜睡想睡覺嗎？"
+  },
+  {
+    "id": 1120,
+    "category": "身體健康與日常狀況",
+    "en": "Drink lots of fluids.",
+    "zh": "多補充水分多喝水。"
+  },
+  {
+    "id": 1121,
+    "category": "身體健康與日常狀況",
+    "en": "Get plenty of rest.",
+    "zh": "好好充分休息。"
+  },
+  {
+    "id": 1122,
+    "category": "身體健康與日常狀況",
+    "en": "Stay in bed today.",
+    "zh": "今天躺在床上好好休養。"
+  },
+  {
+    "id": 1123,
+    "category": "身體健康與日常狀況",
+    "en": "I have a stomachache.",
+    "zh": "我肚子痛／胃痛。"
+  },
+  {
+    "id": 1124,
+    "category": "身體健康與日常狀況",
+    "en": "My stomach is upset.",
+    "zh": "我的胃腸不太舒服。"
+  },
+  {
+    "id": 1125,
+    "category": "身體健康與日常狀況",
+    "en": "I feel nauseous.",
+    "zh": "我感覺反胃想吐。"
+  },
+  {
+    "id": 1126,
+    "category": "身體健康與日常狀況",
+    "en": "I feel dizzy.",
+    "zh": "我感覺頭暈目眩。"
+  },
+  {
+    "id": 1127,
+    "category": "身體健康與日常狀況",
+    "en": "Sit down and rest.",
+    "zh": "坐下來休息一下。"
+  },
+  {
+    "id": 1128,
+    "category": "身體健康與日常狀況",
+    "en": "I twisted my ankle.",
+    "zh": "我扭傷腳踝了。"
+  },
+  {
+    "id": 1129,
+    "category": "身體健康與日常狀況",
+    "en": "Put some ice on it.",
+    "zh": "拿冰塊在上面冰敷一下。"
+  },
+  {
+    "id": 1130,
+    "category": "身體健康與日常狀況",
+    "en": "My muscles are sore.",
+    "zh": "我全身肌肉好痠痛。"
+  },
+  {
+    "id": 1131,
+    "category": "身體健康與日常狀況",
+    "en": "Worked out too hard yesterday.",
+    "zh": "昨天健身運動練太兇了。"
+  },
+  {
+    "id": 1132,
+    "category": "身體健康與日常狀況",
+    "en": "I need a massage.",
+    "zh": "我好需要去按摩一下放鬆。"
+  },
+  {
+    "id": 1133,
+    "category": "身體健康與日常狀況",
+    "en": "My back hurts.",
+    "zh": "我的腰背好痛。"
+  },
+  {
+    "id": 1134,
+    "category": "身體健康與日常狀況",
+    "en": "My eyes are strained.",
+    "zh": "我的眼睛好疲勞乾澀。"
+  },
+  {
+    "id": 1135,
+    "category": "身體健康與日常狀況",
+    "en": "Take a screen break.",
+    "zh": "讓眼睛離開螢幕休息一下。"
+  },
+  {
+    "id": 1136,
+    "category": "身體健康與日常狀況",
+    "en": "Look out the window.",
+    "zh": "看看窗外遠處放鬆。"
+  },
+  {
+    "id": 1137,
+    "category": "身體健康與日常狀況",
+    "en": "I need some fresh air.",
+    "zh": "我需要去吸點新鮮空氣。"
+  },
+  {
+    "id": 1138,
+    "category": "身體健康與日常狀況",
+    "en": "Let's go for a walk.",
+    "zh": "我們去散個步透透氣。"
+  },
+  {
+    "id": 1139,
+    "category": "身體健康與日常狀況",
+    "en": "Stretch your arms and legs.",
+    "zh": "拉拉筋、伸展一下手腳。"
+  },
+  {
+    "id": 1140,
+    "category": "身體健康與日常狀況",
+    "en": "Do some light yoga.",
+    "zh": "做點溫和的瑜珈伸展。"
+  },
+  {
+    "id": 1141,
+    "category": "身體健康與日常狀況",
+    "en": "I'm feeling much better now.",
+    "zh": "我現在感覺好多了。"
+  },
+  {
+    "id": 1142,
+    "category": "身體健康與日常狀況",
+    "en": "Back on my feet!",
+    "zh": "完全康復、重獲活力了！"
+  },
+  {
+    "id": 1143,
+    "category": "身體健康與日常狀況",
+    "en": "Full of energy today!",
+    "zh": "今天活力充沛、精神百倍！"
+  },
+  {
+    "id": 1144,
+    "category": "身體健康與日常狀況",
+    "en": "Glad you're feeling better.",
+    "zh": "真高興看到你身體好轉了。"
+  },
+  {
+    "id": 1145,
+    "category": "身體健康與日常狀況",
+    "en": "Get well soon!",
+    "zh": "祝你早日康復！"
+  },
+  {
+    "id": 1146,
+    "category": "身體健康與日常狀況",
+    "en": "Take good care of yourself.",
+    "zh": "好好保重照顧自己喔。"
+  },
+  {
+    "id": 1147,
+    "category": "身體健康與日常狀況",
+    "en": "Don't push yourself too hard.",
+    "zh": "別把自己逼得太緊累壞了。"
+  },
+  {
+    "id": 1148,
+    "category": "身體健康與日常狀況",
+    "en": "Listen to your body.",
+    "zh": "聆聽傾聽自己身體的聲音。"
+  },
+  {
+    "id": 1149,
+    "category": "身體健康與日常狀況",
+    "en": "Health comes first.",
+    "zh": "健康永遠是第一位的。"
+  },
+  {
+    "id": 1150,
+    "category": "身體健康與日常狀況",
+    "en": "Eat healthy foods.",
+    "zh": "多吃健康的食物。"
+  },
+  {
+    "id": 1151,
+    "category": "身體健康與日常狀況",
+    "en": "More greens and fruits.",
+    "zh": "多吃蔬菜和水果。"
+  },
+  {
+    "id": 1152,
+    "category": "身體健康與日常狀況",
+    "en": "Cut down on sugar.",
+    "zh": "少吃點糖分。"
+  },
+  {
+    "id": 1153,
+    "category": "身體健康與日常狀況",
+    "en": "Cut back on junk food.",
+    "zh": "少吃點垃圾垃圾食物。"
+  },
+  {
+    "id": 1154,
+    "category": "身體健康與日常狀況",
+    "en": "Stay hydrated!",
+    "zh": "記得隨時補充水分！"
+  },
+  {
+    "id": 1155,
+    "category": "身體健康與日常狀況",
+    "en": "Drink eight glasses a day.",
+    "zh": "一天喝足八杯水。"
+  },
+  {
+    "id": 1156,
+    "category": "身體健康與日常狀況",
+    "en": "Are you sleeping well?",
+    "zh": "你最近睡眠品質好嗎？"
+  },
+  {
+    "id": 1157,
+    "category": "身體健康與日常狀況",
+    "en": "I have insomnia lately.",
+    "zh": "我最近一直有失眠問題。"
+  },
+  {
+    "id": 1158,
+    "category": "身體健康與日常狀況",
+    "en": "Tossing and turning all night.",
+    "zh": "整晚翻來覆去睡不著。"
+  },
+  {
+    "id": 1159,
+    "category": "身體健康與日常狀況",
+    "en": "Try drinking warm milk.",
+    "zh": "試試看喝杯溫牛奶。"
+  },
+  {
+    "id": 1160,
+    "category": "身體健康與日常狀況",
+    "en": "No caffeine after 3 PM.",
+    "zh": "下午三點後不要碰咖啡因。"
+  },
+  {
+    "id": 1161,
+    "category": "身體健康與日常狀況",
+    "en": "Put phone away before bed.",
+    "zh": "睡前把手機放遠一點。"
+  },
+  {
+    "id": 1162,
+    "category": "身體健康與日常狀況",
+    "en": "I need to see a doctor.",
+    "zh": "我需要去看醫生。"
+  },
+  {
+    "id": 1163,
+    "category": "身體健康與日常狀況",
+    "en": "Make a doctor's appointment.",
+    "zh": "預約看診掛號。"
+  },
+  {
+    "id": 1164,
+    "category": "身體健康與日常狀況",
+    "en": "Where is the clinic?",
+    "zh": "診所在哪裡？"
+  },
+  {
+    "id": 1165,
+    "category": "身體健康與日常狀況",
+    "en": "Where's the pharmacy?",
+    "zh": "藥局在哪裡？"
+  },
+  {
+    "id": 1166,
+    "category": "身體健康與日常狀況",
+    "en": "Is there an emergency room nearby?",
+    "zh": "這附近有急診室嗎？"
+  },
+  {
+    "id": 1167,
+    "category": "身體健康與日常狀況",
+    "en": "Call an ambulance!",
+    "zh": "快叫救護車！"
+  },
+  {
+    "id": 1168,
+    "category": "身體健康與日常狀況",
+    "en": "I have health insurance.",
+    "zh": "我有全民健保／醫療保險。"
+  },
+  {
+    "id": 1169,
+    "category": "身體健康與日常狀況",
+    "en": "Show your health insurance card.",
+    "zh": "出示你的健保卡。"
+  },
+  {
+    "id": 1170,
+    "category": "身體健康與日常狀況",
+    "en": "Doctor will see you now.",
+    "zh": "醫生現在可以為您看診了。"
+  },
+  {
+    "id": 1171,
+    "category": "身體健康與日常狀況",
+    "en": "Where does it hurt?",
+    "zh": "哪裡會痛呢？"
+  },
+  {
+    "id": 1172,
+    "category": "身體健康與日常狀況",
+    "en": "It hurts right here.",
+    "zh": "就是這裡在痛。"
+  },
+  {
+    "id": 1173,
+    "category": "身體健康與日常狀況",
+    "en": "How long has it hurt?",
+    "zh": "痛了多久時間了？"
+  },
+  {
+    "id": 1174,
+    "category": "身體健康與日常狀況",
+    "en": "Started two days ago.",
+    "zh": "兩天前開始痛的。"
+  },
+  {
+    "id": 1175,
+    "category": "身體健康與日常狀況",
+    "en": "Breathe in deeply.",
+    "zh": "深吸一口氣。"
+  },
+  {
+    "id": 1176,
+    "category": "身體健康與日常狀況",
+    "en": "Breathe out slowly.",
+    "zh": "慢慢吐氣。"
+  },
+  {
+    "id": 1177,
+    "category": "身體健康與日常狀況",
+    "en": "Open wide and say Ah.",
+    "zh": "嘴巴張大，說『啊～』。"
+  },
+  {
+    "id": 1178,
+    "category": "身體健康與日常狀況",
+    "en": "Nothing serious, don't worry.",
+    "zh": "沒有大礙，不用太擔心。"
+  },
+  {
+    "id": 1179,
+    "category": "身體健康與日常狀況",
+    "en": "You'll be fine in a few days.",
+    "zh": "過幾天就會痊癒沒事了。"
+  },
+  {
+    "id": 1180,
+    "category": "身體健康與日常狀況",
+    "en": "Take this prescription to the counter.",
+    "zh": "拿這張處方箋去領藥櫃台。"
+  },
+  {
+    "id": 1181,
+    "category": "身體健康與日常狀況",
+    "en": "Take vitamins daily.",
+    "zh": "每天補充綜合維他命。"
+  },
+  {
+    "id": 1182,
+    "category": "身體健康與日常狀況",
+    "en": "Vitamin C boosts immunity.",
+    "zh": "維他命 C 能提升免疫力。"
+  },
+  {
+    "id": 1183,
+    "category": "身體健康與日常狀況",
+    "en": "Wash your hands often.",
+    "zh": "常常用肥皂洗手。"
+  },
+  {
+    "id": 1184,
+    "category": "身體健康與日常狀況",
+    "en": "Use hand sanitizer.",
+    "zh": "使用酒精乾洗手消毒。"
+  },
+  {
+    "id": 1185,
+    "category": "身體健康與日常狀況",
+    "en": "Wear a mask if you're sick.",
+    "zh": "生病時請記得戴上口罩。"
+  },
+  {
+    "id": 1186,
+    "category": "身體健康與日常狀況",
+    "en": "Cover your mouth when coughing.",
+    "zh": "咳嗽時記得遮住嘴巴。"
+  },
+  {
+    "id": 1187,
+    "category": "身體健康與日常狀況",
+    "en": "Stay home if you have a fever.",
+    "zh": "發燒請留在家裡休息不要外出。"
+  },
+  {
+    "id": 1188,
+    "category": "身體健康與日常狀況",
+    "en": "Annual health checkup.",
+    "zh": "每年的年度健康檢查。"
+  },
+  {
+    "id": 1189,
+    "category": "身體健康與日常狀況",
+    "en": "Blood pressure is normal.",
+    "zh": "血壓量出來很正常。"
+  },
+  {
+    "id": 1190,
+    "category": "身體健康與日常狀況",
+    "en": "Heart rate looks good.",
+    "zh": "心跳頻率很健康。"
+  },
+  {
+    "id": 1191,
+    "category": "身體健康與日常狀況",
+    "en": "Keep up the good habits!",
+    "zh": "繼續維持良好的生活習慣！"
+  },
+  {
+    "id": 1192,
+    "category": "身體健康與日常狀況",
+    "en": "Regular exercise is key.",
+    "zh": "規律運動是關鍵要訣。"
+  },
+  {
+    "id": 1193,
+    "category": "身體健康與日常狀況",
+    "en": "Go for a run.",
+    "zh": "去慢跑一下。"
+  },
+  {
+    "id": 1194,
+    "category": "身體健康與日常狀況",
+    "en": "Hit the gym.",
+    "zh": "去健身房鍛鍊。"
+  },
+  {
+    "id": 1195,
+    "category": "身體健康與日常狀況",
+    "en": "Feeling strong and fit!",
+    "zh": "感覺強健又充滿體態活力！"
+  },
+  {
+    "id": 1196,
+    "category": "身體健康與日常狀況",
+    "en": "Stay safe and healthy!",
+    "zh": "保持安全健康喔！"
+  },
+  {
+    "id": 1197,
+    "category": "身體健康與日常狀況",
+    "en": "Cheers to good health!",
+    "zh": "為身體健康乾杯！"
+  },
+  {
+    "id": 1198,
+    "category": "身體健康與日常狀況",
+    "en": "Wishing you good health always.",
+    "zh": "祝福您身體常保健康安康。"
+  },
+  {
+    "id": 1199,
+    "category": "身體健康與日常狀況",
+    "en": "Take it easy and rest up.",
+    "zh": "放寬心，好好多休息補眠。"
+  },
+  {
+    "id": 1200,
+    "category": "身體健康與日常狀況",
+    "en": "Stay in good shape!",
+    "zh": "保持良好的健康體態！"
+  }
+]

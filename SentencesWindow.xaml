@@ -49,24 +49,33 @@
                 BorderBrush="#E2E8F0" BorderThickness="1">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="12"/>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="12"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0">
+                    <TextBlock Text="題庫模式" FontSize="12" Foreground="#64748B" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="PoolComboBox" Height="30" SelectionChanged="PoolComboBox_SelectionChanged">
+                        <ComboBoxItem Content="🗣️ 生活口語模式 (推薦)" Tag="spoken" IsSelected="True"/>
+                        <ComboBoxItem Content="📚 標準生活 1200 句" Tag="standard"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
                     <TextBlock Text="主題分類" FontSize="12" Foreground="#64748B" Margin="0,0,0,4"/>
                     <ComboBox x:Name="CategoryComboBox" Height="30" SelectionChanged="CategoryComboBox_SelectionChanged"/>
                 </StackPanel>
-                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                <StackPanel Grid.Column="4" VerticalAlignment="Center">
                     <TextBlock Text="抽題模式" FontSize="12" Foreground="#64748B" Margin="0,0,0,4"/>
                     <StackPanel Orientation="Horizontal">
                         <RadioButton x:Name="ModeRandomRadio" Content="🎲 隨機" IsChecked="True" Margin="0,0,8,0" Checked="ModeRadio_Checked"/>
                         <RadioButton x:Name="ModeSeqRadio" Content="🔢 依序" Checked="ModeRadio_Checked"/>
                     </StackPanel>
                 </StackPanel>
-                <StackPanel Grid.Column="4" VerticalAlignment="Center">
+                <StackPanel Grid.Column="6" VerticalAlignment="Center">
                     <TextBlock Text="遮罩英文" FontSize="12" Foreground="#64748B" Margin="0,0,0,4"/>
                     <CheckBox x:Name="MaskEnCheckBox" Content="預設遮罩英文" IsChecked="True" Checked="MaskEnCheckBox_Changed" Unchecked="MaskEnCheckBox_Changed"/>
                 </StackPanel>
