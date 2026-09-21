@@ -10,7 +10,7 @@ namespace Englishtest.Services
 {
     public class DictionaryLookupService
     {
-        private static readonly HttpClient Http = new HttpClient();
+        private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(3) };
         private readonly Dictionary<string, WordPronunciation> _cache =
             new Dictionary<string, WordPronunciation>(StringComparer.OrdinalIgnoreCase);
 

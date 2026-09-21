@@ -15,8 +15,11 @@ export async function lookupPronunciation(word) {
   };
 
   try {
+    const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    const timeoutId = controller ? setTimeout(() => controller.abort(), 3000) : null;
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(key)}`;
-    const res = await fetch(url);
+    const res = await fetch(url, controller ? { signal: controller.signal } : {});
+    if (timeoutId) clearTimeout(timeoutId);
     if (res.ok) {
       const entries = await res.json();
       const entry = entries?.[0];
@@ -41,7 +44,7 @@ export async function lookupPronunciation(word) {
       }
     }
   } catch {
-    // offline or API blocked — use local data only
+    // offline, timeout or API blocked — use local data only
   }
 
   cache.set(key, result);

@@ -126,13 +126,21 @@ namespace Englishtest
 
             // Preload pronunciation and example sentence in the background
             var lookupWord = GetLookupWord(_current);
+            var thisItem = _current;
             if (lookupWord != null)
             {
                 var ignored = Task.Run(async () =>
                 {
                     try
                     {
-                        await LoadPronunciationAsync(_current, lookupWord).ConfigureAwait(false);
+                        await LoadPronunciationAsync(thisItem, lookupWord).ConfigureAwait(false);
+                        Dispatcher.Invoke(() =>
+                        {
+                            if (_current == thisItem && _answered && FeedbackPanel.Visibility == Visibility.Visible)
+                            {
+                                UpdateFeedback(_lastIsCorrect, _lastCorrectDisplay);
+                            }
+                        });
                     }
                     catch { }
                 });
@@ -361,24 +369,13 @@ namespace Englishtest
             _pronunciation.OpenDictionary(url);
         }
 
-        private async void SubmitAnswer()
+        private bool _lastIsCorrect;
+        private string _lastCorrectDisplay;
+
+        private void SubmitAnswer()
         {
             if (_answered || _current == null)
                 return;
-
-            // Wait for pronunciation to load if it's not loaded yet
-            if (_currentPronunciation == null)
-            {
-                var lookupWord = GetLookupWord(_current);
-                if (lookupWord != null)
-                {
-                    try
-                    {
-                        await LoadPronunciationAsync(_current, lookupWord).ConfigureAwait(true);
-                    }
-                    catch { }
-                }
-            }
 
             bool isCorrect;
             string correctDisplay;
@@ -399,10 +396,25 @@ namespace Englishtest
 
             _answered = true;
             _answeredCount++;
+            _lastIsCorrect = isCorrect;
+            _lastCorrectDisplay = correctDisplay;
             if (isCorrect)
                 _correctCount++;
 
             ScoreText.Text = $"得分：{_correctCount} / {_vocabulary.SessionTotal}";
+
+            UpdateFeedback(isCorrect, correctDisplay);
+
+            AnswerBox.IsEnabled = false;
+            SubmitButton.IsEnabled = false;
+            NextButton.IsEnabled = true;
+            NextButton.Focus();
+        }
+
+        private void UpdateFeedback(bool isCorrect, string correctDisplay)
+        {
+            if (_current == null)
+                return;
 
             var phoneticHint = "";
             var phonetic = _currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Phonetic)
@@ -432,11 +444,6 @@ namespace Englishtest
                 FeedbackText.Foreground = new SolidColorBrush(Color.FromRgb(185, 28, 28));
                 FeedbackText.Text = $"✗ 不正確。參考答案：{correctDisplay}{phoneticHint}{exampleText}";
             }
-
-            AnswerBox.IsEnabled = false;
-            SubmitButton.IsEnabled = false;
-            NextButton.IsEnabled = true;
-            NextButton.Focus();
         }
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)

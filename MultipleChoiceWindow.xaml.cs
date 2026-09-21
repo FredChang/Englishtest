@@ -98,13 +98,25 @@ namespace Englishtest
 
             _currentPronunciation = null;
             var lookupWord = GetLookupWord(_current);
+            var thisItem = _current;
             if (lookupWord != null)
             {
                 var ignored = Task.Run(async () =>
                 {
                     try
                     {
-                        _currentPronunciation = await _dictionary.LookupAsync(lookupWord).ConfigureAwait(false);
+                        var info = await _dictionary.LookupAsync(lookupWord).ConfigureAwait(false);
+                        Dispatcher.Invoke(() =>
+                        {
+                            if (_current == thisItem)
+                            {
+                                _currentPronunciation = info;
+                                if (_answered && FeedbackPanel.Visibility == Visibility.Visible)
+                                {
+                                    UpdateFeedback(_lastIsCorrect);
+                                }
+                            }
+                        });
                     }
                     catch { }
                 });
@@ -158,24 +170,12 @@ namespace Englishtest
             }
         }
 
-        private async void Option_Click(object sender, RoutedEventArgs e)
+        private bool _lastIsCorrect;
+
+        private void Option_Click(object sender, RoutedEventArgs e)
         {
             if (_answered || _current == null)
                 return;
-
-            // Wait for dictionary lookup to finish if not finished yet
-            if (_currentPronunciation == null)
-            {
-                var lookupWord = GetLookupWord(_current);
-                if (lookupWord != null)
-                {
-                    try
-                    {
-                        _currentPronunciation = await _dictionary.LookupAsync(lookupWord).ConfigureAwait(true);
-                    }
-                    catch { }
-                }
-            }
 
             var button = sender as Button;
             if (button == null)
@@ -189,6 +189,7 @@ namespace Englishtest
             _answeredCount++;
 
             bool isCorrect = selectedIndex == _correctIndex;
+            _lastIsCorrect = isCorrect;
             if (isCorrect)
                 _correctCount++;
 
@@ -211,6 +212,23 @@ namespace Englishtest
                 button.Foreground = WrongFg;
             }
 
+            // Feedback
+            UpdateFeedback(isCorrect);
+
+            // Play pronunciation for the correct word
+            var word = _current.PrimaryEnglish;
+            if (!string.IsNullOrWhiteSpace(word))
+                _pronunciation.Speak(word);
+
+            NextButton.IsEnabled = true;
+            NextButton.Focus();
+        }
+
+        private void UpdateFeedback(bool isCorrect)
+        {
+            if (_current == null)
+                return;
+
             var phoneticHint = "";
             var phonetic = _currentPronunciation != null && !string.IsNullOrWhiteSpace(_currentPronunciation.Phonetic)
                 ? _currentPronunciation.Phonetic
@@ -226,7 +244,6 @@ namespace Englishtest
                 exampleText = $"\n例句：{_currentPronunciation.Example}";
             }
 
-            // Feedback
             FeedbackPanel.Visibility = Visibility.Visible;
             if (isCorrect)
             {
@@ -243,14 +260,6 @@ namespace Englishtest
                 FeedbackText.Foreground = WrongFg;
                 FeedbackText.Text = $"✗ 不正確。正確答案：{correctDisplay}{phoneticHint}{exampleText}";
             }
-
-            // Play pronunciation for the correct word
-            var word = _current.PrimaryEnglish;
-            if (!string.IsNullOrWhiteSpace(word))
-                _pronunciation.Speak(word);
-
-            NextButton.IsEnabled = true;
-            NextButton.Focus();
         }
 
         private void NextButton_Click(object sender, RoutedEventArgs e)

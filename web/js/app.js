@@ -313,12 +313,16 @@ function showNextQuestion() {
 
   currentPronunciation = null;
   const word = lookupWord(current);
+  const currentItem = current;
   if (word) {
     lookupPronunciation(word).then((info) => {
-      if (current && lookupWord(current) === word) {
+      if (current === currentItem) {
         currentPronunciation = info;
-        if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
-        if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
+        if (currentItem.Phonetic) currentPronunciation.phonetic = currentItem.Phonetic;
+        if (currentItem.AudioUrl) currentPronunciation.audioUrl = currentItem.AudioUrl;
+        if (answered && !els.feedbackPanel.classList.contains('hidden')) {
+          refreshFeedback(currentItem);
+        }
       }
     }).catch(() => {});
   }
@@ -376,21 +380,13 @@ function showImageChoiceOptions() {
   });
 }
 
-async function onImageOptionClick(e) {
+function onImageOptionClick(e) {
   if (answered || !current) return;
   const btn = e.currentTarget;
   const index = Number(btn.dataset.index);
   if (Number.isNaN(index)) return;
 
   const word = lookupWord(current);
-  if (word && !currentPronunciation) {
-    try {
-      currentPronunciation = await lookupPronunciation(word);
-      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
-      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
-    } catch {}
-  }
-
   const isCorrect = index === correctChoiceIndex;
   els.imageOptionButtons.forEach((b) => (b.disabled = true));
   els.imageOptionButtons[correctChoiceIndex]?.classList.add('correct');
@@ -427,11 +423,26 @@ function showChoiceOptions() {
   });
 }
 
+function refreshFeedback(item) {
+  if (!answered || !item || item !== current) return;
+  const isImage = settings.mode === 'image';
+  const isCorrect = els.feedbackPanel.classList.contains('ok');
+  let correctDisplay = '';
+  if (settings.direction === 'EtoC') {
+    correctDisplay = item.Chinese;
+  } else {
+    correctDisplay = primaryEnglish(item);
+  }
+  showFeedback(isCorrect, correctDisplay, { imageMode: isImage, isRefresh: true });
+}
+
 function showFeedback(isCorrect, correctDisplay, options = {}) {
-  answered = true;
-  answeredCount++;
-  if (isCorrect) correctCount++;
-  updateScoreDisplay();
+  if (!options.isRefresh) {
+    answered = true;
+    answeredCount++;
+    if (isCorrect) correctCount++;
+    updateScoreDisplay();
+  }
 
   els.feedbackPanel.classList.remove('hidden', 'ok', 'err');
   els.feedbackPanel.classList.add(isCorrect ? 'ok' : 'err');
@@ -451,8 +462,9 @@ function showFeedback(isCorrect, correctDisplay, options = {}) {
   }
 
   const phoneticHint =
-    (currentPronunciation?.phonetic || els.phoneticText.textContent) && (currentPronunciation?.phonetic || els.phoneticText.textContent) !== '（暫無音標）'
-      ? `　音標：${currentPronunciation?.phonetic || els.phoneticText.textContent}`
+    (currentPronunciation?.phonetic || current?.Phonetic || els.phoneticText.textContent) &&
+    (currentPronunciation?.phonetic || current?.Phonetic || els.phoneticText.textContent) !== '（暫無音標）'
+      ? `　音標：${currentPronunciation?.phonetic || current?.Phonetic || els.phoneticText.textContent}`
       : '';
 
   let feedbackHtml = isCorrect
@@ -466,18 +478,10 @@ function showFeedback(isCorrect, correctDisplay, options = {}) {
   els.feedbackText.innerHTML = feedbackHtml;
 }
 
-async function submitTypingAnswer() {
+function submitTypingAnswer() {
   if (answered || !current) return;
 
   const word = lookupWord(current);
-  if (word && !currentPronunciation) {
-    try {
-      currentPronunciation = await lookupPronunciation(word);
-      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
-      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
-    } catch {}
-  }
-
   let result;
   if (settings.direction === 'EtoC') {
     result = vocabulary.checkChineseAnswer(current, els.answerInput.value);
@@ -486,27 +490,20 @@ async function submitTypingAnswer() {
   }
 
   showFeedback(result.isCorrect, result.correctDisplay);
+  if (word) speak(word);
   els.answerInput.disabled = true;
   els.submitBtn.disabled = true;
   els.nextBtn.disabled = false;
   els.nextBtn.focus();
 }
 
-async function onOptionClick(e) {
+function onOptionClick(e) {
   if (answered || !current) return;
   const btn = e.currentTarget;
   const index = Number(btn.dataset.index);
   if (Number.isNaN(index)) return;
 
   const word = lookupWord(current);
-  if (word && !currentPronunciation) {
-    try {
-      currentPronunciation = await lookupPronunciation(word);
-      if (current.Phonetic) currentPronunciation.phonetic = current.Phonetic;
-      if (current.AudioUrl) currentPronunciation.audioUrl = current.AudioUrl;
-    } catch {}
-  }
-
   const isCorrect = index === correctChoiceIndex;
   els.optionButtons.forEach((b) => (b.disabled = true));
   els.optionButtons[correctChoiceIndex]?.classList.add('correct');
