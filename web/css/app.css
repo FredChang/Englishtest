@@ -1681,3 +1681,346 @@ button {
   font-size: 0.95rem;
 }
 
+
+
+/* ===================================================
+   AI 英文導師交談 (ChatGPT 風格) 樣式
+   =================================================== */
+
+.btn-aichat {
+  padding: 14px 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-aichat:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+.btn-aichat:active {
+  transform: translateY(0);
+}
+
+.aichat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.aichat-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.aichat-header-left h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.aichat-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.aichat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.aichat-topic-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.aichat-topic-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.aichat-topic-select {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #f8fafc;
+  color: var(--text);
+  outline: none;
+}
+
+.aichat-autovoice-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* 訊息區域 */
+.aichat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 380px;
+  max-height: calc(100dvh - 280px);
+  overflow-y: auto;
+  padding: 12px 4px 16px;
+  scroll-behavior: smooth;
+}
+
+.aichat-msg {
+  display: flex;
+  gap: 10px;
+  max-width: 92%;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.aichat-msg-user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.aichat-msg-model {
+  align-self: flex-start;
+}
+
+.aichat-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.aichat-msg-user .aichat-avatar {
+  background: #dbeafe;
+}
+
+.aichat-bubble-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.aichat-bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  word-break: break-word;
+}
+
+.aichat-msg-user .aichat-bubble {
+  background: #2563eb;
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+}
+
+.aichat-msg-model .aichat-bubble {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 4px;
+}
+
+.aichat-play-btn {
+  margin-top: 6px;
+  padding: 3px 8px;
+  font-size: 0.78rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.aichat-play-btn:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+/* 語法糾錯與地道建議卡片 */
+.aichat-grammar-card {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: #92400e;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.08);
+  animation: slideDown 0.3s ease-out;
+}
+
+.grammar-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #b45309;
+  margin-bottom: 4px;
+}
+
+.grammar-orig {
+  color: #78350f;
+  margin-bottom: 2px;
+}
+
+.grammar-suggest {
+  color: #15803d;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.grammar-explain {
+  font-size: 0.84rem;
+  color: #4b5563;
+  line-height: 1.4;
+  border-top: 1px dashed #fcd34d;
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+/* 等待打字動畫 */
+.loading-dots {
+  display: flex;
+  gap: 4px;
+  padding: 10px 14px;
+  color: #94a3b8;
+}
+
+.loading-dots span {
+  animation: blink 1.4s infinite both;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 底部輸入列 */
+.aichat-input-bar {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  bottom: 12px;
+  margin-top: 8px;
+}
+
+.aichat-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: inherit;
+  background: transparent;
+  max-height: 120px;
+  padding: 4px 0;
+}
+
+.aichat-input-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.aichat-btn-mic {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.aichat-btn-mic:hover {
+  background: #e2e8f0;
+}
+
+.aichat-btn-mic.recording {
+  background: #fee2e2;
+  border-color: #ef4444;
+  animation: pulseMic 1s infinite alternate;
+}
+
+@keyframes pulseMic {
+  from { transform: scale(1); box-shadow: 0 0 0 rgba(239, 68, 68, 0.4); }
+  to { transform: scale(1.1); box-shadow: 0 0 8px rgba(239, 68, 68, 0.7); }
+}
+
+.aichat-btn-send {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 20px;
+}
+
+.aichat-modal-content {
+  max-width: 480px;
+}
+
+.aichat-modal-body {
+  padding: 16px;
+}

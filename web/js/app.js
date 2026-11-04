@@ -2,6 +2,7 @@ import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocab
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
 import { initGuideReading } from './guide-reading.js';
 import { SentencesPractice } from './sentences.js';
+import { AiChatPractice } from './aichat.js';
 import { APP_VERSION } from './version.js';
 
 const vocabulary = new VocabularyService();
@@ -11,11 +12,13 @@ const screens = {
   quiz: document.getElementById('screen-quiz'),
   guideLoad: document.getElementById('screen-guide-load'),
   guidePlay: document.getElementById('screen-guide-play'),
-  sentences: document.getElementById('screen-sentences')
+  sentences: document.getElementById('screen-sentences'),
+  aichat: document.getElementById('screen-aichat')
 };
 
 let guideReading = null;
 let sentencesPractice = null;
+let aiChatPractice = null;
 
 const els = {
   levelSelect: document.getElementById('level-select'),
@@ -762,3 +765,37 @@ if (sentencesOpenBtn) {
 }
 
 
+
+const aichatOpenBtn = document.getElementById('aichat-open-btn');
+if (aichatOpenBtn) {
+  const handleAiChatOpen = (e) => {
+    if (e) e.preventDefault();
+    console.log('aichat-open-btn clicked');
+
+    try {
+      const warmup = new SpeechSynthesisUtterance('');
+      warmup.volume = 0;
+      window.speechSynthesis?.speak(warmup);
+    } catch (err) {}
+
+    showScreen('aichat');
+
+    try {
+      if (!aiChatPractice) {
+        aiChatPractice = new AiChatPractice({
+          container: screens.aichat,
+          onBack: () => showScreen('setup')
+        });
+      }
+      aiChatPractice.start();
+    } catch (err) {
+      console.error('AI 導師開啟失敗', err);
+      alert('AI 導師開啟失敗: ' + (err?.message || err));
+    }
+  };
+
+  aichatOpenBtn.addEventListener('click', handleAiChatOpen);
+  aichatOpenBtn.addEventListener('touchend', handleAiChatOpen);
+} else {
+  console.error('aichat-open-btn not found in DOM');
+}
