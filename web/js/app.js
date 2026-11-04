@@ -602,6 +602,17 @@ async function init() {
   }
 
   try {
+    if (screens.aichat) {
+      aiChatPractice = new AiChatPractice({
+        container: screens.aichat,
+        onBack: () => showScreen('setup')
+      });
+    }
+  } catch (err) {
+    console.error('AI 導師預先初始化失敗', err);
+  }
+
+  try {
     if (els.levelPoolText) els.levelPoolText.textContent = '載入單字題庫中…';
     await vocabulary.load('words.json');
   } catch (err) {
@@ -769,7 +780,10 @@ if (sentencesOpenBtn) {
 const aichatOpenBtn = document.getElementById('aichat-open-btn');
 if (aichatOpenBtn) {
   const handleAiChatOpen = (e) => {
-    if (e) e.preventDefault();
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     console.log('aichat-open-btn clicked');
 
     try {
