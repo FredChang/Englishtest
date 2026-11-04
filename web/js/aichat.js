@@ -1,11 +1,12 @@
 // AI 英文導師對話模組 (Gemini API 驅動)
-// 支援 ChatGPT 風格介面、即時英語交談、語法與用詞建議、語音輸入與語音朗讀
+// 支援 ChatGPT 風格介面、對話難度調整 (初級/中級/高級)、即時英語交談、語法與用詞建議、語音輸入與語音朗讀
 
 import { APP_VERSION } from './version.js';
 
 const STORAGE_KEY_API_KEY = 'englishtest_gemini_api_key';
 const STORAGE_KEY_MODEL = 'englishtest_gemini_model';
 const STORAGE_KEY_TOPIC = 'englishtest_gemini_topic';
+const STORAGE_KEY_DIFFICULTY = 'englishtest_gemini_difficulty';
 const STORAGE_KEY_VOICE_AUTO = 'englishtest_gemini_voice_auto';
 
 // 預設金鑰 (可由使用者在設定彈窗中自訂或更換)
@@ -20,6 +21,34 @@ export const CHAT_TOPICS = [
   { id: 'hotel', name: '🏨 飯店入住與旅遊諮詢 (Hotel & Concierge)', desc: '練習入住登記、房間問題反饋與行程建議', prompt: 'a warm and courteous hotel front desk receptionist helping guests check in and giving local travel recommendations' }
 ];
 
+export const DIFFICULTY_LEVELS = {
+  beginner: {
+    name: '初級入門',
+    speechRate: 0.85,
+    prompt: `Level: BEGINNER (A1-A2).
+- Use VERY SHORT, SIMPLE sentences (max 10-15 words per sentence).
+- Limit vocabulary to common daily words (CEFR A1/A2). Avoid complex idioms, advanced slang, or long subordinate clauses.
+- Keep responses friendly, warm, and brief (only 1 to 2 short sentences total).
+- Ask only ONE very simple question (e.g., "Do you like coffee?", "What did you eat today?") so the user can easily reply with a few words.
+- In grammar corrections: be very gentle. Only correct basic mistakes, and suggest very simple 3-5 word native alternatives.`
+  },
+  intermediate: {
+    name: '中級實用',
+    speechRate: 0.95,
+    prompt: `Level: INTERMEDIATE (B1-B2).
+- Speak naturally like a native speaker in everyday life.
+- Sentences can be normal length with standard conversational phrases.
+- Keep response around 2 to 3 sentences, followed by one engaging follow-up question.`
+  },
+  advanced: {
+    name: '高級進階',
+    speechRate: 1.0,
+    prompt: `Level: ADVANCED (C1-C2).
+- Use rich, precise vocabulary, natural idioms, and authentic phrasal verbs.
+- Challenge the user with in-depth questions and nuanced grammar/phrasing corrections.`
+  }
+};
+
 export class AiChatPractice {
   constructor(options = {}) {
     this.container = options.container || document.getElementById('screen-aichat');
@@ -28,6 +57,7 @@ export class AiChatPractice {
     this.apiKey = localStorage.getItem(STORAGE_KEY_API_KEY) || DEFAULT_API_KEY;
     this.modelName = localStorage.getItem(STORAGE_KEY_MODEL) || DEFAULT_MODEL;
     this.currentTopic = localStorage.getItem(STORAGE_KEY_TOPIC) || 'free';
+    this.difficulty = localStorage.getItem(STORAGE_KEY_DIFFICULTY) || 'beginner';
     this.autoSpeak = localStorage.getItem(STORAGE_KEY_VOICE_AUTO) !== 'false';
 
     this.messages = []; // [{ role: 'user'|'model', text: '', grammar?: { hasIssue, userOriginal, improved, explanationZh } }]
@@ -45,6 +75,7 @@ export class AiChatPractice {
       backBtn: document.getElementById('aichat-back-btn'),
       settingsBtn: document.getElementById('aichat-settings-btn'),
       clearBtn: document.getElementById('aichat-clear-btn'),
+      difficultySelect: document.getElementById('aichat-difficulty-select'),
       topicSelect: document.getElementById('aichat-topic-select'),
       messageList: document.getElementById('aichat-messages'),
       input: document.getElementById('aichat-input'),
@@ -60,6 +91,11 @@ export class AiChatPractice {
       modalSaveBtn: document.getElementById('aichat-modal-save-btn'),
       modalResetKeyBtn: document.getElementById('aichat-modal-resetkey-btn')
     };
+
+    // 初始化難度選單
+    if (this.els.difficultySelect) {
+      this.els.difficultySelect.value = this.difficulty;
+    }
 
     // 初始化主題選單
     if (this.els.topicSelect) {
@@ -90,6 +126,14 @@ export class AiChatPractice {
         this.renderMessages();
         this.sendGreeting();
       }
+    });
+
+    this.els.difficultySelect?.addEventListener('change', (e) => {
+      this.difficulty = e.target.value;
+      localStorage.setItem(STORAGE_KEY_DIFFICULTY, this.difficulty);
+      this.messages = [];
+      this.renderMessages();
+      this.sendGreeting();
     });
 
     this.els.topicSelect?.addEventListener('change', (e) => {
@@ -225,15 +269,33 @@ export class AiChatPractice {
 
   sendGreeting() {
     const topic = CHAT_TOPICS.find(t => t.id === this.currentTopic) || CHAT_TOPICS[0];
-    let greeting = "Hello there! I'm your AI English Tutor. We can chat about anything you like! What's on your mind today?";
-    if (topic.id === 'cafe') {
-      greeting = "Hi, welcome to Central Perk Cafe! What can I get started for you today?";
-    } else if (topic.id === 'interview') {
-      greeting = "Hello! Thanks for coming in today. Could you briefly introduce yourself and tell me why you're interested in this position?";
-    } else if (topic.id === 'airport') {
-      greeting = "Good day! Welcome to border inspection. May I please see your passport and boarding pass?";
-    } else if (topic.id === 'hotel') {
-      greeting = "Good afternoon, welcome to Grand Hyatt. Are you checking in today?";
+    const isBeginner = this.difficulty === 'beginner';
+
+    let greeting = "";
+    if (isBeginner) {
+      if (topic.id === 'cafe') {
+        greeting = "Hi! Welcome! What would you like to drink? (Coffee, tea, or water?)";
+      } else if (topic.id === 'interview') {
+        greeting = "Hello! Nice to meet you. What is your name?";
+      } else if (topic.id === 'airport') {
+        greeting = "Hello! Where are you flying today?";
+      } else if (topic.id === 'hotel') {
+        greeting = "Hi! Welcome to our hotel. Do you have a reservation?";
+      } else {
+        greeting = "Hi! Nice to meet you! How are you doing today?";
+      }
+    } else {
+      if (topic.id === 'cafe') {
+        greeting = "Hi, welcome to Central Perk Cafe! What can I get started for you today?";
+      } else if (topic.id === 'interview') {
+        greeting = "Hello! Thanks for coming in today. Could you briefly introduce yourself and tell me why you're interested in this position?";
+      } else if (topic.id === 'airport') {
+        greeting = "Good day! Welcome to border inspection. May I please see your passport and boarding pass?";
+      } else if (topic.id === 'hotel') {
+        greeting = "Good afternoon, welcome to Grand Hyatt. Are you checking in today?";
+      } else {
+        greeting = "Hello there! I'm your AI English Tutor. We can chat about anything you like! What's on your mind today?";
+      }
     }
 
     this.messages.push({
@@ -256,6 +318,7 @@ export class AiChatPractice {
       this.openSettingsModal();
       return;
     }
+
     this.els.input.value = '';
     this.stopSpeechRecognition();
 
@@ -315,25 +378,30 @@ export class AiChatPractice {
 
   async callGeminiApi(userMessage) {
     const topic = CHAT_TOPICS.find(t => t.id === this.currentTopic) || CHAT_TOPICS[0];
+    const diffConfig = DIFFICULTY_LEVELS[this.difficulty] || DIFFICULTY_LEVELS.beginner;
 
-    // 構建 System Prompt：要求以嚴格 JSON 格式輸出，同時包含自然英文回應與語法糾錯建議
-    const systemPrompt = `You are an expert, encouraging AI English Tutor and conversational partner.
+    // 構建 System Prompt：融合難度控制規範與 JSON 結構
+    const systemPrompt = `You are a supportive, friendly AI English Conversational Partner and Tutor.
 Role context: You are roleplaying as ${topic.prompt}.
-Your conversation guidelines:
-1. Keep the conversation natural, friendly, and engaging.
-2. Ask one relevant follow-up question to keep the chat going.
-3. Review the user's latest English message for grammatical errors, awkward collocations, or unnatural phrasing.
-4. Output your answer STRICTLY as a valid JSON object without markdown fences, following this JSON structure:
+
+STRICT DIFFICULTY LEVEL INSTRUCTIONS:
+${diffConfig.prompt}
+
+Core Conversation Rules:
+1. Always respond in English appropriate for the chosen difficulty level.
+2. If the user replies with very short words or simple sentences, encourage them and reply simply.
+3. Review the user's latest English message for grammar mistakes, awkward phrasing, or typos.
+4. Output your answer STRICTLY as a valid JSON object without markdown code blocks, following this JSON structure:
 {
-  "reply": "Your natural English response to the user in the roleplay context.",
+  "reply": "Your English reply in the roleplay context according to the difficulty level.",
   "grammar": {
     "hasIssue": true/false,
     "userOriginal": "the user sentence with mistakes or null if perfect",
-    "improved": "natural native English version or null",
-    "explanationZh": "繁體中文簡要說明錯誤原因（如時態、單複數、介系詞或母語者更地道的說法），若完全正確請填 null"
+    "improved": "natural native English version (simple and appropriate for this level) or null",
+    "explanationZh": "繁體中文簡要說明（例如：日常大家習慣說法、時態等），若完全無問題填 null"
   }
 }
-Note: If the user writes in Chinese, politely answer in English and guide them to practice speaking English.`;
+Note: If the user inputs Chinese, reply with very simple English and guide them to try English.`;
 
     // 整理歷史對話（保留最近 8 輪）
     const recentHistory = this.messages.slice(-8).filter(m => !m.isLoading).map(m => ({
@@ -350,8 +418,8 @@ Note: If the user writes in Chinese, politely answer in English and guide them t
       contents: recentHistory,
       generationConfig: {
         responseMimeType: "application/json",
-        temperature: 0.7,
-        maxOutputTokens: 1000
+        temperature: 0.6,
+        maxOutputTokens: 800
       }
     };
 
@@ -451,9 +519,11 @@ Note: If the user writes in Chinese, politely answer in English and guide them t
     if (!text || !('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
 
+    const diffConfig = DIFFICULTY_LEVELS[this.difficulty] || DIFFICULTY_LEVELS.beginner;
+
     const u = new SpeechSynthesisUtterance(text.trim());
     u.lang = 'en-US';
-    u.rate = 0.95;
+    u.rate = diffConfig.speechRate || 0.85;
 
     const voices = window.speechSynthesis.getVoices() || [];
     const enVoice = voices.find(v => (v.lang || '').startsWith('en-US')) || 

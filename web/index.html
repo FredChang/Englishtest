@@ -387,16 +387,28 @@
         </div>
       </header>
 
-      <!-- 情境主題選單與設定欄 -->
+      <!-- 情境主題與難度設定欄 -->
       <div class="aichat-toolbar">
-        <div class="aichat-topic-box">
-          <label for="aichat-topic-select" class="aichat-topic-label">情境：</label>
-          <select id="aichat-topic-select" class="aichat-topic-select"></select>
+        <div class="aichat-toolbar-row">
+          <div class="aichat-topic-box">
+            <label for="aichat-difficulty-select" class="aichat-topic-label">難度：</label>
+            <select id="aichat-difficulty-select" class="aichat-topic-select">
+              <option value="beginner" selected>🌱 初級入門 (簡短、生活單字、放慢速度)</option>
+              <option value="intermediate">🌿 中級實用 (自然流暢、日常對答)</option>
+              <option value="advanced">🌳 高級進階 (商務母語、豐富修辭)</option>
+            </select>
+          </div>
+          <label class="aichat-autovoice-label" title="AI 回應時自動以語音朗讀">
+            <input type="checkbox" id="aichat-autovoice-toggle" checked />
+            <span>🔊 自動朗讀</span>
+          </label>
         </div>
-        <label class="aichat-autovoice-label" title="AI 回應時自動以語音朗讀">
-          <input type="checkbox" id="aichat-autovoice-toggle" checked />
-          <span>🔊 自動朗讀</span>
-        </label>
+        <div class="aichat-toolbar-row" style="margin-top:6px;">
+          <div class="aichat-topic-box" style="flex:1;">
+            <label for="aichat-topic-select" class="aichat-topic-label">情境：</label>
+            <select id="aichat-topic-select" class="aichat-topic-select"></select>
+          </div>
+        </div>
       </div>
 
       <!-- 對話歷史區 (ChatGPT 風格訊息流) -->
@@ -442,6 +454,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.4.0"></script>
+  <script type="module" src="js/app.js?v=2.4.1"></script>
 </body>
 </html>

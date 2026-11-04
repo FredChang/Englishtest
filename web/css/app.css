@@ -1734,15 +1734,21 @@ button {
 
 .aichat-toolbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
   background: #ffffff;
   padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
   margin-bottom: 12px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.aichat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
 }
 
 .aichat-topic-box {
