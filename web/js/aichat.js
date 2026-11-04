@@ -1,5 +1,5 @@
 // AI 英文導師對話模組 (Gemini API 驅動)
-// 支援 ChatGPT 風格介面、對話難度調整 (初級/中級/高級)、即時英語交談、語法與用詞建議、語音輸入與語音朗讀
+// 支援 ChatGPT 風格介面、對話難度調整、NPC 情報解鎖遊戲模式 (3-5 個隨機隱藏項目)、即時語法糾錯、語音辨識與朗讀
 
 import { APP_VERSION } from './version.js';
 
@@ -9,11 +9,11 @@ const STORAGE_KEY_TOPIC = 'englishtest_gemini_topic';
 const STORAGE_KEY_DIFFICULTY = 'englishtest_gemini_difficulty';
 const STORAGE_KEY_VOICE_AUTO = 'englishtest_gemini_voice_auto';
 
-// 預設金鑰 (可由使用者在設定彈窗中自訂或更換)
 const DEFAULT_API_KEY = '';
-const DEFAULT_MODEL = 'gemini-2.0-flash'; // 速度極快且支援最新多輪對話
+const DEFAULT_MODEL = 'gemini-2.0-flash';
 
 export const CHAT_TOPICS = [
+  { id: 'npc_mystery', name: '🕵️ NPC 情報解鎖 (猜職業與生活)', desc: '在對話中收集情報，解開 NPC 身上隨機的 3～5 個未知祕密！', prompt: 'an interactive mystery NPC' },
   { id: 'free', name: '☕ 自由閒聊 (Free Talk)', desc: '輕鬆像朋友一樣聊聊日常生活、愛好與想法', prompt: 'a friendly, encouraging English-speaking friend chatting casually about daily life, hobbies, and ideas' },
   { id: 'cafe', name: '🍰 咖啡廳/餐廳點餐 (Cafe & Restaurant)', desc: '模擬在國外咖啡廳或餐廳向店員點餐詢問', prompt: 'a polite, helpful barista/waiter at an American cafe taking customer orders and offering suggestions' },
   { id: 'interview', name: '💼 英文求職面試 (Job Interview)', desc: '外商或英文職位面試練習，訓練精確回答', prompt: 'a professional hiring manager at an international tech company conducting a job interview with thoughtful follow-up questions' },
@@ -29,7 +29,7 @@ export const DIFFICULTY_LEVELS = {
 - Use VERY SHORT, SIMPLE sentences (max 10-15 words per sentence).
 - Limit vocabulary to common daily words (CEFR A1/A2). Avoid complex idioms, advanced slang, or long subordinate clauses.
 - Keep responses friendly, warm, and brief (only 1 to 2 short sentences total).
-- Ask only ONE very simple question (e.g., "Do you like coffee?", "What did you eat today?") so the user can easily reply with a few words.
+- Ask only ONE very simple question so the user can easily reply with a few words.
 - In grammar corrections: be very gentle. Only correct basic mistakes, and suggest very simple 3-5 word native alternatives.`
   },
   intermediate: {
@@ -49,6 +49,62 @@ export const DIFFICULTY_LEVELS = {
   }
 };
 
+// 豐富的 NPC 秘密情報資料庫 (隨機抽取 3～5 個項目)
+export const NPC_CANDIDATES = [
+  {
+    name: 'Chloe (克蘿伊)',
+    avatar: '👩‍🎨',
+    items: [
+      { key: 'job', label: '💼 職業 (Job)', answer: 'Illustrator (插畫家)', clue: 'draws pictures and children book covers on a tablet' },
+      { key: 'hobby', label: '🎨 興趣 (Hobby)', answer: 'Baking bread (烘焙麵包)', clue: 'loves the smell of fresh yeast and ovens on Sunday mornings' },
+      { key: 'pet', label: '🐱 寵物 (Pet)', answer: 'A fat orange cat (橘貓)', clue: 'has a chubby furry pet who loves knocking water cups over' },
+      { key: 'drink', label: '☕ 最愛飲品 (Drink)', answer: 'Matcha latte (抹茶拿鐵)', clue: 'green Japanese tea with steamed milk and little sugar' },
+      { key: 'city', label: '🏙️ 嚮往城市 (Dream City)', answer: 'Kyoto (京都)', clue: 'an ancient Japanese city with temples and autumn leaves' }
+    ]
+  },
+  {
+    name: 'Marcus (馬克思)',
+    avatar: '👨‍🍳',
+    items: [
+      { key: 'job', label: '💼 職業 (Job)', answer: 'Head Chef (主廚)', clue: 'spends all day in a hot kitchen cooking Italian pasta and steak' },
+      { key: 'hobby', label: '🎸 興趣 (Hobby)', answer: 'Playing bass guitar (彈貝斯)', clue: 'plays thick 4-string musical instruments in an indie rock band' },
+      { key: 'pet', label: '🐶 寵物 (Pet)', answer: 'Border Collie (邊境牧羊犬)', clue: 'a very smart dog who catches frisbees at the park' },
+      { key: 'sport', label: '⚽ 最愛運動 (Sport)', answer: 'Rock climbing (攀岩)', clue: 'loves climbing artificial walls or outdoor boulders on weekends' }
+    ]
+  },
+  {
+    name: 'Sophie (蘇菲)',
+    avatar: '👩‍🔬',
+    items: [
+      { key: 'job', label: '💼 職業 (Job)', answer: 'Marine Biologist (海洋生物學家)', clue: 'studies dolphins, coral reefs, and ocean ecosystems' },
+      { key: 'hobby', label: '📷 興趣 (Hobby)', answer: 'Scuba diving (水肺潛水)', clue: 'breathes through oxygen tanks exploring deep underwater caves' },
+      { key: 'snack', label: '🍫 最愛零食 (Snack)', answer: 'Dark chocolate (黑巧克力)', clue: 'bitter-sweet cocoa bars above 85% purity' },
+      { key: 'dream', label: '🏝️ 夢想 (Dream)', answer: 'Protect the coral reefs (守護珊瑚礁)', clue: 'wants to save colorful underwater ecosystems from bleaching' },
+      { key: 'music', label: '🎵 音樂 (Music)', answer: 'Jazz music (爵士樂)', clue: 'smooth saxophone and piano melodies' }
+    ]
+  },
+  {
+    name: 'Leo (里歐)',
+    avatar: '👨‍💻',
+    items: [
+      { key: 'job', label: '💼 職業 (Job)', answer: 'Game Developer (遊戲工程師)', clue: 'writes C# code and designs 3D levels for indie video games' },
+      { key: 'hobby', label: '🎮 興趣 (Hobby)', answer: 'Speedrunning RPGs (快通角色扮演遊戲)', clue: 'beats video games as fast as possible against the world clock' },
+      { key: 'food', label: '🍕 最愛食物 (Food)', answer: 'Pepperoni pizza (義式臘腸披薩)', clue: 'cheesy flatbread topped with spicy round sausage slices' },
+      { key: 'pet', label: '🦜 寵物 (Pet)', answer: 'Green Parrot (綠鸚鵡)', clue: 'a colorful feathered bird that repeats words and laughs' }
+    ]
+  },
+  {
+    name: 'Hannah (漢娜)',
+    avatar: '👩‍✈️',
+    items: [
+      { key: 'job', label: '💼 職業 (Job)', answer: 'Airline Pilot (民航機飛行員)', clue: 'flies commercial Boeing and Airbus planes at 35,000 feet' },
+      { key: 'hobby', label: '🏃‍♀️ 興趣 (Hobby)', answer: 'Running marathons (跑馬拉松)', clue: 'runs 42 kilometers in big international city races' },
+      { key: 'drink', label: '☕ 最愛飲品 (Drink)', answer: 'Double espresso (雙份義式濃縮)', clue: 'two strong bitter shots of coffee with thick golden crema' },
+      { key: 'country', label: '🗺️ 最愛國家 (Favorite Country)', answer: 'Iceland (冰島)', clue: 'a cold Nordic island with glaciers, volcanoes, and northern lights' }
+    ]
+  }
+];
+
 export class AiChatPractice {
   constructor(options = {}) {
     this.container = options.container || document.getElementById('screen-aichat');
@@ -56,11 +112,14 @@ export class AiChatPractice {
 
     this.apiKey = localStorage.getItem(STORAGE_KEY_API_KEY) || DEFAULT_API_KEY;
     this.modelName = localStorage.getItem(STORAGE_KEY_MODEL) || DEFAULT_MODEL;
-    this.currentTopic = localStorage.getItem(STORAGE_KEY_TOPIC) || 'free';
+    this.currentTopic = localStorage.getItem(STORAGE_KEY_TOPIC) || 'npc_mystery';
     this.difficulty = localStorage.getItem(STORAGE_KEY_DIFFICULTY) || 'beginner';
     this.autoSpeak = localStorage.getItem(STORAGE_KEY_VOICE_AUTO) !== 'false';
 
-    this.messages = []; // [{ role: 'user'|'model', text: '', grammar?: { hasIssue, userOriginal, improved, explanationZh } }]
+    this.currentNpc = null;
+    this.npcSlots = []; // [{ key, label, answer, clue, unlocked: bool }]
+
+    this.messages = [];
     this.isGenerating = false;
     this.recognition = null;
     this.isRecording = false;
@@ -83,6 +142,14 @@ export class AiChatPractice {
       micBtn: document.getElementById('aichat-mic-btn'),
       autoVoiceToggle: document.getElementById('aichat-autovoice-toggle'),
       
+      // NPC 情節專屬 UI
+      npcDossier: document.getElementById('aichat-npc-dossier'),
+      npcAvatar: document.getElementById('aichat-npc-avatar'),
+      npcName: document.getElementById('aichat-npc-name'),
+      npcHint: document.getElementById('aichat-npc-hint'),
+      npcSlotsContainer: document.getElementById('aichat-npc-slots'),
+      npcNextBtn: document.getElementById('aichat-npc-next-btn'),
+
       // Settings modal
       settingsModal: document.getElementById('aichat-modal'),
       modalCloseBtn: document.getElementById('aichat-modal-close'),
@@ -92,12 +159,10 @@ export class AiChatPractice {
       modalResetKeyBtn: document.getElementById('aichat-modal-resetkey-btn')
     };
 
-    // 初始化難度選單
     if (this.els.difficultySelect) {
       this.els.difficultySelect.value = this.difficulty;
     }
 
-    // 初始化主題選單
     if (this.els.topicSelect) {
       this.els.topicSelect.innerHTML = CHAT_TOPICS.map(t => 
         `<option value="${t.id}" ${t.id === this.currentTopic ? 'selected' : ''}>${t.name}</option>`
@@ -144,6 +209,13 @@ export class AiChatPractice {
       this.sendGreeting();
     });
 
+    this.els.npcNextBtn?.addEventListener('click', () => {
+      this.pickRandomNpc();
+      this.messages = [];
+      this.renderMessages();
+      this.sendGreeting();
+    });
+
     this.els.autoVoiceToggle?.addEventListener('change', (e) => {
       this.autoSpeak = e.target.checked;
       localStorage.setItem(STORAGE_KEY_VOICE_AUTO, this.autoSpeak ? 'true' : 'false');
@@ -158,6 +230,69 @@ export class AiChatPractice {
     });
 
     this.els.micBtn?.addEventListener('click', () => this.toggleSpeechRecognition());
+  }
+
+  pickRandomNpc() {
+    const candidate = NPC_CANDIDATES[Math.floor(Math.random() * NPC_CANDIDATES.length)];
+    this.currentNpc = candidate;
+
+    // 隨機抽選 3～5 個項目
+    const shuffledItems = [...candidate.items].sort(() => Math.random() - 0.5);
+    const count = Math.min(shuffledItems.length, Math.max(3, Math.floor(Math.random() * 3) + 3)); // 3, 4 或 5 個
+    this.npcSlots = shuffledItems.slice(0, count).map(it => ({
+      key: it.key,
+      label: it.label,
+      answer: it.answer,
+      clue: it.clue,
+      unlocked: false
+    }));
+
+    this.renderNpcDossier();
+  }
+
+  renderNpcDossier() {
+    if (!this.els.npcDossier) return;
+
+    if (this.currentTopic !== 'npc_mystery') {
+      this.els.npcDossier.classList.add('hidden');
+      return;
+    }
+
+    this.els.npcDossier.classList.remove('hidden');
+    if (this.els.npcAvatar) this.els.npcAvatar.textContent = this.currentNpc?.avatar || '🕵️';
+    if (this.els.npcName) this.els.npcName.textContent = `神秘人物：${this.currentNpc?.name || '未知'}`;
+
+    const allUnlocked = this.npcSlots.length > 0 && this.npcSlots.every(s => s.unlocked);
+
+    let slotsHtml = this.npcSlots.map(slot => {
+      if (slot.unlocked) {
+        return `
+          <div class="aichat-npc-slot unlocked">
+            <div class="slot-label">${this.escapeHtml(slot.label)}</div>
+            <div class="slot-value unlocked-text">✅ ${this.escapeHtml(slot.answer)}</div>
+          </div>
+        `;
+      } else {
+        return `
+          <div class="aichat-npc-slot locked" title="透過交談提問，解開此情報！">
+            <div class="slot-label">${this.escapeHtml(slot.label)}</div>
+            <div class="slot-value locked-text">❓❓❓❓</div>
+          </div>
+        `;
+      }
+    }).join('');
+
+    if (allUnlocked) {
+      slotsHtml += `
+        <div class="npc-victory-banner" style="grid-column: 1 / -1;">
+          🎉 太棒了！您已成功解開 ${this.currentNpc.name} 的所有情報！按上方「🎲 換下一位 NPC」繼續挑戰！
+        </div>
+      `;
+    }
+
+    if (this.els.npcSlotsContainer) {
+      this.els.npcSlotsContainer.innerHTML = slotsHtml;
+    }
   }
 
   initSpeechRecognition() {
@@ -260,6 +395,11 @@ export class AiChatPractice {
   }
 
   start() {
+    if (this.currentTopic === 'npc_mystery' && !this.currentNpc) {
+      this.pickRandomNpc();
+    }
+    this.renderNpcDossier();
+
     if (this.messages.length === 0) {
       this.sendGreeting();
     } else {
@@ -271,8 +411,21 @@ export class AiChatPractice {
     const topic = CHAT_TOPICS.find(t => t.id === this.currentTopic) || CHAT_TOPICS[0];
     const isBeginner = this.difficulty === 'beginner';
 
+    if (this.currentTopic === 'npc_mystery') {
+      if (!this.currentNpc) this.pickRandomNpc();
+      this.renderNpcDossier();
+    } else {
+      this.renderNpcDossier();
+    }
+
     let greeting = "";
-    if (isBeginner) {
+    if (this.currentTopic === 'npc_mystery') {
+      if (isBeginner) {
+        greeting = `Hi! I'm ${this.currentNpc.name.split(' ')[0]}. Nice to meet you! Can you guess what I do or what I like?`;
+      } else {
+        greeting = `Hello there! I'm ${this.currentNpc.name.split(' ')[0]}. I love chatting with friendly travelers! Feel free to ask me about my work, my hobbies, or my life.`;
+      }
+    } else if (isBeginner) {
       if (topic.id === 'cafe') {
         greeting = "Hi! Welcome! What would you like to drink? (Coffee, tea, or water?)";
       } else if (topic.id === 'interview') {
@@ -329,7 +482,7 @@ export class AiChatPractice {
     });
     this.renderMessages();
 
-    // 2. 顯示等待骨架/打字中
+    // 2. 顯示等待骨架
     this.isGenerating = true;
     this.updateSendButtonState();
     const placeholderMsg = {
@@ -342,8 +495,22 @@ export class AiChatPractice {
 
     try {
       const responseData = await this.callGeminiApi(text);
-      // 替換 placeholder
       this.messages.pop();
+
+      // 更新 NPC 情報解鎖狀態
+      if (this.currentTopic === 'npc_mystery' && Array.isArray(responseData.unlockedKeys)) {
+        let hasNewUnlock = false;
+        responseData.unlockedKeys.forEach(k => {
+          const slot = this.npcSlots.find(s => s.key === k && !s.unlocked);
+          if (slot) {
+            slot.unlocked = true;
+            hasNewUnlock = true;
+          }
+        });
+        if (hasNewUnlock) {
+          this.renderNpcDossier();
+        }
+      }
 
       this.messages.push({
         role: 'model',
@@ -380,8 +547,35 @@ export class AiChatPractice {
     const topic = CHAT_TOPICS.find(t => t.id === this.currentTopic) || CHAT_TOPICS[0];
     const diffConfig = DIFFICULTY_LEVELS[this.difficulty] || DIFFICULTY_LEVELS.beginner;
 
-    // 構建 System Prompt：融合難度控制規範與 JSON 結構
-    const systemPrompt = `You are a supportive, friendly AI English Conversational Partner and Tutor.
+    let systemPrompt = '';
+
+    if (this.currentTopic === 'npc_mystery') {
+      const remainingSlots = this.npcSlots.filter(s => !s.unlocked);
+      const secretSummary = this.npcSlots.map(s => `- ${s.key} (${s.label}): ${s.answer} [Secret Clue Context: ${s.clue}] Status: ${s.unlocked ? 'ALREADY UNLOCKED' : 'STILL HIDDEN (????)'}`).join('\n');
+
+      systemPrompt = `You are roleplaying as ${this.currentNpc.name.split(' ')[0]} in a fun English mystery detective game called "NPC Dossier Unlocking".
+Your secret identity and profile:
+${secretSummary}
+
+GAME RULES:
+1. When the user asks questions or chats with you, DO NOT blurt out the exact answers directly! Instead, give natural, vivid, simple clues according to your secrets.
+2. If the user guesses your secret correctly or asks very close to the fact (e.g. "Do you draw pictures?", "Are you an illustrator?"), respond enthusiastically (e.g. "Bingo! Yes, I am an illustrator!"), and include that item's key in the JSON "unlockedKeys" array.
+3. If the user asks something else, just chat normally and give gentle hints leading to your secrets.
+4. Difficulty guidelines:
+${diffConfig.prompt}
+5. You MUST return your answer STRICTLY as a valid JSON object without markdown fences, with this structure:
+{
+  "reply": "Your conversational response as the NPC (simple, friendly, dropping clues or confirming guesses).",
+  "unlockedKeys": ["key1", "key2"], // List any secret keys from [${this.npcSlots.map(s => `"${s.key}"`).join(', ')}] that the user successfully guessed or discovered in this turn. If none, return [].
+  "grammar": {
+    "hasIssue": true/false,
+    "userOriginal": "user sentence with error or null",
+    "improved": "natural simple English or null",
+    "explanationZh": "繁體中文簡要說明 or null"
+  }
+}`;
+    } else {
+      systemPrompt = `You are a supportive, friendly AI English Conversational Partner and Tutor.
 Role context: You are roleplaying as ${topic.prompt}.
 
 STRICT DIFFICULTY LEVEL INSTRUCTIONS:
@@ -389,21 +583,19 @@ ${diffConfig.prompt}
 
 Core Conversation Rules:
 1. Always respond in English appropriate for the chosen difficulty level.
-2. If the user replies with very short words or simple sentences, encourage them and reply simply.
-3. Review the user's latest English message for grammar mistakes, awkward phrasing, or typos.
-4. Output your answer STRICTLY as a valid JSON object without markdown code blocks, following this JSON structure:
+2. Review the user's latest English message for grammar mistakes, awkward phrasing, or typos.
+3. Output your answer STRICTLY as a valid JSON object without markdown code blocks:
 {
   "reply": "Your English reply in the roleplay context according to the difficulty level.",
   "grammar": {
     "hasIssue": true/false,
     "userOriginal": "the user sentence with mistakes or null if perfect",
     "improved": "natural native English version (simple and appropriate for this level) or null",
-    "explanationZh": "繁體中文簡要說明（例如：日常大家習慣說法、時態等），若完全無問題填 null"
+    "explanationZh": "繁體中文簡要說明 or null"
   }
-}
-Note: If the user inputs Chinese, reply with very simple English and guide them to try English.`;
+}`;
+    }
 
-    // 整理歷史對話（保留最近 8 輪）
     const recentHistory = this.messages.slice(-8).filter(m => !m.isLoading).map(m => ({
       role: m.role === 'user' ? 'user' : 'model',
       parts: [{ text: m.text }]
@@ -446,11 +638,13 @@ Note: If the user inputs Chinese, reply with very simple English and guide them 
       const parsed = JSON.parse(cleaned);
       return {
         reply: parsed.reply || candidateText,
+        unlockedKeys: parsed.unlockedKeys || [],
         grammar: parsed.grammar?.hasIssue ? parsed.grammar : null
       };
     } catch (e) {
       return {
         reply: candidateText,
+        unlockedKeys: [],
         grammar: null
       };
     }
@@ -484,9 +678,11 @@ Note: If the user inputs Chinese, reply with very simple English and guide them 
         `;
       }
 
+      const avatarIcon = isUser ? '👤' : (this.currentTopic === 'npc_mystery' && this.currentNpc ? this.currentNpc.avatar : '🤖');
+
       return `
         <div class="aichat-msg ${isUser ? 'aichat-msg-user' : 'aichat-msg-model'}">
-          <div class="aichat-avatar">${isUser ? '👤' : '🤖'}</div>
+          <div class="aichat-avatar">${avatarIcon}</div>
           <div class="aichat-bubble-wrapper">
             <div class="aichat-bubble">
               <div class="aichat-text">${this.escapeHtml(m.text)}</div>
@@ -500,7 +696,6 @@ Note: If the user inputs Chinese, reply with very simple English and guide them 
       `;
     }).join('');
 
-    // 綁定朗讀按鈕
     this.els.messageList.querySelectorAll('.aichat-play-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const idx = Number(e.currentTarget.getAttribute('data-idx'));
@@ -511,7 +706,6 @@ Note: If the user inputs Chinese, reply with very simple English and guide them 
       });
     });
 
-    // 滾動到底部
     this.els.messageList.scrollTop = this.els.messageList.scrollHeight;
   }
 

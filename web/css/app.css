@@ -2030,3 +2030,143 @@ button {
 .aichat-modal-body {
   padding: 16px;
 }
+
+
+/* ===================================================
+   NPC 情報解鎖卡片樣式
+   =================================================== */
+
+.aichat-npc-dossier {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #f8fafc;
+  padding: 12px 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.25);
+  border: 1px solid #334155;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.aichat-npc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #334155;
+  padding-bottom: 8px;
+}
+
+.aichat-npc-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aichat-npc-avatar {
+  font-size: 1.8rem;
+  background: #334155;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.aichat-npc-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.aichat-npc-hint {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.aichat-npc-next-btn {
+  color: #f1f5f9;
+  border: 1px solid #475569;
+  font-size: 0.82rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.aichat-npc-next-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.aichat-npc-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.aichat-npc-slot {
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  padding: 8px 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.aichat-npc-slot.locked {
+  border-style: dashed;
+  background: #0f172a;
+}
+
+.aichat-npc-slot.unlocked {
+  background: #064e3b;
+  border-color: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.25);
+  animation: slotPop 0.4s ease-out;
+}
+
+.slot-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 2px;
+}
+
+.aichat-npc-slot.unlocked .slot-label {
+  color: #a7f3d0;
+}
+
+.slot-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.slot-value.locked-text {
+  color: #fbbf24;
+}
+
+.slot-value.unlocked-text {
+  color: #ffffff;
+}
+
+@keyframes slotPop {
+  0% { transform: scale(0.92); opacity: 0.5; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.npc-victory-banner {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+  animation: fadeIn 0.4s ease-out;
+}

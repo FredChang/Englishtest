@@ -411,6 +411,21 @@
         </div>
       </div>
 
+      <!-- NPC 情報解鎖卡片欄 (只在 NPC 偵探模式顯示) -->
+      <div id="aichat-npc-dossier" class="aichat-npc-dossier hidden">
+        <div class="aichat-npc-header">
+          <div class="aichat-npc-profile">
+            <span id="aichat-npc-avatar" class="aichat-npc-avatar">🕵️</span>
+            <div>
+              <div id="aichat-npc-name" class="aichat-npc-name">神秘路人</div>
+              <div id="aichat-npc-hint" class="aichat-npc-hint">透過簡單交談發問，解開她身上的秘密！</div>
+            </div>
+          </div>
+          <button type="button" id="aichat-npc-next-btn" class="btn-ghost aichat-npc-next-btn" title="隨機換一位 NPC">🎲 換下一位 NPC</button>
+        </div>
+        <div id="aichat-npc-slots" class="aichat-npc-slots"></div>
+      </div>
+
       <!-- 對話歷史區 (ChatGPT 風格訊息流) -->
       <div id="aichat-messages" class="aichat-messages"></div>
 
@@ -454,6 +469,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.4.1"></script>
+  <script type="module" src="js/app.js?v=2.5.0"></script>
 </body>
 </html>
