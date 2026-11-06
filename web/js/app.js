@@ -633,12 +633,50 @@ async function init() {
     });
   }
 
+  // 退出確認機制：在首頁推進一層狀態，按返回時提示確認
   try {
-    history.replaceState({ screen: 'setup' }, '', '#setup');
+    history.replaceState({ screen: 'setup_root' }, '', '#root');
+    history.pushState({ screen: 'setup' }, '', '#setup');
   } catch (e) {}
 
   window.addEventListener('popstate', (e) => {
-    const target = e.state?.screen || 'setup';
+    // 1. 若單字測驗設定彈窗打開中，返回鍵優先關閉彈窗
+    const vocabModal = document.getElementById('vocab-modal');
+    if (vocabModal && !vocabModal.classList.contains('hidden')) {
+      vocabModal.classList.add('hidden');
+      history.pushState({ screen: 'setup' }, '', '#setup');
+      return;
+    }
+
+    // 2. 若 AI 設定彈窗打開中，返回鍵優先關閉彈窗
+    const aichatModal = document.getElementById('aichat-modal');
+    if (aichatModal && !aichatModal.classList.contains('hidden')) {
+      aichatModal.classList.add('hidden');
+      history.pushState({ screen: 'aichat' }, '', '#aichat');
+      return;
+    }
+
+    // 3. 若 1200 句清單彈窗打開中，返回鍵優先關閉彈窗
+    const sentModal = document.getElementById('sent-modal');
+    if (sentModal && !sentModal.classList.contains('hidden')) {
+      sentModal.classList.add('hidden');
+      history.pushState({ screen: 'sentences' }, '', '#sentences');
+      return;
+    }
+
+    const target = e.state?.screen;
+
+    // 4. 若在首頁按返回 (退到了 setup_root)
+    if (!target || target === 'setup_root') {
+      const confirmExit = confirm('確定要退出應用程式嗎？');
+      if (confirmExit) {
+        history.back(); // 真正離開
+      } else {
+        history.pushState({ screen: 'setup' }, '', '#setup'); // 留住不退出
+      }
+      return;
+    }
+
     showScreen(target, false);
   });
 
