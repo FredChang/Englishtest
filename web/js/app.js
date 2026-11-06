@@ -132,6 +132,7 @@ function readSettings() {
 }
 
 function startQuiz() {
+  document.getElementById('vocab-modal')?.classList.add('hidden');
   settings = readSettings();
   const isImage = settings.mode === 'image';
   const sessionMode = isImage ? 'image' : 'default';
@@ -762,3 +763,16 @@ if (aichatOpenBtn) {
 } else {
   console.error('aichat-open-btn not found in DOM');
 }
+
+const vocabOpenBtn = document.getElementById('vocab-open-btn');
+const vocabModal = document.getElementById('vocab-modal');
+const vocabModalClose = document.getElementById('vocab-modal-close');
+
+vocabOpenBtn?.addEventListener('click', () => {
+  updateLevelInfo();
+  vocabModal?.classList.remove('hidden');
+});
+
+vocabModalClose?.addEventListener('click', () => {
+  vocabModal?.classList.add('hidden');
+});

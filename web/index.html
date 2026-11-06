@@ -17,83 +17,94 @@
   <div id="loading" class="loading-overlay hidden">載入題庫中…</div>
 
   <div class="app">
-    <!-- 首頁三大核心模組 (單字測驗 / AI交談 / 常用1200句練習) -->
+    <!-- 首頁極簡三大板塊 -->
     <section id="screen-setup">
-      <!-- 模組 1：單字測驗 -->
-      <div class="home-card">
-        <div class="home-card-header">
-          <h2 class="home-card-title">📖 單字測驗 (Vocabulary Quiz)</h2>
-          <span class="home-badge badge-purple">基礎實力</span>
-        </div>
-        <p class="home-card-desc">涵蓋 CEFR A1~C2 完整難度題庫，支援輸入作答、四選一選擇題及圖像記憶測驗。</p>
-
-        <label class="field-label">作答模式</label>
-        <div class="toggle-row toggle-row-3" style="margin-bottom:12px;">
-          <label>
-            <input type="radio" name="mode" value="typing" checked />
-            <span class="toggle-card">✏️ 輸入作答</span>
-          </label>
-          <label>
-            <input type="radio" name="mode" value="choice" />
-            <span class="toggle-card">🔘 選擇題</span>
-          </label>
-          <label>
-            <input type="radio" name="mode" value="image" />
-            <span class="toggle-card">🖼️ 圖像記憶</span>
-          </label>
-        </div>
-
-        <div style="display:flex;gap:12px;align-items:flex-end;margin-bottom:8px;">
-          <div style="flex:1;">
-            <label class="field-label" for="level-select">難度（CEFR）</label>
-            <select id="level-select" style="width:100%;margin-bottom:0;"></select>
+      <div class="home-clean-nav">
+        <!-- 模組 1：單字測驗 -->
+        <button type="button" id="vocab-open-btn" class="home-nav-card card-vocab">
+          <div class="home-nav-main">
+            <span class="home-nav-icon">📖</span>
+            <div>
+              <div class="home-nav-title">單字測驗</div>
+              <div class="home-nav-subtitle">輸入作答 · 選擇題 · 圖像記憶</div>
+            </div>
           </div>
-          <div style="flex:1;">
-            <label class="field-label" style="display:flex;justify-content:space-between;">
-              <span>題數</span>
-              <span id="question-count-text" style="font-weight:700;color:var(--primary);">10 題</span>
-            </label>
-            <input type="range" id="question-slider" min="1" max="30" value="10" step="1" style="width:100%;height:38px;" />
+          <span class="home-nav-arrow">→</span>
+        </button>
+
+        <!-- 模組 2：AI 英文交談 -->
+        <button type="button" id="aichat-open-btn" class="home-nav-card card-ai">
+          <div class="home-nav-main">
+            <span class="home-nav-icon">🤖</span>
+            <div>
+              <div class="home-nav-title">AI 英文交談</div>
+              <div class="home-nav-subtitle">Gemini 3.8 Flash · NPC解鎖 · 語法糾錯</div>
+            </div>
           </div>
-        </div>
-        <p id="level-pool-text" class="pool-text" style="margin:2px 0 14px;"></p>
+          <span class="home-nav-arrow">→</span>
+        </button>
 
-        <button type="button" id="start-btn" class="btn-home-action btn-home-vocab">
-          🚀 開始單字測驗
+        <!-- 模組 3：常用 1200 句練習 -->
+        <button type="button" id="sentences-open-btn" class="home-nav-card card-sentences">
+          <div class="home-nav-main">
+            <span class="home-nav-icon">🎧</span>
+            <div>
+              <div class="home-nav-title">常用 1200 句</div>
+              <div class="home-nav-subtitle">實用口語 · 遮罩翻牌 · 發音評分</div>
+            </div>
+          </div>
+          <span class="home-nav-arrow">→</span>
         </button>
       </div>
 
-      <!-- 模組 2：AI 英文交談 -->
-      <div class="home-card" style="border-color:#c7d2fe;background:linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);">
-        <div class="home-card-header">
-          <h2 class="home-card-title">🤖 AI 英文導師交談 (Gemini 3.8 Flash)</h2>
-          <span class="home-badge badge-purple">互動對話</span>
-        </div>
-        <p class="home-card-desc">以極低延遲自然對話！支援「🕵️ NPC情報解鎖謎題」、自由閒聊、咖啡廳點餐、求職面試等情境，附即時語法修正建議與語音朗讀。</p>
-        <button type="button" id="aichat-open-btn" class="btn-home-action btn-home-ai">
-          💬 進入 AI 英文導師交談
-        </button>
-      </div>
-
-      <!-- 模組 3：常用 1200 句練習 -->
-      <div class="home-card" style="border-color:#a7f3d0;background:linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);">
-        <div class="home-card-header">
-          <h2 class="home-card-title">📚 常用 1200 句練習 (Sentences Practice)</h2>
-          <span class="home-badge badge-green">口語聽力</span>
-        </div>
-        <p class="home-card-desc">生活日常高頻率實用口語句子！支援英文遮罩翻牌、即時發音辨識評分、隨機循環與學會排除機制。</p>
-        <button type="button" id="sentences-open-btn" class="btn-home-action btn-home-sentences">
-          🎧 開啟常用 1200 句練習
-        </button>
-      </div>
-
-      <p class="install-hint" style="margin-top:16px;">
-        iPhone：Safari 分享 →「加入主畫面」<br />
-        Android：Chrome 選單 →「安裝應用程式」或「加到主畫面」
-      </p>
-      <p id="app-version" class="app-version" aria-label="應用程式版本"></p>
+      <p id="app-version" class="app-version" style="margin-top:24px;" aria-label="應用程式版本"></p>
     </section>
 
+    <!-- 單字測驗設定彈窗 Modal (按單字測驗後才彈出，首頁不再堆擠落落長的表單) -->
+    <div id="vocab-modal" class="sent-modal hidden">
+      <div class="sent-modal-content vocab-setup-modal-content">
+        <div class="sent-modal-header">
+          <h2>📖 單字測驗設定</h2>
+          <button type="button" id="vocab-modal-close" class="sent-modal-close">✕</button>
+        </div>
+        <div style="padding:16px;">
+          <label class="field-label">作答模式</label>
+          <div class="toggle-row toggle-row-3" style="margin-bottom:14px;">
+            <label>
+              <input type="radio" name="mode" value="typing" checked />
+              <span class="toggle-card">✏️ 輸入作答</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="choice" />
+              <span class="toggle-card">🔘 選擇題</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="image" />
+              <span class="toggle-card">🖼️ 圖像記憶</span>
+            </label>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-end;margin-bottom:6px;">
+            <div style="flex:1;">
+              <label class="field-label" for="level-select">難度（CEFR）</label>
+              <select id="level-select" style="width:100%;margin-bottom:0;"></select>
+            </div>
+            <div style="flex:1;">
+              <label class="field-label" style="display:flex;justify-content:space-between;">
+                <span>挑戰題數</span>
+                <span id="question-count-text" style="font-weight:700;color:var(--primary);">10 題</span>
+              </label>
+              <input type="range" id="question-slider" min="1" max="30" value="10" step="1" style="width:100%;height:38px;" />
+            </div>
+          </div>
+          <p id="level-pool-text" class="pool-text" style="margin:2px 0 16px;"></p>
+
+          <button type="button" id="start-btn" class="btn-primary" style="width:100%;padding:13px;font-size:1.05rem;border-radius:12px;">
+            開始測驗
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- 測驗畫面 -->
     <section id="screen-quiz" class="hidden">
       <header class="header">
@@ -415,6 +426,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.6.0"></script>
+  <script type="module" src="js/app.js?v=2.7.0"></script>
 </body>
 </html>
