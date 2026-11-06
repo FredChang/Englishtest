@@ -1,6 +1,5 @@
 import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
-import { initGuideReading } from './guide-reading.js';
 import { SentencesPractice } from './sentences.js';
 import { AiChatPractice } from './aichat.js';
 import { APP_VERSION } from './version.js';
@@ -10,13 +9,10 @@ const vocabulary = new VocabularyService();
 const screens = {
   setup: document.getElementById('screen-setup'),
   quiz: document.getElementById('screen-quiz'),
-  guideLoad: document.getElementById('screen-guide-load'),
-  guidePlay: document.getElementById('screen-guide-play'),
   sentences: document.getElementById('screen-sentences'),
   aichat: document.getElementById('screen-aichat')
 };
 
-let guideReading = null;
 let sentencesPractice = null;
 let aiChatPractice = null;
 
@@ -585,12 +581,7 @@ async function init() {
   await displayAppVersion();
   checkForServiceWorkerUpdate();
 
-  // 導讀與常用句子不依賴單字題庫，先初始化避免按鈕無反應
-  try {
-    guideReading = initGuideReading({ screens, showScreen });
-  } catch (err) {
-    console.error('導讀初始化失敗', err);
-  }
+  // 常用句子與 AI 導師不依賴單字題庫，先初始化避免按鈕無反應
 
   try {
     sentencesPractice = new SentencesPractice({
@@ -667,7 +658,6 @@ els.questionSlider?.addEventListener('input', () => {
 els.startBtn?.addEventListener('click', startQuiz);
 els.restartBtn?.addEventListener('click', () => {
   vocabulary.clearSession();
-  guideReading?.stopReading?.();
   showScreen('setup');
   updateLevelInfo();
 });
@@ -697,48 +687,7 @@ if ('serviceWorker' in navigator) {
 
 init();
 
-const guideOpenBtn = document.getElementById('guide-open-btn');
-console.log('Guide open button found:', !!guideOpenBtn);
-console.log('Guide reading initialized:', !!guideReading);
-console.log('User agent:', navigator.userAgent);
 
-if (guideOpenBtn) {
-  // Handle both click and touch events for mobile compatibility
-  const handleGuideOpen = (e) => {
-    e.preventDefault();
-    console.log('Guide open button triggered');
-    console.log('Event type:', e.type);
-
-    // Warm up speech synthesis on user gesture to unlock mobile audio
-    try {
-      const warmup = new SpeechSynthesisUtterance('');
-      warmup.volume = 0;
-      window.speechSynthesis.speak(warmup);
-      console.log('Speech synthesis warmed up successfully');
-    } catch (err) {
-      console.warn('Speech synthesis warmup failed', err);
-    }
-
-    console.log('guideReading:', guideReading);
-    console.log('screens:', screens);
-
-    if (guideReading?.showLoadScreen) {
-      console.log('Calling guideReading.showLoadScreen()');
-      guideReading.showLoadScreen();
-    } else if (screens.guideLoad) {
-      console.log('Calling showScreen(guideLoad)');
-      showScreen('guideLoad');
-    } else {
-      console.error('Guide reading not available');
-      alert('導讀功能尚未載入，請重新整理頁面；若仍無效，請清除瀏覽器快取後再試。');
-    }
-  };
-
-  guideOpenBtn.addEventListener('click', handleGuideOpen);
-  guideOpenBtn.addEventListener('touchend', handleGuideOpen);
-} else {
-  console.error('guide-open-btn not found in DOM');
-}
 
 const sentencesOpenBtn = document.getElementById('sentences-open-btn');
 if (sentencesOpenBtn) {

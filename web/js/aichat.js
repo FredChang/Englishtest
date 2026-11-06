@@ -10,7 +10,7 @@ const STORAGE_KEY_DIFFICULTY = 'englishtest_gemini_difficulty';
 const STORAGE_KEY_VOICE_AUTO = 'englishtest_gemini_voice_auto';
 
 const DEFAULT_API_KEY = '';
-const DEFAULT_MODEL = 'gemini-2.0-flash';
+const DEFAULT_MODEL = 'gemini-3.8-flash';
 
 export const CHAT_TOPICS = [
   { id: 'npc_mystery', name: '🕵️ NPC 情報解鎖 (猜職業與生活)', desc: '在對話中收集情報，解開 NPC 身上隨機的 3～5 個未知祕密！', prompt: 'an interactive mystery NPC' },

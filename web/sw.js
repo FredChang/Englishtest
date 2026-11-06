@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v2.5.0';
+const CACHE = 'englishtest-v2.6.0';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -8,8 +8,6 @@ const PRECACHE_ASSETS = [
   './js/app.js',
   './js/vocabulary.js',
   './js/dictionary.js',
-  './js/guide-content.js',
-  './js/guide-reading.js',
   './js/sentences.js',
   './js/version.js',
   './js/aichat.js',
@@ -18,8 +16,6 @@ const PRECACHE_ASSETS = [
   './data/sentences_1000.json',
   './sentences_1000.json',
   './words.json',
-  './friends.txt',
-  './friends_zh.json',
   './image-vocab.json',
   './manifest.webmanifest',
   './icon.svg'
