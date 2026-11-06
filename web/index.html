@@ -410,12 +410,10 @@
             請填入您的 Gemini API Key (可於 Google AI Studio 免費申請，僅儲存於本機瀏覽器)。
           </p>
 
-          <label class="field-label" for="aichat-modal-model-select">模型 (Model)：</label>
-          <select id="aichat-modal-model-select" class="sent-modal-cat-select" style="width:100%;margin-bottom:16px;">
-            <option value="gemini-3.8-flash" selected>gemini-3.8-flash (推薦，速度極快、對話流暢)</option>
-            <option value="gemini-1.5-flash">gemini-1.5-flash (相容備用)</option>
-            <option value="gemini-2.0-flash">gemini-2.0-flash</option>
-          </select>
+          <label class="field-label">AI 模型：</label>
+          <div style="padding:10px 14px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;font-weight:700;color:#1e293b;margin-bottom:16px;">
+            ⚡ Gemini 3.8 Flash (固定高效能端點)
+          </div>
 
           <div class="btn-row" style="margin-top:16px;">
             <button type="button" id="aichat-modal-resetkey-btn" class="btn-ghost">清除 Key</button>
@@ -426,6 +424,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/app.js?v=2.7.1"></script>
+  <script type="module" src="js/app.js?v=2.7.2"></script>
 </body>
 </html>

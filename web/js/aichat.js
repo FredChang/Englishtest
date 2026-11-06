@@ -111,7 +111,7 @@ export class AiChatPractice {
     this.onBack = options.onBack || (() => {});
 
     this.apiKey = localStorage.getItem(STORAGE_KEY_API_KEY) || DEFAULT_API_KEY;
-    this.modelName = localStorage.getItem(STORAGE_KEY_MODEL) || DEFAULT_MODEL;
+    this.modelName = DEFAULT_MODEL; // 鎖定 gemini-3.8-flash
     this.currentTopic = localStorage.getItem(STORAGE_KEY_TOPIC) || 'npc_mystery';
     this.difficulty = localStorage.getItem(STORAGE_KEY_DIFFICULTY) || 'beginner';
     this.autoSpeak = localStorage.getItem(STORAGE_KEY_VOICE_AUTO) !== 'false';
@@ -366,9 +366,6 @@ export class AiChatPractice {
     if (this.els.modalApiKeyInput) {
       this.els.modalApiKeyInput.value = this.apiKey;
     }
-    if (this.els.modalModelSelect) {
-      this.els.modalModelSelect.value = this.modelName;
-    }
     this.els.settingsModal?.classList.remove('hidden');
   }
 
@@ -378,7 +375,7 @@ export class AiChatPractice {
 
   saveSettingsFromModal() {
     const key = (this.els.modalApiKeyInput?.value || '').trim();
-    const model = (this.els.modalModelSelect?.value || '').trim() || DEFAULT_MODEL;
+    const model = DEFAULT_MODEL;
 
     if (!key) {
       alert('請填入 Gemini API Key！');
