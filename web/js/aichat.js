@@ -1,5 +1,5 @@
 // AI 英文導師對話模組 (Gemini API 驅動)
-// 支援 ChatGPT 風格介面、對話難度調整、NPC 情報解鎖遊戲模式 (3-5 個隨機隱藏項目)、即時語法糾錯、語音辨識與朗讀
+// 支援 ChatGPT 風格介面、對話難度調整、NPC 探索交談遊戲模式 (隨機 3~5 項情報)、即時語法糾錯、語音辨識 (2秒靜音自動送出/自動標點) 與性別匹配朗讀
 
 import { APP_VERSION } from './version.js';
 
@@ -13,7 +13,7 @@ const DEFAULT_API_KEY = '';
 const DEFAULT_MODEL = 'gemini-3.8-flash';
 
 export const CHAT_TOPICS = [
-  { id: 'npc_mystery', name: '🕵️ NPC 情報解鎖 (猜職業與生活)', desc: '在對話中收集情報，解開 NPC 身上隨機的 3～5 個未知祕密！', prompt: 'an interactive mystery NPC' },
+  { id: 'npc_mystery', name: '🕵️ NPC 情緒與生活閒聊 (自然解鎖情報)', desc: '在輕鬆日常交談中認識 NPC，聊聊生活，解開身上隨機的 3～5 個未知祕密！', prompt: 'an interactive mystery NPC' },
   { id: 'free', name: '☕ 自由閒聊 (Free Talk)', desc: '輕鬆像朋友一樣聊聊日常生活、愛好與想法', prompt: 'a friendly, encouraging English-speaking friend chatting casually about daily life, hobbies, and ideas' },
   { id: 'cafe', name: '🍰 咖啡廳/餐廳點餐 (Cafe & Restaurant)', desc: '模擬在國外咖啡廳或餐廳向店員點餐詢問', prompt: 'a polite, helpful barista/waiter at an American cafe taking customer orders and offering suggestions' },
   { id: 'interview', name: '💼 英文求職面試 (Job Interview)', desc: '外商或英文職位面試練習，訓練精確回答', prompt: 'a professional hiring manager at an international tech company conducting a job interview with thoughtful follow-up questions' },
@@ -53,6 +53,7 @@ export const DIFFICULTY_LEVELS = {
 export const NPC_CANDIDATES = [
   {
     name: 'Chloe (克蘿伊)',
+    gender: 'female',
     avatar: '👩‍🎨',
     items: [
       { key: 'job', label: '💼 職業 (Job)', answer: 'Illustrator (插畫家)', clue: 'draws pictures and children book covers on a tablet' },
@@ -64,6 +65,7 @@ export const NPC_CANDIDATES = [
   },
   {
     name: 'Marcus (馬克思)',
+    gender: 'male',
     avatar: '👨‍🍳',
     items: [
       { key: 'job', label: '💼 職業 (Job)', answer: 'Head Chef (主廚)', clue: 'spends all day in a hot kitchen cooking Italian pasta and steak' },
@@ -74,6 +76,7 @@ export const NPC_CANDIDATES = [
   },
   {
     name: 'Sophie (蘇菲)',
+    gender: 'female',
     avatar: '👩‍🔬',
     items: [
       { key: 'job', label: '💼 職業 (Job)', answer: 'Marine Biologist (海洋生物學家)', clue: 'studies dolphins, coral reefs, and ocean ecosystems' },
@@ -85,6 +88,7 @@ export const NPC_CANDIDATES = [
   },
   {
     name: 'Leo (里歐)',
+    gender: 'male',
     avatar: '👨‍💻',
     items: [
       { key: 'job', label: '💼 職業 (Job)', answer: 'Game Developer (遊戲工程師)', clue: 'writes C# code and designs 3D levels for indie video games' },
@@ -95,6 +99,7 @@ export const NPC_CANDIDATES = [
   },
   {
     name: 'Hannah (漢娜)',
+    gender: 'female',
     avatar: '👩‍✈️',
     items: [
       { key: 'job', label: '💼 職業 (Job)', answer: 'Airline Pilot (民航機飛行員)', clue: 'flies commercial Boeing and Airbus planes at 35,000 feet' },
@@ -104,6 +109,77 @@ export const NPC_CANDIDATES = [
     ]
   }
 ];
+
+function voiceNameHasWord(name, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:[^a-z0-9]|$)`, 'i').test(name);
+}
+
+export function classifyVoiceGender(voice) {
+  const text = `${voice?.name || ''} ${voice?.voiceURI || ''}`.toLowerCase();
+  if (!text.trim()) return 'unknown';
+
+  // 女聲特徵字眼
+  if (
+    /female|woman|girl|女/i.test(text) ||
+    /samantha|zira|hazel|jenny|amy|emma|aria|karen|victoria|susan|linda|catherine|joanna|stephanie|fiona|moira|tessa|ava|allison/i.test(text)
+  ) {
+    if (!voiceNameHasWord(text, 'male') || voiceNameHasWord(text, 'female')) {
+      return 'female';
+    }
+  }
+
+  // 男聲特徵字眼
+  if (
+    /male|man|boy|男/i.test(text) ||
+    /daniel|brian|david|mark|james|guy|alex|fred|tom|john|george|robert|oliver|arthur|richard/i.test(text)
+  ) {
+    if (!voiceNameHasWord(text, 'female')) {
+      return 'male';
+    }
+  }
+
+  return 'unknown';
+}
+
+export function pickVoiceForGender(gender) {
+  const want = gender === 'male' ? 'male' : 'female';
+  const voices = window.speechSynthesis?.getVoices?.() || [];
+  if (!voices.length) return null;
+
+  // 優先篩選英文語音
+  const english = voices.filter((v) => {
+    const lang = (v.lang || '').toLowerCase().replace(/_/g, '-');
+    const name = (v.name || '').toLowerCase();
+    return lang.startsWith('en') || name.includes('english') || name.includes('英文');
+  });
+  const pool = english.length ? english : voices;
+
+  // 1. 精準匹配性別
+  const matched = pool.filter((v) => classifyVoiceGender(v) === want);
+  if (matched.length) return matched[0];
+
+  // 2. 備用匹配方案
+  if (want === 'male') {
+    const labelMale = pool.filter((v) => {
+      const n = (v.name || '').toLowerCase();
+      return voiceNameHasWord(n, 'male') && !voiceNameHasWord(n, 'female');
+    });
+    if (labelMale.length) return labelMale[0];
+
+    const notFemale = pool.filter((v) => classifyVoiceGender(v) !== 'female');
+    if (notFemale.length > 1) return notFemale[1];
+    if (notFemale.length) return notFemale[0];
+  } else {
+    const labelFemale = pool.filter((v) => voiceNameHasWord((v.name || '').toLowerCase(), 'female'));
+    if (labelFemale.length) return labelFemale[0];
+
+    const notMale = pool.filter((v) => classifyVoiceGender(v) !== 'male');
+    if (notMale.length) return notMale[0];
+  }
+
+  return pool[0];
+}
 
 export class AiChatPractice {
   constructor(options = {}) {
@@ -123,6 +199,14 @@ export class AiChatPractice {
     this.isGenerating = false;
     this.recognition = null;
     this.isRecording = false;
+    this.silenceTimer = null;
+    this.finalTranscript = '';
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        try { window.speechSynthesis.getVoices(); } catch (e) {}
+      };
+    }
 
     this.initElements();
     this.bindEvents();
@@ -232,11 +316,18 @@ export class AiChatPractice {
     this.els.micBtn?.addEventListener('click', () => this.toggleSpeechRecognition());
   }
 
+  getVoiceGender() {
+    if (this.currentTopic === 'npc_mystery' && this.currentNpc?.gender) {
+      return this.currentNpc.gender;
+    }
+    return 'female';
+  }
+
   pickRandomNpc() {
     const candidate = NPC_CANDIDATES[Math.floor(Math.random() * NPC_CANDIDATES.length)];
     this.currentNpc = candidate;
 
-    // 隨機抽選 3～5 個項目
+    // 隨機抽取 3～5 個項目
     const shuffledItems = [...candidate.items].sort(() => Math.random() - 0.5);
     const count = Math.min(shuffledItems.length, Math.max(3, Math.floor(Math.random() * 3) + 3)); // 3, 4 或 5 個
     this.npcSlots = shuffledItems.slice(0, count).map(it => ({
@@ -260,7 +351,7 @@ export class AiChatPractice {
 
     this.els.npcDossier.classList.remove('hidden');
     if (this.els.npcAvatar) this.els.npcAvatar.textContent = this.currentNpc?.avatar || '🕵️';
-    if (this.els.npcName) this.els.npcName.textContent = `神秘人物：${this.currentNpc?.name || '未知'}`;
+    if (this.els.npcName) this.els.npcName.textContent = `聊天對象：${this.currentNpc?.name || '未知'}`;
 
     const allUnlocked = this.npcSlots.length > 0 && this.npcSlots.every(s => s.unlocked);
 
@@ -274,7 +365,7 @@ export class AiChatPractice {
         `;
       } else {
         return `
-          <div class="aichat-npc-slot locked" title="透過交談提問，解開此情報！">
+          <div class="aichat-npc-slot locked" title="自然閒聊中聊到相關話題即可解鎖！">
             <div class="slot-label">${this.escapeHtml(slot.label)}</div>
             <div class="slot-value locked-text">❓❓❓❓</div>
           </div>
@@ -285,7 +376,7 @@ export class AiChatPractice {
     if (allUnlocked) {
       slotsHtml += `
         <div class="npc-victory-banner" style="grid-column: 1 / -1;">
-          🎉 太棒了！您已成功解開 ${this.currentNpc.name} 的所有情報！按上方「🎲 換下一位 NPC」繼續挑戰！
+          🎉 太棒了！您已在聊天中完整認識了 ${this.currentNpc.name}！點擊上方「🎲 換下一位 NPC」認識新朋友！
         </div>
       `;
     }
@@ -293,6 +384,34 @@ export class AiChatPractice {
     if (this.els.npcSlotsContainer) {
       this.els.npcSlotsContainer.innerHTML = slotsHtml;
     }
+  }
+
+  formatSpeechTranscript(rawText, finalize = false) {
+    if (!rawText) return '';
+    let text = rawText.trim().replace(/\s+/g, ' ');
+
+    // 1. 首字大寫
+    text = text.charAt(0).toUpperCase() + text.slice(1);
+
+    // 2. 修正常見單字與縮寫（例如大寫 I 與常用縮寫）
+    text = text.replace(/\bi\b/g, 'I');
+    text = text.replace(/\bi'm\b/gi, "I'm");
+    text = text.replace(/\bi've\b/gi, "I've");
+    text = text.replace(/\bi'll\b/gi, "I'll");
+    text = text.replace(/\bi'd\b/gi, "I'd");
+
+    if (!finalize) {
+      return text;
+    }
+
+    // 3. 自動依文意與語氣補齊結尾標點符號（問句補 ?，陳述句補 .）
+    if (!/[.?!]$/.test(text)) {
+      const isQuestion = /^(what|where|when|why|who|whom|whose|which|how|is|are|am|was|were|do|does|did|can|could|would|will|should|may|might|have|has|had|aren't|isn't|don't|doesn't|didn't|can't|won't)\b/i.test(text) ||
+                         /,\s*(right|is it|isn't it|are you|aren't you|do you|don't you|can you|could you)\s*$/i.test(text);
+      text += isQuestion ? '?' : '.';
+    }
+
+    return text;
   }
 
   initSpeechRecognition() {
@@ -308,36 +427,79 @@ export class AiChatPractice {
     try {
       this.recognition = new SpeechRecognition();
       this.recognition.lang = 'en-US';
-      this.recognition.continuous = false;
+      this.recognition.continuous = true;
       this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
 
       this.recognition.onstart = () => {
         this.isRecording = true;
+        this.finalTranscript = '';
         this.els.micBtn?.classList.add('recording');
-        if (this.els.input) this.els.input.placeholder = '🎙️ 正在聆聽您的英文語音…';
+        if (this.els.input) {
+          this.els.input.placeholder = '🎙️ 正在聆聽… (停頓 2 秒將自動送出)';
+        }
       };
 
       this.recognition.onresult = (event) => {
-        let transcript = '';
+        let interim = '';
         for (let i = event.resultIndex; i < event.results.length; i++) {
-          transcript += event.results[i][0].transcript;
+          const res = event.results[i];
+          if (res.isFinal) {
+            const piece = res[0].transcript.trim();
+            if (piece) {
+              this.finalTranscript += (this.finalTranscript ? ' ' : '') + piece;
+            }
+          } else {
+            interim += res[0].transcript;
+          }
         }
-        if (this.els.input) {
-          this.els.input.value = transcript;
+
+        const combined = (this.finalTranscript + (interim ? ' ' + interim : '')).trim();
+        if (this.els.input && combined) {
+          this.els.input.value = this.formatSpeechTranscript(combined, false);
         }
+
+        // 重新計時 2 秒靜音自動送出
+        this.resetSilenceTimer();
       };
 
       this.recognition.onerror = (err) => {
-        console.warn('Speech recognition error:', err);
-        this.stopSpeechRecognition();
+        if (err.error !== 'no-speech') {
+          console.warn('Speech recognition error:', err);
+        }
+        if (err.error !== 'no-speech') {
+          this.stopSpeechRecognition();
+        }
       };
 
       this.recognition.onend = () => {
-        this.stopSpeechRecognition();
+        if (!this.silenceTimer && this.isRecording) {
+          this.stopSpeechRecognition();
+        }
       };
     } catch (e) {
       console.warn('SpeechRecognition init failed:', e);
     }
+  }
+
+  resetSilenceTimer() {
+    if (this.silenceTimer) {
+      clearTimeout(this.silenceTimer);
+      this.silenceTimer = null;
+    }
+
+    if (!this.isRecording) return;
+
+    this.silenceTimer = setTimeout(() => {
+      const rawText = (this.els.input?.value || '').trim();
+      if (rawText) {
+        if (this.els.input) {
+          this.els.input.value = this.formatSpeechTranscript(rawText, true);
+        }
+        this.stopSpeechRecognition();
+        this.handleSendMessage();
+      }
+    }, 2000);
   }
 
   toggleSpeechRecognition() {
@@ -346,9 +508,10 @@ export class AiChatPractice {
       return;
     }
     if (this.isRecording) {
-      this.recognition.stop();
+      this.stopSpeechRecognition();
     } else {
       try {
+        this.finalTranscript = '';
         this.recognition.start();
       } catch (e) {
         console.warn('Recognition start error:', e);
@@ -357,9 +520,19 @@ export class AiChatPractice {
   }
 
   stopSpeechRecognition() {
+    if (this.silenceTimer) {
+      clearTimeout(this.silenceTimer);
+      this.silenceTimer = null;
+    }
     this.isRecording = false;
+    this.finalTranscript = '';
+    try {
+      this.recognition?.stop();
+    } catch (e) {}
     this.els.micBtn?.classList.remove('recording');
-    if (this.els.input) this.els.input.placeholder = '請輸入英文與 AI 導師交談… (支援語音輸入)';
+    if (this.els.input) {
+      this.els.input.placeholder = '請輸入英文與 AI 導師交談… (支援語音輸入)';
+    }
   }
 
   openSettingsModal() {
@@ -417,10 +590,19 @@ export class AiChatPractice {
 
     let greeting = "";
     if (this.currentTopic === 'npc_mystery') {
+      const npcFirstName = this.currentNpc.name.split(' ')[0];
       if (isBeginner) {
-        greeting = `Hi! I'm ${this.currentNpc.name.split(' ')[0]}. Nice to meet you! Can you guess what I do or what I like?`;
+        if (npcFirstName === 'Chloe') greeting = "Hi! I'm Chloe. Nice to meet you! How's your day going?";
+        else if (npcFirstName === 'Marcus') greeting = "Hello! I'm Marcus. Glad to meet you! What are you doing today?";
+        else if (npcFirstName === 'Sophie') greeting = "Hi! I'm Sophie. Nice to meet you! How are you doing today?";
+        else if (npcFirstName === 'Leo') greeting = "Hey! I'm Leo. Nice to meet you! Having a good day?";
+        else greeting = `Hi there! I'm ${npcFirstName}. Great to meet you! How are you today?`;
       } else {
-        greeting = `Hello there! I'm ${this.currentNpc.name.split(' ')[0]}. I love chatting with friendly travelers! Feel free to ask me about my work, my hobbies, or my life.`;
+        if (npcFirstName === 'Chloe') greeting = "Hello! I'm Chloe. Lovely to meet you! Just taking a quick break with a warm drink. How is your day going so far?";
+        else if (npcFirstName === 'Marcus') greeting = "Hey there! I'm Marcus. Great to meet you! Taking a breather after a busy morning. How is everything with you?";
+        else if (npcFirstName === 'Sophie') greeting = "Hi there! I'm Sophie. Wonderful to meet you! Just finished reviewing some notes. What brings you by today?";
+        else if (npcFirstName === 'Leo') greeting = "Hey! I'm Leo. Awesome to meet you! Just stretching my legs after coding at my desk. How's your day going?";
+        else greeting = `Hello! I'm ${npcFirstName}. It's a pleasure to meet you! How are you doing today?`;
       }
     } else if (isBeginner) {
       if (topic.id === 'cafe') {
@@ -454,14 +636,17 @@ export class AiChatPractice {
     });
     this.renderMessages();
     if (this.autoSpeak) {
-      this.speakText(greeting);
+      this.speakText(greeting, this.getVoiceGender());
     }
   }
 
   async handleSendMessage() {
     if (this.isGenerating) return;
-    const text = (this.els.input?.value || '').trim();
+    let text = (this.els.input?.value || '').trim();
     if (!text) return;
+
+    // 自動補齊首字大寫與標點符號
+    text = this.formatSpeechTranscript(text, true);
 
     if (!this.apiKey) {
       alert('請先點擊右上角「⚙️ 設定」填入您的 Gemini API Key！');
@@ -517,7 +702,7 @@ export class AiChatPractice {
       this.renderMessages();
 
       if (this.autoSpeak && responseData.reply) {
-        this.speakText(responseData.reply);
+        this.speakText(responseData.reply, this.getVoiceGender());
       }
     } catch (err) {
       this.messages.pop();
@@ -547,23 +732,33 @@ export class AiChatPractice {
     let systemPrompt = '';
 
     if (this.currentTopic === 'npc_mystery') {
-      const remainingSlots = this.npcSlots.filter(s => !s.unlocked);
-      const secretSummary = this.npcSlots.map(s => `- ${s.key} (${s.label}): ${s.answer} [Secret Clue Context: ${s.clue}] Status: ${s.unlocked ? 'ALREADY UNLOCKED' : 'STILL HIDDEN (????)'}`).join('\n');
+      const secretSummary = this.npcSlots.map(s => `- ${s.key} (${s.label}): ${s.answer} [Background Detail: ${s.clue}] Status: ${s.unlocked ? 'ALREADY UNLOCKED' : 'STILL HIDDEN (????)'}`).join('\n');
+      const npcFirstName = this.currentNpc.name.split(' ')[0];
 
-      systemPrompt = `You are roleplaying as ${this.currentNpc.name.split(' ')[0]} in a fun English mystery detective game called "NPC Dossier Unlocking".
-Your secret identity and profile:
+      systemPrompt = `You are roleplaying as ${npcFirstName} in a friendly, relaxed, and natural English conversation.
+You are an authentic, warm person having a casual everyday chat with the user.
+
+Your personal background & details (KEEP IN MIND, DO NOT RECITE OR FORCE UNLESS IT NATURALLY COMES UP):
 ${secretSummary}
 
-GAME RULES:
-1. When the user asks questions or chats with you, DO NOT blurt out the exact answers directly! Instead, give natural, vivid, simple clues according to your secrets.
-2. If the user guesses your secret correctly or asks very close to the fact (e.g. "Do you draw pictures?", "Are you an illustrator?"), respond enthusiastically (e.g. "Bingo! Yes, I am an illustrator!"), and include that item's key in the JSON "unlockedKeys" array.
-3. If the user asks something else, just chat normally and give gentle hints leading to your secrets.
-4. Difficulty guidelines:
+CONVERSATION STYLE & CORE RULES:
+1. FOCUS ON NATURAL CASUAL CHIT-CHAT (SMALL TALK FIRST):
+   - Talk like an authentic, friendly peer chatting in a coffee shop or over lunch.
+   - React warmly and naturally to what the user says (show empathy, laugh, comment on daily topics).
+   - DO NOT turn this into a guessing game, quiz show, or interrogation!
+   - NEVER say "Can you guess what I do?", "Guess my hobby!", or "Ask me about my secrets!". Keep the conversation completely natural, genuine, and organic.
+2. ORGANIC INFORMATION SHARING:
+   - Only mention your job, hobbies, pet, or favorites when the user asks about them or when it naturally connects to what you are talking about.
+   - If the user asks directly (e.g. "What do you do for work?", "Do you have any pets?", "What music do you listen to?"), answer truthfully and cheerfully in your own voice, then bounce a question back to the user to keep the conversation flowing.
+3. BACKGROUND DISCOVERY MECHANIC:
+   - When the user asks about, discusses, or mentions a topic that matches any of your still-hidden secret items, answer naturally and include that item's key in the JSON "unlockedKeys" array.
+   - If the user hasn't asked or touched upon any secret items in this turn, simply chat naturally and return "unlockedKeys": [].
+4. STRICT DIFFICULTY LEVEL INSTRUCTIONS:
 ${diffConfig.prompt}
 5. You MUST return your answer STRICTLY as a valid JSON object without markdown fences, with this structure:
 {
-  "reply": "Your conversational response as the NPC (simple, friendly, dropping clues or confirming guesses).",
-  "unlockedKeys": ["key1", "key2"], // List any secret keys from [${this.npcSlots.map(s => `"${s.key}"`).join(', ')}] that the user successfully guessed or discovered in this turn. If none, return [].
+  "reply": "Your conversational English reply (warm, authentic small talk, appropriate for the level).",
+  "unlockedKeys": ["key1"], // Secret keys unlocked in this turn from [${this.npcSlots.map(s => `\"${s.key}\"`).join(', ')}]. If none, return [].
   "grammar": {
     "hasIssue": true/false,
     "userOriginal": "user sentence with error or null",
@@ -698,7 +893,7 @@ Core Conversation Rules:
         const idx = Number(e.currentTarget.getAttribute('data-idx'));
         const msg = this.messages[idx];
         if (msg?.text) {
-          this.speakText(msg.text);
+          this.speakText(msg.text, this.getVoiceGender());
         }
       });
     });
@@ -706,7 +901,7 @@ Core Conversation Rules:
     this.els.messageList.scrollTop = this.els.messageList.scrollHeight;
   }
 
-  speakText(text) {
+  speakText(text, gender = null) {
     if (!text || !('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
 
@@ -716,11 +911,11 @@ Core Conversation Rules:
     u.lang = 'en-US';
     u.rate = diffConfig.speechRate || 0.85;
 
-    const voices = window.speechSynthesis.getVoices() || [];
-    const enVoice = voices.find(v => (v.lang || '').startsWith('en-US')) || 
-                    voices.find(v => (v.lang || '').startsWith('en'));
-    if (enVoice) {
-      u.voice = enVoice;
+    const targetGender = gender || this.getVoiceGender();
+    const voice = pickVoiceForGender(targetGender);
+    if (voice) {
+      u.voice = voice;
+      if (voice.lang) u.lang = voice.lang;
     }
 
     window.speechSynthesis.speak(u);
