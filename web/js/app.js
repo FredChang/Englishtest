@@ -1,8 +1,8 @@
 import { VocabularyService, primaryEnglish, lookupWord, imageUrl } from './vocabulary.js';
 import { lookupPronunciation, speak, playAudio } from './dictionary.js';
-import { SentencesPractice } from './sentences.js';
-import { AiChatPractice } from './aichat.js';
-import { APP_VERSION } from './version.js';
+import { SentencesPractice } from './sentences.js?v=2.8.2';
+import { AiChatPractice } from './aichat.js?v=2.8.2';
+import { APP_VERSION } from './version.js?v=2.8.2';
 
 const vocabulary = new VocabularyService();
 

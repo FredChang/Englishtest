@@ -200,7 +200,6 @@ export class AiChatPractice {
     this.recognition = null;
     this.isRecording = false;
     this.silenceTimer = null;
-    this.finalTranscript = '';
 
     if ('speechSynthesis' in window) {
       window.speechSynthesis.onvoiceschanged = () => {
@@ -386,9 +385,40 @@ export class AiChatPractice {
     }
   }
 
+  deduplicatePhrases(text) {
+    if (!text) return '';
+    let str = text.replace(/\s+/g, ' ').trim();
+
+    // 由短到長 (1 ~ 12 個單字) 骨牌式消除階梯累進重複與跳針重疊
+    // 例如: "Okay okay good okay good night" -> "Okay good okay good night" -> "Okay good night"
+    let changed = true;
+    let guard = 0;
+    while (changed && guard < 25) {
+      changed = false;
+      guard++;
+      for (let wordsCount = 1; wordsCount <= 12; wordsCount++) {
+        const pattern =
+          wordsCount === 1
+            ? /\b([\w']+)(?:[\s,.!?;:]+\1)+\b/gi
+            : new RegExp(`\\b((?:[\\w']+[\\s,.!?;:]+){${wordsCount - 1}}[\\w']+)(?:[\\s,.!?;:]+\\1)+\\b`, 'gi');
+        const next = str.replace(pattern, '$1');
+        if (next !== str) {
+          str = next;
+          changed = true;
+          break;
+        }
+      }
+    }
+
+    return str.trim();
+  }
+
   formatSpeechTranscript(rawText, finalize = false) {
     if (!rawText) return '';
     let text = rawText.trim().replace(/\s+/g, ' ');
+
+    // 0. 去除語音辨識重複跳針迴圈
+    text = this.deduplicatePhrases(text);
 
     // 1. 首字大寫
     text = text.charAt(0).toUpperCase() + text.slice(1);
@@ -414,6 +444,80 @@ export class AiChatPractice {
     return text;
   }
 
+  isProgressiveRevision(prevClean, currClean) {
+    if (!prevClean || !currClean) return false;
+    if (currClean === prevClean || currClean.startsWith(prevClean)) return true;
+
+    const prevWords = prevClean.split(' ').filter(Boolean);
+    const currWords = currClean.split(' ').filter(Boolean);
+    if (prevWords.length === 0 || currWords.length < prevWords.length) return false;
+
+    // 若開頭單字相同，且前句有 60% 以上單字出現在後句，視為 Android 語音修正擴展而非新句子
+    if (prevWords[0] === currWords[0]) {
+      const currSet = new Set(currWords);
+      const matchCount = prevWords.filter((w) => currSet.has(w)).length;
+      if (matchCount / prevWords.length >= 0.6) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  extractTranscriptFromEvent(event) {
+    if (!event || !event.results) return '';
+
+    const finalPieces = [];
+    let interimPiece = '';
+
+    for (let i = 0; i < event.results.length; i++) {
+      const res = event.results[i];
+      const transcript = (res[0]?.transcript || '').trim();
+      if (!transcript) continue;
+
+      if (res.isFinal) {
+        if (finalPieces.length > 0) {
+          const prev = finalPieces[finalPieces.length - 1];
+          const prevClean = prev.toLowerCase().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+          const currClean = transcript.toLowerCase().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+
+          // 完全重複或前句已包含當前句 -> 跳過
+          if (currClean === prevClean || prevClean.startsWith(currClean)) {
+            continue;
+          }
+
+          // 累積式擴展（防範 Android Chrome bug：整句累積重送，如 "Okay" -> "Okay good" -> "Okay good night"）
+          if (this.isProgressiveRevision(prevClean, currClean)) {
+            finalPieces[finalPieces.length - 1] = transcript;
+            continue;
+          }
+        }
+        finalPieces.push(transcript);
+      } else {
+        interimPiece = transcript;
+      }
+    }
+
+    let finalCombined = finalPieces.join(' ').trim();
+
+    if (interimPiece) {
+      const finalClean = finalCombined.toLowerCase().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+      const interimClean = interimPiece.toLowerCase().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+
+      if (!finalClean) {
+        return interimPiece;
+      }
+      if (interimClean === finalClean || finalClean.endsWith(interimClean) || finalClean.startsWith(interimClean)) {
+        return finalCombined;
+      }
+      if (this.isProgressiveRevision(finalClean, interimClean)) {
+        return interimPiece;
+      }
+      return `${finalCombined} ${interimPiece}`.trim();
+    }
+
+    return finalCombined;
+  }
+
   initSpeechRecognition() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
@@ -421,64 +525,6 @@ export class AiChatPractice {
         this.els.micBtn.title = '此瀏覽器不支援語音辨識';
         this.els.micBtn.classList.add('disabled');
       }
-      return;
-    }
-
-    try {
-      this.recognition = new SpeechRecognition();
-      this.recognition.lang = 'en-US';
-      this.recognition.continuous = true;
-      this.recognition.interimResults = true;
-      this.recognition.maxAlternatives = 1;
-
-      this.recognition.onstart = () => {
-        this.isRecording = true;
-        this.finalTranscript = '';
-        this.els.micBtn?.classList.add('recording');
-        if (this.els.input) {
-          this.els.input.placeholder = '🎙️ 正在聆聽… (停頓 2 秒將自動送出)';
-        }
-      };
-
-      this.recognition.onresult = (event) => {
-        let interim = '';
-        for (let i = event.resultIndex; i < event.results.length; i++) {
-          const res = event.results[i];
-          if (res.isFinal) {
-            const piece = res[0].transcript.trim();
-            if (piece) {
-              this.finalTranscript += (this.finalTranscript ? ' ' : '') + piece;
-            }
-          } else {
-            interim += res[0].transcript;
-          }
-        }
-
-        const combined = (this.finalTranscript + (interim ? ' ' + interim : '')).trim();
-        if (this.els.input && combined) {
-          this.els.input.value = this.formatSpeechTranscript(combined, false);
-        }
-
-        // 重新計時 2 秒靜音自動送出
-        this.resetSilenceTimer();
-      };
-
-      this.recognition.onerror = (err) => {
-        if (err.error !== 'no-speech') {
-          console.warn('Speech recognition error:', err);
-        }
-        if (err.error !== 'no-speech') {
-          this.stopSpeechRecognition();
-        }
-      };
-
-      this.recognition.onend = () => {
-        if (!this.silenceTimer && this.isRecording) {
-          this.stopSpeechRecognition();
-        }
-      };
-    } catch (e) {
-      console.warn('SpeechRecognition init failed:', e);
     }
   }
 
@@ -499,23 +545,89 @@ export class AiChatPractice {
         this.stopSpeechRecognition();
         this.handleSendMessage();
       }
-    }, 2000);
+    }, 1600);
   }
 
-  toggleSpeechRecognition() {
-    if (!this.recognition) {
+  startSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
       alert('您的瀏覽器不支援語音辨識（建議使用 Chrome / Safari / Edge）。');
       return;
     }
-    if (this.isRecording) {
+
+    this.stopSpeechRecognition();
+
+    try {
+      // 每次啟動皆建立全新的 SpeechRecognition 實例，並統一設定 continuous = false
+      // 徹底杜絕 Android Chrome (含電腦版網站模式) 連續累積重送 partial result 的問題
+      this.recognition = new SpeechRecognition();
+      this.recognition.lang = 'en-US';
+      this.recognition.continuous = false;
+      this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
+
+      this.recognition.onstart = () => {
+        this.isRecording = true;
+        this.els.micBtn?.classList.add('recording');
+        if (this.els.input) {
+          this.els.input.placeholder = '🎙️ 正在聆聽… (停頓約 1.5 秒將自動送出)';
+        }
+      };
+
+      this.recognition.onresult = (event) => {
+        const text = this.extractTranscriptFromEvent(event);
+        if (text && this.els.input) {
+          this.els.input.value = this.formatSpeechTranscript(text, false);
+        }
+        // 重新計時靜音自動送出
+        this.resetSilenceTimer();
+      };
+
+      this.recognition.onerror = (err) => {
+        if (err.error !== 'no-speech') {
+          console.warn('Speech recognition error:', err);
+          this.stopSpeechRecognition();
+        }
+      };
+
+      this.recognition.onend = () => {
+        const rawText = (this.els.input?.value || '').trim();
+        if (this.isRecording && rawText) {
+          if (this.silenceTimer) {
+            clearTimeout(this.silenceTimer);
+            this.silenceTimer = null;
+          }
+          this.silenceTimer = setTimeout(() => {
+            if (this.els.input) {
+              this.els.input.value = this.formatSpeechTranscript(rawText, true);
+            }
+            this.stopSpeechRecognition();
+            this.handleSendMessage();
+          }, 800);
+        } else if (this.isRecording) {
+          this.stopSpeechRecognition();
+        }
+      };
+
+      this.recognition.start();
+    } catch (e) {
+      console.warn('SpeechRecognition start failed:', e);
       this.stopSpeechRecognition();
-    } else {
-      try {
-        this.finalTranscript = '';
-        this.recognition.start();
-      } catch (e) {
-        console.warn('Recognition start error:', e);
+    }
+  }
+
+  toggleSpeechRecognition() {
+    if (this.isRecording) {
+      const rawText = (this.els.input?.value || '').trim();
+      this.stopSpeechRecognition();
+      if (rawText) {
+        if (this.els.input) {
+          this.els.input.value = this.formatSpeechTranscript(rawText, true);
+        }
+        this.handleSendMessage();
       }
+    } else {
+      this.startSpeechRecognition();
     }
   }
 
@@ -525,10 +637,16 @@ export class AiChatPractice {
       this.silenceTimer = null;
     }
     this.isRecording = false;
-    this.finalTranscript = '';
-    try {
-      this.recognition?.stop();
-    } catch (e) {}
+    if (this.recognition) {
+      try {
+        this.recognition.onstart = null;
+        this.recognition.onresult = null;
+        this.recognition.onerror = null;
+        this.recognition.onend = null;
+        this.recognition.stop();
+      } catch (e) {}
+      this.recognition = null;
+    }
     this.els.micBtn?.classList.remove('recording');
     if (this.els.input) {
       this.els.input.placeholder = '請輸入英文與 AI 導師交談… (支援語音輸入)';

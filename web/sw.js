@@ -1,4 +1,4 @@
-const CACHE = 'englishtest-v2.8.0';
+const CACHE = 'englishtest-v2.8.2';
 
 /** 安裝時預快取（words.json 仍會在每次請求時走 network-first 更新） */
 const PRECACHE_ASSETS = [
@@ -78,7 +78,7 @@ function isAppCodeRequest(request) {
 async function networkFirstAppCode(request) {
   const cache = await caches.open(CACHE);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-cache' });
     if (response && response.status === 200) {
       await cache.put(request, response.clone());
       return response;
@@ -97,7 +97,7 @@ async function networkFirstWords(request) {
   const cache = await caches.open(CACHE);
 
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-cache' });
     if (response && response.status === 200) {
       const responseToCache = response.clone();
       try {

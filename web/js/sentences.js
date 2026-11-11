@@ -366,7 +366,7 @@ export class SentencesPractice {
           }
         }
 
-        const bestText = (currentFinal || currentInterim || '').trim();
+        let bestText = (currentFinal || currentInterim || '').trim(); for (let g = 0, ch = true; ch && g < 20; g++) { ch = false; for (let w = 1; w <= 12; w++) { const p = w === 1 ? /\b([\w']+)(?:[\s,.!?;:]+\1)+\b/gi : new RegExp(`\\b((?:[\\w']+[\\s,.!?;:]+){${w - 1}}[\\w']+)(?:[\\s,.!?;:]+\\1)+\\b`, 'gi'); const nx = bestText.replace(p, '$1'); if (nx !== bestText) { bestText = nx; ch = true; break; } } }
         if (bestText) {
           this.accumulatedTranscript = bestText;
           this.showEvalStatus(`🎙️ 聽到：「${bestText}」...`);
